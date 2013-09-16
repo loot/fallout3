@@ -1,0 +1,6013 @@
+globals:
+  - type: warn
+    content: An update for BOSS (v2.1.1) has been released. Download it at "http://code.google.com/p/better-oblivion-sorting-software/downloads/list"
+    condition: version("BOSS","2.1.1.0",<)
+plugins:
+  - name: StreetLights.esm
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+  - name: BrokenSteel.esm
+    tag:
+      - Actors.ACBS
+      - Actors.AIPackages
+      - Relev
+  - name: Lings.esm
+    tag:
+      - Hair
+  - name: Unofficial Fallout 3 Patch.esm
+    tag:
+      - C.Music
+      - Deflst
+      - Delev
+      - Factions
+      - Invent
+      - Names
+      - Relations
+      - Relev
+      - Stats
+  - name: LingsDLC.esm
+    tag:
+      - Eyes
+      - Hair
+  - name: HairPack.esm
+    tag:
+      - Eyes
+      - Hair
+  - name: FNNsys.esm
+    tag:
+      - Scripts
+  - name: FaceMe.esm
+    tag:
+      - Eyes
+      - Hair
+      - NPC.Race
+      - NpcFaces
+  - name: Destruction.esm
+    tag:
+      - Destructible
+      - Scripts
+  - name: PointLookout-FollowersGetToGo.esm
+    msg:
+      - type: say
+        content: "Requires: PointLookout.ESM"
+  - name: xCALIBR.esm
+    tag:
+      - Graphics
+      - Names
+      - Stats
+  - name: xCALIBRuniverse.esm
+    tag:
+      - Graphics
+      - Invent
+      - Names
+      - Sound
+      - Stats
+  - name: Project Beauty HD version.esm
+    msg:
+      - type: error
+        content: Old. Download the latest Project Beauty files.
+        condition: file("FOOK2 - Main.esm")
+  - name: Project Beauty.esm
+    tag:
+      - Body-F
+      - Body-M
+      - Eyes
+      - Hair
+      - NPC.Race
+      - NpcFaces
+      - R.Mouth
+      - R.Teeth
+      - Voice-F
+      - Voice-M
+  - name: FACE3.esm
+    tag:
+      - Body-F
+      - Body-M
+      - Eyes
+      - Hair
+      - NPC.Race
+      - NpcFaces
+      - R.Mouth
+      - R.Teeth
+      - Voice-F
+      - Voice-M
+  - name: CFWRv4.esm
+    tag:
+      - Deflst
+      - Delev
+      - Graphics
+      - Invent
+      - Names
+      - Scripts
+      - Stats
+  - name: "[DC RANGER ARSENAL v3 MASTER].esm"
+    tag:
+      - Deflst
+  - name: CFWR.esm
+    tag:
+      - Delev
+      - Graphics
+      - Relev
+      - Stats
+  - name: Refurbishes [ALL].esm
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+  - name: Megaton Expansion Project V03.esm
+    msg:
+      - type: say
+        content: "Requires: CALIBR.esm"
+  - name: GNRBuilding_BoS.esm
+    tag:
+      - Invent
+  - name: RoadWardens.esm
+    tag:
+      - Actors.ACBS
+      - Actors.AIData
+      - Actors.AIPackages
+      - Actors.CombatStyle
+      - Actors.Stats
+      - Factions
+      - Invent
+      - ScriptContents
+      - Scripts
+  - name: EVE.esm
+    tag:
+      - Graphics
+      - Invent
+      - Scripts
+      - Sound
+  - name: EWE Energy Weapons Enhanced.esm
+    tag:
+      - Deflst
+      - Graphics
+      - Invent
+      - Relev
+      - Scripts
+      - Stats
+  - name: FOOK2 - Main.esm
+    msg:
+      - type: say
+        content: "Requires: CALIBR.esm"
+    tag:
+      - Factions
+      - Invent
+      - Relations
+      - Stats
+  - name: FOOK.ESM
+    msg:
+      - type: error
+        content: Get FOOK2
+        condition: file("FOOK2 - Main.esm")
+  - name: FOOK2 - [WANK] World And Neighbourhood Kit.esm
+    msg:
+      - type: say
+        content: "Requires: CALIBR.esm"
+      - type: say
+        content: "Requires: FOOK2 - Main.ESM"
+      - type: error
+        content: Remove if using FOOK2 1.1 and above
+        condition: file("FOOK2 - Main.esm")
+  - name: FOOK2 - [DIK] DLC Improvement Kit.esm
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Requires: ThePitt.esm"
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Requires: CALIBR.esm"
+      - type: say
+        content: "Requires: FOOK2 - Main.ESM"
+  - name: FO3 Wanderers Edition - Main File.esm
+    msg:
+      - type: say
+        content: Suggested to remove the names tag if using MMM
+      - type: say
+        content: "Requires: CRAFT.esm"
+      - type: say
+        content: "Requires: CALIBR.esm"
+    tag:
+      - Actors.ACBS
+      - Actors.Stats
+      - Deflst
+      - Delev
+      - Invent
+      - Names
+      - Relations
+      - Relev
+      - Stats
+  - name: FWE - Combat Overhaul_Core.esm
+    msg:
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+      - type: say
+        content: "Requires: RH_IronSights resources"
+      - type: say
+        content: "Incompatible with: Weapon Mod Kits"
+      - type: say
+        content: "Incompatible with: EVE"
+      - type: say
+        content: "Incompatible with: RH IronSights Basic VanillaPlugin.esp"
+    tag:
+      - Graphics
+      - Names
+  - name: Mart's Mutant Mod.esm
+    tag:
+      - Delev
+      - Invent
+      - Names
+      - Relations
+      - Scripts
+  - name: Arwen_Core.esm
+    tag:
+      - Actors.Animations
+  - name: Companion Share & Recruit.esm
+    msg:
+      - type: say
+        content: "Requires: Companion Core.esm"
+  - name: RobCo Certified v2.esm
+    msg:
+      - type: say
+        content: "Requires: Companion Core.esm"
+  - name: Wasteland Whisperer v2.esm
+    msg:
+      - type: say
+        content: "Requires: Companion Core.esm"
+  - name: Xepha's Dynamic Weather.esm
+    tag:
+      - C.Climate
+      - Sound
+  - name: RTS.esm
+    msg:
+      - type: say
+        content: "Incompatible with: ArefuExpandedByAzar.esm"
+      - type: say
+        content: "Incompatible with: 1PipboyPDA.esp"
+  - name: RTS NW.esm
+    msg:
+      - type: say
+        content: "Incompatible with: ArefuExpandedByAzar.esm"
+      - type: say
+        content: "Incompatible with: 1PipboyPDA.esp"
+  - name: PB mika.esm
+    msg:
+      - type: error
+        content: Old. Download the latest Project Beauty files.
+        condition: file("FOOK2 - Main.esm")
+  - name: Animy_prostitution.esm
+    msg:
+      - type: say
+        content: "Requires: CrossModData.esm"
+  - name: DCInteriors_ComboEdition.ESM
+    msg:
+      - type: say
+        content: "Incompatible with: DCInteriors components."
+  - name: DCInteriors_Georgtown.esm
+    msg:
+      - type: say
+        content: "Incompatible with: DCInteriors_ComboEdition.ESM"
+  - name: DCInteriors_LEnfntPl.esm
+    msg:
+      - type: say
+        content: "Incompatible with: DCInteriors_ComboEdition.ESM"
+  - name: DCInteriors_Mason.esm
+    msg:
+      - type: say
+        content: "Incompatible with: DCInteriors_ComboEdition.ESM"
+  - name: DCInteriors_SewardSq.esm
+    msg:
+      - type: say
+        content: "Incompatible with: DCInteriors_ComboEdition.ESM"
+  - name: DCInteriors_Takoma.esm
+    msg:
+      - type: say
+        content: "Incompatible with: DCInteriors_ComboEdition.ESM"
+  - name: Shojo Race.esm
+    tag:
+      - Eyes
+      - Hair
+  - name: XENH.esm
+    tag:
+      - Eyes
+      - Hair
+  - name: EnhancedChildren.esm
+    tag:
+      - Eyes
+      - Hair
+  - name: AliciasCuteShop.esm
+    tag:
+      - Stats
+  - name: Abbreviated Effects.esm
+    msg:
+      - type: say
+        content: Do not use with latest FWE, it is already integrated.
+    tag:
+      - Names
+  - name: CMF-Zeta.esm
+    msg:
+      - type: say
+        content: "Requires: Zeta.esm"
+  - name: DALCO Inventory Sorter - Fallout 3 & All DLCs.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Requires: ThePitt.esm"
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Requires: Zeta.esm"
+    tag:
+      - Names
+      - NoMerge
+  - name: DALCO Inventory Sorter - Unofficial Fallout 3 Patch (Base Game).esp
+    tag:
+      - Names
+      - NoMerge
+  - name: Unofficial Fallout 3 Patch - Operation Anchorage.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+        condition: not file("Anchorage.esm")
+    tag:
+      - Deflst
+      - Names
+  - name: Unofficial Fallout 3 Patch - The Pitt.esp
+    msg:
+      - type: say
+        content: "Requires: ThePitt.esm"
+        condition: not file("ThePitt.esm")
+    tag:
+      - Deflst
+      - Names
+  - name: Unofficial Fallout 3 Patch - Broken Steel.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+        condition: not file("BrokenSteel.esm")
+    tag:
+      - Deflst
+      - Names
+      - NoMerge
+  - name: Unofficial Fallout 3 Patch - Point Lookout.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.esm"
+        condition: not file("PointLookout.esm")
+    tag:
+      - Deflst
+      - Invent
+      - Names
+      - Stats
+  - name: Unofficial Fallout 3 Patch - Mothership Zeta.esp
+    msg:
+      - type: say
+        content: "Requires: Zeta.esm"
+        condition: not file("Zeta.esm")
+    tag:
+      - Deflst
+      - Names
+  - name: EVE - UF3P Patch.esp
+    msg:
+      - type: say
+        content: Paradox Ignition EVE-merger - compatibility patch for the Unofficial Fallout 3 Patch.
+  - name: Broken Steel Early Enclave Fix.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+  - name: BrokenSteel_StarPaladinCross_Fix.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+  - name: CinderBlockRockFix.esp
+    msg:
+      - type: say
+        content: "Incompatible with: CinderblockRockFix2.esp"
+      - type: say
+        content: "Incompatible with: ConcreteSlabFix.esp"
+      - type: say
+        content: "Incompatible with: ConcreteSlabFix2.esp"
+  - name: CinderblockRockFix2.esp
+    msg:
+      - type: say
+        content: "Incompatible with: CinderBlockRockFix.esp"
+      - type: say
+        content: "Incompatible with: ConcreteSlabFix.esp"
+      - type: say
+        content: "Incompatible with: ConcreteSlabFix2.esp"
+  - name: ConcreteSlabFix.esp
+    msg:
+      - type: say
+        content: "Incompatible with: CinderBlockRockFix.esp"
+      - type: say
+        content: "Incompatible with: CinderblockRockFix2.esp"
+      - type: say
+        content: "Incompatible with: ConcreteSlabFix2.esp"
+  - name: ConcreteSlabFix2.esp
+    msg:
+      - type: say
+        content: "Incompatible with: CinderBlockRockFix.esp"
+      - type: say
+        content: "Incompatible with: CinderblockRockFix2.esp"
+      - type: say
+        content: "Incompatible with: ConcreteSlabFix.esp"
+  - name: Error Correction.esp
+    msg:
+      - type: say
+        content: "Requires: Requires: Anchorage.esm"
+      - type: say
+        content: "Requires: ThePitt.esm"
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Requires: Zeta.esm"
+    tag:
+      - Scripts
+  - name: Error Correction - All Transparency & Trees.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Error Correction - All Transparency.esp"
+  - name: Error Correction - Transparency Megaton.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Error Correction - All Transparency.esp"
+      - type: say
+        content: "Incompatible with: Error Correction - All Transparency & Trees.esp"
+  - name: Error Correction - Transparency RC.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Error Correction - All Transparency.esp"
+      - type: say
+        content: "Incompatible with: Error Correction - All Transparency & Trees.esp"
+  - name: Error Correction - Transparency Rubble Piles.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Error Correction - All Transparency.esp"
+      - type: say
+        content: "Incompatible with: Error Correction - All Transparency & Trees.esp"
+  - name: Error Correction - Trees.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Error Correction - All Transparency & Trees.esp"
+  - name: OADLCfix.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+  - name: zetabugfix.esp
+    msg:
+      - type: say
+        content: "Requires: Zeta.esm"
+  - name: BenTweaks-OAE.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+  - name: BenTweaks-TPE.esp
+    msg:
+      - type: say
+        content: "Requires: ThePitt.esm"
+  - name: BenTweaks-AAF.esp
+    msg:
+      - type: say
+        content: "Requires: ThePitt.esm"
+  - name: BenTweaks-BSE.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+  - name: BenTweaks-PLE.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.esm"
+  - name: BenTweaks-MZE.esp
+    msg:
+      - type: say
+        content: "Requires: Zeta.esm"
+  - name: FireLightFix.esp
+    tag:
+      - C.Light
+  - name: QuickFix.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Requires: ThePitt.esm"
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Requires: Zeta.esm"
+  - name: BringBackBael.esp
+    msg:
+      - type: say
+        content: Obsolete - Now intergrated into Fallout Remastered.esp, upgrade to latest version
+  - name: BlackWidowBurkeFix.esp
+    tag:
+      - Scripts
+  - name: PyromaniacFix-Burnmaster.esp
+    msg:
+      - type: say
+        content: Do not use with Unofficial Fallout 3 Patch - Already Included
+    tag:
+      - Deflst
+  - name: PyromaniacFix-Burnmaster-BS.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: Do not use with Unofficial Fallout 3 Patch - Already Included
+    tag:
+      - Deflst
+  - name: PyromaniacFix-Both.esp
+    msg:
+      - type: say
+        content: Do not use with Unofficial Fallout 3 Patch - Already Included
+    tag:
+      - Deflst
+  - name: PyromaniacFix-Both-BS.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: Do not use with Unofficial Fallout 3 Patch - Already Included
+    tag:
+      - Deflst
+  - name: PyromaniacFix-Both+Nuka.esp
+    msg:
+      - type: say
+        content: Do not use with Unofficial Fallout 3 Patch - Already Included
+    tag:
+      - Deflst
+  - name: PyromaniacFix-Both+Nuka-BS.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: Do not use with Unofficial Fallout 3 Patch - Already Included
+    tag:
+      - Deflst
+  - name: DemolitionExpertFix-Nuka.esp
+    msg:
+      - type: say
+        content: Do not use with Unofficial Fallout 3 Patch - Already Included
+  - name: MS11fix.esp
+    tag:
+      - Actors.AIPackages
+      - C.Light
+      - Invent
+      - Scripts
+  - name: Project Clean FOOK 2 Patch V1.0.esp
+    msg:
+      - type: say
+        content: "Requires: CALIBR.esm"
+      - type: say
+        content: "Requires: FOOK2 - Main.ESM"
+  - name: BetterGamePerformance.esp
+    tag:
+      - Deflst
+      - Delev
+  - name: Stop Insulting Me Outcasts.esp
+    tag:
+      - Factions
+  - name: DALCO Inventory Sorter - Fallout 3 (Base Game).esp
+    tag:
+      - Names
+      - NoMerge
+  - name: DALCO Inventory Sorter - Operation Anchorage.esp
+    tag:
+      - Names
+      - NoMerge
+  - name: DALCO Inventory Sorter - Unofficial Fallout 3 Patch (Operation Anchorage).esp
+    tag:
+      - Names
+      - NoMerge
+  - name: DALCO Inventory Sorter - The Pitt.esp
+    tag:
+      - Names
+      - NoMerge
+  - name: DALCO Inventory Sorter - Unofficial Fallout 3 Patch (The Pitt).esp
+    tag:
+      - Names
+      - NoMerge
+  - name: DALCO Inventory Sorter - Broken Steel.esp
+    tag:
+      - Names
+      - NoMerge
+  - name: DALCO Inventory Sorter - Point Lookout.esp
+    tag:
+      - Names
+      - NoMerge
+  - name: DALCO Inventory Sorter - Unofficial Fallout 3 Patch (Point Lookout).esp
+    tag:
+      - Names
+      - NoMerge
+  - name: DALCO Inventory Sorter - Mothership Zeta.esp
+    tag:
+      - Names
+      - NoMerge
+  - name: DALCO Inventory Sorter - Unofficial Fallout 3 Patch (Mothership Zeta).esp
+    tag:
+      - Names
+      - NoMerge
+  - name: DALCO Inventory Sorter - Unofficial Fallout 3 Patch (Fallout 3 & All DLCs).esp
+    tag:
+      - Names
+      - NoMerge
+  - name: DALCO Inventory Sorter - CALIBR.esp
+    tag:
+      - Names
+      - NoMerge
+  - name: Ambient Temperature - OA.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+  - name: Project Beauty.esp
+    msg:
+      - type: error
+        content: Old. Download the latest Project Beauty files.
+        condition: file("FOOK2 - Main.esm")
+  - name: Project Beauty- Broken Steel.esp
+    tag:
+      - Deactivate
+      - NoMerge
+      - NPC.Race
+      - NpcFaces
+  - name: Project Beauty- Point Lookout.esp
+    tag:
+      - Deactivate
+      - NoMerge
+      - NPC.Race
+      - NpcFaces
+  - name: Raider preset beta.esp
+    tag:
+      - Deactivate
+      - NoMerge
+      - NPC.Race
+      - NpcFaces
+  - name: Project Beauty HD version [Hair Fix].esp
+    tag:
+      - Deactivate
+      - NoMerge
+      - NPC.Race
+      - NpcFaces
+  - name: FACE3 - NPCS.esp
+    tag:
+      - Deactivate
+      - NoMerge
+      - NPC.Race
+      - NpcFaces
+  - name: FACE3 - DLC04 Point Lookout.esp
+    tag:
+      - Deactivate
+      - NoMerge
+      - NPC.Race
+      - NpcFaces
+  - name: FACE3 NPCS - DLC03 Broken Steel.esp
+    tag:
+      - Deactivate
+      - NoMerge
+      - NPC.Race
+      - NpcFaces
+  - name: Fast VATS 1.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Fast VATS 2.esp"
+  - name: Fast VATS 2.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Fast VATS 1.esp"
+  - name: VATS_Normal_dmg_to_player.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Fast VATS X.esp."
+  - name: QuickerMessagesOA.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+  - name: QuickerMessagesPITT.esp
+    msg:
+      - type: say
+        content: "Requires: ThePitt.esm"
+  - name: QuickerMessagesBS.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+  - name: QuickerMessagesPL.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.esm"
+  - name: DALCO Inventory Sorter - Dynamic Crosshair.esp
+    tag:
+      - Names
+  - name: FaceMe.esp
+    tag:
+      - Deactivate
+      - NoMerge
+      - NPC.Race
+      - NpcFaces
+  - name: FaceMe-Broken Steel.esp
+    tag:
+      - Deactivate
+      - NoMerge
+      - NPC.Race
+      - NpcFaces
+  - name: Shojo NPC.esp
+    tag:
+      - Invent
+      - NPC.Race
+      - NpcFaces
+  - name: Moira-EXSP.esp
+    tag:
+      - Deactivate
+      - NoMerge
+      - NPC.Race
+      - NpcFaces
+  - name: BatteriesPlusV1_2.esp
+    tag:
+      - Graphics
+  - name: Realistic icons.esp
+    tag:
+      - Graphics
+  - name: StreetLights - Wasteland.esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+      - type: say
+        content: Obselete - upgrade to Fallout Streetlights (http://fallout3.nexusmods.com/mods/8069)
+  - name: RK-Skelette-3.0.esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+  - name: praiseatom.esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+  - name: Internet Mod.esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+  - name: DALCO Inventory Sorter - CASM.esp
+    tag:
+      - Names
+      - NoMerge
+  - name: CRAFT - Activation Perk.esp
+    msg:
+      - type: say
+        content: "Requires: CRAFT.ESM"
+  - name: CRAFT -Zeta -  Activation Perk.esp
+    msg:
+      - type: say
+        content: "Requires: CRAFT.ESM"
+  - name: CRAFT - Workbench and Crafting Expansion combined.esp
+    msg:
+      - type: say
+        content: "Requires: CRAFT.esm"
+  - name: CRAFT - Clutter Conversions.esp
+    msg:
+      - type: say
+        content: "Requires: CRAFT.esm"
+  - name: CALIBRxMerchant.esp
+    msg:
+      - type: say
+        content: "Requires: CALIBR.ESM"
+  - name: DelayAnchorage.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.ESM"
+  - name: DelayThePitt.esp
+    msg:
+      - type: say
+        content: "Requires: ThePitt.ESM"
+  - name: DelaySteel.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.ESM"
+  - name: delaypl.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.ESM"
+  - name: delayzeta.esp
+    msg:
+      - type: say
+        content: "Requires: Zeta.ESM"
+  - name: Delay ThePitt + Anchorage.esp
+    msg:
+      - type: say
+        content: "Requires: ThePitt.ESM"
+      - type: say
+        content: "Requires: Anchorage.ESM"
+  - name: Zumbs' Equipable Pip Boy.esp
+    msg:
+      - type: say
+        content: "Incompatible with: That Glove.esp"
+      - type: say
+        content: "Incompatible with: Pip Boy Be Gone Mark II.esp"
+      - type: say
+        content: "Incompatible with: Pip Boy Be Gone Mark II 1.1.esp"
+      - type: say
+        content: "Incompatible with: PipBegone.esp"
+      - type: say
+        content: "Incompatible with: PipBoyBeGone.esp"
+      - type: say
+        content: "Incompatible with: 1PipboyPDA.esp"
+  - name: DK_BulletTime.esp
+    msg:
+      - type: say
+        content: DO not use with latest FWE, it is already integrated.
+  - name: Sprint Mod.esp
+    msg:
+      - type: say
+        content: DO not use with latest FWE, it is already integrated.
+  - name: Auto Aim Fix v1.1.esp
+    msg:
+      - type: say
+        content: DO not use with latest FWE, it is already integrated.
+  - name: KHWeaponscanner.esp
+    msg:
+      - type: say
+        content: DO not use with latest FWE, it is already integrated.
+  - name: Alternate Start - Roleplayers.esp
+    msg:
+      - type: say
+        content: DO not use with latest FWE, it is already integrated.
+  - name: Selected Containers Respawn.esp
+    msg:
+      - type: say
+        content: DO not use with latest FWE, it is already integrated.
+  - name: EVE - RH Ironsights Patch.esp
+    tag:
+      - Graphics
+  - name: PAL - MERGED.esp
+    msg:
+      - type: say
+        content: "Incompatible with: PAL - BASE File.esp"
+  - name: PAL - BASE File.esp
+    msg:
+      - type: say
+        content: "Incompatible with: PAL - MERGED.esp"
+  - name: PAL - Operation Anchorage.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+  - name: PAL - The Pitt.esp
+    msg:
+      - type: say
+        content: "Requires: ThePitt.esm"
+  - name: PAL - Broken Steel.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+  - name: PAL - Point Lookout.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.esm"
+  - name: PAL - Mothership Zeta.esp
+    msg:
+      - type: say
+        content: "Requires: Zeta.esm"
+  - name: Achievements for All - Anchorage.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+  - name: Achievements for All - The Pitt.esp
+    msg:
+      - type: say
+        content: "Requires: ThePitt.esm"
+  - name: Achievements for All - Broken Steel.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+  - name: Achievements for All - Point Lookout.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.esm"
+  - name: GalaxyNewsRadioFix[N].esp
+    msg:
+      - type: say
+        content: "Incompatible with: GalaxyNewsRadioXXX[M].esp"
+      - type: say
+        content: "Incompatible with: GalaxyNewsRadioFix[S].esp"
+  - name: GalaxyNewsRadioFix[S].esp
+    msg:
+      - type: say
+        content: "Incompatible with: GalaxyNewsRadioXXX[M].esp"
+      - type: say
+        content: "Incompatible with: GalaxyNewsRadioFix[N].esp"
+  - name: GalaxyNewsRadio100[M].esp
+    msg:
+      - type: say
+        content: "Incompatible with: GalaxyNewsRadioXXX[M].esp"
+      - type: say
+        content: "Incompatible with: GalaxyNewsRadioFix[N].esp"
+      - type: say
+        content: "Incompatible with: GalaxyNewsRadioFix[S].esp"
+  - name: GalaxyNewsRadio80[M].esp
+    msg:
+      - type: say
+        content: "Incompatible with: GalaxyNewsRadioXXX[M].esp"
+      - type: say
+        content: "Incompatible with: GalaxyNewsRadioFix[N].esp"
+      - type: say
+        content: "Incompatible with: GalaxyNewsRadioFix[S].esp"
+  - name: GalaxyNewsRadio60[M].esp
+    msg:
+      - type: say
+        content: "Incompatible with: GalaxyNewsRadioXXX[M].esp"
+      - type: say
+        content: "Incompatible with: GalaxyNewsRadioFix[N].esp"
+      - type: say
+        content: "Incompatible with: GalaxyNewsRadioFix[S].esp"
+  - name: GalaxyNewsRadio40[M].esp
+    msg:
+      - type: say
+        content: "Incompatible with: GalaxyNewsRadioXXX[M].esp"
+      - type: say
+        content: "Incompatible with: GalaxyNewsRadioFix[N].esp"
+      - type: say
+        content: "Incompatible with: GalaxyNewsRadioFix[S].esp"
+  - name: GalaxyNewsRadio20[M].esp
+    msg:
+      - type: say
+        content: "Incompatible with: GalaxyNewsRadioXXX[M].esp"
+      - type: say
+        content: "Incompatible with: GalaxyNewsRadioFix[N].esp"
+      - type: say
+        content: "Incompatible with: GalaxyNewsRadioFix[S].esp"
+  - name: ReneersRadioMod.esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+    tag:
+      - Scripts
+  - name: RadioHotkey.esp
+    msg:
+      - type: say
+        content: Load RadioHotkey after all other radio mods
+  - name: RadioHotkey_RadioBluesAddon.esp
+    msg:
+      - type: say
+        content: Load RadioHotkey after all other radio mods
+  - name: ImprovedCovertOpsPerk.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+  - name: Ice Cold Nuka, Converted.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+  - name: Almost Perfect Anytime Bobbleheads + No Level.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+  - name: Almost Perfect Anytime Bobbleheads.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+  - name: Perfectly SPECIAL + No Level.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+  - name: Perfectly SPECIAL.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+  - name: ClawPeak.esp
+    msg:
+      - type: say
+        content: "Requires: GlobalTravelSystem.esm"
+  - name: GTSPointLookOut.esp
+    msg:
+      - type: say
+        content: "Requires: GlobalTravelSystem.esm"
+      - type: say
+        content: "Requires: PointLookout.esm"
+  - name: GTSThePitt.esp
+    msg:
+      - type: say
+        content: "Requires: GlobalTravelSystem.esm"
+      - type: say
+        content: "Requires: ThePitt.esm"
+  - name: GTSCOMM.esp
+    msg:
+      - type: say
+        content: "Requires: GlobalTravelSystem.esm"
+      - type: say
+        content: "Requires: COMM.esm"
+  - name: GTSFawkesWeapons.esp
+    msg:
+      - type: say
+        content: "Requires: GlobalTravelSystem.esm"
+      - type: say
+        content: "Requires: GTEssentials.esm"
+  - name: Fallout 1+2 All in One Locations.esp
+    msg:
+      - type: say
+        content: "Requires: GlobalTravelSystem.esm"
+  - name: GTS - Military Base.esp
+    msg:
+      - type: say
+        content: "Requires: GlobalTravelSystem.esm"
+  - name: GTS - San Francisco.esp
+    msg:
+      - type: say
+        content: "Requires: GlobalTravelSystem.esm"
+  - name: GTS - Cathedral.esp
+    msg:
+      - type: say
+        content: "Requires: GlobalTravelSystem.esm"
+  - name: GTS - Arroyo.esp
+    msg:
+      - type: say
+        content: "Requires: GlobalTravelSystem.esm"
+  - name: GTS - Toxic Caves.esp
+    msg:
+      - type: say
+        content: "Requires: GlobalTravelSystem.esm"
+  - name: GTS - Klamath.esp
+    msg:
+      - type: say
+        content: "Requires: GlobalTravelSystem.esm"
+  - name: GTS - The Den.esp
+    msg:
+      - type: say
+        content: "Requires: GlobalTravelSystem.esm"
+  - name: GTS - Ghost Farm.esp
+    msg:
+      - type: say
+        content: "Requires: GlobalTravelSystem.esm"
+  - name: GTS - Redding.esp
+    msg:
+      - type: say
+        content: "Requires: GlobalTravelSystem.esm"
+  - name: GTS - Modoc.esp
+    msg:
+      - type: say
+        content: "Requires: GlobalTravelSystem.esm"
+  - name: GTS - Vault City.esp
+    msg:
+      - type: say
+        content: "Requires: GlobalTravelSystem.esm"
+  - name: GTS - Broken Hills.esp
+    msg:
+      - type: say
+        content: "Requires: GlobalTravelSystem.esm"
+  - name: GTS - New Reno.esp
+    msg:
+      - type: say
+        content: "Requires: GlobalTravelSystem.esm"
+  - name: GTS - Vault 13.esp
+    msg:
+      - type: say
+        content: "Requires: GlobalTravelSystem.esm"
+  - name: GTS - N.C.R..esp
+    msg:
+      - type: say
+        content: "Requires: GlobalTravelSystem.esm"
+  - name: GTS - The Glow.esp
+    msg:
+      - type: say
+        content: "Requires: GlobalTravelSystem.esm"
+  - name: GTS - Vault 15.esp
+    msg:
+      - type: say
+        content: "Requires: GlobalTravelSystem.esm"
+  - name: GTS - Junktown.esp
+    msg:
+      - type: say
+        content: "Requires: GlobalTravelSystem.esm"
+  - name: GTS - Necropolis.esp
+    msg:
+      - type: say
+        content: "Requires: GlobalTravelSystem.esm"
+  - name: GTS - Gecko.esp
+    msg:
+      - type: say
+        content: "Requires: GlobalTravelSystem.esm"
+  - name: GTS - The Hub.esp
+    msg:
+      - type: say
+        content: "Requires: GlobalTravelSystem.esm"
+  - name: GTS - Boneyard.esp
+    msg:
+      - type: say
+        content: "Requires: GlobalTravelSystem.esm"
+  - name: GTS - Brotherhood.esp
+    msg:
+      - type: say
+        content: "Requires: GlobalTravelSystem.esm"
+  - name: GTS - Navarro.esp
+    msg:
+      - type: say
+        content: "Requires: GlobalTravelSystem.esm"
+  - name: AQFH.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+  - name: AQFH2.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Requires: ThePitt.esm"
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Requires: Zeta.esm"
+  - name: Despicable Dashwood v2.esp
+    tag:
+      - Actors.ACBS
+      - Invent
+  - name: EIP.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+  - name: HeirApparent.esp
+    tag:
+      - Scripts
+  - name: IntoTheDeepWoods.esp
+    tag:
+      - Scripts
+  - name: Lawbringer Boutnies Ver1.1.esp
+    tag:
+      - Invent
+  - name: Lobotomized! 400.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: Only use one Lobotomized!plugin at once
+  - name: Lobotomized! 300.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: Only use one Lobotomized!plugin at once
+  - name: Lobotomized! 200.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: Only use one Lobotomized!plugin at once
+  - name: Lobotomized! 100.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: Only use one Lobotomized!plugin at once
+  - name: NotSoFast.esp
+    tag:
+      - Scripts
+  - name: PLweightadjust.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.ESM"
+    tag:
+      - Invent
+      - Scripts
+      - Stats
+  - name: PLFewerItems.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.ESM"
+  - name: RatTrapRadio.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Regulators_Overhaul.esp"
+      - type: say
+        content: "Incompatible with: Regulators _Overhaul_lvl7.esp"
+      - type: say
+        content: "Incompatible with: Regulators _Overhaul_lvl2.esp"
+  - name: Regulators_Overhaul.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Regulators.esp"
+      - type: say
+        content: "Incompatible with: Regulators _Overhaul_lvl7.esp"
+      - type: say
+        content: "Incompatible with: Regulators _Overhaul_lvl2.esp"
+  - name: Regulators _Overhaul_lvl7.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Regulators_Overhaul.esp"
+      - type: say
+        content: "Incompatible with: Regulators.esp"
+      - type: say
+        content: "Incompatible with: Regulators _Overhaul_lvl2.esp"
+  - name: Regulators _Overhaul_lvl2.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Regulators_Overhaul.esp"
+      - type: say
+        content: "Incompatible with: Regulators _Overhaul_lvl7.esp"
+      - type: say
+        content: "Incompatible with: Regulators.esp"
+  - name: The Mantis Imperative - Mantis.esp
+    tag:
+      - Relev
+  - name: Action for men v3.0.esp
+    tag:
+      - Invent
+  - name: BoSTeslaEarly.esp
+    msg:
+      - type: say
+        content: "Incompatible with: BoSTesla.esp"
+  - name: BoSTesla.esp
+    msg:
+      - type: say
+        content: "Incompatible with: BoSTeslaEarly.esp"
+  - name: XSZeta.esp
+    msg:
+      - type: say
+        content: "Requires: Zeta.esm"
+  - name: XSIngestPointLookout.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.esm"
+  - name: MarkB50K_Wasteland_Patrols.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.ESM"
+      - type: say
+        content: "Requires: ThePitt.ESM"
+      - type: say
+        content: "Requires: BrokenSteel.ESM"
+      - type: say
+        content: "Requires: PointLookout.esm"
+  - name: MarkB50K_Dynamic_Missions.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.ESM"
+      - type: say
+        content: "Requires: BrokenSteel.ESM"
+  - name: FF_DestructibleRadios.esp
+    tag:
+      - Destructible
+  - name: Angry Scientists.esp
+    tag:
+      - Invent
+  - name: ScrapMetal.esp
+    msg:
+      - type: say
+        content: "Incompatible with: ScrapMetal_H.esp"
+      - type: say
+        content: "Incompatible with: ScrapMetal_Q.esp"
+      - type: say
+        content: Old, upgrade to 'CreateScrapMetal.esp'.
+    tag:
+      - Invent
+  - name: ScrapMetal_H.esp
+    msg:
+      - type: say
+        content: "Incompatible with: ScrapMetal.esp"
+      - type: say
+        content: "Incompatible with: ScrapMetal_Q.esp"
+      - type: say
+        content: Old, upgrade to 'CreateScrapMetal.esp'.
+    tag:
+      - Invent
+  - name: ScrapMetal_Q.esp
+    msg:
+      - type: say
+        content: "Incompatible with: ScrapMetal.esp"
+      - type: say
+        content: "Incompatible with: ScrapMetal_H.esp"
+      - type: say
+        content: Old, upgrade to 'CreateScrapMetal.esp'.
+    tag:
+      - Invent
+  - name: CreateScrapMetal.esp
+    tag:
+      - Invent
+  - name: MrLabTechnician - FWE.esp
+    tag:
+      - Deflst
+      - Delev
+  - name: Placeable Lights Basic Edition v2.1.esp
+    tag:
+      - Actors.AIData
+      - Relev
+  - name: Placable Lights v2.1.esp
+    msg:
+      - type: say
+        content: "Requires: Zeta.esm"
+    tag:
+      - Actors.AIData
+      - Relev
+  - name: SelfSurgeryKit.esp
+    tag:
+      - Relev
+  - name: RobCo Universal Battery Charger Kit.esp
+    msg:
+      - type: say
+        content: "Incompatible with: RobCo Universal Battery Charger Kit - Zeta.esp"
+  - name: RobCo Universal Battery Charger Kit - Zeta.esp
+    msg:
+      - type: say
+        content: "Incompatible with: RobCo Universal Battery Charger Kit.esp"
+  - name: EpFspitBomb.esp
+    msg:
+      - type: say
+        content: "Requires: CRAFT.esm"
+  - name: EpFspitBombMMM.esp
+    msg:
+      - type: say
+        content: "Requires: CRAFT.esm"
+      - type: say
+        content: "Requires: Mart's Mutant Mod.esm"
+  - name: Cryo Weapons - No Lists.esp
+    msg:
+      - type: say
+        content: "Requires: CRAFT"
+  - name: Cryo Weapons - Vanilla.esp
+    msg:
+      - type: say
+        content: "Requires: CRAFT"
+  - name: DALCO Inventory Sorter - Sack of Holding.esp
+    tag:
+      - Names
+      - NoMerge
+  - name: Chems and Meds Re-Textures Pack.esp
+    tag:
+      - Graphics
+  - name: Blank's Container Backpack (Fook Plugin).esp
+    msg:
+      - type: say
+        content: "Requires: CALIBR.esm"
+      - type: say
+        content: "Requires: FOOK.esm"
+  - name: MAXdog.esp
+    tag:
+      - Graphics
+  - name: Megaton Sorter.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: Requires FOSE
+  - name: D.C. Confidential.esp
+    msg:
+      - type: say
+        content: Choose only one 'D.C. Confidential' ESP.
+  - name: D.C. Confidential with Glow.esp
+    msg:
+      - type: say
+        content: Choose only one 'D.C. Confidential' ESP.
+  - name: ShadySands.esp
+    tag:
+      - Factions
+      - Relations
+  - name: SuperSledgeBeatdown.esp
+    tag:
+      - Scripts
+  - name: PL More map markers.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.esm"
+  - name: BA_InventorySorterAnchorage.esp
+    tag:
+      - Names
+  - name: BA_InventorySorterBrokenSteel.esp
+    tag:
+      - Names
+  - name: BA_InventorySorterGOTY.esp
+    tag:
+      - Names
+  - name: BA_InventorySorterPointLookout.esp
+    tag:
+      - Names
+  - name: BA_InventorySorterThePitt.esp
+    tag:
+      - Names
+  - name: BA_InventorySorterZeta.esp
+    tag:
+      - Names
+  - name: AmmoSorter - Start.esp
+    tag:
+      - Names
+  - name: AmmoSorter - End.esp
+    tag:
+      - Names
+  - name: Scenic_Loading_Background.esp
+    tag:
+      - Graphics
+  - name: Scenic_Loading_Background_PointofLookoutDLC.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.esm"
+    tag:
+      - Graphics
+  - name: Scenic_Loading_Background_OperationAnchorageDLC.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+    tag:
+      - Graphics
+  - name: loadingsc.esp
+    tag:
+      - Graphics
+  - name: Destruction - Main.esp
+    tag:
+      - Destructible
+      - Graphics
+      - Scripts
+  - name: Destruction - DLC.esp
+    tag:
+      - Destructible
+      - Scripts
+  - name: Classic Fallout Weapons BETA.esp
+    tag:
+      - Invent
+      - Relev
+  - name: BusworldV1.05.esp
+    msg:
+      - type: say
+        content: Possible cause of CTDs, try disabling to test for improvments, or try BusworldV1.05noexpl.esp
+  - name: FPS Grenade Hotkey.esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2/FWE, it is already integrated.
+  - name: FPS Grenade Hotkey - Zeta addon.esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2/FWE, it is already integrated.
+  - name: Mannequin.esp
+    tag:
+      - Actors.AIData
+  - name: BarterWithRaiders-NPC Default-MMM.esp
+    msg:
+      - type: say
+        content: "Requires: Mart's Mutant Mod.esm"
+      - type: say
+        content: "Requires: BarterWithRaiders-NPC Default.esp"
+  - name: BarterWithRaiders-NPC Compatible-MMM.esp
+    msg:
+      - type: say
+        content: "Requires: Mart's Mutant Mod.esm"
+      - type: say
+        content: "Requires: BarterWithRaiders-NPC Compatible.esp"
+  - name: BombayTradingCo.esp
+    tag:
+      - Actors.AIPackages
+      - Invent
+      - Names
+      - Scripts
+      - Stats
+  - name: CarvanTrader.esp
+    tag:
+      - Actors.ACBS
+      - Actors.Stats
+      - Invent
+      - Names
+      - R. Attributes-F
+      - R. Attributes-M
+      - R.Skills
+      - Scripts
+  - name: Clothed American Soldiers.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+    tag:
+      - Invent
+  - name: Clothed Sarah Lyons.esp
+    tag:
+      - Invent
+  - name: Clothed Sarah Lyons - Sleepwear.esp
+    tag:
+      - Invent
+  - name: Confessor Cromwell has a Break_EV.esp
+    tag:
+      - Actors.AIPackages
+  - name: CrowdedCities_v2.esp
+    msg:
+      - type: say
+        content: "Incompatible with: CrowdedCities_v2_lessNPCs.esp"
+  - name: CrowdedCities_v2_lessNPCs.esp
+    msg:
+      - type: say
+        content: "Incompatible with: CrowdedCities_v2.esp"
+  - name: Essential Caravan Merchants.esp
+    tag:
+      - Actors.ACBS
+  - name: Essential_Zeta_Allies.esp
+    tag:
+      - Actors.ACBS
+  - name: Named Wastelanders.esp
+    tag:
+      - Names
+  - name: Named Wasteland.esp
+    tag:
+      - Names
+  - name: MTC Wasteland Travellers (Optional)- Crowded Cities less NPCs.esp
+    msg:
+      - type: say
+        content: "Incompatible with: MTC Wasteland Travellers (Optional)- Crowded Cities.esp"
+  - name: MTC Wasteland Travellers (Optional)- Crowded Cities.esp
+    msg:
+      - type: say
+        content: "Incompatible with: MTC Wasteland Travellers (Optional)- Crowded Cities less NPCs.esp"
+  - name: Outcast Scribes03.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Incompatible with: OutcastCasdinArmorFix.esp"
+  - name: Point Lookout Lower Health.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.esm"
+  - name: royphilipsevil.esp
+    tag:
+      - Actors.ACBS
+      - Actors.AIData
+  - name: royphilipsveryevil.esp
+    tag:
+      - Actors.ACBS
+      - Actors.AIData
+  - name: royphilipsveryevilwmask.esp
+    tag:
+      - Actors.ACBS
+      - Actors.AIData
+  - name: royphilipsevilwmask.esp
+    tag:
+      - Actors.ACBS
+      - Actors.AIData
+  - name: Wasteland Gigolo.esp
+    tag:
+      - Scripts
+  - name: Arefu Player House.esp
+    msg:
+      - type: say
+        content: "Incompatible with: ArefuExpandedByAzar.esm"
+  - name: B72v3-03.esp
+    msg:
+      - type: say
+        content: "Requires: Bunker72 v3.esm"
+  - name: B72v3 Clutterfree.esp
+    msg:
+      - type: say
+        content: "Requires: Bunker72 v3.esm"
+  - name: B72v3 Mainelevator timerswitch.esp
+    msg:
+      - type: say
+        content: "Requires: Bunker72 v3.esm"
+  - name: DCStreet.esp
+    msg:
+      - type: say
+        content: Only use DCStreet.esp or DCStreet - BS.esp - NOT Both
+  - name: DCStreet - BS.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: Only use DCStreet.esp or DCStreet - BS.esp - NOT Both
+  - name: More2Megaton.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+  - name: Megaton House and Theme Overhaul_SY.esp
+    msg:
+      - type: say
+        content: "Requires: FNNsys.esm"
+      - type: say
+        content: "Requires: Megaton House and Theme Overhaul.esp"
+  - name: Megaton Walkway.esp
+    msg:
+      - type: say
+        content: Obsolete upgrade to Megaton Walkway 1.01.esp
+  - name: megaton_lighting.esp
+    tag:
+      - C.Light
+  - name: MegatonLights.esp
+    tag:
+      - C.Light
+  - name: megalight.esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+      - type: say
+        content: "Needs TES4Edit cleaning: \"http://cs.elderscrolls.com/index.php?title=TES4Edit_Cleaning_Guide\""
+  - name: Riverboat Landing Merchant.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.esm"
+  - name: Rivet City Merchants With Point Lookout.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.esm"
+  - name: Towers Hill.esp
+    tag:
+      - Invent
+  - name: TheSKINNYwearShopDC.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+  - name: TunnelOutpost.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.esm"
+  - name: UndergroundHideout_SY.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Requires: ThePitt.esm"
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Requires: Zeta.esm"
+      - type: say
+        content: "Requires: FNNsys.esm"
+      - type: say
+        content: "Requires: UndergroundHideout.esp"
+  - name: DALCO Fixes for Underground Hideout.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: UndergroundHideout.esp"
+  - name: DALCO Inventory Sorter - Underground Hideout (Fallout 3 & All DLCs).esp
+    tag:
+      - Names
+      - NoMerge
+  - name: Vault 89 (player home) V1-35.esp
+    msg:
+      - type: say
+        content: "Incompatible with: FNNSys.esm"
+    tag:
+      - Scripts
+  - name: BA_WastelandRestoration_DLCs.esp
+    msg:
+      - type: say
+        content: "Requires: BA_WastelandRestoration.esp"
+  - name: FOOK2 - Main.esp
+    msg:
+      - type: error
+        content: FOOK2 - Main.esm is missing.
+        condition: file("FOOK2 - Main.esm")
+      - type: say
+        content: "Requires: CALIBR.ESM and FOOK2 - Main.ESM"
+    tag:
+      - Delev
+      - Relev
+  - name: FOOK2 - [EVE] Energy Visuals Enhanced.esp
+    msg:
+      - type: say
+        content: "Requires: FOOK2 - Main.ESM"
+      - type: error
+        content: Remove if using FOOK2 1.1 and above
+        condition: file("FOOK2 - Main.esm")
+  - name: FOOK2 - [DIK] DLC Improvement Kit.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.ESM"
+      - type: say
+        content: "Requires: ThePitt.ESM"
+      - type: say
+        content: "Requires: BrokenSteel.ESM"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Requires: CALIBR.ESM"
+      - type: say
+        content: "Requires: and FOOK2 - Main.ESM"
+  - name: FOOK2 - Mothership Zeta.esp
+    msg:
+      - type: say
+        content: "Requires: FOOK2 - Main.ESM and Zeta.ESM"
+  - name: FOOK2 - Main [Hotfix].esp
+    msg:
+      - type: error
+        content: Please update to FOOK2 1.1 Open Beta 2
+        condition: file("FOOK2 - Main.esm")
+  - name: FOOK2 - DIK [Hotfix].esp
+    msg:
+      - type: error
+        content: Please update to FOOK2 1.1 Open Beta 2
+        condition: file("FOOK2 - Main.esm")
+  - name: MyFOOK2 - Color Tranquility Lane.esp
+    msg:
+      - type: error
+        content: Remove if using FOOK2 1.1 and above
+        condition: file("FOOK2 - Main.esm")
+  - name: MyFOOK2 - No Nightvision on Power Helmets.esp
+    msg:
+      - type: say
+        content: "Requires: FOOK2 - Main.ESM"
+      - type: error
+        content: Remove if using FOOK2 1.1 and above
+        condition: file("FOOK2 - Main.esm")
+  - name: MyFOOK2 - No RAPE Victims.esp
+    msg:
+      - type: say
+        content: "Requires: FOOK2 - Main.ESM"
+      - type: error
+        content: Remove if using FOOK2 1.1 and above
+        condition: file("FOOK2 - Main.esm")
+  - name: MyFOOK2 - S.H.A.D.E.esp
+    msg:
+      - type: say
+        content: "Requires: FOOK2 - Main.ESM"
+      - type: error
+        content: Remove if using FOOK2 1.1 and above
+        condition: file("FOOK2 - Main.esm")
+  - name: MyFOOK2 - Black & White Tranquility Lane.esp
+    msg:
+      - type: say
+        content: "Requires: FOOK2 - Main.ESM"
+      - type: error
+        content: Remove if using FOOK2 1.1 and above
+        condition: file("FOOK2 - Main.esm")
+  - name: FOOK2 - [DESTRUCTION] Main.esp
+    msg:
+      - type: say
+        content: "Requires: FOOK2 - Main.ESM"
+    tag:
+      - Destructible
+      - Scripts
+  - name: FOOK2 - [DESTRUCTION] Main - Statics.esp
+    msg:
+      - type: say
+        content: "Requires: FOOK2 - Main.ESM"
+  - name: FOOK2 - [DESTRUCTION] DIK.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.ESM"
+      - type: say
+        content: "Requires: ThePitt.ESM"
+      - type: say
+        content: "Requires: BrokenSteel.ESM"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Requires: CALIBR.ESM"
+      - type: say
+        content: "Requires: and FOOK2 - Main.ESM"
+    tag:
+      - Destructible
+      - Scripts
+  - name: FOOK2 - [DESTRUCTION] DIK - Statics.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.ESM"
+      - type: say
+        content: "Requires: ThePitt.ESM"
+      - type: say
+        content: "Requires: BrokenSteel.ESM"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Requires: CALIBR.ESM"
+      - type: say
+        content: "Requires: and FOOK2 - Main.ESM"
+  - name: FOOK2 - [DESTRUCTION] Mothership Zeta.esp
+    msg:
+      - type: say
+        content: "Requires: FOOK2 - Main.ESM and Zeta.ESM"
+    tag:
+      - Destructible
+      - Scripts
+  - name: FOOK2 - [DESTRUCTION] Mothership Zeta - Statics.esp
+    msg:
+      - type: say
+        content: "Requires: FOOK2 - Main.ESM and Zeta.ESM"
+  - name: WeightAmmo.esp
+    msg:
+      - type: say
+        content: "Requires: CALIBR.esm"
+      - type: say
+        content: "Requires: FOOK2 - Main.esm"
+  - name: FPS Grenade Hotkey - FOOK2.esp
+    msg:
+      - type: error
+        content: Remove if using FOOK2 1.1 and above
+        condition: file("FOOK2 - Main.esm")
+  - name: FPS Grenade Hotkey - FOOK2 DIK.esp
+    msg:
+      - type: error
+        content: Remove if using FOOK2 1.1 and above
+        condition: file("FOOK2 - Main.esm")
+  - name: Apocalypse Armory.esp
+    tag:
+      - Delev
+      - Graphics
+      - Invent
+      - Names
+      - Relev
+      - Sound
+      - Stats
+  - name: Apocalypse Armory - CALIBR.esp
+    msg:
+      - type: say
+        content: "Requires: CALIBR.ESM"
+    tag:
+      - Delev
+      - Relev
+  - name: Apocalypse Armory - xCALIBR.esp
+    msg:
+      - type: say
+        content: "Requires: xCALIBR.ESM"
+    tag:
+      - Deflst
+      - Names
+      - Stats
+  - name: Apocalypse Armory Preview - Grenades.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Apocalypse Armory.esp"
+      - type: say
+        content: Included in Apocalypse Armory
+  - name: Apocalypse Armory - DLC Enhancements.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.ESM"
+  - name: Apocalypse Armory - Grenade Hotkeys.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Apocalypse Armory - Grenade Hotkeys for DLC.esp"
+      - type: say
+        content: "Requires: FPS Grenade Hotkey.esp"
+  - name: Apocalypse Armory - Grenade Hotkeys for DLC.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Apocalypse Armory - Grenade Hotkeys.esp"
+      - type: say
+        content: "Requires: FPS Grenade Hotkey.esp"
+  - name: AA - FWE + DMG Replacement.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Apocalypse Armory - Grenade Hotkeys.esp"
+      - type: say
+        content: "Incompatible with: Apocalypse Armory + WMK.esp"
+  - name: GSoS - FOOK2 Open Beta - Combat and Sneaking Overhaul.esp
+    msg:
+      - type: error
+        content: Old, please update to the latest version
+        condition: file("FOOK2 - Main.esm")
+  - name: GSoS - FOOK2 Open Beta - XP Tag Perks.esp
+    msg:
+      - type: error
+        content: Old, please update to the latest version
+        condition: file("FOOK2 - Main.esm")
+  - name: FO3 Wanderers Edition - Main File.esp
+    tag:
+      - Actors.ACBS
+      - Actors.AIData
+      - Actors.AIPackages
+      - Actors.CombatStyle
+      - Actors.Stats
+      - Deflst
+      - Delev
+      - Destructible
+      - Graphics
+      - Invent
+      - Names
+      - Relev
+      - Scripts
+      - Stats
+  - name: DALCO Inventory Sorter - FWE (Main File).esp
+    tag:
+      - Names
+      - NoMerge
+  - name: FO3 Wanderers Edition - DLC Anchorage.esp
+    tag:
+      - Deflst
+  - name: DALCO Inventory Sorter - FWE (Operation Anchorage).esp
+    tag:
+      - Names
+      - NoMerge
+  - name: DALCO Inventory Sorter - FWE (The Pitt).esp
+    tag:
+      - Names
+      - NoMerge
+  - name: DALCO Inventory Sorter - FWE (Broken Steel).esp
+    tag:
+      - Names
+      - NoMerge
+  - name: FO3 Wanderers Edition - DLC Point Lookout.esp
+    tag:
+      - Delev
+      - Relev
+  - name: DALCO Inventory Sorter - FWE (Point Lookout).esp
+    tag:
+      - Names
+      - NoMerge
+  - name: DALCO Inventory Sorter - FWE (Mothership Zeta).esp
+    tag:
+      - Names
+      - NoMerge
+  - name: DALCO Inventory Sorter - FWE (Alternate Travel).esp
+    tag:
+      - Names
+      - NoMerge
+  - name: FO3 Wanderers Edition - Lvl 30 Balance.esp
+    msg:
+      - type: say
+        content: "Incompatible with: FO3 Wanderers Edition - Lvl 30 More Skills.esp"
+  - name: FO3 Wanderers Edition - Lvl 30 More Skills.esp
+    msg:
+      - type: say
+        content: "Incompatible with: FO3 Wanderers Edition - Lvl 30 Balance.esp"
+  - name: FO3 Wanderers Edition - Followers Enhanced.esp
+    msg:
+      - type: say
+        content: "Incompatible with: FO3 Wanderers Edition - Followers Enhanced (BrokenSteel).esp"
+    tag:
+      - Actors.ACBS
+      - Actors.AIData
+      - Actors.Stats
+  - name: DALCO Inventory Sorter - FWE (Followers Enh).esp
+    tag:
+      - Names
+      - NoMerge
+  - name: FO3 Wanderers Edition - Followers Enhanced (BrokenSteel).esp
+    msg:
+      - type: say
+        content: "Incompatible with: FO3 Wanderers Edition - Followers Enhanced.esp"
+    tag:
+      - Actors.ACBS
+      - Actors.AIData
+      - Actors.Stats
+  - name: DALCO Inventory Sorter - FWE (Followers Enh (BrS)).esp
+    tag:
+      - Names
+      - NoMerge
+  - name: FO3 Wanderers Edition - Optional Free Play After MQ.esp
+    msg:
+      - type: say
+        content: "Incompatible with: BrokenSteel.esm"
+  - name: FO3 Wanderers Edition - Optional Free Play After Mainquest.esp
+    msg:
+      - type: say
+        content: "Incompatible with: BrokenSteel.esm"
+  - name: FO3 Wanderers Edition - Optional No Fast Travel.esp
+    msg:
+      - type: say
+        content: "Incompatible with: FO3 Wanderers Edition - Alternate Travel.esp"
+  - name: FO3 Wanderers Edition - Optional Worn Weapons.esp
+    tag:
+      - Delev
+      - Relev
+  - name: FO3 Wanderers Edition - FOOK Support.esp
+    msg:
+      - type: say
+        content: Check for updates; you may have the old version installed.
+  - name: DarNifiedUIF3_FWE.esp
+    msg:
+      - type: say
+        content: Do not use with latest FWE, it is already integrated.
+  - name: FO3 Wanderers Edition - Project Beauty (HD Addition).esp
+    msg:
+      - type: say
+        content: "Requires: Project Beauty HD version.esm"
+      - type: say
+        content: "Incompatible with: Project Beauty.esp"
+  - name: FO3 Wanderers Edition - Talon Loot Crash Fix.esp
+    msg:
+      - type: say
+        content: "Requires: CALIBR"
+    tag:
+      - Delev
+      - Relev
+  - name: RH_FWE_Bridge.esp
+    msg:
+      - type: say
+        content: "Requires: CRAFT.esm"
+      - type: say
+        content: "Requires: CALIBR.esm"
+      - type: say
+        content: "Requires: RH_IRONSIGHTS.esm"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+  - name: DLM_FWE Medic PA FWE only required.esp
+    msg:
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+  - name: DLM_FWE Medic PA FWE+Zeta required.esp
+    msg:
+      - type: say
+        content: "Requires: Zeta.ESM"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+  - name: MZC-FWE_CP.esp
+    msg:
+      - type: say
+        content: "Requires: Zeta.ESM"
+      - type: say
+        content: "Requires: CRAFT.ESM"
+      - type: say
+        content: "Requires: CALIBR.ESM"
+      - type: say
+        content: "Requires: Mothership Crew.ESM"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+  - name: FWE_Overhaul Kit - Main.esp
+    msg:
+      - type: say
+        content: Outdated. Update to latest version of FWE - Combat Overhaul
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+      - type: say
+        content: "Requires: RH_IronSights resources"
+      - type: say
+        content: "Incompatible with: Weapon Mod Kits"
+      - type: say
+        content: "Incompatible with: EVE"
+      - type: say
+        content: "Incompatible with: RH IronSights Basic VanillaPlugin.esp"
+    tag:
+      - Actors.ACBS
+      - Deflst
+      - Delev
+      - Graphics
+      - Invent
+      - Names
+      - Relev
+      - Sound
+      - Stats
+  - name: FWE_Overhaul Kit - Core.esp
+    msg:
+      - type: say
+        content: Outdated. Update to latest version of FWE - Combat Overhaul
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+      - type: say
+        content: "Requires: RH_IronSights resources"
+      - type: say
+        content: "Incompatible with: Weapon Mod Kits"
+      - type: say
+        content: "Incompatible with: EVE"
+      - type: say
+        content: "Incompatible with: RH IronSights Basic VanillaPlugin.esp"
+  - name: FWE_Overhaul Kit - Equipment .esp
+    msg:
+      - type: say
+        content: Outdated. Update to latest version of FWE - Combat Overhaul
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+      - type: say
+        content: "Requires: RH_IronSights resources"
+      - type: say
+        content: "Incompatible with: Weapon Mod Kits"
+      - type: say
+        content: "Incompatible with: EVE"
+      - type: say
+        content: "Incompatible with: RH IronSights Basic VanillaPlugin.esp"
+    tag:
+      - Actors.ACBS
+      - Deflst
+      - Delev
+      - Graphics
+      - Invent
+      - Names
+      - Relev
+      - Scripts
+      - Sound
+      - Stats
+  - name: FWE - Combat Overhaul_Equipment.esp
+    msg:
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+      - type: say
+        content: "Requires: RH_IronSights resources"
+      - type: say
+        content: "Incompatible with: Weapon Mod Kits"
+      - type: say
+        content: "Incompatible with: EVE"
+      - type: say
+        content: "Incompatible with: RH IronSights Basic VanillaPlugin.esp"
+    tag:
+      - Actors.ACBS
+      - Deflst
+      - Delev
+      - Graphics
+      - Invent
+      - Names
+      - Relev
+      - Scripts
+      - Sound
+      - Stats
+  - name: FWE weapons pack.esp
+    msg:
+      - type: say
+        content: "Requires: CRAFT.ESM"
+      - type: say
+        content: "Requires: CALIBR.ESM"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+  - name: FWE_xCAL_ammoweight.esp
+    msg:
+      - type: say
+        content: "Requires: CRAFT.esm"
+      - type: say
+        content: "Requires: CALIBR.esm"
+      - type: say
+        content: "Requires: xCALIBR.esm"
+      - type: say
+        content: "Requires: xCALIBRuniverse.esm"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+  - name: FWE-COL-Enclave-compatibilitypatch.esp
+    msg:
+      - type: say
+        content: "Requires: CRAFT.esm"
+      - type: say
+        content: "Requires: CALIBR.esm"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esp"
+  - name: FWE-COL-Enclave-compatibilitypatch-new-tesla-helmet-addon_updated.esp
+    msg:
+      - type: say
+        content: "Requires: CRAFT.esm"
+      - type: say
+        content: "Requires: CALIBR.esm"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+      - type: say
+        content: "Requires: FWE-COL-Enclave-compatibilitypatch.esp"
+  - name: FWE-COL-Enclave-compatibilitypatch-hellfireaddon.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: CRAFT.esm"
+      - type: say
+        content: "Requires: CALIBR.esm"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esp"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - DLC Broken Steel.esp"
+      - type: say
+        content: "Requires: FWE-COL-Enclave-compatibilitypatch.esp"
+  - name: FWE-COL-Brotherhood-compatibilitypatch.esp
+    msg:
+      - type: say
+        content: "Requires: CRAFT.esm"
+      - type: say
+        content: "Requires: CALIBR.esm"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esp"
+  - name: FWE-COL-Outcast-compatibilitypatch.esp
+    msg:
+      - type: say
+        content: "Requires: CRAFT.esm"
+      - type: say
+        content: "Requires: CALIBR.esm"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esp"
+  - name: Refurbishes [ALL].esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+  - name: Refurbish [OA].esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+      - type: say
+        content: "Incompatible with: Refurbishes [ALL].esp"
+  - name: Refurbish [OA] - FWE.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Refurbishes [ALL].esp"
+  - name: Refurbish [TP].esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+      - type: say
+        content: "Incompatible with: Refurbishes [ALL].esp"
+  - name: Refurbish [BS].esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+      - type: say
+        content: "Incompatible with: Refurbishes [ALL].esp"
+  - name: Refurbish [PL].esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+      - type: say
+        content: "Incompatible with: Refurbishes [ALL].esp"
+  - name: Refurbish [MZ].esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+      - type: say
+        content: "Incompatible with: Refurbishes [ALL].esp"
+  - name: Tailor Maid Anchorage.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.ESM"
+  - name: Tailor Maid PITT.esp
+    msg:
+      - type: say
+        content: "Requires: ThePitt.ESM"
+  - name: Tailor Maid Brokensteel.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.ESM"
+  - name: Tailor Maid ZETA.esp
+    msg:
+      - type: say
+        content: "Requires: Zeta.ESM"
+  - name: WeaponModKits.esp
+    tag:
+      - Actors.AIData
+      - Delev
+      - Invent
+      - Names
+      - Relev
+  - name: DALCO Inventory Sorter - Weapon Mod Kits (Base).esp
+    tag:
+      - Names
+      - NoMerge
+  - name: WeaponModKits - FWE Master Release.esp
+    tag:
+      - Deflst
+      - Names
+      - Relev
+  - name: WeaponModKits - FWE Optional Worn Weapons.esp
+    tag:
+      - Delev
+  - name: DALCO Inventory Sorter - WMK - FWE Master Release.esp
+    tag:
+      - Names
+      - NoMerge
+  - name: WeaponModKits - OperationAnchorage.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.ESM"
+  - name: DALCO Inventory Sorter - Weapon Mod Kits (DLC Anchorage).esp
+    tag:
+      - Names
+      - NoMerge
+  - name: DALCO Inventory Sorter - WMK - FWE (DLC Anchorage).esp
+    tag:
+      - Names
+      - NoMerge
+  - name: WeaponModKits - ThePitt.esp
+    msg:
+      - type: say
+        content: "Requires: ThePitt.ESM"
+  - name: DALCO Inventory Sorter - Weapon Mod Kits (DLC ThePitt).esp
+    tag:
+      - Names
+      - NoMerge
+  - name: DALCO Inventory Sorter - WMK - FWE (DLC ThePitt).esp
+    tag:
+      - Names
+      - NoMerge
+  - name: WeaponModKits - BrokenSteel.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.ESM"
+  - name: DALCO Inventory Sorter - Weapon Mod Kits (DLC BrS).esp
+    tag:
+      - Names
+      - NoMerge
+  - name: DALCO Inventory Sorter - WMK - FWE (DLC BrS).esp
+    tag:
+      - Names
+      - NoMerge
+  - name: WeaponModKits - PointLookout.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.ESM"
+  - name: DALCO Inventory Sorter - Weapon Mod Kits (DLC PointLookout).esp
+    tag:
+      - Names
+      - NoMerge
+  - name: DALCO Inventory Sorter - WMK - FWE (DLC PointLookout).esp
+    tag:
+      - Names
+      - NoMerge
+  - name: WeaponModKits - Zeta.esp
+    msg:
+      - type: say
+        content: "Requires: Zeta.ESM"
+  - name: DALCO Inventory Sorter - Weapon Mod Kits (DLC Zeta).esp
+    tag:
+      - Names
+      - NoMerge
+  - name: DALCO Inventory Sorter - WMK - FWE (DLC Zeta).esp
+    tag:
+      - Names
+      - NoMerge
+  - name: CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp
+    msg:
+      - type: say
+        content: Only use ONE CRAFTable_WMKs esp file
+    tag:
+      - Invent
+  - name: CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp
+    msg:
+      - type: say
+        content: Only use ONE CRAFTable_WMKs esp file
+    tag:
+      - Invent
+  - name: CRAFTable_WMKs_skill_requirements_lead_pipe.esp
+    msg:
+      - type: say
+        content: Only use ONE CRAFTable_WMKs esp file
+    tag:
+      - Invent
+  - name: CRAFTable_WMKs.esp
+    msg:
+      - type: say
+        content: Only use ONE CRAFTable_WMKs esp file
+    tag:
+      - Invent
+  - name: CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp
+    msg:
+      - type: say
+        content: Only use ONE CRAFTable_WMKs esp file
+    tag:
+      - Invent
+  - name: CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp
+    msg:
+      - type: say
+        content: Only use ONE CRAFTable_WMKs esp file
+    tag:
+      - Invent
+  - name: CRAFTable_WMKs_lead_pipe.esp
+    msg:
+      - type: say
+        content: Only use ONE CRAFTable_WMKs esp file
+    tag:
+      - Invent
+  - name: CRAFTable_WMKs_skill_req_Amodeus.esp
+    msg:
+      - type: say
+        content: Only use ONE CRAFTable_WMKs esp file
+    tag:
+      - Invent
+  - name: T3T_WMK1.esp
+    tag:
+      - Deflst
+      - Stats
+  - name: UH-FWE-WMK-DLC.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Requires: ThePitt.esm"
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Requires: Zeta.esm"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - DLC Broken Steel.esp"
+      - type: say
+        content: "Requires: UndergroundHideout.esp"
+      - type: say
+        content: "Requires: WeaponModKits.esp"
+      - type: say
+        content: "Requires: WeaponModKits - FWE Master Release.esp"
+      - type: say
+        content: "Requires: WeaponModKits - OperationAnchorage.esp"
+      - type: say
+        content: "Requires: WeaponModKits - ThePitt.esp"
+      - type: say
+        content: "Requires: WeaponModKits - BrokenSteel.esp"
+      - type: say
+        content: "Requires: WeaponModKits - PointLookout.esp"
+      - type: say
+        content: "Requires: WeaponModKits - Zeta.esp"
+  - name: 20th Century Weapons Non-Changing Weapon Conditions.esp
+    msg:
+      - type: say
+        content: "Requires: CALIBR.esm"
+      - type: say
+        content: "Requires: 20th Century Weapons.esm"
+  - name: 3EFskewer.esp
+    tag:
+      - Stats
+  - name: 44Magnum.esp
+    tag:
+      - Deflst
+      - Stats
+  - name: 7_ISA -ec 20th Century Weapons v3.1.esp
+    msg:
+      - type: say
+        content: "Requires: CALIBR"
+      - type: say
+        content: "Requires: 20th Century Weapons.esm"
+  - name: 7_HolsterForHandGunsV1_1.esp
+    tag:
+      - Invent
+  - name: Accurate Assault Rifles 1.2.esp
+    tag:
+      - Stats
+  - name: AddWanda_v2_blk_eot.esp
+    tag:
+      - Invent
+  - name: AlexScorpion's  and Weijiesen's Smoking Fun.esp
+    tag:
+      - Invent
+  - name: AlexScorpion's and Weijiesen's Smoking Fun.esp
+    tag:
+      - Invent
+  - name: alienblasterammo.esp
+    tag:
+      - Stats
+  - name: Ammo Press Calibrified.esp
+    msg:
+      - type: say
+        content: "Requires: ThePitt.esm"
+      - type: say
+        content: "Requires: CALIBR.esm"
+  - name: Arms_dealer_V1.esp
+    msg:
+      - type: say
+        content: "Incompatible with: RH_IRONSIGHTS.esm"
+      - type: say
+        content: "Requires: CALIBR.esm"
+  - name: A_D_Calibr_ammo.esp
+    msg:
+      - type: say
+        content: "Requires: Arms_dealer_V1.esp"
+  - name: ColtM4Carbines_RHIronSights.esp
+    tag:
+      - Graphics
+  - name: Drone Cannon Fix.esp
+    tag:
+      - Graphics
+  - name: EWE Supermutant Energy Weapons.esp
+    tag:
+      - Relev
+  - name: H.E.R.K. - GOTY.esp
+    msg:
+      - type: say
+        content: "Incompatible with: H.E.R.K. - GOTY & WMK.esp"
+  - name: H.E.R.K. - GOTY & WMK.esp
+    msg:
+      - type: say
+        content: "Incompatible with: H.E.R.K. - GOTY.esp"
+      - type: say
+        content: "Requires: WeaponModKits.esp"
+  - name: laserPistolRetextured-IronSightsPatch.esp
+    tag:
+      - Graphics
+  - name: laserRifleRetexturedScoped.esp
+    tag:
+      - Graphics
+  - name: laserRifleRetextured-IronSightsPatch.esp
+    tag:
+      - Graphics
+  - name: laserScatterGunRetextured.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+    tag:
+      - Graphics
+  - name: More308Ammo.esp
+    tag:
+      - Relev
+  - name: Playing With Firepower.esp
+    msg:
+      - type: say
+        content: "Requires: CRAFT.esm"
+  - name: RimfireRevolver.esp
+    msg:
+      - type: say
+        content: "Incompatible with: RimfireRevolverCommon.esp"
+  - name: RimfireRevolverCommon.esp
+    msg:
+      - type: say
+        content: "Incompatible with: RimfireRevolver.esp"
+  - name: Saiga-12 Combat Shotgun Override Operation Anchorage.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+  - name: Saiga-12 Combat Shotgun Override Broken Steel.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+  - name: Saiga-12 Combat Shotgun Override The Pitt.esp
+    msg:
+      - type: say
+        content: "Requires: ThePitt.esm"
+  - name: Silenced DKS-501.esp
+    tag:
+      - Deflst
+      - Invent
+      - Names
+      - Relev
+      - Stats
+  - name: Tactical Weapons by gRs Frederyck.esp
+    tag:
+      - Invent
+  - name: Tactical Weapons-Calibr-V3 762 fix.esp
+    msg:
+      - type: say
+        content: "Requires: CALIBR.esm"
+      - type: say
+        content: Requires Tactical Weapons by gRs Frederyck.esp resources, but not the esp file
+    tag:
+      - Invent
+  - name: frederyck calibr fix-excalibrified.esp
+    tag:
+      - Invent
+  - name: WattzLasers.esp
+    tag:
+      - Delev
+      - Relev
+      - Stats
+  - name: WieldableTorches (Main).esp
+    msg:
+      - type: say
+        content: "Incompatible with: Wieldable Torches (Optional).esp"
+  - name: Wieldable Torches (Optional).esp
+    msg:
+      - type: say
+        content: "Incompatible with: WieldableTorches (Main).esp"
+  - name: WMKAA12Shotgun.esp
+    tag:
+      - Graphics
+  - name: DALCO Inventory Sorter - WMKAA12Shotgun.esp
+    tag:
+      - Names
+      - NoMerge
+  - name: WMMP_Install.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Requires: ThePitt.esm"
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: Zeta.esm"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Requires: WMMP_Master.esp"
+  - name: WMMP_AMA [Swamp Folk].esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Requires: ThePitt.esm"
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: Zeta.esm"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Requires: WMMP_Master.esp"
+  - name: WMMP_AMA [Mutants].esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Requires: ThePitt.esm"
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: Zeta.esm"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Requires: WMMP_Master.esp"
+  - name: WMMP_AMA [Mutants][FWE5].esp
+    msg:
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Requires: ThePitt.esm"
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: Zeta.esm"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Requires: WMMP_Master.esp"
+  - name: WMMP_AMA [Mutants][20CWv5].esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Requires: CALIBR.esm"
+      - type: say
+        content: "Requires: 20th Century Weapons.esm"
+      - type: say
+        content: "Requires: ThePitt.esm"
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: Zeta.esm"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Requires: WMMP_Master.esp"
+  - name: xCALIBRmunitions.esp
+    tag:
+      - Delev
+      - Relev
+  - name: "[DC RANGER ARSENAL v3] - DLC GEAR.esp"
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+    tag:
+      - Deflst
+  - name: Advanced Recon Tech - Detect Traps.esp
+    msg:
+      - type: say
+        content: "Requires: Detect Traps.esm"
+      - type: say
+        content: "Requires: Advanced Recon Tech.esm"
+  - name: BBBackpacks-v1-1.esp
+    tag:
+      - Stats
+  - name: BnB special armors.esp
+    tag:
+      - Invent
+      - Relev
+  - name: BoS_DX.esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+      - type: say
+        content: Old. Upgrade to latest version.
+    tag:
+      - Graphics
+  - name: BoSDX.esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+    tag:
+      - Graphics
+  - name: WinterizedT51bDX.esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+    tag:
+      - Graphics
+  - name: Outcast DX.esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+    tag:
+      - Graphics
+  - name: Outcast DX - FWE patch.esp
+    msg:
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+    tag:
+      - Graphics
+  - name: Tribal_DX.esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+    tag:
+      - Deflst
+      - Graphics
+  - name: BoS_FOOKedition_Armor.esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+    tag:
+      - Graphics
+  - name: Cat Outfit Fanged.esp
+    msg:
+      - type: say
+        content: Use either 'Cat Outfit Fanged.esp' or 'Cat Outfit Only.esp', not both.
+    tag:
+      - Eyes
+  - name: Cat Outfit Only.esp
+    msg:
+      - type: say
+        content: Use either 'Cat Outfit Fanged.esp' or 'Cat Outfit Only.esp', not both.
+    tag:
+      - Eyes
+  - name: clearhelmets4radsuits.esp
+    tag:
+      - Graphics
+  - name: Colossus Tesla Armor.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+  - name: COL Enclave VER2.esp
+    tag:
+      - Graphics
+  - name: COL Enclave Hell.esp
+    tag:
+      - Graphics
+  - name: COW-CustamArmor.esp
+    msg:
+      - type: say
+        content: "Requires: EnhancedChildren.esm"
+      - type: say
+        content: "Requires: AliciasCuteShop.esm"
+  - name: OAFeminizedPowerArmor.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+  - name: TPFeminizedPowerArmor.esp
+    msg:
+      - type: say
+        content: "Requires: ThePitt.esm"
+  - name: FO3-Closing-merged.esp
+    msg:
+      - type: say
+        content: "Incompatible with: FO3Tona.esp"
+      - type: say
+        content: "Incompatible with: FO3Western.esp"
+      - type: say
+        content: "Incompatible with: FO3Ayumi.esp"
+      - type: say
+        content: "Incompatible with: FO3Fate.esp"
+      - type: say
+        content: "Incompatible with: FO3Moon.esp"
+      - type: say
+        content: "Incompatible with: FO3Nami.esp"
+  - name: jonasclothesnonrplcr.esp
+    msg:
+      - type: say
+        content: Choose only one of jonasclothesnonrplcr.esp or jonasclothesreplacer.esp, not both.
+  - name: jonasclothesreplacer.esp
+    msg:
+      - type: say
+        content: Choose only one of jonasclothesnonrplcr.esp or jonasclothesreplacer.esp, not both.
+  - name: K2_ArmorsRedone_Raiders.esp
+    tag:
+      - Graphics
+  - name: K2_GirlieGirlVaultBabe.esp
+    tag:
+      - Invent
+  - name: LNC StealthSuit.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+  - name: ModBetterPArmorVanilla.esp
+    tag:
+      - Stats
+  - name: ModBetterPArmorAnchorage.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+    tag:
+      - Stats
+  - name: ModBetterPArmorPitt.esp
+    msg:
+      - type: say
+        content: "Requires: ThePitt.esm"
+    tag:
+      - Stats
+  - name: ModBetterPArmorSteel.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+    tag:
+      - Stats
+  - name: DALCO Inventory Sorter - IGM.esp
+    tag:
+      - Names
+      - NoMerge
+  - name: PPA - Operation Anchorage.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+  - name: PPA - Broken Steel.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+  - name: PPA - The Pitt.esp
+    msg:
+      - type: say
+        content: "Requires: ThePitt.esp"
+  - name: PPA - Mothership Zeta.esp
+    msg:
+      - type: say
+        content: "Requires: Zeta.esm"
+  - name: PPA - FWE.esp
+    msg:
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+  - name: PPA - Super Human Jump Perk.esp
+    msg:
+      - type: say
+        content: "Requires: super_jump_perk.esp"
+  - name: PPA - Ambient Temperature.esp
+    msg:
+      - type: say
+        content: "Requires: Ambient Temperature.esm"
+      - type: say
+        content: "Requires: Powered Power Armor.esp"
+  - name: PPA - IMCN.esp
+    msg:
+      - type: say
+        content: "Requires: IMCN.esm"
+      - type: say
+        content: "Requires: Powered Power Armor.esp"
+  - name: Raider Combat Armor Pitt.esp
+    msg:
+      - type: say
+        content: "Requires: ThePitt.esm"
+  - name: RD_ElderLyonsRobe.esp
+    tag:
+      - Graphics
+  - name: SimpleEyePatch.esp
+    tag:
+      - Eyes
+      - Invent
+  - name: Tesla Metal Armor.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Tesla Metal Armor (Extended).esp"
+      - type: say
+        content: "Incompatible with: Tesla Light Armor Redone.esp"
+  - name: Tesla Metal Armor (Extended).esp
+    msg:
+      - type: say
+        content: "Incompatible with: Tesla Metal Armor.esp"
+      - type: say
+        content: "Incompatible with: Tesla Light Armor Redone.esp"
+  - name: Tesla Light Armor Redone.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Tesla Metal Armor (Extended).esp"
+      - type: say
+        content: "Incompatible with: Tesla Metal Armor.esp"
+  - name: Thermoptic PowerArmor Helmets.esp
+    msg:
+      - type: say
+        content: "Requires: Thermal Vision.esm"
+  - name: Thermoptic Glasses.esp
+    msg:
+      - type: say
+        content: "Requires: Thermal Vision.esm"
+  - name: Test-Weapon_additional armor.esp
+    tag:
+      - Invent
+  - name: vaultgirlrp.esp
+    tag:
+      - Graphics
+      - Invent
+  - name: WasteWearGloves.esp
+    tag:
+      - Relev
+  - name: Sparkling Eyes.esp
+    msg:
+      - type: say
+        content: "Requires: HairPack.esm"
+  - name: SparklingEyes for Eyelashes and HairPack Fix for MMM.esp
+    msg:
+      - type: say
+        content: "Requires: Sparkling Eyes.esp"
+  - name: LingsFinerThings.esp
+    msg:
+      - type: say
+        content: Obselete update to latest version (http://fallout3.nexusmods.com/mods/17631/)
+  - name: LingsPrettyThings.esp
+    tag:
+      - Eyes
+      - Hair
+      - Invent
+      - Names
+      - NPC.Class
+      - NPC.Race
+      - NpcFaces
+      - R.Attributes-F
+      - R.Attributes-M
+      - R.Description
+      - R.Head
+      - R.Mouth
+      - R.Teeth
+      - Voice-F
+  - name: xCALIBRuniverse_LingsBrokenSteel.esp
+    tag:
+      - Actors.ACBS
+      - Hair
+      - NpcFaces
+  - name: xCALIBRuniverse_LingsPrettyThings.esp
+    tag:
+      - Actors.ACBS
+      - Invent
+      - NPC.Class
+      - Voice-F
+  - name: Goth Girls Multipack.esp
+    tag:
+      - Eyes
+      - Hair
+      - Invent
+      - NPC.Race
+      - NpcFaces
+  - name: moirared.esp
+    tag:
+      - Invent
+  - name: Reclothing For LPT and Flash.esp
+    msg:
+      - type: say
+        content: Outdated, use latest Wrye Flash version
+    tag:
+      - Invent
+  - name: AutoGates.esp
+    tag:
+      - Scripts
+  - name: CALIBR Ammo Schematics - CRAFT.esp
+    msg:
+      - type: say
+        content: "Incompatible with: xCALIBR_Universe.esp"
+  - name: Ammo_Schematics.esp
+    msg:
+      - type: say
+        content: "Requires: CRAFT.esm"
+  - name: Bobbleheads Begone.esp
+    tag:
+      - Scripts
+  - name: BottleBrahminMilk.esp
+    msg:
+      - type: say
+        content: "Incompatible with: BottleBrahminMilkFWE.esp"
+  - name: BottleBrahminMilkFWE.esp
+    msg:
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+      - type: say
+        content: "Incompatible with: BottleBrahminMilk.esp"
+  - name: CantaburyCommonsGuards.esp
+    tag:
+      - Actors.ACBS
+  - name: CantaburyCommonsGuards - DTO.esp
+    msg:
+      - type: say
+        content: "Requires: Dragonskin Tactical Armor.esp"
+    tag:
+      - Actors.ACBS
+      - Invent
+  - name: Childhood Beginning.esp
+    msg:
+      - type: say
+        content: "Requires: EnhancedChildren.esm"
+  - name: Childhood Beginning v3 Tweaks.esp
+    msg:
+      - type: say
+        content: "Requires: EnhancedChildren.esm"
+  - name: CRAFT Improvised Weaponry - FOOK+FWE.esp
+    msg:
+      - type: say
+        content: "Requires: FOOK+FWE Merger"
+  - name: cyber_meat.esp
+    tag:
+      - Graphics
+  - name: Dread Dogmeat.esp
+    tag:
+      - Scripts
+  - name: Improved Turret Hacking.esp
+    msg:
+      - type: say
+        content: Old. Upgrade to latest version.
+  - name: Improved Turret Hacking - BASE.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Improved Turret Hacking - ALL.esp"
+  - name: Improved Turret Hacking - BS.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Improved Turret Hacking - ALL.esp"
+  - name: Improved Turret Hacking - Pitt.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Improved Turret Hacking - ALL.esp"
+  - name: Improved Turret Hacking - PL.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Improved Turret Hacking - ALL.esp"
+  - name: Improved Turret Hacking - ALL.esp
+    msg:
+      - type: say
+        content: "Requires: ThePitt.ESM"
+      - type: say
+        content: "Requires: BrokenSteel.ESM"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Incompatible with: Improved Turret Hacking - BASE.esp"
+      - type: say
+        content: "Incompatible with: Improved Turret Hacking - BS.esp"
+      - type: say
+        content: "Incompatible with: Improved Turret Hacking - Pitt.esp"
+      - type: say
+        content: "Incompatible with: Improved Turret Hacking - PL.esp"
+  - name: Improved Turret Reprogramming - BASE.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Improved Turret Reprogramming - ALL.esp"
+  - name: Improved Turret Reprogramming - BS.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Improved Turret Reprogramming - ALL.esp"
+  - name: Improved Turret Reprogramming - Pitt.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Improved Turret Reprogramming - ALL.esp"
+  - name: Improved Turret Reprogramming - PL.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Improved Turret Reprogramming - ALL.esp"
+  - name: Improved Turret Reprogramming - ALL.esp
+    msg:
+      - type: say
+        content: "Requires: ThePitt.ESM"
+      - type: say
+        content: "Requires: BrokenSteel.ESM"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Incompatible with: Improved Turret Reprogramming - BASE.esp"
+      - type: say
+        content: "Incompatible with: Improved Turret Reprogramming - BS.esp"
+      - type: say
+        content: "Incompatible with: Improved Turret Reprogramming - Pitt.esp"
+      - type: say
+        content: "Incompatible with: Improved Turret Reprogramming - PL.esp"
+  - name: LaptopTerminalsAnchorage.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+  - name: LaptopTerminalsPointLookout.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.esm"
+  - name: LaptopTerminalsPitt.esp
+    msg:
+      - type: say
+        content: "Requires: ThePitt.esm"
+  - name: LaptopTerminalsBrokenSteel.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+  - name: LaptopTerminalsZeta.esp
+    msg:
+      - type: say
+        content: "Requires: Zeta.esm"
+  - name: Menu Based Hacking & Picking.esp
+    msg:
+      - type: say
+        content: DO not use with latest FWE, it is already integrated.
+  - name: OverMightyGold.esp
+    tag:
+      - Invent
+  - name: More Ammo.esp
+    tag:
+      - Relev
+  - name: More Ammo (Explosive).esp
+    tag:
+      - Relev
+  - name: Slightly More Ammo.esp
+    tag:
+      - Relev
+  - name: Slightly More Ammo (Explosive).esp
+    tag:
+      - Relev
+  - name: Everso Slightly More Ammo.esp
+    tag:
+      - Relev
+  - name: RealFragGrenade.esp
+    msg:
+      - type: say
+        content: upgrade to RealFragGrenade3.esp
+      - type: say
+        content: "Incompatible with: RealFragGrenade3.esp"
+  - name: RealFragGrenade3.esp
+    msg:
+      - type: say
+        content: "Incompatible with: RealFragGrenade.esp"
+  - name: Scavenger World - Updated v0.07.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: Outdated, update to v0.08
+    tag:
+      - Relev
+  - name: Scavenger World - Updated v0.08.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.esm"
+    tag:
+      - Relev
+  - name: Scavenger World - FWE Edition v0.07.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+      - type: say
+        content: Outdated, update to v0.08
+    tag:
+      - Relev
+  - name: Scavenger World - FWE Edition v0.08.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+    tag:
+      - Relev
+  - name: ScavengerWasteland.esp
+    tag:
+      - Actors.AIData
+      - Invent
+      - Relev
+      - Scripts
+  - name: SimpleSmokeo.esp
+    tag:
+      - Actors.AIPackages
+      - Actors.Animations
+      - Delev
+      - Invent
+      - Names
+      - Relev
+  - name: Start_Energy_Weapon.esp
+    tag:
+      - Invent
+  - name: WRK - Plugin.esp
+    tag:
+      - Invent
+      - Relev
+  - name: ZORTS - Content Destruction - Normal.esp
+    msg:
+      - type: say
+        content: "Requires: Zumbs' Overhauled Real Time Security.esm"
+      - type: say
+        content: "Incompatible with: ZORTS - Content Destruction - Extreme.esp"
+  - name: ZORTS - Content Destruction - Extreme.esp
+    msg:
+      - type: say
+        content: "Requires: Zumbs' Overhauled Real Time Security.esm"
+      - type: say
+        content: "Incompatible with: ZORTS - Content Destruction - Normal.esp"
+  - name: ZORTS - Custom HP.esp
+    msg:
+      - type: say
+        content: "Requires: Zumbs' Overhauled Real Time Security.esm"
+      - type: say
+        content: "Incompatible with: ZORTS - Custom HP - FOOK2.esp"
+      - type: say
+        content: "Incompatible with: ZORTS - Custom HP - FWE.esp"
+    tag:
+      - Scripts
+  - name: ZORTS - Custom HP - FOOK2.esp
+    msg:
+      - type: say
+        content: "Requires: Zumbs' Overhauled Real Time Security.esm"
+      - type: say
+        content: "Requires: FOOK2 - Main.esp"
+      - type: say
+        content: "Incompatible with: ZORTS - Custom HP.esp"
+      - type: say
+        content: "Incompatible with: ZORTS - Custom HP - FWE.esp"
+    tag:
+      - Scripts
+  - name: ZORTS - Custom HP - FWE.esp
+    msg:
+      - type: say
+        content: "Requires: Zumbs' Overhauled Real Time Security.esm"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esp"
+      - type: say
+        content: "Incompatible with: ZORTS - Custom HP.esp"
+      - type: say
+        content: "Incompatible with: ZORTS - Custom HP - FOOK2.esp"
+    tag:
+      - Scripts
+  - name: ZORTS - Disable FOOK2 activate.esp
+    msg:
+      - type: say
+        content: "Requires: Zumbs' Overhauled Real Time Security.esm"
+      - type: say
+        content: "Incompatible with: ZORTS - Disable FWE activate.esp"
+  - name: ZORTS - Disable FWE activate.esp
+    msg:
+      - type: say
+        content: "Requires: Zumbs' Overhauled Real Time Security.esm"
+      - type: say
+        content: "Incompatible with: ZORTS - Disable FOOK2 activate.esp"
+  - name: ZORTS - Lockbash only.esp
+    msg:
+      - type: say
+        content: "Requires: Zumbs' Overhauled Real Time Security.esm"
+  - name: ZORTS - Enable minigames.esp
+    msg:
+      - type: say
+        content: "Requires: Zumbs' Overhauled Real Time Security.esm"
+  - name: Zumbs'_Overhauled_Real_Time_Security.esp
+    msg:
+      - type: say
+        content: Please update to latest version.
+  - name: Zumbs'_Overhauled_Real_Time_Security_lockbash_only.esp
+    msg:
+      - type: say
+        content: Please update to latest version.
+  - name: Zumbs'_Overhauled_Real_Time_Security_minigames_enabled.esp
+    msg:
+      - type: say
+        content: Please update to latest version.
+  - name: Companion Core DLC Addon.esp
+    msg:
+      - type: say
+        content: "Requires: Companion Core.esm"
+      - type: say
+        content: "Requires: Anchorage.ESM"
+      - type: say
+        content: "Requires: ThePitt.ESM"
+      - type: say
+        content: "Requires: BrokenSteel.ESM"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Requires: Zeta.esm"
+  - name: Wasteland Whisperer v2 Broken Steel Addon.esp
+    msg:
+      - type: say
+        content: "Requires: Wasteland Whisperer v2.esm"
+  - name: RobCo Certified v2 Version Updater.esp
+    msg:
+      - type: say
+        content: "Requires: RobCo Certified v2.esm"
+  - name: RobCo Certified v2 Mechanist's Edition.esp
+    msg:
+      - type: say
+        content: "Requires: RobCo Certified v2.esm"
+  - name: RobCo Certified v2 Zeta Addon.esp
+    msg:
+      - type: say
+        content: "Requires: RobCo Certified v2.esm"
+  - name: Mr Smith's Scrapyard.esp
+    msg:
+      - type: say
+        content: "Requires: RobCo Certified v2.esm"
+      - type: say
+        content: "Requires: ThePitt.ESM"
+  - name: MarcuzVanishingPiles_EVE_Add.esp
+    msg:
+      - type: say
+        content: "Requires: EVE.esp"
+  - name: Replenishment.esp
+    tag:
+      - Scripts
+  - name: UWWUT.esp
+    msg:
+      - type: say
+        content: "Incompatible with: UWWUT_WT.esp"
+    tag:
+      - Graphics
+  - name: UWWUT - The Pitt Addon.esp
+    msg:
+      - type: say
+        content: "Requires: The Pitt.esm"
+      - type: say
+        content: "Incompatible with: UWWUT_WT - TP Addon.esp"
+    tag:
+      - Graphics
+  - name: UWWUT - Broken Steel Addon.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.ESM"
+      - type: say
+        content: "Incompatible with: UWWUT_WT - BS Addon.esp"
+    tag:
+      - Graphics
+  - name: UWWUT - WMK Addon.esp
+    msg:
+      - type: say
+        content: "Incompatible with: UWWUT_WT - WMK Addon.esp"
+    tag:
+      - Graphics
+  - name: UWWUT_WT.esp
+    msg:
+      - type: say
+        content: "Incompatible with: UWWUT.esp"
+    tag:
+      - Graphics
+      - Stats
+  - name: UWWUT_WT - TP Addon.esp
+    msg:
+      - type: say
+        content: "Requires: The Pitt.esm"
+      - type: say
+        content: "Incompatible with: UWWUT - The Pitt Addon.esp"
+    tag:
+      - Graphics
+      - Stats
+  - name: UWWUT_WT - BS Addon.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.ESM"
+      - type: say
+        content: "Incompatible with: UWWUT - Broken Steel Addon.esp"
+    tag:
+      - Graphics
+      - Stats
+  - name: UWWUT_WT - WMK Addon.esp
+    msg:
+      - type: say
+        content: "Incompatible with: UWWUT - WMK Addon.esp"
+    tag:
+      - Graphics
+      - Stats
+  - name: WeaponModKits-Unique.esp
+    msg:
+      - type: say
+        content: "Requires: WeaponModKits.esp"
+    tag:
+      - Graphics
+  - name: unique_uniques.esp
+    msg:
+      - type: say
+        content: "Incompatible with: unique_uniquesDLC.esp"
+    tag:
+      - Graphics
+  - name: unique_uniquesCut.esp
+    msg:
+      - type: say
+        content: "Incompatible with: unique_uniquesCutDLC.esp"
+    tag:
+      - Graphics
+  - name: unique_uniquesDLC.esp
+    msg:
+      - type: say
+        content: "Incompatible with: unique_uniques.esp"
+    tag:
+      - Graphics
+  - name: unique_uniquesCutDLC.esp
+    msg:
+      - type: say
+        content: "Incompatible with: unique_uniquesCut.esp"
+    tag:
+      - Graphics
+  - name: Less Useless Karma Gifts.esp
+    tag:
+      - Delev
+      - Relev
+  - name: Less Useless Karma Gifts 2.0.esp
+    tag:
+      - Delev
+      - Relev
+  - name: AfrosNukaCola.esp
+    tag:
+      - Graphics
+      - Stats
+  - name: Nuka Cola Enhanced.esp
+    tag:
+      - Graphics
+      - Stats
+  - name: Nuka Cola Enhanced - FWE.esp
+    msg:
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+      - type: say
+        content: "Requires: Nuka Cola Enhanced.esp"
+    tag:
+      - Graphics
+      - Stats
+  - name: Bottle That Water Alternative.esp
+    tag:
+      - Scripts
+      - Stats
+  - name: Bottle That Water Alternative - Broken Steel.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+    tag:
+      - Scripts
+      - Stats
+  - name: AddBottle.esp
+    msg:
+      - type: say
+        content: DO not use with latest FWE or RI - Primary Needs, it is already integrated.
+  - name: Empty Nuka-Cola Quantum Bottles.esp
+    tag:
+      - Names
+  - name: Persistent Skill Books.esp
+    msg:
+      - type: say
+        content: DO not use with latest FWE, it is already integrated.
+  - name: PlasmaWeaponsRedesignRebalance.esp
+    msg:
+      - type: say
+        content: DO not use with latest FWE, it is already integrated.
+    tag:
+      - Graphics
+      - Sound
+  - name: PlasmaRifleRedesign.esp
+    msg:
+      - type: say
+        content: DO not use with latest FWE, it is already integrated.
+    tag:
+      - Graphics
+      - Sound
+  - name: PlasmaRifleRedesign_A321only.esp
+    msg:
+      - type: say
+        content: DO not use with latest FWE, it is already integrated.
+    tag:
+      - Graphics
+      - Sound
+  - name: PlasmaRifleRedesign_standardonly.esp
+    msg:
+      - type: say
+        content: DO not use with latest FWE, it is already integrated.
+    tag:
+      - Graphics
+      - Sound
+  - name: PlasmaPistolRedesign.esp
+    msg:
+      - type: say
+        content: DO not use with latest FWE, it is already integrated.
+    tag:
+      - Graphics
+      - Sound
+  - name: Water Bottles 3000.esp
+    tag:
+      - Deactivate
+      - Graphics
+      - NoMerge
+  - name: schematics2.esp
+    tag:
+      - Graphics
+      - NoMerge
+  - name: Item Descriptions Img.esp
+    tag:
+      - Graphics
+      - NoMerge
+  - name: Gunfire Sound Range Increased.esp
+    tag:
+      - Deactivate
+      - NoMerge
+      - Sound
+  - name: WYB-Base.esp
+    msg:
+      - type: say
+        content: "Requires: WYB.esm"
+      - type: say
+        content: "Incompatible with: WYB-Base+DLCs-Merged.esp"
+  - name: WYB-DLC-Anchorage.esp
+    msg:
+      - type: say
+        content: "Requires: WYB.esm"
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Incompatible with: WYB-Base+DLCs-Merged.esp"
+  - name: WYB-DLC-ThePitt.esp
+    msg:
+      - type: say
+        content: "Requires: WYB.esm"
+      - type: say
+        content: "Requires: ThePitt.esm"
+      - type: say
+        content: "Incompatible with: WYB-Base+DLCs-Merged.esp"
+  - name: WYB-DLC-BrokenSteel.esp
+    msg:
+      - type: say
+        content: "Requires: WYB.esm"
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Incompatible with: WYB-Base+DLCs-Merged.esp"
+  - name: WYB-DLC-PointLookout.esp
+    msg:
+      - type: say
+        content: "Requires: WYB.esm"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Incompatible with: WYB-Base+DLCs-Merged.esp"
+  - name: WYB-DLC-Zeta.esp
+    msg:
+      - type: say
+        content: "Requires: WYB.esm"
+      - type: say
+        content: "Requires: Zeta.esm"
+      - type: say
+        content: "Incompatible with: WYB-Base+DLCs-Merged.esp"
+  - name: WYB-Base+DLCs-Merged.esp
+    msg:
+      - type: say
+        content: "Requires: WYB.esm"
+  - name: WYB-MOD-DCInteriors_Combo v2.5.esp
+    msg:
+      - type: say
+        content: "Requires: WYB.esm"
+      - type: say
+        content: "Requires: DCInteriors_ComboEdition.esm"
+  - name: WYB-MOD-DCInteriors_Combo v2.6+.esp
+    msg:
+      - type: say
+        content: "Requires: WYB.esm"
+      - type: say
+        content: "Requires: DCInteriors_ComboEdition.esm"
+  - name: WYB-OPT-WhiteCigarette.esp
+    msg:
+      - type: say
+        content: "Requires: WYB.esm"
+  - name: WYB-OPT-DynamicReplacer.esp
+    msg:
+      - type: say
+        content: "Requires: WYB.esm"
+  - name: Weld - Badge.esp
+    tag:
+      - Actors.Anims
+      - Graphics
+      - Invent
+  - name: Weld - Badge and Hat.esp
+    tag:
+      - Actors.Anims
+      - Graphics
+      - Invent
+  - name: Weld and Steel - Badges.esp
+    tag:
+      - Actors.Anims
+      - Graphics
+      - Invent
+  - name: Weld and Steel - Badges, only Weld hat.esp
+    tag:
+      - Actors.Anims
+      - Graphics
+      - Invent
+  - name: Deputy Weld and Steel - Badges and Hats.esp
+    tag:
+      - Actors.Anims
+      - Graphics
+      - Invent
+  - name: Deputy Weld and Steel - Badges Steel Hat.esp
+    tag:
+      - Actors.Anims
+      - Graphics
+      - Invent
+  - name: CMF-Zeta.esp
+    msg:
+      - type: say
+        content: "Requires: Zeta.esm"
+  - name: Anchorage - Extra Holotapes.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage"
+  - name: GaryHoloTape.esp
+    tag:
+      - Names
+  - name: Trucker Holotapes.esp
+    tag:
+      - Names
+  - name: EVE Beta_0.9.4.esp
+    msg:
+      - type: say
+        content: Upgrade needed, there is a new version of EVE available.
+  - name: EVE.esp
+    tag:
+      - Delev
+      - Graphics
+      - Relev
+      - Scripts
+      - Sound
+      - Stats
+  - name: EVE Operation Anchorage.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.ESM"
+    tag:
+      - Graphics
+      - Sound
+  - name: EVE Main - FWE Master Release.esp
+    msg:
+      - type: say
+        content: May cause crashes at start. If so disable this and find updated version.
+  - name: EVE - FWE Master Release.esp
+    tag:
+      - Actors.ACBS
+      - Graphics
+      - Invent
+      - Sound
+      - Stats
+  - name: EVE - FWE Master Release (Follower Enhanced).esp
+    tag:
+      - Graphics
+      - Sound
+  - name: EVE - FWE Master Release (pulse fix).esp
+    msg:
+      - type: say
+        content: "Requires: CALIBR.esm"
+    tag:
+      - Actors.ACBS
+      - Graphics
+      - Invent
+      - Stats
+  - name: EVE Anchorage - FWE DLC Anchorage.esp
+    tag:
+      - Graphics
+      - Sound
+  - name: EVE - FWE with WeaponModKits.esp
+    tag:
+      - Graphics
+      - Sound
+  - name: Apocalypse Armory + EVE.esp
+    msg:
+      - type: say
+        content: "Requires: EVE"
+    tag:
+      - Delev
+      - Relev
+  - name: Mart's Mutant Mod.esp
+    msg:
+      - type: say
+        content: "Requires: Mart's Mutant Mod.esm"
+    tag:
+      - Delev
+      - Relev
+  - name: DALCO Inventory Sorter - Mart's Mutant Mod (Main).esp
+    tag:
+      - Names
+      - NoMerge
+  - name: Mart's Mutant Mod - UF3P.esp
+    tag:
+      - Invent
+  - name: PB MMM HD.esp
+    msg:
+      - type: error
+        content: Old. Download the latest Project Beauty files.
+        condition: file("FOOK2 - Main.esm")
+  - name: PB MMM.esp
+    msg:
+      - type: error
+        content: Old. Download the latest Project Beauty files.
+        condition: file("FOOK2 - Main.esm")
+  - name: Mart's Mutant Mod - DLC Anchorage.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.ESM"
+    tag:
+      - Scripts
+  - name: Mart's Mutant Mod - DLC The Pitt.esp
+    msg:
+      - type: say
+        content: "Requires: ThePitt.ESM"
+    tag:
+      - Delev
+      - Relev
+      - Scripts
+  - name: Mart's Mutant Mod - DLC Broken Steel.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.ESM"
+    tag:
+      - Delev
+      - Relev
+      - Scripts
+  - name: DALCO Inventory Sorter - Mart's Mutant Mod (DLC Broken Steel).esp
+    tag:
+      - Names
+      - NoMerge
+  - name: Mart's Mutant Mod - UF3P - BS.esp
+    msg:
+      - type: say
+        content: "Requires: Mart's Mutant Mod - UF3P.esp"
+  - name: Mart's Mutant Mod - DLC Point Lookout.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.ESM"
+    tag:
+      - Delev
+      - Relev
+      - Scripts
+  - name: Project Beauty- Point Lookout MMM.esp
+    tag:
+      - Deactivate
+      - NoMerge
+      - NPC.Race
+      - NpcFaces
+  - name: Mart's Mutant Mod - DLC Zeta.esp
+    msg:
+      - type: say
+        content: "Requires: Zeta.ESM"
+    tag:
+      - Scripts
+  - name: DangerousRadroaches_MMM.esp
+    tag:
+      - Actors.CombatStyle
+  - name: Mart's Mutant Mod - No Abominable Mutants.esp
+    tag:
+      - Relev
+  - name: Mart's Mutant Mod - No Corpse Flies.esp
+    tag:
+      - Relev
+  - name: Mart's Mutant Mod - No Floaters.esp
+    tag:
+      - Relev
+  - name: Mart's Mutant Mod - No Geckos.esp
+    tag:
+      - Relev
+  - name: Mart's Mutant Mod - No Iguanas.esp
+    tag:
+      - Relev
+  - name: Mart's Mutant Mod - No Stalker Creatures.esp
+    tag:
+      - Relev
+  - name: Mart's Mutant Mod - No Wanamingos.esp
+    tag:
+      - Relev
+  - name: Mart's Mutant Mod - Feral Ghoul Rampage.esp
+    tag:
+      - Relev
+  - name: Mart's Mutant Mod - Increased Increased Spawns.esp
+    tag:
+      - Relev
+  - name: Mart's Mutant Mod - Increased Spawns.esp
+    tag:
+      - Relev
+  - name: Mart's Mutant Mod - Reduced Wasteland Spawns.esp
+    tag:
+      - Delev
+      - Relev
+  - name: Mart's Mutant Mod - Zones Respawn.esp
+    msg:
+      - type: say
+        content: Included in FWE - Not Required
+        condition: file("FO3 Wanderers Edition - Main File.esm")
+  - name: Mart's Mutant Mod - Tougher Traders.esp
+    msg:
+      - type: say
+        content: Included in FWE - Not Required
+        condition: file("FO3 Wanderers Edition - Main File.esm")
+    tag:
+      - Actors.Stats
+      - Factions
+      - Relations
+  - name: Mart's Mutant Mod - Natural Selection.esp
+    msg:
+      - type: say
+        content: Included in FWE - Not Required
+        condition: file("FO3 Wanderers Edition - Main File.esm")
+    tag:
+      - Relations
+  - name: Mart's Mutant Mod - Mutant Mod Menu.esp
+    msg:
+      - type: say
+        content: Obsolete. Update MMM to latest version.
+  - name: Mart's Mutant Mod - Soft Unleveler.esp
+    msg:
+      - type: say
+        content: Use either 'Soft Unleveler' or 'Soft Unleveler Hardcore' but not both.
+  - name: Mart's Mutant Mod - Soft Unleveler Hardcore.esp
+    msg:
+      - type: say
+        content: Use either 'Soft Unleveler' or 'Soft Unleveler Hardcore' but not both.
+  - name: Project Beauty- MMM Raiders.esp
+    msg:
+      - type: error
+        content: Old. Download the latest Project Beauty files.
+        condition: file("FOOK2 - Main.esm")
+  - name: Mart's Mutant Mod - Project Beauty (HD Addition).esp
+    msg:
+      - type: error
+        content: Old. Download the latest Project Beauty files.
+        condition: file("FOOK2 - Main.esm")
+    tag:
+      - NoMerge
+      - NPC.Race
+      - NpcFaces
+  - name: Mart's Mutant Mod - Project Beauty.esp
+    tag:
+      - NoMerge
+      - NPC.Race
+      - NpcFaces
+  - name: Mart's Mutant Mod - Project Beauty + FWE.esp
+    tag:
+      - NoMerge
+      - NPC.Race
+      - NpcFaces
+  - name: CP - FACE3 NPCS [MMM].esp
+    tag:
+      - NoMerge
+      - NPC.Race
+      - NpcFaces
+  - name: CP - FACE3 [MMM] Racefix.esp
+    tag:
+      - NoMerge
+      - NPC.Race
+      - NpcFaces
+  - name: Mart's Mutant Mod - FOOK.esp
+    msg:
+      - type: error
+        content: Get FOOK2
+        condition: file("FOOK2 - Main.esm")
+  - name: Mart's Mutant Mod - FOOK2.esp
+    msg:
+      - type: say
+        content: "Requires: FOOK2 - Main.ESM and Mart's Mutant Mod.esm"
+    tag:
+      - Relations
+  - name: Mart's Mutant Mod - FOOK2 - DIK.esp
+    msg:
+      - type: say
+        content: "Requires: FOOK2 - Main.ESM"
+      - type: say
+        content: "Requires: FOOK2 - [DIK] DLC Improvement Kit.esm and Mart's Mutant Mod.esm"
+    tag:
+      - Relations
+  - name: Mart's Mutant Mod - FWE Master Release.esp
+    msg:
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+    tag:
+      - Invent
+      - Relations
+  - name: DALCO Inventory Sorter - MMM - FWE.esp
+    tag:
+      - Names
+      - NoMerge
+  - name: Mart's Mutant Mod - FWE Master Release + DLCs.esp
+    msg:
+      - type: say
+        content: "Requires: ThePitt.esm"
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+    tag:
+      - Invent
+      - Relations
+      - Scripts
+  - name: Mart's Mutant Mod - FWE Master Release + Project Beauty.esp
+    tag:
+      - NoMerge
+      - NPC.Race
+      - NpcFaces
+  - name: Mart's Mutant Mod - FWE with EVE.esp
+    msg:
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+      - type: say
+        content: "Requires: EVE.esp"
+    tag:
+      - Invent
+      - Relations
+  - name: Mart's Mutant Mod - Project Beauty + FWE.esp
+    tag:
+      - NoMerge
+      - NPC.Race
+      - NpcFaces
+  - name: Mart's Mutant Mod - Project Beauty (HD Addition).esp
+    msg:
+      - type: error
+        content: Old. Download the latest Project Beauty files.
+        condition: file("FOOK2 - Main.esm")
+    tag:
+      - NoMerge
+      - NPC.Race
+      - NpcFaces
+  - name: MMM - FWE & Overhaul Kit_Master Release.esp
+    msg:
+      - type: say
+        content: Outdated. Update to latest version of FWE - Combat Overhaul
+  - name: MMM - FWE Overhaul Kit_Master Release Alpha.esp
+    msg:
+      - type: say
+        content: Outdated. Update to latest version of FWE - Combat Overhaul
+  - name: MMM - FWE_Combat Overhaul Master Release.esp
+    msg:
+      - type: say
+        content: "Requires: Mart's Mutant Mod - FWE Master Release.esp"
+    tag:
+      - Actors.ACBS
+      - Actors.Stats
+      - Factions
+      - Graphics
+      - Invent
+      - Relations
+      - Scripts
+      - Stats
+  - name: AmyWong - FOSE.esp
+    msg:
+      - type: say
+        content: "Requires: AmyWong.esm"
+  - name: AmyWong - DLCs.esp
+    msg:
+      - type: say
+        content: "Requires: AmyWong.esm"
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Requires: ThePitt.esm"
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Requires: Zeta.esm"
+  - name: AmyWong - DLCs (FOOK2 1.1 DIK).esp
+    msg:
+      - type: say
+        content: "Requires: AmyWong.esm"
+      - type: say
+        content: "Requires: FOOK2 - [DIK] DLC Improvement Kit.esm"
+      - type: say
+        content: "Incompatible with: AmyWong - DLCs.esp"
+  - name: AmyWong - DLC01 Anchorage.esp
+    msg:
+      - type: say
+        content: "Requires: AmyWong.esm"
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Incompatible with: AmyWong - DLCs.esp"
+  - name: AmyWong - DLC02 The Pitt.esp
+    msg:
+      - type: say
+        content: "Requires: AmyWong.esm"
+      - type: say
+        content: "Requires: ThePitt.esm"
+      - type: say
+        content: "Incompatible with: AmyWong - DLCs.esp"
+  - name: AmyWong - DLC03 Broken Steel.esp
+    msg:
+      - type: say
+        content: "Requires: AmyWong.esm"
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Incompatible with: AmyWong - DLCs.esp"
+  - name: AmyWong - DLC04 Pt.Lookout.esp
+    msg:
+      - type: say
+        content: "Requires: AmyWong.esm"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Incompatible with: AmyWong - DLCs.esp"
+  - name: AmyWong - DLC05 Zeta.esp
+    msg:
+      - type: say
+        content: "Requires: AmyWong.esm"
+      - type: say
+        content: "Requires: Zeta.esm"
+      - type: say
+        content: "Incompatible with: AmyWong - DLCs.esp"
+  - name: AmyWong - CALIBR 1.3 (FWE 5).esp
+    msg:
+      - type: say
+        content: "Requires: AmyWong.esm"
+      - type: say
+        content: "Requires: CALIBR.esm"
+      - type: say
+        content: "Incompatible with: AmyWong - CALIBR 1.3.esp"
+      - type: say
+        content: "Incompatible with: AmyWong - CALIBR 1.2.esp"
+  - name: AmyWong - CALIBR 1.3.esp
+    msg:
+      - type: say
+        content: "Requires: AmyWong.esm"
+      - type: say
+        content: "Requires: CALIBR.esm"
+      - type: say
+        content: "Incompatible with: AmyWong - CALIBR 1.3.esp"
+      - type: say
+        content: "Incompatible with: AmyWong - CALIBR 1.3 (FWE 5).esp"
+  - name: AmyWong - CALIBR 1.2.esp
+    msg:
+      - type: say
+        content: "Requires: AmyWong.esm"
+      - type: say
+        content: "Requires: CALIBR.esm"
+      - type: say
+        content: "Incompatible with: AmyWong - CALIBR 1.3 (FWE 5).esp"
+      - type: say
+        content: "Incompatible with: AmyWong - CALIBR 1.2.esp"
+  - name: AmyWong - FWE 5.esp
+    msg:
+      - type: say
+        content: "Requires: AmyWong.esm"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+  - name: FWE6-AmyWong fix.esp
+    msg:
+      - type: say
+        content: "Requires: CRAFT.esm"
+      - type: say
+        content: "Requires: AmyWong.esm"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+      - type: say
+        content: "Requires: AmyWong - FWE 5.esp"
+  - name: AmyWong - FOOK2.esp
+    msg:
+      - type: say
+        content: "Requires: AmyWong.esm"
+      - type: say
+        content: "Requires: FOOK2 - Main.ESM"
+  - name: AmyWong - FOOK2 1.1.esp
+    msg:
+      - type: say
+        content: "Requires: AmyWong.esm"
+      - type: say
+        content: "Requires: FOOK2 - Main.ESM"
+  - name: amywongmodmod.esp
+    msg:
+      - type: say
+        content: "Requires: AmyWong.esm"
+  - name: ARC - Assembled Robotic Companions.esp
+    tag:
+      - Invent
+      - Stats
+  - name: RHKBrisaAlmodovar - Custom - Lings.esp
+    msg:
+      - type: say
+        content: "Requires: Lings.esm"
+  - name: RHKBrisaAlmodovar - Custom - PB HD.esp
+    msg:
+      - type: say
+        content: "Requires: Project Beauty.esm"
+  - name: RHKBrisaAlmodovar - DLC - Anch.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+  - name: Brisa and FWE - Primary Needs Patch.esp
+    msg:
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+  - name: Brisa - FWE Skill Books Compatibility.esp
+    msg:
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+  - name: Brisa - Cooking with FWE & MMM 6.esp
+    msg:
+      - type: say
+        content: "Requires: CRAFT.esm"
+      - type: say
+        content: "Requires: CALIBR.esm"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+      - type: say
+        content: "Requires: Mart's Mutant Mod.esm"
+      - type: say
+        content: "Requires: RHKBrisaAlmodovar.esm"
+      - type: say
+        content: "Incompatible with: Brisa and FWE - Primary Needs Patch.esp"
+  - name: slaveraider_newlook.esp
+    tag:
+      - Graphics
+  - name: SCC 187GURLZ.esp
+    msg:
+      - type: say
+        content: "Requires: Sharing and Caring Companions.esm"
+  - name: CharonImproved.esp
+    tag:
+      - Actors.AIPackages
+  - name: llama's Vanilla Followers for Charon Improved.esp
+    tag:
+      - Actors.ACBS
+      - Actors.AIPackages
+      - Stats
+  - name: Get Your Cherry Back.esp
+    tag:
+      - Actors.ACBS
+      - Actors.AIPackages
+  - name: CompanionCherry.esp
+    tag:
+      - Actors.Stats
+  - name: FEM - BABE enabler.esp
+    msg:
+      - type: say
+        content: "Requires: FEM.esm"
+  - name: FEM - DIMON enabler.esp
+    msg:
+      - type: say
+        content: "Requires: FEM.esm"
+  - name: FEM - EXNEM enabler.esp
+    msg:
+      - type: say
+        content: "Requires: FEM.esm"
+  - name: FEM - FANTASY enabler.esp
+    msg:
+      - type: say
+        content: "Requires: FEM.esm"
+  - name: FEM - GROWLF enabler.esp
+    msg:
+      - type: say
+        content: "Requires: FEM.esm"
+  - name: FEM - MALOS enabler.esp
+    msg:
+      - type: say
+        content: "Requires: FEM.esm"
+  - name: FEM - NAOUAK enabler.esp
+    msg:
+      - type: say
+        content: "Requires: FEM.esm"
+  - name: FEM - NILE enabler.esp
+    msg:
+      - type: say
+        content: "Requires: FEM.esm"
+  - name: FEM - UF3 enabler.esp
+    msg:
+      - type: say
+        content: "Requires: FEM.esm"
+  - name: MTC RealWildnessLife.esp
+    tag:
+      - Relations
+  - name: mesme.esp
+    tag:
+      - Actors.ACBS
+  - name: RoadWardens.esp
+    msg:
+      - type: say
+        content: If using MMM, use 'RoadWardensMMM.esp' instead
+  - name: COCOA - bittercup_comp.esp
+    msg:
+      - type: say
+        content: "Requires: bittercup_comp.esp"
+  - name: COCOA - BriannaCompanion.esp
+    msg:
+      - type: say
+        content: "Requires: BriannaCompanion.esp"
+  - name: COCOA - BrokenSteel.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+  - name: COCOA - Dogmeat Leather Armor - CRAFT.esp
+    msg:
+      - type: say
+        content: "Requires: Dogmeat Leather Armor - CRAFT.esp"
+  - name: COCOA - Dogmeat Leather Armor - no crafting.esp
+    msg:
+      - type: say
+        content: "Requires: Dogmeat Leather Armor - no crafting.esp"
+  - name: COCOA - Follower Amata ULTIMATE.esp
+    msg:
+      - type: say
+        content: "Requires: Follower Amata ULTIMATE.esp"
+  - name: COCOA - FWE Followers Enhanced (Broken Steel).esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: CRAFT.esm"
+      - type: say
+        content: "Requires: CALIBR.esm"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+  - name: COCOA - FWE Followers Enhanced.esp
+    msg:
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+  - name: COCOA - JessiCompanion.esp
+    msg:
+      - type: say
+        content: "Requires: JessiCompanion.esp"
+  - name: COCOA - Kat_Companion_V1.0a.esp
+    msg:
+      - type: say
+        content: "Requires: Kat_Companion_V1.0a.esp"
+  - name: COCOA - Kat_Companion_V1.0b.esp
+    msg:
+      - type: say
+        content: "Requires: Kat_Companion_V1.0b.esp"
+  - name: COCOA - KelseyCompanion.esp
+    msg:
+      - type: say
+        content: "Requires: KelseyCompanion.esp"
+  - name: COCOA - LucyWestCompanion.esp
+    msg:
+      - type: say
+        content: "Requires: LucyWestCompanion.esp"
+  - name: COCOA - outcast_comp.esp
+    msg:
+      - type: say
+        content: "Requires: outcast_comp.esp"
+  - name: COCOA - RHKBrisaAlmodovar.esp
+    msg:
+      - type: say
+        content: "Requires: RHKBrisaAlmodovar.esm"
+  - name: COCOA - Sarah Lyons Companion.esp
+    msg:
+      - type: say
+        content: "Requires: Sarah Lyons Companion.esp"
+  - name: COCOA - slaveraider.esp
+    msg:
+      - type: say
+        content: "Requires: slaveraider.esp"
+  - name: COCOA - Sydney Follower.esp
+    msg:
+      - type: say
+        content: "Requires: Sydney Follower.esp"
+  - name: WRWC - Classic Fallout.esp
+    msg:
+      - type: say
+        content: Use one one type of Weapon Restriction while Crippled
+  - name: WRWC - Right Handed.esp
+    msg:
+      - type: say
+        content: Use one one type of Weapon Restriction while Crippled
+  - name: RI_LootTableRI.esp
+    tag:
+      - Delev
+  - name: RI_LootTablePN.esp
+    tag:
+      - Delev
+  - name: Imp's More Complex Needs.esp
+    msg:
+      - type: say
+        content: "Requires: IMCN.esm"
+    tag:
+      - Delev
+      - Relev
+      - Stats
+  - name: IMCN - 5 DLC Merged.esp
+    msg:
+      - type: say
+        content: "Requires: IMCN.esm"
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Requires: ThePitt.esm"
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Requires: Zeta.esm"
+    tag:
+      - Stats
+  - name: IMCN - Operation Anchorage.esp
+    msg:
+      - type: say
+        content: "Requires: IMCN.esm"
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Incompatible with: IMCN - 5 DLC Merged.esp"
+    tag:
+      - Stats
+  - name: IMCN - The Pitt.esp
+    msg:
+      - type: say
+        content: "Requires: IMCN.esm"
+      - type: say
+        content: "Requires: ThePitt.esm"
+      - type: say
+        content: "Incompatible with: IMCN - 5 DLC Merged.esp"
+    tag:
+      - Stats
+  - name: IMCN - Broken Steel.esp
+    msg:
+      - type: say
+        content: "Requires: IMCN.esm"
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Incompatible with: IMCN - 5 DLC Merged.esp"
+    tag:
+      - Stats
+  - name: IMCN - Point Lookout.esp
+    msg:
+      - type: say
+        content: "Requires: IMCN.esm"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Incompatible with: IMCN - 5 DLC Merged.esp"
+    tag:
+      - Stats
+  - name: IMCN - Mothership Zeta.esp
+    msg:
+      - type: say
+        content: "Requires: IMCN.esm"
+      - type: say
+        content: "Requires: Zeta.esm"
+      - type: say
+        content: "Incompatible with: IMCN - 5 DLC Merged.esp"
+    tag:
+      - Stats
+  - name: IMCN - FWE Compatibility and Ingestibles.esp
+    msg:
+      - type: say
+        content: "Requires: IMCN.esm"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+    tag:
+      - Stats
+  - name: IMCN - FOOK2 Ingestibles.esp
+    msg:
+      - type: say
+        content: "Requires: IMCN.esm"
+      - type: say
+        content: "Requires: FOOK2 - Main.ESM"
+    tag:
+      - Stats
+  - name: IMCN - BLTC Compatibility and Ingestibles.esp
+    msg:
+      - type: say
+        content: "Requires: IMCN.esm"
+      - type: say
+        content: "Requires: bltc.esp"
+      - type: say
+        content: "Incompatible with: IMCN - FWE Compatibility and Ingestibles.esp"
+    tag:
+      - Stats
+  - name: IMCN - BLTC RiPnO Combined Compatibility.esp
+    msg:
+      - type: say
+        content: "Requires: IMCN.esm"
+      - type: say
+        content: "Requires: bltc.esp"
+      - type: say
+        content: "Requires: RI_Core.esm"
+      - type: say
+        content: "Requires: RiPnO Core Patch.esp"
+      - type: say
+        content: "Incompatible with: IMCN - FWE Compatibility and Ingestibles.esp"
+  - name: IMCN - RiPnO Compatibility and Ingestibles.esp
+    msg:
+      - type: say
+        content: "Requires: IMCN.esm"
+      - type: say
+        content: "Requires: RI_Core.esm"
+      - type: say
+        content: "Requires: RiPnO Core Patch.esp"
+      - type: say
+        content: "Incompatible with: IMCN - FWE Compatibility and Ingestibles.esp"
+    tag:
+      - Stats
+  - name: IMCN - MMM Meats, Bloods, and Eyeballs.esp
+    msg:
+      - type: say
+        content: "Requires: IMCN.esm"
+      - type: say
+        content: "Requires: Mart's Mutant Mod.esm"
+    tag:
+      - Delev
+      - Relev
+      - Stats
+  - name: IMCN - Forced Initialization.esp
+    msg:
+      - type: say
+        content: "Requires: IMCN.esm"
+  - name: IMCN - Ambient Temperature.esp
+    msg:
+      - type: say
+        content: "Requires: Ambient Temperature.esm"
+  - name: PPA - IMCN.esp
+    msg:
+      - type: say
+        content: "Requires: Powered Power Armor.esp"
+  - name: All Companions Essential.esp
+    tag:
+      - Actors.ACBS
+  - name: AMPUTATE!.esp
+    tag:
+      - Scripts
+  - name: Attentater's Wasteland Economy.esp
+    tag:
+      - Names
+  - name: BA_RepairVanilla.esp
+    tag:
+      - Deflst
+  - name: BA_RepairThePitt.esp
+    tag:
+      - Deflst
+  - name: BA_RepairGOTY.esp
+    tag:
+      - Deflst
+  - name: bittercup_6.esp
+    tag:
+      - Delev
+      - Relev
+      - ScriptContents
+  - name: ChildKiller.esp
+    tag:
+      - Actors.ACBS
+      - Scripts
+  - name: Core Robots - The Eyebots.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Requires: ThePitt.esm"
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Requires: Zeta.esm"
+  - name: Core Robots - The Handy.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+  - name: Core Robots - The Protectrons.esp
+    msg:
+      - type: say
+        content: "Requires: ThePitt.esm"
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: PointLookout.esm"
+  - name: Core Robots - The Robobrains.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Requires: ThePitt.esm"
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Requires: Zeta.esm"
+  - name: DLM_FFOutcastsQuest_Override.esp
+    msg:
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+      - type: say
+        content: "Requires: DLM_FFOutcastsQuest(FWEEd).esp"
+  - name: DLM_FFOutcastsQuest_Override-BS.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+      - type: say
+        content: "Requires: DLM_FFOutcastsQuest(FWEEd).esp"
+  - name: DLM_FFOutcastsQuest_Override-DLC.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: Zeta.esm"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+      - type: say
+        content: "Requires: DLM_FFOutcastsQuest(FWEEd).esp"
+  - name: Easier_hacking_5_8.esp
+    msg:
+      - type: say
+        content: Choose only one of Easier_hacking_5_8.esp or Lucky_hacking_5.esp, not both
+  - name: Lucky_hacking_5.esp
+    msg:
+      - type: say
+        content: Choose only one of Easier_hacking_5_8.esp or Lucky_hacking_5.esp, not both
+  - name: EWE DLC Addon.esp
+    tag:
+      - Deflst
+      - Graphics
+      - Stats
+  - name: Fallout 3 Sexus with Children Empire.esp
+    msg:
+      - type: say
+        content: Obsolete. Update to latest version.
+  - name: sexus_no_trouble_for3_0_2.esp
+    msg:
+      - type: say
+        content: "Requires: Fallout 3 Sexus.esm"
+  - name: zzzSexusParasiteAddon.esp
+    msg:
+      - type: say
+        content: "Requires: Fallout 3 Sexus.esm"
+  - name: Ghouls Cohabitate.esp
+    tag:
+      - ScriptContents
+  - name: GTent-MMM.esp
+    msg:
+      - type: say
+        content: "Requires: GTent.esp"
+      - type: say
+        content: "Requires: Mart's Mutant Mod.esm"
+  - name: GTent-FWE.esp
+    msg:
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+      - type: say
+        content: "Requires: CRAFT.esm"
+  - name: GTent-FWE-MMM.esp
+    msg:
+      - type: say
+        content: "Requires: GTent-FWE.esp"
+      - type: say
+        content: "Requires: Mart's Mutant Mod.esm"
+  - name: GTent-FWE-WMK.esp
+    msg:
+      - type: say
+        content: "Requires: GTent-FWE.esp"
+      - type: say
+        content: "Requires: WeaponModKits.esp"
+  - name: infiltrations.esp
+    tag:
+      - Scripts
+  - name: Inebriation.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Inebriation.esp"
+  - name: Inebriation-FOSE.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Inebriation-FOSE.esp"
+  - name: K9BreedsPatchDLCPitt.esp
+    msg:
+      - type: say
+        content: "Requires: ThePitt.esm"
+  - name: K9BreedsPatchMMM.esp
+    msg:
+      - type: say
+        content: "Requires: Mart's Mutant Mod.esm"
+      - type: say
+        content: "Requires: Mart's Mutant Mod.esp"
+      - type: say
+        content: "Requires: K9Breeds.esp"
+  - name: KillableKids.esp
+    msg:
+      - type: say
+        content: Choose only one 'KillableKids' ESP.
+  - name: KillableKidsOptional.esp
+    msg:
+      - type: say
+        content: Choose only one 'KillableKids' ESP.
+  - name: KillableKidsNormalHealth.esp
+    msg:
+      - type: say
+        content: Choose only one 'KillableKids' ESP.
+  - name: KillableKidsNormalHealthOptional.esp
+    msg:
+      - type: say
+        content: Choose only one 'KillableKids' ESP.
+  - name: KillableKidsNoExtras.esp
+    msg:
+      - type: say
+        content: Choose only one 'KillableKids' ESP.
+  - name: AttackableBrats.esp
+    msg:
+      - type: say
+        content: Choose only one 'Brats' ESP.
+  - name: KillableBrats.esp
+    msg:
+      - type: say
+        content: Choose only one 'Brats' ESP.
+  - name: BadAssBrats.esp
+    msg:
+      - type: say
+        content: Choose only one 'Brats' ESP.
+  - name: Kill and Loot Unconscious Essential NPCs.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Kill and Loot Unconscious Essential NPCs_NoGore.esp"
+      - type: say
+        content: "Incompatible with: Kill and Loot Unconscious Essential NPCs_FOSE.esp"
+  - name: Kill and Loot Unconscious Essential NPCs_FOSE.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Kill and Loot Unconscious Essential NPCs.esp"
+      - type: say
+        content: "Incompatible with: Kill and Loot Unconscious Essential NPCs_NoGore.esp"
+  - name: Kill and Loot Unconscious Essential NPCs_NoGore.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Kill and Loot Unconscious Essential NPCs.esp"
+      - type: say
+        content: "Incompatible with: Kill and Loot Unconscious Essential NPCs_FOSE.esp"
+  - name: Laboratory.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Requires: Zeta.esm"
+    tag:
+      - Scripts
+  - name: QuantumLab.esp
+    tag:
+      - Scripts
+  - name: Laboratory (BS).esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+    tag:
+      - Scripts
+  - name: Laboratory (PL).esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.esm"
+    tag:
+      - Scripts
+  - name: QuantumLab (PL).esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.esm"
+    tag:
+      - Scripts
+  - name: Laboratory (MZ).esp
+    msg:
+      - type: say
+        content: "Requires: Zeta.esm"
+    tag:
+      - Scripts
+  - name: QuantumLab (MZ).esp
+    msg:
+      - type: say
+        content: "Requires: Zeta.esm"
+    tag:
+      - Scripts
+  - name: Laboratory (BS & PL).esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: PointLookout.esm"
+    tag:
+      - Scripts
+  - name: Laboratory (BS & MZ).esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: Zeta.esm"
+    tag:
+      - Scripts
+  - name: Laboratory (PL & MZ).esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Requires: Zeta.esm"
+    tag:
+      - Scripts
+  - name: QuantumLab (PL & MZ).esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Requires: Zeta.esm"
+    tag:
+      - Scripts
+  - name: LightweightFoodSanitizer.esp
+    tag:
+      - Stats
+  - name: MiscWeightFix.esp
+    tag:
+      - Stats
+  - name: MZAllAccessPass.esp
+    msg:
+      - type: say
+        content: "Requires: Zeta.esm"
+  - name: MZC Addon - Shorter Zeta DLC (turrets).esp
+    msg:
+      - type: say
+        content: "Requires: Zeta.esm"
+  - name: MZC Addon - Shorter Zeta DLC.esp
+    msg:
+      - type: say
+        content: "Requires: Zeta.esm"
+  - name: MZC Addon - ADV Recon.esp
+    msg:
+      - type: say
+        content: "Requires: Zeta.esm"
+      - type: say
+        content: "Requires: Mothership Crew.esm"
+      - type: say
+        content: "Requires: Advanced Recon Tech.esm"
+  - name: MZC Addon - Gear Improve - ADV Recon.esp
+    msg:
+      - type: say
+        content: "Requires: Zeta.esm"
+      - type: say
+        content: "Requires: Mothership Crew.esm"
+      - type: say
+        content: "Requires: Advanced Recon Tech.esm"
+  - name: MZC Addon - Tyranid to Xenomorph (old name).esp
+    msg:
+      - type: say
+        content: "Requires: Zeta.esm"
+      - type: say
+        content: "Requires: Mothership Crew.esm"
+  - name: MZC Addon - Tyranid to Xenomorph (new name).esp
+    msg:
+      - type: say
+        content: "Requires: Zeta.esm"
+      - type: say
+        content: "Requires: Mothership Crew.esm"
+  - name: MZC Addon - MZC-IMCN Patch.esp
+    msg:
+      - type: say
+        content: "Requires: Zeta.esm"
+      - type: say
+        content: "Requires: Mothership Crew.esm"
+      - type: say
+        content: "Requires: IMCN.esm"
+  - name: Owned!.esp
+    tag:
+      - Factions
+  - name: PPA - Readius.esp
+    msg:
+      - type: say
+        content: "Requires: 1PipboyPDA.esp"
+  - name: RaiderGirls_pitt.esp
+    msg:
+      - type: say
+        content: "Requires: ThePitt.esm"
+  - name: RebalancedFire-Vanilla.esp
+    msg:
+      - type: say
+        content: "Incompatible with: RebalancedFire-BrokenSteel.esp"
+  - name: RebalancedFire-BrokenSteel.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Incompatible with: RebalancedFire-Vanilla.esp"
+  - name: RRRU +4 UFP.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Requires: ThePitt.esm"
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: PointLookout.esm"
+    tag:
+      - Deflst
+  - name: RRRU +4.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Requires: ThePitt.esm"
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: PointLookout.esm"
+    tag:
+      - Deflst
+  - name: Skill Modification Assignment.esp
+    tag:
+      - Scripts
+      - Stats
+  - name: DALCO Inventory Sorter - SMA.esp
+    tag:
+      - Names
+      - NoMerge
+  - name: SuperStim.esp
+    tag:
+      - Scripts
+  - name: SpiderAnts.esp
+    tag:
+      - Relev
+  - name: T3T_MiscItemIcons.esp
+    msg:
+      - type: say
+        content: Do not use with latest FWE, it is already integrated.
+  - name: TenpennyGhoulsAtPeace.esp
+    tag:
+      - ScriptContents
+  - name: EnhVision.esp
+    msg:
+      - type: say
+        content: "Incompatible with: EnhVisionHK.esp"
+  - name: EnhVisionHK.esp
+    msg:
+      - type: say
+        content: "Incompatible with: EnhVision.esp"
+  - name: Weapon Repair Kits.esp
+    tag:
+      - Relev
+  - name: WRK Final - Plugin.esp
+    tag:
+      - Invent
+      - Relev
+  - name: WRK Final - Point Lookout.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.esm"
+    tag:
+      - Invent
+  - name: yaDisguisesMod-Merged.esp yaDisguisesMod-MOD-bzArmor.esp
+    msg:
+      - type: say
+        content: "Incompatible with: yaDisguisesMod.esp"
+      - type: say
+        content: "Incompatible with: yaDisguisesMod-DLC-Anchorage.esp"
+      - type: say
+        content: "Incompatible with: yaDisguisesMod-DLC-ThePitt.esp"
+      - type: say
+        content: "Incompatible with: yaDisguisesMod-DLC-BrokenSteel.esp"
+      - type: say
+        content: Merged Version of yaDisguisesMod.esp, yaDisguisesMod-DLC-Anchorage.esp, yaDisguisesMod-DLC-ThePitt.esp, yaDisguisesMod-DLC-BrokenSteel.esp
+  - name: yaDisguisesMod-MOD-FWE.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: FO3 Wanaderers Edition - Main File.esm"
+      - type: say
+        content: "Requires: FO3 Wanaderers Edition - DLC Anchorage.esp"
+      - type: say
+        content: "Requires: FO3 Wanaderers Edition - DLC Broken Steel.esp"
+      - type: say
+        content: "Requires: yaDisguisesMod.esp"
+  - name: ZumbsDarkerSunglasses_no_replace.esp
+    msg:
+      - type: say
+        content: Zumbs has asked you to rename this to ZumbsDarkerSunglasses.esp
+  - name: ZumbsDarkerSunglasses_screen_effect.esp
+    msg:
+      - type: say
+        content: Zumbs has asked you to rename this to ZumbsDarkerSunglasses.esp
+  - name: Arwen_Realism_Core.esp
+    tag:
+      - Actors.CombatStyle
+      - Actors.Stats
+      - Destructible
+      - Names
+      - Relev
+      - Sound
+      - Stats
+  - name: Arwen_GOTY_Realism_Core.esp
+    tag:
+      - NoMerge
+  - name: Arwen_Hard-Core.esp
+    tag:
+      - Actors.CombatStyle
+      - Actors.Stats
+      - Destructible
+      - Names
+      - Relev
+      - Stats
+  - name: Arwen_GOTY_Hard-Core.esp
+    tag:
+      - NoMerge
+  - name: Arwen_Armor.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Arwen_FULL_Tweaks.esp"
+  - name: Arwen_Less_Is_More.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Arwen_FULL_Tweaks.esp"
+  - name: Arwen_Less-Is-More.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Arwen_FULL_Tweaks.esp"
+  - name: Arwen_Localized_Damage.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Arwen_FULL_Tweaks.esp"
+  - name: Arwen_SmarterAI.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Arwen_FULL_Tweaks.esp"
+  - name: Arwen_Survival.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Arwen_FULL_Tweaks.esp"
+  - name: Arwen_Tweaks_Main.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Arwen_FULL_Tweaks.esp"
+  - name: Arwen_Weapons.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Arwen_FULL_Tweaks.esp"
+  - name: Arwen_Med-Tec.esp
+    tag:
+      - Names
+  - name: Arwen_GOTY_Med-Tec.esp
+    tag:
+      - Names
+      - Relev
+      - Stats
+  - name: Arwen_MMM_Med-Tec_Patch.esp
+    tag:
+      - Relev
+      - Scripts
+  - name: Arwen_MMM_Patch.esp
+    tag:
+      - Scripts
+  - name: Arwen_EVE_Patch.esp
+    tag:
+      - Graphics
+      - Sound
+      - Stats
+  - name: Phalanx-MainFollowerModule.esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+    tag:
+      - Actors.ACBS
+      - Actors.AIPackages
+  - name: Phalanx-BrokenSteel-Integration.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+  - name: Phalanx-PointLookout-Integration.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+  - name: EVE - FastTravelIndoors Patch.esp
+    msg:
+      - type: say
+        content: Paradox Ignition EVE-merger - compatibility patch for Fast Travel from Indoors.
+  - name: GH-HealingRebalanceMod_stimpackduration.esp
+    msg:
+      - type: say
+        content: "Requires: Zeta.esm"
+  - name: GH-HealingRebalanceMod_Infirmary+Lab.esp
+    tag:
+      - Scripts
+  - name: DALCO Inventory Sorter - Max Level Workaround.esp
+    tag:
+      - Names
+  - name: DALCO Inventory Sorter - Max Level Workaround (BS).esp
+    tag:
+      - Names
+  - name: DALCO Inventory Sorter - Max Level Workaround (HP).esp
+    tag:
+      - Names
+  - name: DALCO Inventory Sorter - Max Level Workaround (HP-BS).esp
+    tag:
+      - Names
+  - name: dD - Enhanced Blood Main.esp
+    msg:
+      - type: say
+        content: Older version included in FOOK2
+  - name: Realistic Death Physics.esp
+    msg:
+      - type: say
+        content: Do not use with latest FWE, it is already integrated.
+  - name: REAL-ThirdViewMod.esp
+    msg:
+      - type: say
+        content: "Incompatible with: LOWER-real-thirdpersonview.esp"
+  - name: LOWER-real-thirdpersonview.esp
+    msg:
+      - type: say
+        content: "Incompatible with: REAL-ThirdViewMod.esp"
+  - name: Dust-away - DLC support.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Requires: ThePitt.esm"
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Requires: Zeta.esm"
+  - name: Clean-Deluxe GOTY.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Dust-away.esp"
+      - type: say
+        content: "Incompatible with: Dust-away - DLC support.esp"
+      - type: say
+        content: "Incompatible with: Paper-Shredder.esp"
+      - type: say
+        content: "Incompatible with: Paper-Shredder - DLC Support.esp"
+      - type: say
+        content: "Incompatible with: Rock-Out.esp"
+      - type: say
+        content: "Incompatible with: Rock-Out - DLC Support.esp"
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Requires: ThePitt.esm"
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Requires: Zeta.esm"
+      - type: say
+        content: Includes all Dust-away, paper-shredder and Rock-out plugins
+  - name: Fellout-Full.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Fellout-SOTD.esp"
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+  - name: Fellout-SOTD.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Either Fellout-Full.esp"
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+  - name: Fellout-Anchorage.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+  - name: Fellout-BrokenSteel.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+  - name: Fellout-PointLookout.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+  - name: Fellout-Zeta.esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+  - name: FelloutWithLightingOverhual-1.0.esp
+    tag:
+      - C.Light
+  - name: Realistic Interior Lighting.esp
+    tag:
+      - C.Light
+  - name: Realistic Interior Lighting - BS.esp
+    tag:
+      - C.Light
+  - name: Realistic Interior Lighting - OA.esp
+    tag:
+      - C.Light
+  - name: Realistic Interior Lighting - PL.esp
+    tag:
+      - C.Light
+  - name: DarkerInteriorsFallOut3.esp
+    tag:
+      - C.Light
+  - name: DarkerInteriorsAnchorage.esp
+    tag:
+      - C.Light
+  - name: DarkerInteriorsThePitt.esp
+    tag:
+      - C.Light
+  - name: DarkerInteriorsBrokenSteel.esp
+    tag:
+      - C.Light
+  - name: DarkerInteriorsPointLookout.esp
+    tag:
+      - C.Light
+  - name: DarkerInteriorsZeta.esp
+    tag:
+      - C.Light
+  - name: URWL47.esp
+    msg:
+      - type: say
+        content: Old. Upgrade to latest version.
+    tag:
+      - C.Light
+  - name: URWL48.esp
+    msg:
+      - type: say
+        content: Old. Upgrade to latest version.
+    tag:
+      - C.Light
+  - name: URWL.esp
+    tag:
+      - C.Light
+  - name: URWL-Normal Color Saturation.esp
+    msg:
+      - type: say
+        content: "Incompatible with: URWL.esp"
+    tag:
+      - C.Light
+  - name: URWLRain.esp
+    tag:
+      - C.Climate
+      - C.Light
+  - name: NColorDCInteriors.esp
+    tag:
+      - C.Light
+  - name: Xepha's Darkened Interiors.esp
+    tag:
+      - C.Light
+  - name: Xepha's Darkened Interiors - OA.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+    tag:
+      - C.Light
+  - name: Xepha's Darkened Interiors - BS.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: Manditory if using BrokenSteel.esm
+    tag:
+      - C.Light
+  - name: Xepha's Darkened Interiors - PL.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.esm"
+    tag:
+      - C.Light
+  - name: Xepha's Dynamic Weather - Main.esp
+    tag:
+      - C.Climate
+  - name: Xepha's Dynamic Weather - Anchorage.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+    tag:
+      - C.Climate
+  - name: Xepha's Dynamic Weather - The Pitt.esp
+    msg:
+      - type: say
+        content: "Requires: ThePitt.esm"
+    tag:
+      - C.Climate
+  - name: Xepha's Dynamic Weather - Broken Steel.esp
+    msg:
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+    tag:
+      - C.Climate
+  - name: Xepha's Dynamic Weather - Point Lookout.esp
+    msg:
+      - type: say
+        content: "Requires: PointLookout.esm"
+    tag:
+      - C.Climate
+  - name: Xepha's Dynamic Weather - Main + DLC Merged.esp
+    tag:
+      - C.Climate
+  - name: Xepha's Dynamic Weather - Night Eye Edition.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Xepha's Dynamic Weather - Night Eye Edition.esp"
+  - name: Xepha's Dynamic Weather - Night Eye Edition (Anchorage).esp
+    msg:
+      - type: say
+        content: "Incompatible with: Xepha's Dynamic Weather - Night Eye Edition (Anchorage).esp"
+      - type: say
+        content: "Requires: Anchorage.esm"
+  - name: Xepha's Dynamic Weather - Anchorage (NEE).esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+  - name: Xepha's Dynamic Weather - Rain (NEE).esp
+    msg:
+      - type: say
+        content: "Requires: Enhanced Weather - Rain and Snow.esm"
+      - type: say
+        content: "Requires: Xepha's Dynamic Weather - Night Eye Edition.esp"
+  - name: Xepha's Dynamic Weather - Rain (OA + NEE).esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Requires: Enhanced Weather - Rain and Snow.esm"
+      - type: say
+        content: "Requires: Xepha's Dynamic Weather - Night Eye Edition (Anchorage).esp"
+  - name: Xepha's Dynamic Weather - Rain (OA).esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Requires: Enhanced Weather - Rain and Snow.esm"
+  - name: Xepha's Dynamic Weather - Rain.esp
+    msg:
+      - type: say
+        content: "Requires: Enhanced Weather - Rain and Snow.esm"
+  - name: Xepha's Dynamic Weather - Climate OverRider (OA + Rain).esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Requires: Enhanced Weather - Rain and Snow.esm"
+      - type: say
+        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (OA).esp"
+      - type: say
+        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (Rain).esp"
+      - type: say
+        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider.esp"
+      - type: say
+        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (OA + Rain) - No Fog.esp"
+  - name: Xepha's Dynamic Weather - Climate OverRider (OA).esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (OA + Rain).esp"
+      - type: say
+        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (Rain).esp"
+      - type: say
+        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider.esp"
+      - type: say
+        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (OA + Rain) - No Fog.esp"
+  - name: Xepha's Dynamic Weather - Climate OverRider (Rain).esp
+    msg:
+      - type: say
+        content: "Requires: Enhanced Weather - Rain and Snow.esm"
+      - type: say
+        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (OA + Rain).esp"
+      - type: say
+        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (OA).esp"
+      - type: say
+        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider.esp"
+      - type: say
+        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (OA + Rain) - No Fog.esp"
+  - name: Xepha's Dynamic Weather - Climate OverRider.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (OA + Rain).esp"
+      - type: say
+        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (OA).esp"
+      - type: say
+        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (Rain).esp"
+      - type: say
+        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (OA + Rain) - No Fog.esp"
+  - name: Xepha's Dynamic Weather - Climate OverRider (OA + Rain) - No Fog.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Requires: Enhanced Weather - Rain and Snow.esm"
+      - type: say
+        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (OA + Rain).esp"
+      - type: say
+        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (OA).esp"
+      - type: say
+        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (Rain).esp"
+      - type: say
+        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider.esp"
+  - name: Xepha's Dynamic Weather - Sandstorms + Armor Damage (FOSE).esp
+    msg:
+      - type: say
+        content: "Incompatible with: Dynamic Weather - Sandstorms.esp"
+  - name: Xepha's Dynamic Weather - Weather Machine.esp
+    msg:
+      - type: say
+        content: Only use one Weather Machine.esp at a time.
+  - name: Xepha's Dynamic Weather - Weather Machine (+Rain).esp
+    msg:
+      - type: say
+        content: Only use one Weather Machine.esp at a time.
+  - name: Xepha's Dynamic Weather - Weather Machine (Quest Added).esp
+    msg:
+      - type: say
+        content: Only use one Weather Machine.esp at a time.
+  - name: Xepha's Dynamic Weather - Weather Machine (Start Game Added).esp
+    msg:
+      - type: say
+        content: Only use one Weather Machine.esp at a time.
+  - name: Better DC Weather - 60-40.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Better DC Weather - 80-20.esp"
+  - name: Better DC Weather - 80-20.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Better DC Weather - 60-40.esp"
+  - name: CRAFTHelper_ReplaceWorkbenchScript.esp
+    msg:
+      - type: say
+        content: "Incompatible with: CRAFT - Activation Perk.esp"
+  - name: CRAFTHelper_ReplaceWorkbenchScriptFWE.esp
+    msg:
+      - type: say
+        content: "Incompatible with: CRAFT - Activation Perk.esp"
+  - name: CRAFT - WCE FOOK+FWE Patch.esp
+    msg:
+      - type: say
+        content: "Requires: FOOK2 - Main.esm"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+      - type: say
+        content: "Requires: CRAFT - Workbench and Crafting Expansion combined.esp"
+  - name: CRAFT - WCE Warmonger Addon.esp
+    msg:
+      - type: say
+        content: "Requires: CRAFT - Workbench and Crafting Expansion combined.esp"
+  - name: 20th Century v4 ALIVE (Vendor).esp
+    tag:
+      - Invent
+  - name: 20th Century v4 ALIVE (NPC_Settler).esp
+    tag:
+      - Invent
+  - name: 20th Century v4 ALIVE (Raider).esp
+    tag:
+      - Invent
+  - name: 20th Century v4 ALIVE (RivetCity).esp
+    tag:
+      - Invent
+  - name: 20th Century v4 ALIVE (Brotherhood_Outcast).esp
+    tag:
+      - Invent
+  - name: 20th Century v4 ALIVE (SuperMutant).esp
+    tag:
+      - Invent
+  - name: 20th Century v4 ALIVE (Vault 101).esp
+    tag:
+      - Invent
+  - name: 20th Century v4 ALIVE (Chinese Ghoul).esp
+    tag:
+      - Invent
+  - name: 20th Century v4 ALIVE (Talon_Regulator).esp
+    tag:
+      - Invent
+  - name: 20th Century v5 ALIVE (Vendor).esp
+    tag:
+      - Invent
+  - name: 20th Century v5 ALIVE (Containers).esp
+    tag:
+      - Invent
+  - name: 20th Century v5 ALIVE (NPC_Settler).esp
+    tag:
+      - Invent
+  - name: 20th Century v5 ALIVE (Vault 101).esp
+    tag:
+      - Invent
+  - name: 20th Century v5 ALIVE (RivetCity).esp
+    tag:
+      - Invent
+  - name: 20th Century v5 ALIVE (Raider).esp
+    tag:
+      - Invent
+  - name: 20th Century v5 ALIVE (Slaver).esp
+    tag:
+      - Invent
+  - name: 20th Century v5 ALIVE (Chinese Ghoul).esp
+    tag:
+      - Invent
+  - name: 20th Century v5 ALIVE (SuperMutant).esp
+    tag:
+      - Invent
+  - name: 20th Century v5 ALIVE (Talon_Regulator).esp
+    tag:
+      - Invent
+  - name: 20th Century v5 ALIVE (Brotherhood_Outcast).esp
+    tag:
+      - Invent
+  - name: FWE Ammo Weight for 20th Century.esp
+    msg:
+      - type: say
+        content: "Incompatible with: FWE Realistic Ammo Weight inc 20th Cent.esp"
+  - name: FWE-20thCent Ammo Weight in Names.esp
+    msg:
+      - type: say
+        content: "Incompatible with: FWE Realistic Ammo Weight in Names inc. 20th Cent.esp"
+    tag:
+      - Names
+  - name: FWE Realistic Ammo Weight inc 20th Cent.esp
+    msg:
+      - type: say
+        content: "Incompatible with: FWE Ammo Weight for 20th Century.esp"
+  - name: FWE Realistic Ammo Weight in Names inc. 20th Cent.esp
+    msg:
+      - type: say
+        content: "Incompatible with: FWE-20thCent Ammo Weight in Names.esp"
+    tag:
+      - Names
+  - name: CFWR_EVE_LoadLast.esp
+    tag:
+      - Graphics
+      - Names
+      - Stats
+  - name: Achievement Remover [FO3+OA+BS].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [FO3+OA+MZ].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [FO3+OA+TP+MZ].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [FO3+OA+TP+PL].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [FO3].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [FO3+BS+PL].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [FO3+BS+PL+MZ].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [FO3+BS].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [FO3+OA+TP].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [FO3+OA+PL+MZ].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [FO3+OA+BS+MZ].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [FO3+OA].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [FO3+PL+MZ].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [FO3+PL].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [FO3+TP+BS+MZ].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [FO3+OA+BS+PL+MZ].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [FO3+TP+BS+PL+MZ].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [FO3+MZ].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [FO3+OA+PL].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [FO3+OA+BS+PL].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [FO3+BS+MZ].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [FO3+TP].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [FO3+OA+TP+BS+MZ].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [FO3+OA+TP+BS+PL].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [FO3+OA+TP+BS].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [FO3+TP+PL].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [FO3+TP+PL+MZ].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [FO3+TP+MZ].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [FO3+OA+TP+PL+MZ].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [All].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [FO3+TP+BS].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [FO3+TP+BS+PL].esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: Achievement Remover [DIK].esp
+    msg:
+      - type: say
+        content: "Requires: FOOK2."
+  - name: Achievement Remover [FWE].esp
+    msg:
+      - type: say
+        content: "Requires: FO3 Wanderers Edition."
+  - name: DUIF3Extras.esp
+    msg:
+      - type: say
+        content: Obsolete. Update DarNifiedUIF3 to latest version.
+  - name: Dog lover's mod.es
+    tag:
+      - Deflst
+      - Delev
+  - name: Dog lover's mod NO ANCHORAGE.esp
+    tag:
+      - Deflst
+      - Delev
+  - name: MMM dog lover's mod.esp
+    tag:
+      - Deflst
+      - Delev
+  - name: AinzBeautifuleEyes.esp
+    tag:
+      - Eyes
+  - name: CUSTOM RACES.esp
+    tag:
+      - Eyes
+      - Hair
+  - name: DIM CUSTOM RACES V2.esp
+    tag:
+      - Eyes
+      - Hair
+  - name: EwwGhoulyBody.esp
+    tag:
+      - Body-F
+  - name: HairPack_2chPlus.esp
+    tag:
+      - Hair
+  - name: HairPack_2chPlus+.esp
+    tag:
+      - Hair
+  - name: HairPack_2chPlus+EYE.esp
+    tag:
+      - eyes
+      - Hair
+  - name: VB_Hair_Shojo+CotW_15.esp
+    msg:
+      - type: say
+        content: "Requires: EnhancedChildren.esm"
+      - type: say
+        content: "Requires: Shojo Race.esm"
+    tag:
+      - Hair
+  - name: Shojo Race.esp
+    msg:
+      - type: say
+        content: Old. Upgrade to latest version.
+    tag:
+      - Eyes
+      - Hair
+  - name: XENH.esp
+    tag:
+      - Eyes
+      - Hair
+  - name: "[Nukomimi-San] Starter.esp"
+    tag:
+      - Eyes
+      - Hair
+  - name: EZCompanion_Type-N.esp
+    tag:
+      - Eyes
+      - Hair
+  - name: AAAAlbino_LingsBOG.esp
+    tag:
+      - Eyes
+      - Hair
+  - name: AmyWong - Load Order Fix.esp
+    msg:
+      - type: say
+        content: "Requires: AmyWong.esm"
+  - name: Ling_FWE_MMM.esp
+    msg:
+      - type: say
+        content: "Requires: ThePitt.esm"
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: Lings.esm"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+      - type: say
+        content: "Requires: Mart's Mutant Mods.esm"
+      - type: say
+        content: "Requires: LingsFinerThings.esm"
+      - type: say
+        content: "Requires: LingsPrettyThings.esp"
+  - name: RobCo Certified v2 EVE.esp
+    msg:
+      - type: say
+        content: "Requires: RobCo Certified v2.esm"
+  - name: RobCo Certified v2 FWE.esp
+    msg:
+      - type: say
+        content: "Requires: RobCo Certified v2.esm"
+  - name: RobCo Certified v2 Omnipatch.esp
+    msg:
+      - type: say
+        content: "Requires: RobCo Certified v2.esm"
+      - type: say
+        content: "Incompatible with: RobCo Certified v2 EVE.esp"
+      - type: say
+        content: "Incompatible with: RobCo Certified v2 FWE.esp"
+      - type: say
+        content: "Incompatible with: RobCo Certified v2 Zeta Addon.esp"
+  - name: RobCo Certified v2 Impervious.esp
+    msg:
+      - type: say
+        content: "Requires: RobCo Certified v2.esm"
+  - name: RobCo Certified v2 Impervious FWE.esp
+    msg:
+      - type: say
+        content: "Requires: RobCo Certified v2.esm"
+  - name: RobCo Certified v2 Impervious for FWE.esp
+    msg:
+      - type: say
+        content: "Requires: RobCo Certified v2.esm"
+  - name: FNNIguana - MMM.esp
+    msg:
+      - type: say
+        content: "Requires: FNNIguana.esm"
+      - type: say
+        content: "Requires: Mart's Mutant Mod.esm"
+  - name: FNNIguana - FWE.esp
+    msg:
+      - type: say
+        content: "Requires: FNNIguana.esm"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+  - name: FWE - FOOK DLC Support.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.ESM"
+      - type: say
+        content: "Requires: ThePitt.ESM"
+      - type: say
+        content: "Requires: BrokenSteel.ESM"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Requires: CRAFT.ESM"
+      - type: say
+        content: "Requires: CALIBR.ESM"
+      - type: say
+        content: "Requires: FOOK2 - Main.ESM"
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+  - name: FWE - FOOK DLC Support - Classic DR.esp
+    msg:
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+      - type: say
+        content: "Requires: FOOK2 - Main.ESM"
+  - name: Mez's Merged Patch 5-0 - DLC-FWE-WMK-MMM.esp
+    tag:
+      - Deflst
+      - Delev
+      - Factions
+      - Invent
+      - Relations
+      - Relev
+      - Scripts
+  - name: FNNsys - FWE.esp
+    tag:
+      - Scripts
+  - name: FNNsys start inventory.esp
+    msg:
+      - type: say
+        content: "Requires: FNNsys.esm"
+  - name: xCALIBRuniverse.esp
+    tag:
+      - Actors.DeathItems
+      - Delev
+      - Graphics
+      - Invent
+      - Names
+      - Relev
+      - Sound
+      - Stats
+  - name: xCALIBRUniverse - WMK.esp
+    tag:
+      - Graphics
+      - Names
+      - Sound
+      - Stats
+  - name: xCALIBRUniverse_FWE_FPS.esp
+    msg:
+      - type: say
+        content: "Incompatible with: xCALIBRUniverse_FWE_Tactical.esp"
+    tag:
+      - Graphics
+      - Invent
+      - Names
+      - Sound
+      - Stats
+  - name: xCALIBRUniverse_FWE_Tactical.esp
+    msg:
+      - type: say
+        content: "Incompatible with: xCALIBRUniverse_FWE_FPS.esp"
+    tag:
+      - Graphics
+      - Invent
+      - Names
+      - Sound
+      - Stats
+  - name: xCALIBR_override.esp
+    msg:
+      - type: say
+        content: "Requires: CALIBR.esm"
+      - type: say
+        content: "Requires: xCALIBR.esm"
+    tag:
+      - Graphics
+      - Names
+  - name: xCALIBR_override_unsorted.esp
+    msg:
+      - type: say
+        content: "Requires: CALIBR.esm"
+      - type: say
+        content: "Requires: xCALIBR.esm"
+    tag:
+      - Graphics
+      - Names
+  - name: xCALIBR_override_FWE5.esp
+    msg:
+      - type: say
+        content: "Requires: CALIBR.esm"
+      - type: say
+        content: "Requires: xCALIBR.esm"
+    tag:
+      - Graphics
+      - Names
+  - name: xCALIBR_FWE5_Override.esp
+    msg:
+      - type: say
+        content: "Requires: CALIBR.esm"
+      - type: say
+        content: "Requires: xCALIBR.esm"
+    tag:
+      - Graphics
+      - Names
+  - name: xCALIBRammo_FWE.esp
+    msg:
+      - type: say
+        content: "Requires: CALIBR.esm"
+      - type: say
+        content: "Requires: xCALIBR.esm"
+    tag:
+      - Graphics
+      - Names
+  - name: xCALIBR_2CW_CP.esp
+    msg:
+      - type: say
+        content: "Requires: CALIBR.esm"
+      - type: say
+        content: "Requires: xCALIBR.esm"
+      - type: say
+        content: "Requires: 20th Century Weapons.esm"
+    tag:
+      - Graphics
+      - Names
+  - name: xCALIBR_2CW_CP_Sorted.esp
+    msg:
+      - type: say
+        content: "Requires: CALIBR.esm"
+      - type: say
+        content: "Requires: xCALIBR.esm"
+      - type: say
+        content: "Requires: 20th Century Weapons.esm"
+    tag:
+      - Graphics
+      - Names
+  - name: xCALIBR_20CW_v5.12.esp
+    msg:
+      - type: say
+        content: "Requires: CALIBR.esm"
+      - type: say
+        content: "Requires: xCALIBR.esm"
+      - type: say
+        content: "Requires: 20th Century Weapons.esm"
+    tag:
+      - Graphics
+      - Names
+  - name: FWE+WMK_weapons_xCALIBRified.esp
+    tag:
+      - Graphics
+      - Names
+      - Stats
+  - name: FWE(v.5.04)+WMK_weapons_xCALIBRified.esp
+    tag:
+      - Graphics
+      - Names
+      - Stats
+  - name: FWE+WMKexcalibrified(Anch).esp
+    tag:
+      - Graphics
+      - Names
+      - Stats
+  - name: FWE+WMKexcalibrified(Pitt).esp
+    tag:
+      - Graphics
+      - Names
+      - Stats
+  - name: FWE+WMKexcalibrified(Lkout).esp
+    tag:
+      - Graphics
+      - Names
+      - Stats
+  - name: frederyck+FWE+xCALIBR.esp
+    msg:
+      - type: say
+        content: "Requires: FO3 Wanderers Edition - Main File.esm"
+      - type: say
+        content: "Requires: CALIBR.esm"
+      - type: say
+        content: "Requires: xCALIBR.esm"
+      - type: say
+        content: "Requires: WeaponModKits.esp"
+      - type: say
+        content: "Requires: WeaponModKits - FWE Master Release.esp"
+    tag:
+      - Graphics
+      - Names
+      - Stats
+  - name: Compatibility_Plugin_TalonExtraArmor_FWE_BrokenSteel.esp
+    tag:
+      - Delev
+      - Relev
+  - name: Choose your own hairstyle (load this last on FOMM).esp
+    tag:
+      - Eyes
+      - Hair
+      - NPC.Race
+      - NpcFaces
+  - name: CRBSOR.esp
+    msg:
+      - type: say
+        content: Do not use with latest FWE, it is already integrated.
+  - name: Merged.esp
+    tag:
+      - NoMerge
+  - name: Merged Patch.esp
+    tag:
+      - NoMerge
+  - name: xCALIBRammo_override.esp
+    tag:
+      - Graphics
+      - Names
+  - name: Error Fixes V1.2.esp
+    msg:
+      - type: say
+        content: Old version - consider updating
+  - name: Error Fixes V1.5.esp
+    msg:
+      - type: say
+        content: Choose only one of Error Fixes V1.5.esp or Error Fixes V1.5 - Higher FPS.esp, not both.
+  - name: Error Fixes V1.5 - Higher FPS.esp
+    msg:
+      - type: say
+        content: Choose only one of Error Fixes V1.5.esp or Error Fixes V1.5 - Higher FPS.esp, not both.
+  - name: Fallout 3 Master Fix.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Requires: ThePitt.esm"
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Requires: Zeta.esm"
+      - type: say
+        content: "Incompatible with: Fallout 3 Master Fix - Higher FPS.esp"
+      - type: say
+        content: "Incompatible with: Fallout 3 Master Fix - No DLC.esp"
+      - type: say
+        content: "Incompatible with: Fallout 3 Master Fix - No DLC - Higher FPS"
+  - name: Fallout 3 Master Fix - Higher FPS.esp
+    msg:
+      - type: say
+        content: "Requires: Anchorage.esm"
+      - type: say
+        content: "Requires: ThePitt.esm"
+      - type: say
+        content: "Requires: BrokenSteel.esm"
+      - type: say
+        content: "Requires: PointLookout.esm"
+      - type: say
+        content: "Requires: Zeta.esm"
+      - type: say
+        content: "Incompatible with: Fallout 3 Master Fix.esp"
+      - type: say
+        content: "Incompatible with: Fallout 3 Master Fix - No DLC.esp"
+      - type: say
+        content: "Incompatible with: Fallout 3 Master Fix - No DLC - Higher FPS"
+  - name: Fallout 3 Master Fix - No DLC.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Fallout 3 Master Fix.esp"
+      - type: say
+        content: "Incompatible with: Fallout 3 Master Fix - Higher FPS.esp"
+      - type: say
+        content: "Incompatible with: Fallout 3 Master Fix - No DLC - Higher FPS"
+  - name: Fallout 3 Master Fix - No DLC - Higher FPS
+    msg:
+      - type: say
+        content: "Incompatible with: Fallout 3 Master Fix.esp"
+      - type: say
+        content: "Incompatible with: Fallout 3 Master Fix - Higher FPS.esp"
+      - type: say
+        content: "Incompatible with: Fallout 3 Master Fix - No DLC.esp"
+  - name: Fallout Remastered.esp
+    msg:
+      - type: say
+        content: "Incompatible with: Fallout 3 Master Fix.esp"
+        condition: file("Fallout 3 Master Fix.esp")
+      - type: say
+        content: "Incompatible with: James Invisible Walls Remover.esp"
+        condition: file("James Invisible Walls Remover.esp")
+  - name: Fallout Remastered - EVE (Paradox Ignition Merge).esp
+    msg:
+      - type: say
+        content: "Requires: Paradox Ignition Merged version of Energy Visuals Enhanced"
+  - name: Fallout Remastered - FOOK2 + EVE (PI Merge).esp
+    msg:
+      - type: say
+        content: "Requires: Paradox Ignition Merged version of Energy Visuals Enhanced"
+      - type: say
+        content: "Requires: FOOK2 1.2 Open Beta"
+  - name: Fallout Remastered - FWE + EVE (PI Merge).esp
+    msg:
+      - type: say
+        content: "Requires: Paradox Ignition Merged version of Energy Visuals Enhanced"
+      - type: say
+        content: "Requires: Fallout Wanderer's Edition 6.03 and all DLC plugins"
+  - name: Fallout Remastered - MMM + EVE (PI Merge).esp
+    msg:
+      - type: say
+        content: "Requires: RC6.1 OR RC6.2 version of Mart's Mutant Mod"
+      - type: say
+        content: "Requires: Paradox Ignition Merged version of Energy Visuals Enhanced"
+  - name: Fallout Remastered - FOOK2 + MMM.esp
+    msg:
+      - type: say
+        content: "Requires: all DLC plugins for the RC 6.1 or RC 6.2 version of Mart's Mutants Mod"
+      - type: say
+        content: "Requires: FOOK2 1.2 Open Beta"
+      - type: say
+        content: Does not require a FOIP, provides complete compatibility between these two files
+  - name: Fallout Remastered - FWE + MMM.esp
+    msg:
+      - type: say
+        content: "Requires: all DLC plugins for the 6.03 version of Fallout Wanderer's Edition"
+      - type: say
+        content: "Requires: all DLC plugins for the RC 6.1 or RC 6.2 version of Mart's Mutants Mod"
+      - type: say
+        content: Does not require a FOIP, provides complete compatibility between these two files
+  - name: Fallout Remastered - MMM + Scavenger.esp
+    msg:
+      - type: say
+        content: "Requires: RC6.1 OR RC6.2 version of Mart's Mutant Mod"
+      - type: say
+        content: "Requires: Scavenger World 0.04"
+  - name: Fallout Remastered - WMI + Xepha.esp
+    msg:
+      - type: say
+        content: "Requires: Xepha's Dynamic Weather.esm"
+      - type: say
+        content: "Requires: Realistic Interior Lighting.esp"
+      - type: say
+        content: "Requires: Wasteland Music Injector.esp"
+  - name: Fallout Remastered - DCStreet + Dynamic Weather.esp
+    msg:
+      - type: say
+        content: "Requires: Requires Xepha's Dynamic Weather"
+      - type: say
+        content: "Requires: Requires DC Street - BS.esp"
