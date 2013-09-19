@@ -3,6 +3,7 @@ globals:
     content: An update for BOSS (v2.1.1) has been released. Download it at "http://code.google.com/p/better-oblivion-sorting-software/downloads/list"
     condition: version("BOSS","2.1.1.0",<)
 plugins:
+# BEGINGROUP: ESMs
   - name: StreetLights.esm
     msg:
       - type: say
@@ -47,10 +48,6 @@ plugins:
     tag:
       - Destructible
       - Scripts
-  - name: PointLookout-FollowersGetToGo.esm
-    msg:
-      - type: say
-        content: "Requires: PointLookout.ESM"
   - name: xCALIBR.esm
     tag:
       - Graphics
@@ -101,7 +98,7 @@ plugins:
       - Names
       - Scripts
       - Stats
-  - name: "[DC RANGER ARSENAL v3 MASTER].esm"
+  - name: '[DC RANGER ARSENAL v3 MASTER].esm'
     tag:
       - Deflst
   - name: CFWR.esm
@@ -110,14 +107,10 @@ plugins:
       - Graphics
       - Relev
       - Stats
-  - name: Refurbishes [ALL].esm
+  - name: 'Refurbishes [ALL].esm'
     msg:
       - type: say
         content: Do not use with latest FOOK2, it is already integrated.
-  - name: Megaton Expansion Project V03.esm
-    msg:
-      - type: say
-        content: "Requires: CALIBR.esm"
   - name: GNRBuilding_BoS.esm
     tag:
       - Invent
@@ -147,9 +140,8 @@ plugins:
       - Scripts
       - Stats
   - name: FOOK2 - Main.esm
-    msg:
-      - type: say
-        content: "Requires: CALIBR.esm"
+    url:
+      - http://fallout3.nexusmods.com/mods/4448
     tag:
       - Factions
       - Invent
@@ -160,29 +152,11 @@ plugins:
       - type: error
         content: Get FOOK2
         condition: file("FOOK2 - Main.esm")
-  - name: FOOK2 - [WANK] World And Neighbourhood Kit.esm
+  - name: 'FOOK2 - [WANK] World And Neighbourhood Kit.esm'
     msg:
-      - type: say
-        content: "Requires: CALIBR.esm"
-      - type: say
-        content: "Requires: FOOK2 - Main.ESM"
       - type: error
         content: Remove if using FOOK2 1.1 and above
         condition: file("FOOK2 - Main.esm")
-  - name: FOOK2 - [DIK] DLC Improvement Kit.esm
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Requires: ThePitt.esm"
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Requires: CALIBR.esm"
-      - type: say
-        content: "Requires: FOOK2 - Main.ESM"
   - name: FO3 Wanderers Edition - Main File.esm
     msg:
       - type: say
@@ -312,6 +286,7 @@ plugins:
     msg:
       - type: say
         content: "Requires: Zeta.esm"
+# ENDGROUP: ESMs
   - name: DALCO Inventory Sorter - Fallout 3 & All DLCs.esp
     msg:
       - type: say
