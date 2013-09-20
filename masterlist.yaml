@@ -157,14 +157,12 @@ plugins:
       - type: error
         content: Remove if using FOOK2 1.1 and above
         condition: file("FOOK2 - Main.esm")
-  - name: FO3 Wanderers Edition - Main File.esm
+  - name: 'FO3 Wanderers Edition - Main File.esm'
+    url:
+      - http://fallout3.nexusmods.com/mods/2761
     msg:
       - type: say
         content: Suggested to remove the names tag if using MMM
-      - type: say
-        content: "Requires: CRAFT.esm"
-      - type: say
-        content: "Requires: CALIBR.esm"
     tag:
       - Actors.ACBS
       - Actors.Stats
@@ -175,18 +173,18 @@ plugins:
       - Relations
       - Relev
       - Stats
-  - name: FWE - Combat Overhaul_Core.esm
+
+  - name: 'FWE - Combat Overhaul_Core.esm'
+    url:
+      - http://fallout3.nexusmods.com/mods/15578
+    inc:
+      - WeaponModKits.esp
+      - EVE.esm
+      - RH_IronSights_Basic_VanillaPlugin.esp
     msg:
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-      - type: say
-        content: "Requires: RH_IronSights resources"
-      - type: say
-        content: "Incompatible with: Weapon Mod Kits"
-      - type: say
-        content: "Incompatible with: EVE"
-      - type: say
-        content: "Incompatible with: RH IronSights Basic VanillaPlugin.esp"
+      - type: warn
+        content: "This mod requires resources from RH_IronSights - please see the readme"
+        condition: not file("meshes\Characters\_1stperson") or not file("meshes\Characters\_male")
     tag:
       - Graphics
       - Names
