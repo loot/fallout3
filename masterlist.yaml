@@ -285,6 +285,7 @@ plugins:
       - type: say
         content: "Requires: Zeta.esm"
 # ENDGROUP: ESMs
+# BEGINGROUP: Unofficial Patches and Fixes
   - name: DALCO Inventory Sorter - Fallout 3 & All DLCs.esp
     msg:
       - type: say
@@ -550,6 +551,8 @@ plugins:
   - name: Stop Insulting Me Outcasts.esp
     tag:
       - Factions
+# ENDGROUP: Unofficial Patches and Fixes
+# BEGINGROUP: Early Loading Mods
   - name: DALCO Inventory Sorter - Fallout 3 (Base Game).esp
     tag:
       - Names
@@ -862,6 +865,8 @@ plugins:
     msg:
       - type: say
         content: "Requires: PointLookout.esm"
+# ENDGROUP: Early Loading Mods
+# BEGINGROUP: Sounds
   - name: GalaxyNewsRadioFix[N].esp
     msg:
       - type: say
@@ -928,6 +933,8 @@ plugins:
     msg:
       - type: say
         content: Load RadioHotkey after all other radio mods
+# ENDGROUP: Sounds
+# BEGINGROUP: Early Misc A (Perks)
   - name: ImprovedCovertOpsPerk.esp
     msg:
       - type: say
@@ -952,6 +959,8 @@ plugins:
     msg:
       - type: say
         content: "Requires: BrokenSteel.esm"
+# ENDGROUP: Early Misc A (Perks)
+# BEGINGROUP: Global Traveling System
   - name: ClawPeak.esp
     msg:
       - type: say
@@ -1080,6 +1089,8 @@ plugins:
     msg:
       - type: say
         content: "Requires: GlobalTravelSystem.esm"
+# ENDGROUP: Global Traveling System
+# BEGINGROUP: Quests
   - name: AQFH.esp
     msg:
       - type: say
@@ -1187,6 +1198,8 @@ plugins:
   - name: The Mantis Imperative - Mantis.esp
     tag:
       - Relev
+# ENDGROUP: Quests
+# BEGINGROUP: Early Misc B
   - name: Action for men v3.0.esp
     tag:
       - Invent
@@ -1416,6 +1429,8 @@ plugins:
   - name: Mannequin.esp
     tag:
       - Actors.AIData
+# ENDGROUP: Early Misc B
+# BEGINGROUP: NPC
   - name: BarterWithRaiders-NPC Default-MMM.esp
     msg:
       - type: say
@@ -1517,6 +1532,8 @@ plugins:
   - name: Wasteland Gigolo.esp
     tag:
       - Scripts
+# ENDGROUP: NPC
+# BEGINGROUP: Places
   - name: Arefu Player House.esp
     msg:
       - type: say
@@ -1624,6 +1641,9 @@ plugins:
     msg:
       - type: say
         content: "Requires: BA_WastelandRestoration.esp"
+# ENDGROUP: Places
+# BEGINGROUP: Overhauls
+# BEGINGROUP: FOOK
   - name: FOOK2 - Main.esp
     msg:
       - type: error
@@ -1833,6 +1853,8 @@ plugins:
       - type: error
         content: Old, please update to the latest version
         condition: file("FOOK2 - Main.esm")
+# ENDGROUP: FOOK
+# BEGINGROUP: Fallout Wanderer's Edition
   - name: FO3 Wanderers Edition - Main File.esp
     tag:
       - Actors.ACBS
@@ -2147,6 +2169,8 @@ plugins:
         content: "Requires: FO3 Wanderers Edition - Main File.esm"
       - type: say
         content: "Requires: FO3 Wanderers Edition - Main File.esp"
+# ENDGROUP: Fallout Wanderer's Edition
+# BEGINGROUP: Other
   - name: Refurbishes [ALL].esp
     msg:
       - type: say
@@ -2185,6 +2209,9 @@ plugins:
         content: Do not use with latest FOOK2, it is already integrated.
       - type: say
         content: "Incompatible with: Refurbishes [ALL].esp"
+# ENDGROUP: Other
+# ENDGROUP: Overhauls
+# BEGINGROUP: Tailor Maid
   - name: Tailor Maid Anchorage.esp
     msg:
       - type: say
@@ -2201,6 +2228,8 @@ plugins:
     msg:
       - type: say
         content: "Requires: Zeta.ESM"
+# ENDGROUP: Tailor Maid
+# BEGINGROUP: WeaponModKits
   - name: WeaponModKits.esp
     tag:
       - Actors.AIData
@@ -2368,6 +2397,8 @@ plugins:
         content: "Requires: WeaponModKits - PointLookout.esp"
       - type: say
         content: "Requires: WeaponModKits - Zeta.esp"
+# ENDGROUP: WeaponModKits
+# BEGINGROUP: Weapons
   - name: 20th Century Weapons Non-Changing Weapon Conditions.esp
     msg:
       - type: say
@@ -2603,6 +2634,8 @@ plugins:
     tag:
       - Delev
       - Relev
+# ENDGROUP: Weapons
+# BEGINGROUP: Armor\Clothes
   - name: "[DC RANGER ARSENAL v3] - DLC GEAR.esp"
     msg:
       - type: say
@@ -2846,6 +2879,8 @@ plugins:
   - name: WasteWearGloves.esp
     tag:
       - Relev
+# ENDGROUP: Armor\Clothes
+# BEGINGROUP: Cosmetics
   - name: Sparkling Eyes.esp
     msg:
       - type: say
@@ -2901,6 +2936,8 @@ plugins:
         content: Outdated, use latest Wrye Flash version
     tag:
       - Invent
+# ENDGROUP: Cosmetics
+# BEGINGROUP: Middle Misc A
   - name: AutoGates.esp
     tag:
       - Scripts
@@ -3204,6 +3241,8 @@ plugins:
     msg:
       - type: say
         content: Please update to latest version.
+# ENDGROUP: Middle Misc A
+# BEGINGROUP: Middle Misc B
   - name: Companion Core DLC Addon.esp
     msg:
       - type: say
@@ -3551,6 +3590,8 @@ plugins:
   - name: Trucker Holotapes.esp
     tag:
       - Names
+# ENDGROUP: Middle Misc B
+# BEGINGROUP: EVE Stuff
   - name: EVE Beta_0.9.4.esp
     msg:
       - type: say
@@ -3609,6 +3650,8 @@ plugins:
     tag:
       - Delev
       - Relev
+# ENDGROUP: EVE Stuff
+# BEGINGROUP: Mart's Mutant Mod
   - name: Mart's Mutant Mod.esp
     msg:
       - type: say
@@ -3878,6 +3921,8 @@ plugins:
       - Relations
       - Scripts
       - Stats
+# ENDGROUP: Mart's Mutant Mod
+# BEGINGROUP: Companions
   - name: AmyWong - FOSE.esp
     msg:
       - type: say
@@ -4051,6 +4096,8 @@ plugins:
     msg:
       - type: say
         content: "Requires: Sharing and Caring Companions.esm"
+# ENDGROUP: Companions
+# BEGINGROUP: Vanilla NPCs Become Campanions
   - name: CharonImproved.esp
     tag:
       - Actors.AIPackages
@@ -4112,6 +4159,8 @@ plugins:
     msg:
       - type: say
         content: If using MMM, use 'RoadWardensMMM.esp' instead
+# ENDGROUP: Vanilla NPCs Become Campanions
+# BEGINGROUP: Companion Compatability / Fixes
   - name: COCOA - bittercup_comp.esp
     msg:
       - type: say
@@ -4190,6 +4239,8 @@ plugins:
     msg:
       - type: say
         content: "Requires: Sydney Follower.esp"
+# ENDGROUP: Companion Compatability / Fixes
+# BEGINGROUP: Realism Mods
   - name: WRWC - Classic Fallout.esp
     msg:
       - type: say
@@ -4350,6 +4401,8 @@ plugins:
     msg:
       - type: say
         content: "Requires: Powered Power Armor.esp"
+# ENDGROUP: Realism Mods
+# BEGINGROUP: Later Misc
   - name: All Companions Essential.esp
     tag:
       - Actors.ACBS
@@ -4814,6 +4867,8 @@ plugins:
     msg:
       - type: say
         content: Zumbs has asked you to rename this to ZumbsDarkerSunglasses.esp
+# ENDGROUP: Later Misc
+# BEGINGROUP: Arwen's Realism Main
   - name: Arwen_Realism_Core.esp
     tag:
       - Actors.CombatStyle
@@ -4889,6 +4944,8 @@ plugins:
       - Graphics
       - Sound
       - Stats
+# ENDGROUP: Arwen's Realism Main
+# BEGINGROUP: Phalanx
   - name: Phalanx-MainFollowerModule.esp
     msg:
       - type: say
@@ -4908,6 +4965,8 @@ plugins:
         content: "Requires: PointLookout.esm"
       - type: say
         content: Do not use with latest FOOK2, it is already integrated.
+# ENDGROUP: Phalanx
+# BEGINGROUP: Game-Settings and Overrides
   - name: EVE - FastTravelIndoors Patch.esp
     msg:
       - type: say
@@ -4947,6 +5006,8 @@ plugins:
     msg:
       - type: say
         content: "Incompatible with: REAL-ThirdViewMod.esp"
+# ENDGROUP: Game-Settings and Overrides
+# BEGINGROUP: Weather\Light\Water
   - name: Dust-away - DLC support.esp
     msg:
       - type: say
@@ -5261,6 +5322,8 @@ plugins:
     msg:
       - type: say
         content: "Incompatible with: Better DC Weather - 60-40.esp"
+# ENDGROUP: Weather\Light\Water
+# BEGINGROUP: Lastish
   - name: CRAFTHelper_ReplaceWorkbenchScript.esp
     msg:
       - type: say
@@ -5518,6 +5581,11 @@ plugins:
     tag:
       - Deflst
       - Delev
+# ENDGROUP: Lastish
+# BEGINGROUP: Pose mods
+# ENDGROUP: Pose mods
+# BEGINGROUP: Beauty Packs & Race Addons
+# BEGINGROUP: Body and head changes
   - name: AinzBeautifuleEyes.esp
     tag:
       - Eyes
@@ -5532,6 +5600,8 @@ plugins:
   - name: EwwGhoulyBody.esp
     tag:
       - Body-F
+# ENDGROUP: Body and head changes
+# BEGINGROUP: Hair
   - name: HairPack_2chPlus.esp
     tag:
       - Hair
@@ -5550,6 +5620,8 @@ plugins:
         content: "Requires: Shojo Race.esm"
     tag:
       - Hair
+# ENDGROUP: Hair
+# BEGINGROUP: Race additions (+ hair + eyes etc)
   - name: Shojo Race.esp
     msg:
       - type: say
@@ -5573,6 +5645,9 @@ plugins:
     tag:
       - Eyes
       - Hair
+# ENDGROUP: Race additions (+ hair + eyes etc)
+# ENDGROUP: Beauty Packs & Race Addons
+# BEGINGROUP: Merged Patch\CPs
   - name: AmyWong - Load Order Fix.esp
     msg:
       - type: say
@@ -5854,6 +5929,8 @@ plugins:
     tag:
       - Graphics
       - Names
+# ENDGROUP: Merged Patch\CPs
+# BEGINGROUP: Error Corrections - Reduce CTD
   - name: Error Fixes V1.2.esp
     msg:
       - type: say
@@ -5866,6 +5943,11 @@ plugins:
     msg:
       - type: say
         content: Choose only one of Error Fixes V1.5.esp or Error Fixes V1.5 - Higher FPS.esp, not both.
+# ENDGROUP: Error Corrections - Reduce CTD
+# BEGINGROUP: Bashed Patch
+# ENDGROUP: Bashed Patch
+# BEGINGROUP: Post Bashed Patch
+# BEGINGROUP: Fallout 3 Master Fix
   - name: Fallout 3 Master Fix.esp
     msg:
       - type: say
@@ -5910,6 +5992,8 @@ plugins:
         content: "Incompatible with: Fallout 3 Master Fix - Higher FPS.esp"
       - type: say
         content: "Incompatible with: Fallout 3 Master Fix - No DLC - Higher FPS"
+# ENDGROUP: Fallout 3 Master Fix
+# BEGINGROUP: Fallout Remastered
   - name: Fallout 3 Master Fix - No DLC - Higher FPS
     msg:
       - type: say
@@ -5984,3 +6068,5 @@ plugins:
         content: "Requires: Requires Xepha's Dynamic Weather"
       - type: say
         content: "Requires: Requires DC Street - BS.esp"
+# ENDGROUP: Fallout Remastered
+# ENDGROUP: Post Bashed Patch
