@@ -1,7 +1,13 @@
+common:
+  - &FOSE
+    name: "..\fose_loader.exe"
+    display: FOSE
+
 globals:
   - type: warn
     content: An update for BOSS (v2.1.1) has been released. Download it at "http://code.google.com/p/better-oblivion-sorting-software/downloads/list"
     condition: version("BOSS","2.1.1.0",<)
+
 plugins:
 # BEGINGROUP: ESMs
   - name: StreetLights.esm
@@ -183,7 +189,7 @@ plugins:
       - RH_IronSights_Basic_VanillaPlugin.esp
     msg:
       - type: warn
-        content: "This mod requires resources from RH_IronSights - please see the readme"
+        content: "This mod requires resources from "http://fallout3.nexusmods.com/mods/6938 RH_IronSights." - please see the readme"
         condition: not file("meshes\Characters\_1stperson") or not file("meshes\Characters\_male")
     tag:
       - Graphics
@@ -198,67 +204,53 @@ plugins:
   - name: Arwen_Core.esm
     tag:
       - Actors.Animations
-  - name: Companion Share & Recruit.esm
-    msg:
-      - type: say
-        content: "Requires: Companion Core.esm"
   - name: RobCo Certified v2.esm
-    msg:
-      - type: say
-        content: "Requires: Companion Core.esm"
+    url:
+      - http://fallout3.nexusmods.com/mods/712
+    req: 
+      - [ *FOSE ]
   - name: Wasteland Whisperer v2.esm
-    msg:
-      - type: say
-        content: "Requires: Companion Core.esm"
+    req:
+      - [ *FOSE ]
   - name: Xepha's Dynamic Weather.esm
     tag:
       - C.Climate
       - Sound
   - name: RTS.esm
-    msg:
-      - type: say
-        content: "Incompatible with: ArefuExpandedByAzar.esm"
-      - type: say
-        content: "Incompatible with: 1PipboyPDA.esp"
+    inc:
+      - ArefuExpandedByAzar.esm
+      - 1PipboyPDA.esp
   - name: RTS NW.esm
-    msg:
-      - type: say
-        content: "Incompatible with: ArefuExpandedByAzar.esm"
-      - type: say
-        content: "Incompatible with: 1PipboyPDA.esp"
+    inc:
+      - ArefuExpandedByAzar.esm
+      - 1PipboyPDA.esp
   - name: PB mika.esm
     msg:
       - type: error
         content: Old. Download the latest Project Beauty files.
         condition: file("FOOK2 - Main.esm")
   - name: Animy_prostitution.esm
-    msg:
-      - type: say
-        content: "Requires: CrossModData.esm"
-  - name: DCInteriors_ComboEdition.ESM
-    msg:
-      - type: say
-        content: "Incompatible with: DCInteriors components."
+    req:
+      - [ *FOSE ]
+  - name: DCInteriors_ComboEdition.esm
+    inc:
+      - DCInteriors_(LEnfntPl|Mason|SewardSq|Takoma)\.esm
+# ^Need to verify
   - name: DCInteriors_Georgtown.esm
-    msg:
-      - type: say
-        content: "Incompatible with: DCInteriors_ComboEdition.ESM"
+    inc:
+      - DCInteriors_ComboEdition.esm
   - name: DCInteriors_LEnfntPl.esm
-    msg:
-      - type: say
-        content: "Incompatible with: DCInteriors_ComboEdition.ESM"
+    inc:
+      - DCInteriors_ComboEdition.esm
   - name: DCInteriors_Mason.esm
-    msg:
-      - type: say
-        content: "Incompatible with: DCInteriors_ComboEdition.ESM"
+    inc:
+      - DCInteriors_ComboEdition.esm
   - name: DCInteriors_SewardSq.esm
-    msg:
-      - type: say
-        content: "Incompatible with: DCInteriors_ComboEdition.ESM"
+    inc:
+      - DCInteriors_ComboEdition.esm
   - name: DCInteriors_Takoma.esm
-    msg:
-      - type: say
-        content: "Incompatible with: DCInteriors_ComboEdition.ESM"
+    inc:
+      - DCInteriors_ComboEdition.esm
   - name: Shojo Race.esm
     tag:
       - Eyes
@@ -280,10 +272,6 @@ plugins:
         content: Do not use with latest FWE, it is already integrated.
     tag:
       - Names
-  - name: CMF-Zeta.esm
-    msg:
-      - type: say
-        content: "Requires: Zeta.esm"
 # ENDGROUP: ESMs
 # BEGINGROUP: Unofficial Patches and Fixes
   - name: DALCO Inventory Sorter - Fallout 3 & All DLCs.esp
@@ -3243,20 +3231,6 @@ plugins:
         content: Please update to latest version.
 # ENDGROUP: Middle Misc A
 # BEGINGROUP: Middle Misc B
-  - name: Companion Core DLC Addon.esp
-    msg:
-      - type: say
-        content: "Requires: Companion Core.esm"
-      - type: say
-        content: "Requires: Anchorage.ESM"
-      - type: say
-        content: "Requires: ThePitt.ESM"
-      - type: say
-        content: "Requires: BrokenSteel.ESM"
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Requires: Zeta.esm"
   - name: Wasteland Whisperer v2 Broken Steel Addon.esp
     msg:
       - type: say
