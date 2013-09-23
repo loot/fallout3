@@ -1,7 +1,7 @@
 common:
   - &FOSE
     name: "..\fose_loader.exe"
-    display: FOSE
+    display: "http://fose.silverlock.org/ FOSE"
 
 globals:
   - type: warn
@@ -234,8 +234,10 @@ plugins:
       - [ *FOSE ]
   - name: DCInteriors_ComboEdition.esm
     inc:
-      - DCInteriors_(LEnfntPl|Mason|SewardSq|Takoma)\.esm
-# ^Need to verify
+      - DCInteriors_LEnfntPl.esm
+      - DCInteriors_Mason.esm
+      - DCInteriors_SewardSq.esm
+      - DCInteriors_Takoma.esm
   - name: DCInteriors_Georgtown.esm
     inc:
       - DCInteriors_ComboEdition.esm
