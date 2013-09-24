@@ -189,7 +189,7 @@ plugins:
       - RH_IronSights_Basic_VanillaPlugin.esp
     msg:
       - type: warn
-        content: "This mod requires resources from "http://fallout3.nexusmods.com/mods/6938 RH_IronSights." - please see the readme"
+        content: This mod requires resources from "http://fallout3.nexusmods.com/mods/6938 RH_IronSights", please see mod's readme.
         condition: not file("meshes\Characters\_1stperson") or not file("meshes\Characters\_male")
     tag:
       - Graphics
@@ -707,7 +707,7 @@ plugins:
       - type: say
         content: Do not use with latest FOOK2, it is already integrated.
       - type: say
-        content: Obselete - upgrade to Fallout Streetlights (http://fallout3.nexusmods.com/mods/8069)
+        content: Obselete - upgrade to "http://fallout3.nexusmods.com/mods/8069 Fallout Streetlights".
   - name: RK-Skelette-3.0.esp
     msg:
       - type: say
@@ -2882,7 +2882,7 @@ plugins:
   - name: LingsFinerThings.esp
     msg:
       - type: say
-        content: Obselete update to latest version (http://fallout3.nexusmods.com/mods/17631/)
+        content: Obselete, update to "http://fallout3.nexusmods.com/mods/17631/ the latest version".
   - name: LingsPrettyThings.esp
     tag:
       - Eyes
