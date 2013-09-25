@@ -462,10 +462,6 @@ plugins:
     tag:
       - Names
       - NoMerge
-  - name: Ambient Temperature - OA.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
   - name: Project Beauty.esp
     msg:
       - type: error
@@ -514,33 +510,15 @@ plugins:
       - NPC.Race
       - NpcFaces
   - name: Fast VATS 1.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Fast VATS 2.esp"
+    inc:
+      - Fast VATS 2.esp
   - name: Fast VATS 2.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Fast VATS 1.esp"
+    inc:
+      - Fast VATS 1.esp
   - name: VATS_Normal_dmg_to_player.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Fast VATS X.esp."
-  - name: QuickerMessagesOA.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-  - name: QuickerMessagesPITT.esp
-    msg:
-      - type: say
-        content: "Requires: ThePitt.esm"
-  - name: QuickerMessagesBS.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-  - name: QuickerMessagesPL.esp
-    msg:
-      - type: say
-        content: "Requires: PointLookout.esm"
+    inc:
+      - Fast VATS 1.esp
+      - Fast VATS 2.esp
   - name: DALCO Inventory Sorter - Dynamic Crosshair.esp
     tag:
       - Names
@@ -595,66 +573,15 @@ plugins:
     tag:
       - Names
       - NoMerge
-  - name: CRAFT - Activation Perk.esp
-    msg:
-      - type: say
-        content: "Requires: CRAFT.ESM"
-  - name: CRAFT -Zeta -  Activation Perk.esp
-    msg:
-      - type: say
-        content: "Requires: CRAFT.ESM"
-  - name: CRAFT - Workbench and Crafting Expansion combined.esp
-    msg:
-      - type: say
-        content: "Requires: CRAFT.esm"
-  - name: CRAFT - Clutter Conversions.esp
-    msg:
-      - type: say
-        content: "Requires: CRAFT.esm"
-  - name: CALIBRxMerchant.esp
-    msg:
-      - type: say
-        content: "Requires: CALIBR.ESM"
-  - name: DelayAnchorage.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.ESM"
-  - name: DelayThePitt.esp
-    msg:
-      - type: say
-        content: "Requires: ThePitt.ESM"
-  - name: DelaySteel.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.ESM"
-  - name: delaypl.esp
-    msg:
-      - type: say
-        content: "Requires: PointLookout.ESM"
-  - name: delayzeta.esp
-    msg:
-      - type: say
-        content: "Requires: Zeta.ESM"
-  - name: Delay ThePitt + Anchorage.esp
-    msg:
-      - type: say
-        content: "Requires: ThePitt.ESM"
-      - type: say
-        content: "Requires: Anchorage.ESM"
   - name: Zumbs' Equipable Pip Boy.esp
-    msg:
-      - type: say
-        content: "Incompatible with: That Glove.esp"
-      - type: say
-        content: "Incompatible with: Pip Boy Be Gone Mark II.esp"
-      - type: say
-        content: "Incompatible with: Pip Boy Be Gone Mark II 1.1.esp"
-      - type: say
-        content: "Incompatible with: PipBegone.esp"
-      - type: say
-        content: "Incompatible with: PipBoyBeGone.esp"
-      - type: say
-        content: "Incompatible with: 1PipboyPDA.esp"
+    inc:
+      - That Glove.esp
+      - Pip Boy Be Gone Mark II.esp
+      - Pip Boy Be Gone Mark II 1.1.esp
+      - PipBegone.esp
+      - PipBoyBeGone.esp
+      - 1PipboyPDA.esp
+      # I'm not actually sure that these incompatible files exist (except the bottom one)
   - name: DK_BulletTime.esp
     msg:
       - type: say
@@ -683,49 +610,11 @@ plugins:
     tag:
       - Graphics
   - name: PAL - MERGED.esp
-    msg:
-      - type: say
-        content: "Incompatible with: PAL - BASE File.esp"
+    inc:
+      - PAL - BASE File.esp
   - name: PAL - BASE File.esp
-    msg:
-      - type: say
-        content: "Incompatible with: PAL - MERGED.esp"
-  - name: PAL - Operation Anchorage.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-  - name: PAL - The Pitt.esp
-    msg:
-      - type: say
-        content: "Requires: ThePitt.esm"
-  - name: PAL - Broken Steel.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-  - name: PAL - Point Lookout.esp
-    msg:
-      - type: say
-        content: "Requires: PointLookout.esm"
-  - name: PAL - Mothership Zeta.esp
-    msg:
-      - type: say
-        content: "Requires: Zeta.esm"
-  - name: Achievements for All - Anchorage.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-  - name: Achievements for All - The Pitt.esp
-    msg:
-      - type: say
-        content: "Requires: ThePitt.esm"
-  - name: Achievements for All - Broken Steel.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-  - name: Achievements for All - Point Lookout.esp
-    msg:
-      - type: say
-        content: "Requires: PointLookout.esm"
+    inc:
+      - PAL - MERGED.esp
 # ENDGROUP: Early Loading Mods
 # BEGINGROUP: Sounds
   - name: GalaxyNewsRadioFix[N].esp
