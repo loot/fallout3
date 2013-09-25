@@ -2,6 +2,10 @@ common:
   - &FOSE
     name: "..\fose_loader.exe"
     display: "http://fose.silverlock.org/ FOSE"
+  - &AlreadyInUF3P
+    type: say
+    content: Do not use with Unofficial Fallout 3 Patch - Already Included
+    condition: file("Unofficial Fallout 3 Patch.esm")
 
 globals:
   - type: warn
@@ -277,17 +281,6 @@ plugins:
 # ENDGROUP: ESMs
 # BEGINGROUP: Unofficial Patches and Fixes
   - name: DALCO Inventory Sorter - Fallout 3 & All DLCs.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Requires: ThePitt.esm"
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Requires: Zeta.esm"
     tag:
       - Names
       - NoMerge
@@ -296,45 +289,25 @@ plugins:
       - Names
       - NoMerge
   - name: Unofficial Fallout 3 Patch - Operation Anchorage.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-        condition: not file("Anchorage.esm")
     tag:
       - Deflst
       - Names
   - name: Unofficial Fallout 3 Patch - The Pitt.esp
-    msg:
-      - type: say
-        content: "Requires: ThePitt.esm"
-        condition: not file("ThePitt.esm")
     tag:
       - Deflst
       - Names
   - name: Unofficial Fallout 3 Patch - Broken Steel.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-        condition: not file("BrokenSteel.esm")
     tag:
       - Deflst
       - Names
       - NoMerge
   - name: Unofficial Fallout 3 Patch - Point Lookout.esp
-    msg:
-      - type: say
-        content: "Requires: PointLookout.esm"
-        condition: not file("PointLookout.esm")
     tag:
       - Deflst
       - Invent
       - Names
       - Stats
   - name: Unofficial Fallout 3 Patch - Mothership Zeta.esp
-    msg:
-      - type: say
-        content: "Requires: Zeta.esm"
-        condition: not file("Zeta.esm")
     tag:
       - Deflst
       - Names
@@ -342,198 +315,96 @@ plugins:
     msg:
       - type: say
         content: Paradox Ignition EVE-merger - compatibility patch for the Unofficial Fallout 3 Patch.
-  - name: Broken Steel Early Enclave Fix.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-  - name: BrokenSteel_StarPaladinCross_Fix.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
   - name: CinderBlockRockFix.esp
-    msg:
-      - type: say
-        content: "Incompatible with: CinderblockRockFix2.esp"
-      - type: say
-        content: "Incompatible with: ConcreteSlabFix.esp"
-      - type: say
-        content: "Incompatible with: ConcreteSlabFix2.esp"
+    inc:
+      - CinderblockRockFix2.esp
+      - ConcreteSlabFix.esp
+      - ConcreteSlabFix2.esp
   - name: CinderblockRockFix2.esp
-    msg:
-      - type: say
-        content: "Incompatible with: CinderBlockRockFix.esp"
-      - type: say
-        content: "Incompatible with: ConcreteSlabFix.esp"
-      - type: say
-        content: "Incompatible with: ConcreteSlabFix2.esp"
+    inc:
+      - CinderBlockRockFix.esp
+      - ConcreteSlabFix.esp
+      - ConcreteSlabFix2.esp
   - name: ConcreteSlabFix.esp
-    msg:
-      - type: say
-        content: "Incompatible with: CinderBlockRockFix.esp"
-      - type: say
-        content: "Incompatible with: CinderblockRockFix2.esp"
-      - type: say
-        content: "Incompatible with: ConcreteSlabFix2.esp"
+    inc:
+      - CinderBlockRockFix.esp
+      - CinderblockRockFix2.esp
+      - ConcreteSlabFix2.esp
   - name: ConcreteSlabFix2.esp
-    msg:
-      - type: say
-        content: "Incompatible with: CinderBlockRockFix.esp"
-      - type: say
-        content: "Incompatible with: CinderblockRockFix2.esp"
-      - type: say
-        content: "Incompatible with: ConcreteSlabFix.esp"
+    inc:
+      - CinderBlockRockFix.esp
+      - CinderblockRockFix2.esp
+      - ConcreteSlabFix.esp
   - name: Error Correction.esp
-    msg:
-      - type: say
-        content: "Requires: Requires: Anchorage.esm"
-      - type: say
-        content: "Requires: ThePitt.esm"
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Requires: Zeta.esm"
     tag:
       - Scripts
   - name: Error Correction - All Transparency & Trees.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Error Correction - All Transparency.esp"
+    inc:
+      - Error Correction - All Transparency.esp
   - name: Error Correction - Transparency Megaton.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Error Correction - All Transparency.esp"
-      - type: say
-        content: "Incompatible with: Error Correction - All Transparency & Trees.esp"
+    inc:
+      - Error Correction - All Transparency.esp
+      - Error Correction - All Transparency & Trees.esp
   - name: Error Correction - Transparency RC.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Error Correction - All Transparency.esp"
-      - type: say
-        content: "Incompatible with: Error Correction - All Transparency & Trees.esp"
+    inc:
+      - Error Correction - All Transparency.esp
+      - Error Correction - All Transparency & Trees.esp
   - name: Error Correction - Transparency Rubble Piles.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Error Correction - All Transparency.esp"
-      - type: say
-        content: "Incompatible with: Error Correction - All Transparency & Trees.esp"
+    inc:
+      - Error Correction - All Transparency.esp
+      - Error Correction - All Transparency & Trees.esp
   - name: Error Correction - Trees.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Error Correction - All Transparency & Trees.esp"
-  - name: OADLCfix.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-  - name: zetabugfix.esp
-    msg:
-      - type: say
-        content: "Requires: Zeta.esm"
-  - name: BenTweaks-OAE.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-  - name: BenTweaks-TPE.esp
-    msg:
-      - type: say
-        content: "Requires: ThePitt.esm"
-  - name: BenTweaks-AAF.esp
-    msg:
-      - type: say
-        content: "Requires: ThePitt.esm"
-  - name: BenTweaks-BSE.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-  - name: BenTweaks-PLE.esp
-    msg:
-      - type: say
-        content: "Requires: PointLookout.esm"
-  - name: BenTweaks-MZE.esp
-    msg:
-      - type: say
-        content: "Requires: Zeta.esm"
+    inc:
+      - Error Correction - All Transparency & Trees.esp
   - name: FireLightFix.esp
     tag:
       - C.Light
-  - name: QuickFix.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Requires: ThePitt.esm"
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Requires: Zeta.esm"
   - name: BringBackBael.esp
     msg:
       - type: say
-        content: Obsolete - Now intergrated into Fallout Remastered.esp, upgrade to latest version
+        content: 'Obsolete - Now intergrated into Fallout Remastered.esp, upgrade to latest version'
   - name: BlackWidowBurkeFix.esp
     tag:
       - Scripts
   - name: PyromaniacFix-Burnmaster.esp
     msg:
-      - type: say
-        content: Do not use with Unofficial Fallout 3 Patch - Already Included
+      - [ *AlreadyInUF3P ]
     tag:
       - Deflst
   - name: PyromaniacFix-Burnmaster-BS.esp
     msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: Do not use with Unofficial Fallout 3 Patch - Already Included
+      - [ *AlreadyInUF3P ]
     tag:
       - Deflst
   - name: PyromaniacFix-Both.esp
     msg:
-      - type: say
-        content: Do not use with Unofficial Fallout 3 Patch - Already Included
+      - [ *AlreadyInUF3P ]
     tag:
       - Deflst
   - name: PyromaniacFix-Both-BS.esp
     msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: Do not use with Unofficial Fallout 3 Patch - Already Included
+      - [ *AlreadyInUF3P ]
     tag:
       - Deflst
   - name: PyromaniacFix-Both+Nuka.esp
     msg:
-      - type: say
-        content: Do not use with Unofficial Fallout 3 Patch - Already Included
+      - [ *AlreadyInUF3P ]
     tag:
       - Deflst
   - name: PyromaniacFix-Both+Nuka-BS.esp
     msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: Do not use with Unofficial Fallout 3 Patch - Already Included
+      - [ *AlreadyInUF3P ]
     tag:
       - Deflst
   - name: DemolitionExpertFix-Nuka.esp
     msg:
-      - type: say
-        content: Do not use with Unofficial Fallout 3 Patch - Already Included
+      - [ *AlreadyInUF3P ]
   - name: MS11fix.esp
     tag:
       - Actors.AIPackages
       - C.Light
       - Invent
       - Scripts
-  - name: Project Clean FOOK 2 Patch V1.0.esp
-    msg:
-      - type: say
-        content: "Requires: CALIBR.esm"
-      - type: say
-        content: "Requires: FOOK2 - Main.ESM"
   - name: BetterGamePerformance.esp
     tag:
       - Deflst
