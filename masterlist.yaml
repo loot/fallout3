@@ -618,57 +618,61 @@ plugins:
 # ENDGROUP: Early Loading Mods
 # BEGINGROUP: Sounds
   - name: GalaxyNewsRadioFix[N].esp
-    msg:
-      - type: say
-        content: "Incompatible with: GalaxyNewsRadioXXX[M].esp"
-      - type: say
-        content: "Incompatible with: GalaxyNewsRadioFix[S].esp"
+    inc:
+      - GalaxyNewsRadio100[M].esp
+      - GalaxyNewsRadio80[M].esp
+      - GalaxyNewsRadio60[M].esp
+      - GalaxyNewsRadio40[M].esp
+      - GalaxyNewsRadio20[M].esp
+      - GalaxyNewsRadioFix[S].esp
   - name: GalaxyNewsRadioFix[S].esp
-    msg:
-      - type: say
-        content: "Incompatible with: GalaxyNewsRadioXXX[M].esp"
-      - type: say
-        content: "Incompatible with: GalaxyNewsRadioFix[N].esp"
+    inc:
+      - GalaxyNewsRadio100[M].esp
+      - GalaxyNewsRadio80[M].esp
+      - GalaxyNewsRadio60[M].esp
+      - GalaxyNewsRadio40[M].esp
+      - GalaxyNewsRadio20[M].esp
+      - GalaxyNewsRadioFix[N].esp
   - name: GalaxyNewsRadio100[M].esp
-    msg:
-      - type: say
-        content: "Incompatible with: GalaxyNewsRadioXXX[M].esp"
-      - type: say
-        content: "Incompatible with: GalaxyNewsRadioFix[N].esp"
-      - type: say
-        content: "Incompatible with: GalaxyNewsRadioFix[S].esp"
+    inc:
+      - GalaxyNewsRadio80[M].esp
+      - GalaxyNewsRadio60[M].esp
+      - GalaxyNewsRadio40[M].esp
+      - GalaxyNewsRadio20[M].esp
+      - GalaxyNewsRadioFix[N].esp
+      - GalaxyNewsRadioFix[S].esp
   - name: GalaxyNewsRadio80[M].esp
-    msg:
-      - type: say
-        content: "Incompatible with: GalaxyNewsRadioXXX[M].esp"
-      - type: say
-        content: "Incompatible with: GalaxyNewsRadioFix[N].esp"
-      - type: say
-        content: "Incompatible with: GalaxyNewsRadioFix[S].esp"
+    inc:
+      - GalaxyNewsRadio100[M].esp
+      - GalaxyNewsRadio60[M].esp
+      - GalaxyNewsRadio40[M].esp
+      - GalaxyNewsRadio20[M].esp
+      - GalaxyNewsRadioFix[N].esp
+      - GalaxyNewsRadioFix[S].esp
   - name: GalaxyNewsRadio60[M].esp
-    msg:
-      - type: say
-        content: "Incompatible with: GalaxyNewsRadioXXX[M].esp"
-      - type: say
-        content: "Incompatible with: GalaxyNewsRadioFix[N].esp"
-      - type: say
-        content: "Incompatible with: GalaxyNewsRadioFix[S].esp"
+    inc:
+      - GalaxyNewsRadio100[M].esp
+      - GalaxyNewsRadio80[M].esp
+      - GalaxyNewsRadio40[M].esp
+      - GalaxyNewsRadio20[M].esp
+      - GalaxyNewsRadioFix[N].esp
+      - GalaxyNewsRadioFix[S].esp
   - name: GalaxyNewsRadio40[M].esp
-    msg:
-      - type: say
-        content: "Incompatible with: GalaxyNewsRadioXXX[M].esp"
-      - type: say
-        content: "Incompatible with: GalaxyNewsRadioFix[N].esp"
-      - type: say
-        content: "Incompatible with: GalaxyNewsRadioFix[S].esp"
+    inc:
+      - GalaxyNewsRadio100[M].esp
+      - GalaxyNewsRadio80[M].esp
+      - GalaxyNewsRadio60[M].esp
+      - GalaxyNewsRadio20[M].esp
+      - GalaxyNewsRadioFix[N].esp
+      - GalaxyNewsRadioFix[S].esp
   - name: GalaxyNewsRadio20[M].esp
-    msg:
-      - type: say
-        content: "Incompatible with: GalaxyNewsRadioXXX[M].esp"
-      - type: say
-        content: "Incompatible with: GalaxyNewsRadioFix[N].esp"
-      - type: say
-        content: "Incompatible with: GalaxyNewsRadioFix[S].esp"
+    inc:
+      - GalaxyNewsRadio100[M].esp
+      - GalaxyNewsRadio80[M].esp
+      - GalaxyNewsRadio60[M].esp
+      - GalaxyNewsRadio40[M].esp
+      - GalaxyNewsRadioFix[N].esp
+      - GalaxyNewsRadioFix[S].esp
   - name: ReneersRadioMod.esp
     msg:
       - type: say
