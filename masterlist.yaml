@@ -575,13 +575,8 @@ plugins:
       - NoMerge
   - name: Zumbs' Equipable Pip Boy.esp
     inc:
-      - That Glove.esp
-      - Pip Boy Be Gone Mark II.esp
-      - Pip Boy Be Gone Mark II 1.1.esp
-      - PipBegone.esp
-      - PipBoyBeGone.esp
+      - Remove That Glove.esp
       - 1PipboyPDA.esp
-      # I'm not actually sure that these incompatible files exist (except the bottom one)
   - name: DK_BulletTime.esp
     msg:
       - type: say
