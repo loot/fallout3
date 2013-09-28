@@ -916,18 +916,6 @@ plugins:
       - Actors.AIData
 # ENDGROUP: Early Misc B
 # BEGINGROUP: NPC
-  - name: BarterWithRaiders-NPC Default-MMM.esp
-    msg:
-      - type: say
-        content: "Requires: Mart's Mutant Mod.esm"
-      - type: say
-        content: "Requires: BarterWithRaiders-NPC Default.esp"
-  - name: BarterWithRaiders-NPC Compatible-MMM.esp
-    msg:
-      - type: say
-        content: "Requires: Mart's Mutant Mod.esm"
-      - type: say
-        content: "Requires: BarterWithRaiders-NPC Compatible.esp"
   - name: BombayTradingCo.esp
     tag:
       - Actors.AIPackages
@@ -946,9 +934,6 @@ plugins:
       - R.Skills
       - Scripts
   - name: Clothed American Soldiers.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
     tag:
       - Invent
   - name: Clothed Sarah Lyons.esp
@@ -961,13 +946,11 @@ plugins:
     tag:
       - Actors.AIPackages
   - name: CrowdedCities_v2.esp
-    msg:
-      - type: say
-        content: "Incompatible with: CrowdedCities_v2_lessNPCs.esp"
+    inc:
+      - CrowdedCities_v2_lessNPCs.esp
   - name: CrowdedCities_v2_lessNPCs.esp
-    msg:
-      - type: say
-        content: "Incompatible with: CrowdedCities_v2.esp"
+    inc:
+      - CrowdedCities_v2.esp
   - name: Essential Caravan Merchants.esp
     tag:
       - Actors.ACBS
@@ -981,23 +964,14 @@ plugins:
     tag:
       - Names
   - name: MTC Wasteland Travellers (Optional)- Crowded Cities less NPCs.esp
-    msg:
-      - type: say
-        content: "Incompatible with: MTC Wasteland Travellers (Optional)- Crowded Cities.esp"
+    inc:
+      - MTC Wasteland Travellers (Optional)- Crowded Cities.esp
   - name: MTC Wasteland Travellers (Optional)- Crowded Cities.esp
-    msg:
-      - type: say
-        content: "Incompatible with: MTC Wasteland Travellers (Optional)- Crowded Cities less NPCs.esp"
+    inc:
+      - MTC Wasteland Travellers (Optional)- Crowded Cities less NPCs.esp
   - name: Outcast Scribes03.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Incompatible with: OutcastCasdinArmorFix.esp"
-  - name: Point Lookout Lower Health.esp
-    msg:
-      - type: say
-        content: "Requires: PointLookout.esm"
+    inc:
+      - OutcastCasdinArmorFix.esp
   - name: royphilipsevil.esp
     tag:
       - Actors.ACBS
