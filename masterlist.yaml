@@ -994,41 +994,18 @@ plugins:
 # ENDGROUP: NPC
 # BEGINGROUP: Places
   - name: Arefu Player House.esp
-    msg:
-      - type: say
-        content: "Incompatible with: ArefuExpandedByAzar.esm"
-  - name: B72v3-03.esp
-    msg:
-      - type: say
-        content: "Requires: Bunker72 v3.esm"
-  - name: B72v3 Clutterfree.esp
-    msg:
-      - type: say
-        content: "Requires: Bunker72 v3.esm"
-  - name: B72v3 Mainelevator timerswitch.esp
-    msg:
-      - type: say
-        content: "Requires: Bunker72 v3.esm"
+    inc:
+      - ArefuExpandedByAzar.esm
   - name: DCStreet.esp
     msg:
       - type: say
         content: Only use DCStreet.esp or DCStreet - BS.esp - NOT Both
+        condition: file("DCStreet - BS.esp")
   - name: DCStreet - BS.esp
     msg:
       - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
         content: Only use DCStreet.esp or DCStreet - BS.esp - NOT Both
-  - name: More2Megaton.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-  - name: Megaton House and Theme Overhaul_SY.esp
-    msg:
-      - type: say
-        content: "Requires: FNNsys.esm"
-      - type: say
-        content: "Requires: Megaton House and Theme Overhaul.esp"
+        condition: file("DCStreet.esp")
   - name: Megaton Walkway.esp
     msg:
       - type: say
@@ -1045,61 +1022,18 @@ plugins:
         content: Do not use with latest FOOK2, it is already integrated.
       - type: say
         content: "Needs TES4Edit cleaning: \"http://cs.elderscrolls.com/index.php?title=TES4Edit_Cleaning_Guide\""
-  - name: Riverboat Landing Merchant.esp
-    msg:
-      - type: say
-        content: "Requires: PointLookout.esm"
-  - name: Rivet City Merchants With Point Lookout.esp
-    msg:
-      - type: say
-        content: "Requires: PointLookout.esm"
   - name: Towers Hill.esp
     tag:
       - Invent
-  - name: TheSKINNYwearShopDC.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-  - name: TunnelOutpost.esp
-    msg:
-      - type: say
-        content: "Requires: PointLookout.esm"
-  - name: UndergroundHideout_SY.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Requires: ThePitt.esm"
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Requires: Zeta.esm"
-      - type: say
-        content: "Requires: FNNsys.esm"
-      - type: say
-        content: "Requires: UndergroundHideout.esp"
-  - name: DALCO Fixes for Underground Hideout.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: UndergroundHideout.esp"
   - name: DALCO Inventory Sorter - Underground Hideout (Fallout 3 & All DLCs).esp
     tag:
       - Names
       - NoMerge
   - name: Vault 89 (player home) V1-35.esp
-    msg:
-      - type: say
-        content: "Incompatible with: FNNSys.esm"
+    inc:
+      - FNNSys.esm
     tag:
       - Scripts
-  - name: BA_WastelandRestoration_DLCs.esp
-    msg:
-      - type: say
-        content: "Requires: BA_WastelandRestoration.esp"
 # ENDGROUP: Places
 # BEGINGROUP: Overhauls
 # BEGINGROUP: FOOK
