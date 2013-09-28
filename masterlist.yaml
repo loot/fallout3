@@ -688,30 +688,10 @@ plugins:
 # BEGINGROUP: Global Traveling System
 # ENDGROUP: Global Traveling System
 # BEGINGROUP: Quests
-  - name: AQFH.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-  - name: AQFH2.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Requires: ThePitt.esm"
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Requires: Zeta.esm"
   - name: Despicable Dashwood v2.esp
     tag:
       - Actors.ACBS
       - Invent
-  - name: EIP.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
   - name: HeirApparent.esp
     tag:
       - Scripts
@@ -724,74 +704,51 @@ plugins:
   - name: Lobotomized! 400.esp
     msg:
       - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: Only use one Lobotomized!plugin at once
+        content: Only use one Lobotomized! plugin at once
+        condition: file("Lobotomized! 300.esp") or file("Lobotomized! 200.esp") or file("Lobotomized! 100.esp")
   - name: Lobotomized! 300.esp
     msg:
       - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: Only use one Lobotomized!plugin at once
+        content: Only use one Lobotomized! plugin at once
+        condition: file("Lobotomized! 400.esp") or file("Lobotomized! 200.esp") or file("Lobotomized! 100.esp")
   - name: Lobotomized! 200.esp
     msg:
       - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: Only use one Lobotomized!plugin at once
+        content: Only use one Lobotomized! plugin at once
+        condition: file("Lobotomized! 400.esp") or file("Lobotomized! 300.esp") or file("Lobotomized! 100.esp")
   - name: Lobotomized! 100.esp
     msg:
       - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: Only use one Lobotomized!plugin at once
+        content: Only use one Lobotomized! plugin at once
+        condition: file("Lobotomized! 400.esp") or file("Lobotomized! 300.esp") or file("Lobotomized! 200.esp")
   - name: NotSoFast.esp
     tag:
       - Scripts
   - name: PLweightadjust.esp
-    msg:
-      - type: say
-        content: "Requires: PointLookout.ESM"
     tag:
       - Invent
       - Scripts
       - Stats
-  - name: PLFewerItems.esp
-    msg:
-      - type: say
-        content: "Requires: PointLookout.ESM"
   - name: RatTrapRadio.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Regulators_Overhaul.esp"
-      - type: say
-        content: "Incompatible with: Regulators _Overhaul_lvl7.esp"
-      - type: say
-        content: "Incompatible with: Regulators _Overhaul_lvl2.esp"
+    inc:
+      - Regulators_Overhaul.esp
+      - Regulators _Overhaul_lvl7.esp
+      - Regulators _Overhaul_lvl2.esp
   - name: Regulators_Overhaul.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Regulators.esp"
-      - type: say
-        content: "Incompatible with: Regulators _Overhaul_lvl7.esp"
-      - type: say
-        content: "Incompatible with: Regulators _Overhaul_lvl2.esp"
+    inc:
+      - Regulators.esp
+      - Regulators _Overhaul_lvl7.esp
+      - Regulators _Overhaul_lvl2.esp
   - name: Regulators _Overhaul_lvl7.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Regulators_Overhaul.esp"
-      - type: say
-        content: "Incompatible with: Regulators.esp"
-      - type: say
-        content: "Incompatible with: Regulators _Overhaul_lvl2.esp"
+    inc:
+      - Regulators_Overhaul.esp
+      - Regulators.esp
+      - Regulators _Overhaul_lvl2.esp
   - name: Regulators _Overhaul_lvl2.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Regulators_Overhaul.esp"
-      - type: say
-        content: "Incompatible with: Regulators _Overhaul_lvl7.esp"
-      - type: say
-        content: "Incompatible with: Regulators.esp"
+    inc:
+      - Regulators_Overhaul.esp
+      - Regulators _Overhaul_lvl7.esp
+      - Regulators.esp
   - name: The Mantis Imperative - Mantis.esp
     tag:
       - Relev
