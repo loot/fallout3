@@ -684,30 +684,6 @@ plugins:
         content: Load RadioHotkey after all other radio mods
 # ENDGROUP: Sounds
 # BEGINGROUP: Early Misc A (Perks)
-  - name: ImprovedCovertOpsPerk.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-  - name: Ice Cold Nuka, Converted.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-  - name: Almost Perfect Anytime Bobbleheads + No Level.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-  - name: Almost Perfect Anytime Bobbleheads.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-  - name: Perfectly SPECIAL + No Level.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-  - name: Perfectly SPECIAL.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
 # ENDGROUP: Early Misc A (Perks)
 # BEGINGROUP: Global Traveling System
   - name: ClawPeak.esp
