@@ -758,37 +758,11 @@ plugins:
     tag:
       - Invent
   - name: BoSTeslaEarly.esp
-    msg:
-      - type: say
-        content: "Incompatible with: BoSTesla.esp"
+    inc:
+      - BoSTesla.esp
   - name: BoSTesla.esp
-    msg:
-      - type: say
-        content: "Incompatible with: BoSTeslaEarly.esp"
-  - name: XSZeta.esp
-    msg:
-      - type: say
-        content: "Requires: Zeta.esm"
-  - name: XSIngestPointLookout.esp
-    msg:
-      - type: say
-        content: "Requires: PointLookout.esm"
-  - name: MarkB50K_Wasteland_Patrols.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.ESM"
-      - type: say
-        content: "Requires: ThePitt.ESM"
-      - type: say
-        content: "Requires: BrokenSteel.ESM"
-      - type: say
-        content: "Requires: PointLookout.esm"
-  - name: MarkB50K_Dynamic_Missions.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.ESM"
-      - type: say
-        content: "Requires: BrokenSteel.ESM"
+    inc:
+      - BoSTeslaEarly.esp
   - name: FF_DestructibleRadios.esp
     tag:
       - Destructible
@@ -796,33 +770,30 @@ plugins:
     tag:
       - Invent
   - name: ScrapMetal.esp
+    inc:
+      - ScrapMetal_H.esp
+      - ScrapMetal_Q.esp
     msg:
       - type: say
-        content: "Incompatible with: ScrapMetal_H.esp"
-      - type: say
-        content: "Incompatible with: ScrapMetal_Q.esp"
-      - type: say
-        content: Old, upgrade to 'CreateScrapMetal.esp'.
+        content: "Old, upgrade to 'CreateScrapMetal.esp'."
     tag:
       - Invent
   - name: ScrapMetal_H.esp
+    inc:
+      - ScrapMetal.esp
+      - ScrapMetal_Q.esp
     msg:
       - type: say
-        content: "Incompatible with: ScrapMetal.esp"
-      - type: say
-        content: "Incompatible with: ScrapMetal_Q.esp"
-      - type: say
-        content: Old, upgrade to 'CreateScrapMetal.esp'.
+        content: "Old, upgrade to 'CreateScrapMetal.esp'."
     tag:
       - Invent
   - name: ScrapMetal_Q.esp
+    inc:
+      - ScrapMetal.esp
+      - ScrapMetal_H.esp
     msg:
       - type: say
-        content: "Incompatible with: ScrapMetal.esp"
-      - type: say
-        content: "Incompatible with: ScrapMetal_H.esp"
-      - type: say
-        content: Old, upgrade to 'CreateScrapMetal.esp'.
+        content: "Old, upgrade to 'CreateScrapMetal.esp'."
     tag:
       - Invent
   - name: CreateScrapMetal.esp
@@ -837,9 +808,6 @@ plugins:
       - Actors.AIData
       - Relev
   - name: Placable Lights v2.1.esp
-    msg:
-      - type: say
-        content: "Requires: Zeta.esm"
     tag:
       - Actors.AIData
       - Relev
@@ -847,31 +815,11 @@ plugins:
     tag:
       - Relev
   - name: RobCo Universal Battery Charger Kit.esp
-    msg:
-      - type: say
-        content: "Incompatible with: RobCo Universal Battery Charger Kit - Zeta.esp"
+    inc:
+      - RobCo Universal Battery Charger Kit - Zeta.esp
   - name: RobCo Universal Battery Charger Kit - Zeta.esp
-    msg:
-      - type: say
-        content: "Incompatible with: RobCo Universal Battery Charger Kit.esp"
-  - name: EpFspitBomb.esp
-    msg:
-      - type: say
-        content: "Requires: CRAFT.esm"
-  - name: EpFspitBombMMM.esp
-    msg:
-      - type: say
-        content: "Requires: CRAFT.esm"
-      - type: say
-        content: "Requires: Mart's Mutant Mod.esm"
-  - name: Cryo Weapons - No Lists.esp
-    msg:
-      - type: say
-        content: "Requires: CRAFT"
-  - name: Cryo Weapons - Vanilla.esp
-    msg:
-      - type: say
-        content: "Requires: CRAFT"
+    inc:
+      - RobCo Universal Battery Charger Kit.esp
   - name: DALCO Inventory Sorter - Sack of Holding.esp
     tag:
       - Names
@@ -879,29 +827,22 @@ plugins:
   - name: Chems and Meds Re-Textures Pack.esp
     tag:
       - Graphics
-  - name: Blank's Container Backpack (Fook Plugin).esp
-    msg:
-      - type: say
-        content: "Requires: CALIBR.esm"
-      - type: say
-        content: "Requires: FOOK.esm"
   - name: MAXdog.esp
     tag:
       - Graphics
   - name: Megaton Sorter.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: Requires FOSE
+    req:
+      - [ *FOSE ]
   - name: D.C. Confidential.esp
     msg:
       - type: say
-        content: Choose only one 'D.C. Confidential' ESP.
+        content: "Choose only one 'D.C. Confidential' ESP."
+        condition: file("D.C. Confidential with Glow.esp")
   - name: D.C. Confidential with Glow.esp
     msg:
       - type: say
-        content: Choose only one 'D.C. Confidential' ESP.
+        content: "Choose only one 'D.C. Confidential' ESP."
+        condition: file("D.C. Confidential.esp")
   - name: ShadySands.esp
     tag:
       - Factions
@@ -909,10 +850,6 @@ plugins:
   - name: SuperSledgeBeatdown.esp
     tag:
       - Scripts
-  - name: PL More map markers.esp
-    msg:
-      - type: say
-        content: "Requires: PointLookout.esm"
   - name: BA_InventorySorterAnchorage.esp
     tag:
       - Names
@@ -941,15 +878,9 @@ plugins:
     tag:
       - Graphics
   - name: Scenic_Loading_Background_PointofLookoutDLC.esp
-    msg:
-      - type: say
-        content: "Requires: PointLookout.esm"
     tag:
       - Graphics
   - name: Scenic_Loading_Background_OperationAnchorageDLC.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
     tag:
       - Graphics
   - name: loadingsc.esp
