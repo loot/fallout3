@@ -1038,40 +1038,14 @@ plugins:
 # BEGINGROUP: Overhauls
 # BEGINGROUP: FOOK
   - name: FOOK2 - Main.esp
-    msg:
-      - type: error
-        content: FOOK2 - Main.esm is missing.
-        condition: file("FOOK2 - Main.esm")
-      - type: say
-        content: "Requires: CALIBR.ESM and FOOK2 - Main.ESM"
     tag:
       - Delev
       - Relev
   - name: FOOK2 - [EVE] Energy Visuals Enhanced.esp
     msg:
-      - type: say
-        content: "Requires: FOOK2 - Main.ESM"
       - type: error
         content: Remove if using FOOK2 1.1 and above
         condition: file("FOOK2 - Main.esm")
-  - name: FOOK2 - [DIK] DLC Improvement Kit.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.ESM"
-      - type: say
-        content: "Requires: ThePitt.ESM"
-      - type: say
-        content: "Requires: BrokenSteel.ESM"
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Requires: CALIBR.ESM"
-      - type: say
-        content: "Requires: and FOOK2 - Main.ESM"
-  - name: FOOK2 - Mothership Zeta.esp
-    msg:
-      - type: say
-        content: "Requires: FOOK2 - Main.ESM and Zeta.ESM"
   - name: FOOK2 - Main [Hotfix].esp
     msg:
       - type: error
@@ -1089,91 +1063,36 @@ plugins:
         condition: file("FOOK2 - Main.esm")
   - name: MyFOOK2 - No Nightvision on Power Helmets.esp
     msg:
-      - type: say
-        content: "Requires: FOOK2 - Main.ESM"
       - type: error
         content: Remove if using FOOK2 1.1 and above
         condition: file("FOOK2 - Main.esm")
   - name: MyFOOK2 - No RAPE Victims.esp
     msg:
-      - type: say
-        content: "Requires: FOOK2 - Main.ESM"
       - type: error
         content: Remove if using FOOK2 1.1 and above
         condition: file("FOOK2 - Main.esm")
   - name: MyFOOK2 - S.H.A.D.E.esp
     msg:
-      - type: say
-        content: "Requires: FOOK2 - Main.ESM"
       - type: error
         content: Remove if using FOOK2 1.1 and above
         condition: file("FOOK2 - Main.esm")
   - name: MyFOOK2 - Black & White Tranquility Lane.esp
     msg:
-      - type: say
-        content: "Requires: FOOK2 - Main.ESM"
       - type: error
         content: Remove if using FOOK2 1.1 and above
         condition: file("FOOK2 - Main.esm")
   - name: FOOK2 - [DESTRUCTION] Main.esp
-    msg:
-      - type: say
-        content: "Requires: FOOK2 - Main.ESM"
     tag:
       - Destructible
       - Scripts
-  - name: FOOK2 - [DESTRUCTION] Main - Statics.esp
-    msg:
-      - type: say
-        content: "Requires: FOOK2 - Main.ESM"
   - name: FOOK2 - [DESTRUCTION] DIK.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.ESM"
-      - type: say
-        content: "Requires: ThePitt.ESM"
-      - type: say
-        content: "Requires: BrokenSteel.ESM"
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Requires: CALIBR.ESM"
-      - type: say
-        content: "Requires: and FOOK2 - Main.ESM"
     tag:
       - Destructible
       - Scripts
-  - name: FOOK2 - [DESTRUCTION] DIK - Statics.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.ESM"
-      - type: say
-        content: "Requires: ThePitt.ESM"
-      - type: say
-        content: "Requires: BrokenSteel.ESM"
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Requires: CALIBR.ESM"
-      - type: say
-        content: "Requires: and FOOK2 - Main.ESM"
   - name: FOOK2 - [DESTRUCTION] Mothership Zeta.esp
-    msg:
-      - type: say
-        content: "Requires: FOOK2 - Main.ESM and Zeta.ESM"
     tag:
       - Destructible
       - Scripts
-  - name: FOOK2 - [DESTRUCTION] Mothership Zeta - Statics.esp
-    msg:
-      - type: say
-        content: "Requires: FOOK2 - Main.ESM and Zeta.ESM"
-  - name: WeightAmmo.esp
-    msg:
-      - type: say
-        content: "Requires: CALIBR.esm"
-      - type: say
-        content: "Requires: FOOK2 - Main.esm"
   - name: FPS Grenade Hotkey - FOOK2.esp
     msg:
       - type: error
@@ -1194,16 +1113,10 @@ plugins:
       - Sound
       - Stats
   - name: Apocalypse Armory - CALIBR.esp
-    msg:
-      - type: say
-        content: "Requires: CALIBR.ESM"
     tag:
       - Delev
       - Relev
   - name: Apocalypse Armory - xCALIBR.esp
-    msg:
-      - type: say
-        content: "Requires: xCALIBR.ESM"
     tag:
       - Deflst
       - Names
@@ -1211,31 +1124,18 @@ plugins:
   - name: Apocalypse Armory Preview - Grenades.esp
     msg:
       - type: say
-        content: "Incompatible with: Apocalypse Armory.esp"
-      - type: say
         content: Included in Apocalypse Armory
-  - name: Apocalypse Armory - DLC Enhancements.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.ESM"
+        condition: file("Apocalypse Armory.esp")
   - name: Apocalypse Armory - Grenade Hotkeys.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Apocalypse Armory - Grenade Hotkeys for DLC.esp"
-      - type: say
-        content: "Requires: FPS Grenade Hotkey.esp"
+    inc:
+      - Apocalypse Armory - Grenade Hotkeys for DLC.esp
   - name: Apocalypse Armory - Grenade Hotkeys for DLC.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Apocalypse Armory - Grenade Hotkeys.esp"
-      - type: say
-        content: "Requires: FPS Grenade Hotkey.esp"
+    inc:
+      - Apocalypse Armory - Grenade Hotkeys.esp
   - name: AA - FWE + DMG Replacement.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Apocalypse Armory - Grenade Hotkeys.esp"
-      - type: say
-        content: "Incompatible with: Apocalypse Armory + WMK.esp"
+    inc:
+      - Apocalypse Armory - Grenade Hotkeys.esp
+      - Apocalypse Armory + WMK.esp
   - name: GSoS - FOOK2 Open Beta - Combat and Sneaking Overhaul.esp
     msg:
       - type: error
