@@ -1369,22 +1369,6 @@ plugins:
 # ENDGROUP: Other
 # ENDGROUP: Overhauls
 # BEGINGROUP: Tailor Maid
-  - name: Tailor Maid Anchorage.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.ESM"
-  - name: Tailor Maid PITT.esp
-    msg:
-      - type: say
-        content: "Requires: ThePitt.ESM"
-  - name: Tailor Maid Brokensteel.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.ESM"
-  - name: Tailor Maid ZETA.esp
-    msg:
-      - type: say
-        content: "Requires: Zeta.ESM"
 # ENDGROUP: Tailor Maid
 # BEGINGROUP: WeaponModKits
   - name: WeaponModKits.esp
