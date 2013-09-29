@@ -4489,92 +4489,11 @@ plugins:
 # ENDGROUP: Race additions (+ hair + eyes etc)
 # ENDGROUP: Beauty Packs & Race Addons
 # BEGINGROUP: Merged Patch\CPs
-  - name: AmyWong - Load Order Fix.esp
-    msg:
-      - type: say
-        content: "Requires: AmyWong.esm"
-  - name: Ling_FWE_MMM.esp
-    msg:
-      - type: say
-        content: "Requires: ThePitt.esm"
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: Lings.esm"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-      - type: say
-        content: "Requires: Mart's Mutant Mods.esm"
-      - type: say
-        content: "Requires: LingsFinerThings.esm"
-      - type: say
-        content: "Requires: LingsPrettyThings.esp"
-  - name: RobCo Certified v2 EVE.esp
-    msg:
-      - type: say
-        content: "Requires: RobCo Certified v2.esm"
-  - name: RobCo Certified v2 FWE.esp
-    msg:
-      - type: say
-        content: "Requires: RobCo Certified v2.esm"
   - name: RobCo Certified v2 Omnipatch.esp
-    msg:
-      - type: say
-        content: "Requires: RobCo Certified v2.esm"
-      - type: say
-        content: "Incompatible with: RobCo Certified v2 EVE.esp"
-      - type: say
-        content: "Incompatible with: RobCo Certified v2 FWE.esp"
-      - type: say
-        content: "Incompatible with: RobCo Certified v2 Zeta Addon.esp"
-  - name: RobCo Certified v2 Impervious.esp
-    msg:
-      - type: say
-        content: "Requires: RobCo Certified v2.esm"
-  - name: RobCo Certified v2 Impervious FWE.esp
-    msg:
-      - type: say
-        content: "Requires: RobCo Certified v2.esm"
-  - name: RobCo Certified v2 Impervious for FWE.esp
-    msg:
-      - type: say
-        content: "Requires: RobCo Certified v2.esm"
-  - name: FNNIguana - MMM.esp
-    msg:
-      - type: say
-        content: "Requires: FNNIguana.esm"
-      - type: say
-        content: "Requires: Mart's Mutant Mod.esm"
-  - name: FNNIguana - FWE.esp
-    msg:
-      - type: say
-        content: "Requires: FNNIguana.esm"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-  - name: FWE - FOOK DLC Support.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.ESM"
-      - type: say
-        content: "Requires: ThePitt.ESM"
-      - type: say
-        content: "Requires: BrokenSteel.ESM"
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Requires: CRAFT.ESM"
-      - type: say
-        content: "Requires: CALIBR.ESM"
-      - type: say
-        content: "Requires: FOOK2 - Main.ESM"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-  - name: FWE - FOOK DLC Support - Classic DR.esp
-    msg:
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-      - type: say
-        content: "Requires: FOOK2 - Main.ESM"
+    inc:
+      - RobCo Certified v2 EVE.esp
+      - RobCo Certified v2 FWE.esp
+      - RobCo Certified v2 Zeta Addon.esp
   - name: Mez's Merged Patch 5-0 - DLC-FWE-WMK-MMM.esp
     tag:
       - Deflst
@@ -4587,10 +4506,6 @@ plugins:
   - name: FNNsys - FWE.esp
     tag:
       - Scripts
-  - name: FNNsys start inventory.esp
-    msg:
-      - type: say
-        content: "Requires: FNNsys.esm"
   - name: xCALIBRuniverse.esp
     tag:
       - Actors.DeathItems
@@ -4608,9 +4523,8 @@ plugins:
       - Sound
       - Stats
   - name: xCALIBRUniverse_FWE_FPS.esp
-    msg:
-      - type: say
-        content: "Incompatible with: xCALIBRUniverse_FWE_Tactical.esp"
+    inc:
+      - xCALIBRUniverse_FWE_Tactical.esp
     tag:
       - Graphics
       - Invent
@@ -4618,9 +4532,8 @@ plugins:
       - Sound
       - Stats
   - name: xCALIBRUniverse_FWE_Tactical.esp
-    msg:
-      - type: say
-        content: "Incompatible with: xCALIBRUniverse_FWE_FPS.esp"
+    inc:
+      - xCALIBRUniverse_FWE_FPS.esp
     tag:
       - Graphics
       - Invent
@@ -4628,80 +4541,34 @@ plugins:
       - Sound
       - Stats
   - name: xCALIBR_override.esp
-    msg:
-      - type: say
-        content: "Requires: CALIBR.esm"
-      - type: say
-        content: "Requires: xCALIBR.esm"
     tag:
       - Graphics
       - Names
   - name: xCALIBR_override_unsorted.esp
-    msg:
-      - type: say
-        content: "Requires: CALIBR.esm"
-      - type: say
-        content: "Requires: xCALIBR.esm"
     tag:
       - Graphics
       - Names
   - name: xCALIBR_override_FWE5.esp
-    msg:
-      - type: say
-        content: "Requires: CALIBR.esm"
-      - type: say
-        content: "Requires: xCALIBR.esm"
     tag:
       - Graphics
       - Names
   - name: xCALIBR_FWE5_Override.esp
-    msg:
-      - type: say
-        content: "Requires: CALIBR.esm"
-      - type: say
-        content: "Requires: xCALIBR.esm"
     tag:
       - Graphics
       - Names
   - name: xCALIBRammo_FWE.esp
-    msg:
-      - type: say
-        content: "Requires: CALIBR.esm"
-      - type: say
-        content: "Requires: xCALIBR.esm"
     tag:
       - Graphics
       - Names
   - name: xCALIBR_2CW_CP.esp
-    msg:
-      - type: say
-        content: "Requires: CALIBR.esm"
-      - type: say
-        content: "Requires: xCALIBR.esm"
-      - type: say
-        content: "Requires: 20th Century Weapons.esm"
     tag:
       - Graphics
       - Names
   - name: xCALIBR_2CW_CP_Sorted.esp
-    msg:
-      - type: say
-        content: "Requires: CALIBR.esm"
-      - type: say
-        content: "Requires: xCALIBR.esm"
-      - type: say
-        content: "Requires: 20th Century Weapons.esm"
     tag:
       - Graphics
       - Names
   - name: xCALIBR_20CW_v5.12.esp
-    msg:
-      - type: say
-        content: "Requires: CALIBR.esm"
-      - type: say
-        content: "Requires: xCALIBR.esm"
-      - type: say
-        content: "Requires: 20th Century Weapons.esm"
     tag:
       - Graphics
       - Names
@@ -4731,17 +4598,6 @@ plugins:
       - Names
       - Stats
   - name: frederyck+FWE+xCALIBR.esp
-    msg:
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-      - type: say
-        content: "Requires: CALIBR.esm"
-      - type: say
-        content: "Requires: xCALIBR.esm"
-      - type: say
-        content: "Requires: WeaponModKits.esp"
-      - type: say
-        content: "Requires: WeaponModKits - FWE Master Release.esp"
     tag:
       - Graphics
       - Names
