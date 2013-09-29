@@ -1749,14 +1749,6 @@ plugins:
       - Relev
 # ENDGROUP: Armor\Clothes
 # BEGINGROUP: Cosmetics
-  - name: Sparkling Eyes.esp
-    msg:
-      - type: say
-        content: "Requires: HairPack.esm"
-  - name: SparklingEyes for Eyelashes and HairPack Fix for MMM.esp
-    msg:
-      - type: say
-        content: "Requires: Sparkling Eyes.esp"
   - name: LingsFinerThings.esp
     msg:
       - type: say
