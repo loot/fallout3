@@ -4740,11 +4740,6 @@ plugins:
       - eyes
       - Hair
   - name: VB_Hair_Shojo+CotW_15.esp
-    msg:
-      - type: say
-        content: "Requires: EnhancedChildren.esm"
-      - type: say
-        content: "Requires: Shojo Race.esm"
     tag:
       - Hair
 # ENDGROUP: Hair
