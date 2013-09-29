@@ -1496,12 +1496,6 @@ plugins:
       - Stats
 # ENDGROUP: WeaponModKits
 # BEGINGROUP: Weapons
-  - name: 20th Century Weapons Non-Changing Weapon Conditions.esp
-    msg:
-      - type: say
-        content: "Requires: CALIBR.esm"
-      - type: say
-        content: "Requires: 20th Century Weapons.esm"
   - name: 3EFskewer.esp
     tag:
       - Stats
@@ -1509,12 +1503,6 @@ plugins:
     tag:
       - Deflst
       - Stats
-  - name: 7_ISA -ec 20th Century Weapons v3.1.esp
-    msg:
-      - type: say
-        content: "Requires: CALIBR"
-      - type: say
-        content: "Requires: 20th Century Weapons.esm"
   - name: 7_HolsterForHandGunsV1_1.esp
     tag:
       - Invent
@@ -1533,22 +1521,9 @@ plugins:
   - name: alienblasterammo.esp
     tag:
       - Stats
-  - name: Ammo Press Calibrified.esp
-    msg:
-      - type: say
-        content: "Requires: ThePitt.esm"
-      - type: say
-        content: "Requires: CALIBR.esm"
   - name: Arms_dealer_V1.esp
-    msg:
-      - type: say
-        content: "Incompatible with: RH_IRONSIGHTS.esm"
-      - type: say
-        content: "Requires: CALIBR.esm"
-  - name: A_D_Calibr_ammo.esp
-    msg:
-      - type: say
-        content: "Requires: Arms_dealer_V1.esp"
+    inc:
+      - RH_IRONSIGHTS.esm
   - name: ColtM4Carbines_RHIronSights.esp
     tag:
       - Graphics
@@ -1558,16 +1533,12 @@ plugins:
   - name: EWE Supermutant Energy Weapons.esp
     tag:
       - Relev
-  - name: H.E.R.K. - GOTY.esp
-    msg:
-      - type: say
-        content: "Incompatible with: H.E.R.K. - GOTY & WMK.esp"
-  - name: H.E.R.K. - GOTY & WMK.esp
-    msg:
-      - type: say
-        content: "Incompatible with: H.E.R.K. - GOTY.esp"
-      - type: say
-        content: "Requires: WeaponModKits.esp"
+  - name: 'H.E.R.K. - GOTY.esp'
+    inc:
+      - 'H.E.R.K. - GOTY & WMK.esp'
+  - name: 'H.E.R.K. - GOTY & WMK.esp'
+    inc:
+      - 'H.E.R.K. - GOTY.esp'
   - name: laserPistolRetextured-IronSightsPatch.esp
     tag:
       - Graphics
@@ -1578,38 +1549,17 @@ plugins:
     tag:
       - Graphics
   - name: laserScatterGunRetextured.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
     tag:
       - Graphics
   - name: More308Ammo.esp
     tag:
       - Relev
-  - name: Playing With Firepower.esp
-    msg:
-      - type: say
-        content: "Requires: CRAFT.esm"
   - name: RimfireRevolver.esp
-    msg:
-      - type: say
-        content: "Incompatible with: RimfireRevolverCommon.esp"
+    inc:
+      - RimfireRevolverCommon.esp
   - name: RimfireRevolverCommon.esp
-    msg:
-      - type: say
-        content: "Incompatible with: RimfireRevolver.esp"
-  - name: Saiga-12 Combat Shotgun Override Operation Anchorage.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-  - name: Saiga-12 Combat Shotgun Override Broken Steel.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-  - name: Saiga-12 Combat Shotgun Override The Pitt.esp
-    msg:
-      - type: say
-        content: "Requires: ThePitt.esm"
+    inc:
+      - RimfireRevolver.esp
   - name: Silenced DKS-501.esp
     tag:
       - Deflst
@@ -1623,9 +1573,7 @@ plugins:
   - name: Tactical Weapons-Calibr-V3 762 fix.esp
     msg:
       - type: say
-        content: "Requires: CALIBR.esm"
-      - type: say
-        content: Requires Tactical Weapons by gRs Frederyck.esp resources, but not the esp file
+        content: "Requires  resources from \"Tactical Weapons by gRs Frederyck\", but not the esp file"
     tag:
       - Invent
   - name: frederyck calibr fix-excalibrified.esp
@@ -1637,13 +1585,11 @@ plugins:
       - Relev
       - Stats
   - name: WieldableTorches (Main).esp
-    msg:
-      - type: say
-        content: "Incompatible with: Wieldable Torches (Optional).esp"
+    inc:
+      - Wieldable Torches (Optional).esp
   - name: Wieldable Torches (Optional).esp
-    msg:
-      - type: say
-        content: "Incompatible with: WieldableTorches (Main).esp"
+    inc:
+      - WieldableTorches (Main).esp
   - name: WMKAA12Shotgun.esp
     tag:
       - Graphics
@@ -1651,82 +1597,6 @@ plugins:
     tag:
       - Names
       - NoMerge
-  - name: WMMP_Install.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Requires: ThePitt.esm"
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: Zeta.esm"
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Requires: WMMP_Master.esp"
-  - name: WMMP_AMA [Swamp Folk].esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Requires: ThePitt.esm"
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: Zeta.esm"
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Requires: WMMP_Master.esp"
-  - name: WMMP_AMA [Mutants].esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Requires: ThePitt.esm"
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: Zeta.esm"
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Requires: WMMP_Master.esp"
-  - name: WMMP_AMA [Mutants][FWE5].esp
-    msg:
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-      - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Requires: ThePitt.esm"
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: Zeta.esm"
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Requires: WMMP_Master.esp"
-  - name: WMMP_AMA [Mutants][20CWv5].esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Requires: CALIBR.esm"
-      - type: say
-        content: "Requires: 20th Century Weapons.esm"
-      - type: say
-        content: "Requires: ThePitt.esm"
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: Zeta.esm"
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Requires: WMMP_Master.esp"
   - name: xCALIBRmunitions.esp
     tag:
       - Delev
