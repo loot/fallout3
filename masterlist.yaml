@@ -1604,17 +1604,8 @@ plugins:
 # ENDGROUP: Weapons
 # BEGINGROUP: Armor\Clothes
   - name: "[DC RANGER ARSENAL v3] - DLC GEAR.esp"
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
     tag:
       - Deflst
-  - name: Advanced Recon Tech - Detect Traps.esp
-    msg:
-      - type: say
-        content: "Requires: Detect Traps.esm"
-      - type: say
-        content: "Requires: Advanced Recon Tech.esm"
   - name: BBBackpacks-v1-1.esp
     tag:
       - Stats
@@ -1649,9 +1640,6 @@ plugins:
     tag:
       - Graphics
   - name: Outcast DX - FWE patch.esp
-    msg:
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
     tag:
       - Graphics
   - name: Tribal_DX.esp
@@ -1671,138 +1659,65 @@ plugins:
     msg:
       - type: say
         content: Use either 'Cat Outfit Fanged.esp' or 'Cat Outfit Only.esp', not both.
+        condition: file("Cat Outfit Only.esp")
     tag:
       - Eyes
   - name: Cat Outfit Only.esp
     msg:
       - type: say
         content: Use either 'Cat Outfit Fanged.esp' or 'Cat Outfit Only.esp', not both.
+        condition: file("Cat Outfit Fanged.esp")
     tag:
       - Eyes
   - name: clearhelmets4radsuits.esp
     tag:
       - Graphics
-  - name: Colossus Tesla Armor.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
   - name: COL Enclave VER2.esp
     tag:
       - Graphics
   - name: COL Enclave Hell.esp
     tag:
       - Graphics
-  - name: COW-CustamArmor.esp
-    msg:
-      - type: say
-        content: "Requires: EnhancedChildren.esm"
-      - type: say
-        content: "Requires: AliciasCuteShop.esm"
-  - name: OAFeminizedPowerArmor.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-  - name: TPFeminizedPowerArmor.esp
-    msg:
-      - type: say
-        content: "Requires: ThePitt.esm"
   - name: FO3-Closing-merged.esp
-    msg:
-      - type: say
-        content: "Incompatible with: FO3Tona.esp"
-      - type: say
-        content: "Incompatible with: FO3Western.esp"
-      - type: say
-        content: "Incompatible with: FO3Ayumi.esp"
-      - type: say
-        content: "Incompatible with: FO3Fate.esp"
-      - type: say
-        content: "Incompatible with: FO3Moon.esp"
-      - type: say
-        content: "Incompatible with: FO3Nami.esp"
+    inc:
+      - FO3Tona.esp
+      - FO3Western.esp
+      - FO3Ayumi.esp
+      - FO3Fate.esp
+      - FO3Moon.esp
+      - FO3Nami.esp
   - name: jonasclothesnonrplcr.esp
     msg:
       - type: say
-        content: Choose only one of jonasclothesnonrplcr.esp or jonasclothesreplacer.esp, not both.
+        content: Use either 'jonasclothesnonrplcr.esp' or 'jonasclothesreplacer.esp', not both.
+        condition: file("jonasclothesreplacer.esp")
   - name: jonasclothesreplacer.esp
     msg:
       - type: say
-        content: Choose only one of jonasclothesnonrplcr.esp or jonasclothesreplacer.esp, not both.
+        content: Use either 'jonasclothesnonrplcr.esp' or 'jonasclothesreplacer.esp', not both.
+        condition: file("jonasclothesnonrplcr.esp")
   - name: K2_ArmorsRedone_Raiders.esp
     tag:
       - Graphics
   - name: K2_GirlieGirlVaultBabe.esp
     tag:
       - Invent
-  - name: LNC StealthSuit.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
   - name: ModBetterPArmorVanilla.esp
     tag:
       - Stats
   - name: ModBetterPArmorAnchorage.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
     tag:
       - Stats
   - name: ModBetterPArmorPitt.esp
-    msg:
-      - type: say
-        content: "Requires: ThePitt.esm"
     tag:
       - Stats
   - name: ModBetterPArmorSteel.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
     tag:
       - Stats
   - name: DALCO Inventory Sorter - IGM.esp
     tag:
       - Names
       - NoMerge
-  - name: PPA - Operation Anchorage.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-  - name: PPA - Broken Steel.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-  - name: PPA - The Pitt.esp
-    msg:
-      - type: say
-        content: "Requires: ThePitt.esp"
-  - name: PPA - Mothership Zeta.esp
-    msg:
-      - type: say
-        content: "Requires: Zeta.esm"
-  - name: PPA - FWE.esp
-    msg:
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-  - name: PPA - Super Human Jump Perk.esp
-    msg:
-      - type: say
-        content: "Requires: super_jump_perk.esp"
-  - name: PPA - Ambient Temperature.esp
-    msg:
-      - type: say
-        content: "Requires: Ambient Temperature.esm"
-      - type: say
-        content: "Requires: Powered Power Armor.esp"
-  - name: PPA - IMCN.esp
-    msg:
-      - type: say
-        content: "Requires: IMCN.esm"
-      - type: say
-        content: "Requires: Powered Power Armor.esp"
-  - name: Raider Combat Armor Pitt.esp
-    msg:
-      - type: say
-        content: "Requires: ThePitt.esm"
   - name: RD_ElderLyonsRobe.esp
     tag:
       - Graphics
@@ -1811,31 +1726,17 @@ plugins:
       - Eyes
       - Invent
   - name: Tesla Metal Armor.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Tesla Metal Armor (Extended).esp"
-      - type: say
-        content: "Incompatible with: Tesla Light Armor Redone.esp"
+    inc:
+      - Tesla Metal Armor (Extended).esp
+      - Tesla Light Armor Redone.esp
   - name: Tesla Metal Armor (Extended).esp
-    msg:
-      - type: say
-        content: "Incompatible with: Tesla Metal Armor.esp"
-      - type: say
-        content: "Incompatible with: Tesla Light Armor Redone.esp"
+    inc:
+      - Tesla Metal Armor.esp
+      - Tesla Light Armor Redone.esp
   - name: Tesla Light Armor Redone.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Tesla Metal Armor (Extended).esp"
-      - type: say
-        content: "Incompatible with: Tesla Metal Armor.esp"
-  - name: Thermoptic PowerArmor Helmets.esp
-    msg:
-      - type: say
-        content: "Requires: Thermal Vision.esm"
-  - name: Thermoptic Glasses.esp
-    msg:
-      - type: say
-        content: "Requires: Thermal Vision.esm"
+    inc:
+      - Tesla Metal Armor (Extended).esp
+      - Tesla Metal Armor.esp
   - name: Test-Weapon_additional armor.esp
     tag:
       - Invent
