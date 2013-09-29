@@ -1394,10 +1394,6 @@ plugins:
     tag:
       - Names
       - NoMerge
-  - name: WeaponModKits - OperationAnchorage.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.ESM"
   - name: DALCO Inventory Sorter - Weapon Mod Kits (DLC Anchorage).esp
     tag:
       - Names
@@ -1406,10 +1402,6 @@ plugins:
     tag:
       - Names
       - NoMerge
-  - name: WeaponModKits - ThePitt.esp
-    msg:
-      - type: say
-        content: "Requires: ThePitt.ESM"
   - name: DALCO Inventory Sorter - Weapon Mod Kits (DLC ThePitt).esp
     tag:
       - Names
@@ -1418,10 +1410,6 @@ plugins:
     tag:
       - Names
       - NoMerge
-  - name: WeaponModKits - BrokenSteel.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.ESM"
   - name: DALCO Inventory Sorter - Weapon Mod Kits (DLC BrS).esp
     tag:
       - Names
@@ -1430,10 +1418,6 @@ plugins:
     tag:
       - Names
       - NoMerge
-  - name: WeaponModKits - PointLookout.esp
-    msg:
-      - type: say
-        content: "Requires: PointLookout.ESM"
   - name: DALCO Inventory Sorter - Weapon Mod Kits (DLC PointLookout).esp
     tag:
       - Names
@@ -1442,10 +1426,6 @@ plugins:
     tag:
       - Names
       - NoMerge
-  - name: WeaponModKits - Zeta.esp
-    msg:
-      - type: say
-        content: "Requires: Zeta.ESM"
   - name: DALCO Inventory Sorter - Weapon Mod Kits (DLC Zeta).esp
     tag:
       - Names
@@ -1458,86 +1438,62 @@ plugins:
     msg:
       - type: say
         content: Only use ONE CRAFTable_WMKs esp file
+        condition: file("CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_skill_requirements_lead_pipe.esp") or file("CRAFTable_WMKs.esp") or file("CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe.esp") or file("CRAFTable_WMKs_skill_req_Amodeus.esp")
     tag:
       - Invent
   - name: CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp
     msg:
       - type: say
         content: Only use ONE CRAFTable_WMKs esp file
+        condition: file("CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp") or file("CRAFTable_WMKs_skill_requirements_lead_pipe.esp") or file("CRAFTable_WMKs.esp") or file("CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe.esp") or file("CRAFTable_WMKs_skill_req_Amodeus.esp")
     tag:
       - Invent
   - name: CRAFTable_WMKs_skill_requirements_lead_pipe.esp
     msg:
       - type: say
         content: Only use ONE CRAFTable_WMKs esp file
+        condition: file("CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp") or file("CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs.esp") or file("CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe.esp") or file("CRAFTable_WMKs_skill_req_Amodeus.esp")
     tag:
       - Invent
   - name: CRAFTable_WMKs.esp
     msg:
       - type: say
         content: Only use ONE CRAFTable_WMKs esp file
+        condition: file("CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp") or file("CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_skill_requirements_lead_pipe.esp") or file("CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe.esp") or file("CRAFTable_WMKs_skill_req_Amodeus.esp")
     tag:
       - Invent
   - name: CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp
     msg:
       - type: say
         content: Only use ONE CRAFTable_WMKs esp file
+        condition: file("CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp") or file("CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_skill_requirements_lead_pipe.esp") or file("CRAFTable_WMKs.esp") or file("CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe.esp") or file("CRAFTable_WMKs_skill_req_Amodeus.esp")
     tag:
       - Invent
   - name: CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp
     msg:
       - type: say
         content: Only use ONE CRAFTable_WMKs esp file
+        condition: file("CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp") or file("CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_skill_requirements_lead_pipe.esp") or file("CRAFTable_WMKs.esp") or file("CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe.esp") or file("CRAFTable_WMKs_skill_req_Amodeus.esp")
     tag:
       - Invent
   - name: CRAFTable_WMKs_lead_pipe.esp
     msg:
       - type: say
         content: Only use ONE CRAFTable_WMKs esp file
+        condition: file("CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp") or file("CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_skill_requirements_lead_pipe.esp") or file("CRAFTable_WMKs.esp") or file("CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp") or file("CRAFTable_WMKs_skill_req_Amodeus.esp")
     tag:
       - Invent
   - name: CRAFTable_WMKs_skill_req_Amodeus.esp
     msg:
       - type: say
         content: Only use ONE CRAFTable_WMKs esp file
+        condition: file("CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp") or file("CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_skill_requirements_lead_pipe.esp") or file("CRAFTable_WMKs.esp") or file("CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe.esp")
     tag:
       - Invent
   - name: T3T_WMK1.esp
     tag:
       - Deflst
       - Stats
-  - name: UH-FWE-WMK-DLC.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Requires: ThePitt.esm"
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Requires: Zeta.esm"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - DLC Broken Steel.esp"
-      - type: say
-        content: "Requires: UndergroundHideout.esp"
-      - type: say
-        content: "Requires: WeaponModKits.esp"
-      - type: say
-        content: "Requires: WeaponModKits - FWE Master Release.esp"
-      - type: say
-        content: "Requires: WeaponModKits - OperationAnchorage.esp"
-      - type: say
-        content: "Requires: WeaponModKits - ThePitt.esp"
-      - type: say
-        content: "Requires: WeaponModKits - BrokenSteel.esp"
-      - type: say
-        content: "Requires: WeaponModKits - PointLookout.esp"
-      - type: say
-        content: "Requires: WeaponModKits - Zeta.esp"
 # ENDGROUP: WeaponModKits
 # BEGINGROUP: Weapons
   - name: 20th Century Weapons Non-Changing Weapon Conditions.esp
