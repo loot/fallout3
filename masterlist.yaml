@@ -1198,17 +1198,14 @@ plugins:
       - Names
       - NoMerge
   - name: FO3 Wanderers Edition - Lvl 30 Balance.esp
-    msg:
-      - type: say
-        content: "Incompatible with: FO3 Wanderers Edition - Lvl 30 More Skills.esp"
+    inc:
+      - FO3 Wanderers Edition - Lvl 30 More Skills.esp
   - name: FO3 Wanderers Edition - Lvl 30 More Skills.esp
-    msg:
-      - type: say
-        content: "Incompatible with: FO3 Wanderers Edition - Lvl 30 Balance.esp"
+    inc:
+      - FO3 Wanderers Edition - Lvl 30 Balance.esp
   - name: FO3 Wanderers Edition - Followers Enhanced.esp
-    msg:
-      - type: say
-        content: "Incompatible with: FO3 Wanderers Edition - Followers Enhanced (BrokenSteel).esp"
+    inc:
+      - FO3 Wanderers Edition - Followers Enhanced (BrokenSteel).esp
     tag:
       - Actors.ACBS
       - Actors.AIData
@@ -1218,9 +1215,8 @@ plugins:
       - Names
       - NoMerge
   - name: FO3 Wanderers Edition - Followers Enhanced (BrokenSteel).esp
-    msg:
-      - type: say
-        content: "Incompatible with: FO3 Wanderers Edition - Followers Enhanced.esp"
+    inc:
+      - FO3 Wanderers Edition - Followers Enhanced.esp
     tag:
       - Actors.ACBS
       - Actors.AIData
@@ -1230,17 +1226,14 @@ plugins:
       - Names
       - NoMerge
   - name: FO3 Wanderers Edition - Optional Free Play After MQ.esp
-    msg:
-      - type: say
-        content: "Incompatible with: BrokenSteel.esm"
+    inc:
+      - BrokenSteel.esm
   - name: FO3 Wanderers Edition - Optional Free Play After Mainquest.esp
-    msg:
-      - type: say
-        content: "Incompatible with: BrokenSteel.esm"
+    inc:
+      - BrokenSteel.esm
   - name: FO3 Wanderers Edition - Optional No Fast Travel.esp
-    msg:
-      - type: say
-        content: "Incompatible with: FO3 Wanderers Edition - Alternate Travel.esp"
+    inc:
+      - FO3 Wanderers Edition - Alternate Travel.esp
   - name: FO3 Wanderers Edition - Optional Worn Weapons.esp
     tag:
       - Delev
@@ -1254,64 +1247,23 @@ plugins:
       - type: say
         content: Do not use with latest FWE, it is already integrated.
   - name: FO3 Wanderers Edition - Project Beauty (HD Addition).esp
-    msg:
-      - type: say
-        content: "Requires: Project Beauty HD version.esm"
-      - type: say
-        content: "Incompatible with: Project Beauty.esp"
+    inc:
+      - Project Beauty.esp
   - name: FO3 Wanderers Edition - Talon Loot Crash Fix.esp
-    msg:
-      - type: say
-        content: "Requires: CALIBR"
     tag:
       - Delev
       - Relev
-  - name: RH_FWE_Bridge.esp
-    msg:
-      - type: say
-        content: "Requires: CRAFT.esm"
-      - type: say
-        content: "Requires: CALIBR.esm"
-      - type: say
-        content: "Requires: RH_IRONSIGHTS.esm"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-  - name: DLM_FWE Medic PA FWE only required.esp
-    msg:
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-  - name: DLM_FWE Medic PA FWE+Zeta required.esp
-    msg:
-      - type: say
-        content: "Requires: Zeta.ESM"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-  - name: MZC-FWE_CP.esp
-    msg:
-      - type: say
-        content: "Requires: Zeta.ESM"
-      - type: say
-        content: "Requires: CRAFT.ESM"
-      - type: say
-        content: "Requires: CALIBR.ESM"
-      - type: say
-        content: "Requires: Mothership Crew.ESM"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
   - name: FWE_Overhaul Kit - Main.esp
+    inc:
+      - EVE.esm
+      - RH_IronSights_Basic_VanillaPlugin.esp
+      - WeaponModKits.esp
     msg:
       - type: say
         content: Outdated. Update to latest version of FWE - Combat Overhaul
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-      - type: say
-        content: "Requires: RH_IronSights resources"
-      - type: say
-        content: "Incompatible with: Weapon Mod Kits"
-      - type: say
-        content: "Incompatible with: EVE"
-      - type: say
-        content: "Incompatible with: RH IronSights Basic VanillaPlugin.esp"
+      - type: warn
+        content: This mod requires resources from "http://fallout3.nexusmods.com/mods/6938 RH_IronSights", please see mod's readme.
+        condition: not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")
     tag:
       - Actors.ACBS
       - Deflst
@@ -1323,33 +1275,27 @@ plugins:
       - Sound
       - Stats
   - name: FWE_Overhaul Kit - Core.esp
+    inc:
+      - EVE.esm
+      - RH_IronSights_Basic_VanillaPlugin.esp
+      - WeaponModKits.esp
     msg:
       - type: say
         content: Outdated. Update to latest version of FWE - Combat Overhaul
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-      - type: say
-        content: "Requires: RH_IronSights resources"
-      - type: say
-        content: "Incompatible with: Weapon Mod Kits"
-      - type: say
-        content: "Incompatible with: EVE"
-      - type: say
-        content: "Incompatible with: RH IronSights Basic VanillaPlugin.esp"
+      - type: warn
+        content: This mod requires resources from "http://fallout3.nexusmods.com/mods/6938 RH_IronSights", please see mod's readme.
+        condition: not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")
   - name: FWE_Overhaul Kit - Equipment .esp
+    inc:
+      - EVE.esm
+      - RH_IronSights_Basic_VanillaPlugin.esp
+      - WeaponModKits.esp
     msg:
       - type: say
         content: Outdated. Update to latest version of FWE - Combat Overhaul
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-      - type: say
-        content: "Requires: RH_IronSights resources"
-      - type: say
-        content: "Incompatible with: Weapon Mod Kits"
-      - type: say
-        content: "Incompatible with: EVE"
-      - type: say
-        content: "Incompatible with: RH IronSights Basic VanillaPlugin.esp"
+      - type: warn
+        content: This mod requires resources from "http://fallout3.nexusmods.com/mods/6938 RH_IronSights", please see mod's readme.
+        condition: not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")
     tag:
       - Actors.ACBS
       - Deflst
@@ -1362,17 +1308,14 @@ plugins:
       - Sound
       - Stats
   - name: FWE - Combat Overhaul_Equipment.esp
+    inc:
+      - EVE.esm
+      - RH_IronSights_Basic_VanillaPlugin.esp
+      - WeaponModKits.esp
     msg:
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-      - type: say
-        content: "Requires: RH_IronSights resources"
-      - type: say
-        content: "Incompatible with: Weapon Mod Kits"
-      - type: say
-        content: "Incompatible with: EVE"
-      - type: say
-        content: "Incompatible with: RH IronSights Basic VanillaPlugin.esp"
+      - type: warn
+        content: This mod requires resources from "http://fallout3.nexusmods.com/mods/6938 RH_IronSights", please see mod's readme.
+        condition: not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")
     tag:
       - Actors.ACBS
       - Deflst
@@ -1384,82 +1327,6 @@ plugins:
       - Scripts
       - Sound
       - Stats
-  - name: FWE weapons pack.esp
-    msg:
-      - type: say
-        content: "Requires: CRAFT.ESM"
-      - type: say
-        content: "Requires: CALIBR.ESM"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-  - name: FWE_xCAL_ammoweight.esp
-    msg:
-      - type: say
-        content: "Requires: CRAFT.esm"
-      - type: say
-        content: "Requires: CALIBR.esm"
-      - type: say
-        content: "Requires: xCALIBR.esm"
-      - type: say
-        content: "Requires: xCALIBRuniverse.esm"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-  - name: FWE-COL-Enclave-compatibilitypatch.esp
-    msg:
-      - type: say
-        content: "Requires: CRAFT.esm"
-      - type: say
-        content: "Requires: CALIBR.esm"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esp"
-  - name: FWE-COL-Enclave-compatibilitypatch-new-tesla-helmet-addon_updated.esp
-    msg:
-      - type: say
-        content: "Requires: CRAFT.esm"
-      - type: say
-        content: "Requires: CALIBR.esm"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-      - type: say
-        content: "Requires: FWE-COL-Enclave-compatibilitypatch.esp"
-  - name: FWE-COL-Enclave-compatibilitypatch-hellfireaddon.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: CRAFT.esm"
-      - type: say
-        content: "Requires: CALIBR.esm"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esp"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - DLC Broken Steel.esp"
-      - type: say
-        content: "Requires: FWE-COL-Enclave-compatibilitypatch.esp"
-  - name: FWE-COL-Brotherhood-compatibilitypatch.esp
-    msg:
-      - type: say
-        content: "Requires: CRAFT.esm"
-      - type: say
-        content: "Requires: CALIBR.esm"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esp"
-  - name: FWE-COL-Outcast-compatibilitypatch.esp
-    msg:
-      - type: say
-        content: "Requires: CRAFT.esm"
-      - type: say
-        content: "Requires: CALIBR.esm"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esp"
 # ENDGROUP: Fallout Wanderer's Edition
 # BEGINGROUP: Other
   - name: Refurbishes [ALL].esp
