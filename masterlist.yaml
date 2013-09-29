@@ -194,7 +194,7 @@ plugins:
     msg:
       - type: warn
         content: This mod requires resources from "http://fallout3.nexusmods.com/mods/6938 RH_IronSights", please see mod's readme.
-        condition: not file("meshes\Characters\_1stperson") or not file("meshes\Characters\_male")
+        condition: not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")
     tag:
       - Graphics
       - Names
@@ -1020,8 +1020,6 @@ plugins:
     msg:
       - type: say
         content: Do not use with latest FOOK2, it is already integrated.
-      - type: say
-        content: "Needs TES4Edit cleaning: \"http://cs.elderscrolls.com/index.php?title=TES4Edit_Cleaning_Guide\""
   - name: Towers Hill.esp
     tag:
       - Invent
