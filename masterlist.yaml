@@ -1334,39 +1334,38 @@ plugins:
       - type: say
         content: Do not use with latest FOOK2, it is already integrated.
   - name: Refurbish [OA].esp
+    inc:
+      - Refurbishes [ALL].esp
     msg:
       - type: say
         content: Do not use with latest FOOK2, it is already integrated.
-      - type: say
-        content: "Incompatible with: Refurbishes [ALL].esp"
   - name: Refurbish [OA] - FWE.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Refurbishes [ALL].esp"
+    inc:
+      - Refurbishes [ALL].esp
   - name: Refurbish [TP].esp
+    inc:
+      - Refurbishes [ALL].esp
     msg:
       - type: say
         content: Do not use with latest FOOK2, it is already integrated.
-      - type: say
-        content: "Incompatible with: Refurbishes [ALL].esp"
   - name: Refurbish [BS].esp
+    inc:
+      - Refurbishes [ALL].esp
     msg:
       - type: say
         content: Do not use with latest FOOK2, it is already integrated.
-      - type: say
-        content: "Incompatible with: Refurbishes [ALL].esp"
   - name: Refurbish [PL].esp
+    inc:
+      - Refurbishes [ALL].esp
     msg:
       - type: say
         content: Do not use with latest FOOK2, it is already integrated.
-      - type: say
-        content: "Incompatible with: Refurbishes [ALL].esp"
   - name: Refurbish [MZ].esp
+    inc:
+      - Refurbishes [ALL].esp
     msg:
       - type: say
         content: Do not use with latest FOOK2, it is already integrated.
-      - type: say
-        content: "Incompatible with: Refurbishes [ALL].esp"
 # ENDGROUP: Other
 # ENDGROUP: Overhauls
 # BEGINGROUP: Tailor Maid
