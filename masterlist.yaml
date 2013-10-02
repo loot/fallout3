@@ -2211,9 +2211,6 @@ plugins:
       - Sound
       - Stats
   - name: EVE Operation Anchorage.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.ESM"
     tag:
       - Graphics
       - Sound
@@ -2233,9 +2230,6 @@ plugins:
       - Graphics
       - Sound
   - name: EVE - FWE Master Release (pulse fix).esp
-    msg:
-      - type: say
-        content: "Requires: CALIBR.esm"
     tag:
       - Actors.ACBS
       - Graphics
@@ -2250,18 +2244,12 @@ plugins:
       - Graphics
       - Sound
   - name: Apocalypse Armory + EVE.esp
-    msg:
-      - type: say
-        content: "Requires: EVE"
     tag:
       - Delev
       - Relev
 # ENDGROUP: EVE Stuff
 # BEGINGROUP: Mart's Mutant Mod
   - name: Mart's Mutant Mod.esp
-    msg:
-      - type: say
-        content: "Requires: Mart's Mutant Mod.esm"
     tag:
       - Delev
       - Relev
@@ -2283,23 +2271,14 @@ plugins:
         content: Old. Download the latest Project Beauty files.
         condition: file("FOOK2 - Main.esm")
   - name: Mart's Mutant Mod - DLC Anchorage.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.ESM"
     tag:
       - Scripts
   - name: Mart's Mutant Mod - DLC The Pitt.esp
-    msg:
-      - type: say
-        content: "Requires: ThePitt.ESM"
     tag:
       - Delev
       - Relev
       - Scripts
   - name: Mart's Mutant Mod - DLC Broken Steel.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.ESM"
     tag:
       - Delev
       - Relev
@@ -2308,14 +2287,7 @@ plugins:
     tag:
       - Names
       - NoMerge
-  - name: Mart's Mutant Mod - UF3P - BS.esp
-    msg:
-      - type: say
-        content: "Requires: Mart's Mutant Mod - UF3P.esp"
   - name: Mart's Mutant Mod - DLC Point Lookout.esp
-    msg:
-      - type: say
-        content: "Requires: PointLookout.ESM"
     tag:
       - Delev
       - Relev
@@ -2327,9 +2299,6 @@ plugins:
       - NPC.Race
       - NpcFaces
   - name: Mart's Mutant Mod - DLC Zeta.esp
-    msg:
-      - type: say
-        content: "Requires: Zeta.ESM"
     tag:
       - Scripts
   - name: DangerousRadroaches_MMM.esp
@@ -2442,23 +2411,12 @@ plugins:
         content: Get FOOK2
         condition: file("FOOK2 - Main.esm")
   - name: Mart's Mutant Mod - FOOK2.esp
-    msg:
-      - type: say
-        content: "Requires: FOOK2 - Main.ESM and Mart's Mutant Mod.esm"
     tag:
       - Relations
   - name: Mart's Mutant Mod - FOOK2 - DIK.esp
-    msg:
-      - type: say
-        content: "Requires: FOOK2 - Main.ESM"
-      - type: say
-        content: "Requires: FOOK2 - [DIK] DLC Improvement Kit.esm and Mart's Mutant Mod.esm"
     tag:
       - Relations
   - name: Mart's Mutant Mod - FWE Master Release.esp
-    msg:
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
     tag:
       - Invent
       - Relations
@@ -2467,13 +2425,6 @@ plugins:
       - Names
       - NoMerge
   - name: Mart's Mutant Mod - FWE Master Release + DLCs.esp
-    msg:
-      - type: say
-        content: "Requires: ThePitt.esm"
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
     tag:
       - Invent
       - Relations
@@ -2484,11 +2435,6 @@ plugins:
       - NPC.Race
       - NpcFaces
   - name: Mart's Mutant Mod - FWE with EVE.esp
-    msg:
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-      - type: say
-        content: "Requires: EVE.esp"
     tag:
       - Invent
       - Relations
@@ -2515,9 +2461,6 @@ plugins:
       - type: say
         content: Outdated. Update to latest version of FWE - Combat Overhaul
   - name: MMM - FWE_Combat Overhaul Master Release.esp
-    msg:
-      - type: say
-        content: "Requires: Mart's Mutant Mod - FWE Master Release.esp"
     tag:
       - Actors.ACBS
       - Actors.Stats
@@ -3614,72 +3557,39 @@ plugins:
         content: "Incompatible with: REAL-ThirdViewMod.esp"
 # ENDGROUP: Game-Settings and Overrides
 # BEGINGROUP: Weather\Light\Water
-  - name: Dust-away - DLC support.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Requires: ThePitt.esm"
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Requires: Zeta.esm"
   - name: Clean-Deluxe GOTY.esp
+    inc:
+      - Dust-away.esp
+      - Dust-away - DLC support.esp
+      - Paper-Shredder.esp
+      - Paper-Shredder - DLC Support.esp
+      - Rock-Out.esp
+      - Rock-Out - DLC Support.esp
     msg:
-      - type: say
-        content: "Incompatible with: Dust-away.esp"
-      - type: say
-        content: "Incompatible with: Dust-away - DLC support.esp"
-      - type: say
-        content: "Incompatible with: Paper-Shredder.esp"
-      - type: say
-        content: "Incompatible with: Paper-Shredder - DLC Support.esp"
-      - type: say
-        content: "Incompatible with: Rock-Out.esp"
-      - type: say
-        content: "Incompatible with: Rock-Out - DLC Support.esp"
-      - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Requires: ThePitt.esm"
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Requires: Zeta.esm"
       - type: say
         content: Includes all Dust-away, paper-shredder and Rock-out plugins
   - name: Fellout-Full.esp
+    inc:
+      - Fellout-SOTD.esp
     msg:
-      - type: say
-        content: "Incompatible with: Fellout-SOTD.esp"
       - type: say
         content: Do not use with latest FOOK2, it is already integrated.
   - name: Fellout-SOTD.esp
+    inc:
+      - Either Fellout-Full.esp
     msg:
-      - type: say
-        content: "Incompatible with: Either Fellout-Full.esp"
       - type: say
         content: Do not use with latest FOOK2, it is already integrated.
   - name: Fellout-Anchorage.esp
     msg:
       - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
         content: Do not use with latest FOOK2, it is already integrated.
   - name: Fellout-BrokenSteel.esp
     msg:
       - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
         content: Do not use with latest FOOK2, it is already integrated.
   - name: Fellout-PointLookout.esp
     msg:
-      - type: say
-        content: "Requires: PointLookout.esm"
       - type: say
         content: Do not use with latest FOOK2, it is already integrated.
   - name: Fellout-Zeta.esp
@@ -3735,9 +3645,8 @@ plugins:
     tag:
       - C.Light
   - name: URWL-Normal Color Saturation.esp
-    msg:
-      - type: say
-        content: "Incompatible with: URWL.esp"
+    inc:
+      - URWL.esp
     tag:
       - C.Light
   - name: URWLRain.esp
@@ -3751,159 +3660,74 @@ plugins:
     tag:
       - C.Light
   - name: Xepha's Darkened Interiors - OA.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
     tag:
       - C.Light
   - name: Xepha's Darkened Interiors - BS.esp
     msg:
       - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: Manditory if using BrokenSteel.esm
+        content: Manditory use if using BrokenSteel
     tag:
       - C.Light
   - name: Xepha's Darkened Interiors - PL.esp
-    msg:
-      - type: say
-        content: "Requires: PointLookout.esm"
     tag:
       - C.Light
   - name: Xepha's Dynamic Weather - Main.esp
     tag:
       - C.Climate
   - name: Xepha's Dynamic Weather - Anchorage.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
     tag:
       - C.Climate
   - name: Xepha's Dynamic Weather - The Pitt.esp
-    msg:
-      - type: say
-        content: "Requires: ThePitt.esm"
     tag:
       - C.Climate
   - name: Xepha's Dynamic Weather - Broken Steel.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
     tag:
       - C.Climate
   - name: Xepha's Dynamic Weather - Point Lookout.esp
-    msg:
-      - type: say
-        content: "Requires: PointLookout.esm"
     tag:
       - C.Climate
   - name: Xepha's Dynamic Weather - Main + DLC Merged.esp
     tag:
       - C.Climate
   - name: Xepha's Dynamic Weather - Night Eye Edition.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Xepha's Dynamic Weather - Night Eye Edition.esp"
+    inc:
+      - Xepha's Dynamic Weather - Night Eye Edition.esp
   - name: Xepha's Dynamic Weather - Night Eye Edition (Anchorage).esp
-    msg:
-      - type: say
-        content: "Incompatible with: Xepha's Dynamic Weather - Night Eye Edition (Anchorage).esp"
-      - type: say
-        content: "Requires: Anchorage.esm"
-  - name: Xepha's Dynamic Weather - Anchorage (NEE).esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-  - name: Xepha's Dynamic Weather - Rain (NEE).esp
-    msg:
-      - type: say
-        content: "Requires: Enhanced Weather - Rain and Snow.esm"
-      - type: say
-        content: "Requires: Xepha's Dynamic Weather - Night Eye Edition.esp"
-  - name: Xepha's Dynamic Weather - Rain (OA + NEE).esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Requires: Enhanced Weather - Rain and Snow.esm"
-      - type: say
-        content: "Requires: Xepha's Dynamic Weather - Night Eye Edition (Anchorage).esp"
-  - name: Xepha's Dynamic Weather - Rain (OA).esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Requires: Enhanced Weather - Rain and Snow.esm"
-  - name: Xepha's Dynamic Weather - Rain.esp
-    msg:
-      - type: say
-        content: "Requires: Enhanced Weather - Rain and Snow.esm"
+    inc:
+      - Xepha's Dynamic Weather - Night Eye Edition (Anchorage).esp
   - name: Xepha's Dynamic Weather - Climate OverRider (OA + Rain).esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Requires: Enhanced Weather - Rain and Snow.esm"
-      - type: say
-        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (OA).esp"
-      - type: say
-        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (Rain).esp"
-      - type: say
-        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider.esp"
-      - type: say
-        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (OA + Rain) - No Fog.esp"
+    inc:
+      - Xepha's Dynamic Weather - Climate OverRider (OA).esp
+      - Xepha's Dynamic Weather - Climate OverRider (Rain).esp
+      - Xepha's Dynamic Weather - Climate OverRider.esp
+      - Xepha's Dynamic Weather - Climate OverRider (OA + Rain) - No Fog.esp
   - name: Xepha's Dynamic Weather - Climate OverRider (OA).esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (OA + Rain).esp"
-      - type: say
-        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (Rain).esp"
-      - type: say
-        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider.esp"
-      - type: say
-        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (OA + Rain) - No Fog.esp"
+    inc:
+      - Xepha's Dynamic Weather - Climate OverRider (OA + Rain).esp
+      - Xepha's Dynamic Weather - Climate OverRider (Rain).esp
+      - Xepha's Dynamic Weather - Climate OverRider.esp
+      - Xepha's Dynamic Weather - Climate OverRider (OA + Rain) - No Fog.esp
   - name: Xepha's Dynamic Weather - Climate OverRider (Rain).esp
-    msg:
-      - type: say
-        content: "Requires: Enhanced Weather - Rain and Snow.esm"
-      - type: say
-        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (OA + Rain).esp"
-      - type: say
-        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (OA).esp"
-      - type: say
-        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider.esp"
-      - type: say
-        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (OA + Rain) - No Fog.esp"
+    inc:
+      - Xepha's Dynamic Weather - Climate OverRider (OA + Rain).esp
+      - Xepha's Dynamic Weather - Climate OverRider (OA).esp
+      - Xepha's Dynamic Weather - Climate OverRider.esp
+      - Xepha's Dynamic Weather - Climate OverRider (OA + Rain) - No Fog.esp
   - name: Xepha's Dynamic Weather - Climate OverRider.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (OA + Rain).esp"
-      - type: say
-        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (OA).esp"
-      - type: say
-        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (Rain).esp"
-      - type: say
-        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (OA + Rain) - No Fog.esp"
+    inc:
+      - Xepha's Dynamic Weather - Climate OverRider (OA + Rain).esp
+      - Xepha's Dynamic Weather - Climate OverRider (OA).esp
+      - Xepha's Dynamic Weather - Climate OverRider (Rain).esp
+      - Xepha's Dynamic Weather - Climate OverRider (OA + Rain) - No Fog.esp
   - name: Xepha's Dynamic Weather - Climate OverRider (OA + Rain) - No Fog.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Requires: Enhanced Weather - Rain and Snow.esm"
-      - type: say
-        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (OA + Rain).esp"
-      - type: say
-        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (OA).esp"
-      - type: say
-        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider (Rain).esp"
-      - type: say
-        content: "Incompatible with: Xepha's Dynamic Weather - Climate OverRider.esp"
+    inc:
+      - Xepha's Dynamic Weather - Climate OverRider (OA + Rain).esp
+      - Xepha's Dynamic Weather - Climate OverRider (OA).esp
+      - Xepha's Dynamic Weather - Climate OverRider (Rain).esp
+      - Xepha's Dynamic Weather - Climate OverRider.esp
   - name: Xepha's Dynamic Weather - Sandstorms + Armor Damage (FOSE).esp
-    msg:
-      - type: say
-        content: "Incompatible with: Dynamic Weather - Sandstorms.esp"
+    inc:
+      - Dynamic Weather - Sandstorms.esp
   - name: Xepha's Dynamic Weather - Weather Machine.esp
     msg:
       - type: say
@@ -3921,13 +3745,11 @@ plugins:
       - type: say
         content: Only use one Weather Machine.esp at a time.
   - name: Better DC Weather - 60-40.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Better DC Weather - 80-20.esp"
+    inc:
+      - Better DC Weather - 80-20.esp
   - name: Better DC Weather - 80-20.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Better DC Weather - 60-40.esp"
+    inc:
+      - Better DC Weather - 60-40.esp
 # ENDGROUP: Weather\Light\Water
 # BEGINGROUP: Lastish
   - name: CRAFTHelper_ReplaceWorkbenchScript.esp
