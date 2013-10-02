@@ -2472,176 +2472,46 @@ plugins:
       - Stats
 # ENDGROUP: Mart's Mutant Mod
 # BEGINGROUP: Companions
-  - name: AmyWong - FOSE.esp
-    msg:
-      - type: say
-        content: "Requires: AmyWong.esm"
-  - name: AmyWong - DLCs.esp
-    msg:
-      - type: say
-        content: "Requires: AmyWong.esm"
-      - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Requires: ThePitt.esm"
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Requires: Zeta.esm"
   - name: AmyWong - DLCs (FOOK2 1.1 DIK).esp
-    msg:
-      - type: say
-        content: "Requires: AmyWong.esm"
-      - type: say
-        content: "Requires: FOOK2 - [DIK] DLC Improvement Kit.esm"
     inc:
       - AmyWong - DLCs.esp
   - name: AmyWong - DLC01 Anchorage.esp
-    msg:
-      - type: say
-        content: "Requires: AmyWong.esm"
-      - type: say
-        content: "Requires: Anchorage.esm"
     inc:
       - AmyWong - DLCs.esp
   - name: AmyWong - DLC02 The Pitt.esp
-    msg:
-      - type: say
-        content: "Requires: AmyWong.esm"
-      - type: say
-        content: "Requires: ThePitt.esm"
     inc:
       - AmyWong - DLCs.esp
   - name: AmyWong - DLC03 Broken Steel.esp
-    msg:
-      - type: say
-        content: "Requires: AmyWong.esm"
-      - type: say
-        content: "Requires: BrokenSteel.esm"
     inc:
       - AmyWong - DLCs.esp
   - name: AmyWong - DLC04 Pt.Lookout.esp
-    msg:
-      - type: say
-        content: "Requires: AmyWong.esm"
-      - type: say
-        content: "Requires: PointLookout.esm"
     inc:
       - AmyWong - DLCs.esp
   - name: AmyWong - DLC05 Zeta.esp
-    msg:
-      - type: say
-        content: "Requires: AmyWong.esm"
-      - type: say
-        content: "Requires: Zeta.esm"
     inc:
       - AmyWong - DLCs.esp
   - name: AmyWong - CALIBR 1.3 (FWE 5).esp
-    msg:
-      - type: say
-        content: "Requires: AmyWong.esm"
-      - type: say
-        content: "Requires: CALIBR.esm"
     inc:
       - AmyWong - CALIBR 1.3.esp
       - AmyWong - CALIBR 1.2.esp
   - name: AmyWong - CALIBR 1.3.esp
-    msg:
-      - type: say
-        content: "Requires: AmyWong.esm"
-      - type: say
-        content: "Requires: CALIBR.esm"
     inc:
       - AmyWong - CALIBR 1.3.esp
       - AmyWong - CALIBR 1.3 (FWE 5).esp
   - name: AmyWong - CALIBR 1.2.esp
-    msg:
-      - type: say
-        content: "Requires: AmyWong.esm"
-      - type: say
-        content: "Requires: CALIBR.esm"
     inc:
       - AmyWong - CALIBR 1.3 (FWE 5).esp
       - AmyWong - CALIBR 1.2.esp
-  - name: AmyWong - FWE 5.esp
-    msg:
-      - type: say
-        content: "Requires: AmyWong.esm"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-  - name: FWE6-AmyWong fix.esp
-    msg:
-      - type: say
-        content: "Requires: CRAFT.esm"
-      - type: say
-        content: "Requires: AmyWong.esm"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-      - type: say
-        content: "Requires: AmyWong - FWE 5.esp"
-  - name: AmyWong - FOOK2.esp
-    msg:
-      - type: say
-        content: "Requires: AmyWong.esm"
-      - type: say
-        content: "Requires: FOOK2 - Main.ESM"
-  - name: AmyWong - FOOK2 1.1.esp
-    msg:
-      - type: say
-        content: "Requires: AmyWong.esm"
-      - type: say
-        content: "Requires: FOOK2 - Main.ESM"
-  - name: amywongmodmod.esp
-    msg:
-      - type: say
-        content: "Requires: AmyWong.esm"
   - name: ARC - Assembled Robotic Companions.esp
     tag:
       - Invent
       - Stats
-  - name: RHKBrisaAlmodovar - Custom - Lings.esp
-    msg:
-      - type: say
-        content: "Requires: Lings.esm"
-  - name: RHKBrisaAlmodovar - Custom - PB HD.esp
-    msg:
-      - type: say
-        content: "Requires: Project Beauty.esm"
-  - name: RHKBrisaAlmodovar - DLC - Anch.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-  - name: Brisa and FWE - Primary Needs Patch.esp
-    msg:
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-  - name: Brisa - FWE Skill Books Compatibility.esp
-    msg:
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
   - name: Brisa - Cooking with FWE & MMM 6.esp
-    msg:
-      - type: say
-        content: "Requires: CRAFT.esm"
-      - type: say
-        content: "Requires: CALIBR.esm"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-      - type: say
-        content: "Requires: Mart's Mutant Mod.esm"
-      - type: say
-        content: "Requires: RHKBrisaAlmodovar.esm"
     inc:
       - Brisa and FWE - Primary Needs Patch.esp
   - name: slaveraider_newlook.esp
     tag:
       - Graphics
-  - name: SCC 187GURLZ.esp
-    msg:
-      - type: say
-        content: "Requires: Sharing and Caring Companions.esm"
 # ENDGROUP: Companions
 # BEGINGROUP: Vanilla NPCs Become Campanions
   - name: CharonImproved.esp
@@ -2659,42 +2529,6 @@ plugins:
   - name: CompanionCherry.esp
     tag:
       - Actors.Stats
-  - name: FEM - BABE enabler.esp
-    msg:
-      - type: say
-        content: "Requires: FEM.esm"
-  - name: FEM - DIMON enabler.esp
-    msg:
-      - type: say
-        content: "Requires: FEM.esm"
-  - name: FEM - EXNEM enabler.esp
-    msg:
-      - type: say
-        content: "Requires: FEM.esm"
-  - name: FEM - FANTASY enabler.esp
-    msg:
-      - type: say
-        content: "Requires: FEM.esm"
-  - name: FEM - GROWLF enabler.esp
-    msg:
-      - type: say
-        content: "Requires: FEM.esm"
-  - name: FEM - MALOS enabler.esp
-    msg:
-      - type: say
-        content: "Requires: FEM.esm"
-  - name: FEM - NAOUAK enabler.esp
-    msg:
-      - type: say
-        content: "Requires: FEM.esm"
-  - name: FEM - NILE enabler.esp
-    msg:
-      - type: say
-        content: "Requires: FEM.esm"
-  - name: FEM - UF3 enabler.esp
-    msg:
-      - type: say
-        content: "Requires: FEM.esm"
   - name: MTC RealWildnessLife.esp
     tag:
       - Relations
@@ -2707,84 +2541,6 @@ plugins:
         content: If using MMM, use 'RoadWardensMMM.esp' instead
 # ENDGROUP: Vanilla NPCs Become Campanions
 # BEGINGROUP: Companion Compatability / Fixes
-  - name: COCOA - bittercup_comp.esp
-    msg:
-      - type: say
-        content: "Requires: bittercup_comp.esp"
-  - name: COCOA - BriannaCompanion.esp
-    msg:
-      - type: say
-        content: "Requires: BriannaCompanion.esp"
-  - name: COCOA - BrokenSteel.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-  - name: COCOA - Dogmeat Leather Armor - CRAFT.esp
-    msg:
-      - type: say
-        content: "Requires: Dogmeat Leather Armor - CRAFT.esp"
-  - name: COCOA - Dogmeat Leather Armor - no crafting.esp
-    msg:
-      - type: say
-        content: "Requires: Dogmeat Leather Armor - no crafting.esp"
-  - name: COCOA - Follower Amata ULTIMATE.esp
-    msg:
-      - type: say
-        content: "Requires: Follower Amata ULTIMATE.esp"
-  - name: COCOA - FWE Followers Enhanced (Broken Steel).esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: CRAFT.esm"
-      - type: say
-        content: "Requires: CALIBR.esm"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-  - name: COCOA - FWE Followers Enhanced.esp
-    msg:
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-  - name: COCOA - JessiCompanion.esp
-    msg:
-      - type: say
-        content: "Requires: JessiCompanion.esp"
-  - name: COCOA - Kat_Companion_V1.0a.esp
-    msg:
-      - type: say
-        content: "Requires: Kat_Companion_V1.0a.esp"
-  - name: COCOA - Kat_Companion_V1.0b.esp
-    msg:
-      - type: say
-        content: "Requires: Kat_Companion_V1.0b.esp"
-  - name: COCOA - KelseyCompanion.esp
-    msg:
-      - type: say
-        content: "Requires: KelseyCompanion.esp"
-  - name: COCOA - LucyWestCompanion.esp
-    msg:
-      - type: say
-        content: "Requires: LucyWestCompanion.esp"
-  - name: COCOA - outcast_comp.esp
-    msg:
-      - type: say
-        content: "Requires: outcast_comp.esp"
-  - name: COCOA - RHKBrisaAlmodovar.esp
-    msg:
-      - type: say
-        content: "Requires: RHKBrisaAlmodovar.esm"
-  - name: COCOA - Sarah Lyons Companion.esp
-    msg:
-      - type: say
-        content: "Requires: Sarah Lyons Companion.esp"
-  - name: COCOA - slaveraider.esp
-    msg:
-      - type: say
-        content: "Requires: slaveraider.esp"
-  - name: COCOA - Sydney Follower.esp
-    msg:
-      - type: say
-        content: "Requires: Sydney Follower.esp"
 # ENDGROUP: Companion Compatability / Fixes
 # BEGINGROUP: Realism Mods
   - name: WRWC - Classic Fallout.esp
@@ -2802,151 +2558,62 @@ plugins:
     tag:
       - Delev
   - name: Imp's More Complex Needs.esp
-    msg:
-      - type: say
-        content: "Requires: IMCN.esm"
     tag:
       - Delev
       - Relev
       - Stats
   - name: IMCN - 5 DLC Merged.esp
-    msg:
-      - type: say
-        content: "Requires: IMCN.esm"
-      - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Requires: ThePitt.esm"
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Requires: Zeta.esm"
     tag:
       - Stats
   - name: IMCN - Operation Anchorage.esp
-    msg:
-      - type: say
-        content: "Requires: IMCN.esm"
-      - type: say
-        content: "Requires: Anchorage.esm"
     inc:
       - IMCN - 5 DLC Merged.esp
     tag:
       - Stats
   - name: IMCN - The Pitt.esp
-    msg:
-      - type: say
-        content: "Requires: IMCN.esm"
-      - type: say
-        content: "Requires: ThePitt.esm"
     inc:
       - IMCN - 5 DLC Merged.esp
     tag:
       - Stats
   - name: IMCN - Broken Steel.esp
-    msg:
-      - type: say
-        content: "Requires: IMCN.esm"
-      - type: say
-        content: "Requires: BrokenSteel.esm"
     inc:
       - IMCN - 5 DLC Merged.esp
     tag:
       - Stats
   - name: IMCN - Point Lookout.esp
-    msg:
-      - type: say
-        content: "Requires: IMCN.esm"
-      - type: say
-        content: "Requires: PointLookout.esm"
     inc:
       - IMCN - 5 DLC Merged.esp
     tag:
       - Stats
   - name: IMCN - Mothership Zeta.esp
-    msg:
-      - type: say
-        content: "Requires: IMCN.esm"
-      - type: say
-        content: "Requires: Zeta.esm"
     inc:
       - IMCN - 5 DLC Merged.esp
     tag:
       - Stats
   - name: IMCN - FWE Compatibility and Ingestibles.esp
-    msg:
-      - type: say
-        content: "Requires: IMCN.esm"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
     tag:
       - Stats
   - name: IMCN - FOOK2 Ingestibles.esp
-    msg:
-      - type: say
-        content: "Requires: IMCN.esm"
-      - type: say
-        content: "Requires: FOOK2 - Main.ESM"
     tag:
       - Stats
   - name: IMCN - BLTC Compatibility and Ingestibles.esp
-    msg:
-      - type: say
-        content: "Requires: IMCN.esm"
-      - type: say
-        content: "Requires: bltc.esp"
     inc:
       - IMCN - FWE Compatibility and Ingestibles.esp
     tag:
       - Stats
   - name: IMCN - BLTC RiPnO Combined Compatibility.esp
-    msg:
-      - type: say
-        content: "Requires: IMCN.esm"
-      - type: say
-        content: "Requires: bltc.esp"
-      - type: say
-        content: "Requires: RI_Core.esm"
-      - type: say
-        content: "Requires: RiPnO Core Patch.esp"
     inc:
       - IMCN - FWE Compatibility and Ingestibles.esp
   - name: IMCN - RiPnO Compatibility and Ingestibles.esp
-    msg:
-      - type: say
-        content: "Requires: IMCN.esm"
-      - type: say
-        content: "Requires: RI_Core.esm"
-      - type: say
-        content: "Requires: RiPnO Core Patch.esp"
     inc:
       - IMCN - FWE Compatibility and Ingestibles.esp
     tag:
       - Stats
   - name: IMCN - MMM Meats, Bloods, and Eyeballs.esp
-    msg:
-      - type: say
-        content: "Requires: IMCN.esm"
-      - type: say
-        content: "Requires: Mart's Mutant Mod.esm"
     tag:
       - Delev
       - Relev
       - Stats
-  - name: IMCN - Forced Initialization.esp
-    msg:
-      - type: say
-        content: "Requires: IMCN.esm"
-  - name: IMCN - Ambient Temperature.esp
-    msg:
-      - type: say
-        content: "Requires: Ambient Temperature.esm"
-  - name: PPA - IMCN.esp
-    msg:
-      - type: say
-        content: "Requires: Powered Power Armor.esp"
 # ENDGROUP: Realism Mods
 # BEGINGROUP: Later Misc
   - name: All Companions Essential.esp
@@ -2976,76 +2643,12 @@ plugins:
     tag:
       - Actors.ACBS
       - Scripts
-  - name: Core Robots - The Eyebots.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Requires: ThePitt.esm"
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Requires: Zeta.esm"
-  - name: Core Robots - The Handy.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-  - name: Core Robots - The Protectrons.esp
-    msg:
-      - type: say
-        content: "Requires: ThePitt.esm"
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: PointLookout.esm"
-  - name: Core Robots - The Robobrains.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Requires: ThePitt.esm"
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Requires: Zeta.esm"
-  - name: DLM_FFOutcastsQuest_Override.esp
-    msg:
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-      - type: say
-        content: "Requires: DLM_FFOutcastsQuest(FWEEd).esp"
-  - name: DLM_FFOutcastsQuest_Override-BS.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-      - type: say
-        content: "Requires: DLM_FFOutcastsQuest(FWEEd).esp"
-  - name: DLM_FFOutcastsQuest_Override-DLC.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: Zeta.esm"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-      - type: say
-        content: "Requires: DLM_FFOutcastsQuest(FWEEd).esp"
   - name: Easier_hacking_5_8.esp
-    msg:
-      - type: say
-        content: Choose only one of Easier_hacking_5_8.esp or Lucky_hacking_5.esp, not both
+    inc:
+      - Lucky_hacking_5.esp
   - name: Lucky_hacking_5.esp
-    msg:
-      - type: say
-        content: Choose only one of Easier_hacking_5_8.esp or Lucky_hacking_5.esp, not both
+    inc:
+      - Easier_hacking_5_8.esp
   - name: EWE DLC Addon.esp
     tag:
       - Deflst
@@ -3055,41 +2658,9 @@ plugins:
     msg:
       - type: say
         content: Obsolete. Update to latest version.
-  - name: sexus_no_trouble_for3_0_2.esp
-    msg:
-      - type: say
-        content: "Requires: Fallout 3 Sexus.esm"
-  - name: zzzSexusParasiteAddon.esp
-    msg:
-      - type: say
-        content: "Requires: Fallout 3 Sexus.esm"
   - name: Ghouls Cohabitate.esp
     tag:
       - ScriptContents
-  - name: GTent-MMM.esp
-    msg:
-      - type: say
-        content: "Requires: GTent.esp"
-      - type: say
-        content: "Requires: Mart's Mutant Mod.esm"
-  - name: GTent-FWE.esp
-    msg:
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-      - type: say
-        content: "Requires: CRAFT.esm"
-  - name: GTent-FWE-MMM.esp
-    msg:
-      - type: say
-        content: "Requires: GTent-FWE.esp"
-      - type: say
-        content: "Requires: Mart's Mutant Mod.esm"
-  - name: GTent-FWE-WMK.esp
-    msg:
-      - type: say
-        content: "Requires: GTent-FWE.esp"
-      - type: say
-        content: "Requires: WeaponModKits.esp"
   - name: infiltrations.esp
     tag:
       - Scripts
@@ -3099,18 +2670,6 @@ plugins:
   - name: Inebriation-FOSE.esp
     inc:
        - Inebriation-FOSE.esp
-  - name: K9BreedsPatchDLCPitt.esp
-    msg:
-      - type: say
-        content: "Requires: ThePitt.esm"
-  - name: K9BreedsPatchMMM.esp
-    msg:
-      - type: say
-        content: "Requires: Mart's Mutant Mod.esm"
-      - type: say
-        content: "Requires: Mart's Mutant Mod.esp"
-      - type: say
-        content: "Requires: K9Breeds.esp"
   - name: KillableKids.esp
     msg:
       - type: say
@@ -3156,78 +2715,36 @@ plugins:
       - Kill and Loot Unconscious Essential NPCs.esp
       - Kill and Loot Unconscious Essential NPCs_FOSE.esp
   - name: Laboratory.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Requires: Zeta.esm"
     tag:
       - Scripts
   - name: QuantumLab.esp
     tag:
       - Scripts
   - name: Laboratory (BS).esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
     tag:
       - Scripts
   - name: Laboratory (PL).esp
-    msg:
-      - type: say
-        content: "Requires: PointLookout.esm"
     tag:
       - Scripts
   - name: QuantumLab (PL).esp
-    msg:
-      - type: say
-        content: "Requires: PointLookout.esm"
     tag:
       - Scripts
   - name: Laboratory (MZ).esp
-    msg:
-      - type: say
-        content: "Requires: Zeta.esm"
     tag:
       - Scripts
   - name: QuantumLab (MZ).esp
-    msg:
-      - type: say
-        content: "Requires: Zeta.esm"
     tag:
       - Scripts
   - name: Laboratory (BS & PL).esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: PointLookout.esm"
     tag:
       - Scripts
   - name: Laboratory (BS & MZ).esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: Zeta.esm"
     tag:
       - Scripts
   - name: Laboratory (PL & MZ).esp
-    msg:
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Requires: Zeta.esm"
     tag:
       - Scripts
   - name: QuantumLab (PL & MZ).esp
-    msg:
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Requires: Zeta.esm"
     tag:
       - Scripts
   - name: LightweightFoodSanitizer.esp
@@ -3236,96 +2753,19 @@ plugins:
   - name: MiscWeightFix.esp
     tag:
       - Stats
-  - name: MZAllAccessPass.esp
-    msg:
-      - type: say
-        content: "Requires: Zeta.esm"
-  - name: MZC Addon - Shorter Zeta DLC (turrets).esp
-    msg:
-      - type: say
-        content: "Requires: Zeta.esm"
-  - name: MZC Addon - Shorter Zeta DLC.esp
-    msg:
-      - type: say
-        content: "Requires: Zeta.esm"
-  - name: MZC Addon - ADV Recon.esp
-    msg:
-      - type: say
-        content: "Requires: Zeta.esm"
-      - type: say
-        content: "Requires: Mothership Crew.esm"
-      - type: say
-        content: "Requires: Advanced Recon Tech.esm"
-  - name: MZC Addon - Gear Improve - ADV Recon.esp
-    msg:
-      - type: say
-        content: "Requires: Zeta.esm"
-      - type: say
-        content: "Requires: Mothership Crew.esm"
-      - type: say
-        content: "Requires: Advanced Recon Tech.esm"
-  - name: MZC Addon - Tyranid to Xenomorph (old name).esp
-    msg:
-      - type: say
-        content: "Requires: Zeta.esm"
-      - type: say
-        content: "Requires: Mothership Crew.esm"
-  - name: MZC Addon - Tyranid to Xenomorph (new name).esp
-    msg:
-      - type: say
-        content: "Requires: Zeta.esm"
-      - type: say
-        content: "Requires: Mothership Crew.esm"
-  - name: MZC Addon - MZC-IMCN Patch.esp
-    msg:
-      - type: say
-        content: "Requires: Zeta.esm"
-      - type: say
-        content: "Requires: Mothership Crew.esm"
-      - type: say
-        content: "Requires: IMCN.esm"
   - name: Owned!.esp
     tag:
       - Factions
-  - name: PPA - Readius.esp
-    msg:
-      - type: say
-        content: "Requires: 1PipboyPDA.esp"
-  - name: RaiderGirls_pitt.esp
-    msg:
-      - type: say
-        content: "Requires: ThePitt.esm"
   - name: RebalancedFire-Vanilla.esp
     inc:
       - RebalancedFire-BrokenSteel.esp
   - name: RebalancedFire-BrokenSteel.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
     inc:
       - RebalancedFire-Vanilla.esp
   - name: RRRU +4 UFP.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Requires: ThePitt.esm"
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: PointLookout.esm"
     tag:
       - Deflst
   - name: RRRU +4.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Requires: ThePitt.esm"
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: PointLookout.esm"
     tag:
       - Deflst
   - name: Skill Modification Assignment.esp
@@ -3363,9 +2803,6 @@ plugins:
       - Invent
       - Relev
   - name: WRK Final - Point Lookout.esp
-    msg:
-      - type: say
-        content: "Requires: PointLookout.esm"
     tag:
       - Invent
   - name: yaDisguisesMod-Merged.esp
@@ -3374,20 +2811,6 @@ plugins:
       - yaDisguisesMod-DLC-Anchorage.esp
       - yaDisguisesMod-DLC-ThePitt.esp
       - yaDisguisesMod-DLC-BrokenSteel.esp
-  - name: yaDisguisesMod-MOD-FWE.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: FO3 Wanaderers Edition - Main File.esm"
-      - type: say
-        content: "Requires: FO3 Wanaderers Edition - DLC Anchorage.esp"
-      - type: say
-        content: "Requires: FO3 Wanaderers Edition - DLC Broken Steel.esp"
-      - type: say
-        content: "Requires: yaDisguisesMod.esp"
   - name: ZumbsDarkerSunglasses_no_replace.esp
     msg:
       - type: say
@@ -3477,13 +2900,9 @@ plugins:
   - name: Phalanx-BrokenSteel-Integration.esp
     msg:
       - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
         content: Do not use with latest FOOK2, it is already integrated.
   - name: Phalanx-PointLookout-Integration.esp
     msg:
-      - type: say
-        content: "Requires: PointLookout.esm"
       - type: say
         content: Do not use with latest FOOK2, it is already integrated.
 # ENDGROUP: Phalanx
@@ -3492,10 +2911,6 @@ plugins:
     msg:
       - type: say
         content: Paradox Ignition EVE-merger - compatibility patch for Fast Travel from Indoors.
-  - name: GH-HealingRebalanceMod_stimpackduration.esp
-    msg:
-      - type: say
-        content: "Requires: Zeta.esm"
   - name: GH-HealingRebalanceMod_Infirmary+Lab.esp
     tag:
       - Scripts
