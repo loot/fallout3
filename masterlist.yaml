@@ -13,6 +13,7 @@ globals:
     condition: version("BOSS","2.1.1.0",<)
 
 plugins:
+# BEGINGROUP: ESMs
   - name: StreetLights.esm
     msg:
       - type: say
@@ -277,6 +278,8 @@ plugins:
         content: Do not use with latest FWE, it is already integrated.
     tag:
       - Names
+# ENDGROUP: ESMs
+# BEGINGROUP: Unofficial Patches and Fixes
   - name: DALCO Inventory Sorter - Fallout 3 & All DLCs.esp
     tag:
       - Names
@@ -409,6 +412,8 @@ plugins:
   - name: Stop Insulting Me Outcasts.esp
     tag:
       - Factions
+# ENDGROUP: Unofficial Patches and Fixes
+# BEGINGROUP: Early Loading Mods
   - name: DALCO Inventory Sorter - Fallout 3 (Base Game).esp
     tag:
       - Names
@@ -605,6 +610,8 @@ plugins:
   - name: PAL - BASE File.esp
     inc:
       - PAL - MERGED.esp
+# ENDGROUP: Early Loading Mods
+# BEGINGROUP: Sounds
   - name: GalaxyNewsRadioFix[N].esp
     inc:
       - GalaxyNewsRadio100[M].esp
@@ -675,6 +682,12 @@ plugins:
     msg:
       - type: say
         content: Load RadioHotkey after all other radio mods
+# ENDGROUP: Sounds
+# BEGINGROUP: Early Misc A (Perks)
+# ENDGROUP: Early Misc A (Perks)
+# BEGINGROUP: Global Traveling System
+# ENDGROUP: Global Traveling System
+# BEGINGROUP: Quests
   - name: Despicable Dashwood v2.esp
     tag:
       - Actors.ACBS
@@ -739,6 +752,8 @@ plugins:
   - name: The Mantis Imperative - Mantis.esp
     tag:
       - Relev
+# ENDGROUP: Quests
+# BEGINGROUP: Early Misc B
   - name: Action for men v3.0.esp
     tag:
       - Invent
@@ -899,6 +914,8 @@ plugins:
   - name: Mannequin.esp
     tag:
       - Actors.AIData
+# ENDGROUP: Early Misc B
+# BEGINGROUP: NPC
   - name: BombayTradingCo.esp
     tag:
       - Actors.AIPackages
@@ -974,6 +991,8 @@ plugins:
   - name: Wasteland Gigolo.esp
     tag:
       - Scripts
+# ENDGROUP: NPC
+# BEGINGROUP: Places
   - name: Arefu Player House.esp
     inc:
       - ArefuExpandedByAzar.esm
@@ -1013,6 +1032,9 @@ plugins:
       - FNNSys.esm
     tag:
       - Scripts
+# ENDGROUP: Places
+# BEGINGROUP: Overhauls
+# BEGINGROUP: FOOK
   - name: FOOK2 - Main.esp
     tag:
       - Delev
@@ -1122,6 +1144,8 @@ plugins:
       - type: error
         content: Old, please update to the latest version
         condition: file("FOOK2 - Main.esm")
+# ENDGROUP: FOOK
+# BEGINGROUP: Fallout Wanderer's Edition
   - name: FO3 Wanderers Edition - Main File.esp
     tag:
       - Actors.ACBS
@@ -1303,6 +1327,8 @@ plugins:
       - Scripts
       - Sound
       - Stats
+# ENDGROUP: Fallout Wanderer's Edition
+# BEGINGROUP: Other
   - name: Refurbishes [ALL].esp
     msg:
       - type: say
@@ -1340,6 +1366,11 @@ plugins:
     msg:
       - type: say
         content: Do not use with latest FOOK2, it is already integrated.
+# ENDGROUP: Other
+# ENDGROUP: Overhauls
+# BEGINGROUP: Tailor Maid
+# ENDGROUP: Tailor Maid
+# BEGINGROUP: WeaponModKits
   - name: WeaponModKits.esp
     tag:
       - Actors.AIData
@@ -1463,6 +1494,8 @@ plugins:
     tag:
       - Deflst
       - Stats
+# ENDGROUP: WeaponModKits
+# BEGINGROUP: Weapons
   - name: 3EFskewer.esp
     tag:
       - Stats
@@ -1568,6 +1601,8 @@ plugins:
     tag:
       - Delev
       - Relev
+# ENDGROUP: Weapons
+# BEGINGROUP: Armor\Clothes
   - name: "[DC RANGER ARSENAL v3] - DLC GEAR.esp"
     tag:
       - Deflst
@@ -1712,6 +1747,8 @@ plugins:
   - name: WasteWearGloves.esp
     tag:
       - Relev
+# ENDGROUP: Armor\Clothes
+# BEGINGROUP: Cosmetics
   - name: LingsFinerThings.esp
     msg:
       - type: say
@@ -1759,6 +1796,8 @@ plugins:
         content: Outdated, use latest Wrye Flash version
     tag:
       - Invent
+# ENDGROUP: Cosmetics
+# BEGINGROUP: Middle Misc A
   - name: AutoGates.esp
     tag:
       - Scripts
@@ -1939,6 +1978,8 @@ plugins:
     msg:
       - type: say
         content: Please update to latest version.
+# ENDGROUP: Middle Misc A
+# BEGINGROUP: Middle Misc B
   - name: Replenishment.esp
     tag:
       - Scripts
@@ -2155,6 +2196,8 @@ plugins:
   - name: Trucker Holotapes.esp
     tag:
       - Names
+# ENDGROUP: Middle Misc B
+# BEGINGROUP: EVE Stuff
   - name: EVE Beta_0.9.4.esp
     msg:
       - type: say
@@ -2204,6 +2247,8 @@ plugins:
     tag:
       - Delev
       - Relev
+# ENDGROUP: EVE Stuff
+# BEGINGROUP: Mart's Mutant Mod
   - name: Mart's Mutant Mod.esp
     tag:
       - Delev
@@ -2425,6 +2470,8 @@ plugins:
       - Relations
       - Scripts
       - Stats
+# ENDGROUP: Mart's Mutant Mod
+# BEGINGROUP: Companions
   - name: AmyWong - DLCs (FOOK2 1.1 DIK).esp
     inc:
       - AmyWong - DLCs.esp
@@ -2465,3 +2512,989 @@ plugins:
   - name: slaveraider_newlook.esp
     tag:
       - Graphics
+# ENDGROUP: Companions
+# BEGINGROUP: Vanilla NPCs Become Campanions
+  - name: CharonImproved.esp
+    tag:
+      - Actors.AIPackages
+  - name: llama's Vanilla Followers for Charon Improved.esp
+    tag:
+      - Actors.ACBS
+      - Actors.AIPackages
+      - Stats
+  - name: Get Your Cherry Back.esp
+    tag:
+      - Actors.ACBS
+      - Actors.AIPackages
+  - name: CompanionCherry.esp
+    tag:
+      - Actors.Stats
+  - name: MTC RealWildnessLife.esp
+    tag:
+      - Relations
+  - name: mesme.esp
+    tag:
+      - Actors.ACBS
+  - name: RoadWardens.esp
+    msg:
+      - type: say
+        content: If using MMM, use 'RoadWardensMMM.esp' instead
+# ENDGROUP: Vanilla NPCs Become Campanions
+# BEGINGROUP: Companion Compatability / Fixes
+# ENDGROUP: Companion Compatability / Fixes
+# BEGINGROUP: Realism Mods
+  - name: WRWC - Classic Fallout.esp
+    msg:
+      - type: say
+        content: Use one one type of Weapon Restriction while Crippled
+  - name: WRWC - Right Handed.esp
+    msg:
+      - type: say
+        content: Use one one type of Weapon Restriction while Crippled
+  - name: RI_LootTableRI.esp
+    tag:
+      - Delev
+  - name: RI_LootTablePN.esp
+    tag:
+      - Delev
+  - name: Imp's More Complex Needs.esp
+    tag:
+      - Delev
+      - Relev
+      - Stats
+  - name: IMCN - 5 DLC Merged.esp
+    tag:
+      - Stats
+  - name: IMCN - Operation Anchorage.esp
+    inc:
+      - IMCN - 5 DLC Merged.esp
+    tag:
+      - Stats
+  - name: IMCN - The Pitt.esp
+    inc:
+      - IMCN - 5 DLC Merged.esp
+    tag:
+      - Stats
+  - name: IMCN - Broken Steel.esp
+    inc:
+      - IMCN - 5 DLC Merged.esp
+    tag:
+      - Stats
+  - name: IMCN - Point Lookout.esp
+    inc:
+      - IMCN - 5 DLC Merged.esp
+    tag:
+      - Stats
+  - name: IMCN - Mothership Zeta.esp
+    inc:
+      - IMCN - 5 DLC Merged.esp
+    tag:
+      - Stats
+  - name: IMCN - FWE Compatibility and Ingestibles.esp
+    tag:
+      - Stats
+  - name: IMCN - FOOK2 Ingestibles.esp
+    tag:
+      - Stats
+  - name: IMCN - BLTC Compatibility and Ingestibles.esp
+    inc:
+      - IMCN - FWE Compatibility and Ingestibles.esp
+    tag:
+      - Stats
+  - name: IMCN - BLTC RiPnO Combined Compatibility.esp
+    inc:
+      - IMCN - FWE Compatibility and Ingestibles.esp
+  - name: IMCN - RiPnO Compatibility and Ingestibles.esp
+    inc:
+      - IMCN - FWE Compatibility and Ingestibles.esp
+    tag:
+      - Stats
+  - name: IMCN - MMM Meats, Bloods, and Eyeballs.esp
+    tag:
+      - Delev
+      - Relev
+      - Stats
+# ENDGROUP: Realism Mods
+# BEGINGROUP: Later Misc
+  - name: All Companions Essential.esp
+    tag:
+      - Actors.ACBS
+  - name: AMPUTATE!.esp
+    tag:
+      - Scripts
+  - name: Attentater's Wasteland Economy.esp
+    tag:
+      - Names
+  - name: BA_RepairVanilla.esp
+    tag:
+      - Deflst
+  - name: BA_RepairThePitt.esp
+    tag:
+      - Deflst
+  - name: BA_RepairGOTY.esp
+    tag:
+      - Deflst
+  - name: bittercup_6.esp
+    tag:
+      - Delev
+      - Relev
+      - ScriptContents
+  - name: ChildKiller.esp
+    tag:
+      - Actors.ACBS
+      - Scripts
+  - name: Easier_hacking_5_8.esp
+    inc:
+      - Lucky_hacking_5.esp
+  - name: Lucky_hacking_5.esp
+    inc:
+      - Easier_hacking_5_8.esp
+  - name: EWE DLC Addon.esp
+    tag:
+      - Deflst
+      - Graphics
+      - Stats
+  - name: Fallout 3 Sexus with Children Empire.esp
+    msg:
+      - type: say
+        content: Obsolete. Update to latest version.
+  - name: Ghouls Cohabitate.esp
+    tag:
+      - ScriptContents
+  - name: infiltrations.esp
+    tag:
+      - Scripts
+  - name: Inebriation.esp
+    inc:
+       - Inebriation.esp
+  - name: Inebriation-FOSE.esp
+    inc:
+       - Inebriation-FOSE.esp
+  - name: KillableKids.esp
+    msg:
+      - type: say
+        content: Choose only one 'KillableKids' ESP.
+  - name: KillableKidsOptional.esp
+    msg:
+      - type: say
+        content: Choose only one 'KillableKids' ESP.
+  - name: KillableKidsNormalHealth.esp
+    msg:
+      - type: say
+        content: Choose only one 'KillableKids' ESP.
+  - name: KillableKidsNormalHealthOptional.esp
+    msg:
+      - type: say
+        content: Choose only one 'KillableKids' ESP.
+  - name: KillableKidsNoExtras.esp
+    msg:
+      - type: say
+        content: Choose only one 'KillableKids' ESP.
+  - name: AttackableBrats.esp
+    msg:
+      - type: say
+        content: Choose only one 'Brats' ESP.
+  - name: KillableBrats.esp
+    msg:
+      - type: say
+        content: Choose only one 'Brats' ESP.
+  - name: BadAssBrats.esp
+    msg:
+      - type: say
+        content: Choose only one 'Brats' ESP.
+  - name: Kill and Loot Unconscious Essential NPCs.esp
+    inc:
+      - Kill and Loot Unconscious Essential NPCs_NoGore.esp
+      - Kill and Loot Unconscious Essential NPCs_FOSE.esp
+  - name: Kill and Loot Unconscious Essential NPCs_FOSE.esp
+    inc:
+      - Kill and Loot Unconscious Essential NPCs.esp
+      - Kill and Loot Unconscious Essential NPCs_NoGore.esp
+  - name: Kill and Loot Unconscious Essential NPCs_NoGore.esp
+    inc:
+      - Kill and Loot Unconscious Essential NPCs.esp
+      - Kill and Loot Unconscious Essential NPCs_FOSE.esp
+  - name: Laboratory.esp
+    tag:
+      - Scripts
+  - name: QuantumLab.esp
+    tag:
+      - Scripts
+  - name: Laboratory (BS).esp
+    tag:
+      - Scripts
+  - name: Laboratory (PL).esp
+    tag:
+      - Scripts
+  - name: QuantumLab (PL).esp
+    tag:
+      - Scripts
+  - name: Laboratory (MZ).esp
+    tag:
+      - Scripts
+  - name: QuantumLab (MZ).esp
+    tag:
+      - Scripts
+  - name: Laboratory (BS & PL).esp
+    tag:
+      - Scripts
+  - name: Laboratory (BS & MZ).esp
+    tag:
+      - Scripts
+  - name: Laboratory (PL & MZ).esp
+    tag:
+      - Scripts
+  - name: QuantumLab (PL & MZ).esp
+    tag:
+      - Scripts
+  - name: LightweightFoodSanitizer.esp
+    tag:
+      - Stats
+  - name: MiscWeightFix.esp
+    tag:
+      - Stats
+  - name: Owned!.esp
+    tag:
+      - Factions
+  - name: RebalancedFire-Vanilla.esp
+    inc:
+      - RebalancedFire-BrokenSteel.esp
+  - name: RebalancedFire-BrokenSteel.esp
+    inc:
+      - RebalancedFire-Vanilla.esp
+  - name: RRRU +4 UFP.esp
+    tag:
+      - Deflst
+  - name: RRRU +4.esp
+    tag:
+      - Deflst
+  - name: Skill Modification Assignment.esp
+    tag:
+      - Scripts
+      - Stats
+  - name: DALCO Inventory Sorter - SMA.esp
+    tag:
+      - Names
+      - NoMerge
+  - name: SuperStim.esp
+    tag:
+      - Scripts
+  - name: SpiderAnts.esp
+    tag:
+      - Relev
+  - name: T3T_MiscItemIcons.esp
+    msg:
+      - type: say
+        content: Do not use with latest FWE, it is already integrated.
+  - name: TenpennyGhoulsAtPeace.esp
+    tag:
+      - ScriptContents
+  - name: EnhVision.esp
+    inc:
+      - EnhVisionHK.esp
+  - name: EnhVisionHK.esp
+    inc:
+      - EnhVision.esp
+  - name: Weapon Repair Kits.esp
+    tag:
+      - Relev
+  - name: WRK Final - Plugin.esp
+    tag:
+      - Invent
+      - Relev
+  - name: WRK Final - Point Lookout.esp
+    tag:
+      - Invent
+  - name: yaDisguisesMod-Merged.esp
+    inc:
+      - yaDisguisesMod.esp
+      - yaDisguisesMod-DLC-Anchorage.esp
+      - yaDisguisesMod-DLC-ThePitt.esp
+      - yaDisguisesMod-DLC-BrokenSteel.esp
+  - name: ZumbsDarkerSunglasses_no_replace.esp
+    msg:
+      - type: say
+        content: Zumbs has asked you to rename this to ZumbsDarkerSunglasses.esp
+  - name: ZumbsDarkerSunglasses_screen_effect.esp
+    msg:
+      - type: say
+        content: Zumbs has asked you to rename this to ZumbsDarkerSunglasses.esp
+# ENDGROUP: Later Misc
+# BEGINGROUP: Arwen's Realism Main
+  - name: Arwen_Realism_Core.esp
+    tag:
+      - Actors.CombatStyle
+      - Actors.Stats
+      - Destructible
+      - Names
+      - Relev
+      - Sound
+      - Stats
+  - name: Arwen_GOTY_Realism_Core.esp
+    tag:
+      - NoMerge
+  - name: Arwen_Hard-Core.esp
+    tag:
+      - Actors.CombatStyle
+      - Actors.Stats
+      - Destructible
+      - Names
+      - Relev
+      - Stats
+  - name: Arwen_GOTY_Hard-Core.esp
+    tag:
+      - NoMerge
+  - name: Arwen_Armor.esp
+    inc:
+      - Arwen_FULL_Tweaks.esp
+  - name: Arwen_Less_Is_More.esp
+    inc:
+      - Arwen_FULL_Tweaks.esp
+  - name: Arwen_Less-Is-More.esp
+    inc:
+      - Arwen_FULL_Tweaks.esp
+  - name: Arwen_Localized_Damage.esp
+    inc:
+      - Arwen_FULL_Tweaks.esp
+  - name: Arwen_SmarterAI.esp
+    inc:
+      - Arwen_FULL_Tweaks.esp
+  - name: Arwen_Survival.esp
+    inc:
+      - Arwen_FULL_Tweaks.esp
+  - name: Arwen_Tweaks_Main.esp
+    inc:
+      - Arwen_FULL_Tweaks.esp
+  - name: Arwen_Weapons.esp
+    inc:
+      - Arwen_FULL_Tweaks.esp
+  - name: Arwen_Med-Tec.esp
+    tag:
+      - Names
+  - name: Arwen_GOTY_Med-Tec.esp
+    tag:
+      - Names
+      - Relev
+      - Stats
+  - name: Arwen_MMM_Med-Tec_Patch.esp
+    tag:
+      - Relev
+      - Scripts
+  - name: Arwen_MMM_Patch.esp
+    tag:
+      - Scripts
+  - name: Arwen_EVE_Patch.esp
+    tag:
+      - Graphics
+      - Sound
+      - Stats
+# ENDGROUP: Arwen's Realism Main
+# BEGINGROUP: Phalanx
+  - name: Phalanx-MainFollowerModule.esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+    tag:
+      - Actors.ACBS
+      - Actors.AIPackages
+  - name: Phalanx-BrokenSteel-Integration.esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+  - name: Phalanx-PointLookout-Integration.esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+# ENDGROUP: Phalanx
+# BEGINGROUP: Game-Settings and Overrides
+  - name: EVE - FastTravelIndoors Patch.esp
+    msg:
+      - type: say
+        content: Paradox Ignition EVE-merger - compatibility patch for Fast Travel from Indoors.
+  - name: GH-HealingRebalanceMod_Infirmary+Lab.esp
+    tag:
+      - Scripts
+  - name: DALCO Inventory Sorter - Max Level Workaround.esp
+    tag:
+      - Names
+  - name: DALCO Inventory Sorter - Max Level Workaround (BS).esp
+    tag:
+      - Names
+  - name: DALCO Inventory Sorter - Max Level Workaround (HP).esp
+    tag:
+      - Names
+  - name: DALCO Inventory Sorter - Max Level Workaround (HP-BS).esp
+    tag:
+      - Names
+  - name: dD - Enhanced Blood Main.esp
+    msg:
+      - type: say
+        content: Older version included in FOOK2
+  - name: Realistic Death Physics.esp
+    msg:
+      - type: say
+        content: Do not use with latest FWE, it is already integrated.
+  - name: REAL-ThirdViewMod.esp
+    inc:
+      - LOWER-real-thirdpersonview.esp
+  - name: LOWER-real-thirdpersonview.esp
+    inc:
+      - REAL-ThirdViewMod.esp
+# ENDGROUP: Game-Settings and Overrides
+# BEGINGROUP: Weather\Light\Water
+  - name: Clean-Deluxe GOTY.esp
+    inc:
+      - Dust-away.esp
+      - Dust-away - DLC support.esp
+      - Paper-Shredder.esp
+      - Paper-Shredder - DLC Support.esp
+      - Rock-Out.esp
+      - Rock-Out - DLC Support.esp
+    msg:
+      - type: say
+        content: Includes all Dust-away, paper-shredder and Rock-out plugins
+  - name: Fellout-Full.esp
+    inc:
+      - Fellout-SOTD.esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+  - name: Fellout-SOTD.esp
+    inc:
+      - Either Fellout-Full.esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+  - name: Fellout-Anchorage.esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+  - name: Fellout-BrokenSteel.esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+  - name: Fellout-PointLookout.esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+  - name: Fellout-Zeta.esp
+    msg:
+      - type: say
+        content: Do not use with latest FOOK2, it is already integrated.
+  - name: FelloutWithLightingOverhual-1.0.esp
+    tag:
+      - C.Light
+  - name: Realistic Interior Lighting.esp
+    tag:
+      - C.Light
+  - name: Realistic Interior Lighting - BS.esp
+    tag:
+      - C.Light
+  - name: Realistic Interior Lighting - OA.esp
+    tag:
+      - C.Light
+  - name: Realistic Interior Lighting - PL.esp
+    tag:
+      - C.Light
+  - name: DarkerInteriorsFallOut3.esp
+    tag:
+      - C.Light
+  - name: DarkerInteriorsAnchorage.esp
+    tag:
+      - C.Light
+  - name: DarkerInteriorsThePitt.esp
+    tag:
+      - C.Light
+  - name: DarkerInteriorsBrokenSteel.esp
+    tag:
+      - C.Light
+  - name: DarkerInteriorsPointLookout.esp
+    tag:
+      - C.Light
+  - name: DarkerInteriorsZeta.esp
+    tag:
+      - C.Light
+  - name: URWL47.esp
+    msg:
+      - type: say
+        content: Old. Upgrade to latest version.
+    tag:
+      - C.Light
+  - name: URWL48.esp
+    msg:
+      - type: say
+        content: Old. Upgrade to latest version.
+    tag:
+      - C.Light
+  - name: URWL.esp
+    tag:
+      - C.Light
+  - name: URWL-Normal Color Saturation.esp
+    inc:
+      - URWL.esp
+    tag:
+      - C.Light
+  - name: URWLRain.esp
+    tag:
+      - C.Climate
+      - C.Light
+  - name: NColorDCInteriors.esp
+    tag:
+      - C.Light
+  - name: Xepha's Darkened Interiors.esp
+    tag:
+      - C.Light
+  - name: Xepha's Darkened Interiors - OA.esp
+    tag:
+      - C.Light
+  - name: Xepha's Darkened Interiors - BS.esp
+    msg:
+      - type: say
+        content: Manditory use if using BrokenSteel
+    tag:
+      - C.Light
+  - name: Xepha's Darkened Interiors - PL.esp
+    tag:
+      - C.Light
+  - name: Xepha's Dynamic Weather - Main.esp
+    tag:
+      - C.Climate
+  - name: Xepha's Dynamic Weather - Anchorage.esp
+    tag:
+      - C.Climate
+  - name: Xepha's Dynamic Weather - The Pitt.esp
+    tag:
+      - C.Climate
+  - name: Xepha's Dynamic Weather - Broken Steel.esp
+    tag:
+      - C.Climate
+  - name: Xepha's Dynamic Weather - Point Lookout.esp
+    tag:
+      - C.Climate
+  - name: Xepha's Dynamic Weather - Main + DLC Merged.esp
+    tag:
+      - C.Climate
+  - name: Xepha's Dynamic Weather - Night Eye Edition.esp
+    inc:
+      - Xepha's Dynamic Weather - Night Eye Edition.esp
+  - name: Xepha's Dynamic Weather - Night Eye Edition (Anchorage).esp
+    inc:
+      - Xepha's Dynamic Weather - Night Eye Edition (Anchorage).esp
+  - name: Xepha's Dynamic Weather - Climate OverRider (OA + Rain).esp
+    inc:
+      - Xepha's Dynamic Weather - Climate OverRider (OA).esp
+      - Xepha's Dynamic Weather - Climate OverRider (Rain).esp
+      - Xepha's Dynamic Weather - Climate OverRider.esp
+      - Xepha's Dynamic Weather - Climate OverRider (OA + Rain) - No Fog.esp
+  - name: Xepha's Dynamic Weather - Climate OverRider (OA).esp
+    inc:
+      - Xepha's Dynamic Weather - Climate OverRider (OA + Rain).esp
+      - Xepha's Dynamic Weather - Climate OverRider (Rain).esp
+      - Xepha's Dynamic Weather - Climate OverRider.esp
+      - Xepha's Dynamic Weather - Climate OverRider (OA + Rain) - No Fog.esp
+  - name: Xepha's Dynamic Weather - Climate OverRider (Rain).esp
+    inc:
+      - Xepha's Dynamic Weather - Climate OverRider (OA + Rain).esp
+      - Xepha's Dynamic Weather - Climate OverRider (OA).esp
+      - Xepha's Dynamic Weather - Climate OverRider.esp
+      - Xepha's Dynamic Weather - Climate OverRider (OA + Rain) - No Fog.esp
+  - name: Xepha's Dynamic Weather - Climate OverRider.esp
+    inc:
+      - Xepha's Dynamic Weather - Climate OverRider (OA + Rain).esp
+      - Xepha's Dynamic Weather - Climate OverRider (OA).esp
+      - Xepha's Dynamic Weather - Climate OverRider (Rain).esp
+      - Xepha's Dynamic Weather - Climate OverRider (OA + Rain) - No Fog.esp
+  - name: Xepha's Dynamic Weather - Climate OverRider (OA + Rain) - No Fog.esp
+    inc:
+      - Xepha's Dynamic Weather - Climate OverRider (OA + Rain).esp
+      - Xepha's Dynamic Weather - Climate OverRider (OA).esp
+      - Xepha's Dynamic Weather - Climate OverRider (Rain).esp
+      - Xepha's Dynamic Weather - Climate OverRider.esp
+  - name: Xepha's Dynamic Weather - Sandstorms + Armor Damage (FOSE).esp
+    inc:
+      - Dynamic Weather - Sandstorms.esp
+  - name: Xepha's Dynamic Weather - Weather Machine.esp
+    msg:
+      - type: say
+        content: Only use one Weather Machine.esp at a time.
+  - name: Xepha's Dynamic Weather - Weather Machine (+Rain).esp
+    msg:
+      - type: say
+        content: Only use one Weather Machine.esp at a time.
+  - name: Xepha's Dynamic Weather - Weather Machine (Quest Added).esp
+    msg:
+      - type: say
+        content: Only use one Weather Machine.esp at a time.
+  - name: Xepha's Dynamic Weather - Weather Machine (Start Game Added).esp
+    msg:
+      - type: say
+        content: Only use one Weather Machine.esp at a time.
+  - name: Better DC Weather - 60-40.esp
+    inc:
+      - Better DC Weather - 80-20.esp
+  - name: Better DC Weather - 80-20.esp
+    inc:
+      - Better DC Weather - 60-40.esp
+# ENDGROUP: Weather\Light\Water
+# BEGINGROUP: Lastish
+  - name: CRAFTHelper_ReplaceWorkbenchScript.esp
+    inc:
+      - CRAFT - Activation Perk.esp
+  - name: CRAFTHelper_ReplaceWorkbenchScriptFWE.esp
+    inc:
+      - CRAFT - Activation Perk.esp
+  - name: 20th Century v4 ALIVE (Vendor).esp
+    tag:
+      - Invent
+  - name: 20th Century v4 ALIVE (NPC_Settler).esp
+    tag:
+      - Invent
+  - name: 20th Century v4 ALIVE (Raider).esp
+    tag:
+      - Invent
+  - name: 20th Century v4 ALIVE (RivetCity).esp
+    tag:
+      - Invent
+  - name: 20th Century v4 ALIVE (Brotherhood_Outcast).esp
+    tag:
+      - Invent
+  - name: 20th Century v4 ALIVE (SuperMutant).esp
+    tag:
+      - Invent
+  - name: 20th Century v4 ALIVE (Vault 101).esp
+    tag:
+      - Invent
+  - name: 20th Century v4 ALIVE (Chinese Ghoul).esp
+    tag:
+      - Invent
+  - name: 20th Century v4 ALIVE (Talon_Regulator).esp
+    tag:
+      - Invent
+  - name: 20th Century v5 ALIVE (Vendor).esp
+    tag:
+      - Invent
+  - name: 20th Century v5 ALIVE (Containers).esp
+    tag:
+      - Invent
+  - name: 20th Century v5 ALIVE (NPC_Settler).esp
+    tag:
+      - Invent
+  - name: 20th Century v5 ALIVE (Vault 101).esp
+    tag:
+      - Invent
+  - name: 20th Century v5 ALIVE (RivetCity).esp
+    tag:
+      - Invent
+  - name: 20th Century v5 ALIVE (Raider).esp
+    tag:
+      - Invent
+  - name: 20th Century v5 ALIVE (Slaver).esp
+    tag:
+      - Invent
+  - name: 20th Century v5 ALIVE (Chinese Ghoul).esp
+    tag:
+      - Invent
+  - name: 20th Century v5 ALIVE (SuperMutant).esp
+    tag:
+      - Invent
+  - name: 20th Century v5 ALIVE (Talon_Regulator).esp
+    tag:
+      - Invent
+  - name: 20th Century v5 ALIVE (Brotherhood_Outcast).esp
+    tag:
+      - Invent
+  - name: FWE Ammo Weight for 20th Century.esp
+    inc:
+      - FWE Realistic Ammo Weight inc 20th Cent.esp
+  - name: FWE-20thCent Ammo Weight in Names.esp
+    inc:
+      - FWE Realistic Ammo Weight in Names inc. 20th Cent.esp
+    tag:
+      - Names
+  - name: FWE Realistic Ammo Weight inc 20th Cent.esp
+    inc:
+      - FWE Ammo Weight for 20th Century.esp
+  - name: FWE Realistic Ammo Weight in Names inc. 20th Cent.esp
+    inc:
+      - FWE-20thCent Ammo Weight in Names.esp
+    tag:
+      - Names
+  - name: CFWR_EVE_LoadLast.esp
+    tag:
+      - Graphics
+      - Names
+      - Stats
+  - name: Achievement\sRemover\s\[(All)?(FO3)?(\+OA)?(\+TP)?(\+BS)?(\+PL)?(\+MZ)?\]\.esp
+    msg:
+      - type: say
+        content: Choose only one 'Achievement Remover' ESP.
+  - name: DUIF3Extras.esp
+    msg:
+      - type: say
+        content: Obsolete. Update DarNifiedUIF3 to latest version.
+  - name: Dog lover's mod.es
+    tag:
+      - Deflst
+      - Delev
+  - name: Dog lover's mod NO ANCHORAGE.esp
+    tag:
+      - Deflst
+      - Delev
+  - name: MMM dog lover's mod.esp
+    tag:
+      - Deflst
+      - Delev
+# ENDGROUP: Lastish
+# BEGINGROUP: Pose mods
+# ENDGROUP: Pose mods
+# BEGINGROUP: Beauty Packs & Race Addons
+# BEGINGROUP: Body and head changes
+  - name: AinzBeautifuleEyes.esp
+    tag:
+      - Eyes
+  - name: CUSTOM RACES.esp
+    tag:
+      - Eyes
+      - Hair
+  - name: DIM CUSTOM RACES V2.esp
+    tag:
+      - Eyes
+      - Hair
+  - name: EwwGhoulyBody.esp
+    tag:
+      - Body-F
+# ENDGROUP: Body and head changes
+# BEGINGROUP: Hair
+  - name: HairPack_2chPlus.esp
+    tag:
+      - Hair
+  - name: HairPack_2chPlus+.esp
+    tag:
+      - Hair
+  - name: HairPack_2chPlus+EYE.esp
+    tag:
+      - eyes
+      - Hair
+  - name: VB_Hair_Shojo+CotW_15.esp
+    tag:
+      - Hair
+# ENDGROUP: Hair
+# BEGINGROUP: Race additions (+ hair + eyes etc)
+  - name: Shojo Race.esp
+    msg:
+      - type: say
+        content: Old. Upgrade to latest version.
+    tag:
+      - Eyes
+      - Hair
+  - name: XENH.esp
+    tag:
+      - Eyes
+      - Hair
+  - name: "[Nukomimi-San] Starter.esp"
+    tag:
+      - Eyes
+      - Hair
+  - name: EZCompanion_Type-N.esp
+    tag:
+      - Eyes
+      - Hair
+  - name: AAAAlbino_LingsBOG.esp
+    tag:
+      - Eyes
+      - Hair
+# ENDGROUP: Race additions (+ hair + eyes etc)
+# ENDGROUP: Beauty Packs & Race Addons
+# BEGINGROUP: Merged Patch\CPs
+  - name: RobCo Certified v2 Omnipatch.esp
+    inc:
+      - RobCo Certified v2 EVE.esp
+      - RobCo Certified v2 FWE.esp
+      - RobCo Certified v2 Zeta Addon.esp
+  - name: Mez's Merged Patch 5-0 - DLC-FWE-WMK-MMM.esp
+    tag:
+      - Deflst
+      - Delev
+      - Factions
+      - Invent
+      - Relations
+      - Relev
+      - Scripts
+  - name: FNNsys - FWE.esp
+    tag:
+      - Scripts
+  - name: xCALIBRuniverse.esp
+    tag:
+      - Actors.DeathItems
+      - Delev
+      - Graphics
+      - Invent
+      - Names
+      - Relev
+      - Sound
+      - Stats
+  - name: xCALIBRUniverse - WMK.esp
+    tag:
+      - Graphics
+      - Names
+      - Sound
+      - Stats
+  - name: xCALIBRUniverse_FWE_FPS.esp
+    inc:
+      - xCALIBRUniverse_FWE_Tactical.esp
+    tag:
+      - Graphics
+      - Invent
+      - Names
+      - Sound
+      - Stats
+  - name: xCALIBRUniverse_FWE_Tactical.esp
+    inc:
+      - xCALIBRUniverse_FWE_FPS.esp
+    tag:
+      - Graphics
+      - Invent
+      - Names
+      - Sound
+      - Stats
+  - name: xCALIBR_override.esp
+    tag:
+      - Graphics
+      - Names
+  - name: xCALIBR_override_unsorted.esp
+    tag:
+      - Graphics
+      - Names
+  - name: xCALIBR_override_FWE5.esp
+    tag:
+      - Graphics
+      - Names
+  - name: xCALIBR_FWE5_Override.esp
+    tag:
+      - Graphics
+      - Names
+  - name: xCALIBRammo_FWE.esp
+    tag:
+      - Graphics
+      - Names
+  - name: xCALIBR_2CW_CP.esp
+    tag:
+      - Graphics
+      - Names
+  - name: xCALIBR_2CW_CP_Sorted.esp
+    tag:
+      - Graphics
+      - Names
+  - name: xCALIBR_20CW_v5.12.esp
+    tag:
+      - Graphics
+      - Names
+  - name: FWE+WMK_weapons_xCALIBRified.esp
+    tag:
+      - Graphics
+      - Names
+      - Stats
+  - name: FWE(v.5.04)+WMK_weapons_xCALIBRified.esp
+    tag:
+      - Graphics
+      - Names
+      - Stats
+  - name: FWE+WMKexcalibrified(Anch).esp
+    tag:
+      - Graphics
+      - Names
+      - Stats
+  - name: FWE+WMKexcalibrified(Pitt).esp
+    tag:
+      - Graphics
+      - Names
+      - Stats
+  - name: FWE+WMKexcalibrified(Lkout).esp
+    tag:
+      - Graphics
+      - Names
+      - Stats
+  - name: frederyck+FWE+xCALIBR.esp
+    tag:
+      - Graphics
+      - Names
+      - Stats
+  - name: Compatibility_Plugin_TalonExtraArmor_FWE_BrokenSteel.esp
+    tag:
+      - Delev
+      - Relev
+  - name: Choose your own hairstyle (load this last on FOMM).esp
+    tag:
+      - Eyes
+      - Hair
+      - NPC.Race
+      - NpcFaces
+  - name: CRBSOR.esp
+    msg:
+      - type: say
+        content: Do not use with latest FWE, it is already integrated.
+  - name: Merged.esp
+    tag:
+      - NoMerge
+  - name: Merged Patch.esp
+    tag:
+      - NoMerge
+  - name: xCALIBRammo_override.esp
+    tag:
+      - Graphics
+      - Names
+# ENDGROUP: Merged Patch\CPs
+# BEGINGROUP: Error Corrections - Reduce CTD
+  - name: Error Fixes V1.2.esp
+    msg:
+      - type: say
+        content: Old version - consider updating
+  - name: Error Fixes V1.5.esp
+    msg:
+      - type: say
+        content: Choose only one of Error Fixes V1.5.esp or Error Fixes V1.5 - Higher FPS.esp, not both.
+  - name: Error Fixes V1.5 - Higher FPS.esp
+    msg:
+      - type: say
+        content: Choose only one of Error Fixes V1.5.esp or Error Fixes V1.5 - Higher FPS.esp, not both.
+# ENDGROUP: Error Corrections - Reduce CTD
+# BEGINGROUP: Bashed Patch
+# ENDGROUP: Bashed Patch
+# BEGINGROUP: Post Bashed Patch
+# BEGINGROUP: Fallout 3 Master Fix
+  - name: Fallout 3 Master Fix.esp
+    inc:
+      - Fallout 3 Master Fix - Higher FPS.esp
+      - Fallout 3 Master Fix - No DLC.esp
+      - Fallout 3 Master Fix - No DLC - Higher FPS
+  - name: Fallout 3 Master Fix - Higher FPS.esp
+    inc:
+      - Fallout 3 Master Fix.esp
+      - Fallout 3 Master Fix - No DLC.esp
+      - Fallout 3 Master Fix - No DLC - Higher FPS
+  - name: Fallout 3 Master Fix - No DLC.esp
+    inc:
+      - Fallout 3 Master Fix.esp
+      - Fallout 3 Master Fix - Higher FPS.esp
+      - Fallout 3 Master Fix - No DLC - Higher FPS
+  - name: Fallout 3 Master Fix - No DLC - Higher FPS
+    inc:
+      - Fallout 3 Master Fix.esp
+      - Fallout 3 Master Fix - Higher FPS.esp
+      - Fallout 3 Master Fix - No DLC.esp
+# ENDGROUP: Fallout 3 Master Fix
+# BEGINGROUP: Fallout Remastered
+  - name: Fallout Remastered.esp
+    inc:
+      - Fallout 3 Master Fix.esp
+      - James Invisible Walls Remover.esp
+  - name: Fallout Remastered - FOOK2 + MMM.esp
+    msg:
+      - type: say
+        content: Does not require a FOIP, provides complete compatibility between these two files
+  - name: Fallout Remastered - FWE + MMM.esp
+    msg:
+      - type: say
+        content: Does not require a FOIP, provides complete compatibility between these two files
+# ENDGROUP: Fallout Remastered
+# ENDGROUP: Post Bashed Patch
