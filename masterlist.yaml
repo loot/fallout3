@@ -4406,59 +4406,27 @@ plugins:
 # BEGINGROUP: Post Bashed Patch
 # BEGINGROUP: Fallout 3 Master Fix
   - name: Fallout 3 Master Fix.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Requires: ThePitt.esm"
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Requires: Zeta.esm"
-      - type: say
-        content: "Incompatible with: Fallout 3 Master Fix - Higher FPS.esp"
-      - type: say
-        content: "Incompatible with: Fallout 3 Master Fix - No DLC.esp"
-      - type: say
-        content: "Incompatible with: Fallout 3 Master Fix - No DLC - Higher FPS"
+    inc:
+      - Fallout 3 Master Fix - Higher FPS.esp
+      - Fallout 3 Master Fix - No DLC.esp
+      - Fallout 3 Master Fix - No DLC - Higher FPS
   - name: Fallout 3 Master Fix - Higher FPS.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Requires: ThePitt.esm"
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Requires: Zeta.esm"
-      - type: say
-        content: "Incompatible with: Fallout 3 Master Fix.esp"
-      - type: say
-        content: "Incompatible with: Fallout 3 Master Fix - No DLC.esp"
-      - type: say
-        content: "Incompatible with: Fallout 3 Master Fix - No DLC - Higher FPS"
+    inc:
+      - Fallout 3 Master Fix.esp
+      - Fallout 3 Master Fix - No DLC.esp
+      - Fallout 3 Master Fix - No DLC - Higher FPS
   - name: Fallout 3 Master Fix - No DLC.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Fallout 3 Master Fix.esp"
-      - type: say
-        content: "Incompatible with: Fallout 3 Master Fix - Higher FPS.esp"
-      - type: say
-        content: "Incompatible with: Fallout 3 Master Fix - No DLC - Higher FPS"
+    inc:
+      - Fallout 3 Master Fix.esp
+      - Fallout 3 Master Fix - Higher FPS.esp
+      - Fallout 3 Master Fix - No DLC - Higher FPS
+  - name: Fallout 3 Master Fix - No DLC - Higher FPS
+    inc:
+      - Fallout 3 Master Fix.esp
+      - Fallout 3 Master Fix - Higher FPS.esp
+      - Fallout 3 Master Fix - No DLC.esp
 # ENDGROUP: Fallout 3 Master Fix
 # BEGINGROUP: Fallout Remastered
-  - name: Fallout 3 Master Fix - No DLC - Higher FPS
-    msg:
-      - type: say
-        content: "Incompatible with: Fallout 3 Master Fix.esp"
-      - type: say
-        content: "Incompatible with: Fallout 3 Master Fix - Higher FPS.esp"
-      - type: say
-        content: "Incompatible with: Fallout 3 Master Fix - No DLC.esp"
   - name: Fallout Remastered.esp
     msg:
       - type: say
