@@ -1802,48 +1802,24 @@ plugins:
     tag:
       - Scripts
   - name: CALIBR Ammo Schematics - CRAFT.esp
-    msg:
-      - type: say
-        content: "Incompatible with: xCALIBR_Universe.esp"
-  - name: Ammo_Schematics.esp
-    msg:
-      - type: say
-        content: "Requires: CRAFT.esm"
+    inc:
+      - xCALIBR_Universe.esp
   - name: Bobbleheads Begone.esp
     tag:
       - Scripts
   - name: BottleBrahminMilk.esp
-    msg:
-      - type: say
-        content: "Incompatible with: BottleBrahminMilkFWE.esp"
+    inc:
+      - BottleBrahminMilkFWE.esp
   - name: BottleBrahminMilkFWE.esp
-    msg:
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-      - type: say
-        content: "Incompatible with: BottleBrahminMilk.esp"
+    inc:
+      - BottleBrahminMilk.esp
   - name: CantaburyCommonsGuards.esp
     tag:
       - Actors.ACBS
   - name: CantaburyCommonsGuards - DTO.esp
-    msg:
-      - type: say
-        content: "Requires: Dragonskin Tactical Armor.esp"
     tag:
       - Actors.ACBS
       - Invent
-  - name: Childhood Beginning.esp
-    msg:
-      - type: say
-        content: "Requires: EnhancedChildren.esm"
-  - name: Childhood Beginning v3 Tweaks.esp
-    msg:
-      - type: say
-        content: "Requires: EnhancedChildren.esm"
-  - name: CRAFT Improvised Weaponry - FOOK+FWE.esp
-    msg:
-      - type: say
-        content: "Requires: FOOK+FWE Merger"
   - name: cyber_meat.esp
     tag:
       - Graphics
@@ -1855,89 +1831,41 @@ plugins:
       - type: say
         content: Old. Upgrade to latest version.
   - name: Improved Turret Hacking - BASE.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Improved Turret Hacking - ALL.esp"
+    inc:
+      - Improved Turret Hacking - ALL.esp
   - name: Improved Turret Hacking - BS.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Improved Turret Hacking - ALL.esp"
+    inc:
+      - Improved Turret Hacking - ALL.esp
   - name: Improved Turret Hacking - Pitt.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Improved Turret Hacking - ALL.esp"
+    inc:
+      - Improved Turret Hacking - ALL.esp
   - name: Improved Turret Hacking - PL.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Improved Turret Hacking - ALL.esp"
+    inc:
+      - Improved Turret Hacking - ALL.esp
   - name: Improved Turret Hacking - ALL.esp
-    msg:
-      - type: say
-        content: "Requires: ThePitt.ESM"
-      - type: say
-        content: "Requires: BrokenSteel.ESM"
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Incompatible with: Improved Turret Hacking - BASE.esp"
-      - type: say
-        content: "Incompatible with: Improved Turret Hacking - BS.esp"
-      - type: say
-        content: "Incompatible with: Improved Turret Hacking - Pitt.esp"
-      - type: say
-        content: "Incompatible with: Improved Turret Hacking - PL.esp"
+    inc:
+      - Improved Turret Hacking - BASE.esp
+      - Improved Turret Hacking - BS.esp
+      - Improved Turret Hacking - Pitt.esp
+      - Improved Turret Hacking - PL.esp
   - name: Improved Turret Reprogramming - BASE.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Improved Turret Reprogramming - ALL.esp"
+    inc:
+      - Improved Turret Reprogramming - ALL.esp
   - name: Improved Turret Reprogramming - BS.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Improved Turret Reprogramming - ALL.esp"
+    inc:
+      - Improved Turret Reprogramming - ALL.esp
   - name: Improved Turret Reprogramming - Pitt.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Improved Turret Reprogramming - ALL.esp"
+    inc:
+      - Improved Turret Reprogramming - ALL.esp
   - name: Improved Turret Reprogramming - PL.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Improved Turret Reprogramming - ALL.esp"
+    inc:
+      - Improved Turret Reprogramming - ALL.esp
   - name: Improved Turret Reprogramming - ALL.esp
-    msg:
-      - type: say
-        content: "Requires: ThePitt.ESM"
-      - type: say
-        content: "Requires: BrokenSteel.ESM"
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Incompatible with: Improved Turret Reprogramming - BASE.esp"
-      - type: say
-        content: "Incompatible with: Improved Turret Reprogramming - BS.esp"
-      - type: say
-        content: "Incompatible with: Improved Turret Reprogramming - Pitt.esp"
-      - type: say
-        content: "Incompatible with: Improved Turret Reprogramming - PL.esp"
-  - name: LaptopTerminalsAnchorage.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage.esm"
-  - name: LaptopTerminalsPointLookout.esp
-    msg:
-      - type: say
-        content: "Requires: PointLookout.esm"
-  - name: LaptopTerminalsPitt.esp
-    msg:
-      - type: say
-        content: "Requires: ThePitt.esm"
-  - name: LaptopTerminalsBrokenSteel.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-  - name: LaptopTerminalsZeta.esp
-    msg:
-      - type: say
-        content: "Requires: Zeta.esm"
+    inc:
+      - Improved Turret Reprogramming - BASE.esp
+      - Improved Turret Reprogramming - BS.esp
+      - Improved Turret Reprogramming - Pitt.esp
+      - Improved Turret Reprogramming - PL.esp
   - name: Menu Based Hacking & Picking.esp
     msg:
       - type: say
@@ -1961,45 +1889,30 @@ plugins:
     tag:
       - Relev
   - name: RealFragGrenade.esp
+    inc:
+      - RealFragGrenade3.esp
     msg:
       - type: say
         content: upgrade to RealFragGrenade3.esp
-      - type: say
-        content: "Incompatible with: RealFragGrenade3.esp"
   - name: RealFragGrenade3.esp
-    msg:
-      - type: say
-        content: "Incompatible with: RealFragGrenade.esp"
+    inc:
+      - RealFragGrenade.esp
   - name: Scavenger World - Updated v0.07.esp
     msg:
-      - type: say
-        content: "Requires: PointLookout.esm"
       - type: say
         content: Outdated, update to v0.08
     tag:
       - Relev
   - name: Scavenger World - Updated v0.08.esp
-    msg:
-      - type: say
-        content: "Requires: PointLookout.esm"
     tag:
       - Relev
   - name: Scavenger World - FWE Edition v0.07.esp
     msg:
       - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-      - type: say
         content: Outdated, update to v0.08
     tag:
       - Relev
   - name: Scavenger World - FWE Edition v0.08.esp
-    msg:
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
     tag:
       - Relev
   - name: ScavengerWasteland.esp
@@ -2024,71 +1937,35 @@ plugins:
       - Invent
       - Relev
   - name: ZORTS - Content Destruction - Normal.esp
-    msg:
-      - type: say
-        content: "Requires: Zumbs' Overhauled Real Time Security.esm"
-      - type: say
-        content: "Incompatible with: ZORTS - Content Destruction - Extreme.esp"
+    inc:
+      - ZORTS - Content Destruction - Extreme.esp
   - name: ZORTS - Content Destruction - Extreme.esp
-    msg:
-      - type: say
-        content: "Requires: Zumbs' Overhauled Real Time Security.esm"
-      - type: say
-        content: "Incompatible with: ZORTS - Content Destruction - Normal.esp"
+    inc:
+      - ZORTS - Content Destruction - Normal.esp
   - name: ZORTS - Custom HP.esp
-    msg:
-      - type: say
-        content: "Requires: Zumbs' Overhauled Real Time Security.esm"
-      - type: say
-        content: "Incompatible with: ZORTS - Custom HP - FOOK2.esp"
-      - type: say
-        content: "Incompatible with: ZORTS - Custom HP - FWE.esp"
+    inc:
+      - ZORTS - Custom HP - FOOK2.esp
+      - ZORTS - Custom HP - FWE.esp
     tag:
       - Scripts
   - name: ZORTS - Custom HP - FOOK2.esp
-    msg:
-      - type: say
-        content: "Requires: Zumbs' Overhauled Real Time Security.esm"
-      - type: say
-        content: "Requires: FOOK2 - Main.esp"
-      - type: say
-        content: "Incompatible with: ZORTS - Custom HP.esp"
-      - type: say
-        content: "Incompatible with: ZORTS - Custom HP - FWE.esp"
+    inc:
+      - ZORTS - Custom HP.esp
+      - ZORTS - Custom HP - FWE.esp
     tag:
       - Scripts
   - name: ZORTS - Custom HP - FWE.esp
-    msg:
-      - type: say
-        content: "Requires: Zumbs' Overhauled Real Time Security.esm"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esp"
-      - type: say
-        content: "Incompatible with: ZORTS - Custom HP.esp"
-      - type: say
-        content: "Incompatible with: ZORTS - Custom HP - FOOK2.esp"
+    inc:
+      - ZORTS - Custom HP.esp
+      - ZORTS - Custom HP - FOOK2.esp
     tag:
       - Scripts
   - name: ZORTS - Disable FOOK2 activate.esp
-    msg:
-      - type: say
-        content: "Requires: Zumbs' Overhauled Real Time Security.esm"
-      - type: say
-        content: "Incompatible with: ZORTS - Disable FWE activate.esp"
+    inc:
+      - ZORTS - Disable FWE activate.esp
   - name: ZORTS - Disable FWE activate.esp
-    msg:
-      - type: say
-        content: "Requires: Zumbs' Overhauled Real Time Security.esm"
-      - type: say
-        content: "Incompatible with: ZORTS - Disable FOOK2 activate.esp"
-  - name: ZORTS - Lockbash only.esp
-    msg:
-      - type: say
-        content: "Requires: Zumbs' Overhauled Real Time Security.esm"
-  - name: ZORTS - Enable minigames.esp
-    msg:
-      - type: say
-        content: "Requires: Zumbs' Overhauled Real Time Security.esm"
+    inc:
+      - ZORTS - Disable FOOK2 activate.esp
   - name: Zumbs'_Overhauled_Real_Time_Security.esp
     msg:
       - type: say
