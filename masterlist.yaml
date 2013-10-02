@@ -2496,78 +2496,75 @@ plugins:
         content: "Requires: AmyWong.esm"
       - type: say
         content: "Requires: FOOK2 - [DIK] DLC Improvement Kit.esm"
-      - type: say
-        content: "Incompatible with: AmyWong - DLCs.esp"
+    inc:
+      - AmyWong - DLCs.esp
   - name: AmyWong - DLC01 Anchorage.esp
     msg:
       - type: say
         content: "Requires: AmyWong.esm"
       - type: say
         content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Incompatible with: AmyWong - DLCs.esp"
+    inc:
+      - AmyWong - DLCs.esp
   - name: AmyWong - DLC02 The Pitt.esp
     msg:
       - type: say
         content: "Requires: AmyWong.esm"
       - type: say
         content: "Requires: ThePitt.esm"
-      - type: say
-        content: "Incompatible with: AmyWong - DLCs.esp"
+    inc:
+      - AmyWong - DLCs.esp
   - name: AmyWong - DLC03 Broken Steel.esp
     msg:
       - type: say
         content: "Requires: AmyWong.esm"
       - type: say
         content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Incompatible with: AmyWong - DLCs.esp"
+    inc:
+      - AmyWong - DLCs.esp
   - name: AmyWong - DLC04 Pt.Lookout.esp
     msg:
       - type: say
         content: "Requires: AmyWong.esm"
       - type: say
         content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Incompatible with: AmyWong - DLCs.esp"
+    inc:
+      - AmyWong - DLCs.esp
   - name: AmyWong - DLC05 Zeta.esp
     msg:
       - type: say
         content: "Requires: AmyWong.esm"
       - type: say
         content: "Requires: Zeta.esm"
-      - type: say
-        content: "Incompatible with: AmyWong - DLCs.esp"
+    inc:
+      - AmyWong - DLCs.esp
   - name: AmyWong - CALIBR 1.3 (FWE 5).esp
     msg:
       - type: say
         content: "Requires: AmyWong.esm"
       - type: say
         content: "Requires: CALIBR.esm"
-      - type: say
-        content: "Incompatible with: AmyWong - CALIBR 1.3.esp"
-      - type: say
-        content: "Incompatible with: AmyWong - CALIBR 1.2.esp"
+    inc:
+      - AmyWong - CALIBR 1.3.esp
+      - AmyWong - CALIBR 1.2.esp
   - name: AmyWong - CALIBR 1.3.esp
     msg:
       - type: say
         content: "Requires: AmyWong.esm"
       - type: say
         content: "Requires: CALIBR.esm"
-      - type: say
-        content: "Incompatible with: AmyWong - CALIBR 1.3.esp"
-      - type: say
-        content: "Incompatible with: AmyWong - CALIBR 1.3 (FWE 5).esp"
+    inc:
+      - AmyWong - CALIBR 1.3.esp
+      - AmyWong - CALIBR 1.3 (FWE 5).esp
   - name: AmyWong - CALIBR 1.2.esp
     msg:
       - type: say
         content: "Requires: AmyWong.esm"
       - type: say
         content: "Requires: CALIBR.esm"
-      - type: say
-        content: "Incompatible with: AmyWong - CALIBR 1.3 (FWE 5).esp"
-      - type: say
-        content: "Incompatible with: AmyWong - CALIBR 1.2.esp"
+    inc:
+      - AmyWong - CALIBR 1.3 (FWE 5).esp
+      - AmyWong - CALIBR 1.2.esp
   - name: AmyWong - FWE 5.esp
     msg:
       - type: say
@@ -2636,8 +2633,8 @@ plugins:
         content: "Requires: Mart's Mutant Mod.esm"
       - type: say
         content: "Requires: RHKBrisaAlmodovar.esm"
-      - type: say
-        content: "Incompatible with: Brisa and FWE - Primary Needs Patch.esp"
+    inc:
+      - Brisa and FWE - Primary Needs Patch.esp
   - name: slaveraider_newlook.esp
     tag:
       - Graphics
@@ -2834,8 +2831,8 @@ plugins:
         content: "Requires: IMCN.esm"
       - type: say
         content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Incompatible with: IMCN - 5 DLC Merged.esp"
+    inc:
+      - IMCN - 5 DLC Merged.esp
     tag:
       - Stats
   - name: IMCN - The Pitt.esp
@@ -2844,8 +2841,8 @@ plugins:
         content: "Requires: IMCN.esm"
       - type: say
         content: "Requires: ThePitt.esm"
-      - type: say
-        content: "Incompatible with: IMCN - 5 DLC Merged.esp"
+    inc:
+      - IMCN - 5 DLC Merged.esp
     tag:
       - Stats
   - name: IMCN - Broken Steel.esp
@@ -2854,8 +2851,8 @@ plugins:
         content: "Requires: IMCN.esm"
       - type: say
         content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Incompatible with: IMCN - 5 DLC Merged.esp"
+    inc:
+      - IMCN - 5 DLC Merged.esp
     tag:
       - Stats
   - name: IMCN - Point Lookout.esp
@@ -2864,8 +2861,8 @@ plugins:
         content: "Requires: IMCN.esm"
       - type: say
         content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Incompatible with: IMCN - 5 DLC Merged.esp"
+    inc:
+      - IMCN - 5 DLC Merged.esp
     tag:
       - Stats
   - name: IMCN - Mothership Zeta.esp
@@ -2874,8 +2871,8 @@ plugins:
         content: "Requires: IMCN.esm"
       - type: say
         content: "Requires: Zeta.esm"
-      - type: say
-        content: "Incompatible with: IMCN - 5 DLC Merged.esp"
+    inc:
+      - IMCN - 5 DLC Merged.esp
     tag:
       - Stats
   - name: IMCN - FWE Compatibility and Ingestibles.esp
@@ -2900,8 +2897,8 @@ plugins:
         content: "Requires: IMCN.esm"
       - type: say
         content: "Requires: bltc.esp"
-      - type: say
-        content: "Incompatible with: IMCN - FWE Compatibility and Ingestibles.esp"
+    inc:
+      - IMCN - FWE Compatibility and Ingestibles.esp
     tag:
       - Stats
   - name: IMCN - BLTC RiPnO Combined Compatibility.esp
@@ -2914,8 +2911,8 @@ plugins:
         content: "Requires: RI_Core.esm"
       - type: say
         content: "Requires: RiPnO Core Patch.esp"
-      - type: say
-        content: "Incompatible with: IMCN - FWE Compatibility and Ingestibles.esp"
+    inc:
+      - IMCN - FWE Compatibility and Ingestibles.esp
   - name: IMCN - RiPnO Compatibility and Ingestibles.esp
     msg:
       - type: say
@@ -2924,8 +2921,8 @@ plugins:
         content: "Requires: RI_Core.esm"
       - type: say
         content: "Requires: RiPnO Core Patch.esp"
-      - type: say
-        content: "Incompatible with: IMCN - FWE Compatibility and Ingestibles.esp"
+    inc:
+      - IMCN - FWE Compatibility and Ingestibles.esp
     tag:
       - Stats
   - name: IMCN - MMM Meats, Bloods, and Eyeballs.esp
@@ -3097,13 +3094,11 @@ plugins:
     tag:
       - Scripts
   - name: Inebriation.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Inebriation.esp"
+    inc:
+       - Inebriation.esp
   - name: Inebriation-FOSE.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Inebriation-FOSE.esp"
+    inc:
+       - Inebriation-FOSE.esp
   - name: K9BreedsPatchDLCPitt.esp
     msg:
       - type: say
@@ -3149,23 +3144,17 @@ plugins:
       - type: say
         content: Choose only one 'Brats' ESP.
   - name: Kill and Loot Unconscious Essential NPCs.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Kill and Loot Unconscious Essential NPCs_NoGore.esp"
-      - type: say
-        content: "Incompatible with: Kill and Loot Unconscious Essential NPCs_FOSE.esp"
+    inc:
+      - Kill and Loot Unconscious Essential NPCs_NoGore.esp
+      - Kill and Loot Unconscious Essential NPCs_FOSE.esp
   - name: Kill and Loot Unconscious Essential NPCs_FOSE.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Kill and Loot Unconscious Essential NPCs.esp"
-      - type: say
-        content: "Incompatible with: Kill and Loot Unconscious Essential NPCs_NoGore.esp"
+    inc:
+      - Kill and Loot Unconscious Essential NPCs.esp
+      - Kill and Loot Unconscious Essential NPCs_NoGore.esp
   - name: Kill and Loot Unconscious Essential NPCs_NoGore.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Kill and Loot Unconscious Essential NPCs.esp"
-      - type: say
-        content: "Incompatible with: Kill and Loot Unconscious Essential NPCs_FOSE.esp"
+    inc:
+      - Kill and Loot Unconscious Essential NPCs.esp
+      - Kill and Loot Unconscious Essential NPCs_FOSE.esp
   - name: Laboratory.esp
     msg:
       - type: say
@@ -3307,15 +3296,14 @@ plugins:
       - type: say
         content: "Requires: ThePitt.esm"
   - name: RebalancedFire-Vanilla.esp
-    msg:
-      - type: say
-        content: "Incompatible with: RebalancedFire-BrokenSteel.esp"
+    inc:
+      - RebalancedFire-BrokenSteel.esp
   - name: RebalancedFire-BrokenSteel.esp
     msg:
       - type: say
         content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Incompatible with: RebalancedFire-Vanilla.esp"
+    inc:
+      - RebalancedFire-Vanilla.esp
   - name: RRRU +4 UFP.esp
     msg:
       - type: say
@@ -3362,13 +3350,11 @@ plugins:
     tag:
       - ScriptContents
   - name: EnhVision.esp
-    msg:
-      - type: say
-        content: "Incompatible with: EnhVisionHK.esp"
+    inc:
+      - EnhVisionHK.esp
   - name: EnhVisionHK.esp
-    msg:
-      - type: say
-        content: "Incompatible with: EnhVision.esp"
+    inc:
+      - EnhVision.esp
   - name: Weapon Repair Kits.esp
     tag:
       - Relev
@@ -3382,18 +3368,12 @@ plugins:
         content: "Requires: PointLookout.esm"
     tag:
       - Invent
-  - name: yaDisguisesMod-Merged.esp yaDisguisesMod-MOD-bzArmor.esp
-    msg:
-      - type: say
-        content: "Incompatible with: yaDisguisesMod.esp"
-      - type: say
-        content: "Incompatible with: yaDisguisesMod-DLC-Anchorage.esp"
-      - type: say
-        content: "Incompatible with: yaDisguisesMod-DLC-ThePitt.esp"
-      - type: say
-        content: "Incompatible with: yaDisguisesMod-DLC-BrokenSteel.esp"
-      - type: say
-        content: Merged Version of yaDisguisesMod.esp, yaDisguisesMod-DLC-Anchorage.esp, yaDisguisesMod-DLC-ThePitt.esp, yaDisguisesMod-DLC-BrokenSteel.esp
+  - name: yaDisguisesMod-Merged.esp
+    inc:
+      - yaDisguisesMod.esp
+      - yaDisguisesMod-DLC-Anchorage.esp
+      - yaDisguisesMod-DLC-ThePitt.esp
+      - yaDisguisesMod-DLC-BrokenSteel.esp
   - name: yaDisguisesMod-MOD-FWE.esp
     msg:
       - type: say
@@ -3442,37 +3422,29 @@ plugins:
     tag:
       - NoMerge
   - name: Arwen_Armor.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Arwen_FULL_Tweaks.esp"
+    inc:
+      - Arwen_FULL_Tweaks.esp
   - name: Arwen_Less_Is_More.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Arwen_FULL_Tweaks.esp"
+    inc:
+      - Arwen_FULL_Tweaks.esp
   - name: Arwen_Less-Is-More.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Arwen_FULL_Tweaks.esp"
+    inc:
+      - Arwen_FULL_Tweaks.esp
   - name: Arwen_Localized_Damage.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Arwen_FULL_Tweaks.esp"
+    inc:
+      - Arwen_FULL_Tweaks.esp
   - name: Arwen_SmarterAI.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Arwen_FULL_Tweaks.esp"
+    inc:
+      - Arwen_FULL_Tweaks.esp
   - name: Arwen_Survival.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Arwen_FULL_Tweaks.esp"
+    inc:
+      - Arwen_FULL_Tweaks.esp
   - name: Arwen_Tweaks_Main.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Arwen_FULL_Tweaks.esp"
+    inc:
+      - Arwen_FULL_Tweaks.esp
   - name: Arwen_Weapons.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Arwen_FULL_Tweaks.esp"
+    inc:
+      - Arwen_FULL_Tweaks.esp
   - name: Arwen_Med-Tec.esp
     tag:
       - Names
@@ -3548,13 +3520,11 @@ plugins:
       - type: say
         content: Do not use with latest FWE, it is already integrated.
   - name: REAL-ThirdViewMod.esp
-    msg:
-      - type: say
-        content: "Incompatible with: LOWER-real-thirdpersonview.esp"
+    inc:
+      - LOWER-real-thirdpersonview.esp
   - name: LOWER-real-thirdpersonview.esp
-    msg:
-      - type: say
-        content: "Incompatible with: REAL-ThirdViewMod.esp"
+    inc:
+      - REAL-ThirdViewMod.esp
 # ENDGROUP: Game-Settings and Overrides
 # BEGINGROUP: Weather\Light\Water
   - name: Clean-Deluxe GOTY.esp
