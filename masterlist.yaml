@@ -3493,6 +3493,7 @@ plugins:
       - type: say
         content: Does not require a FOIP, provides complete compatibility between these two files
   - name: Fallout Remastered - FWE + MMM.esp
+    msg:
       - type: say
         content: Does not require a FOIP, provides complete compatibility between these two files
 # ENDGROUP: Fallout Remastered
