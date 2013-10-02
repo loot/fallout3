@@ -1980,123 +1980,74 @@ plugins:
         content: Please update to latest version.
 # ENDGROUP: Middle Misc A
 # BEGINGROUP: Middle Misc B
-  - name: Wasteland Whisperer v2 Broken Steel Addon.esp
-    msg:
-      - type: say
-        content: "Requires: Wasteland Whisperer v2.esm"
-  - name: RobCo Certified v2 Version Updater.esp
-    msg:
-      - type: say
-        content: "Requires: RobCo Certified v2.esm"
-  - name: RobCo Certified v2 Mechanist's Edition.esp
-    msg:
-      - type: say
-        content: "Requires: RobCo Certified v2.esm"
-  - name: RobCo Certified v2 Zeta Addon.esp
-    msg:
-      - type: say
-        content: "Requires: RobCo Certified v2.esm"
-  - name: Mr Smith's Scrapyard.esp
-    msg:
-      - type: say
-        content: "Requires: RobCo Certified v2.esm"
-      - type: say
-        content: "Requires: ThePitt.ESM"
-  - name: MarcuzVanishingPiles_EVE_Add.esp
-    msg:
-      - type: say
-        content: "Requires: EVE.esp"
   - name: Replenishment.esp
     tag:
       - Scripts
   - name: UWWUT.esp
-    msg:
-      - type: say
-        content: "Incompatible with: UWWUT_WT.esp"
+    inc:
+      - UWWUT_WT.esp
     tag:
       - Graphics
   - name: UWWUT - The Pitt Addon.esp
-    msg:
-      - type: say
-        content: "Requires: The Pitt.esm"
-      - type: say
-        content: "Incompatible with: UWWUT_WT - TP Addon.esp"
+    inc:
+      - UWWUT_WT - TP Addon.esp
     tag:
       - Graphics
   - name: UWWUT - Broken Steel Addon.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.ESM"
-      - type: say
-        content: "Incompatible with: UWWUT_WT - BS Addon.esp"
+    inc:
+      - UWWUT_WT - BS Addon.esp
     tag:
       - Graphics
   - name: UWWUT - WMK Addon.esp
-    msg:
-      - type: say
-        content: "Incompatible with: UWWUT_WT - WMK Addon.esp"
+    inc:
+      - UWWUT_WT - WMK Addon.esp
     tag:
       - Graphics
   - name: UWWUT_WT.esp
-    msg:
-      - type: say
-        content: "Incompatible with: UWWUT.esp"
+    inc:
+      - UWWUT.esp
     tag:
       - Graphics
       - Stats
   - name: UWWUT_WT - TP Addon.esp
-    msg:
-      - type: say
-        content: "Requires: The Pitt.esm"
-      - type: say
-        content: "Incompatible with: UWWUT - The Pitt Addon.esp"
+    inc:
+      - UWWUT - The Pitt Addon.esp
     tag:
       - Graphics
       - Stats
   - name: UWWUT_WT - BS Addon.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.ESM"
-      - type: say
-        content: "Incompatible with: UWWUT - Broken Steel Addon.esp"
+    inc:
+      - UWWUT - Broken Steel Addon.esp
     tag:
       - Graphics
       - Stats
   - name: UWWUT_WT - WMK Addon.esp
-    msg:
-      - type: say
-        content: "Incompatible with: UWWUT - WMK Addon.esp"
+    inc:
+      - UWWUT - WMK Addon.esp
     tag:
       - Graphics
       - Stats
   - name: WeaponModKits-Unique.esp
-    msg:
-      - type: say
-        content: "Requires: WeaponModKits.esp"
     tag:
       - Graphics
   - name: unique_uniques.esp
-    msg:
-      - type: say
-        content: "Incompatible with: unique_uniquesDLC.esp"
+    inc:
+      - unique_uniquesDLC.esp
     tag:
       - Graphics
   - name: unique_uniquesCut.esp
-    msg:
-      - type: say
-        content: "Incompatible with: unique_uniquesCutDLC.esp"
+    inc:
+      - unique_uniquesCutDLC.esp
     tag:
       - Graphics
   - name: unique_uniquesDLC.esp
-    msg:
-      - type: say
-        content: "Incompatible with: unique_uniques.esp"
+    inc:
+      - unique_uniques.esp
     tag:
       - Graphics
   - name: unique_uniquesCutDLC.esp
-    msg:
-      - type: say
-        content: "Incompatible with: unique_uniquesCut.esp"
+    inc:
+      - unique_uniquesCut.esp
     tag:
       - Graphics
   - name: Less Useless Karma Gifts.esp
@@ -2116,11 +2067,6 @@ plugins:
       - Graphics
       - Stats
   - name: Nuka Cola Enhanced - FWE.esp
-    msg:
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-      - type: say
-        content: "Requires: Nuka Cola Enhanced.esp"
     tag:
       - Graphics
       - Stats
@@ -2129,9 +2075,6 @@ plugins:
       - Scripts
       - Stats
   - name: Bottle That Water Alternative - Broken Steel.esp
-    msg:
-      - type: say
-        content: "Requires: BrokenSteel.esm"
     tag:
       - Scripts
       - Stats
@@ -2200,75 +2143,23 @@ plugins:
       - NoMerge
       - Sound
   - name: WYB-Base.esp
-    msg:
-      - type: say
-        content: "Requires: WYB.esm"
-      - type: say
-        content: "Incompatible with: WYB-Base+DLCs-Merged.esp"
+    inc:
+      - WYB-Base+DLCs-Merged.esp
   - name: WYB-DLC-Anchorage.esp
-    msg:
-      - type: say
-        content: "Requires: WYB.esm"
-      - type: say
-        content: "Requires: Anchorage.esm"
-      - type: say
-        content: "Incompatible with: WYB-Base+DLCs-Merged.esp"
+    inc:
+      - WYB-Base+DLCs-Merged.esp
   - name: WYB-DLC-ThePitt.esp
-    msg:
-      - type: say
-        content: "Requires: WYB.esm"
-      - type: say
-        content: "Requires: ThePitt.esm"
-      - type: say
-        content: "Incompatible with: WYB-Base+DLCs-Merged.esp"
+    inc:
+      - WYB-Base+DLCs-Merged.esp
   - name: WYB-DLC-BrokenSteel.esp
-    msg:
-      - type: say
-        content: "Requires: WYB.esm"
-      - type: say
-        content: "Requires: BrokenSteel.esm"
-      - type: say
-        content: "Incompatible with: WYB-Base+DLCs-Merged.esp"
+    inc:
+      - WYB-Base+DLCs-Merged.esp
   - name: WYB-DLC-PointLookout.esp
-    msg:
-      - type: say
-        content: "Requires: WYB.esm"
-      - type: say
-        content: "Requires: PointLookout.esm"
-      - type: say
-        content: "Incompatible with: WYB-Base+DLCs-Merged.esp"
+    inc:
+      - WYB-Base+DLCs-Merged.esp
   - name: WYB-DLC-Zeta.esp
-    msg:
-      - type: say
-        content: "Requires: WYB.esm"
-      - type: say
-        content: "Requires: Zeta.esm"
-      - type: say
-        content: "Incompatible with: WYB-Base+DLCs-Merged.esp"
-  - name: WYB-Base+DLCs-Merged.esp
-    msg:
-      - type: say
-        content: "Requires: WYB.esm"
-  - name: WYB-MOD-DCInteriors_Combo v2.5.esp
-    msg:
-      - type: say
-        content: "Requires: WYB.esm"
-      - type: say
-        content: "Requires: DCInteriors_ComboEdition.esm"
-  - name: WYB-MOD-DCInteriors_Combo v2.6+.esp
-    msg:
-      - type: say
-        content: "Requires: WYB.esm"
-      - type: say
-        content: "Requires: DCInteriors_ComboEdition.esm"
-  - name: WYB-OPT-WhiteCigarette.esp
-    msg:
-      - type: say
-        content: "Requires: WYB.esm"
-  - name: WYB-OPT-DynamicReplacer.esp
-    msg:
-      - type: say
-        content: "Requires: WYB.esm"
+    inc:
+      - WYB-Base+DLCs-Merged.esp
   - name: Weld - Badge.esp
     tag:
       - Actors.Anims
@@ -2299,14 +2190,6 @@ plugins:
       - Actors.Anims
       - Graphics
       - Invent
-  - name: CMF-Zeta.esp
-    msg:
-      - type: say
-        content: "Requires: Zeta.esm"
-  - name: Anchorage - Extra Holotapes.esp
-    msg:
-      - type: say
-        content: "Requires: Anchorage"
   - name: GaryHoloTape.esp
     tag:
       - Names
