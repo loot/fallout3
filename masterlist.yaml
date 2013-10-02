@@ -4428,70 +4428,15 @@ plugins:
 # ENDGROUP: Fallout 3 Master Fix
 # BEGINGROUP: Fallout Remastered
   - name: Fallout Remastered.esp
-    msg:
-      - type: say
-        content: "Incompatible with: Fallout 3 Master Fix.esp"
-        condition: file("Fallout 3 Master Fix.esp")
-      - type: say
-        content: "Incompatible with: James Invisible Walls Remover.esp"
-        condition: file("James Invisible Walls Remover.esp")
-  - name: Fallout Remastered - EVE (Paradox Ignition Merge).esp
-    msg:
-      - type: say
-        content: "Requires: Paradox Ignition Merged version of Energy Visuals Enhanced"
-  - name: Fallout Remastered - FOOK2 + EVE (PI Merge).esp
-    msg:
-      - type: say
-        content: "Requires: Paradox Ignition Merged version of Energy Visuals Enhanced"
-      - type: say
-        content: "Requires: FOOK2 1.2 Open Beta"
-  - name: Fallout Remastered - FWE + EVE (PI Merge).esp
-    msg:
-      - type: say
-        content: "Requires: Paradox Ignition Merged version of Energy Visuals Enhanced"
-      - type: say
-        content: "Requires: Fallout Wanderer's Edition 6.03 and all DLC plugins"
-  - name: Fallout Remastered - MMM + EVE (PI Merge).esp
-    msg:
-      - type: say
-        content: "Requires: RC6.1 OR RC6.2 version of Mart's Mutant Mod"
-      - type: say
-        content: "Requires: Paradox Ignition Merged version of Energy Visuals Enhanced"
+    inc:
+      - Fallout 3 Master Fix.esp
+      - James Invisible Walls Remover.esp
   - name: Fallout Remastered - FOOK2 + MMM.esp
     msg:
       - type: say
-        content: "Requires: all DLC plugins for the RC 6.1 or RC 6.2 version of Mart's Mutants Mod"
-      - type: say
-        content: "Requires: FOOK2 1.2 Open Beta"
-      - type: say
         content: Does not require a FOIP, provides complete compatibility between these two files
   - name: Fallout Remastered - FWE + MMM.esp
-    msg:
-      - type: say
-        content: "Requires: all DLC plugins for the 6.03 version of Fallout Wanderer's Edition"
-      - type: say
-        content: "Requires: all DLC plugins for the RC 6.1 or RC 6.2 version of Mart's Mutants Mod"
       - type: say
         content: Does not require a FOIP, provides complete compatibility between these two files
-  - name: Fallout Remastered - MMM + Scavenger.esp
-    msg:
-      - type: say
-        content: "Requires: RC6.1 OR RC6.2 version of Mart's Mutant Mod"
-      - type: say
-        content: "Requires: Scavenger World 0.04"
-  - name: Fallout Remastered - WMI + Xepha.esp
-    msg:
-      - type: say
-        content: "Requires: Xepha's Dynamic Weather.esm"
-      - type: say
-        content: "Requires: Realistic Interior Lighting.esp"
-      - type: say
-        content: "Requires: Wasteland Music Injector.esp"
-  - name: Fallout Remastered - DCStreet + Dynamic Weather.esp
-    msg:
-      - type: say
-        content: "Requires: Requires Xepha's Dynamic Weather"
-      - type: say
-        content: "Requires: Requires DC Street - BS.esp"
 # ENDGROUP: Fallout Remastered
 # ENDGROUP: Post Bashed Patch
