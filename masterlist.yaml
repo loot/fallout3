@@ -3931,25 +3931,11 @@ plugins:
 # ENDGROUP: Weather\Light\Water
 # BEGINGROUP: Lastish
   - name: CRAFTHelper_ReplaceWorkbenchScript.esp
-    msg:
-      - type: say
-        content: "Incompatible with: CRAFT - Activation Perk.esp"
+    inc:
+      - CRAFT - Activation Perk.esp
   - name: CRAFTHelper_ReplaceWorkbenchScriptFWE.esp
-    msg:
-      - type: say
-        content: "Incompatible with: CRAFT - Activation Perk.esp"
-  - name: CRAFT - WCE FOOK+FWE Patch.esp
-    msg:
-      - type: say
-        content: "Requires: FOOK2 - Main.esm"
-      - type: say
-        content: "Requires: FO3 Wanderers Edition - Main File.esm"
-      - type: say
-        content: "Requires: CRAFT - Workbench and Crafting Expansion combined.esp"
-  - name: CRAFT - WCE Warmonger Addon.esp
-    msg:
-      - type: say
-        content: "Requires: CRAFT - Workbench and Crafting Expansion combined.esp"
+    inc:
+      - CRAFT - Activation Perk.esp
   - name: 20th Century v4 ALIVE (Vendor).esp
     tag:
       - Invent
@@ -4011,23 +3997,19 @@ plugins:
     tag:
       - Invent
   - name: FWE Ammo Weight for 20th Century.esp
-    msg:
-      - type: say
-        content: "Incompatible with: FWE Realistic Ammo Weight inc 20th Cent.esp"
+    inc:
+      - FWE Realistic Ammo Weight inc 20th Cent.esp
   - name: FWE-20thCent Ammo Weight in Names.esp
-    msg:
-      - type: say
-        content: "Incompatible with: FWE Realistic Ammo Weight in Names inc. 20th Cent.esp"
+    inc:
+      - FWE Realistic Ammo Weight in Names inc. 20th Cent.esp
     tag:
       - Names
   - name: FWE Realistic Ammo Weight inc 20th Cent.esp
-    msg:
-      - type: say
-        content: "Incompatible with: FWE Ammo Weight for 20th Century.esp"
+    inc:
+      - FWE Ammo Weight for 20th Century.esp
   - name: FWE Realistic Ammo Weight in Names inc. 20th Cent.esp
-    msg:
-      - type: say
-        content: "Incompatible with: FWE-20thCent Ammo Weight in Names.esp"
+    inc:
+      - FWE-20thCent Ammo Weight in Names.esp
     tag:
       - Names
   - name: CFWR_EVE_LoadLast.esp
@@ -4035,142 +4017,10 @@ plugins:
       - Graphics
       - Names
       - Stats
-  - name: Achievement Remover [FO3+OA+BS].esp
+  - name: Achievement\sRemover\s\[(All)?(FO3)?(\+OA)?(\+TP)?(\+BS)?(\+PL)?(\+MZ)?\]\.esp
     msg:
       - type: say
         content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [FO3+OA+MZ].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [FO3+OA+TP+MZ].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [FO3+OA+TP+PL].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [FO3].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [FO3+BS+PL].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [FO3+BS+PL+MZ].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [FO3+BS].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [FO3+OA+TP].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [FO3+OA+PL+MZ].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [FO3+OA+BS+MZ].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [FO3+OA].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [FO3+PL+MZ].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [FO3+PL].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [FO3+TP+BS+MZ].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [FO3+OA+BS+PL+MZ].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [FO3+TP+BS+PL+MZ].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [FO3+MZ].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [FO3+OA+PL].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [FO3+OA+BS+PL].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [FO3+BS+MZ].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [FO3+TP].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [FO3+OA+TP+BS+MZ].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [FO3+OA+TP+BS+PL].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [FO3+OA+TP+BS].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [FO3+TP+PL].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [FO3+TP+PL+MZ].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [FO3+TP+MZ].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [FO3+OA+TP+PL+MZ].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [All].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [FO3+TP+BS].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [FO3+TP+BS+PL].esp
-    msg:
-      - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: Achievement Remover [DIK].esp
-    msg:
-      - type: say
-        content: "Requires: FOOK2."
-  - name: Achievement Remover [FWE].esp
-    msg:
-      - type: say
-        content: "Requires: FO3 Wanderers Edition."
   - name: DUIF3Extras.esp
     msg:
       - type: say
