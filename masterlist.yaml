@@ -210,11 +210,9 @@ plugins:
   - name: RobCo Certified v2.esm
     url:
       - http://fallout3.nexusmods.com/mods/712
-    req: 
-      - [ *FOSE ]
+    req: [ *FOSE ]
   - name: Wasteland Whisperer v2.esm
-    req:
-      - [ *FOSE ]
+    req: [ *FOSE ]
   - name: Xepha's Dynamic Weather.esm
     tag:
       - C.Climate
@@ -233,8 +231,7 @@ plugins:
         content: Old. Download the latest Project Beauty files.
         condition: file("FOOK2 - Main.esm")
   - name: Animy_prostitution.esm
-    req:
-      - [ *FOSE ]
+    req: [ *FOSE ]
   - name: DCInteriors_ComboEdition.esm
     inc:
       - DCInteriors_LEnfntPl.esm
@@ -364,38 +361,31 @@ plugins:
     tag:
       - Scripts
   - name: PyromaniacFix-Burnmaster.esp
-    msg:
-      - [ *AlreadyInUF3P ]
+    msg: [ *AlreadyInUF3P ]
     tag:
       - Deflst
   - name: PyromaniacFix-Burnmaster-BS.esp
-    msg:
-      - [ *AlreadyInUF3P ]
+    msg: [ *AlreadyInUF3P ]
     tag:
       - Deflst
   - name: PyromaniacFix-Both.esp
-    msg:
-      - [ *AlreadyInUF3P ]
+    msg: [ *AlreadyInUF3P ]
     tag:
       - Deflst
   - name: PyromaniacFix-Both-BS.esp
-    msg:
-      - [ *AlreadyInUF3P ]
+    msg: [ *AlreadyInUF3P ]
     tag:
       - Deflst
   - name: PyromaniacFix-Both+Nuka.esp
-    msg:
-      - [ *AlreadyInUF3P ]
+    msg: [ *AlreadyInUF3P ]
     tag:
       - Deflst
   - name: PyromaniacFix-Both+Nuka-BS.esp
-    msg:
-      - [ *AlreadyInUF3P ]
+    msg: [ *AlreadyInUF3P ]
     tag:
       - Deflst
   - name: DemolitionExpertFix-Nuka.esp
-    msg:
-      - [ *AlreadyInUF3P ]
+    msg: [ *AlreadyInUF3P ]
   - name: MS11fix.esp
     tag:
       - Actors.AIPackages
@@ -816,8 +806,7 @@ plugins:
     tag:
       - Graphics
   - name: Megaton Sorter.esp
-    req:
-      - [ *FOSE ]
+    req: [ *FOSE ]
   - name: D.C. Confidential.esp
     msg:
       - type: say
