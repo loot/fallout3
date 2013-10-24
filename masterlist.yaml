@@ -1,6 +1,6 @@
 common:
   - &FOSE
-    name: "..\fose_loader.exe"
+    name: "..\\fose_loader.exe"
     display: "http://fose.silverlock.org/ FOSE"
   - &AlreadyInUF3P
     type: say
