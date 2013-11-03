@@ -1,15 +1,15 @@
 common:
   - &FOSE
     name: "..\\fose_loader.exe"
-    display: "http://fose.silverlock.org/ FOSE"
+    display: '"http://fose.silverlock.org/ FOSE"'
   - &AlreadyInUF3P
     type: say
-    content: Do not use with Unofficial Fallout 3 Patch - Already Included
+    content: 'Do not use with Unofficial Fallout 3 Patch - Already Included'
     condition: file("Unofficial Fallout 3 Patch.esm")
 
 globals:
   - type: warn
-    content: An update for BOSS (v2.1.1) has been released. Download it at "http://code.google.com/p/better-oblivion-sorting-software/downloads/list"
+    content: 'An update for BOSS (v2.1.1) has been released. Download it at "http://code.google.com/p/better-oblivion-sorting-software/downloads/list"'
     condition: version("BOSS","2.1.1.0",<)
 
 plugins:
