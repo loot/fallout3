@@ -1,7 +1,7 @@
 common:
   - &FOSE
     name: "..\\fose_loader.exe"
-    display: '"http://fose.silverlock.org/ FOSE"'
+    display: '[FOSE](http://fose.silverlock.org/)'
   - &AlreadyInUF3P
     type: say
     content: 'Do not use with Unofficial Fallout 3 Patch - Already Included'
@@ -9,7 +9,7 @@ common:
 
 globals:
   - type: warn
-    content: 'An update for BOSS (v2.1.1) has been released. Download it at "http://code.google.com/p/better-oblivion-sorting-software/downloads/list"'
+    content: 'An update for BOSS (v2.1.1) has been released. Download it [here](http://code.google.com/p/better-oblivion-sorting-software/downloads/list)'
     condition: version("BOSS","2.1.1.0",<)
 
 plugins:
@@ -148,9 +148,8 @@ plugins:
       - Relev
       - Scripts
       - Stats
-  - name: FOOK2 - Main.esm
-    url:
-      - http://fallout3.nexusmods.com/mods/4448
+  - name: 'FOOK2 - Main.esm'
+    url: [ 'http://fallout3.nexusmods.com/mods/4448' ]
     tag:
       - Factions
       - Invent
@@ -167,11 +166,10 @@ plugins:
         content: Remove if using FOOK2 1.1 and above
         condition: file("FOOK2 - Main.esm")
   - name: 'FO3 Wanderers Edition - Main File.esm'
-    url:
-      - http://fallout3.nexusmods.com/mods/2761
+    url: [ 'http://fallout3.nexusmods.com/mods/2761' ]
     msg:
       - type: say
-        content: Suggested to remove the names tag if using MMM
+        content: 'Suggested to remove the names tag if using MMM'
     tag:
       - Actors.ACBS
       - Actors.Stats
@@ -184,16 +182,15 @@ plugins:
       - Stats
 
   - name: 'FWE - Combat Overhaul_Core.esm'
-    url:
-      - http://fallout3.nexusmods.com/mods/15578
+    url: [ 'http://fallout3.nexusmods.com/mods/15578' ]
     inc:
-      - WeaponModKits.esp
-      - EVE.esm
-      - RH_IronSights_Basic_VanillaPlugin.esp
+      - 'WeaponModKits.esp'
+      - 'EVE.esm'
+      - 'RH_IronSights_Basic_VanillaPlugin.esp'
     msg:
       - type: warn
-        content: This mod requires resources from "http://fallout3.nexusmods.com/mods/6938 RH_IronSights", please see mod's readme.
-        condition: not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")
+        content: 'This mod requires resources from [RH_IronSights](http://fallout3.nexusmods.com/mods/6938), please see the mod''s readme.'
+        condition: 'not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")'
     tag:
       - Graphics
       - Names
@@ -207,9 +204,8 @@ plugins:
   - name: Arwen_Core.esm
     tag:
       - Actors.Animations
-  - name: RobCo Certified v2.esm
-    url:
-      - http://fallout3.nexusmods.com/mods/712
+  - name: 'RobCo Certified v2.esm'
+    url: [ 'http://fallout3.nexusmods.com/mods/712' ]
     req: [ *FOSE ]
   - name: Wasteland Whisperer v2.esm
     req: [ *FOSE ]
@@ -536,12 +532,12 @@ plugins:
   - name: Realistic icons.esp
     tag:
       - Graphics
-  - name: StreetLights - Wasteland.esp
+  - name: 'StreetLights - Wasteland.esp'
     msg:
       - type: say
-        content: Do not use with latest FOOK2, it is already integrated.
+        content: 'Do not use with latest FOOK2, it is already integrated.'
       - type: say
-        content: Obselete - upgrade to "http://fallout3.nexusmods.com/mods/8069 Fallout Streetlights".
+        content: 'Obselete - upgrade to [Fallout Streetlights](http://fallout3.nexusmods.com/mods/8069).'
   - name: RK-Skelette-3.0.esp
     msg:
       - type: say
@@ -1218,17 +1214,17 @@ plugins:
     tag:
       - Delev
       - Relev
-  - name: FWE_Overhaul Kit - Main.esp
+  - name: 'FWE_Overhaul Kit - Main.esp'
     inc:
-      - EVE.esm
-      - RH_IronSights_Basic_VanillaPlugin.esp
-      - WeaponModKits.esp
+      - 'EVE.esm'
+      - 'RH_IronSights_Basic_VanillaPlugin.esp'
+      - 'WeaponModKits.esp'
     msg:
       - type: say
-        content: Outdated. Update to latest version of FWE - Combat Overhaul
+        content: 'Outdated. Update to latest version of FWE - Combat Overhaul.'
       - type: warn
-        content: This mod requires resources from "http://fallout3.nexusmods.com/mods/6938 RH_IronSights", please see mod's readme.
-        condition: not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")
+        content: 'This mod requires resources from [RH_IronSights](http://fallout3.nexusmods.com/mods/6938), please see the mod''s readme.'
+        condition: 'not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")'
     tag:
       - Actors.ACBS
       - Deflst
@@ -1239,28 +1235,28 @@ plugins:
       - Relev
       - Sound
       - Stats
-  - name: FWE_Overhaul Kit - Core.esp
+  - name: 'FWE_Overhaul Kit - Core.esp'
     inc:
-      - EVE.esm
-      - RH_IronSights_Basic_VanillaPlugin.esp
-      - WeaponModKits.esp
+      - 'EVE.esm'
+      - 'RH_IronSights_Basic_VanillaPlugin.esp'
+      - 'WeaponModKits.esp'
     msg:
       - type: say
-        content: Outdated. Update to latest version of FWE - Combat Overhaul
+        content: 'Outdated. Update to latest version of FWE - Combat Overhaul.'
       - type: warn
-        content: This mod requires resources from "http://fallout3.nexusmods.com/mods/6938 RH_IronSights", please see mod's readme.
-        condition: not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")
-  - name: FWE_Overhaul Kit - Equipment .esp
+        content: 'This mod requires resources from [RH_IronSights](http://fallout3.nexusmods.com/mods/6938), please see the mod''s readme.'
+        condition: 'not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")'
+  - name: 'FWE_Overhaul Kit - Equipment .esp'
     inc:
-      - EVE.esm
-      - RH_IronSights_Basic_VanillaPlugin.esp
-      - WeaponModKits.esp
+      - 'EVE.esm'
+      - 'RH_IronSights_Basic_VanillaPlugin.esp'
+      - 'WeaponModKits.esp'
     msg:
       - type: say
-        content: Outdated. Update to latest version of FWE - Combat Overhaul
+        content: 'Outdated. Update to latest version of FWE - Combat Overhaul.'
       - type: warn
-        content: This mod requires resources from "http://fallout3.nexusmods.com/mods/6938 RH_IronSights", please see mod's readme.
-        condition: not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")
+        content: 'This mod requires resources from [RH_IronSights](http://fallout3.nexusmods.com/mods/6938), please see the mod''s readme.'
+        condition: 'not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")'
     tag:
       - Actors.ACBS
       - Deflst
@@ -1272,15 +1268,15 @@ plugins:
       - Scripts
       - Sound
       - Stats
-  - name: FWE - Combat Overhaul_Equipment.esp
+  - name: 'FWE - Combat Overhaul_Equipment.esp'
     inc:
-      - EVE.esm
-      - RH_IronSights_Basic_VanillaPlugin.esp
-      - WeaponModKits.esp
+      - 'EVE.esm'
+      - 'RH_IronSights_Basic_VanillaPlugin.esp'
+      - 'WeaponModKits.esp'
     msg:
       - type: warn
-        content: This mod requires resources from "http://fallout3.nexusmods.com/mods/6938 RH_IronSights", please see mod's readme.
-        condition: not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")
+        content: 'This mod requires resources from [RH_IronSights](http://fallout3.nexusmods.com/mods/6938), please see the mod''s readme.'
+        condition: 'not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")'
     tag:
       - Actors.ACBS
       - Deflst
@@ -1701,10 +1697,10 @@ plugins:
   - name: WasteWearGloves.esp
     tag:
       - Relev
-  - name: LingsFinerThings.esp
+  - name: 'LingsFinerThings.esp'
     msg:
       - type: say
-        content: Obselete, update to "http://fallout3.nexusmods.com/mods/17631/ the latest version".
+        content: 'Obselete, update to the [latest version](http://fallout3.nexusmods.com/mods/17631/).'
   - name: LingsPrettyThings.esp
     tag:
       - Eyes
