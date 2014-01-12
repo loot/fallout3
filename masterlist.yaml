@@ -1,16 +1,12 @@
 common:
+# Files
   - &FOSE
     name: '..\fose_loader.exe'
     display: '[FOSE](http://fose.silverlock.org/)'
-  - &AlreadyInUF3P
-    type: say
-    content: 'Do not use with Unofficial Fallout 3 Patch - Already Included'
-    condition: 'file("Unofficial Fallout 3 Patch.esm")'
 
 globals:
-  - type: warn
-    content: 'An update for BOSS (v2.1.1) has been released. Download it [here](http://code.google.com/p/better-oblivion-sorting-software/downloads/list)'
-    condition: 'version("BOSS","2.1.1.0",<)'
+  - type: say
+    content: Latest BOSS thread "http://forums.bethsoft.com/topic/1282711-relz-boss-for-fo3-thread-4/"
 
 plugins:
   - name: 'StreetLights.esm'
