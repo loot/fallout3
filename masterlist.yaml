@@ -1,33 +1,31 @@
-# BOSS ignores anything that doesn''t come under ''globals'' or ''plugins'', so a section like this is useful for storing data that gets re-used.
 common:
-# Files
   - &FOSE
-    name: "..\fose_loader.exe"
-    display: "http://fose.silverlock.org/ FOSE"
+    name: '..\fose_loader.exe'
+    display: '[FOSE](http://fose.silverlock.org/)'
   - &AlreadyInUF3P
     type: say
-    content: Do not use with Unofficial Fallout 3 Patch - Already Included
-    condition: file("Unofficial Fallout 3 Patch.esm")
+    content: 'Do not use with Unofficial Fallout 3 Patch - Already Included'
+    condition: 'file("Unofficial Fallout 3 Patch.esm")'
 
 globals:
   - type: warn
-    content: An update for BOSS (v2.1.1) has been released. Download it at "http://code.google.com/p/better-oblivion-sorting-software/downloads/list"
-    condition: version("BOSS","2.1.1.0",<)
+    content: 'An update for BOSS (v2.1.1) has been released. Download it [here](http://code.google.com/p/better-oblivion-sorting-software/downloads/list)'
+    condition: 'version("BOSS","2.1.1.0",<)'
 
 plugins:
-  - name: StreetLights.esm
+  - name: 'StreetLights.esm'
     msg:
       - type: say
-        content: Do not use with latest FOOK2, it is already integrated.
-  - name: BrokenSteel.esm
+        content: 'Do not use with latest FOOK2, it is already integrated.'
+  - name: 'BrokenSteel.esm'
     tag:
       - Actors.ACBS
       - Actors.AIPackages
       - Relev
-  - name: Lings.esm
+  - name: 'Lings.esm'
     tag:
       - Hair
-  - name: Unofficial Fallout 3 Patch.esm
+  - name: 'Unofficial Fallout 3 Patch.esm'
     tag:
       - C.Music
       - Deflst
@@ -38,45 +36,45 @@ plugins:
       - Relations
       - Relev
       - Stats
-  - name: LingsDLC.esm
+  - name: 'LingsDLC.esm'
     tag:
       - Eyes
       - Hair
-  - name: HairPack.esm
+  - name: 'HairPack.esm'
     tag:
       - Eyes
       - Hair
-  - name: FNNsys.esm
+  - name: 'FNNsys.esm'
     tag:
       - Scripts
-  - name: FaceMe.esm
+  - name: 'FaceMe.esm'
     tag:
       - Eyes
       - Hair
       - NPC.Race
       - NpcFaces
-  - name: Destruction.esm
+  - name: 'Destruction.esm'
     tag:
       - Destructible
       - Scripts
-  - name: xCALIBR.esm
+  - name: 'xCALIBR.esm'
     tag:
       - Graphics
       - Names
       - Stats
-  - name: xCALIBRuniverse.esm
+  - name: 'xCALIBRuniverse.esm'
     tag:
       - Graphics
       - Invent
       - Names
       - Sound
       - Stats
-  - name: Project Beauty HD version.esm
+  - name: 'Project Beauty HD version.esm'
     msg:
       - type: error
-        content: Old. Download the latest Project Beauty files.
-        condition: file("FOOK2 - Main.esm")
-  - name: Project Beauty.esm
+        content: 'Old. Download the latest Project Beauty files.'
+        condition: 'file("FOOK2 - Main.esm")'
+  - name: 'Project Beauty.esm'
     tag:
       - Body-F
       - Body-M
@@ -88,7 +86,7 @@ plugins:
       - R.Teeth
       - Voice-F
       - Voice-M
-  - name: FACE3.esm
+  - name: 'FACE3.esm'
     tag:
       - Body-F
       - Body-M
@@ -100,7 +98,7 @@ plugins:
       - R.Teeth
       - Voice-F
       - Voice-M
-  - name: CFWRv4.esm
+  - name: 'CFWRv4.esm'
     tag:
       - Deflst
       - Delev
@@ -112,7 +110,7 @@ plugins:
   - name: '[DC RANGER ARSENAL v3 MASTER].esm'
     tag:
       - Deflst
-  - name: CFWR.esm
+  - name: 'CFWR.esm'
     tag:
       - Delev
       - Graphics
@@ -121,11 +119,11 @@ plugins:
   - name: 'Refurbishes [ALL].esm'
     msg:
       - type: say
-        content: Do not use with latest FOOK2, it is already integrated.
-  - name: GNRBuilding_BoS.esm
+        content: 'Do not use with latest FOOK2, it is already integrated.'
+  - name: 'GNRBuilding_BoS.esm'
     tag:
       - Invent
-  - name: RoadWardens.esm
+  - name: 'RoadWardens.esm'
     tag:
       - Actors.ACBS
       - Actors.AIData
@@ -136,13 +134,13 @@ plugins:
       - Invent
       - ScriptContents
       - Scripts
-  - name: EVE.esm
+  - name: 'EVE.esm'
     tag:
       - Graphics
       - Invent
       - Scripts
       - Sound
-  - name: EWE Energy Weapons Enhanced.esm
+  - name: 'EWE Energy Weapons Enhanced.esm'
     tag:
       - Deflst
       - Graphics
@@ -150,30 +148,28 @@ plugins:
       - Relev
       - Scripts
       - Stats
-  - name: FOOK2 - Main.esm
-    url:
-      - http://fallout3.nexusmods.com/mods/4448
+  - name: 'FOOK2 - Main.esm'
+    url: [ ''http://fallout3.nexusmods.com/mods/4448'' ]
     tag:
       - Factions
       - Invent
       - Relations
       - Stats
-  - name: FOOK.ESM
+  - name: 'FOOK.ESM'
     msg:
       - type: error
-        content: Get FOOK2
-        condition: file("FOOK2 - Main.esm")
+        content: 'Get FOOK2'
+        condition: 'file("FOOK2 - Main.esm")'
   - name: 'FOOK2 - [WANK] World And Neighbourhood Kit.esm'
     msg:
       - type: error
-        content: Remove if using FOOK2 1.1 and above
-        condition: file("FOOK2 - Main.esm")
+        content: 'Remove if using FOOK2 1.1 and above'
+        condition: 'file("FOOK2 - Main.esm")'
   - name: 'FO3 Wanderers Edition - Main File.esm'
-    url:
-      - http://fallout3.nexusmods.com/mods/2761
+    url: [ ''http://fallout3.nexusmods.com/mods/2761'' ]
     msg:
       - type: say
-        content: Suggested to remove the names tag if using MMM
+        content: 'Suggested to remove the names tag if using MMM'
     tag:
       - Actors.ACBS
       - Actors.Stats
@@ -186,718 +182,716 @@ plugins:
       - Stats
 
   - name: 'FWE - Combat Overhaul_Core.esm'
-    url:
-      - http://fallout3.nexusmods.com/mods/15578
+    url: [ ''http://fallout3.nexusmods.com/mods/15578'' ]
     inc:
-      - WeaponModKits.esp
-      - EVE.esm
-      - RH_IronSights_Basic_VanillaPlugin.esp
+      - 'WeaponModKits.esp'
+      - 'EVE.esm'
+      - 'RH_IronSights_Basic_VanillaPlugin.esp'
     msg:
       - type: warn
-        content: This mod requires resources from "http://fallout3.nexusmods.com/mods/6938 RH_IronSights", please see mod's readme.
-        condition: not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")
+        content: 'This mod requires resources from [RH_IronSights](http://fallout3.nexusmods.com/mods/6938), please see the mod''s readme.'
+        condition: 'not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")'
     tag:
       - Graphics
       - Names
-  - name: Mart's Mutant Mod.esm
+  - name: 'Mart''s Mutant Mod.esm'
     tag:
       - Delev
       - Invent
       - Names
       - Relations
       - Scripts
-  - name: Arwen_Core.esm
+  - name: 'Arwen_Core.esm'
     tag:
       - Actors.Animations
-  - name: RobCo Certified v2.esm
-    url:
-      - http://fallout3.nexusmods.com/mods/712
+  - name: 'RobCo Certified v2.esm'
+    url: [ ''http://fallout3.nexusmods.com/mods/712'' ]
     req: [ *FOSE ]
-  - name: Wasteland Whisperer v2.esm
+  - name: 'Wasteland Whisperer v2.esm'
     req: [ *FOSE ]
-  - name: Xepha's Dynamic Weather.esm
+  - name: 'Xepha''s Dynamic Weather.esm'
     tag:
       - C.Climate
       - Sound
-  - name: RTS.esm
+  - name: 'RTS.esm'
     inc:
-      - ArefuExpandedByAzar.esm
-      - 1PipboyPDA.esp
-  - name: RTS NW.esm
+      - 'ArefuExpandedByAzar.esm'
+      - '1PipboyPDA.esp'
+  - name: 'RTS NW.esm'
     inc:
-      - ArefuExpandedByAzar.esm
-      - 1PipboyPDA.esp
-  - name: PB mika.esm
+      - 'ArefuExpandedByAzar.esm'
+      - '1PipboyPDA.esp'
+  - name: 'PB mika.esm'
     msg:
       - type: error
-        content: Old. Download the latest Project Beauty files.
-        condition: file("FOOK2 - Main.esm")
-  - name: Animy_prostitution.esm
+        content: 'Old. Download the latest Project Beauty files.'
+        condition: 'file("FOOK2 - Main.esm")'
+  - name: 'Animy_prostitution.esm'
     req: [ *FOSE ]
-  - name: DCInteriors_ComboEdition.esm
+  - name: 'DCInteriors_ComboEdition.esm'
     inc:
-      - DCInteriors_LEnfntPl.esm
-      - DCInteriors_Mason.esm
-      - DCInteriors_SewardSq.esm
-      - DCInteriors_Takoma.esm
-  - name: DCInteriors_Georgtown.esm
+      - 'DCInteriors_LEnfntPl.esm'
+      - 'DCInteriors_Mason.esm'
+      - 'DCInteriors_SewardSq.esm'
+      - 'DCInteriors_Takoma.esm'
+  - name: 'DCInteriors_Georgtown.esm'
     inc:
-      - DCInteriors_ComboEdition.esm
-  - name: DCInteriors_LEnfntPl.esm
+      - 'DCInteriors_ComboEdition.esm'
+  - name: 'DCInteriors_LEnfntPl.esm'
     inc:
-      - DCInteriors_ComboEdition.esm
-  - name: DCInteriors_Mason.esm
+      - 'DCInteriors_ComboEdition.esm'
+  - name: 'DCInteriors_Mason.esm'
     inc:
-      - DCInteriors_ComboEdition.esm
-  - name: DCInteriors_SewardSq.esm
+      - 'DCInteriors_ComboEdition.esm'
+  - name: 'DCInteriors_SewardSq.esm'
     inc:
-      - DCInteriors_ComboEdition.esm
-  - name: DCInteriors_Takoma.esm
+      - 'DCInteriors_ComboEdition.esm'
+  - name: 'DCInteriors_Takoma.esm'
     inc:
-      - DCInteriors_ComboEdition.esm
-  - name: Shojo Race.esm
+      - 'DCInteriors_ComboEdition.esm'
+  - name: 'Shojo Race.esm'
     tag:
       - Eyes
       - Hair
-  - name: XENH.esm
+  - name: 'XENH.esm'
     tag:
       - Eyes
       - Hair
-  - name: EnhancedChildren.esm
+  - name: 'EnhancedChildren.esm'
     tag:
       - Eyes
       - Hair
-  - name: AliciasCuteShop.esm
+  - name: 'AliciasCuteShop.esm'
     tag:
       - Stats
-  - name: Abbreviated Effects.esm
+  - name: 'Abbreviated Effects.esm'
     msg:
       - type: say
-        content: Do not use with latest FWE, it is already integrated.
+        content: 'Do not use with latest FWE, it is already integrated.'
     tag:
       - Names
-  - name: DALCO Inventory Sorter - Fallout 3 & All DLCs.esp
-    tag:
-      - Names
-      - NoMerge
-  - name: DALCO Inventory Sorter - Unofficial Fallout 3 Patch (Base Game).esp
+  - name: 'DALCO Inventory Sorter - Fallout 3 & All DLCs.esp'
     tag:
       - Names
       - NoMerge
-  - name: Unofficial Fallout 3 Patch - Operation Anchorage.esp
+  - name: 'DALCO Inventory Sorter - Unofficial Fallout 3 Patch (Base Game).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'Unofficial Fallout 3 Patch - Operation Anchorage.esp'
     tag:
       - Deflst
       - Names
-  - name: Unofficial Fallout 3 Patch - The Pitt.esp
+  - name: 'Unofficial Fallout 3 Patch - The Pitt.esp'
     tag:
       - Deflst
       - Names
-  - name: Unofficial Fallout 3 Patch - Broken Steel.esp
+  - name: 'Unofficial Fallout 3 Patch - Broken Steel.esp'
     tag:
       - Deflst
       - Names
       - NoMerge
-  - name: Unofficial Fallout 3 Patch - Point Lookout.esp
+  - name: 'Unofficial Fallout 3 Patch - Point Lookout.esp'
     tag:
       - Deflst
       - Invent
       - Names
       - Stats
-  - name: Unofficial Fallout 3 Patch - Mothership Zeta.esp
+  - name: 'Unofficial Fallout 3 Patch - Mothership Zeta.esp'
     tag:
       - Deflst
       - Names
-  - name: EVE - UF3P Patch.esp
+  - name: 'EVE - UF3P Patch.esp'
     msg:
       - type: say
-        content: Paradox Ignition EVE-merger - compatibility patch for the Unofficial Fallout 3 Patch.
-  - name: CinderBlockRockFix.esp
+        content: 'Paradox Ignition EVE-merger - compatibility patch for the Unofficial Fallout 3 Patch.'
+  - name: 'CinderBlockRockFix.esp'
     inc:
-      - CinderblockRockFix2.esp
-      - ConcreteSlabFix.esp
-      - ConcreteSlabFix2.esp
-  - name: CinderblockRockFix2.esp
+      - 'CinderblockRockFix2.esp'
+      - 'ConcreteSlabFix.esp'
+      - 'ConcreteSlabFix2.esp'
+  - name: 'CinderblockRockFix2.esp'
     inc:
-      - CinderBlockRockFix.esp
-      - ConcreteSlabFix.esp
-      - ConcreteSlabFix2.esp
-  - name: ConcreteSlabFix.esp
+      - 'CinderBlockRockFix.esp'
+      - 'ConcreteSlabFix.esp'
+      - 'ConcreteSlabFix2.esp'
+  - name: 'ConcreteSlabFix.esp'
     inc:
-      - CinderBlockRockFix.esp
-      - CinderblockRockFix2.esp
-      - ConcreteSlabFix2.esp
-  - name: ConcreteSlabFix2.esp
+      - 'CinderBlockRockFix.esp'
+      - 'CinderblockRockFix2.esp'
+      - 'ConcreteSlabFix2.esp'
+  - name: 'ConcreteSlabFix2.esp'
     inc:
-      - CinderBlockRockFix.esp
-      - CinderblockRockFix2.esp
-      - ConcreteSlabFix.esp
-  - name: Error Correction.esp
+      - 'CinderBlockRockFix.esp'
+      - 'CinderblockRockFix2.esp'
+      - 'ConcreteSlabFix.esp'
+  - name: 'Error Correction.esp'
     tag:
       - Scripts
-  - name: Error Correction - All Transparency & Trees.esp
+  - name: 'Error Correction - All Transparency & Trees.esp'
     inc:
-      - Error Correction - All Transparency.esp
-  - name: Error Correction - Transparency Megaton.esp
+      - 'Error Correction - All Transparency.esp'
+  - name: 'Error Correction - Transparency Megaton.esp'
     inc:
-      - Error Correction - All Transparency.esp
-      - Error Correction - All Transparency & Trees.esp
-  - name: Error Correction - Transparency RC.esp
+      - 'Error Correction - All Transparency.esp'
+      - 'Error Correction - All Transparency & Trees.esp'
+  - name: 'Error Correction - Transparency RC.esp'
     inc:
-      - Error Correction - All Transparency.esp
-      - Error Correction - All Transparency & Trees.esp
-  - name: Error Correction - Transparency Rubble Piles.esp
+      - 'Error Correction - All Transparency.esp'
+      - 'Error Correction - All Transparency & Trees.esp'
+  - name: 'Error Correction - Transparency Rubble Piles.esp'
     inc:
-      - Error Correction - All Transparency.esp
-      - Error Correction - All Transparency & Trees.esp
-  - name: Error Correction - Trees.esp
+      - 'Error Correction - All Transparency.esp'
+      - 'Error Correction - All Transparency & Trees.esp'
+  - name: 'Error Correction - Trees.esp'
     inc:
-      - Error Correction - All Transparency & Trees.esp
-  - name: FireLightFix.esp
+      - 'Error Correction - All Transparency & Trees.esp'
+  - name: 'FireLightFix.esp'
     tag:
       - C.Light
-  - name: BringBackBael.esp
+  - name: 'BringBackBael.esp'
     msg:
       - type: say
         content: 'Obsolete - Now intergrated into Fallout Remastered.esp, upgrade to latest version'
-  - name: BlackWidowBurkeFix.esp
+  - name: 'BlackWidowBurkeFix.esp'
     tag:
       - Scripts
-  - name: PyromaniacFix-Burnmaster.esp
+  - name: 'PyromaniacFix-Burnmaster.esp'
     msg: [ *AlreadyInUF3P ]
     tag:
       - Deflst
-  - name: PyromaniacFix-Burnmaster-BS.esp
+  - name: 'PyromaniacFix-Burnmaster-BS.esp'
     msg: [ *AlreadyInUF3P ]
     tag:
       - Deflst
-  - name: PyromaniacFix-Both.esp
+  - name: 'PyromaniacFix-Both.esp'
     msg: [ *AlreadyInUF3P ]
     tag:
       - Deflst
-  - name: PyromaniacFix-Both-BS.esp
+  - name: 'PyromaniacFix-Both-BS.esp'
     msg: [ *AlreadyInUF3P ]
     tag:
       - Deflst
-  - name: PyromaniacFix-Both+Nuka.esp
+  - name: 'PyromaniacFix-Both+Nuka.esp'
     msg: [ *AlreadyInUF3P ]
     tag:
       - Deflst
-  - name: PyromaniacFix-Both+Nuka-BS.esp
+  - name: 'PyromaniacFix-Both+Nuka-BS.esp'
     msg: [ *AlreadyInUF3P ]
     tag:
       - Deflst
-  - name: DemolitionExpertFix-Nuka.esp
+  - name: 'DemolitionExpertFix-Nuka.esp'
     msg: [ *AlreadyInUF3P ]
-  - name: MS11fix.esp
+  - name: 'MS11fix.esp'
     tag:
       - Actors.AIPackages
       - C.Light
       - Invent
       - Scripts
-  - name: BetterGamePerformance.esp
+  - name: 'BetterGamePerformance.esp'
     tag:
       - Deflst
       - Delev
-  - name: Stop Insulting Me Outcasts.esp
+  - name: 'Stop Insulting Me Outcasts.esp'
     tag:
       - Factions
-  - name: DALCO Inventory Sorter - Fallout 3 (Base Game).esp
+  - name: 'DALCO Inventory Sorter - Fallout 3 (Base Game).esp'
     tag:
       - Names
       - NoMerge
-  - name: DALCO Inventory Sorter - Operation Anchorage.esp
+  - name: 'DALCO Inventory Sorter - Operation Anchorage.esp'
     tag:
       - Names
       - NoMerge
-  - name: DALCO Inventory Sorter - Unofficial Fallout 3 Patch (Operation Anchorage).esp
+  - name: 'DALCO Inventory Sorter - Unofficial Fallout 3 Patch (Operation Anchorage).esp'
     tag:
       - Names
       - NoMerge
-  - name: DALCO Inventory Sorter - The Pitt.esp
+  - name: 'DALCO Inventory Sorter - The Pitt.esp'
     tag:
       - Names
       - NoMerge
-  - name: DALCO Inventory Sorter - Unofficial Fallout 3 Patch (The Pitt).esp
+  - name: 'DALCO Inventory Sorter - Unofficial Fallout 3 Patch (The Pitt).esp'
     tag:
       - Names
       - NoMerge
-  - name: DALCO Inventory Sorter - Broken Steel.esp
+  - name: 'DALCO Inventory Sorter - Broken Steel.esp'
     tag:
       - Names
       - NoMerge
-  - name: DALCO Inventory Sorter - Point Lookout.esp
+  - name: 'DALCO Inventory Sorter - Point Lookout.esp'
     tag:
       - Names
       - NoMerge
-  - name: DALCO Inventory Sorter - Unofficial Fallout 3 Patch (Point Lookout).esp
+  - name: 'DALCO Inventory Sorter - Unofficial Fallout 3 Patch (Point Lookout).esp'
     tag:
       - Names
       - NoMerge
-  - name: DALCO Inventory Sorter - Mothership Zeta.esp
+  - name: 'DALCO Inventory Sorter - Mothership Zeta.esp'
     tag:
       - Names
       - NoMerge
-  - name: DALCO Inventory Sorter - Unofficial Fallout 3 Patch (Mothership Zeta).esp
+  - name: 'DALCO Inventory Sorter - Unofficial Fallout 3 Patch (Mothership Zeta).esp'
     tag:
       - Names
       - NoMerge
-  - name: DALCO Inventory Sorter - Unofficial Fallout 3 Patch (Fallout 3 & All DLCs).esp
+  - name: 'DALCO Inventory Sorter - Unofficial Fallout 3 Patch (Fallout 3 & All DLCs).esp'
     tag:
       - Names
       - NoMerge
-  - name: DALCO Inventory Sorter - CALIBR.esp
+  - name: 'DALCO Inventory Sorter - CALIBR.esp'
     tag:
       - Names
       - NoMerge
-  - name: Project Beauty.esp
+  - name: 'Project Beauty.esp'
     msg:
       - type: error
-        content: Old. Download the latest Project Beauty files.
-        condition: file("FOOK2 - Main.esm")
-  - name: Project Beauty- Broken Steel.esp
+        content: 'Old. Download the latest Project Beauty files.'
+        condition: 'file("FOOK2 - Main.esm")'
+  - name: 'Project Beauty- Broken Steel.esp'
     tag:
       - Deactivate
       - NoMerge
       - NPC.Race
       - NpcFaces
-  - name: Project Beauty- Point Lookout.esp
+  - name: 'Project Beauty- Point Lookout.esp'
     tag:
       - Deactivate
       - NoMerge
       - NPC.Race
       - NpcFaces
-  - name: Raider preset beta.esp
+  - name: 'Raider preset beta.esp'
     tag:
       - Deactivate
       - NoMerge
       - NPC.Race
       - NpcFaces
-  - name: Project Beauty HD version [Hair Fix].esp
+  - name: 'Project Beauty HD version [Hair Fix].esp'
     tag:
       - Deactivate
       - NoMerge
       - NPC.Race
       - NpcFaces
-  - name: FACE3 - NPCS.esp
+  - name: 'FACE3 - NPCS.esp'
     tag:
       - Deactivate
       - NoMerge
       - NPC.Race
       - NpcFaces
-  - name: FACE3 - DLC04 Point Lookout.esp
+  - name: 'FACE3 - DLC04 Point Lookout.esp'
     tag:
       - Deactivate
       - NoMerge
       - NPC.Race
       - NpcFaces
-  - name: FACE3 NPCS - DLC03 Broken Steel.esp
+  - name: 'FACE3 NPCS - DLC03 Broken Steel.esp'
     tag:
       - Deactivate
       - NoMerge
       - NPC.Race
       - NpcFaces
-  - name: Fast VATS 1.esp
+  - name: 'Fast VATS 1.esp'
     inc:
-      - Fast VATS 2.esp
-  - name: Fast VATS 2.esp
+      - 'Fast VATS 2.esp'
+  - name: 'Fast VATS 2.esp'
     inc:
-      - Fast VATS 1.esp
-  - name: VATS_Normal_dmg_to_player.esp
+      - 'Fast VATS 1.esp'
+  - name: 'VATS_Normal_dmg_to_player.esp'
     inc:
-      - Fast VATS 1.esp
-      - Fast VATS 2.esp
-  - name: DALCO Inventory Sorter - Dynamic Crosshair.esp
+      - 'Fast VATS 1.esp'
+      - 'Fast VATS 2.esp'
+  - name: 'DALCO Inventory Sorter - Dynamic Crosshair.esp'
     tag:
       - Names
-  - name: FaceMe.esp
+  - name: 'FaceMe.esp'
     tag:
       - Deactivate
       - NoMerge
       - NPC.Race
       - NpcFaces
-  - name: FaceMe-Broken Steel.esp
+  - name: 'FaceMe-Broken Steel.esp'
     tag:
       - Deactivate
       - NoMerge
       - NPC.Race
       - NpcFaces
-  - name: Shojo NPC.esp
+  - name: 'Shojo NPC.esp'
     tag:
       - Invent
       - NPC.Race
       - NpcFaces
-  - name: Moira-EXSP.esp
+  - name: 'Moira-EXSP.esp'
     tag:
       - Deactivate
       - NoMerge
       - NPC.Race
       - NpcFaces
-  - name: BatteriesPlusV1_2.esp
+  - name: 'BatteriesPlusV1_2.esp'
     tag:
       - Graphics
-  - name: Realistic icons.esp
+  - name: 'Realistic icons.esp'
     tag:
       - Graphics
-  - name: StreetLights - Wasteland.esp
+  - name: 'StreetLights - Wasteland.esp'
     msg:
       - type: say
-        content: Do not use with latest FOOK2, it is already integrated.
+        content: 'Do not use with latest FOOK2, it is already integrated.'
       - type: say
-        content: Obselete - upgrade to "http://fallout3.nexusmods.com/mods/8069 Fallout Streetlights".
-  - name: RK-Skelette-3.0.esp
+        content: 'Obselete - upgrade to [Fallout Streetlights](http://fallout3.nexusmods.com/mods/8069).'
+  - name: 'RK-Skelette-3.0.esp'
     msg:
       - type: say
-        content: Do not use with latest FOOK2, it is already integrated.
-  - name: praiseatom.esp
+        content: 'Do not use with latest FOOK2, it is already integrated.'
+  - name: 'praiseatom.esp'
     msg:
       - type: say
-        content: Do not use with latest FOOK2, it is already integrated.
-  - name: Internet Mod.esp
+        content: 'Do not use with latest FOOK2, it is already integrated.'
+  - name: 'Internet Mod.esp'
     msg:
       - type: say
-        content: Do not use with latest FOOK2, it is already integrated.
-  - name: DALCO Inventory Sorter - CASM.esp
+        content: 'Do not use with latest FOOK2, it is already integrated.'
+  - name: 'DALCO Inventory Sorter - CASM.esp'
     tag:
       - Names
       - NoMerge
-  - name: Zumbs' Equipable Pip Boy.esp
+  - name: 'Zumbs'' Equipable Pip Boy.esp'
     inc:
-      - Remove That Glove.esp
-      - 1PipboyPDA.esp
-  - name: DK_BulletTime.esp
+      - 'Remove That Glove.esp'
+      - '1PipboyPDA.esp'
+  - name: 'DK_BulletTime.esp'
     msg:
       - type: say
-        content: DO not use with latest FWE, it is already integrated.
-  - name: Sprint Mod.esp
+        content: 'DO not use with latest FWE, it is already integrated.'
+  - name: 'Sprint Mod.esp'
     msg:
       - type: say
-        content: DO not use with latest FWE, it is already integrated.
-  - name: Auto Aim Fix v1.1.esp
+        content: 'DO not use with latest FWE, it is already integrated.'
+  - name: 'Auto Aim Fix v1.1.esp'
     msg:
       - type: say
-        content: DO not use with latest FWE, it is already integrated.
-  - name: KHWeaponscanner.esp
+        content: 'DO not use with latest FWE, it is already integrated.'
+  - name: 'KHWeaponscanner.esp'
     msg:
       - type: say
-        content: DO not use with latest FWE, it is already integrated.
-  - name: Alternate Start - Roleplayers.esp
+        content: 'DO not use with latest FWE, it is already integrated.'
+  - name: 'Alternate Start - Roleplayers.esp'
     msg:
       - type: say
-        content: DO not use with latest FWE, it is already integrated.
-  - name: Selected Containers Respawn.esp
+        content: 'DO not use with latest FWE, it is already integrated.'
+  - name: 'Selected Containers Respawn.esp'
     msg:
       - type: say
-        content: DO not use with latest FWE, it is already integrated.
-  - name: EVE - RH Ironsights Patch.esp
+        content: 'DO not use with latest FWE, it is already integrated.'
+  - name: 'EVE - RH Ironsights Patch.esp'
     tag:
       - Graphics
-  - name: PAL - MERGED.esp
+  - name: 'PAL - MERGED.esp'
     inc:
-      - PAL - BASE File.esp
-  - name: PAL - BASE File.esp
+      - 'PAL - BASE File.esp'
+  - name: 'PAL - BASE File.esp'
     inc:
-      - PAL - MERGED.esp
-  - name: GalaxyNewsRadioFix[N].esp
+      - 'PAL - MERGED.esp'
+  - name: 'GalaxyNewsRadioFix[N].esp'
     inc:
-      - GalaxyNewsRadio100[M].esp
-      - GalaxyNewsRadio80[M].esp
-      - GalaxyNewsRadio60[M].esp
-      - GalaxyNewsRadio40[M].esp
-      - GalaxyNewsRadio20[M].esp
-      - GalaxyNewsRadioFix[S].esp
-  - name: GalaxyNewsRadioFix[S].esp
+      - 'GalaxyNewsRadio100[M].esp'
+      - 'GalaxyNewsRadio80[M].esp'
+      - 'GalaxyNewsRadio60[M].esp'
+      - 'GalaxyNewsRadio40[M].esp'
+      - 'GalaxyNewsRadio20[M].esp'
+      - 'GalaxyNewsRadioFix[S].esp'
+  - name: 'GalaxyNewsRadioFix[S].esp'
     inc:
-      - GalaxyNewsRadio100[M].esp
-      - GalaxyNewsRadio80[M].esp
-      - GalaxyNewsRadio60[M].esp
-      - GalaxyNewsRadio40[M].esp
-      - GalaxyNewsRadio20[M].esp
-      - GalaxyNewsRadioFix[N].esp
-  - name: GalaxyNewsRadio100[M].esp
+      - 'GalaxyNewsRadio100[M].esp'
+      - 'GalaxyNewsRadio80[M].esp'
+      - 'GalaxyNewsRadio60[M].esp'
+      - 'GalaxyNewsRadio40[M].esp'
+      - 'GalaxyNewsRadio20[M].esp'
+      - 'GalaxyNewsRadioFix[N].esp'
+  - name: 'GalaxyNewsRadio100[M].esp'
     inc:
-      - GalaxyNewsRadio80[M].esp
-      - GalaxyNewsRadio60[M].esp
-      - GalaxyNewsRadio40[M].esp
-      - GalaxyNewsRadio20[M].esp
-      - GalaxyNewsRadioFix[N].esp
-      - GalaxyNewsRadioFix[S].esp
-  - name: GalaxyNewsRadio80[M].esp
+      - 'GalaxyNewsRadio80[M].esp'
+      - 'GalaxyNewsRadio60[M].esp'
+      - 'GalaxyNewsRadio40[M].esp'
+      - 'GalaxyNewsRadio20[M].esp'
+      - 'GalaxyNewsRadioFix[N].esp'
+      - 'GalaxyNewsRadioFix[S].esp'
+  - name: 'GalaxyNewsRadio80[M].esp'
     inc:
-      - GalaxyNewsRadio100[M].esp
-      - GalaxyNewsRadio60[M].esp
-      - GalaxyNewsRadio40[M].esp
-      - GalaxyNewsRadio20[M].esp
-      - GalaxyNewsRadioFix[N].esp
-      - GalaxyNewsRadioFix[S].esp
-  - name: GalaxyNewsRadio60[M].esp
+      - 'GalaxyNewsRadio100[M].esp'
+      - 'GalaxyNewsRadio60[M].esp'
+      - 'GalaxyNewsRadio40[M].esp'
+      - 'GalaxyNewsRadio20[M].esp'
+      - 'GalaxyNewsRadioFix[N].esp'
+      - 'GalaxyNewsRadioFix[S].esp'
+  - name: 'GalaxyNewsRadio60[M].esp'
     inc:
-      - GalaxyNewsRadio100[M].esp
-      - GalaxyNewsRadio80[M].esp
-      - GalaxyNewsRadio40[M].esp
-      - GalaxyNewsRadio20[M].esp
-      - GalaxyNewsRadioFix[N].esp
-      - GalaxyNewsRadioFix[S].esp
-  - name: GalaxyNewsRadio40[M].esp
+      - 'GalaxyNewsRadio100[M].esp'
+      - 'GalaxyNewsRadio80[M].esp'
+      - 'GalaxyNewsRadio40[M].esp'
+      - 'GalaxyNewsRadio20[M].esp'
+      - 'GalaxyNewsRadioFix[N].esp'
+      - 'GalaxyNewsRadioFix[S].esp'
+  - name: 'GalaxyNewsRadio40[M].esp'
     inc:
-      - GalaxyNewsRadio100[M].esp
-      - GalaxyNewsRadio80[M].esp
-      - GalaxyNewsRadio60[M].esp
-      - GalaxyNewsRadio20[M].esp
-      - GalaxyNewsRadioFix[N].esp
-      - GalaxyNewsRadioFix[S].esp
-  - name: GalaxyNewsRadio20[M].esp
+      - 'GalaxyNewsRadio100[M].esp'
+      - 'GalaxyNewsRadio80[M].esp'
+      - 'GalaxyNewsRadio60[M].esp'
+      - 'GalaxyNewsRadio20[M].esp'
+      - 'GalaxyNewsRadioFix[N].esp'
+      - 'GalaxyNewsRadioFix[S].esp'
+  - name: 'GalaxyNewsRadio20[M].esp'
     inc:
-      - GalaxyNewsRadio100[M].esp
-      - GalaxyNewsRadio80[M].esp
-      - GalaxyNewsRadio60[M].esp
-      - GalaxyNewsRadio40[M].esp
-      - GalaxyNewsRadioFix[N].esp
-      - GalaxyNewsRadioFix[S].esp
-  - name: ReneersRadioMod.esp
+      - 'GalaxyNewsRadio100[M].esp'
+      - 'GalaxyNewsRadio80[M].esp'
+      - 'GalaxyNewsRadio60[M].esp'
+      - 'GalaxyNewsRadio40[M].esp'
+      - 'GalaxyNewsRadioFix[N].esp'
+      - 'GalaxyNewsRadioFix[S].esp'
+  - name: 'ReneersRadioMod.esp'
     msg:
       - type: say
-        content: Do not use with latest FOOK2, it is already integrated.
+        content: 'Do not use with latest FOOK2, it is already integrated.'
     tag:
       - Scripts
-  - name: RadioHotkey.esp
+  - name: 'RadioHotkey.esp'
     msg:
       - type: say
-        content: Load RadioHotkey after all other radio mods
-  - name: RadioHotkey_RadioBluesAddon.esp
+        content: 'Load RadioHotkey after all other radio mods'
+  - name: 'RadioHotkey_RadioBluesAddon.esp'
     msg:
       - type: say
-        content: Load RadioHotkey after all other radio mods
-  - name: Despicable Dashwood v2.esp
+        content: 'Load RadioHotkey after all other radio mods'
+  - name: 'Despicable Dashwood v2.esp'
     tag:
       - Actors.ACBS
       - Invent
-  - name: HeirApparent.esp
+  - name: 'HeirApparent.esp'
     tag:
       - Scripts
-  - name: IntoTheDeepWoods.esp
+  - name: 'IntoTheDeepWoods.esp'
     tag:
       - Scripts
-  - name: Lawbringer Boutnies Ver1.1.esp
+  - name: 'Lawbringer Boutnies Ver1.1.esp'
     tag:
       - Invent
-  - name: Lobotomized! 400.esp
+  - name: 'Lobotomized! 400.esp'
     msg:
       - type: say
-        content: Only use one Lobotomized! plugin at once
-        condition: file("Lobotomized! 300.esp") or file("Lobotomized! 200.esp") or file("Lobotomized! 100.esp")
-  - name: Lobotomized! 300.esp
+        content: 'Only use one Lobotomized! plugin at once'
+        condition: 'file("Lobotomized! 300.esp") or file("Lobotomized! 200.esp") or file("Lobotomized! 100.esp")'
+  - name: 'Lobotomized! 300.esp'
     msg:
       - type: say
-        content: Only use one Lobotomized! plugin at once
-        condition: file("Lobotomized! 400.esp") or file("Lobotomized! 200.esp") or file("Lobotomized! 100.esp")
-  - name: Lobotomized! 200.esp
+        content: 'Only use one Lobotomized! plugin at once'
+        condition: 'file("Lobotomized! 400.esp") or file("Lobotomized! 200.esp") or file("Lobotomized! 100.esp")'
+  - name: 'Lobotomized! 200.esp'
     msg:
       - type: say
-        content: Only use one Lobotomized! plugin at once
-        condition: file("Lobotomized! 400.esp") or file("Lobotomized! 300.esp") or file("Lobotomized! 100.esp")
-  - name: Lobotomized! 100.esp
+        content: 'Only use one Lobotomized! plugin at once'
+        condition: 'file("Lobotomized! 400.esp") or file("Lobotomized! 300.esp") or file("Lobotomized! 100.esp")'
+  - name: 'Lobotomized! 100.esp'
     msg:
       - type: say
-        content: Only use one Lobotomized! plugin at once
-        condition: file("Lobotomized! 400.esp") or file("Lobotomized! 300.esp") or file("Lobotomized! 200.esp")
-  - name: NotSoFast.esp
+        content: 'Only use one Lobotomized! plugin at once'
+        condition: 'file("Lobotomized! 400.esp") or file("Lobotomized! 300.esp") or file("Lobotomized! 200.esp")'
+  - name: 'NotSoFast.esp'
     tag:
       - Scripts
-  - name: PLweightadjust.esp
+  - name: 'PLweightadjust.esp'
     tag:
       - Invent
       - Scripts
       - Stats
-  - name: RatTrapRadio.esp
+  - name: 'RatTrapRadio.esp'
     inc:
-      - Regulators_Overhaul.esp
-      - Regulators _Overhaul_lvl7.esp
-      - Regulators _Overhaul_lvl2.esp
-  - name: Regulators_Overhaul.esp
+      - 'Regulators_Overhaul.esp'
+      - 'Regulators _Overhaul_lvl7.esp'
+      - 'Regulators _Overhaul_lvl2.esp'
+  - name: 'Regulators_Overhaul.esp'
     inc:
-      - Regulators.esp
-      - Regulators _Overhaul_lvl7.esp
-      - Regulators _Overhaul_lvl2.esp
-  - name: Regulators _Overhaul_lvl7.esp
+      - 'Regulators.esp'
+      - 'Regulators _Overhaul_lvl7.esp'
+      - 'Regulators _Overhaul_lvl2.esp'
+  - name: 'Regulators _Overhaul_lvl7.esp'
     inc:
-      - Regulators_Overhaul.esp
-      - Regulators.esp
-      - Regulators _Overhaul_lvl2.esp
-  - name: Regulators _Overhaul_lvl2.esp
+      - 'Regulators_Overhaul.esp'
+      - 'Regulators.esp'
+      - 'Regulators _Overhaul_lvl2.esp'
+  - name: 'Regulators _Overhaul_lvl2.esp'
     inc:
-      - Regulators_Overhaul.esp
-      - Regulators _Overhaul_lvl7.esp
-      - Regulators.esp
-  - name: The Mantis Imperative - Mantis.esp
+      - 'Regulators_Overhaul.esp'
+      - 'Regulators _Overhaul_lvl7.esp'
+      - 'Regulators.esp'
+  - name: 'The Mantis Imperative - Mantis.esp'
     tag:
       - Relev
-  - name: Action for men v3.0.esp
+  - name: 'Action for men v3.0.esp'
     tag:
       - Invent
-  - name: BoSTeslaEarly.esp
+  - name: 'BoSTeslaEarly.esp'
     inc:
-      - BoSTesla.esp
-  - name: BoSTesla.esp
+      - 'BoSTesla.esp'
+  - name: 'BoSTesla.esp'
     inc:
-      - BoSTeslaEarly.esp
-  - name: FF_DestructibleRadios.esp
+      - 'BoSTeslaEarly.esp'
+  - name: 'FF_DestructibleRadios.esp'
     tag:
       - Destructible
-  - name: Angry Scientists.esp
+  - name: 'Angry Scientists.esp'
     tag:
       - Invent
-  - name: ScrapMetal.esp
+  - name: 'ScrapMetal.esp'
     inc:
-      - ScrapMetal_H.esp
-      - ScrapMetal_Q.esp
+      - 'ScrapMetal_H.esp'
+      - 'ScrapMetal_Q.esp'
     msg:
       - type: say
-        content: "Old, upgrade to 'CreateScrapMetal.esp'."
+        content: '"Old, upgrade to ''CreateScrapMetal.esp''."'
     tag:
       - Invent
-  - name: ScrapMetal_H.esp
+  - name: 'ScrapMetal_H.esp'
     inc:
-      - ScrapMetal.esp
-      - ScrapMetal_Q.esp
+      - 'ScrapMetal.esp'
+      - 'ScrapMetal_Q.esp'
     msg:
       - type: say
-        content: "Old, upgrade to 'CreateScrapMetal.esp'."
+        content: '"Old, upgrade to ''CreateScrapMetal.esp''."'
     tag:
       - Invent
-  - name: ScrapMetal_Q.esp
+  - name: 'ScrapMetal_Q.esp'
     inc:
-      - ScrapMetal.esp
-      - ScrapMetal_H.esp
+      - 'ScrapMetal.esp'
+      - 'ScrapMetal_H.esp'
     msg:
       - type: say
-        content: "Old, upgrade to 'CreateScrapMetal.esp'."
+        content: '"Old, upgrade to ''CreateScrapMetal.esp''."'
     tag:
       - Invent
-  - name: CreateScrapMetal.esp
+  - name: 'CreateScrapMetal.esp'
     tag:
       - Invent
-  - name: MrLabTechnician - FWE.esp
+  - name: 'MrLabTechnician - FWE.esp'
     tag:
       - Deflst
       - Delev
-  - name: Placeable Lights Basic Edition v2.1.esp
+  - name: 'Placeable Lights Basic Edition v2.1.esp'
     tag:
       - Actors.AIData
       - Relev
-  - name: Placable Lights v2.1.esp
+  - name: 'Placable Lights v2.1.esp'
     tag:
       - Actors.AIData
       - Relev
-  - name: SelfSurgeryKit.esp
+  - name: 'SelfSurgeryKit.esp'
     tag:
       - Relev
-  - name: RobCo Universal Battery Charger Kit.esp
+  - name: 'RobCo Universal Battery Charger Kit.esp'
     inc:
-      - RobCo Universal Battery Charger Kit - Zeta.esp
-  - name: RobCo Universal Battery Charger Kit - Zeta.esp
+      - 'RobCo Universal Battery Charger Kit - Zeta.esp'
+  - name: 'RobCo Universal Battery Charger Kit - Zeta.esp'
     inc:
-      - RobCo Universal Battery Charger Kit.esp
-  - name: DALCO Inventory Sorter - Sack of Holding.esp
+      - 'RobCo Universal Battery Charger Kit.esp'
+  - name: 'DALCO Inventory Sorter - Sack of Holding.esp'
     tag:
       - Names
       - NoMerge
-  - name: Chems and Meds Re-Textures Pack.esp
+  - name: 'Chems and Meds Re-Textures Pack.esp'
     tag:
       - Graphics
-  - name: MAXdog.esp
+  - name: 'MAXdog.esp'
     tag:
       - Graphics
-  - name: Megaton Sorter.esp
+  - name: 'Megaton Sorter.esp'
     req: [ *FOSE ]
-  - name: D.C. Confidential.esp
+  - name: 'D.C. Confidential.esp'
     msg:
       - type: say
-        content: "Choose only one 'D.C. Confidential' ESP."
-        condition: file("D.C. Confidential with Glow.esp")
-  - name: D.C. Confidential with Glow.esp
+        content: '"Choose only one ''D.C. Confidential'' ESP."'
+        condition: 'file("D.C. Confidential with Glow.esp")'
+  - name: 'D.C. Confidential with Glow.esp'
     msg:
       - type: say
-        content: "Choose only one 'D.C. Confidential' ESP."
-        condition: file("D.C. Confidential.esp")
-  - name: ShadySands.esp
+        content: '"Choose only one ''D.C. Confidential'' ESP."'
+        condition: 'file("D.C. Confidential.esp")'
+  - name: 'ShadySands.esp'
     tag:
       - Factions
       - Relations
-  - name: SuperSledgeBeatdown.esp
+  - name: 'SuperSledgeBeatdown.esp'
     tag:
       - Scripts
-  - name: BA_InventorySorterAnchorage.esp
+  - name: 'BA_InventorySorterAnchorage.esp'
     tag:
       - Names
-  - name: BA_InventorySorterBrokenSteel.esp
+  - name: 'BA_InventorySorterBrokenSteel.esp'
     tag:
       - Names
-  - name: BA_InventorySorterGOTY.esp
+  - name: 'BA_InventorySorterGOTY.esp'
     tag:
       - Names
-  - name: BA_InventorySorterPointLookout.esp
+  - name: 'BA_InventorySorterPointLookout.esp'
     tag:
       - Names
-  - name: BA_InventorySorterThePitt.esp
+  - name: 'BA_InventorySorterThePitt.esp'
     tag:
       - Names
-  - name: BA_InventorySorterZeta.esp
+  - name: 'BA_InventorySorterZeta.esp'
     tag:
       - Names
-  - name: AmmoSorter - Start.esp
+  - name: 'AmmoSorter - Start.esp'
     tag:
       - Names
-  - name: AmmoSorter - End.esp
+  - name: 'AmmoSorter - End.esp'
     tag:
       - Names
-  - name: Scenic_Loading_Background.esp
+  - name: 'Scenic_Loading_Background.esp'
     tag:
       - Graphics
-  - name: Scenic_Loading_Background_PointofLookoutDLC.esp
+  - name: 'Scenic_Loading_Background_PointofLookoutDLC.esp'
     tag:
       - Graphics
-  - name: Scenic_Loading_Background_OperationAnchorageDLC.esp
+  - name: 'Scenic_Loading_Background_OperationAnchorageDLC.esp'
     tag:
       - Graphics
-  - name: loadingsc.esp
+  - name: 'loadingsc.esp'
     tag:
       - Graphics
-  - name: Destruction - Main.esp
+  - name: 'Destruction - Main.esp'
     tag:
       - Destructible
       - Graphics
       - Scripts
-  - name: Destruction - DLC.esp
+  - name: 'Destruction - DLC.esp'
     tag:
       - Destructible
       - Scripts
-  - name: Classic Fallout Weapons BETA.esp
+  - name: 'Classic Fallout Weapons BETA.esp'
     tag:
       - Invent
       - Relev
-  - name: BusworldV1.05.esp
+  - name: 'BusworldV1.05.esp'
     msg:
       - type: say
-        content: Possible cause of CTDs, try disabling to test for improvments, or try BusworldV1.05noexpl.esp
-  - name: FPS Grenade Hotkey.esp
+        content: 'Possible cause of CTDs, try disabling to test for improvments, or try BusworldV1.05noexpl.esp'
+  - name: 'FPS Grenade Hotkey.esp'
     msg:
       - type: say
-        content: Do not use with latest FOOK2/FWE, it is already integrated.
-  - name: FPS Grenade Hotkey - Zeta addon.esp
+        content: 'Do not use with latest FOOK2/FWE, it is already integrated.'
+  - name: 'FPS Grenade Hotkey - Zeta addon.esp'
     msg:
       - type: say
-        content: Do not use with latest FOOK2/FWE, it is already integrated.
-  - name: Mannequin.esp
+        content: 'Do not use with latest FOOK2/FWE, it is already integrated.'
+  - name: 'Mannequin.esp'
     tag:
       - Actors.AIData
-  - name: BombayTradingCo.esp
+  - name: 'BombayTradingCo.esp'
     tag:
       - Actors.AIPackages
       - Invent
       - Names
       - Scripts
       - Stats
-  - name: CarvanTrader.esp
+  - name: 'CarvanTrader.esp'
     tag:
       - Actors.ACBS
       - Actors.Stats
@@ -907,170 +901,170 @@ plugins:
       - R. Attributes-M
       - R.Skills
       - Scripts
-  - name: Clothed American Soldiers.esp
+  - name: 'Clothed American Soldiers.esp'
     tag:
       - Invent
-  - name: Clothed Sarah Lyons.esp
+  - name: 'Clothed Sarah Lyons.esp'
     tag:
       - Invent
-  - name: Clothed Sarah Lyons - Sleepwear.esp
+  - name: 'Clothed Sarah Lyons - Sleepwear.esp'
     tag:
       - Invent
-  - name: Confessor Cromwell has a Break_EV.esp
+  - name: 'Confessor Cromwell has a Break_EV.esp'
     tag:
       - Actors.AIPackages
-  - name: CrowdedCities_v2.esp
+  - name: 'CrowdedCities_v2.esp'
     inc:
-      - CrowdedCities_v2_lessNPCs.esp
-  - name: CrowdedCities_v2_lessNPCs.esp
+      - 'CrowdedCities_v2_lessNPCs.esp'
+  - name: 'CrowdedCities_v2_lessNPCs.esp'
     inc:
-      - CrowdedCities_v2.esp
-  - name: Essential Caravan Merchants.esp
+      - 'CrowdedCities_v2.esp'
+  - name: 'Essential Caravan Merchants.esp'
     tag:
       - Actors.ACBS
-  - name: Essential_Zeta_Allies.esp
+  - name: 'Essential_Zeta_Allies.esp'
     tag:
       - Actors.ACBS
-  - name: Named Wastelanders.esp
+  - name: 'Named Wastelanders.esp'
     tag:
       - Names
-  - name: Named Wasteland.esp
+  - name: 'Named Wasteland.esp'
     tag:
       - Names
-  - name: MTC Wasteland Travellers (Optional)- Crowded Cities less NPCs.esp
+  - name: 'MTC Wasteland Travellers (Optional)- Crowded Cities less NPCs.esp'
     inc:
-      - MTC Wasteland Travellers (Optional)- Crowded Cities.esp
-  - name: MTC Wasteland Travellers (Optional)- Crowded Cities.esp
+      - 'MTC Wasteland Travellers (Optional)- Crowded Cities.esp'
+  - name: 'MTC Wasteland Travellers (Optional)- Crowded Cities.esp'
     inc:
-      - MTC Wasteland Travellers (Optional)- Crowded Cities less NPCs.esp
-  - name: Outcast Scribes03.esp
+      - 'MTC Wasteland Travellers (Optional)- Crowded Cities less NPCs.esp'
+  - name: 'Outcast Scribes03.esp'
     inc:
-      - OutcastCasdinArmorFix.esp
-  - name: royphilipsevil.esp
+      - 'OutcastCasdinArmorFix.esp'
+  - name: 'royphilipsevil.esp'
     tag:
       - Actors.ACBS
       - Actors.AIData
-  - name: royphilipsveryevil.esp
+  - name: 'royphilipsveryevil.esp'
     tag:
       - Actors.ACBS
       - Actors.AIData
-  - name: royphilipsveryevilwmask.esp
+  - name: 'royphilipsveryevilwmask.esp'
     tag:
       - Actors.ACBS
       - Actors.AIData
-  - name: royphilipsevilwmask.esp
+  - name: 'royphilipsevilwmask.esp'
     tag:
       - Actors.ACBS
       - Actors.AIData
-  - name: Wasteland Gigolo.esp
+  - name: 'Wasteland Gigolo.esp'
     tag:
       - Scripts
-  - name: Arefu Player House.esp
+  - name: 'Arefu Player House.esp'
     inc:
-      - ArefuExpandedByAzar.esm
-  - name: DCStreet.esp
+      - 'ArefuExpandedByAzar.esm'
+  - name: 'DCStreet.esp'
     msg:
       - type: say
-        content: Only use DCStreet.esp or DCStreet - BS.esp - NOT Both
-        condition: file("DCStreet - BS.esp")
-  - name: DCStreet - BS.esp
+        content: 'Only use DCStreet.esp or DCStreet - BS.esp - NOT Both'
+        condition: 'file("DCStreet - BS.esp")'
+  - name: 'DCStreet - BS.esp'
     msg:
       - type: say
-        content: Only use DCStreet.esp or DCStreet - BS.esp - NOT Both
-        condition: file("DCStreet.esp")
-  - name: Megaton Walkway.esp
+        content: 'Only use DCStreet.esp or DCStreet - BS.esp - NOT Both'
+        condition: 'file("DCStreet.esp")'
+  - name: 'Megaton Walkway.esp'
     msg:
       - type: say
-        content: Obsolete upgrade to Megaton Walkway 1.01.esp
-  - name: megaton_lighting.esp
+        content: 'Obsolete upgrade to Megaton Walkway 1.01.esp'
+  - name: 'megaton_lighting.esp'
     tag:
       - C.Light
-  - name: MegatonLights.esp
+  - name: 'MegatonLights.esp'
     tag:
       - C.Light
-  - name: megalight.esp
+  - name: 'megalight.esp'
     msg:
       - type: say
-        content: Do not use with latest FOOK2, it is already integrated.
-  - name: Towers Hill.esp
+        content: 'Do not use with latest FOOK2, it is already integrated.'
+  - name: 'Towers Hill.esp'
     tag:
       - Invent
-  - name: DALCO Inventory Sorter - Underground Hideout (Fallout 3 & All DLCs).esp
+  - name: 'DALCO Inventory Sorter - Underground Hideout (Fallout 3 & All DLCs).esp'
     tag:
       - Names
       - NoMerge
-  - name: Vault 89 (player home) V1-35.esp
+  - name: 'Vault 89 (player home) V1-35.esp'
     inc:
-      - FNNSys.esm
+      - 'FNNSys.esm'
     tag:
       - Scripts
-  - name: FOOK2 - Main.esp
+  - name: 'FOOK2 - Main.esp'
     tag:
       - Delev
       - Relev
-  - name: FOOK2 - [EVE] Energy Visuals Enhanced.esp
+  - name: 'FOOK2 - [EVE] Energy Visuals Enhanced.esp'
     msg:
       - type: error
-        content: Remove if using FOOK2 1.1 and above
-        condition: file("FOOK2 - Main.esm")
-  - name: FOOK2 - Main [Hotfix].esp
+        content: 'Remove if using FOOK2 1.1 and above'
+        condition: 'file("FOOK2 - Main.esm")'
+  - name: 'FOOK2 - Main [Hotfix].esp'
     msg:
       - type: error
-        content: Please update to FOOK2 1.1 Open Beta 2
-        condition: file("FOOK2 - Main.esm")
-  - name: FOOK2 - DIK [Hotfix].esp
+        content: 'Please update to FOOK2 1.1 Open Beta 2'
+        condition: 'file("FOOK2 - Main.esm")'
+  - name: 'FOOK2 - DIK [Hotfix].esp'
     msg:
       - type: error
-        content: Please update to FOOK2 1.1 Open Beta 2
-        condition: file("FOOK2 - Main.esm")
-  - name: MyFOOK2 - Color Tranquility Lane.esp
+        content: 'Please update to FOOK2 1.1 Open Beta 2'
+        condition: 'file("FOOK2 - Main.esm")'
+  - name: 'MyFOOK2 - Color Tranquility Lane.esp'
     msg:
       - type: error
-        content: Remove if using FOOK2 1.1 and above
-        condition: file("FOOK2 - Main.esm")
-  - name: MyFOOK2 - No Nightvision on Power Helmets.esp
+        content: 'Remove if using FOOK2 1.1 and above'
+        condition: 'file("FOOK2 - Main.esm")'
+  - name: 'MyFOOK2 - No Nightvision on Power Helmets.esp'
     msg:
       - type: error
-        content: Remove if using FOOK2 1.1 and above
-        condition: file("FOOK2 - Main.esm")
-  - name: MyFOOK2 - No RAPE Victims.esp
+        content: 'Remove if using FOOK2 1.1 and above'
+        condition: 'file("FOOK2 - Main.esm")'
+  - name: 'MyFOOK2 - No RAPE Victims.esp'
     msg:
       - type: error
-        content: Remove if using FOOK2 1.1 and above
-        condition: file("FOOK2 - Main.esm")
-  - name: MyFOOK2 - S.H.A.D.E.esp
+        content: 'Remove if using FOOK2 1.1 and above'
+        condition: 'file("FOOK2 - Main.esm")'
+  - name: 'MyFOOK2 - S.H.A.D.E.esp'
     msg:
       - type: error
-        content: Remove if using FOOK2 1.1 and above
-        condition: file("FOOK2 - Main.esm")
-  - name: MyFOOK2 - Black & White Tranquility Lane.esp
+        content: 'Remove if using FOOK2 1.1 and above'
+        condition: 'file("FOOK2 - Main.esm")'
+  - name: 'MyFOOK2 - Black & White Tranquility Lane.esp'
     msg:
       - type: error
-        content: Remove if using FOOK2 1.1 and above
-        condition: file("FOOK2 - Main.esm")
-  - name: FOOK2 - [DESTRUCTION] Main.esp
+        content: 'Remove if using FOOK2 1.1 and above'
+        condition: 'file("FOOK2 - Main.esm")'
+  - name: 'FOOK2 - [DESTRUCTION] Main.esp'
     tag:
       - Destructible
       - Scripts
-  - name: FOOK2 - [DESTRUCTION] DIK.esp
+  - name: 'FOOK2 - [DESTRUCTION] DIK.esp'
     tag:
       - Destructible
       - Scripts
-  - name: FOOK2 - [DESTRUCTION] Mothership Zeta.esp
+  - name: 'FOOK2 - [DESTRUCTION] Mothership Zeta.esp'
     tag:
       - Destructible
       - Scripts
-  - name: FPS Grenade Hotkey - FOOK2.esp
+  - name: 'FPS Grenade Hotkey - FOOK2.esp'
     msg:
       - type: error
-        content: Remove if using FOOK2 1.1 and above
-        condition: file("FOOK2 - Main.esm")
-  - name: FPS Grenade Hotkey - FOOK2 DIK.esp
+        content: 'Remove if using FOOK2 1.1 and above'
+        condition: 'file("FOOK2 - Main.esm")'
+  - name: 'FPS Grenade Hotkey - FOOK2 DIK.esp'
     msg:
       - type: error
-        content: Remove if using FOOK2 1.1 and above
-        condition: file("FOOK2 - Main.esm")
-  - name: Apocalypse Armory.esp
+        content: 'Remove if using FOOK2 1.1 and above'
+        condition: 'file("FOOK2 - Main.esm")'
+  - name: 'Apocalypse Armory.esp'
     tag:
       - Delev
       - Graphics
@@ -1079,41 +1073,41 @@ plugins:
       - Relev
       - Sound
       - Stats
-  - name: Apocalypse Armory - CALIBR.esp
+  - name: 'Apocalypse Armory - CALIBR.esp'
     tag:
       - Delev
       - Relev
-  - name: Apocalypse Armory - xCALIBR.esp
+  - name: 'Apocalypse Armory - xCALIBR.esp'
     tag:
       - Deflst
       - Names
       - Stats
-  - name: Apocalypse Armory Preview - Grenades.esp
+  - name: 'Apocalypse Armory Preview - Grenades.esp'
     msg:
       - type: say
-        content: Included in Apocalypse Armory
-        condition: file("Apocalypse Armory.esp")
-  - name: Apocalypse Armory - Grenade Hotkeys.esp
+        content: 'Included in Apocalypse Armory'
+        condition: 'file("Apocalypse Armory.esp")'
+  - name: 'Apocalypse Armory - Grenade Hotkeys.esp'
     inc:
-      - Apocalypse Armory - Grenade Hotkeys for DLC.esp
-  - name: Apocalypse Armory - Grenade Hotkeys for DLC.esp
+      - 'Apocalypse Armory - Grenade Hotkeys for DLC.esp'
+  - name: 'Apocalypse Armory - Grenade Hotkeys for DLC.esp'
     inc:
-      - Apocalypse Armory - Grenade Hotkeys.esp
-  - name: AA - FWE + DMG Replacement.esp
+      - 'Apocalypse Armory - Grenade Hotkeys.esp'
+  - name: 'AA - FWE + DMG Replacement.esp'
     inc:
-      - Apocalypse Armory - Grenade Hotkeys.esp
-      - Apocalypse Armory + WMK.esp
-  - name: GSoS - FOOK2 Open Beta - Combat and Sneaking Overhaul.esp
+      - 'Apocalypse Armory - Grenade Hotkeys.esp'
+      - 'Apocalypse Armory + WMK.esp'
+  - name: 'GSoS - FOOK2 Open Beta - Combat and Sneaking Overhaul.esp'
     msg:
       - type: error
-        content: Old, please update to the latest version
-        condition: file("FOOK2 - Main.esm")
-  - name: GSoS - FOOK2 Open Beta - XP Tag Perks.esp
+        content: 'Old, please update to the latest version'
+        condition: 'file("FOOK2 - Main.esm")'
+  - name: 'GSoS - FOOK2 Open Beta - XP Tag Perks.esp'
     msg:
       - type: error
-        content: Old, please update to the latest version
-        condition: file("FOOK2 - Main.esm")
-  - name: FO3 Wanderers Edition - Main File.esp
+        content: 'Old, please update to the latest version'
+        condition: 'file("FOOK2 - Main.esm")'
+  - name: 'FO3 Wanderers Edition - Main File.esp'
     tag:
       - Actors.ACBS
       - Actors.AIData
@@ -1129,108 +1123,108 @@ plugins:
       - Relev
       - Scripts
       - Stats
-  - name: DALCO Inventory Sorter - FWE (Main File).esp
+  - name: 'DALCO Inventory Sorter - FWE (Main File).esp'
     tag:
       - Names
       - NoMerge
-  - name: FO3 Wanderers Edition - DLC Anchorage.esp
+  - name: 'FO3 Wanderers Edition - DLC Anchorage.esp'
     tag:
       - Deflst
-  - name: DALCO Inventory Sorter - FWE (Operation Anchorage).esp
+  - name: 'DALCO Inventory Sorter - FWE (Operation Anchorage).esp'
     tag:
       - Names
       - NoMerge
-  - name: DALCO Inventory Sorter - FWE (The Pitt).esp
+  - name: 'DALCO Inventory Sorter - FWE (The Pitt).esp'
     tag:
       - Names
       - NoMerge
-  - name: DALCO Inventory Sorter - FWE (Broken Steel).esp
+  - name: 'DALCO Inventory Sorter - FWE (Broken Steel).esp'
     tag:
       - Names
       - NoMerge
-  - name: FO3 Wanderers Edition - DLC Point Lookout.esp
+  - name: 'FO3 Wanderers Edition - DLC Point Lookout.esp'
     tag:
       - Delev
       - Relev
-  - name: DALCO Inventory Sorter - FWE (Point Lookout).esp
+  - name: 'DALCO Inventory Sorter - FWE (Point Lookout).esp'
     tag:
       - Names
       - NoMerge
-  - name: DALCO Inventory Sorter - FWE (Mothership Zeta).esp
+  - name: 'DALCO Inventory Sorter - FWE (Mothership Zeta).esp'
     tag:
       - Names
       - NoMerge
-  - name: DALCO Inventory Sorter - FWE (Alternate Travel).esp
+  - name: 'DALCO Inventory Sorter - FWE (Alternate Travel).esp'
     tag:
       - Names
       - NoMerge
-  - name: FO3 Wanderers Edition - Lvl 30 Balance.esp
+  - name: 'FO3 Wanderers Edition - Lvl 30 Balance.esp'
     inc:
-      - FO3 Wanderers Edition - Lvl 30 More Skills.esp
-  - name: FO3 Wanderers Edition - Lvl 30 More Skills.esp
+      - 'FO3 Wanderers Edition - Lvl 30 More Skills.esp'
+  - name: 'FO3 Wanderers Edition - Lvl 30 More Skills.esp'
     inc:
-      - FO3 Wanderers Edition - Lvl 30 Balance.esp
-  - name: FO3 Wanderers Edition - Followers Enhanced.esp
+      - 'FO3 Wanderers Edition - Lvl 30 Balance.esp'
+  - name: 'FO3 Wanderers Edition - Followers Enhanced.esp'
     inc:
-      - FO3 Wanderers Edition - Followers Enhanced (BrokenSteel).esp
+      - 'FO3 Wanderers Edition - Followers Enhanced (BrokenSteel).esp'
     tag:
       - Actors.ACBS
       - Actors.AIData
       - Actors.Stats
-  - name: DALCO Inventory Sorter - FWE (Followers Enh).esp
+  - name: 'DALCO Inventory Sorter - FWE (Followers Enh).esp'
     tag:
       - Names
       - NoMerge
-  - name: FO3 Wanderers Edition - Followers Enhanced (BrokenSteel).esp
+  - name: 'FO3 Wanderers Edition - Followers Enhanced (BrokenSteel).esp'
     inc:
-      - FO3 Wanderers Edition - Followers Enhanced.esp
+      - 'FO3 Wanderers Edition - Followers Enhanced.esp'
     tag:
       - Actors.ACBS
       - Actors.AIData
       - Actors.Stats
-  - name: DALCO Inventory Sorter - FWE (Followers Enh (BrS)).esp
+  - name: 'DALCO Inventory Sorter - FWE (Followers Enh (BrS)).esp'
     tag:
       - Names
       - NoMerge
-  - name: FO3 Wanderers Edition - Optional Free Play After MQ.esp
+  - name: 'FO3 Wanderers Edition - Optional Free Play After MQ.esp'
     inc:
-      - BrokenSteel.esm
-  - name: FO3 Wanderers Edition - Optional Free Play After Mainquest.esp
+      - 'BrokenSteel.esm'
+  - name: 'FO3 Wanderers Edition - Optional Free Play After Mainquest.esp'
     inc:
-      - BrokenSteel.esm
-  - name: FO3 Wanderers Edition - Optional No Fast Travel.esp
+      - 'BrokenSteel.esm'
+  - name: 'FO3 Wanderers Edition - Optional No Fast Travel.esp'
     inc:
-      - FO3 Wanderers Edition - Alternate Travel.esp
-  - name: FO3 Wanderers Edition - Optional Worn Weapons.esp
+      - 'FO3 Wanderers Edition - Alternate Travel.esp'
+  - name: 'FO3 Wanderers Edition - Optional Worn Weapons.esp'
     tag:
       - Delev
       - Relev
-  - name: FO3 Wanderers Edition - FOOK Support.esp
+  - name: 'FO3 Wanderers Edition - FOOK Support.esp'
     msg:
       - type: say
-        content: Check for updates; you may have the old version installed.
-  - name: DarNifiedUIF3_FWE.esp
+        content: 'Check for updates; you may have the old version installed.'
+  - name: 'DarNifiedUIF3_FWE.esp'
     msg:
       - type: say
-        content: Do not use with latest FWE, it is already integrated.
-  - name: FO3 Wanderers Edition - Project Beauty (HD Addition).esp
+        content: 'Do not use with latest FWE, it is already integrated.'
+  - name: 'FO3 Wanderers Edition - Project Beauty (HD Addition).esp'
     inc:
-      - Project Beauty.esp
-  - name: FO3 Wanderers Edition - Talon Loot Crash Fix.esp
+      - 'Project Beauty.esp'
+  - name: 'FO3 Wanderers Edition - Talon Loot Crash Fix.esp'
     tag:
       - Delev
       - Relev
-  - name: FWE_Overhaul Kit - Main.esp
+  - name: 'FWE_Overhaul Kit - Main.esp'
     inc:
-      - EVE.esm
-      - RH_IronSights_Basic_VanillaPlugin.esp
-      - WeaponModKits.esp
+      - 'EVE.esm'
+      - 'RH_IronSights_Basic_VanillaPlugin.esp'
+      - 'WeaponModKits.esp'
     msg:
       - type: say
-        content: Outdated. Update to latest version of FWE - Combat Overhaul
+        content: 'Outdated. Update to latest version of FWE - Combat Overhaul.'
       - type: warn
-        content: This mod requires resources from "http://fallout3.nexusmods.com/mods/6938 RH_IronSights", please see mod's readme.
-        condition: not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")
+        content: 'This mod requires resources from [RH_IronSights](http://fallout3.nexusmods.com/mods/6938), please see the mod''s readme.'
+        condition: 'not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")'
     tag:
       - Actors.ACBS
       - Deflst
@@ -1241,28 +1235,28 @@ plugins:
       - Relev
       - Sound
       - Stats
-  - name: FWE_Overhaul Kit - Core.esp
+  - name: ''FWE_Overhaul Kit - Core.esp''
     inc:
-      - EVE.esm
-      - RH_IronSights_Basic_VanillaPlugin.esp
-      - WeaponModKits.esp
+      - 'EVE.esm'
+      - 'RH_IronSights_Basic_VanillaPlugin.esp'
+      - 'WeaponModKits.esp'
     msg:
       - type: say
-        content: Outdated. Update to latest version of FWE - Combat Overhaul
+        content: 'Outdated. Update to latest version of FWE - Combat Overhaul.'
       - type: warn
-        content: This mod requires resources from "http://fallout3.nexusmods.com/mods/6938 RH_IronSights", please see mod's readme.
-        condition: not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")
-  - name: FWE_Overhaul Kit - Equipment .esp
+        content: 'This mod requires resources from [RH_IronSights](http://fallout3.nexusmods.com/mods/6938), please see the mod''s readme.'
+        condition: 'not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")'
+  - name: ''FWE_Overhaul Kit - Equipment .esp''
     inc:
-      - EVE.esm
-      - RH_IronSights_Basic_VanillaPlugin.esp
-      - WeaponModKits.esp
+      - 'EVE.esm'
+      - 'RH_IronSights_Basic_VanillaPlugin.esp'
+      - 'WeaponModKits.esp'
     msg:
       - type: say
-        content: Outdated. Update to latest version of FWE - Combat Overhaul
+        content: 'Outdated. Update to latest version of FWE - Combat Overhaul.'
       - type: warn
-        content: This mod requires resources from "http://fallout3.nexusmods.com/mods/6938 RH_IronSights", please see mod's readme.
-        condition: not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")
+        content: 'This mod requires resources from [RH_IronSights](http://fallout3.nexusmods.com/mods/6938), please see the mod''s readme.'
+        condition: 'not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")'
     tag:
       - Actors.ACBS
       - Deflst
@@ -1274,15 +1268,15 @@ plugins:
       - Scripts
       - Sound
       - Stats
-  - name: FWE - Combat Overhaul_Equipment.esp
+  - name: 'FWE - Combat Overhaul_Equipment.esp'
     inc:
-      - EVE.esm
-      - RH_IronSights_Basic_VanillaPlugin.esp
-      - WeaponModKits.esp
+      - 'EVE.esm'
+      - 'RH_IronSights_Basic_VanillaPlugin.esp'
+      - 'WeaponModKits.esp'
     msg:
       - type: warn
-        content: This mod requires resources from "http://fallout3.nexusmods.com/mods/6938 RH_IronSights", please see mod's readme.
-        condition: not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")
+        content: 'This mod requires resources from [RH_IronSights](http://fallout3.nexusmods.com/mods/6938), please see the mod''s readme.'
+        condition: 'not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")'
     tag:
       - Actors.ACBS
       - Deflst
@@ -1294,201 +1288,201 @@ plugins:
       - Scripts
       - Sound
       - Stats
-  - name: Refurbishes [ALL].esp
+  - name: 'Refurbishes [ALL].esp'
     msg:
       - type: say
-        content: Do not use with latest FOOK2, it is already integrated.
-  - name: Refurbish [OA].esp
+        content: 'Do not use with latest FOOK2, it is already integrated.'
+  - name: 'Refurbish [OA].esp'
     inc:
-      - Refurbishes [ALL].esp
+      - 'Refurbishes [ALL].esp'
     msg:
       - type: say
-        content: Do not use with latest FOOK2, it is already integrated.
-  - name: Refurbish [OA] - FWE.esp
+        content: 'Do not use with latest FOOK2, it is already integrated.'
+  - name: 'Refurbish [OA] - FWE.esp'
     inc:
-      - Refurbishes [ALL].esp
-  - name: Refurbish [TP].esp
+      - 'Refurbishes [ALL].esp'
+  - name: 'Refurbish [TP].esp'
     inc:
-      - Refurbishes [ALL].esp
+      - 'Refurbishes [ALL].esp'
     msg:
       - type: say
-        content: Do not use with latest FOOK2, it is already integrated.
-  - name: Refurbish [BS].esp
+        content: 'Do not use with latest FOOK2, it is already integrated.'
+  - name: 'Refurbish [BS].esp'
     inc:
-      - Refurbishes [ALL].esp
+      - 'Refurbishes [ALL].esp'
     msg:
       - type: say
-        content: Do not use with latest FOOK2, it is already integrated.
-  - name: Refurbish [PL].esp
+        content: 'Do not use with latest FOOK2, it is already integrated.'
+  - name: 'Refurbish [PL].esp'
     inc:
-      - Refurbishes [ALL].esp
+      - 'Refurbishes [ALL].esp'
     msg:
       - type: say
-        content: Do not use with latest FOOK2, it is already integrated.
-  - name: Refurbish [MZ].esp
+        content: 'Do not use with latest FOOK2, it is already integrated.'
+  - name: 'Refurbish [MZ].esp'
     inc:
-      - Refurbishes [ALL].esp
+      - 'Refurbishes [ALL].esp'
     msg:
       - type: say
-        content: Do not use with latest FOOK2, it is already integrated.
-  - name: WeaponModKits.esp
+        content: 'Do not use with latest FOOK2, it is already integrated.'
+  - name: 'WeaponModKits.esp'
     tag:
       - Actors.AIData
       - Delev
       - Invent
       - Names
       - Relev
-  - name: DALCO Inventory Sorter - Weapon Mod Kits (Base).esp
+  - name: 'DALCO Inventory Sorter - Weapon Mod Kits (Base).esp'
     tag:
       - Names
       - NoMerge
-  - name: WeaponModKits - FWE Master Release.esp
+  - name: 'WeaponModKits - FWE Master Release.esp'
     tag:
       - Deflst
       - Names
       - Relev
-  - name: WeaponModKits - FWE Optional Worn Weapons.esp
+  - name: 'WeaponModKits - FWE Optional Worn Weapons.esp'
     tag:
       - Delev
-  - name: DALCO Inventory Sorter - WMK - FWE Master Release.esp
+  - name: 'DALCO Inventory Sorter - WMK - FWE Master Release.esp'
     tag:
       - Names
       - NoMerge
-  - name: DALCO Inventory Sorter - Weapon Mod Kits (DLC Anchorage).esp
+  - name: 'DALCO Inventory Sorter - Weapon Mod Kits (DLC Anchorage).esp'
     tag:
       - Names
       - NoMerge
-  - name: DALCO Inventory Sorter - WMK - FWE (DLC Anchorage).esp
+  - name: 'DALCO Inventory Sorter - WMK - FWE (DLC Anchorage).esp'
     tag:
       - Names
       - NoMerge
-  - name: DALCO Inventory Sorter - Weapon Mod Kits (DLC ThePitt).esp
+  - name: 'DALCO Inventory Sorter - Weapon Mod Kits (DLC ThePitt).esp'
     tag:
       - Names
       - NoMerge
-  - name: DALCO Inventory Sorter - WMK - FWE (DLC ThePitt).esp
+  - name: 'DALCO Inventory Sorter - WMK - FWE (DLC ThePitt).esp'
     tag:
       - Names
       - NoMerge
-  - name: DALCO Inventory Sorter - Weapon Mod Kits (DLC BrS).esp
+  - name: 'DALCO Inventory Sorter - Weapon Mod Kits (DLC BrS).esp'
     tag:
       - Names
       - NoMerge
-  - name: DALCO Inventory Sorter - WMK - FWE (DLC BrS).esp
+  - name: 'DALCO Inventory Sorter - WMK - FWE (DLC BrS).esp'
     tag:
       - Names
       - NoMerge
-  - name: DALCO Inventory Sorter - Weapon Mod Kits (DLC PointLookout).esp
+  - name: 'DALCO Inventory Sorter - Weapon Mod Kits (DLC PointLookout).esp'
     tag:
       - Names
       - NoMerge
-  - name: DALCO Inventory Sorter - WMK - FWE (DLC PointLookout).esp
+  - name: 'DALCO Inventory Sorter - WMK - FWE (DLC PointLookout).esp'
     tag:
       - Names
       - NoMerge
-  - name: DALCO Inventory Sorter - Weapon Mod Kits (DLC Zeta).esp
+  - name: 'DALCO Inventory Sorter - Weapon Mod Kits (DLC Zeta).esp'
     tag:
       - Names
       - NoMerge
-  - name: DALCO Inventory Sorter - WMK - FWE (DLC Zeta).esp
+  - name: 'DALCO Inventory Sorter - WMK - FWE (DLC Zeta).esp'
     tag:
       - Names
       - NoMerge
-  - name: CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp
+  - name: 'CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp'
     msg:
       - type: say
-        content: Only use ONE CRAFTable_WMKs esp file
+        content: 'Only use ONE CRAFTable_WMKs esp file'
         condition: file("CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_skill_requirements_lead_pipe.esp") or file("CRAFTable_WMKs.esp") or file("CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe.esp") or file("CRAFTable_WMKs_skill_req_Amodeus.esp")
     tag:
       - Invent
-  - name: CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp
+  - name: 'CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp'
     msg:
       - type: say
-        content: Only use ONE CRAFTable_WMKs esp file
+        content: 'Only use ONE CRAFTable_WMKs esp file'
         condition: file("CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp") or file("CRAFTable_WMKs_skill_requirements_lead_pipe.esp") or file("CRAFTable_WMKs.esp") or file("CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe.esp") or file("CRAFTable_WMKs_skill_req_Amodeus.esp")
     tag:
       - Invent
-  - name: CRAFTable_WMKs_skill_requirements_lead_pipe.esp
+  - name: 'CRAFTable_WMKs_skill_requirements_lead_pipe.esp'
     msg:
       - type: say
-        content: Only use ONE CRAFTable_WMKs esp file
+        content: 'Only use ONE CRAFTable_WMKs esp file'
         condition: file("CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp") or file("CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs.esp") or file("CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe.esp") or file("CRAFTable_WMKs_skill_req_Amodeus.esp")
     tag:
       - Invent
-  - name: CRAFTable_WMKs.esp
+  - name: 'CRAFTable_WMKs.esp'
     msg:
       - type: say
-        content: Only use ONE CRAFTable_WMKs esp file
+        content: 'Only use ONE CRAFTable_WMKs esp file'
         condition: file("CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp") or file("CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_skill_requirements_lead_pipe.esp") or file("CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe.esp") or file("CRAFTable_WMKs_skill_req_Amodeus.esp")
     tag:
       - Invent
-  - name: CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp
+  - name: 'CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp'
     msg:
       - type: say
-        content: Only use ONE CRAFTable_WMKs esp file
+        content: 'Only use ONE CRAFTable_WMKs esp file'
         condition: file("CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp") or file("CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_skill_requirements_lead_pipe.esp") or file("CRAFTable_WMKs.esp") or file("CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe.esp") or file("CRAFTable_WMKs_skill_req_Amodeus.esp")
     tag:
       - Invent
-  - name: CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp
+  - name: 'CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp'
     msg:
       - type: say
-        content: Only use ONE CRAFTable_WMKs esp file
+        content: 'Only use ONE CRAFTable_WMKs esp file'
         condition: file("CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp") or file("CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_skill_requirements_lead_pipe.esp") or file("CRAFTable_WMKs.esp") or file("CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe.esp") or file("CRAFTable_WMKs_skill_req_Amodeus.esp")
     tag:
       - Invent
-  - name: CRAFTable_WMKs_lead_pipe.esp
+  - name: 'CRAFTable_WMKs_lead_pipe.esp'
     msg:
       - type: say
-        content: Only use ONE CRAFTable_WMKs esp file
+        content: 'Only use ONE CRAFTable_WMKs esp file'
         condition: file("CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp") or file("CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_skill_requirements_lead_pipe.esp") or file("CRAFTable_WMKs.esp") or file("CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp") or file("CRAFTable_WMKs_skill_req_Amodeus.esp")
     tag:
       - Invent
-  - name: CRAFTable_WMKs_skill_req_Amodeus.esp
+  - name: 'CRAFTable_WMKs_skill_req_Amodeus.esp'
     msg:
       - type: say
-        content: Only use ONE CRAFTable_WMKs esp file
+        content: 'Only use ONE CRAFTable_WMKs esp file'
         condition: file("CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp") or file("CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_skill_requirements_lead_pipe.esp") or file("CRAFTable_WMKs.esp") or file("CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe.esp")
     tag:
       - Invent
-  - name: T3T_WMK1.esp
+  - name: 'T3T_WMK1.esp'
     tag:
       - Deflst
       - Stats
-  - name: 3EFskewer.esp
+  - name: '3EFskewer.esp'
     tag:
       - Stats
-  - name: 44Magnum.esp
+  - name: '44Magnum.esp'
     tag:
       - Deflst
       - Stats
-  - name: 7_HolsterForHandGunsV1_1.esp
+  - name: '7_HolsterForHandGunsV1_1.esp'
     tag:
       - Invent
-  - name: Accurate Assault Rifles 1.2.esp
+  - name: 'Accurate Assault Rifles 1.2.esp'
     tag:
       - Stats
-  - name: AddWanda_v2_blk_eot.esp
+  - name: 'AddWanda_v2_blk_eot.esp'
     tag:
       - Invent
-  - name: AlexScorpion's  and Weijiesen's Smoking Fun.esp
+  - name: 'AlexScorpion''s  and Weijiesen''s Smoking Fun.esp'
     tag:
       - Invent
-  - name: AlexScorpion's and Weijiesen's Smoking Fun.esp
+  - name: 'AlexScorpion''s and Weijiesen''s Smoking Fun.esp'
     tag:
       - Invent
-  - name: alienblasterammo.esp
+  - name: 'alienblasterammo.esp'
     tag:
       - Stats
-  - name: Arms_dealer_V1.esp
+  - name: 'Arms_dealer_V1.esp'
     inc:
-      - RH_IRONSIGHTS.esm
-  - name: ColtM4Carbines_RHIronSights.esp
+      - 'RH_IRONSIGHTS.esm'
+  - name: 'ColtM4Carbines_RHIronSights.esp'
     tag:
       - Graphics
-  - name: Drone Cannon Fix.esp
+  - name: 'Drone Cannon Fix.esp'
     tag:
       - Graphics
-  - name: EWE Supermutant Energy Weapons.esp
+  - name: 'EWE Supermutant Energy Weapons.esp'
     tag:
       - Relev
   - name: 'H.E.R.K. - GOTY.esp'
@@ -1497,217 +1491,217 @@ plugins:
   - name: 'H.E.R.K. - GOTY & WMK.esp'
     inc:
       - 'H.E.R.K. - GOTY.esp'
-  - name: laserPistolRetextured-IronSightsPatch.esp
+  - name: 'laserPistolRetextured-IronSightsPatch.esp'
     tag:
       - Graphics
-  - name: laserRifleRetexturedScoped.esp
+  - name: 'laserRifleRetexturedScoped.esp'
     tag:
       - Graphics
-  - name: laserRifleRetextured-IronSightsPatch.esp
+  - name: 'laserRifleRetextured-IronSightsPatch.esp'
     tag:
       - Graphics
-  - name: laserScatterGunRetextured.esp
+  - name: 'laserScatterGunRetextured.esp'
     tag:
       - Graphics
-  - name: More308Ammo.esp
+  - name: 'More308Ammo.esp'
     tag:
       - Relev
-  - name: RimfireRevolver.esp
+  - name: 'RimfireRevolver.esp'
     inc:
-      - RimfireRevolverCommon.esp
-  - name: RimfireRevolverCommon.esp
+      - 'RimfireRevolverCommon.esp'
+  - name: 'RimfireRevolverCommon.esp'
     inc:
-      - RimfireRevolver.esp
-  - name: Silenced DKS-501.esp
+      - 'RimfireRevolver.esp'
+  - name: 'Silenced DKS-501.esp'
     tag:
       - Deflst
       - Invent
       - Names
       - Relev
       - Stats
-  - name: Tactical Weapons by gRs Frederyck.esp
+  - name: 'Tactical Weapons by gRs Frederyck.esp'
     tag:
       - Invent
-  - name: Tactical Weapons-Calibr-V3 762 fix.esp
+  - name: 'Tactical Weapons-Calibr-V3 762 fix.esp'
     msg:
       - type: say
-        content: "Requires  resources from \"Tactical Weapons by gRs Frederyck\", but not the esp file"
+        content: '"Requires  resources from \"Tactical Weapons by gRs Frederyck\", but not the esp file"'
     tag:
       - Invent
-  - name: frederyck calibr fix-excalibrified.esp
+  - name: 'frederyck calibr fix-excalibrified.esp'
     tag:
       - Invent
-  - name: WattzLasers.esp
+  - name: 'WattzLasers.esp'
     tag:
       - Delev
       - Relev
       - Stats
-  - name: WieldableTorches (Main).esp
+  - name: 'WieldableTorches (Main).esp'
     inc:
-      - Wieldable Torches (Optional).esp
-  - name: Wieldable Torches (Optional).esp
+      - 'Wieldable Torches (Optional).esp'
+  - name: 'Wieldable Torches (Optional).esp'
     inc:
-      - WieldableTorches (Main).esp
-  - name: WMKAA12Shotgun.esp
+      - 'WieldableTorches (Main).esp'
+  - name: 'WMKAA12Shotgun.esp'
     tag:
       - Graphics
-  - name: DALCO Inventory Sorter - WMKAA12Shotgun.esp
+  - name: 'DALCO Inventory Sorter - WMKAA12Shotgun.esp'
     tag:
       - Names
       - NoMerge
-  - name: xCALIBRmunitions.esp
+  - name: 'xCALIBRmunitions.esp'
     tag:
       - Delev
       - Relev
-  - name: "[DC RANGER ARSENAL v3] - DLC GEAR.esp"
+  - name: '"[DC RANGER ARSENAL v3] - DLC GEAR.esp"'
     tag:
       - Deflst
-  - name: BBBackpacks-v1-1.esp
+  - name: 'BBBackpacks-v1-1.esp'
     tag:
       - Stats
-  - name: BnB special armors.esp
+  - name: 'BnB special armors.esp'
     tag:
       - Invent
       - Relev
-  - name: BoS_DX.esp
+  - name: 'BoS_DX.esp'
     msg:
       - type: say
-        content: Do not use with latest FOOK2, it is already integrated.
+        content: 'Do not use with latest FOOK2, it is already integrated.'
       - type: say
-        content: Old. Upgrade to latest version.
+        content: 'Old. Upgrade to latest version.'
     tag:
       - Graphics
-  - name: BoSDX.esp
+  - name: 'BoSDX.esp'
     msg:
       - type: say
-        content: Do not use with latest FOOK2, it is already integrated.
+        content: 'Do not use with latest FOOK2, it is already integrated.'
     tag:
       - Graphics
-  - name: WinterizedT51bDX.esp
+  - name: 'WinterizedT51bDX.esp'
     msg:
       - type: say
-        content: Do not use with latest FOOK2, it is already integrated.
+        content: 'Do not use with latest FOOK2, it is already integrated.'
     tag:
       - Graphics
-  - name: Outcast DX.esp
+  - name: 'Outcast DX.esp'
     msg:
       - type: say
-        content: Do not use with latest FOOK2, it is already integrated.
+        content: 'Do not use with latest FOOK2, it is already integrated.'
     tag:
       - Graphics
-  - name: Outcast DX - FWE patch.esp
+  - name: 'Outcast DX - FWE patch.esp'
     tag:
       - Graphics
-  - name: Tribal_DX.esp
+  - name: 'Tribal_DX.esp'
     msg:
       - type: say
-        content: Do not use with latest FOOK2, it is already integrated.
+        content: 'Do not use with latest FOOK2, it is already integrated.'
     tag:
       - Deflst
       - Graphics
-  - name: BoS_FOOKedition_Armor.esp
+  - name: 'BoS_FOOKedition_Armor.esp'
     msg:
       - type: say
-        content: Do not use with latest FOOK2, it is already integrated.
+        content: 'Do not use with latest FOOK2, it is already integrated.'
     tag:
       - Graphics
-  - name: Cat Outfit Fanged.esp
+  - name: 'Cat Outfit Fanged.esp'
     msg:
       - type: say
-        content: Use either 'Cat Outfit Fanged.esp' or 'Cat Outfit Only.esp', not both.
-        condition: file("Cat Outfit Only.esp")
+        content: 'Use either ''Cat Outfit Fanged.esp'' or ''Cat Outfit Only.esp'', not both.'
+        condition: 'file("Cat Outfit Only.esp")'
     tag:
       - Eyes
-  - name: Cat Outfit Only.esp
+  - name: 'Cat Outfit Only.esp'
     msg:
       - type: say
-        content: Use either 'Cat Outfit Fanged.esp' or 'Cat Outfit Only.esp', not both.
-        condition: file("Cat Outfit Fanged.esp")
+        content: 'Use either ''Cat Outfit Fanged.esp'' or ''Cat Outfit Only.esp'', not both.'
+        condition: 'file("Cat Outfit Fanged.esp")'
     tag:
       - Eyes
-  - name: clearhelmets4radsuits.esp
+  - name: 'clearhelmets4radsuits.esp'
     tag:
       - Graphics
-  - name: COL Enclave VER2.esp
+  - name: 'COL Enclave VER2.esp'
     tag:
       - Graphics
-  - name: COL Enclave Hell.esp
+  - name: 'COL Enclave Hell.esp'
     tag:
       - Graphics
-  - name: FO3-Closing-merged.esp
+  - name: 'FO3-Closing-merged.esp'
     inc:
-      - FO3Tona.esp
-      - FO3Western.esp
-      - FO3Ayumi.esp
-      - FO3Fate.esp
-      - FO3Moon.esp
-      - FO3Nami.esp
-  - name: jonasclothesnonrplcr.esp
+      - 'FO3Tona.esp'
+      - 'FO3Western.esp'
+      - 'FO3Ayumi.esp'
+      - 'FO3Fate.esp'
+      - 'FO3Moon.esp'
+      - 'FO3Nami.esp'
+  - name: 'jonasclothesnonrplcr.esp'
     msg:
       - type: say
-        content: Use either 'jonasclothesnonrplcr.esp' or 'jonasclothesreplacer.esp', not both.
-        condition: file("jonasclothesreplacer.esp")
-  - name: jonasclothesreplacer.esp
+        content: 'Use either ''jonasclothesnonrplcr.esp'' or ''jonasclothesreplacer.esp'', not both.'
+        condition: 'file("jonasclothesreplacer.esp")'
+  - name: 'jonasclothesreplacer.esp'
     msg:
       - type: say
-        content: Use either 'jonasclothesnonrplcr.esp' or 'jonasclothesreplacer.esp', not both.
-        condition: file("jonasclothesnonrplcr.esp")
-  - name: K2_ArmorsRedone_Raiders.esp
+        content: 'Use either ''jonasclothesnonrplcr.esp'' or ''jonasclothesreplacer.esp'', not both.'
+        condition: 'file("jonasclothesnonrplcr.esp")'
+  - name: 'K2_ArmorsRedone_Raiders.esp'
     tag:
       - Graphics
-  - name: K2_GirlieGirlVaultBabe.esp
+  - name: 'K2_GirlieGirlVaultBabe.esp'
     tag:
       - Invent
-  - name: ModBetterPArmorVanilla.esp
+  - name: 'ModBetterPArmorVanilla.esp'
     tag:
       - Stats
-  - name: ModBetterPArmorAnchorage.esp
+  - name: 'ModBetterPArmorAnchorage.esp'
     tag:
       - Stats
-  - name: ModBetterPArmorPitt.esp
+  - name: 'ModBetterPArmorPitt.esp'
     tag:
       - Stats
-  - name: ModBetterPArmorSteel.esp
+  - name: 'ModBetterPArmorSteel.esp'
     tag:
       - Stats
-  - name: DALCO Inventory Sorter - IGM.esp
+  - name: 'DALCO Inventory Sorter - IGM.esp'
     tag:
       - Names
       - NoMerge
-  - name: RD_ElderLyonsRobe.esp
+  - name: 'RD_ElderLyonsRobe.esp'
     tag:
       - Graphics
-  - name: SimpleEyePatch.esp
+  - name: 'SimpleEyePatch.esp'
     tag:
       - Eyes
       - Invent
-  - name: Tesla Metal Armor.esp
+  - name: 'Tesla Metal Armor.esp'
     inc:
-      - Tesla Metal Armor (Extended).esp
-      - Tesla Light Armor Redone.esp
-  - name: Tesla Metal Armor (Extended).esp
+      - 'Tesla Metal Armor (Extended).esp'
+      - 'Tesla Light Armor Redone.esp'
+  - name: 'Tesla Metal Armor (Extended).esp'
     inc:
-      - Tesla Metal Armor.esp
-      - Tesla Light Armor Redone.esp
-  - name: Tesla Light Armor Redone.esp
+      - 'Tesla Metal Armor.esp'
+      - 'Tesla Light Armor Redone.esp'
+  - name: 'Tesla Light Armor Redone.esp'
     inc:
-      - Tesla Metal Armor (Extended).esp
-      - Tesla Metal Armor.esp
-  - name: Test-Weapon_additional armor.esp
+      - 'Tesla Metal Armor (Extended).esp'
+      - 'Tesla Metal Armor.esp'
+  - name: 'Test-Weapon_additional armor.esp'
     tag:
       - Invent
-  - name: vaultgirlrp.esp
+  - name: 'vaultgirlrp.esp'
     tag:
       - Graphics
       - Invent
-  - name: WasteWearGloves.esp
+  - name: 'WasteWearGloves.esp'
     tag:
       - Relev
-  - name: LingsFinerThings.esp
+  - name: 'LingsFinerThings.esp'
     msg:
       - type: say
-        content: Obselete, update to "http://fallout3.nexusmods.com/mods/17631/ the latest version".
-  - name: LingsPrettyThings.esp
+        content: 'Obselete, update to the [latest version](http://fallout3.nexusmods.com/mods/17631/).'
+  - name: 'LingsPrettyThings.esp'
     tag:
       - Eyes
       - Hair
@@ -1723,157 +1717,157 @@ plugins:
       - R.Mouth
       - R.Teeth
       - Voice-F
-  - name: xCALIBRuniverse_LingsBrokenSteel.esp
+  - name: 'xCALIBRuniverse_LingsBrokenSteel.esp'
     tag:
       - Actors.ACBS
       - Hair
       - NpcFaces
-  - name: xCALIBRuniverse_LingsPrettyThings.esp
+  - name: 'xCALIBRuniverse_LingsPrettyThings.esp'
     tag:
       - Actors.ACBS
       - Invent
       - NPC.Class
       - Voice-F
-  - name: Goth Girls Multipack.esp
+  - name: 'Goth Girls Multipack.esp'
     tag:
       - Eyes
       - Hair
       - Invent
       - NPC.Race
       - NpcFaces
-  - name: moirared.esp
+  - name: 'moirared.esp'
     tag:
       - Invent
-  - name: Reclothing For LPT and Flash.esp
+  - name: 'Reclothing For LPT and Flash.esp'
     msg:
       - type: say
-        content: Outdated, use latest Wrye Flash version
+        content: 'Outdated, use latest Wrye Flash version'
     tag:
       - Invent
-  - name: AutoGates.esp
+  - name: 'AutoGates.esp'
     tag:
       - Scripts
-  - name: CALIBR Ammo Schematics - CRAFT.esp
+  - name: 'CALIBR Ammo Schematics - CRAFT.esp'
     inc:
-      - xCALIBR_Universe.esp
-  - name: Bobbleheads Begone.esp
+      - 'xCALIBR_Universe.esp'
+  - name: 'Bobbleheads Begone.esp'
     tag:
       - Scripts
-  - name: BottleBrahminMilk.esp
+  - name: 'BottleBrahminMilk.esp'
     inc:
-      - BottleBrahminMilkFWE.esp
-  - name: BottleBrahminMilkFWE.esp
+      - 'BottleBrahminMilkFWE.esp'
+  - name: 'BottleBrahminMilkFWE.esp'
     inc:
-      - BottleBrahminMilk.esp
-  - name: CantaburyCommonsGuards.esp
+      - 'BottleBrahminMilk.esp'
+  - name: 'CantaburyCommonsGuards.esp'
     tag:
       - Actors.ACBS
-  - name: CantaburyCommonsGuards - DTO.esp
+  - name: 'CantaburyCommonsGuards - DTO.esp'
     tag:
       - Actors.ACBS
       - Invent
-  - name: cyber_meat.esp
+  - name: 'cyber_meat.esp'
     tag:
       - Graphics
-  - name: Dread Dogmeat.esp
+  - name: 'Dread Dogmeat.esp'
     tag:
       - Scripts
-  - name: Improved Turret Hacking.esp
+  - name: 'Improved Turret Hacking.esp'
     msg:
       - type: say
-        content: Old. Upgrade to latest version.
-  - name: Improved Turret Hacking - BASE.esp
+        content: 'Old. Upgrade to latest version.'
+  - name: 'Improved Turret Hacking - BASE.esp'
     inc:
-      - Improved Turret Hacking - ALL.esp
-  - name: Improved Turret Hacking - BS.esp
+      - 'Improved Turret Hacking - ALL.esp'
+  - name: 'Improved Turret Hacking - BS.esp'
     inc:
-      - Improved Turret Hacking - ALL.esp
-  - name: Improved Turret Hacking - Pitt.esp
+      - 'Improved Turret Hacking - ALL.esp'
+  - name: 'Improved Turret Hacking - Pitt.esp'
     inc:
-      - Improved Turret Hacking - ALL.esp
-  - name: Improved Turret Hacking - PL.esp
+      - 'Improved Turret Hacking - ALL.esp'
+  - name: 'Improved Turret Hacking - PL.esp'
     inc:
-      - Improved Turret Hacking - ALL.esp
-  - name: Improved Turret Hacking - ALL.esp
+      - 'Improved Turret Hacking - ALL.esp'
+  - name: 'Improved Turret Hacking - ALL.esp'
     inc:
-      - Improved Turret Hacking - BASE.esp
-      - Improved Turret Hacking - BS.esp
-      - Improved Turret Hacking - Pitt.esp
-      - Improved Turret Hacking - PL.esp
-  - name: Improved Turret Reprogramming - BASE.esp
+      - 'Improved Turret Hacking - BASE.esp'
+      - 'Improved Turret Hacking - BS.esp'
+      - 'Improved Turret Hacking - Pitt.esp'
+      - 'Improved Turret Hacking - PL.esp'
+  - name: 'Improved Turret Reprogramming - BASE.esp'
     inc:
-      - Improved Turret Reprogramming - ALL.esp
-  - name: Improved Turret Reprogramming - BS.esp
+      - 'Improved Turret Reprogramming - ALL.esp'
+  - name: 'Improved Turret Reprogramming - BS.esp'
     inc:
-      - Improved Turret Reprogramming - ALL.esp
-  - name: Improved Turret Reprogramming - Pitt.esp
+      - 'Improved Turret Reprogramming - ALL.esp'
+  - name: 'Improved Turret Reprogramming - Pitt.esp'
     inc:
-      - Improved Turret Reprogramming - ALL.esp
-  - name: Improved Turret Reprogramming - PL.esp
+      - 'Improved Turret Reprogramming - ALL.esp'
+  - name: 'Improved Turret Reprogramming - PL.esp'
     inc:
-      - Improved Turret Reprogramming - ALL.esp
-  - name: Improved Turret Reprogramming - ALL.esp
+      - 'Improved Turret Reprogramming - ALL.esp'
+  - name: 'Improved Turret Reprogramming - ALL.esp'
     inc:
-      - Improved Turret Reprogramming - BASE.esp
-      - Improved Turret Reprogramming - BS.esp
-      - Improved Turret Reprogramming - Pitt.esp
-      - Improved Turret Reprogramming - PL.esp
-  - name: Menu Based Hacking & Picking.esp
+      - 'Improved Turret Reprogramming - BASE.esp'
+      - 'Improved Turret Reprogramming - BS.esp'
+      - 'Improved Turret Reprogramming - Pitt.esp'
+      - 'Improved Turret Reprogramming - PL.esp'
+  - name: 'Menu Based Hacking & Picking.esp'
     msg:
       - type: say
-        content: DO not use with latest FWE, it is already integrated.
-  - name: OverMightyGold.esp
+        content: 'DO not use with latest FWE, it is already integrated.'
+  - name: 'OverMightyGold.esp'
     tag:
       - Invent
-  - name: More Ammo.esp
+  - name: 'More Ammo.esp'
     tag:
       - Relev
-  - name: More Ammo (Explosive).esp
+  - name: 'More Ammo (Explosive).esp'
     tag:
       - Relev
-  - name: Slightly More Ammo.esp
+  - name: 'Slightly More Ammo.esp'
     tag:
       - Relev
-  - name: Slightly More Ammo (Explosive).esp
+  - name: 'Slightly More Ammo (Explosive).esp'
     tag:
       - Relev
-  - name: Everso Slightly More Ammo.esp
+  - name: 'Everso Slightly More Ammo.esp'
     tag:
       - Relev
-  - name: RealFragGrenade.esp
+  - name: 'RealFragGrenade.esp'
     inc:
-      - RealFragGrenade3.esp
+      - 'RealFragGrenade3.esp'
     msg:
       - type: say
-        content: upgrade to RealFragGrenade3.esp
-  - name: RealFragGrenade3.esp
+        content: 'upgrade to RealFragGrenade3.esp'
+  - name: 'RealFragGrenade3.esp'
     inc:
-      - RealFragGrenade.esp
-  - name: Scavenger World - Updated v0.07.esp
+      - 'RealFragGrenade.esp'
+  - name: 'Scavenger World - Updated v0.07.esp'
     msg:
       - type: say
-        content: Outdated, update to v0.08
+        content: 'Outdated, update to v0.08'
     tag:
       - Relev
-  - name: Scavenger World - Updated v0.08.esp
+  - name: 'Scavenger World - Updated v0.08.esp'
     tag:
       - Relev
-  - name: Scavenger World - FWE Edition v0.07.esp
+  - name: 'Scavenger World - FWE Edition v0.07.esp'
     msg:
       - type: say
-        content: Outdated, update to v0.08
+        content: 'Outdated, update to v0.08'
     tag:
       - Relev
-  - name: Scavenger World - FWE Edition v0.08.esp
+  - name: 'Scavenger World - FWE Edition v0.08.esp'
     tag:
       - Relev
-  - name: ScavengerWasteland.esp
+  - name: 'ScavengerWasteland.esp'
     tag:
       - Actors.AIData
       - Invent
       - Relev
       - Scripts
-  - name: SimpleSmokeo.esp
+  - name: 'SimpleSmokeo.esp'
     tag:
       - Actors.AIPackages
       - Actors.Animations
@@ -1881,276 +1875,276 @@ plugins:
       - Invent
       - Names
       - Relev
-  - name: Start_Energy_Weapon.esp
+  - name: 'Start_Energy_Weapon.esp'
     tag:
       - Invent
-  - name: WRK - Plugin.esp
+  - name: 'WRK - Plugin.esp'
     tag:
       - Invent
       - Relev
-  - name: ZORTS - Content Destruction - Normal.esp
+  - name: 'ZORTS - Content Destruction - Normal.esp'
     inc:
-      - ZORTS - Content Destruction - Extreme.esp
-  - name: ZORTS - Content Destruction - Extreme.esp
+      - 'ZORTS - Content Destruction - Extreme.esp'
+  - name: 'ZORTS - Content Destruction - Extreme.esp'
     inc:
-      - ZORTS - Content Destruction - Normal.esp
-  - name: ZORTS - Custom HP.esp
+      - 'ZORTS - Content Destruction - Normal.esp'
+  - name: 'ZORTS - Custom HP.esp'
     inc:
-      - ZORTS - Custom HP - FOOK2.esp
-      - ZORTS - Custom HP - FWE.esp
+      - 'ZORTS - Custom HP - FOOK2.esp'
+      - 'ZORTS - Custom HP - FWE.esp'
     tag:
       - Scripts
-  - name: ZORTS - Custom HP - FOOK2.esp
+  - name: 'ZORTS - Custom HP - FOOK2.esp'
     inc:
-      - ZORTS - Custom HP.esp
-      - ZORTS - Custom HP - FWE.esp
+      - 'ZORTS - Custom HP.esp'
+      - 'ZORTS - Custom HP - FWE.esp'
     tag:
       - Scripts
-  - name: ZORTS - Custom HP - FWE.esp
+  - name: 'ZORTS - Custom HP - FWE.esp'
     inc:
-      - ZORTS - Custom HP.esp
-      - ZORTS - Custom HP - FOOK2.esp
+      - 'ZORTS - Custom HP.esp'
+      - 'ZORTS - Custom HP - FOOK2.esp'
     tag:
       - Scripts
-  - name: ZORTS - Disable FOOK2 activate.esp
+  - name: 'ZORTS - Disable FOOK2 activate.esp'
     inc:
-      - ZORTS - Disable FWE activate.esp
-  - name: ZORTS - Disable FWE activate.esp
+      - 'ZORTS - Disable FWE activate.esp'
+  - name: 'ZORTS - Disable FWE activate.esp'
     inc:
-      - ZORTS - Disable FOOK2 activate.esp
-  - name: Zumbs'_Overhauled_Real_Time_Security.esp
+      - 'ZORTS - Disable FOOK2 activate.esp'
+  - name: 'Zumbs''_Overhauled_Real_Time_Security.esp'
     msg:
       - type: say
-        content: Please update to latest version.
-  - name: Zumbs'_Overhauled_Real_Time_Security_lockbash_only.esp
+        content: 'Please update to latest version.'
+  - name: 'Zumbs''_Overhauled_Real_Time_Security_lockbash_only.esp'
     msg:
       - type: say
-        content: Please update to latest version.
-  - name: Zumbs'_Overhauled_Real_Time_Security_minigames_enabled.esp
+        content: 'Please update to latest version.'
+  - name: 'Zumbs''_Overhauled_Real_Time_Security_minigames_enabled.esp'
     msg:
       - type: say
-        content: Please update to latest version.
-  - name: Replenishment.esp
+        content: 'Please update to latest version.'
+  - name: 'Replenishment.esp'
     tag:
       - Scripts
-  - name: UWWUT.esp
+  - name: 'UWWUT.esp'
     inc:
-      - UWWUT_WT.esp
+      - 'UWWUT_WT.esp'
     tag:
       - Graphics
-  - name: UWWUT - The Pitt Addon.esp
+  - name: 'UWWUT - The Pitt Addon.esp'
     inc:
-      - UWWUT_WT - TP Addon.esp
+      - 'UWWUT_WT - TP Addon.esp'
     tag:
       - Graphics
-  - name: UWWUT - Broken Steel Addon.esp
+  - name: 'UWWUT - Broken Steel Addon.esp'
     inc:
-      - UWWUT_WT - BS Addon.esp
+      - 'UWWUT_WT - BS Addon.esp'
     tag:
       - Graphics
-  - name: UWWUT - WMK Addon.esp
+  - name: 'UWWUT - WMK Addon.esp'
     inc:
-      - UWWUT_WT - WMK Addon.esp
+      - 'UWWUT_WT - WMK Addon.esp'
     tag:
       - Graphics
-  - name: UWWUT_WT.esp
+  - name: 'UWWUT_WT.esp'
     inc:
-      - UWWUT.esp
+      - 'UWWUT.esp'
     tag:
       - Graphics
       - Stats
-  - name: UWWUT_WT - TP Addon.esp
+  - name: 'UWWUT_WT - TP Addon.esp'
     inc:
-      - UWWUT - The Pitt Addon.esp
+      - 'UWWUT - The Pitt Addon.esp'
     tag:
       - Graphics
       - Stats
-  - name: UWWUT_WT - BS Addon.esp
+  - name: 'UWWUT_WT - BS Addon.esp'
     inc:
-      - UWWUT - Broken Steel Addon.esp
+      - 'UWWUT - Broken Steel Addon.esp'
     tag:
       - Graphics
       - Stats
-  - name: UWWUT_WT - WMK Addon.esp
+  - name: 'UWWUT_WT - WMK Addon.esp'
     inc:
-      - UWWUT - WMK Addon.esp
+      - 'UWWUT - WMK Addon.esp'
     tag:
       - Graphics
       - Stats
-  - name: WeaponModKits-Unique.esp
+  - name: 'WeaponModKits-Unique.esp'
     tag:
       - Graphics
-  - name: unique_uniques.esp
+  - name: 'unique_uniques.esp'
     inc:
-      - unique_uniquesDLC.esp
+      - 'unique_uniquesDLC.esp'
     tag:
       - Graphics
-  - name: unique_uniquesCut.esp
+  - name: 'unique_uniquesCut.esp'
     inc:
-      - unique_uniquesCutDLC.esp
+      - 'unique_uniquesCutDLC.esp'
     tag:
       - Graphics
-  - name: unique_uniquesDLC.esp
+  - name: 'unique_uniquesDLC.esp'
     inc:
-      - unique_uniques.esp
+      - 'unique_uniques.esp'
     tag:
       - Graphics
-  - name: unique_uniquesCutDLC.esp
+  - name: 'unique_uniquesCutDLC.esp'
     inc:
-      - unique_uniquesCut.esp
+      - 'unique_uniquesCut.esp'
     tag:
       - Graphics
-  - name: Less Useless Karma Gifts.esp
+  - name: 'Less Useless Karma Gifts.esp'
     tag:
       - Delev
       - Relev
-  - name: Less Useless Karma Gifts 2.0.esp
+  - name: 'Less Useless Karma Gifts 2.0.esp'
     tag:
       - Delev
       - Relev
-  - name: AfrosNukaCola.esp
+  - name: 'AfrosNukaCola.esp'
     tag:
       - Graphics
       - Stats
-  - name: Nuka Cola Enhanced.esp
+  - name: 'Nuka Cola Enhanced.esp'
     tag:
       - Graphics
       - Stats
-  - name: Nuka Cola Enhanced - FWE.esp
+  - name: 'Nuka Cola Enhanced - FWE.esp'
     tag:
       - Graphics
       - Stats
-  - name: Bottle That Water Alternative.esp
+  - name: 'Bottle That Water Alternative.esp'
     tag:
       - Scripts
       - Stats
-  - name: Bottle That Water Alternative - Broken Steel.esp
+  - name: 'Bottle That Water Alternative - Broken Steel.esp'
     tag:
       - Scripts
       - Stats
-  - name: AddBottle.esp
+  - name: 'AddBottle.esp'
     msg:
       - type: say
-        content: DO not use with latest FWE or RI - Primary Needs, it is already integrated.
-  - name: Empty Nuka-Cola Quantum Bottles.esp
+        content: 'DO not use with latest FWE or RI - Primary Needs, it is already integrated.'
+  - name: 'Empty Nuka-Cola Quantum Bottles.esp'
     tag:
       - Names
-  - name: Persistent Skill Books.esp
+  - name: 'Persistent Skill Books.esp'
     msg:
       - type: say
-        content: DO not use with latest FWE, it is already integrated.
-  - name: PlasmaWeaponsRedesignRebalance.esp
+        content: 'DO not use with latest FWE, it is already integrated.'
+  - name: 'PlasmaWeaponsRedesignRebalance.esp'
     msg:
       - type: say
-        content: DO not use with latest FWE, it is already integrated.
+        content: 'DO not use with latest FWE, it is already integrated.'
     tag:
       - Graphics
       - Sound
-  - name: PlasmaRifleRedesign.esp
+  - name: 'PlasmaRifleRedesign.esp'
     msg:
       - type: say
-        content: DO not use with latest FWE, it is already integrated.
+        content: 'DO not use with latest FWE, it is already integrated.'
     tag:
       - Graphics
       - Sound
-  - name: PlasmaRifleRedesign_A321only.esp
+  - name: 'PlasmaRifleRedesign_A321only.esp'
     msg:
       - type: say
-        content: DO not use with latest FWE, it is already integrated.
+        content: 'DO not use with latest FWE, it is already integrated.'
     tag:
       - Graphics
       - Sound
-  - name: PlasmaRifleRedesign_standardonly.esp
+  - name: 'PlasmaRifleRedesign_standardonly.esp'
     msg:
       - type: say
-        content: DO not use with latest FWE, it is already integrated.
+        content: 'DO not use with latest FWE, it is already integrated.'
     tag:
       - Graphics
       - Sound
-  - name: PlasmaPistolRedesign.esp
+  - name: 'PlasmaPistolRedesign.esp'
     msg:
       - type: say
-        content: DO not use with latest FWE, it is already integrated.
+        content: 'DO not use with latest FWE, it is already integrated.'
     tag:
       - Graphics
       - Sound
-  - name: Water Bottles 3000.esp
+  - name: 'Water Bottles 3000.esp'
     tag:
       - Deactivate
       - Graphics
       - NoMerge
-  - name: schematics2.esp
+  - name: 'schematics2.esp'
     tag:
       - Graphics
       - NoMerge
-  - name: Item Descriptions Img.esp
+  - name: 'Item Descriptions Img.esp'
     tag:
       - Graphics
       - NoMerge
-  - name: Gunfire Sound Range Increased.esp
+  - name: 'Gunfire Sound Range Increased.esp'
     tag:
       - Deactivate
       - NoMerge
       - Sound
-  - name: WYB-Base.esp
+  - name: 'WYB-Base.esp'
     inc:
-      - WYB-Base+DLCs-Merged.esp
-  - name: WYB-DLC-Anchorage.esp
+      - 'WYB-Base+DLCs-Merged.esp'
+  - name: 'WYB-DLC-Anchorage.esp'
     inc:
-      - WYB-Base+DLCs-Merged.esp
-  - name: WYB-DLC-ThePitt.esp
+      - 'WYB-Base+DLCs-Merged.esp'
+  - name: 'WYB-DLC-ThePitt.esp'
     inc:
-      - WYB-Base+DLCs-Merged.esp
-  - name: WYB-DLC-BrokenSteel.esp
+      - 'WYB-Base+DLCs-Merged.esp'
+  - name: 'WYB-DLC-BrokenSteel.esp'
     inc:
-      - WYB-Base+DLCs-Merged.esp
-  - name: WYB-DLC-PointLookout.esp
+      - 'WYB-Base+DLCs-Merged.esp'
+  - name: 'WYB-DLC-PointLookout.esp'
     inc:
-      - WYB-Base+DLCs-Merged.esp
-  - name: WYB-DLC-Zeta.esp
+      - 'WYB-Base+DLCs-Merged.esp'
+  - name: 'WYB-DLC-Zeta.esp'
     inc:
-      - WYB-Base+DLCs-Merged.esp
-  - name: Weld - Badge.esp
+      - 'WYB-Base+DLCs-Merged.esp'
+  - name: 'Weld - Badge.esp'
     tag:
       - Actors.Anims
       - Graphics
       - Invent
-  - name: Weld - Badge and Hat.esp
+  - name: 'Weld - Badge and Hat.esp'
     tag:
       - Actors.Anims
       - Graphics
       - Invent
-  - name: Weld and Steel - Badges.esp
+  - name: 'Weld and Steel - Badges.esp'
     tag:
       - Actors.Anims
       - Graphics
       - Invent
-  - name: Weld and Steel - Badges, only Weld hat.esp
+  - name: 'Weld and Steel - Badges, only Weld hat.esp'
     tag:
       - Actors.Anims
       - Graphics
       - Invent
-  - name: Deputy Weld and Steel - Badges and Hats.esp
+  - name: 'Deputy Weld and Steel - Badges and Hats.esp'
     tag:
       - Actors.Anims
       - Graphics
       - Invent
-  - name: Deputy Weld and Steel - Badges Steel Hat.esp
+  - name: 'Deputy Weld and Steel - Badges Steel Hat.esp'
     tag:
       - Actors.Anims
       - Graphics
       - Invent
-  - name: GaryHoloTape.esp
+  - name: 'GaryHoloTape.esp'
     tag:
       - Names
-  - name: Trucker Holotapes.esp
+  - name: 'Trucker Holotapes.esp'
     tag:
       - Names
-  - name: EVE Beta_0.9.4.esp
+  - name: 'EVE Beta_0.9.4.esp'
     msg:
       - type: say
-        content: Upgrade needed, there is a new version of EVE available.
-  - name: EVE.esp
+        content: 'Upgrade needed, there is a new version of EVE available.'
+  - name: 'EVE.esp'
     tag:
       - Delev
       - Graphics
@@ -2158,255 +2152,255 @@ plugins:
       - Scripts
       - Sound
       - Stats
-  - name: EVE Operation Anchorage.esp
+  - name: 'EVE Operation Anchorage.esp'
     tag:
       - Graphics
       - Sound
-  - name: EVE Main - FWE Master Release.esp
+  - name: 'EVE Main - FWE Master Release.esp'
     msg:
       - type: say
-        content: May cause crashes at start. If so disable this and find updated version.
-  - name: EVE - FWE Master Release.esp
+        content: 'May cause crashes at start. If so disable this and find updated version.'
+  - name: 'EVE - FWE Master Release.esp'
     tag:
       - Actors.ACBS
       - Graphics
       - Invent
       - Sound
       - Stats
-  - name: EVE - FWE Master Release (Follower Enhanced).esp
+  - name: 'EVE - FWE Master Release (Follower Enhanced).esp'
     tag:
       - Graphics
       - Sound
-  - name: EVE - FWE Master Release (pulse fix).esp
+  - name: 'EVE - FWE Master Release (pulse fix).esp'
     tag:
       - Actors.ACBS
       - Graphics
       - Invent
       - Stats
-  - name: EVE Anchorage - FWE DLC Anchorage.esp
+  - name: 'EVE Anchorage - FWE DLC Anchorage.esp'
     tag:
       - Graphics
       - Sound
-  - name: EVE - FWE with WeaponModKits.esp
+  - name: 'EVE - FWE with WeaponModKits.esp'
     tag:
       - Graphics
       - Sound
-  - name: Apocalypse Armory + EVE.esp
+  - name: 'Apocalypse Armory + EVE.esp'
     tag:
       - Delev
       - Relev
-  - name: Mart's Mutant Mod.esp
+  - name: 'Mart''s Mutant Mod.esp'
     tag:
       - Delev
       - Relev
-  - name: DALCO Inventory Sorter - Mart's Mutant Mod (Main).esp
+  - name: 'DALCO Inventory Sorter - Mart''s Mutant Mod (Main).esp'
     tag:
       - Names
       - NoMerge
-  - name: Mart's Mutant Mod - UF3P.esp
+  - name: 'Mart''s Mutant Mod - UF3P.esp'
     tag:
       - Invent
-  - name: PB MMM HD.esp
+  - name: 'PB MMM HD.esp'
     msg:
       - type: error
-        content: Old. Download the latest Project Beauty files.
-        condition: file("FOOK2 - Main.esm")
-  - name: PB MMM.esp
+        content: 'Old. Download the latest Project Beauty files.'
+        condition: 'file("FOOK2 - Main.esm")'
+  - name: 'PB MMM.esp'
     msg:
       - type: error
-        content: Old. Download the latest Project Beauty files.
-        condition: file("FOOK2 - Main.esm")
-  - name: Mart's Mutant Mod - DLC Anchorage.esp
+        content: 'Old. Download the latest Project Beauty files.'
+        condition: 'file("FOOK2 - Main.esm")'
+  - name: 'Mart''s Mutant Mod - DLC Anchorage.esp'
     tag:
       - Scripts
-  - name: Mart's Mutant Mod - DLC The Pitt.esp
+  - name: 'Mart''s Mutant Mod - DLC The Pitt.esp'
     tag:
       - Delev
       - Relev
       - Scripts
-  - name: Mart's Mutant Mod - DLC Broken Steel.esp
+  - name: 'Mart''s Mutant Mod - DLC Broken Steel.esp'
     tag:
       - Delev
       - Relev
       - Scripts
-  - name: DALCO Inventory Sorter - Mart's Mutant Mod (DLC Broken Steel).esp
+  - name: 'DALCO Inventory Sorter - Mart''s Mutant Mod (DLC Broken Steel).esp'
     tag:
       - Names
       - NoMerge
-  - name: Mart's Mutant Mod - DLC Point Lookout.esp
+  - name: 'Mart''s Mutant Mod - DLC Point Lookout.esp'
     tag:
       - Delev
       - Relev
       - Scripts
-  - name: Project Beauty- Point Lookout MMM.esp
+  - name: 'Project Beauty- Point Lookout MMM.esp'
     tag:
       - Deactivate
       - NoMerge
       - NPC.Race
       - NpcFaces
-  - name: Mart's Mutant Mod - DLC Zeta.esp
+  - name: 'Mart''s Mutant Mod - DLC Zeta.esp'
     tag:
       - Scripts
-  - name: DangerousRadroaches_MMM.esp
+  - name: 'DangerousRadroaches_MMM.esp'
     tag:
       - Actors.CombatStyle
-  - name: Mart's Mutant Mod - No Abominable Mutants.esp
+  - name: 'Mart''s Mutant Mod - No Abominable Mutants.esp'
     tag:
       - Relev
-  - name: Mart's Mutant Mod - No Corpse Flies.esp
+  - name: 'Mart''s Mutant Mod - No Corpse Flies.esp'
     tag:
       - Relev
-  - name: Mart's Mutant Mod - No Floaters.esp
+  - name: 'Mart''s Mutant Mod - No Floaters.esp'
     tag:
       - Relev
-  - name: Mart's Mutant Mod - No Geckos.esp
+  - name: 'Mart''s Mutant Mod - No Geckos.esp'
     tag:
       - Relev
-  - name: Mart's Mutant Mod - No Iguanas.esp
+  - name: 'Mart''s Mutant Mod - No Iguanas.esp'
     tag:
       - Relev
-  - name: Mart's Mutant Mod - No Stalker Creatures.esp
+  - name: 'Mart''s Mutant Mod - No Stalker Creatures.esp'
     tag:
       - Relev
-  - name: Mart's Mutant Mod - No Wanamingos.esp
+  - name: 'Mart''s Mutant Mod - No Wanamingos.esp'
     tag:
       - Relev
-  - name: Mart's Mutant Mod - Feral Ghoul Rampage.esp
+  - name: 'Mart''s Mutant Mod - Feral Ghoul Rampage.esp'
     tag:
       - Relev
-  - name: Mart's Mutant Mod - Increased Increased Spawns.esp
+  - name: 'Mart''s Mutant Mod - Increased Increased Spawns.esp'
     tag:
       - Relev
-  - name: Mart's Mutant Mod - Increased Spawns.esp
+  - name: 'Mart''s Mutant Mod - Increased Spawns.esp'
     tag:
       - Relev
-  - name: Mart's Mutant Mod - Reduced Wasteland Spawns.esp
+  - name: 'Mart''s Mutant Mod - Reduced Wasteland Spawns.esp'
     tag:
       - Delev
       - Relev
-  - name: Mart's Mutant Mod - Zones Respawn.esp
+  - name: 'Mart''s Mutant Mod - Zones Respawn.esp'
     msg:
       - type: say
-        content: Included in FWE - Not Required
-        condition: file("FO3 Wanderers Edition - Main File.esm")
-  - name: Mart's Mutant Mod - Tougher Traders.esp
+        content: 'Included in FWE - Not Required'
+        condition: 'file("FO3 Wanderers Edition - Main File.esm")'
+  - name: 'Mart''s Mutant Mod - Tougher Traders.esp'
     msg:
       - type: say
-        content: Included in FWE - Not Required
-        condition: file("FO3 Wanderers Edition - Main File.esm")
+        content: 'Included in FWE - Not Required'
+        condition: 'file("FO3 Wanderers Edition - Main File.esm")'
     tag:
       - Actors.Stats
       - Factions
       - Relations
-  - name: Mart's Mutant Mod - Natural Selection.esp
+  - name: 'Mart''s Mutant Mod - Natural Selection.esp'
     msg:
       - type: say
-        content: Included in FWE - Not Required
-        condition: file("FO3 Wanderers Edition - Main File.esm")
+        content: 'Included in FWE - Not Required'
+        condition: 'file("FO3 Wanderers Edition - Main File.esm")'
     tag:
       - Relations
-  - name: Mart's Mutant Mod - Mutant Mod Menu.esp
+  - name: 'Mart''s Mutant Mod - Mutant Mod Menu.esp'
     msg:
       - type: say
-        content: Obsolete. Update MMM to latest version.
-  - name: Mart's Mutant Mod - Soft Unleveler.esp
+        content: 'Obsolete. Update MMM to latest version.'
+  - name: 'Mart''s Mutant Mod - Soft Unleveler.esp'
     msg:
       - type: say
-        content: Use either 'Soft Unleveler' or 'Soft Unleveler Hardcore' but not both.
-  - name: Mart's Mutant Mod - Soft Unleveler Hardcore.esp
+        content: 'Use either ''Soft Unleveler'' or ''Soft Unleveler Hardcore'' but not both.'
+  - name: 'Mart''s Mutant Mod - Soft Unleveler Hardcore.esp'
     msg:
       - type: say
-        content: Use either 'Soft Unleveler' or 'Soft Unleveler Hardcore' but not both.
-  - name: Project Beauty- MMM Raiders.esp
+        content: 'Use either ''Soft Unleveler'' or ''Soft Unleveler Hardcore'' but not both.'
+  - name: 'Project Beauty- MMM Raiders.esp'
     msg:
       - type: error
-        content: Old. Download the latest Project Beauty files.
-        condition: file("FOOK2 - Main.esm")
-  - name: Mart's Mutant Mod - Project Beauty (HD Addition).esp
+        content: 'Old. Download the latest Project Beauty files.'
+        condition: 'file("FOOK2 - Main.esm")'
+  - name: 'Mart''s Mutant Mod - Project Beauty (HD Addition).esp'
     msg:
       - type: error
-        content: Old. Download the latest Project Beauty files.
-        condition: file("FOOK2 - Main.esm")
+        content: 'Old. Download the latest Project Beauty files.'
+        condition: 'file("FOOK2 - Main.esm")'
     tag:
       - NoMerge
       - NPC.Race
       - NpcFaces
-  - name: Mart's Mutant Mod - Project Beauty.esp
+  - name: 'Mart''s Mutant Mod - Project Beauty.esp'
     tag:
       - NoMerge
       - NPC.Race
       - NpcFaces
-  - name: Mart's Mutant Mod - Project Beauty + FWE.esp
+  - name: 'Mart''s Mutant Mod - Project Beauty + FWE.esp'
     tag:
       - NoMerge
       - NPC.Race
       - NpcFaces
-  - name: CP - FACE3 NPCS [MMM].esp
+  - name: 'CP - FACE3 NPCS [MMM].esp'
     tag:
       - NoMerge
       - NPC.Race
       - NpcFaces
-  - name: CP - FACE3 [MMM] Racefix.esp
+  - name: 'CP - FACE3 [MMM] Racefix.esp'
     tag:
       - NoMerge
       - NPC.Race
       - NpcFaces
-  - name: Mart's Mutant Mod - FOOK.esp
+  - name: 'Mart''s Mutant Mod - FOOK.esp'
     msg:
       - type: error
-        content: Get FOOK2
-        condition: file("FOOK2 - Main.esm")
-  - name: Mart's Mutant Mod - FOOK2.esp
+        content: 'Get FOOK2'
+        condition: 'file("FOOK2 - Main.esm")'
+  - name: 'Mart''s Mutant Mod - FOOK2.esp'
     tag:
       - Relations
-  - name: Mart's Mutant Mod - FOOK2 - DIK.esp
+  - name: 'Mart''s Mutant Mod - FOOK2 - DIK.esp'
     tag:
       - Relations
-  - name: Mart's Mutant Mod - FWE Master Release.esp
+  - name: 'Mart''s Mutant Mod - FWE Master Release.esp'
     tag:
       - Invent
       - Relations
-  - name: DALCO Inventory Sorter - MMM - FWE.esp
+  - name: 'DALCO Inventory Sorter - MMM - FWE.esp'
     tag:
       - Names
       - NoMerge
-  - name: Mart's Mutant Mod - FWE Master Release + DLCs.esp
+  - name: 'Mart''s Mutant Mod - FWE Master Release + DLCs.esp'
     tag:
       - Invent
       - Relations
       - Scripts
-  - name: Mart's Mutant Mod - FWE Master Release + Project Beauty.esp
+  - name: 'Mart''s Mutant Mod - FWE Master Release + Project Beauty.esp'
     tag:
       - NoMerge
       - NPC.Race
       - NpcFaces
-  - name: Mart's Mutant Mod - FWE with EVE.esp
+  - name: 'Mart''s Mutant Mod - FWE with EVE.esp'
     tag:
       - Invent
       - Relations
-  - name: Mart's Mutant Mod - Project Beauty + FWE.esp
+  - name: 'Mart''s Mutant Mod - Project Beauty + FWE.esp'
     tag:
       - NoMerge
       - NPC.Race
       - NpcFaces
-  - name: Mart's Mutant Mod - Project Beauty (HD Addition).esp
+  - name: 'Mart''s Mutant Mod - Project Beauty (HD Addition).esp'
     msg:
       - type: error
-        content: Old. Download the latest Project Beauty files.
-        condition: file("FOOK2 - Main.esm")
+        content: 'Old. Download the latest Project Beauty files.'
+        condition: 'file("FOOK2 - Main.esm")'
     tag:
       - NoMerge
       - NPC.Race
       - NpcFaces
-  - name: MMM - FWE & Overhaul Kit_Master Release.esp
+  - name: 'MMM - FWE & Overhaul Kit_Master Release.esp'
     msg:
       - type: say
-        content: Outdated. Update to latest version of FWE - Combat Overhaul
-  - name: MMM - FWE Overhaul Kit_Master Release Alpha.esp
+        content: 'Outdated. Update to latest version of FWE - Combat Overhaul'
+  - name: 'MMM - FWE Overhaul Kit_Master Release Alpha.esp'
     msg:
       - type: say
-        content: Outdated. Update to latest version of FWE - Combat Overhaul
-  - name: MMM - FWE_Combat Overhaul Master Release.esp
+        content: 'Outdated. Update to latest version of FWE - Combat Overhaul'
+  - name: 'MMM - FWE_Combat Overhaul Master Release.esp'
     tag:
       - Actors.ACBS
       - Actors.Stats
@@ -2416,816 +2410,816 @@ plugins:
       - Relations
       - Scripts
       - Stats
-  - name: AmyWong - DLCs (FOOK2 1.1 DIK).esp
+  - name: 'AmyWong - DLCs (FOOK2 1.1 DIK).esp'
     inc:
-      - AmyWong - DLCs.esp
-  - name: AmyWong - DLC01 Anchorage.esp
+      - 'AmyWong - DLCs.esp'
+  - name: 'AmyWong - DLC01 Anchorage.esp'
     inc:
-      - AmyWong - DLCs.esp
-  - name: AmyWong - DLC02 The Pitt.esp
+      - 'AmyWong - DLCs.esp'
+  - name: 'AmyWong - DLC02 The Pitt.esp'
     inc:
-      - AmyWong - DLCs.esp
-  - name: AmyWong - DLC03 Broken Steel.esp
+      - 'AmyWong - DLCs.esp'
+  - name: 'AmyWong - DLC03 Broken Steel.esp'
     inc:
-      - AmyWong - DLCs.esp
-  - name: AmyWong - DLC04 Pt.Lookout.esp
+      - 'AmyWong - DLCs.esp'
+  - name: 'AmyWong - DLC04 Pt.Lookout.esp'
     inc:
-      - AmyWong - DLCs.esp
-  - name: AmyWong - DLC05 Zeta.esp
+      - 'AmyWong - DLCs.esp'
+  - name: 'AmyWong - DLC05 Zeta.esp'
     inc:
-      - AmyWong - DLCs.esp
-  - name: AmyWong - CALIBR 1.3 (FWE 5).esp
+      - 'AmyWong - DLCs.esp'
+  - name: 'AmyWong - CALIBR 1.3 (FWE 5).esp'
     inc:
-      - AmyWong - CALIBR 1.3.esp
-      - AmyWong - CALIBR 1.2.esp
-  - name: AmyWong - CALIBR 1.3.esp
+      - 'AmyWong - CALIBR 1.3.esp'
+      - 'AmyWong - CALIBR 1.2.esp'
+  - name: 'AmyWong - CALIBR 1.3.esp'
     inc:
-      - AmyWong - CALIBR 1.3.esp
-      - AmyWong - CALIBR 1.3 (FWE 5).esp
-  - name: AmyWong - CALIBR 1.2.esp
+      - 'AmyWong - CALIBR 1.3.esp'
+      - 'AmyWong - CALIBR 1.3 (FWE 5).esp'
+  - name: 'AmyWong - CALIBR 1.2.esp'
     inc:
-      - AmyWong - CALIBR 1.3 (FWE 5).esp
-      - AmyWong - CALIBR 1.2.esp
-  - name: ARC - Assembled Robotic Companions.esp
+      - 'AmyWong - CALIBR 1.3 (FWE 5).esp'
+      - 'AmyWong - CALIBR 1.2.esp'
+  - name: 'ARC - Assembled Robotic Companions.esp'
     tag:
       - Invent
       - Stats
-  - name: Brisa - Cooking with FWE & MMM 6.esp
+  - name: 'Brisa - Cooking with FWE & MMM 6.esp'
     inc:
-      - Brisa and FWE - Primary Needs Patch.esp
-  - name: slaveraider_newlook.esp
+      - 'Brisa and FWE - Primary Needs Patch.esp'
+  - name: 'slaveraider_newlook.esp'
     tag:
       - Graphics
-  - name: CharonImproved.esp
+  - name: 'CharonImproved.esp'
     tag:
       - Actors.AIPackages
-  - name: llama's Vanilla Followers for Charon Improved.esp
+  - name: 'llama''s Vanilla Followers for Charon Improved.esp'
     tag:
       - Actors.ACBS
       - Actors.AIPackages
       - Stats
-  - name: Get Your Cherry Back.esp
+  - name: 'Get Your Cherry Back.esp'
     tag:
       - Actors.ACBS
       - Actors.AIPackages
-  - name: CompanionCherry.esp
+  - name: 'CompanionCherry.esp'
     tag:
       - Actors.Stats
-  - name: MTC RealWildnessLife.esp
+  - name: 'MTC RealWildnessLife.esp'
     tag:
       - Relations
-  - name: mesme.esp
+  - name: 'mesme.esp'
     tag:
       - Actors.ACBS
-  - name: RoadWardens.esp
+  - name: 'RoadWardens.esp'
     msg:
       - type: say
-        content: If using MMM, use 'RoadWardensMMM.esp' instead
-  - name: WRWC - Classic Fallout.esp
+        content: 'If using MMM, use ''RoadWardensMMM.esp'' instead'
+  - name: 'WRWC - Classic Fallout.esp'
     msg:
       - type: say
-        content: Use one one type of Weapon Restriction while Crippled
-  - name: WRWC - Right Handed.esp
+        content: 'Use one one type of Weapon Restriction while Crippled'
+  - name: 'WRWC - Right Handed.esp'
     msg:
       - type: say
-        content: Use one one type of Weapon Restriction while Crippled
-  - name: RI_LootTableRI.esp
+        content: 'Use one one type of Weapon Restriction while Crippled'
+  - name: 'RI_LootTableRI.esp'
     tag:
       - Delev
-  - name: RI_LootTablePN.esp
+  - name: 'RI_LootTablePN.esp'
     tag:
       - Delev
-  - name: Imp's More Complex Needs.esp
+  - name: 'Imp''s More Complex Needs.esp'
     tag:
       - Delev
       - Relev
       - Stats
-  - name: IMCN - 5 DLC Merged.esp
+  - name: 'IMCN - 5 DLC Merged.esp'
     tag:
       - Stats
-  - name: IMCN - Operation Anchorage.esp
+  - name: 'IMCN - Operation Anchorage.esp'
     inc:
-      - IMCN - 5 DLC Merged.esp
+      - 'IMCN - 5 DLC Merged.esp'
     tag:
       - Stats
-  - name: IMCN - The Pitt.esp
+  - name: 'IMCN - The Pitt.esp'
     inc:
-      - IMCN - 5 DLC Merged.esp
+      - 'IMCN - 5 DLC Merged.esp'
     tag:
       - Stats
-  - name: IMCN - Broken Steel.esp
+  - name: 'IMCN - Broken Steel.esp'
     inc:
-      - IMCN - 5 DLC Merged.esp
+      - 'IMCN - 5 DLC Merged.esp'
     tag:
       - Stats
-  - name: IMCN - Point Lookout.esp
+  - name: 'IMCN - Point Lookout.esp'
     inc:
-      - IMCN - 5 DLC Merged.esp
+      - 'IMCN - 5 DLC Merged.esp'
     tag:
       - Stats
-  - name: IMCN - Mothership Zeta.esp
+  - name: 'IMCN - Mothership Zeta.esp'
     inc:
-      - IMCN - 5 DLC Merged.esp
+      - 'IMCN - 5 DLC Merged.esp'
     tag:
       - Stats
-  - name: IMCN - FWE Compatibility and Ingestibles.esp
+  - name: 'IMCN - FWE Compatibility and Ingestibles.esp'
     tag:
       - Stats
-  - name: IMCN - FOOK2 Ingestibles.esp
+  - name: 'IMCN - FOOK2 Ingestibles.esp'
     tag:
       - Stats
-  - name: IMCN - BLTC Compatibility and Ingestibles.esp
+  - name: 'IMCN - BLTC Compatibility and Ingestibles.esp'
     inc:
-      - IMCN - FWE Compatibility and Ingestibles.esp
+      - 'IMCN - FWE Compatibility and Ingestibles.esp'
     tag:
       - Stats
-  - name: IMCN - BLTC RiPnO Combined Compatibility.esp
+  - name: 'IMCN - BLTC RiPnO Combined Compatibility.esp'
     inc:
-      - IMCN - FWE Compatibility and Ingestibles.esp
-  - name: IMCN - RiPnO Compatibility and Ingestibles.esp
+      - 'IMCN - FWE Compatibility and Ingestibles.esp'
+  - name: 'IMCN - RiPnO Compatibility and Ingestibles.esp'
     inc:
-      - IMCN - FWE Compatibility and Ingestibles.esp
+      - 'IMCN - FWE Compatibility and Ingestibles.esp'
     tag:
       - Stats
-  - name: IMCN - MMM Meats, Bloods, and Eyeballs.esp
+  - name: 'IMCN - MMM Meats, Bloods, and Eyeballs.esp'
     tag:
       - Delev
       - Relev
       - Stats
-  - name: All Companions Essential.esp
+  - name: 'All Companions Essential.esp'
     tag:
       - Actors.ACBS
-  - name: AMPUTATE!.esp
+  - name: 'AMPUTATE!.esp'
     tag:
       - Scripts
-  - name: Attentater's Wasteland Economy.esp
+  - name: 'Attentater''s Wasteland Economy.esp'
     tag:
       - Names
-  - name: BA_RepairVanilla.esp
+  - name: 'BA_RepairVanilla.esp'
     tag:
       - Deflst
-  - name: BA_RepairThePitt.esp
+  - name: 'BA_RepairThePitt.esp'
     tag:
       - Deflst
-  - name: BA_RepairGOTY.esp
+  - name: 'BA_RepairGOTY.esp'
     tag:
       - Deflst
-  - name: bittercup_6.esp
+  - name: 'bittercup_6.esp'
     tag:
       - Delev
       - Relev
       - ScriptContents
-  - name: ChildKiller.esp
+  - name: 'ChildKiller.esp'
     tag:
       - Actors.ACBS
       - Scripts
-  - name: Easier_hacking_5_8.esp
+  - name: 'Easier_hacking_5_8.esp'
     inc:
-      - Lucky_hacking_5.esp
-  - name: Lucky_hacking_5.esp
+      - 'Lucky_hacking_5.esp'
+  - name: 'Lucky_hacking_5.esp'
     inc:
-      - Easier_hacking_5_8.esp
-  - name: EWE DLC Addon.esp
+      - 'Easier_hacking_5_8.esp'
+  - name: 'EWE DLC Addon.esp'
     tag:
       - Deflst
       - Graphics
       - Stats
-  - name: Fallout 3 Sexus with Children Empire.esp
+  - name: 'Fallout 3 Sexus with Children Empire.esp'
     msg:
       - type: say
-        content: Obsolete. Update to latest version.
-  - name: Ghouls Cohabitate.esp
+        content: 'Obsolete. Update to latest version.'
+  - name: 'Ghouls Cohabitate.esp'
     tag:
       - ScriptContents
-  - name: infiltrations.esp
+  - name: 'infiltrations.esp'
     tag:
       - Scripts
-  - name: Inebriation.esp
+  - name: 'Inebriation.esp'
     inc:
-       - Inebriation.esp
-  - name: Inebriation-FOSE.esp
+       - 'Inebriation.esp'
+  - name: 'Inebriation-FOSE.esp'
     inc:
-       - Inebriation-FOSE.esp
-  - name: KillableKids.esp
+       - 'Inebriation-FOSE.esp'
+  - name: 'KillableKids.esp'
     msg:
       - type: say
-        content: Choose only one 'KillableKids' ESP.
-  - name: KillableKidsOptional.esp
+        content: 'Choose only one ''KillableKids'' ESP.'
+  - name: 'KillableKidsOptional.esp'
     msg:
       - type: say
-        content: Choose only one 'KillableKids' ESP.
-  - name: KillableKidsNormalHealth.esp
+        content: 'Choose only one ''KillableKids'' ESP.'
+  - name: 'KillableKidsNormalHealth.esp'
     msg:
       - type: say
-        content: Choose only one 'KillableKids' ESP.
-  - name: KillableKidsNormalHealthOptional.esp
+        content: 'Choose only one ''KillableKids'' ESP.'
+  - name: 'KillableKidsNormalHealthOptional.esp'
     msg:
       - type: say
-        content: Choose only one 'KillableKids' ESP.
-  - name: KillableKidsNoExtras.esp
+        content: 'Choose only one ''KillableKids'' ESP.'
+  - name: 'KillableKidsNoExtras.esp'
     msg:
       - type: say
-        content: Choose only one 'KillableKids' ESP.
-  - name: AttackableBrats.esp
+        content: 'Choose only one ''KillableKids'' ESP.'
+  - name: 'AttackableBrats.esp'
     msg:
       - type: say
-        content: Choose only one 'Brats' ESP.
-  - name: KillableBrats.esp
+        content: 'Choose only one ''Brats'' ESP.'
+  - name: 'KillableBrats.esp'
     msg:
       - type: say
-        content: Choose only one 'Brats' ESP.
-  - name: BadAssBrats.esp
+        content: 'Choose only one ''Brats'' ESP.'
+  - name: 'BadAssBrats.esp'
     msg:
       - type: say
-        content: Choose only one 'Brats' ESP.
-  - name: Kill and Loot Unconscious Essential NPCs.esp
+        content: 'Choose only one ''Brats'' ESP.'
+  - name: 'Kill and Loot Unconscious Essential NPCs.esp'
     inc:
-      - Kill and Loot Unconscious Essential NPCs_NoGore.esp
-      - Kill and Loot Unconscious Essential NPCs_FOSE.esp
-  - name: Kill and Loot Unconscious Essential NPCs_FOSE.esp
+      - 'Kill and Loot Unconscious Essential NPCs_NoGore.esp'
+      - 'Kill and Loot Unconscious Essential NPCs_FOSE.esp'
+  - name: 'Kill and Loot Unconscious Essential NPCs_FOSE.esp'
     inc:
-      - Kill and Loot Unconscious Essential NPCs.esp
-      - Kill and Loot Unconscious Essential NPCs_NoGore.esp
-  - name: Kill and Loot Unconscious Essential NPCs_NoGore.esp
+      - 'Kill and Loot Unconscious Essential NPCs.esp'
+      - 'Kill and Loot Unconscious Essential NPCs_NoGore.esp'
+  - name: 'Kill and Loot Unconscious Essential NPCs_NoGore.esp'
     inc:
-      - Kill and Loot Unconscious Essential NPCs.esp
-      - Kill and Loot Unconscious Essential NPCs_FOSE.esp
-  - name: Laboratory.esp
+      - 'Kill and Loot Unconscious Essential NPCs.esp'
+      - 'Kill and Loot Unconscious Essential NPCs_FOSE.esp'
+  - name: 'Laboratory.esp'
     tag:
       - Scripts
-  - name: QuantumLab.esp
+  - name: 'QuantumLab.esp'
     tag:
       - Scripts
-  - name: Laboratory (BS).esp
+  - name: 'Laboratory (BS).esp'
     tag:
       - Scripts
-  - name: Laboratory (PL).esp
+  - name: 'Laboratory (PL).esp'
     tag:
       - Scripts
-  - name: QuantumLab (PL).esp
+  - name: 'QuantumLab (PL).esp'
     tag:
       - Scripts
-  - name: Laboratory (MZ).esp
+  - name: 'Laboratory (MZ).esp'
     tag:
       - Scripts
-  - name: QuantumLab (MZ).esp
+  - name: 'QuantumLab (MZ).esp'
     tag:
       - Scripts
-  - name: Laboratory (BS & PL).esp
+  - name: 'Laboratory (BS & PL).esp'
     tag:
       - Scripts
-  - name: Laboratory (BS & MZ).esp
+  - name: 'Laboratory (BS & MZ).esp'
     tag:
       - Scripts
-  - name: Laboratory (PL & MZ).esp
+  - name: 'Laboratory (PL & MZ).esp'
     tag:
       - Scripts
-  - name: QuantumLab (PL & MZ).esp
+  - name: 'QuantumLab (PL & MZ).esp'
     tag:
       - Scripts
-  - name: LightweightFoodSanitizer.esp
+  - name: 'LightweightFoodSanitizer.esp'
     tag:
       - Stats
-  - name: MiscWeightFix.esp
+  - name: 'MiscWeightFix.esp'
     tag:
       - Stats
-  - name: Owned!.esp
+  - name: 'Owned!.esp'
     tag:
       - Factions
-  - name: RebalancedFire-Vanilla.esp
+  - name: 'RebalancedFire-Vanilla.esp'
     inc:
-      - RebalancedFire-BrokenSteel.esp
-  - name: RebalancedFire-BrokenSteel.esp
+      - 'RebalancedFire-BrokenSteel.esp'
+  - name: 'RebalancedFire-BrokenSteel.esp'
     inc:
-      - RebalancedFire-Vanilla.esp
-  - name: RRRU +4 UFP.esp
+      - 'RebalancedFire-Vanilla.esp'
+  - name: 'RRRU +4 UFP.esp'
     tag:
       - Deflst
-  - name: RRRU +4.esp
+  - name: 'RRRU +4.esp'
     tag:
       - Deflst
-  - name: Skill Modification Assignment.esp
+  - name: 'Skill Modification Assignment.esp'
     tag:
       - Scripts
       - Stats
-  - name: DALCO Inventory Sorter - SMA.esp
+  - name: 'DALCO Inventory Sorter - SMA.esp'
     tag:
       - Names
       - NoMerge
-  - name: SuperStim.esp
+  - name: 'SuperStim.esp'
     tag:
       - Scripts
-  - name: SpiderAnts.esp
+  - name: 'SpiderAnts.esp'
     tag:
       - Relev
-  - name: T3T_MiscItemIcons.esp
+  - name: 'T3T_MiscItemIcons.esp'
     msg:
       - type: say
-        content: Do not use with latest FWE, it is already integrated.
-  - name: TenpennyGhoulsAtPeace.esp
+        content: 'Do not use with latest FWE, it is already integrated.'
+  - name: 'TenpennyGhoulsAtPeace.esp'
     tag:
       - ScriptContents
-  - name: EnhVision.esp
+  - name: 'EnhVision.esp'
     inc:
-      - EnhVisionHK.esp
-  - name: EnhVisionHK.esp
+      - 'EnhVisionHK.esp'
+  - name: 'EnhVisionHK.esp'
     inc:
-      - EnhVision.esp
-  - name: Weapon Repair Kits.esp
+      - 'EnhVision.esp'
+  - name: 'Weapon Repair Kits.esp'
     tag:
       - Relev
-  - name: WRK Final - Plugin.esp
+  - name: 'WRK Final - Plugin.esp'
     tag:
       - Invent
       - Relev
-  - name: WRK Final - Point Lookout.esp
+  - name: 'WRK Final - Point Lookout.esp'
     tag:
       - Invent
-  - name: yaDisguisesMod-Merged.esp
+  - name: 'yaDisguisesMod-Merged.esp'
     inc:
-      - yaDisguisesMod.esp
-      - yaDisguisesMod-DLC-Anchorage.esp
-      - yaDisguisesMod-DLC-ThePitt.esp
-      - yaDisguisesMod-DLC-BrokenSteel.esp
-  - name: ZumbsDarkerSunglasses_no_replace.esp
+      - 'yaDisguisesMod.esp'
+      - 'yaDisguisesMod-DLC-Anchorage.esp'
+      - 'yaDisguisesMod-DLC-ThePitt.esp'
+      - 'yaDisguisesMod-DLC-BrokenSteel.esp'
+  - name: 'ZumbsDarkerSunglasses_no_replace.esp'
     msg:
       - type: say
-        content: Zumbs has asked you to rename this to ZumbsDarkerSunglasses.esp
-  - name: ZumbsDarkerSunglasses_screen_effect.esp
+        content: 'Zumbs has asked you to rename this to ZumbsDarkerSunglasses.esp'
+  - name: 'ZumbsDarkerSunglasses_screen_effect.esp'
     msg:
       - type: say
-        content: Zumbs has asked you to rename this to ZumbsDarkerSunglasses.esp
-  - name: Arwen_Realism_Core.esp
-    tag:
-      - Actors.CombatStyle
-      - Actors.Stats
-      - Destructible
-      - Names
-      - Relev
-      - Sound
-      - Stats
-  - name: Arwen_GOTY_Realism_Core.esp
-    tag:
-      - NoMerge
-  - name: Arwen_Hard-Core.esp
+        content: 'Zumbs has asked you to rename this to ZumbsDarkerSunglasses.esp'
+  - name: 'Arwen_Realism_Core.esp'
     tag:
       - Actors.CombatStyle
       - Actors.Stats
       - Destructible
       - Names
       - Relev
+      - Sound
       - Stats
-  - name: Arwen_GOTY_Hard-Core.esp
+  - name: 'Arwen_GOTY_Realism_Core.esp'
     tag:
       - NoMerge
-  - name: Arwen_Armor.esp
+  - name: 'Arwen_Hard-Core.esp'
+    tag:
+      - Actors.CombatStyle
+      - Actors.Stats
+      - Destructible
+      - Names
+      - Relev
+      - Stats
+  - name: 'Arwen_GOTY_Hard-Core.esp'
+    tag:
+      - NoMerge
+  - name: 'Arwen_Armor.esp'
     inc:
-      - Arwen_FULL_Tweaks.esp
-  - name: Arwen_Less_Is_More.esp
+      - 'Arwen_FULL_Tweaks.esp'
+  - name: 'Arwen_Less_Is_More.esp'
     inc:
-      - Arwen_FULL_Tweaks.esp
-  - name: Arwen_Less-Is-More.esp
+      - 'Arwen_FULL_Tweaks.esp'
+  - name: 'Arwen_Less-Is-More.esp'
     inc:
-      - Arwen_FULL_Tweaks.esp
-  - name: Arwen_Localized_Damage.esp
+      - 'Arwen_FULL_Tweaks.esp'
+  - name: 'Arwen_Localized_Damage.esp'
     inc:
-      - Arwen_FULL_Tweaks.esp
-  - name: Arwen_SmarterAI.esp
+      - 'Arwen_FULL_Tweaks.esp'
+  - name: 'Arwen_SmarterAI.esp'
     inc:
-      - Arwen_FULL_Tweaks.esp
-  - name: Arwen_Survival.esp
+      - 'Arwen_FULL_Tweaks.esp'
+  - name: 'Arwen_Survival.esp'
     inc:
-      - Arwen_FULL_Tweaks.esp
-  - name: Arwen_Tweaks_Main.esp
+      - 'Arwen_FULL_Tweaks.esp'
+  - name: 'Arwen_Tweaks_Main.esp'
     inc:
-      - Arwen_FULL_Tweaks.esp
-  - name: Arwen_Weapons.esp
+      - 'Arwen_FULL_Tweaks.esp'
+  - name: 'Arwen_Weapons.esp'
     inc:
-      - Arwen_FULL_Tweaks.esp
-  - name: Arwen_Med-Tec.esp
+      - 'Arwen_FULL_Tweaks.esp'
+  - name: 'Arwen_Med-Tec.esp'
     tag:
       - Names
-  - name: Arwen_GOTY_Med-Tec.esp
+  - name: 'Arwen_GOTY_Med-Tec.esp'
     tag:
       - Names
       - Relev
       - Stats
-  - name: Arwen_MMM_Med-Tec_Patch.esp
+  - name: 'Arwen_MMM_Med-Tec_Patch.esp'
     tag:
       - Relev
       - Scripts
-  - name: Arwen_MMM_Patch.esp
+  - name: 'Arwen_MMM_Patch.esp'
     tag:
       - Scripts
-  - name: Arwen_EVE_Patch.esp
+  - name: 'Arwen_EVE_Patch.esp'
     tag:
       - Graphics
       - Sound
       - Stats
-  - name: Phalanx-MainFollowerModule.esp
+  - name: 'Phalanx-MainFollowerModule.esp'
     msg:
       - type: say
-        content: Do not use with latest FOOK2, it is already integrated.
+        content: 'Do not use with latest FOOK2, it is already integrated.'
     tag:
       - Actors.ACBS
       - Actors.AIPackages
-  - name: Phalanx-BrokenSteel-Integration.esp
+  - name: 'Phalanx-BrokenSteel-Integration.esp'
     msg:
       - type: say
-        content: Do not use with latest FOOK2, it is already integrated.
-  - name: Phalanx-PointLookout-Integration.esp
+        content: 'Do not use with latest FOOK2, it is already integrated.'
+  - name: 'Phalanx-PointLookout-Integration.esp'
     msg:
       - type: say
-        content: Do not use with latest FOOK2, it is already integrated.
-  - name: EVE - FastTravelIndoors Patch.esp
+        content: 'Do not use with latest FOOK2, it is already integrated.'
+  - name: 'EVE - FastTravelIndoors Patch.esp'
     msg:
       - type: say
-        content: Paradox Ignition EVE-merger - compatibility patch for Fast Travel from Indoors.
-  - name: GH-HealingRebalanceMod_Infirmary+Lab.esp
+        content: 'Paradox Ignition EVE-merger - compatibility patch for Fast Travel from Indoors.'
+  - name: 'GH-HealingRebalanceMod_Infirmary+Lab.esp'
     tag:
       - Scripts
-  - name: DALCO Inventory Sorter - Max Level Workaround.esp
+  - name: 'DALCO Inventory Sorter - Max Level Workaround.esp'
     tag:
       - Names
-  - name: DALCO Inventory Sorter - Max Level Workaround (BS).esp
+  - name: 'DALCO Inventory Sorter - Max Level Workaround (BS).esp'
     tag:
       - Names
-  - name: DALCO Inventory Sorter - Max Level Workaround (HP).esp
+  - name: 'DALCO Inventory Sorter - Max Level Workaround (HP).esp'
     tag:
       - Names
-  - name: DALCO Inventory Sorter - Max Level Workaround (HP-BS).esp
+  - name: 'DALCO Inventory Sorter - Max Level Workaround (HP-BS).esp'
     tag:
       - Names
-  - name: dD - Enhanced Blood Main.esp
+  - name: 'dD - Enhanced Blood Main.esp'
     msg:
       - type: say
-        content: Older version included in FOOK2
-  - name: Realistic Death Physics.esp
+        content: 'Older version included in FOOK2'
+  - name: 'Realistic Death Physics.esp'
     msg:
       - type: say
-        content: Do not use with latest FWE, it is already integrated.
-  - name: REAL-ThirdViewMod.esp
+        content: 'Do not use with latest FWE, it is already integrated.'
+  - name: 'REAL-ThirdViewMod.esp'
     inc:
-      - LOWER-real-thirdpersonview.esp
-  - name: LOWER-real-thirdpersonview.esp
+      - 'LOWER-real-thirdpersonview.esp'
+  - name: 'LOWER-real-thirdpersonview.esp'
     inc:
-      - REAL-ThirdViewMod.esp
-  - name: Clean-Deluxe GOTY.esp
+      - 'REAL-ThirdViewMod.esp'
+  - name: 'Clean-Deluxe GOTY.esp'
     inc:
-      - Dust-away.esp
-      - Dust-away - DLC support.esp
-      - Paper-Shredder.esp
-      - Paper-Shredder - DLC Support.esp
-      - Rock-Out.esp
-      - Rock-Out - DLC Support.esp
+      - 'Dust-away.esp'
+      - 'Dust-away - DLC support.esp'
+      - 'Paper-Shredder.esp'
+      - 'Paper-Shredder - DLC Support.esp'
+      - 'Rock-Out.esp'
+      - 'Rock-Out - DLC Support.esp'
     msg:
       - type: say
-        content: Includes all Dust-away, paper-shredder and Rock-out plugins
-  - name: Fellout-Full.esp
+        content: 'Includes all Dust-away, paper-shredder and Rock-out plugins'
+  - name: 'Fellout-Full.esp'
     inc:
-      - Fellout-SOTD.esp
+      - 'Fellout-SOTD.esp'
     msg:
       - type: say
-        content: Do not use with latest FOOK2, it is already integrated.
-  - name: Fellout-SOTD.esp
+        content: 'Do not use with latest FOOK2, it is already integrated.'
+  - name: 'Fellout-SOTD.esp'
     inc:
-      - Either Fellout-Full.esp
+      - 'Either Fellout-Full.esp'
     msg:
       - type: say
-        content: Do not use with latest FOOK2, it is already integrated.
-  - name: Fellout-Anchorage.esp
+        content: 'Do not use with latest FOOK2, it is already integrated.'
+  - name: 'Fellout-Anchorage.esp'
     msg:
       - type: say
-        content: Do not use with latest FOOK2, it is already integrated.
-  - name: Fellout-BrokenSteel.esp
+        content: 'Do not use with latest FOOK2, it is already integrated.'
+  - name: 'Fellout-BrokenSteel.esp'
     msg:
       - type: say
-        content: Do not use with latest FOOK2, it is already integrated.
-  - name: Fellout-PointLookout.esp
+        content: 'Do not use with latest FOOK2, it is already integrated.'
+  - name: 'Fellout-PointLookout.esp'
     msg:
       - type: say
-        content: Do not use with latest FOOK2, it is already integrated.
-  - name: Fellout-Zeta.esp
+        content: 'Do not use with latest FOOK2, it is already integrated.'
+  - name: 'Fellout-Zeta.esp'
     msg:
       - type: say
-        content: Do not use with latest FOOK2, it is already integrated.
-  - name: FelloutWithLightingOverhual-1.0.esp
+        content: 'Do not use with latest FOOK2, it is already integrated.'
+  - name: 'FelloutWithLightingOverhual-1.0.esp'
     tag:
       - C.Light
-  - name: Realistic Interior Lighting.esp
+  - name: 'Realistic Interior Lighting.esp'
     tag:
       - C.Light
-  - name: Realistic Interior Lighting - BS.esp
+  - name: 'Realistic Interior Lighting - BS.esp'
     tag:
       - C.Light
-  - name: Realistic Interior Lighting - OA.esp
+  - name: 'Realistic Interior Lighting - OA.esp'
     tag:
       - C.Light
-  - name: Realistic Interior Lighting - PL.esp
+  - name: 'Realistic Interior Lighting - PL.esp'
     tag:
       - C.Light
-  - name: DarkerInteriorsFallOut3.esp
+  - name: 'DarkerInteriorsFallOut3.esp'
     tag:
       - C.Light
-  - name: DarkerInteriorsAnchorage.esp
+  - name: 'DarkerInteriorsAnchorage.esp'
     tag:
       - C.Light
-  - name: DarkerInteriorsThePitt.esp
+  - name: 'DarkerInteriorsThePitt.esp'
     tag:
       - C.Light
-  - name: DarkerInteriorsBrokenSteel.esp
+  - name: 'DarkerInteriorsBrokenSteel.esp'
     tag:
       - C.Light
-  - name: DarkerInteriorsPointLookout.esp
+  - name: 'DarkerInteriorsPointLookout.esp'
     tag:
       - C.Light
-  - name: DarkerInteriorsZeta.esp
+  - name: 'DarkerInteriorsZeta.esp'
     tag:
       - C.Light
-  - name: URWL47.esp
+  - name: 'URWL47.esp'
     msg:
       - type: say
-        content: Old. Upgrade to latest version.
+        content: 'Old. Upgrade to latest version.'
     tag:
       - C.Light
-  - name: URWL48.esp
+  - name: 'URWL48.esp'
     msg:
       - type: say
-        content: Old. Upgrade to latest version.
+        content: 'Old. Upgrade to latest version.'
     tag:
       - C.Light
-  - name: URWL.esp
+  - name: 'URWL.esp'
     tag:
       - C.Light
-  - name: URWL-Normal Color Saturation.esp
+  - name: 'URWL-Normal Color Saturation.esp'
     inc:
-      - URWL.esp
+      - 'URWL.esp'
     tag:
       - C.Light
-  - name: URWLRain.esp
+  - name: 'URWLRain.esp'
     tag:
       - C.Climate
       - C.Light
-  - name: NColorDCInteriors.esp
+  - name: 'NColorDCInteriors.esp'
     tag:
       - C.Light
-  - name: Xepha's Darkened Interiors.esp
+  - name: 'Xepha''s Darkened Interiors.esp'
     tag:
       - C.Light
-  - name: Xepha's Darkened Interiors - OA.esp
+  - name: 'Xepha''s Darkened Interiors - OA.esp'
     tag:
       - C.Light
-  - name: Xepha's Darkened Interiors - BS.esp
+  - name: 'Xepha''s Darkened Interiors - BS.esp'
     msg:
       - type: say
-        content: Manditory use if using BrokenSteel
+        content: 'Manditory use if using BrokenSteel'
     tag:
       - C.Light
-  - name: Xepha's Darkened Interiors - PL.esp
+  - name: 'Xepha''s Darkened Interiors - PL.esp'
     tag:
       - C.Light
-  - name: Xepha's Dynamic Weather - Main.esp
+  - name: 'Xepha''s Dynamic Weather - Main.esp'
     tag:
       - C.Climate
-  - name: Xepha's Dynamic Weather - Anchorage.esp
+  - name: 'Xepha''s Dynamic Weather - Anchorage.esp'
     tag:
       - C.Climate
-  - name: Xepha's Dynamic Weather - The Pitt.esp
+  - name: 'Xepha''s Dynamic Weather - The Pitt.esp'
     tag:
       - C.Climate
-  - name: Xepha's Dynamic Weather - Broken Steel.esp
+  - name: 'Xepha''s Dynamic Weather - Broken Steel.esp'
     tag:
       - C.Climate
-  - name: Xepha's Dynamic Weather - Point Lookout.esp
+  - name: 'Xepha''s Dynamic Weather - Point Lookout.esp'
     tag:
       - C.Climate
-  - name: Xepha's Dynamic Weather - Main + DLC Merged.esp
+  - name: 'Xepha''s Dynamic Weather - Main + DLC Merged.esp'
     tag:
       - C.Climate
-  - name: Xepha's Dynamic Weather - Night Eye Edition.esp
+  - name: 'Xepha''s Dynamic Weather - Night Eye Edition.esp'
     inc:
-      - Xepha's Dynamic Weather - Night Eye Edition.esp
-  - name: Xepha's Dynamic Weather - Night Eye Edition (Anchorage).esp
+      - 'Xepha''s Dynamic Weather - Night Eye Edition.esp'
+  - name: 'Xepha''s Dynamic Weather - Night Eye Edition (Anchorage).esp'
     inc:
-      - Xepha's Dynamic Weather - Night Eye Edition (Anchorage).esp
-  - name: Xepha's Dynamic Weather - Climate OverRider (OA + Rain).esp
+      - 'Xepha''s Dynamic Weather - Night Eye Edition (Anchorage).esp'
+  - name: 'Xepha''s Dynamic Weather - Climate OverRider (OA + Rain).esp'
     inc:
-      - Xepha's Dynamic Weather - Climate OverRider (OA).esp
-      - Xepha's Dynamic Weather - Climate OverRider (Rain).esp
-      - Xepha's Dynamic Weather - Climate OverRider.esp
-      - Xepha's Dynamic Weather - Climate OverRider (OA + Rain) - No Fog.esp
-  - name: Xepha's Dynamic Weather - Climate OverRider (OA).esp
+      - 'Xepha''s Dynamic Weather - Climate OverRider (OA).esp'
+      - 'Xepha''s Dynamic Weather - Climate OverRider (Rain).esp'
+      - 'Xepha''s Dynamic Weather - Climate OverRider.esp'
+      - 'Xepha''s Dynamic Weather - Climate OverRider (OA + Rain) - No Fog.esp'
+  - name: 'Xepha''s Dynamic Weather - Climate OverRider (OA).esp'
     inc:
-      - Xepha's Dynamic Weather - Climate OverRider (OA + Rain).esp
-      - Xepha's Dynamic Weather - Climate OverRider (Rain).esp
-      - Xepha's Dynamic Weather - Climate OverRider.esp
-      - Xepha's Dynamic Weather - Climate OverRider (OA + Rain) - No Fog.esp
-  - name: Xepha's Dynamic Weather - Climate OverRider (Rain).esp
+      - 'Xepha''s Dynamic Weather - Climate OverRider (OA + Rain).esp'
+      - 'Xepha''s Dynamic Weather - Climate OverRider (Rain).esp'
+      - 'Xepha''s Dynamic Weather - Climate OverRider.esp'
+      - 'Xepha''s Dynamic Weather - Climate OverRider (OA + Rain) - No Fog.esp'
+  - name: 'Xepha''s Dynamic Weather - Climate OverRider (Rain).esp'
     inc:
-      - Xepha's Dynamic Weather - Climate OverRider (OA + Rain).esp
-      - Xepha's Dynamic Weather - Climate OverRider (OA).esp
-      - Xepha's Dynamic Weather - Climate OverRider.esp
-      - Xepha's Dynamic Weather - Climate OverRider (OA + Rain) - No Fog.esp
-  - name: Xepha's Dynamic Weather - Climate OverRider.esp
+      - 'Xepha''s Dynamic Weather - Climate OverRider (OA + Rain).esp'
+      - 'Xepha''s Dynamic Weather - Climate OverRider (OA).esp'
+      - 'Xepha''s Dynamic Weather - Climate OverRider.esp'
+      - 'Xepha''s Dynamic Weather - Climate OverRider (OA + Rain) - No Fog.esp'
+  - name: 'Xepha''s Dynamic Weather - Climate OverRider.esp'
     inc:
-      - Xepha's Dynamic Weather - Climate OverRider (OA + Rain).esp
-      - Xepha's Dynamic Weather - Climate OverRider (OA).esp
-      - Xepha's Dynamic Weather - Climate OverRider (Rain).esp
-      - Xepha's Dynamic Weather - Climate OverRider (OA + Rain) - No Fog.esp
-  - name: Xepha's Dynamic Weather - Climate OverRider (OA + Rain) - No Fog.esp
+      - 'Xepha''s Dynamic Weather - Climate OverRider (OA + Rain).esp'
+      - 'Xepha''s Dynamic Weather - Climate OverRider (OA).esp'
+      - 'Xepha''s Dynamic Weather - Climate OverRider (Rain).esp'
+      - 'Xepha''s Dynamic Weather - Climate OverRider (OA + Rain) - No Fog.esp'
+  - name: 'Xepha''s Dynamic Weather - Climate OverRider (OA + Rain) - No Fog.esp'
     inc:
-      - Xepha's Dynamic Weather - Climate OverRider (OA + Rain).esp
-      - Xepha's Dynamic Weather - Climate OverRider (OA).esp
-      - Xepha's Dynamic Weather - Climate OverRider (Rain).esp
-      - Xepha's Dynamic Weather - Climate OverRider.esp
-  - name: Xepha's Dynamic Weather - Sandstorms + Armor Damage (FOSE).esp
+      - 'Xepha''s Dynamic Weather - Climate OverRider (OA + Rain).esp'
+      - 'Xepha''s Dynamic Weather - Climate OverRider (OA).esp'
+      - 'Xepha''s Dynamic Weather - Climate OverRider (Rain).esp'
+      - 'Xepha''s Dynamic Weather - Climate OverRider.esp'
+  - name: 'Xepha''s Dynamic Weather - Sandstorms + Armor Damage (FOSE).esp'
     inc:
-      - Dynamic Weather - Sandstorms.esp
-  - name: Xepha's Dynamic Weather - Weather Machine.esp
+      - 'Dynamic Weather - Sandstorms.esp'
+  - name: 'Xepha''s Dynamic Weather - Weather Machine.esp'
     msg:
       - type: say
-        content: Only use one Weather Machine.esp at a time.
-  - name: Xepha's Dynamic Weather - Weather Machine (+Rain).esp
+        content: 'Only use one Weather Machine.esp at a time.'
+  - name: 'Xepha''s Dynamic Weather - Weather Machine (+Rain).esp'
     msg:
       - type: say
-        content: Only use one Weather Machine.esp at a time.
-  - name: Xepha's Dynamic Weather - Weather Machine (Quest Added).esp
+        content: 'Only use one Weather Machine.esp at a time.'
+  - name: 'Xepha''s Dynamic Weather - Weather Machine (Quest Added).esp'
     msg:
       - type: say
-        content: Only use one Weather Machine.esp at a time.
-  - name: Xepha's Dynamic Weather - Weather Machine (Start Game Added).esp
+        content: 'Only use one Weather Machine.esp at a time.'
+  - name: 'Xepha''s Dynamic Weather - Weather Machine (Start Game Added).esp'
     msg:
       - type: say
-        content: Only use one Weather Machine.esp at a time.
-  - name: Better DC Weather - 60-40.esp
+        content: 'Only use one Weather Machine.esp at a time.'
+  - name: 'Better DC Weather - 60-40.esp'
     inc:
-      - Better DC Weather - 80-20.esp
-  - name: Better DC Weather - 80-20.esp
+      - 'Better DC Weather - 80-20.esp'
+  - name: 'Better DC Weather - 80-20.esp'
     inc:
-      - Better DC Weather - 60-40.esp
-  - name: CRAFTHelper_ReplaceWorkbenchScript.esp
+      - 'Better DC Weather - 60-40.esp'
+  - name: 'CRAFTHelper_ReplaceWorkbenchScript.esp'
     inc:
-      - CRAFT - Activation Perk.esp
-  - name: CRAFTHelper_ReplaceWorkbenchScriptFWE.esp
+      - 'CRAFT - Activation Perk.esp'
+  - name: 'CRAFTHelper_ReplaceWorkbenchScriptFWE.esp'
     inc:
-      - CRAFT - Activation Perk.esp
-  - name: 20th Century v4 ALIVE (Vendor).esp
+      - 'CRAFT - Activation Perk.esp'
+  - name: '20th Century v4 ALIVE (Vendor).esp'
     tag:
       - Invent
-  - name: 20th Century v4 ALIVE (NPC_Settler).esp
+  - name: '20th Century v4 ALIVE (NPC_Settler).esp'
     tag:
       - Invent
-  - name: 20th Century v4 ALIVE (Raider).esp
+  - name: '20th Century v4 ALIVE (Raider).esp'
     tag:
       - Invent
-  - name: 20th Century v4 ALIVE (RivetCity).esp
+  - name: '20th Century v4 ALIVE (RivetCity).esp'
     tag:
       - Invent
-  - name: 20th Century v4 ALIVE (Brotherhood_Outcast).esp
+  - name: '20th Century v4 ALIVE (Brotherhood_Outcast).esp'
     tag:
       - Invent
-  - name: 20th Century v4 ALIVE (SuperMutant).esp
+  - name: '20th Century v4 ALIVE (SuperMutant).esp'
     tag:
       - Invent
-  - name: 20th Century v4 ALIVE (Vault 101).esp
+  - name: '20th Century v4 ALIVE (Vault 101).esp'
     tag:
       - Invent
-  - name: 20th Century v4 ALIVE (Chinese Ghoul).esp
+  - name: '20th Century v4 ALIVE (Chinese Ghoul).esp'
     tag:
       - Invent
-  - name: 20th Century v4 ALIVE (Talon_Regulator).esp
+  - name: '20th Century v4 ALIVE (Talon_Regulator).esp'
     tag:
       - Invent
-  - name: 20th Century v5 ALIVE (Vendor).esp
+  - name: '20th Century v5 ALIVE (Vendor).esp'
     tag:
       - Invent
-  - name: 20th Century v5 ALIVE (Containers).esp
+  - name: '20th Century v5 ALIVE (Containers).esp'
     tag:
       - Invent
-  - name: 20th Century v5 ALIVE (NPC_Settler).esp
+  - name: '20th Century v5 ALIVE (NPC_Settler).esp'
     tag:
       - Invent
-  - name: 20th Century v5 ALIVE (Vault 101).esp
+  - name: '20th Century v5 ALIVE (Vault 101).esp'
     tag:
       - Invent
-  - name: 20th Century v5 ALIVE (RivetCity).esp
+  - name: '20th Century v5 ALIVE (RivetCity).esp'
     tag:
       - Invent
-  - name: 20th Century v5 ALIVE (Raider).esp
+  - name: '20th Century v5 ALIVE (Raider).esp'
     tag:
       - Invent
-  - name: 20th Century v5 ALIVE (Slaver).esp
+  - name: '20th Century v5 ALIVE (Slaver).esp'
     tag:
       - Invent
-  - name: 20th Century v5 ALIVE (Chinese Ghoul).esp
+  - name: '20th Century v5 ALIVE (Chinese Ghoul).esp'
     tag:
       - Invent
-  - name: 20th Century v5 ALIVE (SuperMutant).esp
+  - name: '20th Century v5 ALIVE (SuperMutant).esp'
     tag:
       - Invent
-  - name: 20th Century v5 ALIVE (Talon_Regulator).esp
+  - name: '20th Century v5 ALIVE (Talon_Regulator).esp'
     tag:
       - Invent
-  - name: 20th Century v5 ALIVE (Brotherhood_Outcast).esp
+  - name: '20th Century v5 ALIVE (Brotherhood_Outcast).esp'
     tag:
       - Invent
-  - name: FWE Ammo Weight for 20th Century.esp
+  - name: 'FWE Ammo Weight for 20th Century.esp'
     inc:
-      - FWE Realistic Ammo Weight inc 20th Cent.esp
-  - name: FWE-20thCent Ammo Weight in Names.esp
+      - 'FWE Realistic Ammo Weight inc 20th Cent.esp'
+  - name: 'FWE-20thCent Ammo Weight in Names.esp'
     inc:
-      - FWE Realistic Ammo Weight in Names inc. 20th Cent.esp
+      - 'FWE Realistic Ammo Weight in Names inc. 20th Cent.esp'
     tag:
       - Names
-  - name: FWE Realistic Ammo Weight inc 20th Cent.esp
+  - name: 'FWE Realistic Ammo Weight inc 20th Cent.esp'
     inc:
-      - FWE Ammo Weight for 20th Century.esp
-  - name: FWE Realistic Ammo Weight in Names inc. 20th Cent.esp
+      - 'FWE Ammo Weight for 20th Century.esp'
+  - name: 'FWE Realistic Ammo Weight in Names inc. 20th Cent.esp'
     inc:
-      - FWE-20thCent Ammo Weight in Names.esp
+      - 'FWE-20thCent Ammo Weight in Names.esp'
     tag:
       - Names
-  - name: CFWR_EVE_LoadLast.esp
+  - name: 'CFWR_EVE_LoadLast.esp'
     tag:
       - Graphics
       - Names
       - Stats
-  - name: Achievement\sRemover\s\[(All)?(FO3)?(\+OA)?(\+TP)?(\+BS)?(\+PL)?(\+MZ)?\]\.esp
+  - name: 'Achievement\sRemover\s\[(All)?(FO3)?(\+OA)?(\+TP)?(\+BS)?(\+PL)?(\+MZ)?\]\.esp'
     msg:
       - type: say
-        content: Choose only one 'Achievement Remover' ESP.
-  - name: DUIF3Extras.esp
+        content: 'Choose only one ''Achievement Remover'' ESP.'
+  - name: 'DUIF3Extras.esp'
     msg:
       - type: say
-        content: Obsolete. Update DarNifiedUIF3 to latest version.
-  - name: Dog lover's mod.es
+        content: 'Obsolete. Update DarNifiedUIF3 to latest version.'
+  - name: 'Dog lover''s mod.es'
     tag:
       - Deflst
       - Delev
-  - name: Dog lover's mod NO ANCHORAGE.esp
+  - name: 'Dog lover''s mod NO ANCHORAGE.esp'
     tag:
       - Deflst
       - Delev
-  - name: MMM dog lover's mod.esp
+  - name: 'MMM dog lover''s mod.esp'
     tag:
       - Deflst
       - Delev
-  - name: AinzBeautifuleEyes.esp
+  - name: 'AinzBeautifuleEyes.esp'
     tag:
       - Eyes
-  - name: CUSTOM RACES.esp
+  - name: 'CUSTOM RACES.esp'
     tag:
       - Eyes
       - Hair
-  - name: DIM CUSTOM RACES V2.esp
+  - name: 'DIM CUSTOM RACES V2.esp'
     tag:
       - Eyes
       - Hair
-  - name: EwwGhoulyBody.esp
+  - name: 'EwwGhoulyBody.esp'
     tag:
       - Body-F
-  - name: HairPack_2chPlus.esp
+  - name: 'HairPack_2chPlus.esp'
     tag:
       - Hair
-  - name: HairPack_2chPlus+.esp
+  - name: 'HairPack_2chPlus+.esp'
     tag:
       - Hair
-  - name: HairPack_2chPlus+EYE.esp
+  - name: 'HairPack_2chPlus+EYE.esp'
     tag:
       - eyes
       - Hair
-  - name: VB_Hair_Shojo+CotW_15.esp
+  - name: 'VB_Hair_Shojo+CotW_15.esp'
     tag:
       - Hair
-  - name: Shojo Race.esp
+  - name: 'Shojo Race.esp'
     msg:
       - type: say
-        content: Old. Upgrade to latest version.
+        content: 'Old. Upgrade to latest version.'
     tag:
       - Eyes
       - Hair
-  - name: XENH.esp
+  - name: 'XENH.esp'
     tag:
       - Eyes
       - Hair
-  - name: "[Nukomimi-San] Starter.esp"
+  - name: '"[Nukomimi-San] Starter.esp"'
     tag:
       - Eyes
       - Hair
-  - name: EZCompanion_Type-N.esp
+  - name: 'EZCompanion_Type-N.esp'
     tag:
       - Eyes
       - Hair
-  - name: AAAAlbino_LingsBOG.esp
+  - name: 'AAAAlbino_LingsBOG.esp'
     tag:
       - Eyes
       - Hair
-  - name: RobCo Certified v2 Omnipatch.esp
+  - name: 'RobCo Certified v2 Omnipatch.esp'
     inc:
-      - RobCo Certified v2 EVE.esp
-      - RobCo Certified v2 FWE.esp
-      - RobCo Certified v2 Zeta Addon.esp
-  - name: Mez's Merged Patch 5-0 - DLC-FWE-WMK-MMM.esp
+      - 'RobCo Certified v2 EVE.esp'
+      - 'RobCo Certified v2 FWE.esp'
+      - 'RobCo Certified v2 Zeta Addon.esp'
+  - name: 'Mez''s Merged Patch 5-0 - DLC-FWE-WMK-MMM.esp'
     tag:
       - Deflst
       - Delev
@@ -3234,10 +3228,10 @@ plugins:
       - Relations
       - Relev
       - Scripts
-  - name: FNNsys - FWE.esp
+  - name: 'FNNsys - FWE.esp'
     tag:
       - Scripts
-  - name: xCALIBRuniverse.esp
+  - name: 'xCALIBRuniverse.esp'
     tag:
       - Actors.DeathItems
       - Delev
@@ -3247,157 +3241,157 @@ plugins:
       - Relev
       - Sound
       - Stats
-  - name: xCALIBRUniverse - WMK.esp
+  - name: 'xCALIBRUniverse - WMK.esp'
     tag:
       - Graphics
       - Names
       - Sound
       - Stats
-  - name: xCALIBRUniverse_FWE_FPS.esp
+  - name: 'xCALIBRUniverse_FWE_FPS.esp'
     inc:
-      - xCALIBRUniverse_FWE_Tactical.esp
+      - 'xCALIBRUniverse_FWE_Tactical.esp'
     tag:
       - Graphics
       - Invent
       - Names
       - Sound
       - Stats
-  - name: xCALIBRUniverse_FWE_Tactical.esp
+  - name: 'xCALIBRUniverse_FWE_Tactical.esp'
     inc:
-      - xCALIBRUniverse_FWE_FPS.esp
+      - 'xCALIBRUniverse_FWE_FPS.esp'
     tag:
       - Graphics
       - Invent
       - Names
       - Sound
       - Stats
-  - name: xCALIBR_override.esp
+  - name: 'xCALIBR_override.esp'
     tag:
       - Graphics
       - Names
-  - name: xCALIBR_override_unsorted.esp
+  - name: 'xCALIBR_override_unsorted.esp'
     tag:
       - Graphics
       - Names
-  - name: xCALIBR_override_FWE5.esp
+  - name: 'xCALIBR_override_FWE5.esp'
     tag:
       - Graphics
       - Names
-  - name: xCALIBR_FWE5_Override.esp
+  - name: 'xCALIBR_FWE5_Override.esp'
     tag:
       - Graphics
       - Names
-  - name: xCALIBRammo_FWE.esp
+  - name: 'xCALIBRammo_FWE.esp'
     tag:
       - Graphics
       - Names
-  - name: xCALIBR_2CW_CP.esp
+  - name: 'xCALIBR_2CW_CP.esp'
     tag:
       - Graphics
       - Names
-  - name: xCALIBR_2CW_CP_Sorted.esp
+  - name: 'xCALIBR_2CW_CP_Sorted.esp'
     tag:
       - Graphics
       - Names
-  - name: xCALIBR_20CW_v5.12.esp
+  - name: 'xCALIBR_20CW_v5.12.esp'
     tag:
       - Graphics
       - Names
-  - name: FWE+WMK_weapons_xCALIBRified.esp
-    tag:
-      - Graphics
-      - Names
-      - Stats
-  - name: FWE(v.5.04)+WMK_weapons_xCALIBRified.esp
+  - name: 'FWE+WMK_weapons_xCALIBRified.esp'
     tag:
       - Graphics
       - Names
       - Stats
-  - name: FWE+WMKexcalibrified(Anch).esp
+  - name: 'FWE(v.5.04)+WMK_weapons_xCALIBRified.esp'
     tag:
       - Graphics
       - Names
       - Stats
-  - name: FWE+WMKexcalibrified(Pitt).esp
+  - name: 'FWE+WMKexcalibrified(Anch).esp'
     tag:
       - Graphics
       - Names
       - Stats
-  - name: FWE+WMKexcalibrified(Lkout).esp
+  - name: 'FWE+WMKexcalibrified(Pitt).esp'
     tag:
       - Graphics
       - Names
       - Stats
-  - name: frederyck+FWE+xCALIBR.esp
+  - name: 'FWE+WMKexcalibrified(Lkout).esp'
     tag:
       - Graphics
       - Names
       - Stats
-  - name: Compatibility_Plugin_TalonExtraArmor_FWE_BrokenSteel.esp
+  - name: 'frederyck+FWE+xCALIBR.esp'
+    tag:
+      - Graphics
+      - Names
+      - Stats
+  - name: 'Compatibility_Plugin_TalonExtraArmor_FWE_BrokenSteel.esp'
     tag:
       - Delev
       - Relev
-  - name: Choose your own hairstyle (load this last on FOMM).esp
+  - name: 'Choose your own hairstyle (load this last on FOMM).esp'
     tag:
       - Eyes
       - Hair
       - NPC.Race
       - NpcFaces
-  - name: CRBSOR.esp
+  - name: 'CRBSOR.esp'
     msg:
       - type: say
-        content: Do not use with latest FWE, it is already integrated.
-  - name: Merged.esp
+        content: 'Do not use with latest FWE, it is already integrated.'
+  - name: 'Merged.esp'
     tag:
       - NoMerge
-  - name: Merged Patch.esp
+  - name: 'Merged Patch.esp'
     tag:
       - NoMerge
-  - name: xCALIBRammo_override.esp
+  - name: 'xCALIBRammo_override.esp'
     tag:
       - Graphics
       - Names
-  - name: Error Fixes V1.2.esp
+  - name: 'Error Fixes V1.2.esp'
     msg:
       - type: say
-        content: Old version - consider updating
-  - name: Error Fixes V1.5.esp
+        content: 'Old version - consider updating'
+  - name: 'Error Fixes V1.5.esp'
     msg:
       - type: say
-        content: Choose only one of Error Fixes V1.5.esp or Error Fixes V1.5 - Higher FPS.esp, not both.
-  - name: Error Fixes V1.5 - Higher FPS.esp
+        content: 'Choose only one of Error Fixes V1.5.esp or Error Fixes V1.5 - Higher FPS.esp, not both.'
+  - name: 'Error Fixes V1.5 - Higher FPS.esp'
     msg:
       - type: say
-        content: Choose only one of Error Fixes V1.5.esp or Error Fixes V1.5 - Higher FPS.esp, not both.
-  - name: Fallout 3 Master Fix.esp
+        content: 'Choose only one of Error Fixes V1.5.esp or Error Fixes V1.5 - Higher FPS.esp, not both.'
+  - name: 'Fallout 3 Master Fix.esp'
     inc:
-      - Fallout 3 Master Fix - Higher FPS.esp
-      - Fallout 3 Master Fix - No DLC.esp
+      - 'Fallout 3 Master Fix - Higher FPS.esp'
+      - 'Fallout 3 Master Fix - No DLC.esp'
       - Fallout 3 Master Fix - No DLC - Higher FPS
-  - name: Fallout 3 Master Fix - Higher FPS.esp
+  - name: 'Fallout 3 Master Fix - Higher FPS.esp'
     inc:
-      - Fallout 3 Master Fix.esp
-      - Fallout 3 Master Fix - No DLC.esp
+      - 'Fallout 3 Master Fix.esp'
+      - 'Fallout 3 Master Fix - No DLC.esp'
       - Fallout 3 Master Fix - No DLC - Higher FPS
-  - name: Fallout 3 Master Fix - No DLC.esp
+  - name: 'Fallout 3 Master Fix - No DLC.esp'
     inc:
-      - Fallout 3 Master Fix.esp
-      - Fallout 3 Master Fix - Higher FPS.esp
+      - 'Fallout 3 Master Fix.esp'
+      - 'Fallout 3 Master Fix - Higher FPS.esp'
       - Fallout 3 Master Fix - No DLC - Higher FPS
-  - name: Fallout 3 Master Fix - No DLC - Higher FPS
+  - name: 'Fallout 3 Master Fix - No DLC - Higher FPS'
     inc:
-      - Fallout 3 Master Fix.esp
-      - Fallout 3 Master Fix - Higher FPS.esp
-      - Fallout 3 Master Fix - No DLC.esp
-  - name: Fallout Remastered.esp
+      - 'Fallout 3 Master Fix.esp'
+      - 'Fallout 3 Master Fix - Higher FPS.esp'
+      - 'Fallout 3 Master Fix - No DLC.esp'
+  - name: 'Fallout Remastered.esp'
     inc:
-      - Fallout 3 Master Fix.esp
-      - James Invisible Walls Remover.esp
-  - name: Fallout Remastered - FOOK2 + MMM.esp
+      - 'Fallout 3 Master Fix.esp'
+      - 'James Invisible Walls Remover.esp'
+  - name: 'Fallout Remastered - FOOK2 + MMM.esp'
     msg:
       - type: say
-        content: Does not require a FOIP, provides complete compatibility between these two files
-  - name: Fallout Remastered - FWE + MMM.esp
+        content: 'Does not require a FOIP, provides complete compatibility between these two files'
+  - name: 'Fallout Remastered - FWE + MMM.esp'
     msg:
       - type: say
-        content: Does not require a FOIP, provides complete compatibility between these two files
+        content: 'Does not require a FOIP, provides complete compatibility between these two files'
