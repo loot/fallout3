@@ -3,6 +3,10 @@ common:
   - &FOSE
     name: '..\fose_loader.exe'
     display: '[FOSE](http://fose.silverlock.org/)'
+  - &AlreadyInUF3P
+    type: say
+    content: 'Do not use with Unofficial Fallout 3 Patch - Already Included'
+    condition: 'file("Unofficial Fallout 3 Patch.esm")'
 
 globals:
   - type: say
