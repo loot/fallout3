@@ -149,7 +149,7 @@ plugins:
       - Scripts
       - Stats
   - name: 'FOOK2 - Main.esm'
-    url: [ ''http://fallout3.nexusmods.com/mods/4448'' ]
+    url: [ 'http://fallout3.nexusmods.com/mods/4448' ]
     tag:
       - Factions
       - Invent
@@ -166,7 +166,7 @@ plugins:
         content: 'Remove if using FOOK2 1.1 and above'
         condition: 'file("FOOK2 - Main.esm")'
   - name: 'FO3 Wanderers Edition - Main File.esm'
-    url: [ ''http://fallout3.nexusmods.com/mods/2761'' ]
+    url: [ 'http://fallout3.nexusmods.com/mods/2761' ]
     msg:
       - type: say
         content: 'Suggested to remove the names tag if using MMM'
@@ -182,7 +182,7 @@ plugins:
       - Stats
 
   - name: 'FWE - Combat Overhaul_Core.esm'
-    url: [ ''http://fallout3.nexusmods.com/mods/15578'' ]
+    url: [ 'http://fallout3.nexusmods.com/mods/15578' ]
     inc:
       - 'WeaponModKits.esp'
       - 'EVE.esm'
@@ -205,7 +205,7 @@ plugins:
     tag:
       - Actors.Animations
   - name: 'RobCo Certified v2.esm'
-    url: [ ''http://fallout3.nexusmods.com/mods/712'' ]
+    url: [ 'http://fallout3.nexusmods.com/mods/712' ]
     req: [ *FOSE ]
   - name: 'Wasteland Whisperer v2.esm'
     req: [ *FOSE ]
