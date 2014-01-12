@@ -1,6 +1,5 @@
 # BOSS ignores anything that doesn''t come under ''globals'' or ''plugins'', so a section like this is useful for storing data that gets re-used.
 common:
-# Files
   - &FOSE
     name: '..\fose_loader.exe'
     display: '[FOSE](http://fose.silverlock.org/)'
