@@ -13,6 +13,16 @@ globals:
     content: Latest BOSS thread "http://forums.bethsoft.com/topic/1282711-relz-boss-for-fo3-thread-4/"
 
 plugins:
+  - name: 'anchorage.esm'
+    priority: 400
+  - name: 'thepitt.esm'
+    priority: 400
+  - name: 'brokensteel.esm'
+    priority: 400
+  - name: 'pointlookout.esm'
+    priority: 400
+  - name: 'zeta.esm'
+    priority: 400
   - name: 'StreetLights.esm'
     msg:
       - type: say
@@ -3397,3 +3407,6 @@ plugins:
     msg:
       - type: say
         content: 'Does not require a FOIP, provides complete compatibility between these two files'
+  - name: 'Bashed Patch, 0.esp'
+    priority: 400
+    
