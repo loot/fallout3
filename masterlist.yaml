@@ -14,15 +14,15 @@ globals:
 
 plugins:
   - name: 'anchorage.esm'
-    priority: 400
+    priority: -400
   - name: 'thepitt.esm'
-    priority: 400
+    priority: -400
   - name: 'brokensteel.esm'
-    priority: 400
+    priority: -400
   - name: 'pointlookout.esm'
-    priority: 400
+    priority: -400
   - name: 'zeta.esm'
-    priority: 400
+    priority: -400
   - name: 'StreetLights.esm'
     msg:
       - type: say
