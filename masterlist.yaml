@@ -3297,6 +3297,14 @@ plugins:
     msg:
       - type: say
         content: 'Choose only one ''Achievement Remover'' ESP.'
+#  - name: Achievement Remover [DIK].esp
+#    msg:
+#      - type: say
+#        content: "Requires: FOOK2."
+#  - name: Achievement Remover [FWE].esp
+#    msg:
+#      - type: say
+#        content: "Requires: FO3 Wanderers Edition."
   - name: 'DUIF3Extras.esp'
     msg:
       - type: say
