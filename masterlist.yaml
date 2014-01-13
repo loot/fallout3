@@ -16,26 +16,51 @@ plugins:
   - name: 'anchorage.esm'
     priority: -400
   - name: 'thepitt.esm'
-    priority: -400
-  - name: 'brokensteel.esm'
-    priority: -400
-  - name: 'pointlookout.esm'
-    priority: -400
-  - name: 'zeta.esm'
-    priority: -400
+    priority: -399
+    after:
+      - 'anchorage.esm'
   - name: 'StreetLights.esm'
+    priority: -398
+    after:
+      - 'thepitt.esm'
+      - 'anchorage.esm'
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
   - name: 'BrokenSteel.esm'
+    priority: -397
+    after:
+      - 'thepitt.esm'
+      - 'anchorage.esm'
+      - 'StreetLights.esm'
     tag:
       - Actors.ACBS
       - Actors.AIPackages
       - Relev
-  - name: 'Lings.esm'
-    tag:
-      - Hair
+  - name: 'pointlookout.esm'
+    priority: -396
+    after:
+      - 'thepitt.esm'
+      - 'anchorage.esm'
+      - 'StreetLights.esm'
+      - 'BrokenSteel.esm'
+  - name: 'zeta.esm'
+    priority: -395
+    after:
+      - 'thepitt.esm'
+      - 'anchorage.esm'
+      - 'StreetLights.esm'
+      - 'BrokenSteel.esm'
+      - 'pointlookout.esm'
   - name: 'Unofficial Fallout 3 Patch.esm'
+    priority: -394
+    after:
+      - 'thepitt.esm'
+      - 'anchorage.esm'
+      - 'StreetLights.esm'
+      - 'BrokenSteel.esm'
+      - 'pointlookout.esm'
+      - 'zeta.esm'
     tag:
       - C.Music
       - Deflst
@@ -46,6 +71,9 @@ plugins:
       - Relations
       - Relev
       - Stats
+  - name: 'Lings.esm'
+    tag:
+      - Hair
   - name: 'LingsDLC.esm'
     tag:
       - Eyes
