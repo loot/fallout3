@@ -1235,7 +1235,7 @@ plugins:
       - Relev
       - Sound
       - Stats
-  - name: ''FWE_Overhaul Kit - Core.esp''
+  - name: 'FWE_Overhaul Kit - Core.esp'
     inc:
       - 'EVE.esm'
       - 'RH_IronSights_Basic_VanillaPlugin.esp'
@@ -1246,7 +1246,7 @@ plugins:
       - type: warn
         content: 'This mod requires resources from [RH_IronSights](http://fallout3.nexusmods.com/mods/6938), please see the mod''s readme.'
         condition: 'not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")'
-  - name: ''FWE_Overhaul Kit - Equipment .esp''
+  - name: 'FWE_Overhaul Kit - Equipment .esp'
     inc:
       - 'EVE.esm'
       - 'RH_IronSights_Basic_VanillaPlugin.esp'
@@ -1553,6 +1553,7 @@ plugins:
     tag:
       - Delev
       - Relev
+# This does not seem like a valid filename
   - name: '"[DC RANGER ARSENAL v3] - DLC GEAR.esp"'
     tag:
       - Deflst
@@ -3202,6 +3203,7 @@ plugins:
     tag:
       - Eyes
       - Hair
+# This does not seem like a valid filename
   - name: '"[Nukomimi-San] Starter.esp"'
     tag:
       - Eyes
