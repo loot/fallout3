@@ -13,6 +13,8 @@ globals:
     condition: 'version("BOSS","3.0.0.0",<=)'
     content: 'All Beta updates for BOSS (v3.0.0) can be downloaded [here](https://github.com/boss-developers/boss-code/releases).'
   - type: say
+    content: The next major release of BOSS is now open for "https://github.com/boss-developers/boss-code/wiki/BOSSv3-Beta-Testing beta testing". Anyone wishing to help test must have a BethSoft forum account and be comfortable with using FO3Edit to view conflicts.
+  - type: say
     content:
       - lang: eng
         str: '[Latest BOSS thread](http://forums.bethsoft.com/topic/1282711-relz-boss-for-fo3-thread-4/).'
@@ -1656,7 +1658,7 @@ plugins:
 
 # BEGINGROUP: Armor\Clothes
 # This does not seem like a valid filename
-  - name: '"[DC RANGER ARSENAL v3] - DLC GEAR.esp"'
+  - name: '[DC RANGER ARSENAL v3 MASTER].esm'
     tag:
       - Deflst
   - name: 'BBBackpacks-v1-1.esp'
@@ -3309,7 +3311,7 @@ plugins:
     msg:
       - type: say
         content: 'Obsolete. Update DarNifiedUIF3 to latest version.'
-  - name: 'Dog lover''s mod.es'
+  - name: 'Dog lover''s mod.esp'
     tag:
       - Deflst
       - Delev
@@ -3570,7 +3572,7 @@ plugins:
       - 'Fallout 3 Master Fix.esp'
       - 'Fallout 3 Master Fix - Higher FPS.esp'
       - Fallout 3 Master Fix - No DLC - Higher FPS
-  - name: 'Fallout 3 Master Fix - No DLC - Higher FPS'
+  - name: 'Fallout 3 Master Fix - No DLC - Higher FPS.esp'
     inc:
       - 'Fallout 3 Master Fix.esp'
       - 'Fallout 3 Master Fix - Higher FPS.esp'
@@ -3582,6 +3584,28 @@ plugins:
     inc:
       - 'Fallout 3 Master Fix.esp'
       - 'James Invisible Walls Remover.esp'
+  - name: 'Fallout Remastered - EVE (Paradox Ignition Merge).esp'
+    msg:
+      - type: say
+        content: "Requires: Paradox Ignition Merged version of Energy Visuals Enhanced"
+  - name: 'Fallout Remastered - FOOK2 + EVE (PI Merge).esp'
+    msg:
+      - type: say
+        content: "Requires: Paradox Ignition Merged version of Energy Visuals Enhanced"
+      - type: say
+        content: "Requires: FOOK2 1.2 Open Beta"
+  - name: 'Fallout Remastered - FWE + EVE (PI Merge).esp'
+    msg:
+      - type: say
+        content: "Requires: Paradox Ignition Merged version of Energy Visuals Enhanced"
+      - type: say
+        content: "Requires: Fallout Wanderer's Edition 6.03 and all DLC plugins"
+  - name: 'Fallout Remastered - MMM + EVE (PI Merge).esp'
+    msg:
+      - type: say
+        content: "Requires: RC6.1 OR RC6.2 version of Mart's Mutant Mod"
+      - type: say
+        content: "Requires: Paradox Ignition Merged version of Energy Visuals Enhanced"
   - name: 'Fallout Remastered - FOOK2 + MMM.esp'
     msg:
       - type: say
@@ -3590,6 +3614,16 @@ plugins:
     msg:
       - type: say
         content: 'Does not require a FOIP, provides complete compatibility between these two files'
+  - name: 'Fallout Remastered - MMM + Scavenger.esp'
+    msg:
+      - type: say
+        content: "Requires: RC6.1 OR RC6.2 version of Mart's Mutant Mod"
+      - type: say
+        content: "Requires: Scavenger World 0.04"
+  - name: 'Fallout Remastered - DCStreet + Dynamic Weather.esp'
+    msg:
+      - type: say
+        content: "Requires: Requires Xepha's Dynamic Weather"
   - name: 'Bashed Patch, 0.esp'
     priority: 400
     
