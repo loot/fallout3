@@ -13,13 +13,11 @@ globals:
     condition: 'version("BOSS","3.0.0.0",<=)'
     content: 'All Beta updates for BOSS (v3.0.0) can be downloaded [here](https://github.com/boss-developers/boss-code/releases).'
   - type: say
-    content: The next major release of BOSS is now open for "https://github.com/boss-developers/boss-code/wiki/BOSSv3-Beta-Testing beta testing". Anyone wishing to help test must have a BethSoft forum account and be comfortable with using FO3Edit to view conflicts.
-  - type: say
     content:
       - lang: eng
         str: '[Latest BOSS thread](http://forums.bethsoft.com/topic/1282711-relz-boss-for-fo3-thread-4/).'
       - lang: rus
-        str: '[Обсуждение BOSS \"(Eng)\"](http://forums.bethsoft.com/topic/1282711-relz-boss-for-fo3-thread-4/).'
+        str: '[Обсуждение BOSS "(Eng)"](http://forums.bethsoft.com/topic/1282711-relz-boss-for-fo3-thread-4/).'
       - lang: spa
         str: '[Forum de BOSS](http://forums.bethsoft.com/topic/1282711-relz-boss-for-fo3-thread-4/).'
 
@@ -1626,7 +1624,7 @@ plugins:
   - name: 'Tactical Weapons-Calibr-V3 762 fix.esp'
     msg:
       - type: say
-        content: '"Requires  resources from \"Tactical Weapons by gRs Frederyck\", but not the esp file"'
+        content: 'Requires  resources from "Tactical Weapons by gRs Frederyck", but not the esp file'
     tag:
       - Invent
   - name: 'frederyck calibr fix-excalibrified.esp'
@@ -1742,15 +1740,11 @@ plugins:
       - 'FO3Moon.esp'
       - 'FO3Nami.esp'
   - name: 'jonasclothesnonrplcr.esp'
-    msg:
-      - type: say
-        content: 'Use either ''jonasclothesnonrplcr.esp'' or ''jonasclothesreplacer.esp'', not both.'
-        condition: 'file("jonasclothesreplacer.esp")'
+    inc:
+      - 'jonasclothesreplacer.esp'
   - name: 'jonasclothesreplacer.esp'
-    msg:
-      - type: say
-        content: 'Use either ''jonasclothesnonrplcr.esp'' or ''jonasclothesreplacer.esp'', not both.'
-        condition: 'file("jonasclothesnonrplcr.esp")'
+    inc:
+      - 'jonasclothesnonrplcr.esp'
   - name: 'K2_ArmorsRedone_Raiders.esp'
     tag:
       - Graphics
