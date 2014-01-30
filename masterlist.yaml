@@ -41,6 +41,7 @@ plugins:
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
+        condition: 'file("FOOK2 - Main.esm")'
   - name: 'BrokenSteel.esm'
     priority: -397
     after:
@@ -172,6 +173,7 @@ plugins:
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
+        condition: 'file("FOOK2 - Main.esm")'
   - name: 'GNRBuilding_BoS.esm'
     tag:
       - Invent
@@ -594,20 +596,24 @@ plugins:
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
+        condition: 'file("FOOK2 - Main.esm")'
       - type: say
         content: 'Obselete - upgrade to [Fallout Streetlights](http://fallout3.nexusmods.com/mods/8069).'
   - name: 'RK-Skelette-3.0.esp'
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
+        condition: 'file("FOOK2 - Main.esm")'
   - name: 'praiseatom.esp'
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
+        condition: 'file("FOOK2 - Main.esm")'
   - name: 'Internet Mod.esp'
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
+        condition: 'file("FOOK2 - Main.esm")'
   - name: 'DALCO Inventory Sorter - CASM.esp'
     tag:
       - Names
@@ -712,6 +718,7 @@ plugins:
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
+        condition: 'file("FOOK2 - Main.esm")'
     tag:
       - Scripts
   - name: 'RadioHotkey.esp'
@@ -1065,6 +1072,7 @@ plugins:
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
+        condition: 'file("FOOK2 - Main.esm")'
   - name: 'Towers Hill.esp'
     tag:
       - Invent
@@ -1381,12 +1389,14 @@ plugins:
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
+        condition: 'file("FOOK2 - Main.esm")'
   - name: 'Refurbish [OA].esp'
     inc:
       - 'Refurbishes [ALL].esp'
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
+        condition: 'file("FOOK2 - Main.esm")'
   - name: 'Refurbish [OA] - FWE.esp'
     inc:
       - 'Refurbishes [ALL].esp'
@@ -1396,24 +1406,28 @@ plugins:
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
+        condition: 'file("FOOK2 - Main.esm")'
   - name: 'Refurbish [BS].esp'
     inc:
       - 'Refurbishes [ALL].esp'
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
+        condition: 'file("FOOK2 - Main.esm")'
   - name: 'Refurbish [PL].esp'
     inc:
       - 'Refurbishes [ALL].esp'
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
+        condition: 'file("FOOK2 - Main.esm")'
   - name: 'Refurbish [MZ].esp'
     inc:
       - 'Refurbishes [ALL].esp'
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
+        condition: 'file("FOOK2 - Main.esm")'
 # ENDGROUP: Other
 # ENDGROUP: Overhauls
 
@@ -1670,6 +1684,7 @@ plugins:
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
+        condition: 'file("FOOK2 - Main.esm")'
       - type: say
         content: 'Old. Upgrade to latest version.'
     tag:
@@ -1678,18 +1693,21 @@ plugins:
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
+        condition: 'file("FOOK2 - Main.esm")'
     tag:
       - Graphics
   - name: 'WinterizedT51bDX.esp'
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
+        condition: 'file("FOOK2 - Main.esm")'
     tag:
       - Graphics
   - name: 'Outcast DX.esp'
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
+        condition: 'file("FOOK2 - Main.esm")'
     tag:
       - Graphics
   - name: 'Outcast DX - FWE patch.esp'
@@ -1699,6 +1717,7 @@ plugins:
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
+        condition: 'file("FOOK2 - Main.esm")'
     tag:
       - Deflst
       - Graphics
@@ -1706,6 +1725,7 @@ plugins:
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
+        condition: 'file("FOOK2 - Main.esm")'
     tag:
       - Graphics
   - name: 'Cat Outfit Fanged.esp'
@@ -2956,6 +2976,7 @@ plugins:
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
+        condition: 'file("FOOK2 - Main.esm")'
     tag:
       - Actors.ACBS
       - Actors.AIPackages
@@ -2963,10 +2984,12 @@ plugins:
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
+        condition: 'file("FOOK2 - Main.esm")'
   - name: 'Phalanx-PointLookout-Integration.esp'
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
+        condition: 'file("FOOK2 - Main.esm")'
 # ENDGROUP: Phalanx
 
 # BEGINGROUP: Game-Settings and Overrides
@@ -3023,28 +3046,34 @@ plugins:
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
+        condition: 'file("FOOK2 - Main.esm")'
   - name: 'Fellout-SOTD.esp'
     inc:
       - 'Either Fellout-Full.esp'
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
+        condition: 'file("FOOK2 - Main.esm")'
   - name: 'Fellout-Anchorage.esp'
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
+        condition: 'file("FOOK2 - Main.esm")'
   - name: 'Fellout-BrokenSteel.esp'
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
+        condition: 'file("FOOK2 - Main.esm")'
   - name: 'Fellout-PointLookout.esp'
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
+        condition: 'file("FOOK2 - Main.esm")'
   - name: 'Fellout-Zeta.esp'
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
+        condition: 'file("FOOK2 - Main.esm")'
   - name: 'FelloutWithLightingOverhual-1.0.esp'
     tag:
       - C.Light
