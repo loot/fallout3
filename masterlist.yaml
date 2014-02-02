@@ -21,12 +21,7 @@ globals:
       - lang: spa
         str: '[Forum de BOSS](http://forums.bethsoft.com/topic/1282711-relz-boss-for-fo3-thread-4/).'
 
-# Masterlist variable setup for BOSS v1.7+.
-# IF FILE("FO3 Wanderers Edition - Main File.esm") SET: FWE
-# IF FILE("FOOK2 - Main.esm") SET: FOOK2
-
 plugins:
-# BEGINGROUP: ESMs
   - name: 'anchorage.esm'
     priority: -400
   - name: 'thepitt.esm'
@@ -324,9 +319,6 @@ plugins:
         content: 'Do not use with latest FWE, it is already integrated.'
     tag:
       - Names
-# ENDGROUP: ESMs
-
-# BEGINGROUP: Unofficial Patches and Fixes
   - name: 'DALCO Inventory Sorter - Fallout 3 & All DLCs.esp'
     tag:
       - Names
@@ -452,9 +444,6 @@ plugins:
   - name: 'Stop Insulting Me Outcasts.esp'
     tag:
       - Factions
-# ENDGROUP: Unofficial Patches and Fixes
-
-# BEGINGROUP: Early Loading Mods
   - name: 'DALCO Inventory Sorter - Fallout 3 (Base Game).esp'
     tag:
       - Names
@@ -655,9 +644,6 @@ plugins:
   - name: 'PAL - BASE File.esp'
     inc:
       - 'PAL - MERGED.esp'
-# ENDGROUP: Early Loading Mods
-
-# BEGINGROUP: Sounds
   - name: 'GalaxyNewsRadioFix[N].esp'
     inc:
       - 'GalaxyNewsRadio100[M].esp'
@@ -729,15 +715,6 @@ plugins:
     msg:
       - type: say
         content: 'Load RadioHotkey after all other radio mods'
-# ENDGROUP: Sounds
-
-# BEGINGROUP: Early Misc A (Perks)
-# ENDGROUP: Early Misc A (Perks)
-
-# BEGINGROUP: Global Traveling System
-# ENDGROUP: Global Traveling System
-
-# BEGINGROUP: Quests
   - name: 'Despicable Dashwood v2.esp'
     tag:
       - Actors.ACBS
@@ -802,9 +779,6 @@ plugins:
   - name: 'The Mantis Imperative - Mantis.esp'
     tag:
       - Relev
-# ENDGROUP: Quests
-
-# BEGINGROUP: Early Misc B
   - name: 'Action for men v3.0.esp'
     tag:
       - Invent
@@ -964,9 +938,6 @@ plugins:
   - name: 'Mannequin.esp'
     tag:
       - Actors.AIData
-# ENDGROUP: Early Misc B
-
-# BEGINGROUP: NPC
   - name: 'BombayTradingCo.esp'
     tag:
       - Actors.AIPackages
@@ -1042,9 +1013,6 @@ plugins:
   - name: 'Wasteland Gigolo.esp'
     tag:
       - Scripts
-# ENDGROUP: NPC
-
-# BEGINGROUP: Places
   - name: 'Arefu Player House.esp'
     inc:
       - 'ArefuExpandedByAzar.esm'
@@ -1085,10 +1053,6 @@ plugins:
       - 'FNNSys.esm'
     tag:
       - Scripts
-# ENDGROUP: Places
-
-# BEGINGROUP: Overhauls
-# BEGINGROUP: FOOK
   - name: 'FOOK2 - Main.esp'
     tag:
       - Delev
@@ -1198,9 +1162,6 @@ plugins:
       - type: error
         content: 'Old, please update to the latest version'
         condition: 'file("FOOK2 - Main.esm")'
-# ENDGROUP: FOOK
-
-# BEGINGROUP: Fallout Wanderer's Edition
   - name: 'FO3 Wanderers Edition - Main File.esp'
     tag:
       - Actors.ACBS
@@ -1382,9 +1343,6 @@ plugins:
       - Scripts
       - Sound
       - Stats
-# ENDGROUP: Fallout Wanderer's Edition
-
-# BEGINGROUP: Other
   - name: 'Refurbishes [ALL].esp'
     msg:
       - type: say
@@ -1428,13 +1386,6 @@ plugins:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
         condition: 'file("FOOK2 - Main.esm")'
-# ENDGROUP: Other
-# ENDGROUP: Overhauls
-
-# BEGINGROUP: Tailor Maid
-# ENDGROUP: Tailor Maid
-
-# BEGINGROUP: WeaponModKits
   - name: 'WeaponModKits.esp'
     tag:
       - Actors.AIData
@@ -1558,9 +1509,6 @@ plugins:
     tag:
       - Deflst
       - Stats
-# ENDGROUP: WeaponModKits
-
-# BEGINGROUP: Weapons
   - name: '3EFskewer.esp'
     tag:
       - Stats
@@ -1666,9 +1614,6 @@ plugins:
     tag:
       - Delev
       - Relev
-# ENDGROUP: Weapons
-
-# BEGINGROUP: Armor\Clothes
 # This does not seem like a valid filename
   - name: '[DC RANGER ARSENAL v3 MASTER].esm'
     tag:
@@ -1816,9 +1761,6 @@ plugins:
   - name: 'WasteWearGloves.esp'
     tag:
       - Relev
-# ENDGROUP: Armor\Clothes
-
-# BEGINGROUP: Cosmetics
   - name: 'LingsFinerThings.esp'
     msg:
       - type: say
@@ -1866,9 +1808,6 @@ plugins:
         content: 'Outdated, use latest Wrye Flash version'
     tag:
       - Invent
-# ENDGROUP: Cosmetics
-
-# BEGINGROUP: Middle Misc A
   - name: 'AutoGates.esp'
     tag:
       - Scripts
@@ -2049,9 +1988,6 @@ plugins:
     msg:
       - type: say
         content: 'Please update to latest version.'
-# ENDGROUP: Middle Misc A
-
-# BEGINGROUP: Middle Misc B
   - name: 'Replenishment.esp'
     tag:
       - Scripts
@@ -2268,9 +2204,6 @@ plugins:
   - name: 'Trucker Holotapes.esp'
     tag:
       - Names
-# ENDGROUP: Middle Misc B
-
-# BEGINGROUP: EVE Stuff
   - name: 'EVE Beta_0.9.4.esp'
     msg:
       - type: say
@@ -2320,9 +2253,6 @@ plugins:
     tag:
       - Delev
       - Relev
-# ENDGROUP: EVE Stuff
-
-# BEGINGROUP: Mart's Mutant Mod
   - name: 'Mart''s Mutant Mod.esp'
     tag:
       - Delev
@@ -2544,10 +2474,6 @@ plugins:
       - Relations
       - Scripts
       - Stats
-# ENDGROUP: Mart's Mutant Mod
-
-# BEGINGROUP: Companions
-# New Companions
   - name: 'AmyWong - DLCs (FOOK2 1.1 DIK).esp'
     inc:
       - 'AmyWong - DLCs.esp'
@@ -2588,9 +2514,6 @@ plugins:
   - name: 'slaveraider_newlook.esp'
     tag:
       - Graphics
-# ENDGROUP: Companions
-
-# BEGINGROUP: Vanilla NPCs Become Campanions
   - name: 'CharonImproved.esp'
     tag:
       - Actors.AIPackages
@@ -2616,12 +2539,6 @@ plugins:
     msg:
       - type: say
         content: 'If using MMM, use ''RoadWardensMMM.esp'' instead'
-# ENDGROUP: Vanilla NPCs Become Campanions
-
-# BEGINGROUP: Companion Compatability / Fixes
-# ENDGROUP: Companion Compatability / Fixes
-
-# BEGINGROUP: Realism Mods
   - name: 'WRWC - Classic Fallout.esp'
     msg:
       - type: say
@@ -2693,9 +2610,6 @@ plugins:
       - Delev
       - Relev
       - Stats
-# ENDGROUP: Realism Mods
-
-# BEGINGROUP: Later Misc
   - name: 'All Companions Essential.esp'
     tag:
       - Actors.ACBS
@@ -2899,9 +2813,6 @@ plugins:
     msg:
       - type: say
         content: 'Zumbs has asked you to rename this to ZumbsDarkerSunglasses.esp'
-# ENDGROUP: Later Misc
-
-# BEGINGROUP: Arwen's Realism Main
   - name: 'Arwen_Realism_Core.esp'
     tag:
       - Actors.CombatStyle
@@ -2969,9 +2880,6 @@ plugins:
       - Graphics
       - Sound
       - Stats
-# ENDGROUP: Arwen's Realism Main
-
-# BEGINGROUP: Phalanx
   - name: 'Phalanx-MainFollowerModule.esp'
     msg:
       - type: say
@@ -2990,9 +2898,6 @@ plugins:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
         condition: 'file("FOOK2 - Main.esm")'
-# ENDGROUP: Phalanx
-
-# BEGINGROUP: Game-Settings and Overrides
   - name: 'EVE - FastTravelIndoors Patch.esp'
     msg:
       - type: say
@@ -3026,9 +2931,6 @@ plugins:
   - name: 'LOWER-real-thirdpersonview.esp'
     inc:
       - 'REAL-ThirdViewMod.esp'
-# ENDGROUP: Game-Settings and Overrides
-
-# BEGINGROUP: Weather\Light\Water
   - name: 'Clean-Deluxe GOTY.esp'
     inc:
       - 'Dust-away.esp'
@@ -3228,9 +3130,6 @@ plugins:
   - name: 'Better DC Weather - 80-20.esp'
     inc:
       - 'Better DC Weather - 60-40.esp'
-# ENDGROUP: Weather\Light\Water
-
-# BEGINGROUP: Lastish
   - name: 'CRAFTHelper_ReplaceWorkbenchScript.esp'
     inc:
       - 'CRAFT - Activation Perk.esp'
@@ -3346,16 +3245,6 @@ plugins:
     tag:
       - Deflst
       - Delev
-# ENDGROUP: Lastish
-
-# BEGINGROUP: Pose mods
-# Scripts and new animations.
-# ENDGROUP: Pose mods
-
-# BEGINGROUP: Beauty Packs & Race Addons
-# Hair, eyes, race addons & changes and other cosmetics.
-
-# BEGINGROUP: Body and head changes
   - name: 'AinzBeautifuleEyes.esp'
     tag:
       - Eyes
@@ -3370,9 +3259,6 @@ plugins:
   - name: 'EwwGhoulyBody.esp'
     tag:
       - Body-F
-# ENDGROUP: Body and head changes
-
-# BEGINGROUP: Hair
   - name: 'HairPack_2chPlus.esp'
     tag:
       - Hair
@@ -3386,9 +3272,6 @@ plugins:
   - name: 'VB_Hair_Shojo+CotW_15.esp'
     tag:
       - Hair
-# ENDGROUP: Hair
-
-# BEGINGROUP: Race additions (+ hair + eyes etc)
   - name: 'Shojo Race.esp'
     msg:
       - type: say
@@ -3413,11 +3296,6 @@ plugins:
     tag:
       - Eyes
       - Hair
-# ENDGROUP: Race additions (+ hair + eyes etc)
-# ENDGROUP: Beauty Packs & Race Addons
-
-
-# BEGINGROUP: Merged Patch\CPs
   - name: 'RobCo Certified v2 Omnipatch.esp'
     inc:
       - 'RobCo Certified v2 EVE.esp'
@@ -3555,9 +3433,6 @@ plugins:
     tag:
       - Graphics
       - Names
-# ENDGROUP: Merged Patch\CPs
-
-# BEGINGROUP: Error Corrections - Reduce CTD
   - name: 'Error Fixes V1.2.esp'
     msg:
       - type: say
@@ -3570,16 +3445,6 @@ plugins:
     msg:
       - type: say
         content: 'Choose only one of Error Fixes V1.5.esp or Error Fixes V1.5 - Higher FPS.esp, not both.'
-# ENDGROUP: Error Corrections - Reduce CTD
-
-# BEGINGROUP: Bashed Patch
-# ENDGROUP: Bashed Patch
-
-# BEGINGROUP: Post Bashed Patch
-# Mods rumoured to be needed after Bashed Patch.
-# Utility addons.
-# Ultimate final absolute end last mods, ever.
-# BEGINGROUP: Fallout 3 Master Fix
   - name: 'Fallout 3 Master Fix.esp'
     inc:
       - 'Fallout 3 Master Fix - Higher FPS.esp'
@@ -3600,9 +3465,6 @@ plugins:
       - 'Fallout 3 Master Fix.esp'
       - 'Fallout 3 Master Fix - Higher FPS.esp'
       - 'Fallout 3 Master Fix - No DLC.esp'
-# ENDGROUP: Fallout 3 Master Fix
-
-# BEGINGROUP: Fallout Remastered
   - name: 'Fallout Remastered.esp'
     inc:
       - 'Fallout 3 Master Fix.esp'
@@ -3650,5 +3512,3 @@ plugins:
   - name: 'Bashed Patch, 0.esp'
     priority: 400
     
-# ENDGROUP: Fallout Remastered
-# ENDGROUP: Post Bashed Patch
