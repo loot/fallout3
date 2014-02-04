@@ -26,7 +26,7 @@ globals:
 # IF FILE("FOOK2 - Main.esm") SET: FOOK2
 
 plugins:
-# BEGINGROUP: ESMs
+
   - name: 'anchorage.esm'
     priority: -400
   - name: 'thepitt.esm'
@@ -324,9 +324,9 @@ plugins:
         content: 'Do not use with latest FWE, it is already integrated.'
     tag:
       - Names
-# ENDGROUP: ESMs
 
-# BEGINGROUP: Unofficial Patches and Fixes
+
+
   - name: 'DALCO Inventory Sorter - Fallout 3 & All DLCs.esp'
     tag:
       - Names
@@ -452,9 +452,9 @@ plugins:
   - name: 'Stop Insulting Me Outcasts.esp'
     tag:
       - Factions
-# ENDGROUP: Unofficial Patches and Fixes
 
-# BEGINGROUP: Early Loading Mods
+
+
   - name: 'DALCO Inventory Sorter - Fallout 3 (Base Game).esp'
     tag:
       - Names
@@ -655,9 +655,9 @@ plugins:
   - name: 'PAL - BASE File.esp'
     inc:
       - 'PAL - MERGED.esp'
-# ENDGROUP: Early Loading Mods
 
-# BEGINGROUP: Sounds
+
+
   - name: 'GalaxyNewsRadioFix[N].esp'
     inc:
       - 'GalaxyNewsRadio100[M].esp'
