@@ -3069,12 +3069,6 @@ plugins:
   - name: 'Xepha''s Dynamic Weather - Main + DLC Merged.esp'
     tag:
       - C.Climate
-  - name: 'Xepha''s Dynamic Weather - Night Eye Edition.esp'
-    inc:
-      - 'Xepha''s Dynamic Weather - Night Eye Edition.esp'
-  - name: 'Xepha''s Dynamic Weather - Night Eye Edition (Anchorage).esp'
-    inc:
-      - 'Xepha''s Dynamic Weather - Night Eye Edition (Anchorage).esp'
   - name: 'Xepha''s Dynamic Weather - Climate OverRider (OA + Rain).esp'
     inc:
       - 'Xepha''s Dynamic Weather - Climate OverRider (OA).esp'
