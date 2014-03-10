@@ -2380,15 +2380,6 @@ plugins:
       - type: error
         content: 'Old. Download the latest Project Beauty files.'
         condition: 'file("FOOK2 - Main.esm")'
-  - name: 'Mart''s Mutant Mod - Project Beauty (HD Addition).esp'
-    msg:
-      - type: error
-        content: 'Old. Download the latest Project Beauty files.'
-        condition: 'file("FOOK2 - Main.esm")'
-    tag:
-      - NoMerge
-      - NPC.Race
-      - NpcFaces
   - name: 'Mart''s Mutant Mod - Project Beauty.esp'
     tag:
       - NoMerge
@@ -2442,11 +2433,6 @@ plugins:
     tag:
       - Invent
       - Relations
-  - name: 'Mart''s Mutant Mod - Project Beauty + FWE.esp'
-    tag:
-      - NoMerge
-      - NPC.Race
-      - NpcFaces
   - name: 'Mart''s Mutant Mod - Project Beauty (HD Addition).esp'
     msg:
       - type: error
