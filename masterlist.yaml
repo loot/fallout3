@@ -23,13 +23,13 @@ globals:
 
 plugins:
   - name: 'anchorage.esm'
-    priority: -400
+    priority: -400999000
   - name: 'thepitt.esm'
-    priority: -399
+    priority: -400999000
     after:
       - 'anchorage.esm'
   - name: 'StreetLights.esm'
-    priority: -398
+    priority: -400999000
     after:
       - 'thepitt.esm'
       - 'anchorage.esm'
@@ -38,7 +38,7 @@ plugins:
         content: 'Do not use with latest FOOK2, it is already integrated.'
         condition: 'file("FOOK2 - Main.esm")'
   - name: 'BrokenSteel.esm'
-    priority: -397
+    priority: -400999000
     after:
       - 'thepitt.esm'
       - 'anchorage.esm'
@@ -48,14 +48,14 @@ plugins:
       - Actors.AIPackages
       - Relev
   - name: 'pointlookout.esm'
-    priority: -396
+    priority: -400999000
     after:
       - 'thepitt.esm'
       - 'anchorage.esm'
       - 'StreetLights.esm'
       - 'BrokenSteel.esm'
   - name: 'zeta.esm'
-    priority: -395
+    priority: -400999000
     after:
       - 'thepitt.esm'
       - 'anchorage.esm'
@@ -63,7 +63,7 @@ plugins:
       - 'BrokenSteel.esm'
       - 'pointlookout.esm'
   - name: 'Unofficial Fallout 3 Patch.esm'
-    priority: -394
+    priority: -400999000
     after:
       - 'thepitt.esm'
       - 'anchorage.esm'
@@ -3450,5 +3450,5 @@ plugins:
       - type: say
         content: 'Does not require a FOIP, provides complete compatibility between these two files'
   - name: 'Bashed Patch, 0.esp'
-    priority: 400
+    priority: 400991000
 
