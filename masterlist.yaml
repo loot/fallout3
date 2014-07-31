@@ -37,6 +37,12 @@ plugins:
     priority: -400999000
     after:
       - 'anchorage.esm'
+    dirty:
+      - util: *dirtyUtil # FO3Edit 3.0.32
+        crc: 0xb38b3e44 # Version 0.94
+        itm: 40
+        udr: 0
+        nav: 5
   - name: 'StreetLights.esm'
     priority: -400999000
     after:
@@ -56,6 +62,12 @@ plugins:
       - Actors.ACBS
       - Actors.AIPackages
       - Relev
+    dirty:
+      - util: *dirtyUtil # FO3Edit 3.0.32
+        crc: 0x30011b79 # Version 0.94
+        itm: 275
+        udr: 34
+        nav: 12
   - name: 'pointlookout.esm'
     priority: -400999000
     after:
@@ -63,6 +75,12 @@ plugins:
       - 'anchorage.esm'
       - 'StreetLights.esm'
       - 'BrokenSteel.esm'
+    dirty:
+      - util: *dirtyUtil # FO3Edit 3.0.32
+        crc: 0xd92704d8 # Version 0.94
+        itm: 21
+        udr: 0
+        nav: 0
   - name: 'zeta.esm'
     priority: -400999000
     after:
@@ -71,6 +89,12 @@ plugins:
       - 'StreetLights.esm'
       - 'BrokenSteel.esm'
       - 'pointlookout.esm'
+    dirty:
+      - util: *dirtyUtil # FO3Edit 3.0.32
+        crc: 0x # Version 0.94
+        itm: 15
+        udr: 0
+        nav: 0
   - name: 'Unofficial Fallout 3 Patch.esm'
     priority: -400999000
     after:
