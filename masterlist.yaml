@@ -28,6 +28,11 @@ globals:
 plugins:
   - name: 'anchorage.esm'
     priority: -400999000
+    dirty:
+      - util: *dirtyUtil # FO3Edit 3.0.32
+        crc: 0xa4ba9d10 # Version 0.94
+        itm: 54
+        udr: 10
   - name: 'thepitt.esm'
     priority: -400999000
     after:
