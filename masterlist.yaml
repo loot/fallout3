@@ -91,7 +91,7 @@ plugins:
       - 'pointlookout.esm'
     dirty:
       - util: *dirtyUtil # FO3Edit 3.0.32
-        crc: 0x # Version 0.94
+        crc: 0x1d017e23 # Version 0.94
         itm: 15
         udr: 0
         nav: 0
