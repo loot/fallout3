@@ -8,6 +8,10 @@ common:
     content: 'Do not use with Unofficial Fallout 3 Patch - Already Included'
     condition: 'file("Unofficial Fallout 3 Patch.esm")'
 
+# Other strings
+  - &dirtyUtil
+    '[FO3Edit](http://www.nexusmods.com/fallout3/mods/637)'
+
 globals:
   - type: say
     content: 'A [new release](https://github.com/loot/loot/releases/tag/v0.6.0) of LOOT is available.'
