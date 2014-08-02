@@ -3503,3 +3503,11 @@ plugins:
         itm: 3
         udr: 0
         nav: 0
+  - name: 'People_Radio.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/5021'
+    dirty:
+      - util: *dirtyUtil # FO3Edit 3.0.32
+        crc: 0x839a113b # Beta version 0.1
+        itm: 3
+        udr: 0
+        nav: 0
