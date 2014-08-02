@@ -781,14 +781,6 @@ plugins:
       - type: say
         content: 'Only use one Lobotomized! plugin at once'
         condition: 'file("Lobotomized! 400.esp") or file("Lobotomized! 300.esp") or file("Lobotomized! 200.esp")'
-  - name: 'Loki_HistoricSpeeches_v1.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/14476'
-    dirty:
-      - util: *dirtyUtil # FO3Edit 3.0.32
-        crc: 0x21340b32 # Version 1.0
-        itm: 3
-        udr: 0
-        nav: 0
   - name: 'NotSoFast.esp'
     tag:
       - Scripts
@@ -3501,3 +3493,13 @@ plugins:
   - name: 'Bashed Patch, 0.esp'
     priority: 400991000
 
+  ### New radio stations
+
+  - name: 'Loki_HistoricSpeeches_v1.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/14476'
+    dirty:
+      - util: *dirtyUtil # FO3Edit 3.0.32
+        crc: 0x21340b32 # Version 1.0
+        itm: 3
+        udr: 0
+        nav: 0
