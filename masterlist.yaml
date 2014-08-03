@@ -2986,10 +2986,17 @@ plugins:
         content: 'Do not use with latest FOOK2, it is already integrated.'
         condition: 'file("FOOK2 - Main.esm")'
   - name: 'Fellout-PointLookout.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/2672'
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
         condition: 'file("FOOK2 - Main.esm")'
+    dirty:
+      - crc: 0xf33277f6 # DLC support pack of 29 July 2010
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 1
+        udr: 0
+        nav: 0
   - name: 'Fellout-Zeta.esp'
     msg:
       - type: say
