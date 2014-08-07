@@ -140,6 +140,21 @@ plugins:
     tag:
       - Eyes
       - Hair
+  - name: 'hackrate.x2.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/2745'
+    inc:
+      - 'hackrate.x4.esp'
+      - 'hackrate.x6.esp'
+  - name: 'hackrate.x4.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/2745'
+    inc:
+      - 'hackrate.x2.esp'
+      - 'hackrate.x6.esp'
+  - name: 'hackrate.x6.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/2745'
+    inc:
+      - 'hackrate.x2.esp'
+      - 'hackrate.x4.esp'
   - name: 'HairPack.esm'
     tag:
       - Eyes
