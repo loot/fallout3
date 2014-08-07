@@ -3307,6 +3307,13 @@ plugins:
     tag:
       - Deflst
       - Delev
+  - name: 'Dogmeat_WaitMegaton.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/7732'
+    inc: [ 'Dogmeat_WaitMegaton v1.1.esp' ]
+    # "v1.1" is "Dogmeat wait outside Megaton house"
+  - name: 'Dogmeat_WaitMegaton v1.1.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/7732'
+    inc: [ 'Dogmeat_WaitMegaton.esp' ]
   - name: 'AinzBeautifuleEyes.esp'
     tag:
       - Eyes
