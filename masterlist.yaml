@@ -19,11 +19,11 @@ globals:
   - type: say
     content:
       - lang: en
-        str: '[Latest LOOT thread](http://forums.bethsoft.com/topic/1503686-rel-loot-thread-10).'
+        str: '[Latest LOOT thread](http://forums.bethsoft.com/topic/1504835-rel-loot-thread-11).'
       - lang: ru
-        str: '[Обсуждение LOOT "(Eng)"](http://forums.bethsoft.com/topic/1503686-rel-loot-thread-10).'
+        str: '[Обсуждение LOOT "(Eng)"](http://forums.bethsoft.com/topic/1504835-rel-loot-thread-11).'
       - lang: es
-        str: '[Forum de LOOT](http://forums.bethsoft.com/topic/1503686-rel-loot-thread-10).'
+        str: '[Forum de LOOT](http://forums.bethsoft.com/topic/1504835-rel-loot-thread-11).'
 # FOSE Latest
   - type: say
     condition: 'file("..\fose_loader.exe") and version("..\fose_loader.exe", "0.1.2.2", <)'
