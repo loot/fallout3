@@ -3333,6 +3333,14 @@ plugins:
   - name: 'Dogmeat_WaitMegaton v1.1.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/7732'
     inc: [ 'Dogmeat_WaitMegaton.esp' ]
+  - name: 'DynamicCrosshair.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/15724'
+    req:
+      - *FOSE
+    # TODO: Make this say more intelligent - ie., check whether MTUI or DarnUI is installed.
+    say:
+      - type: say
+        content: 'Be sure to use the MTUI or Darnified UI version if you are using one of those.'
   - name: 'AinzBeautifuleEyes.esp'
     tag:
       - Eyes
