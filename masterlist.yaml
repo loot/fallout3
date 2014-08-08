@@ -3537,6 +3537,10 @@ plugins:
     msg:
       - type: say
         content: 'Choose only one of Error Fixes V1.5.esp or Error Fixes V1.5 - Higher FPS.esp, not both.'
+  - name: 'Exit Terminals With Q.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/19591'
+    req:
+      - *FOSE
   - name: 'Fallout 3 Master Fix.esp'
     inc:
       - 'Fallout 3 Master Fix - Higher FPS.esp'
