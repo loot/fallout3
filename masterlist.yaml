@@ -2846,6 +2846,10 @@ plugins:
   - name: 'RRRU +4.esp'
     tag:
       - Deflst
+  - name: 'SaveHotKey.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/16434'
+    req:
+      - *FOSE
   - name: 'Skill Modification Assignment.esp'
     tag:
       - Scripts
