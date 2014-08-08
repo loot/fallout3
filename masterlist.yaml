@@ -3573,6 +3573,10 @@ plugins:
     msg:
       - type: say
         content: 'Does not require a FOIP, provides complete compatibility between these two files'
+  - name: 'FasterWaiting.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/17755'
+    req:
+      - *FOSE
   - name: 'Bashed Patch, 0.esp'
     priority: 400991000
 
