@@ -3523,12 +3523,29 @@ plugins:
       - Hair
       - NPC.Race
       - NpcFaces
+  - name: '3EFhelmlessstealthsuit.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/3415'
+    inc:
+      # While it strictly doesn't conflict with the below mods in the records
+      # (at least not after cleaning), it does intend to do the same as these.
+      - 'ChineseStealthArmorFixed.esp'
+      - 'Chinese Stealth Suit- Removable Helmet.esp'
+    dirty:
+      - crc: 0xecf23f # "3EFhelmless 2nd", per 1 February 2009
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 9
+        udr: 1
+        nav: 0
   - name: 'ChineseStealthArmorFixed.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/5045'
-    inc: [ 'Chinese Stealth Suit- Removable Helmet.esp' ]
+    inc:
+      - '3EFhelmlessstealthsuit.esp'
+      - 'Chinese Stealth Suit- Removable Helmet.esp' ]
   - name: 'Chinese Stealth Suit- Removable Helmet.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/17275'
-    inc: [ 'ChineseStealthArmorFixed.esp' ]
+    inc:
+      - '3EFhelmlessstealthsuit.esp'
+      - 'ChineseStealthArmorFixed.esp'
   - name: 'CRBSOR.esp'
     msg:
       - type: say
