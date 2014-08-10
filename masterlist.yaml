@@ -3540,7 +3540,7 @@ plugins:
     url: 'http://www.nexusmods.com/fallout3/mods/5045'
     inc:
       - '3EFhelmlessstealthsuit.esp'
-      - 'Chinese Stealth Suit- Removable Helmet.esp' ]
+      - 'Chinese Stealth Suit- Removable Helmet.esp'
   - name: 'Chinese Stealth Suit- Removable Helmet.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/17275'
     inc:
