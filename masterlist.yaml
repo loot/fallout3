@@ -3523,6 +3523,12 @@ plugins:
       - Hair
       - NPC.Race
       - NpcFaces
+  - name: 'ChineseStealthArmorFixed.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/5045'
+    inc: [ 'Chinese Stealth Suit- Removable Helmet.esp' ]
+  - name: 'Chinese Stealth Suit- Removable Helmet.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/17275'
+    inc: [ 'ChineseStealthArmorFixed.esp' ]
   - name: 'CRBSOR.esp'
     msg:
       - type: say
