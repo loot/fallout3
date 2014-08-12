@@ -4,9 +4,15 @@ common:
     name: '..\fose_loader.exe'
     display: '[FOSE](http://fose.silverlock.org/)'
   - &AlreadyInUF3P
-    type: say
-    content: 'Do not use with Unofficial Fallout 3 Patch - Already Included'
-    condition: 'file("Unofficial Fallout 3 Patch.esm")'
+    type: error
+    content:
+      - lang: en
+        str: 'Delete. Already included in Unofficial Fallout 3 Patch.esm.'
+      - lang: ru
+        str: 'Удалите. Уже включено в Unofficial Fallout 3 Patch.esm.'
+      - lang: es
+        str: 'Borrar. Esta incluido en Unofficial Fallout 3 Patch.esm.'
+    condition: 'active("Unofficial Fallout 3 Patch.esm")'
 
 # Other strings
   - &dirtyUtil
