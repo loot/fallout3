@@ -417,6 +417,10 @@ plugins:
         content: 'Do not use with latest FWE, it is already integrated.'
     tag:
       - Names
+  - name: 'FO3 Error Fixes.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/16490'
+    priority: -300990000
+    msg: [ *AlreadyInUF3P ]
   - name: 'DALCO Inventory Sorter - Fallout 3 & All DLCs.esp'
     tag:
       - Names
