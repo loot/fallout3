@@ -3513,6 +3513,9 @@ plugins:
       - Graphics
       - Names
       - Stats
+  - name: 'CASM.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/3729'
+    req: [ *FOSE ]
   - name: 'Compatibility_Plugin_TalonExtraArmor_FWE_BrokenSteel.esp'
     tag:
       - Delev
