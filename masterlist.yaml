@@ -840,8 +840,18 @@ plugins:
     msg:
       - type: say
         content: 'Load RadioHotkey after all other radio mods'
+  - name: 'RadioTenpenny.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/7236'
+    inc: [ 'RadioTenpennyTower.esp' ]
+    dirty:
+      - crc: 0xF7ECA8BD # Version 1.0 (23 June 2009)
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 7
+        udr: 0
+        nav: 0
   - name: 'RadioTenpennyTower.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/3803'
+    inc: [ 'RadioTenpenny.esp' ]
     dirty:
       - crc: 0x813140D8 # Version 1.0 (9 February 2009)
         util: *dirtyUtil # FO3Edit 3.0.32
