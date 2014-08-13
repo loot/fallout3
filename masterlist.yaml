@@ -506,6 +506,20 @@ plugins:
   - name: 'fasttravelfromindoors.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/15108'
     priority: -100 # Low priority as it only does non-content changes to cells
+    inc: [ 'FastTravelIndoors.esp' ]
+  - name: 'FastTravelIndoors.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/7624'
+    priority: -100 # Low priority as it only does non-content changes to cells
+    inc: [ 'fasttravelfromindoors.esp' ]
+    msg:
+      - type: warn
+        content: 'In addition to identical-to-master records, this mod also includes several dirty edits in the form of changes to e.g., lighting and water level values. Consider using another mod to do what this does.'
+    dirty:
+      - crc: 0x42953e9a # Version 1.0 (9 July 2009)
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 6
+        udr: 0
+        nav: 0
   - name: 'FireLightFix.esp'
     tag:
       - C.Light
