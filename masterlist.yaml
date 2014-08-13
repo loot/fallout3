@@ -2898,6 +2898,12 @@ plugins:
   - name: 'TenpennyGhoulsAtPeace.esp'
     tag:
       - ScriptContents
+  - name: 'Tenpenny Tower true peace.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/15649'
+    inc: [ 'Tenpenny Tower Alternate Endings.esp' ]
+  - name: 'Tenpenny Tower Alternate Endings.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/20069'
+    inc: [ 'Tenpenny Tower true peace.esp' ]
   - name: 'EnhVision.esp'
     inc:
       - 'EnhVisionHK.esp'
