@@ -503,6 +503,9 @@ plugins:
   - name: 'Error Correction - Trees.esp'
     inc:
       - 'Error Correction - All Transparency & Trees.esp'
+  - name: 'fasttravelfromindoors.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/15108'
+    priority: -100 # Low priority as it only does non-content changes to cells
   - name: 'FireLightFix.esp'
     tag:
       - C.Light
