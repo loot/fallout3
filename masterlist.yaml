@@ -3674,6 +3674,18 @@ plugins:
         itm: 11
         udr: 481
         nav: 7
+  - name: 'YearlingBooks.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/20483'
+    inc:
+      - 'RHKBrisaAlmodovar.esm'
+      - 'YearlingBooksBrisaAlmodovar.esp'
+    msg:
+      - type: warn
+        content: 'This mod overwrites certain parts of the Brisa Almodovar follower mod. It is advised to use the "YearlingBooksBrisaAlmodovar.esp" version of this mod instead.'
+        condition: 'active("RHKBrisaAlmodovar.esm")'
+  - name: 'YearlingBooksBrisaAlmodovar.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/20483'
+    inc: [ 'YearlingBooks.esp' ]
   - name: 'Bashed Patch, 0.esp'
     priority: 400991000
 
