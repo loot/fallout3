@@ -3666,6 +3666,14 @@ plugins:
     url: 'http://www.nexusmods.com/fallout3/mods/17755'
     req:
       - *FOSE
+  - name: 'ArlingtonRestoration.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/20504'
+    dirty:
+      - crc: 0x7644FFDB # Version 1.0
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 11
+        udr: 481
+        nav: 7
   - name: 'Bashed Patch, 0.esp'
     priority: 400991000
 
