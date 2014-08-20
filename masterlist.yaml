@@ -3674,6 +3674,11 @@ plugins:
         itm: 11
         udr: 481
         nav: 7
+      - crc: 0xBB8568ED # Version 1.0.1
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 0
+        udr: 0
+        nav: 7
   - name: 'YearlingBooks.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/20483'
     inc:
