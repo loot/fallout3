@@ -3671,7 +3671,7 @@ plugins:
     msg:
       - type: warn
         content: 'The author has posted a cleaned update of the mod. Use that instead.'
-        condition: 'checksum("ArlingtonRestoration.esp",7644FFDB)
+        condition: 'checksum("ArlingtonRestoration.esp",7644FFDB)'
     dirty:
       - crc: 0x7644FFDB # Version 1.0
         util: *dirtyUtil # FO3Edit 3.0.32
