@@ -77,6 +77,12 @@ plugins:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
         condition: 'file("FOOK2 - Main.esm")'
+    dirty:
+      - crc: 0xC5690E8E # Version 2.0
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 18
+        udr: 0
+        nav: 0
   - name: 'BrokenSteel.esm'
     priority: -400999000
     after:
