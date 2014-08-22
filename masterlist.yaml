@@ -30,6 +30,17 @@ globals:
         str: '[Обсуждение LOOT "(Eng)"](http://forums.bethsoft.com/topic/1504835-rel-loot-thread-11).'
       - lang: es
         str: '[Forum de LOOT](http://forums.bethsoft.com/topic/1504835-rel-loot-thread-11).'
+# FOSE plugins
+  # Fallout Stutter Remover: http://www.nexusmods.com/fallout3/mods/8886
+  - type: warn
+    condition: 'file("FOSE\Plugins\sr_Fallout_Stutter_Remover.dll") and not file("..\fose_loader.exe")'
+    content:
+      - lang: en
+        str: 'You have installed Fallout Stutter Remover but FOSE was not found! See [FOSE download page](http://fose.silverlock.org/).'
+      - lang: ru
+        str: 'У вас установлен Fallout Stutter Remover, но FOSE не найден! Смотрите страницу загрузки [FOSE](http://fose.silverlock.org/).'
+      - lang: es
+        str: 'Tienes Fallout Stutter Remover instalado pero FOSE no se pudo encontrar! Por favor [descarga FOSE](http://fose.silverlock.org/).'
 # FOSE Latest
   - type: say
     condition: 'file("..\fose_loader.exe") and version("..\fose_loader.exe", "0.1.2.2", <)'
