@@ -41,6 +41,37 @@ globals:
         str: 'У вас установлен Fallout Stutter Remover, но FOSE не найден! Смотрите страницу загрузки [FOSE](http://fose.silverlock.org/).'
       - lang: es
         str: 'Tienes Fallout Stutter Remover instalado pero FOSE no se pudo encontrar! Por favor [descarga FOSE](http://fose.silverlock.org/).'
+  # NVAC: http://www.nexusmods.com/newvegas/mods/53635
+  - type: warn
+    condition: 'file("NVSE\Plugins\nvac.dll")'
+    content: 'NVAC is installed under "NVSE\Plugins" but needs to be moved to "FOSE\Plugins" for FOSE to pick it up for Fallout 3.'
+  - type: warn
+    condition: 'file("FOSE\Plugins\nvac.dll") and not file("..\fose_loader.exe")'
+    content:
+      - lang: en
+        str: 'You have installed New Vegas Anti Crash but FOSE was not found! See [FOSE download page](http://fose.silverlock.org/).'
+      - lang: ru
+        str: 'У вас установлен New Vegas Anti Crash, но FOSE не найден! Смотрите страницу загрузки [FOSE](http://fose.silverlock.org/).'
+      - lang: es
+        str: 'Tienes New Vegas Anti Crash instalado pero FOSE no se pudo encontrar! Por favor [descarga FOSE](http://fose.silverlock.org/).'
+  - type: say
+    condition: 'file("FOSE\Plugins\nvac.dll") and version("FOSE\Plugins\nvac.dll", "7.1.0.0", <)'
+    content:
+      - lang: en
+        str: 'It appears you do not have the [latest version of NVAC - New Vegas Anti Crash](http://www.nexusmods.com/newvegas/mods/53635).'
+      - lang: ru
+        str: 'Возможно, что вы используете НЕ [самую последнюю версию NVAC - New Vegas Anti Crash](http://www.nexusmods.com/newvegas/mods/53635).'
+      - lang: es
+        str: 'Parece que no tienes la última versión de NVAC - New Vegas Anti Crash. la nueva versión se puede encontrar [aquí](http://www.nexusmods.com/newvegas/mods/53635).'
+  - type: say
+    condition: 'not version("FOSE\Plugins\nvac.dll", "7.1.0.0", <)'
+    content:
+      - lang: en
+        str: 'Your NVAC - New Vegas Anti Crash is up-to-date.'
+      - lang: ru
+        str: 'Ваш NVAC - New Vegas Anti Crash имеет последнюю версию.'
+      - lang: es
+        str: 'Tienes la última versión de NVAC - New Vegas Anti Crash.'
 # FOSE Latest
   - type: say
     condition: 'file("..\fose_loader.exe") and version("..\fose_loader.exe", "0.1.2.2", <)'
