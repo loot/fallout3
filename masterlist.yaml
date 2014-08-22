@@ -3689,6 +3689,34 @@ plugins:
         itm: 0
         udr: 0
         nav: 7
+  - name: 'Flashlight-LOS.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/15003'
+    req:
+      - *FOSE
+    inc:
+      - 'Flashlight-Performance.esp'
+      - 'Flashlight-LOS-nonFOSE.esp'
+      - 'Flashlight-Performance-nonFOSE.esp'
+  - name: 'Flashlight-Performance.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/15003'
+    req:
+      - *FOSE
+    inc:
+      - 'Flashlight-LOS.esp'
+      - 'Flashlight-LOS-nonFOSE.esp'
+      - 'Flashlight-Performance-nonFOSE.esp'
+  - name: 'Flashlight-LOS-nonFOSE.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/15003'
+    inc:
+      - 'Flashlight-LOS.esp'
+      - 'Flashlight-Performance.esp'
+      - 'Flashlight-Performance-nonFOSE.esp'
+  - name: 'Flashlight-Performance-nonFOSE.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/15003'
+    inc:
+      - 'Flashlight-LOS.esp'
+      - 'Flashlight-Performance.esp'
+      - 'Flashlight-LOS-nonFOSE.esp'
   - name: 'YearlingBooks.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/20483'
     inc:
