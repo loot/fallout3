@@ -570,10 +570,23 @@ plugins:
         nav: 0
   - name: 'FireLightFix.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/3660'
+    inc: [ 'FireLightFix_rus.esp' ]
     tag:
       - C.Light
     dirty:
       - crc: 0x482C04B2 # Version 2.0.0.9.b (5 February 2009)
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 2
+        udr: 4
+        nav: 0
+  - name: 'FireLightFix_rus.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/3660'
+    inc: [ 'FireLightFix.esp' ]
+    after: [ 'FireLightFix.esp' ]
+    tag:
+      - C.Light
+    dirty:
+      - crc: 0xED54E353 # Version 2.0.0.9.b (5 February 2009)
         util: *dirtyUtil # FO3Edit 3.0.32
         itm: 2
         udr: 4
