@@ -574,7 +574,7 @@ plugins:
   - name: 'BringBackBael.esp'
     msg:
       - type: say
-        content: 'Obsolete - Now intergrated into Fallout Remastered.esp, upgrade to latest version'
+        content: 'Obsolete. Now integrated into Fallout Remastered.esp, upgrade to latest version.'
   - name: 'BlackWidowBurkeFix.esp'
     tag:
       - Scripts
