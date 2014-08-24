@@ -571,6 +571,7 @@ plugins:
   - name: 'FireLightFix.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/3660'
     inc: [ 'FireLightFix_rus.esp' ]
+    msg: [ *AlreadyInUF3P ]
     tag:
       - C.Light
     dirty:
@@ -583,6 +584,7 @@ plugins:
     url: 'http://www.nexusmods.com/fallout3/mods/3660'
     inc: [ 'FireLightFix.esp' ]
     after: [ 'FireLightFix.esp' ]
+    msg: [ *AlreadyInUF3P ]
     tag:
       - C.Light
     dirty:
