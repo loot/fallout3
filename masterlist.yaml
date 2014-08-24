@@ -7,7 +7,7 @@ common:
     type: error
     content:
       - lang: en
-        str: 'Delete. Already included in Unofficial Fallout 3 Patch.esm.'
+        str: 'Delete. Already included or otherwise fixed in Unofficial Fallout 3 Patch.esm.'
       - lang: ru
         str: 'Удалите. Уже включено в Unofficial Fallout 3 Patch.esm.'
       - lang: es
