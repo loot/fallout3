@@ -177,6 +177,7 @@ plugins:
       - 'BrokenSteel.esm'
       - 'pointlookout.esm'
       - 'zeta.esm'
+      - 'ObjectPlacementFix.esm'
     tag:
       - C.Music
       - Deflst
@@ -194,6 +195,13 @@ plugins:
     tag:
       - Eyes
       - Hair
+  - name: 'ObjectPlacementFix.esm'
+    url: 'http://www.nexusmods.com/fallout3/mods/15600'
+    inc: [ 'ObjectPlacementFix.esp' ]
+  - name: 'ObjectPlacementFix.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/15600'
+    priority: -300990000
+    inc: [ 'ObjectPlacementFix.esm' ]
   - name: 'hackrate.x2.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/2745'
     inc:
