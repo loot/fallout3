@@ -198,10 +198,6 @@ plugins:
   - name: 'ObjectPlacementFix.esm'
     url: 'http://www.nexusmods.com/fallout3/mods/15600'
     inc: [ 'ObjectPlacementFix.esp' ]
-  - name: 'ObjectPlacementFix.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/15600'
-    priority: -300990000
-    inc: [ 'ObjectPlacementFix.esm' ]
   - name: 'HairPack.esm'
     tag:
       - Eyes
@@ -343,7 +339,6 @@ plugins:
       - Relations
       - Relev
       - Stats
-
   - name: 'FWE - Combat Overhaul_Core.esm'
     url: [ 'http://www.nexusmods.com/fallout3/mods/15578' ]
     inc:
@@ -391,37 +386,6 @@ plugins:
         condition: 'file("FOOK2 - Main.esm")'
   - name: 'Animy_prostitution.esm'
     req: [ *FOSE ]
-  - name: 'Binoculars.esp'
-    url:
-      - link: 'http://www.nexusmods.com/fallout3/mods/8909'
-        ver: [ '2.0' ]
-    # 'Binoculars and Scopes.esp' is an older version of the mod.
-    after: [ 'Binoculars and Scopes.esp' ]
-    inc: [ 'Binoculars and Scopes.esp' ]
-    dirty:
-      - crc: 0x5a50fe32 # Version 2.0
-        util: *dirtyUtil # FO3Edit 3.0.32
-        itm: 15
-        udr: 2
-        nav: 0
-  - name: 'Binoculars and Scopes.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/8936'
-    inc: [ 'Binoculars.esp' ]
-    msg:
-      - type: say
-        content:
-          - lang: en
-            str: 'Obsolete. Update to [latest version](http://www.nexusmods.com/fallout3/mods/8909).'
-          - lang: ru
-            str: 'Устарело. Обновите до [последней версии](http://www.nexusmods.com/fallout3/mods/8909).'
-          - lang: es
-            str: 'Obsoleto. Actualizar a la [última versión](http://www.nexusmods.com/fallout3/mods/8909).'
-    dirty:
-      - crc: 0x30f58333 # Version 1.2
-        util: *dirtyUtil # FO3Edit 3.0.32
-        itm: 6
-        udr: 2
-        nav: 0
   - name: 'DCInteriors_ComboEdition.esm'
     inc:
       - 'DCInteriors_LEnfntPl.esm'
@@ -464,10 +428,47 @@ plugins:
         content: 'Do not use with latest FWE, it is already integrated.'
     tag:
       - Names
+
+    ### Load Early-section
+
+  - name: 'FireLightFix.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/3660'
+    priority: -300990000
+    inc: [ 'FireLightFix_rus.esp' ]
+    msg: [ *AlreadyInUF3P ]
+    tag:
+      - C.Light
+    dirty:
+      - crc: 0x482C04B2 # Version 2.0.0.9.b (5 February 2009)
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 2
+        udr: 4
+        nav: 0
+  - name: 'FireLightFix_rus.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/3660'
+    priority: -300990000
+    inc: [ 'FireLightFix.esp' ]
+    after: [ 'FireLightFix.esp' ]
+    msg: [ *AlreadyInUF3P ]
+    tag:
+      - C.Light
+    dirty:
+      - crc: 0xED54E353 # Version 2.0.0.9.b (5 February 2009)
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 2
+        udr: 4
+        nav: 0
   - name: 'FO3 Error Fixes.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/16490'
     priority: -300990000
     msg: [ *AlreadyInUF3P ]
+  - name: 'ObjectPlacementFix.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/15600'
+    priority: -300990000
+    inc: [ 'ObjectPlacementFix.esm' ]
+
+    ### Imported ESPs from BOSS masterlist
+
   - name: 'DALCO Inventory Sorter - Fallout 3 & All DLCs.esp'
     tag:
       - Names
@@ -544,31 +545,6 @@ plugins:
   - name: 'Error Correction - Trees.esp'
     inc:
       - 'Error Correction - All Transparency & Trees.esp'
-  - name: 'FireLightFix.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/3660'
-    inc: [ 'FireLightFix_rus.esp' ]
-    msg: [ *AlreadyInUF3P ]
-    tag:
-      - C.Light
-    dirty:
-      - crc: 0x482C04B2 # Version 2.0.0.9.b (5 February 2009)
-        util: *dirtyUtil # FO3Edit 3.0.32
-        itm: 2
-        udr: 4
-        nav: 0
-  - name: 'FireLightFix_rus.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/3660'
-    inc: [ 'FireLightFix.esp' ]
-    after: [ 'FireLightFix.esp' ]
-    msg: [ *AlreadyInUF3P ]
-    tag:
-      - C.Light
-    dirty:
-      - crc: 0xED54E353 # Version 2.0.0.9.b (5 February 2009)
-        util: *dirtyUtil # FO3Edit 3.0.32
-        itm: 2
-        udr: 4
-        nav: 0
   - name: 'BringBackBael.esp'
     msg:
       - type: say
@@ -3686,6 +3662,37 @@ plugins:
         itm: 0
         udr: 0
         nav: 7
+  - name: 'Binoculars.esp'
+    url:
+      - link: 'http://www.nexusmods.com/fallout3/mods/8909'
+        ver: [ '2.0' ]
+    # 'Binoculars and Scopes.esp' is an older version of the mod.
+    after: [ 'Binoculars and Scopes.esp' ]
+    inc: [ 'Binoculars and Scopes.esp' ]
+    dirty:
+      - crc: 0x5a50fe32 # Version 2.0
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 15
+        udr: 2
+        nav: 0
+  - name: 'Binoculars and Scopes.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/8936'
+    inc: [ 'Binoculars.esp' ]
+    msg:
+      - type: say
+        content:
+          - lang: en
+            str: 'Obsolete. Update to [latest version](http://www.nexusmods.com/fallout3/mods/8909).'
+          - lang: ru
+            str: 'Устарело. Обновите до [последней версии](http://www.nexusmods.com/fallout3/mods/8909).'
+          - lang: es
+            str: 'Obsoleto. Actualizar a la [última versión](http://www.nexusmods.com/fallout3/mods/8909).'
+    dirty:
+      - crc: 0x30f58333 # Version 1.2
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 6
+        udr: 2
+        nav: 0
   - name: 'CASM.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/3729'
     req: [ *FOSE ]
