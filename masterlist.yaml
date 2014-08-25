@@ -544,23 +544,6 @@ plugins:
   - name: 'Error Correction - Trees.esp'
     inc:
       - 'Error Correction - All Transparency & Trees.esp'
-  - name: 'fasttravelfromindoors.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/15108'
-    priority: -100 # Low priority as it only does non-content changes to cells
-    inc: [ 'FastTravelIndoors.esp' ]
-  - name: 'FastTravelIndoors.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/7624'
-    priority: -100 # Low priority as it only does non-content changes to cells
-    inc: [ 'fasttravelfromindoors.esp' ]
-    msg:
-      - type: warn
-        content: 'In addition to identical-to-master records, this mod also includes several dirty edits in the form of changes to e.g., lighting and water level values. Consider using another mod to do what this does.'
-    dirty:
-      - crc: 0x42953e9a # Version 1.0 (9 July 2009)
-        util: *dirtyUtil # FO3Edit 3.0.32
-        itm: 6
-        udr: 0
-        nav: 0
   - name: 'FireLightFix.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/3660'
     inc: [ 'FireLightFix_rus.esp' ]
@@ -903,24 +886,6 @@ plugins:
     msg:
       - type: say
         content: 'Load RadioHotkey after all other radio mods'
-  - name: 'RadioTenpenny.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/7236'
-    inc: [ 'RadioTenpennyTower.esp' ]
-    dirty:
-      - crc: 0xF7ECA8BD # Version 1.0 (23 June 2009)
-        util: *dirtyUtil # FO3Edit 3.0.32
-        itm: 7
-        udr: 0
-        nav: 0
-  - name: 'RadioTenpennyTower.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/3803'
-    inc: [ 'RadioTenpenny.esp' ]
-    dirty:
-      - crc: 0x813140D8 # Version 1.0 (9 February 2009)
-        util: *dirtyUtil # FO3Edit 3.0.32
-        itm: 3
-        udr: 0
-        nav: 0
   - name: 'Despicable Dashwood v2.esp'
     tag:
       - Actors.ACBS
@@ -2954,10 +2919,6 @@ plugins:
   - name: 'RRRU +4.esp'
     tag:
       - Deflst
-  - name: 'SaveHotKey.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/16434'
-    req:
-      - *FOSE
   - name: 'Skill Modification Assignment.esp'
     tag:
       - Scripts
@@ -2976,15 +2937,6 @@ plugins:
     msg:
       - type: say
         content: 'Do not use with latest FWE, it is already integrated.'
-  - name: 'TenpennyGhoulsAtPeace.esp'
-    tag:
-      - ScriptContents
-  - name: 'Tenpenny Tower true peace.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/15649'
-    inc: [ 'Tenpenny Tower Alternate Endings.esp' ]
-  - name: 'Tenpenny Tower Alternate Endings.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/20069'
-    inc: [ 'Tenpenny Tower true peace.esp' ]
   - name: 'EnhVision.esp'
     inc:
       - 'EnhVisionHK.esp'
@@ -3440,21 +3392,6 @@ plugins:
     tag:
       - Deflst
       - Delev
-  - name: 'Dogmeat_WaitMegaton.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/7732'
-    inc: [ 'Dogmeat_WaitMegaton v1.1.esp' ]
-    # "v1.1" is "Dogmeat wait outside Megaton house"
-  - name: 'Dogmeat_WaitMegaton v1.1.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/7732'
-    inc: [ 'Dogmeat_WaitMegaton.esp' ]
-  - name: 'DynamicCrosshair.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/15724'
-    req:
-      - *FOSE
-    # TODO: Make this say more intelligent - ie., check whether MTUI or DarnUI is installed.
-    msg:
-      - type: say
-        content: 'Be sure to use the MTUI or Darnified UI version if you are using one of those.'
   - name: 'AinzBeautifuleEyes.esp'
     tag:
       - Eyes
@@ -3627,9 +3564,6 @@ plugins:
       - Graphics
       - Names
       - Stats
-  - name: 'CASM.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/3729'
-    req: [ *FOSE ]
   - name: 'Compatibility_Plugin_TalonExtraArmor_FWE_BrokenSteel.esp'
     tag:
       - Delev
@@ -3640,29 +3574,6 @@ plugins:
       - Hair
       - NPC.Race
       - NpcFaces
-  - name: '3EFhelmlessstealthsuit.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/3415'
-    inc:
-      # While it strictly doesn't conflict with the below mods in the records
-      # (at least not after cleaning), it does intend to do the same as these.
-      - 'ChineseStealthArmorFixed.esp'
-      - 'Chinese Stealth Suit- Removable Helmet.esp'
-    dirty:
-      - crc: 0xecf23f # "3EFhelmless 2nd", per 1 February 2009
-        util: *dirtyUtil # FO3Edit 3.0.32
-        itm: 9
-        udr: 1
-        nav: 0
-  - name: 'ChineseStealthArmorFixed.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/5045'
-    inc:
-      - '3EFhelmlessstealthsuit.esp'
-      - 'Chinese Stealth Suit- Removable Helmet.esp'
-  - name: 'Chinese Stealth Suit- Removable Helmet.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/17275'
-    inc:
-      - '3EFhelmlessstealthsuit.esp'
-      - 'ChineseStealthArmorFixed.esp'
   - name: 'CRBSOR.esp'
     msg:
       - type: say
@@ -3689,10 +3600,6 @@ plugins:
     msg:
       - type: say
         content: 'Choose only one of Error Fixes V1.5.esp or Error Fixes V1.5 - Higher FPS.esp, not both.'
-  - name: 'Exit Terminals With Q.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/19591'
-    req:
-      - *FOSE
   - name: 'Fallout 3 Master Fix.esp'
     inc:
       - 'Fallout 3 Master Fix - Higher FPS.esp'
@@ -3726,6 +3633,42 @@ plugins:
       - type: say
         content: 'Does not require a FOIP, provides complete compatibility between these two files'
 
+    ## Chinese Stealth Armor separators
+  - name: '3EFhelmlessstealthsuit.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/3415'
+    inc:
+      # While it strictly doesn't conflict with the below mods in the records
+      # (at least not after cleaning), it does intend to do the same as these.
+      - 'ChineseStealthArmorFixed.esp'
+      - 'Chinese Stealth Suit- Removable Helmet.esp'
+    dirty:
+      - crc: 0xecf23f # "3EFhelmless 2nd", per 1 February 2009
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 9
+        udr: 1
+        nav: 0
+  - name: 'ChineseStealthArmorFixed.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/5045'
+    inc:
+      - '3EFhelmlessstealthsuit.esp'
+      - 'Chinese Stealth Suit- Removable Helmet.esp'
+  - name: 'Chinese Stealth Suit- Removable Helmet.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/17275'
+    inc:
+      - '3EFhelmlessstealthsuit.esp'
+      - 'ChineseStealthArmorFixed.esp'
+
+    ## Tenpenny Tower quest
+  - name: 'TenpennyGhoulsAtPeace.esp'
+    tag:
+      - ScriptContents
+  - name: 'Tenpenny Tower true peace.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/15649'
+    inc: [ 'Tenpenny Tower Alternate Endings.esp' ]
+  - name: 'Tenpenny Tower Alternate Endings.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/20069'
+    inc: [ 'Tenpenny Tower true peace.esp' ]
+
   - name: 'ArlingtonRestoration.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/20504'
     msg:
@@ -3743,10 +3686,49 @@ plugins:
         itm: 0
         udr: 0
         nav: 7
+  - name: 'CASM.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/3729'
+    req: [ *FOSE ]
+  - name: 'Dogmeat_WaitMegaton.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/7732'
+    inc: [ 'Dogmeat_WaitMegaton v1.1.esp' ]
+    # "v1.1" is "Dogmeat wait outside Megaton house"
+  - name: 'Dogmeat_WaitMegaton v1.1.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/7732'
+    inc: [ 'Dogmeat_WaitMegaton.esp' ]
+  - name: 'DynamicCrosshair.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/15724'
+    req:
+      - *FOSE
+    # TODO: Make this say more intelligent - ie., check whether MTUI or DarnUI is installed.
+    msg:
+      - type: say
+        content: 'Be sure to use the MTUI or Darnified UI version if you are using one of those.'
+  - name: 'Exit Terminals With Q.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/19591'
+    req:
+      - *FOSE
   - name: 'FasterWaiting.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/17755'
     req:
       - *FOSE
+  - name: 'fasttravelfromindoors.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/15108'
+    priority: -100 # Low priority as it only does non-content changes to cells
+    inc: [ 'FastTravelIndoors.esp' ]
+  - name: 'FastTravelIndoors.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/7624'
+    priority: -100 # Low priority as it only does non-content changes to cells
+    inc: [ 'fasttravelfromindoors.esp' ]
+    msg:
+      - type: warn
+        content: 'In addition to identical-to-master records, this mod also includes several dirty edits in the form of changes to e.g., lighting and water level values. Consider using another mod to do what this does.'
+    dirty:
+      - crc: 0x42953e9a # Version 1.0 (9 July 2009)
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 6
+        udr: 0
+        nav: 0
   - name: 'Flashlight-LOS.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/15003'
     req:
@@ -3806,6 +3788,28 @@ plugins:
         itm: 3
         udr: 0
         nav: 0
+  - name: 'RadioTenpenny.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/7236'
+    inc: [ 'RadioTenpennyTower.esp' ]
+    dirty:
+      - crc: 0xF7ECA8BD # Version 1.0 (23 June 2009)
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 7
+        udr: 0
+        nav: 0
+  - name: 'RadioTenpennyTower.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/3803'
+    inc: [ 'RadioTenpenny.esp' ]
+    dirty:
+      - crc: 0x813140D8 # Version 1.0 (9 February 2009)
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 3
+        udr: 0
+        nav: 0
+  - name: 'SaveHotKey.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/16434'
+    req:
+      - *FOSE
   - name: 'YearlingBooks.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/20483'
     inc:
