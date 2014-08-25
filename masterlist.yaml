@@ -202,21 +202,6 @@ plugins:
     url: 'http://www.nexusmods.com/fallout3/mods/15600'
     priority: -300990000
     inc: [ 'ObjectPlacementFix.esm' ]
-  - name: 'hackrate.x2.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/2745'
-    inc:
-      - 'hackrate.x4.esp'
-      - 'hackrate.x6.esp'
-  - name: 'hackrate.x4.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/2745'
-    inc:
-      - 'hackrate.x2.esp'
-      - 'hackrate.x6.esp'
-  - name: 'hackrate.x6.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/2745'
-    inc:
-      - 'hackrate.x2.esp'
-      - 'hackrate.x4.esp'
   - name: 'HairPack.esm'
     tag:
       - Eyes
@@ -3740,10 +3725,7 @@ plugins:
     msg:
       - type: say
         content: 'Does not require a FOIP, provides complete compatibility between these two files'
-  - name: 'FasterWaiting.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/17755'
-    req:
-      - *FOSE
+
   - name: 'ArlingtonRestoration.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/20504'
     msg:
@@ -3761,6 +3743,10 @@ plugins:
         itm: 0
         udr: 0
         nav: 7
+  - name: 'FasterWaiting.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/17755'
+    req:
+      - *FOSE
   - name: 'Flashlight-LOS.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/15003'
     req:
@@ -3789,23 +3775,21 @@ plugins:
       - 'Flashlight-LOS.esp'
       - 'Flashlight-Performance.esp'
       - 'Flashlight-LOS-nonFOSE.esp'
-  - name: 'YearlingBooks.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/20483'
+  - name: 'hackrate.x2.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/2745'
     inc:
-      - 'RHKBrisaAlmodovar.esm'
-      - 'YearlingBooksBrisaAlmodovar.esp'
-    msg:
-      - type: warn
-        content: 'This mod overwrites certain parts of the Brisa Almodovar follower mod. It is advised to use the "YearlingBooksBrisaAlmodovar.esp" version of this mod instead.'
-        condition: 'active("RHKBrisaAlmodovar.esm")'
-  - name: 'YearlingBooksBrisaAlmodovar.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/20483'
-    inc: [ 'YearlingBooks.esp' ]
-  - name: 'Bashed Patch, 0.esp'
-    priority: 400991000
-
-  ### New radio stations
-
+      - 'hackrate.x4.esp'
+      - 'hackrate.x6.esp'
+  - name: 'hackrate.x4.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/2745'
+    inc:
+      - 'hackrate.x2.esp'
+      - 'hackrate.x6.esp'
+  - name: 'hackrate.x6.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/2745'
+    inc:
+      - 'hackrate.x2.esp'
+      - 'hackrate.x4.esp'
   - name: 'Loki_HistoricSpeeches_v1.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/14476'
     dirty:
@@ -3822,6 +3806,18 @@ plugins:
         itm: 3
         udr: 0
         nav: 0
+  - name: 'YearlingBooks.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/20483'
+    inc:
+      - 'RHKBrisaAlmodovar.esm'
+      - 'YearlingBooksBrisaAlmodovar.esp'
+    msg:
+      - type: warn
+        content: 'This mod overwrites certain parts of the Brisa Almodovar follower mod. It is advised to use the "YearlingBooksBrisaAlmodovar.esp" version of this mod instead.'
+        condition: 'active("RHKBrisaAlmodovar.esm")'
+  - name: 'YearlingBooksBrisaAlmodovar.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/20483'
+    inc: [ 'YearlingBooks.esp' ]
   - name: 'X-1_Tales_of_Wonder!.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/17672'
     dirty:
@@ -3830,3 +3826,8 @@ plugins:
         itm: 4
         udr: 0
         nav: 0
+
+  ### Load Late-section
+
+  - name: 'Bashed Patch, 0.esp'
+    priority: 400991000
