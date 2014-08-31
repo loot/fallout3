@@ -379,11 +379,11 @@ plugins:
       - C.Climate
       - Sound
     dirty:
-      crc: 0x80ACEA99
-      util: *dirtyUtil # FO3Edit 3.0.32
-      itm: 13
-      udr: 0
-      nav: 0
+      - crc: 0x80ACEA99
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 13
+        udr: 0
+        nav: 0
   - name: 'RTS.esm'
     inc:
       - 'ArefuExpandedByAzar.esm'
