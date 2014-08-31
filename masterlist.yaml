@@ -3326,15 +3326,27 @@ plugins:
     msg:
       - type: say
         content: 'Only use one Weather Machine.esp at a time.'
+    inc:
+      - 'Xepha''s Dynamic Weather - Weather Machine (+Rain).esp'
+      - 'Xepha''s Dynamic Weather - Weather Machine (Quest Added).esp'
+      - 'Xepha''s Dynamic Weather - Weather Machine (Start Game Added).esp'
   - name: 'Xepha''s Dynamic Weather - Weather Machine (+Rain).esp'
     msg:
       - type: say
         content: 'Only use one Weather Machine.esp at a time.'
+    inc:
+      - 'Xepha''s Dynamic Weather - Weather Machine.esp'
+      - 'Xepha''s Dynamic Weather - Weather Machine (Quest Added).esp'
+      - 'Xepha''s Dynamic Weather - Weather Machine (Start Game Added).esp'
   - name: 'Xepha''s Dynamic Weather - Weather Machine (Quest Added).esp'
     url: 'http://www.nexusmods.com/fallout3/mods/10607'
     msg:
       - type: say
         content: 'Only use one Weather Machine.esp at a time.'
+    inc:
+      - 'Xepha''s Dynamic Weather - Weather Machine.esp'
+      - 'Xepha''s Dynamic Weather - Weather Machine (+Rain).esp'
+      - 'Xepha''s Dynamic Weather - Weather Machine (Start Game Added).esp'
     dirty:
       - crc: 0x21C258F6
         util: *dirtyUtil # FO3Edit 3.0.32
@@ -3345,6 +3357,10 @@ plugins:
     msg:
       - type: say
         content: 'Only use one Weather Machine.esp at a time.'
+    inc:
+      - 'Xepha''s Dynamic Weather - Weather Machine.esp'
+      - 'Xepha''s Dynamic Weather - Weather Machine (+Rain).esp'
+      - 'Xepha''s Dynamic Weather - Weather Machine (Quest Added).esp'
   - name: 'Better DC Weather - 60-40.esp'
     inc:
       - 'Better DC Weather - 80-20.esp'
