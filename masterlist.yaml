@@ -4001,6 +4001,16 @@ plugins:
         itm: 4
         udr: 0
         nav: 0
+  - name: 'ZL-MP5 Pack.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/5431'
+    tag:
+      - Stats
+    dirty:
+      - crc: 0xB7146642
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 6
+        udr: 0
+        nav: 0
 
   ### Load Late-section
 
