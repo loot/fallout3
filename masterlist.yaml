@@ -3864,6 +3864,9 @@ plugins:
         itm: 6
         udr: 0
         nav: 0
+  - name: 'FeralGhoulTest.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/16886'
+    tag: [ Relev ]
   - name: 'Flashlight-LOS.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/15003'
     req:
