@@ -441,6 +441,18 @@ plugins:
         content: 'Do not use with latest FWE, it is already integrated.'
     tag:
       - Names
+  - name: 'RH_IRONSIGHTS.esm'
+    url: 'http://www.nexusmods.com/fallout3/mods/16787' # Paradox merged mod
+    inc:
+      - 'Arms_dealer_V1.esp'
+    tag:
+      - Inven
+    dirty:
+      - crc: 0xBA4ABFE7
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 0
+        udr: 1
+        nav: 0
 
     ### Load Early-section
 
