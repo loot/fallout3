@@ -1633,10 +1633,22 @@ plugins:
       - Names
       - NoMerge
   - name: 'WeaponModKits - FWE Master Release.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/17757'
     tag:
       - Deflst
       - Names
       - Relev
+    dirty:
+      - crc: 0x25042115
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 82
+        udr: 0
+        nav: 0
+  - name: 'RH_WMK_Bridge.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/17757'
+    tag:
+      - Relev
+      - Delev
   - name: 'WeaponModKits - FWE Optional Worn Weapons.esp'
     tag:
       - Delev
