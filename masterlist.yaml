@@ -3929,6 +3929,15 @@ plugins:
         itm: 3
         udr: 0
         nav: 0
+  - name: 'MyMegaton-AmmoPress-Calibr-Plus-Unlocked_v1_21_18605.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/18605'
+    tag: [ Names ]
+    dirty:
+      - crc: 0xC061B97B
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 0
+        udr: 8
+        nav: 0
   - name: 'People_Radio.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/5021'
     dirty:
