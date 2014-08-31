@@ -325,7 +325,7 @@ plugins:
         content: 'Remove if using FOOK2 1.1 and above'
         condition: 'file("FOOK2 - Main.esm")'
   - name: 'FO3 Wanderers Edition - Main File.esm'
-    url: [ 'http://www.nexusmods.com/fallout3/mods/2761' ]
+    url: 'http://www.nexusmods.com/fallout3/mods/2761'
     msg:
       - type: say
         content: 'Suggested to remove the names tag if using MMM'
@@ -339,6 +339,12 @@ plugins:
       - Relations
       - Relev
       - Stats
+    dirty:
+      - crc: 0x9C986068
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 13
+        udr: 0
+        nav: 0
   - name: 'FWE - Combat Overhaul_Core.esm'
     url: [ 'http://www.nexusmods.com/fallout3/mods/15578' ]
     inc:
@@ -368,9 +374,16 @@ plugins:
   - name: 'Wasteland Whisperer v2.esm'
     req: [ *FOSE ]
   - name: 'Xepha''s Dynamic Weather.esm'
+    url: 'http://www.nexusmods.com/fallout3/mods/10607'
     tag:
       - C.Climate
       - Sound
+    dirty:
+      crc: 0x80ACEA99
+      util: *dirtyUtil # FO3Edit 3.0.32
+      itm: 13
+      udr: 0
+      nav: 0
   - name: 'RTS.esm'
     inc:
       - 'ArefuExpandedByAzar.esm'
@@ -1325,13 +1338,55 @@ plugins:
       - Relev
       - Scripts
       - Stats
+    dirty:
+      - crc: 0x01982EC9
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 15
+        udr: 0
+        nav: 0
   - name: 'DALCO Inventory Sorter - FWE (Main File).esp'
     tag:
       - Names
       - NoMerge
   - name: 'FO3 Wanderers Edition - DLC Anchorage.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/2761'
     tag:
       - Deflst
+    dirty:
+      - crc: 0xD6AA0D05
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 3
+        udr: 0
+        nav: 0
+  - name: 'FO3 Wanderers Edition - DLC Broken Steel.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/2761'
+    dirty:
+      - crc: 0x9226281C
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 14
+        udr: 0
+        nav: 0
+  - name: 'FO3 Wanderers Edition - DLC Point Lookout.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/2761'
+    tag:
+      - Delev
+      - Relev
+    dirty:
+      - crc: 0xB63AAA64
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 23
+        udr: 0
+        nav: 0
+  - name: 'FO3 Wanderers Edition - DLC The Pitt.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/2761'
+    tag:
+      - Names
+    dirty:
+      - crc: 0xBFF37246
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 1
+        udr: 0
+        nav: 0
   - name: 'DALCO Inventory Sorter - FWE (Operation Anchorage).esp'
     tag:
       - Names
@@ -1344,10 +1399,6 @@ plugins:
     tag:
       - Names
       - NoMerge
-  - name: 'FO3 Wanderers Edition - DLC Point Lookout.esp'
-    tag:
-      - Delev
-      - Relev
   - name: 'DALCO Inventory Sorter - FWE (Point Lookout).esp'
     tag:
       - Names
@@ -1378,16 +1429,33 @@ plugins:
       - Names
       - NoMerge
   - name: 'FO3 Wanderers Edition - Followers Enhanced (BrokenSteel).esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/2761'
     inc:
       - 'FO3 Wanderers Edition - Followers Enhanced.esp'
     tag:
       - Actors.ACBS
       - Actors.AIData
       - Actors.Stats
+    dirty:
+      - crc: 0xF952FE7A
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 6
+        udr: 0
+        nav: 0
   - name: 'DALCO Inventory Sorter - FWE (Followers Enh (BrS)).esp'
     tag:
       - Names
       - NoMerge
+  - name: 'FO3 Wanderers Edition - Alternate Travel.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/2761'
+    inc:
+      - 'FO3 Wanderers Edition - Optional No Fast Travel.esp'
+    dirty:
+      - crc: 0x9876E38C
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 3
+        udr: 1
+        nav: 0
   - name: 'FO3 Wanderers Edition - Optional Free Play After MQ.esp'
     inc:
       - 'BrokenSteel.esm'
@@ -1397,6 +1465,14 @@ plugins:
   - name: 'FO3 Wanderers Edition - Optional No Fast Travel.esp'
     inc:
       - 'FO3 Wanderers Edition - Alternate Travel.esp'
+  - name: 'FO3 Wanderers Edition - Optional VATS Halftime.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/2761'
+    dirty:
+      - crc: 0x1B66E394
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 1
+        udr: 0
+        nav: 0
   - name: 'FO3 Wanderers Edition - Optional Worn Weapons.esp'
     tag:
       - Delev
@@ -3204,8 +3280,15 @@ plugins:
     tag:
       - C.Climate
   - name: 'Xepha''s Dynamic Weather - Main + DLC Merged.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/10607'
     tag:
       - C.Climate
+    dirty:
+      - crc: 0x691323EB
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 13
+        udr: 0
+        nav: 0
   - name: 'Xepha''s Dynamic Weather - Climate OverRider (OA + Rain).esp'
     inc:
       - 'Xepha''s Dynamic Weather - Climate OverRider (OA).esp'
@@ -3248,9 +3331,16 @@ plugins:
       - type: say
         content: 'Only use one Weather Machine.esp at a time.'
   - name: 'Xepha''s Dynamic Weather - Weather Machine (Quest Added).esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/10607'
     msg:
       - type: say
         content: 'Only use one Weather Machine.esp at a time.'
+    dirty:
+      - crc: 0x21C258F6
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 2
+        udr: 0
+        nav: 1
   - name: 'Xepha''s Dynamic Weather - Weather Machine (Start Game Added).esp'
     msg:
       - type: say
@@ -3693,6 +3783,16 @@ plugins:
         itm: 6
         udr: 2
         nav: 0
+  - name: 'Brahmin Dairy Products.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/3809'
+    tag:
+      - Relev
+    dirty:
+      - crc: 0xC01A90C2
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 6
+        udr: 0
+        nav: 0
   - name: 'CASM.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/3729'
     req: [ *FOSE ]
@@ -3779,6 +3879,14 @@ plugins:
     inc:
       - 'hackrate.x2.esp'
       - 'hackrate.x4.esp'
+  - name: 'Laurens_Bathroom_poetry_V1.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/16160'
+    dirty:
+      - crc: 0xD8A75C40
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 2
+        udr: 0
+        nav: 0
   - name: 'Loki_HistoricSpeeches_v1.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/14476'
     dirty:
