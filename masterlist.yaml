@@ -4011,6 +4011,26 @@ plugins:
         itm: 6
         udr: 0
         nav: 0
+  - name: 'ZL-SVD.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/3759'
+    tag:
+      - Stats
+    dirty:
+      - crc: 0x3B754C8B
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 11
+        udr: 0
+        nav: 0
+  - name: 'ZL-SVD-CALIBR.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/3759'
+    tag:
+      - Stats
+    dirty:
+      - crc: 0x1141EE84
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 11
+        udr: 0
+        nav: 0
 
   ### Load Late-section
 
