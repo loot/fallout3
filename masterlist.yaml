@@ -3347,26 +3347,17 @@ plugins:
     inc:
       - 'Dynamic Weather - Sandstorms.esp'
   - name: 'Xepha''s Dynamic Weather - Weather Machine.esp'
-    msg:
-      - type: say
-        content: 'Only use one Weather Machine.esp at a time.'
     inc:
       - 'Xepha''s Dynamic Weather - Weather Machine (+Rain).esp'
       - 'Xepha''s Dynamic Weather - Weather Machine (Quest Added).esp'
       - 'Xepha''s Dynamic Weather - Weather Machine (Start Game Added).esp'
   - name: 'Xepha''s Dynamic Weather - Weather Machine (+Rain).esp'
-    msg:
-      - type: say
-        content: 'Only use one Weather Machine.esp at a time.'
     inc:
       - 'Xepha''s Dynamic Weather - Weather Machine.esp'
       - 'Xepha''s Dynamic Weather - Weather Machine (Quest Added).esp'
       - 'Xepha''s Dynamic Weather - Weather Machine (Start Game Added).esp'
   - name: 'Xepha''s Dynamic Weather - Weather Machine (Quest Added).esp'
     url: 'http://www.nexusmods.com/fallout3/mods/10607'
-    msg:
-      - type: say
-        content: 'Only use one Weather Machine.esp at a time.'
     inc:
       - 'Xepha''s Dynamic Weather - Weather Machine.esp'
       - 'Xepha''s Dynamic Weather - Weather Machine (+Rain).esp'
@@ -3378,9 +3369,6 @@ plugins:
         udr: 0
         nav: 1
   - name: 'Xepha''s Dynamic Weather - Weather Machine (Start Game Added).esp'
-    msg:
-      - type: say
-        content: 'Only use one Weather Machine.esp at a time.'
     inc:
       - 'Xepha''s Dynamic Weather - Weather Machine.esp'
       - 'Xepha''s Dynamic Weather - Weather Machine (+Rain).esp'
