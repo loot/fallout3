@@ -3892,6 +3892,9 @@ plugins:
       - 'Flashlight-LOS.esp'
       - 'Flashlight-Performance.esp'
       - 'Flashlight-LOS-nonFOSE.esp'
+  - name: 'GNR Enhanced.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/14946'
+    tag: [ Scripts ]
   - name: 'hackrate.x2.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/2745'
     inc:
