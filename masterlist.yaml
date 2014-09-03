@@ -3467,7 +3467,7 @@ plugins:
     url: 'http://www.gamefront.com/files/21184005/20th_centuary_weapons_5.12_with_addons.7z'
     dirty:
       - crc: 0x4F5CCD2C
-        dirty: *dirtyUtil # FO3Edit 3.0.32
+        util: *dirtyUtil # FO3Edit 3.0.32
         itm: 3
         udr: 0
         nav: 0
