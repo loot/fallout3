@@ -4001,6 +4001,16 @@ plugins:
         itm: 4
         udr: 0
         nav: 0
+  - name: 'ZL-ACR.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/11611'
+    tag:
+      - Stats
+    dirty:
+      - crc: 0xE4D428D7
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 7
+        udr: 0
+        nav: 0
   - name: 'ZL-MP5 Pack.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/5431'
     tag:
