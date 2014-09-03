@@ -188,6 +188,10 @@ plugins:
       - Relations
       - Relev
       - Stats
+  - name: '20th Century Weapons.esm'
+    url: 'http://www.gamefront.com/files/21184005/20th_centuary_weapons_5.12_with_addons.7z'
+    tag:
+      - Scripts
   - name: 'Lings.esm'
     tag:
       - Hair
@@ -3401,11 +3405,25 @@ plugins:
     tag:
       - Invent
   - name: '20th Century v4 ALIVE (SuperMutant).esp'
+    url: 'http://www.gamefront.com/files/21184005/20th_centuary_weapons_5.12_with_addons.7z'
     tag:
       - Invent
+    dirty:
+      - crc: 0x189A679D
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 11
+        udr: 0
+        nav: 0
   - name: '20th Century v4 ALIVE (Vault 101).esp'
+    url: 'http://www.gamefront.com/files/21184005/20th_centuary_weapons_5.12_with_addons.7z'
     tag:
       - Invent
+    dirty:
+      - crc: 0xF569054A
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 4
+        udr: 0
+        nav: 0
   - name: '20th Century v4 ALIVE (Chinese Ghoul).esp'
     tag:
       - Invent
@@ -3445,6 +3463,14 @@ plugins:
   - name: '20th Century v5 ALIVE (Brotherhood_Outcast).esp'
     tag:
       - Invent
+  - name: '20th Century v5 ALIVE (TEST Container).esp'
+    url: 'http://www.gamefront.com/files/21184005/20th_centuary_weapons_5.12_with_addons.7z'
+    dirty:
+      - crc: 0x4F5CCD2C
+        dirty: *dirtyUtil # FO3Edit 3.0.32
+        itm: 3
+        udr: 0
+        nav: 0
   - name: 'FWE Ammo Weight for 20th Century.esp'
     inc:
       - 'FWE Realistic Ammo Weight inc 20th Cent.esp'
