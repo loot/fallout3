@@ -3864,6 +3864,9 @@ plugins:
         itm: 6
         udr: 0
         nav: 0
+  - name: 'Caravan Merchants Heal After Combat.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/20548'
+    tag: [ Scripts ]
   - name: 'CASM.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/3729'
     req: [ *FOSE ]
