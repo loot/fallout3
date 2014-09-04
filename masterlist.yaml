@@ -405,11 +405,18 @@ plugins:
   - name: 'Animy_prostitution.esm'
     req: [ *FOSE ]
   - name: 'DCInteriors_ComboEdition.esm'
+    url: 'http://www.nexusmods.com/fallout3/mods/5573'
     inc:
       - 'DCInteriors_LEnfntPl.esm'
       - 'DCInteriors_Mason.esm'
       - 'DCInteriors_SewardSq.esm'
       - 'DCInteriors_Takoma.esm'
+    dirty:
+      - crc: 0xF85A5358
+        util: *dirtyUtil #FO3Edit 3.0.32
+        itm: 48
+        udr: 0
+        nav: 0
   - name: 'DCInteriors_Georgtown.esm'
     inc:
       - 'DCInteriors_ComboEdition.esm'
