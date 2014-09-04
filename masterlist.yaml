@@ -3992,6 +3992,16 @@ plugins:
         itm: 3
         udr: 0
         nav: 0
+  - name: 'PlasmaRifleAwesomefied.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/3484'
+    tag:
+      - Sound
+      - Stats
+  - name: 'PlasmaRifleAwesomefiedWMK.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/3484'
+    tag:
+      - Sound
+      - Stats
   - name: 'RadioTenpenny.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/7236'
     inc: [ 'RadioTenpennyTower.esp' ]
