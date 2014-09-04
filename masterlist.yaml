@@ -4027,12 +4027,32 @@ plugins:
         itm: 2
         udr: 0
         nav: 0
+  - name: 'PPA - FWE 2.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/16591'
+    tag:
+      - Stats
+    dirty:
+      - crc: 0x8B401D77
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 1
+        udr: 0
+        nav: 0
   - name: 'PPA - Mothership Zeta.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/13361'
     dirty:
       - crc: 0xBC734E8B
         util: *dirtyUtil # FO3Edit 3.0.32
         itm: 2
+        udr: 0
+        nav: 0
+  - name: 'PPA - FWE Tougher NPC Power Armour.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/16591'
+    tag:
+      - Relev
+    dirty:
+      - crc: 0xD1635385
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 1
         udr: 0
         nav: 0
   - name: 'RadioTenpenny.esp'
