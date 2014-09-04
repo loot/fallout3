@@ -3789,6 +3789,22 @@ plugins:
     url: 'http://www.nexusmods.com/fallout3/mods/20069'
     inc: [ 'Tenpenny Tower true peace.esp' ]
 
+    ## T3TForFWE
+  - name: 'ACRForFWE.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/12751'
+    tag: [ Stats ]
+  - name: 'DTOforFWE.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/12751'
+    tag:
+      - Graphics
+      - Stats
+  - name: 'MP5ForFWE.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/12751'
+    tag: [ Stats ]
+  - name: 'SVDForFWE.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/12751'
+    tag: [ Stats ]
+
   - name: 'ArlingtonRestoration.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/20504'
     msg:
