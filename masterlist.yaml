@@ -3995,6 +3995,10 @@ plugins:
         itm: 0
         udr: 8
         nav: 0
+  - name: 'Paradise Lost - Unique Texture and Icon.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/19514'
+    tag:
+      - Graphics
   - name: 'People_Radio.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/5021'
     dirty:
