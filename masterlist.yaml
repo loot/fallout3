@@ -1149,6 +1149,7 @@ plugins:
     tag:
       - Invent
   - name: 'Confessor Cromwell has a Break_EV.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/4660'
     tag:
       - Actors.AIPackages
   - name: 'CrowdedCities_v2.esp'
