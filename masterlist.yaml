@@ -220,6 +220,7 @@ plugins:
       - Destructible
       - Scripts
   - name: 'xCALIBR.esm'
+    url: 'http://www.nexusmods.com/fallout3/mods/11684'
     tag:
       - Graphics
       - Names
