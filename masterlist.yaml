@@ -4082,6 +4082,10 @@ plugins:
         itm: 3
         udr: 0
         nav: 0
+  - name: 'RagdollOverhaulFO3.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/20143'
+    tag:
+      - Actors.Skeleton
   - name: 'SaveHotKey.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/16434'
     req:
