@@ -3953,6 +3953,14 @@ plugins:
     url: 'http://www.nexusmods.com/fallout3/mods/18133'
     tag:
       - Graphics
+  - name: 'FortIndependenceRedesigned.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/17939'
+    dirty:
+      - crc: 0xE7BC4BEB
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 20
+        udr: 716
+        nav: 0
   - name: 'GNR Enhanced.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/14946'
     tag: [ Scripts ]
