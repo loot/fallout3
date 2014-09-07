@@ -4100,6 +4100,12 @@ plugins:
   - name: 'CASM.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/3729'
     req: [ *FOSE ]
+  - name: 'Creature Companion Fixes.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/20549'
+    inc: [ 'Creature Companion Fixes No DLC.esp' ]
+  - name: 'Creature Companion Fixes No DLC.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/20549'
+    inc: [ 'Creature Companion Fixes.esp' ]
   - name: 'Delay ThePitt + Anchorage.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/5253'
     tag:
