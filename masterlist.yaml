@@ -1124,6 +1124,7 @@ plugins:
       - Names
       - NoMerge
   - name: 'Chems and Meds Re-Textures Pack.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/15960'
     tag:
       - Graphics
   - name: 'MAXdog.esp'
