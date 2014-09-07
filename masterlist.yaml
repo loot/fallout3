@@ -966,8 +966,15 @@ plugins:
         content: 'Only use one Lobotomized! plugin at once'
         condition: 'file("Lobotomized! 400.esp") or file("Lobotomized! 300.esp") or file("Lobotomized! 200.esp")'
   - name: 'NotSoFast.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/4730'
     tag:
       - Scripts
+    dirty:
+      - crc: 0xFFF16D14
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 0
+        udr: 29
+        nav: 0
   - name: 'PLweightadjust.esp'
     tag:
       - Invent
