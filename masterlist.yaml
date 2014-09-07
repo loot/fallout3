@@ -3,16 +3,28 @@ common:
   - &FOSE
     name: '..\fose_loader.exe'
     display: '[FOSE](http://fose.silverlock.org/)'
+
+# Unofficial Fallout 3 Patch
+  - &AlreadyInUF3Pmsg
+    - lang: en
+      str: 'Delete. Already included or otherwise fixed in Unofficial Fallout 3 Patch.esm.'
+    - lang: ru
+      str: 'Удалите. Уже включено в Unofficial Fallout 3 Patch.esm.'
+    - lang: es
+      str: 'Borrar. Esta incluido en Unofficial Fallout 3 Patch.esm.'
+  - &UF3Pfile_1_7
+    name: 'Unofficial Fallout 3 Patch.esm'
+    condition: 'version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
   - &AlreadyInUF3P
     type: error
     content:
-      - lang: en
-        str: 'Delete. Already included or otherwise fixed in Unofficial Fallout 3 Patch.esm.'
-      - lang: ru
-        str: 'Удалите. Уже включено в Unofficial Fallout 3 Patch.esm.'
-      - lang: es
-        str: 'Borrar. Esta incluido en Unofficial Fallout 3 Patch.esm.'
+      *AlreadyInUF3Pmsg
     condition: 'active("Unofficial Fallout 3 Patch.esm")'
+  - &AlreadyInUF3P_1_7
+    type: error
+    content:
+      *AlreadyInUF3Pmsg
+    condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
 
 # Other strings
   - &dirtyUtil
