@@ -4105,6 +4105,8 @@ plugins:
         nav: 7
   - name: 'YearlingBooks.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/20483'
+    tag:
+      - Scripts
     inc:
       - 'RHKBrisaAlmodovar.esm'
       - 'YearlingBooksBrisaAlmodovar.esp'
