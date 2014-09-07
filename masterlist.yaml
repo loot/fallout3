@@ -4312,6 +4312,14 @@ plugins:
     url: 'http://www.nexusmods.com/fallout3/mods/16434'
     req:
       - *FOSE
+  - name: 'Temple of the Union Overhaul.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/19242'
+    dirty:
+      - crc: 0xE4A3C388
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 34
+        udr: 167
+        nav: 0
   - name: 'tubRRCompound.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/6068'
     tag:
