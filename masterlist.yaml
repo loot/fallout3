@@ -3888,6 +3888,14 @@ plugins:
         itm: 6
         udr: 2
         nav: 0
+  - name: 'Bornagain Zeta Combat Armor Texture Patch.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/18220'
+    dirty:
+      - crc: 0xab095a45
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 2
+        udr: 0
+        nav: 0
   - name: 'Brahmin Dairy Products.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/3809'
     tag:
