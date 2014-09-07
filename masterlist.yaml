@@ -26,6 +26,12 @@ common:
       *AlreadyInUF3Pmsg
     condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
 
+# Fallout 3 Wanderers Edition
+  - &AlreadyInFWE
+    type: say
+    content: 'Included in FWE - Not Required'
+    condition: 'file("FO3 Wanderers Edition - Main File.esm")'
+
 # Other strings
   - &dirtyUtil
     '[FO3Edit](http://www.nexusmods.com/fallout3/mods/637)'
@@ -2718,23 +2724,17 @@ plugins:
       - Relev
   - name: 'Mart''s Mutant Mod - Zones Respawn.esp'
     msg:
-      - type: say
-        content: 'Included in FWE - Not Required'
-        condition: 'file("FO3 Wanderers Edition - Main File.esm")'
+      - *AlreadyInFWE
   - name: 'Mart''s Mutant Mod - Tougher Traders.esp'
     msg:
-      - type: say
-        content: 'Included in FWE - Not Required'
-        condition: 'file("FO3 Wanderers Edition - Main File.esm")'
+      - *AlreadyInFWE
     tag:
       - Actors.Stats
       - Factions
       - Relations
   - name: 'Mart''s Mutant Mod - Natural Selection.esp'
     msg:
-      - type: say
-        content: 'Included in FWE - Not Required'
-        condition: 'file("FO3 Wanderers Edition - Main File.esm")'
+      - *AlreadyInFWE
     tag:
       - Relations
   - name: 'Mart''s Mutant Mod - Mutant Mod Menu.esp'
