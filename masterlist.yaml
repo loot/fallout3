@@ -3921,6 +3921,30 @@ plugins:
     tag:
       - Graphics
       - Stats
+  - name: 'ArefuExpandedByAzar-FixMisc.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/15686'
+    dirty:
+      - crc: 0x283EAF75
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 6
+        udr: 0
+        nav: 0
+  - name: 'ArefuExpandedByAzar-FixOptAddNew.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/15686'
+    dirty:
+      - crc: 0x9B1EFE6B
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 4
+        udr: 0
+        nav: 0
+  - name: 'ArefuExpandedByAzar-FixOptRemOld.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/15686'
+    dirty:
+      - crc: 0x675E86E8
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 0
+        udr: 39
+        nav: 0
   - name: 'ArlingtonRestoration.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/20504'
     msg:
