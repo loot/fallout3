@@ -4018,6 +4018,11 @@ plugins:
     url: 'http://www.nexusmods.com/fallout3/mods/10183'
     tag:
       - Graphics
+    msg:
+      - type: say
+        # Copied from the mod's Nexus page:
+        content: '"[The] camo-swapping system will only work if you have [FOSE](http://fose.silverlock.org/) installed. Users without FOSE can still use the mod as normal - but the camo-swapping system will simply not work until/unless FOSE is installed (and a message will appear saying as much)."'
+        condition: 'not file("..\fose_loader.exe")'
   - name: 'DynamicCrosshair.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/15724'
     req:
