@@ -523,6 +523,12 @@ plugins:
     url: 'http://www.nexusmods.com/fallout3/mods/15600'
     priority: -300990000
     inc: [ 'ObjectPlacementFix.esm' ]
+  - name: 'The Pitt - Fixes.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/15891'
+    tag:
+      - Names
+    inc: [ *UF3Pfile_1_7 ]
+    msg: [ *AlreadyInUF3P_1_7 ]
 
     ### Imported ESPs from BOSS masterlist
 
