@@ -4007,6 +4007,38 @@ plugins:
   - name: 'CASM.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/3729'
     req: [ *FOSE ]
+  - name: 'Delay ThePitt + Anchorage.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/5253'
+    tag:
+      - Scripts
+  - name: 'delaypl.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/5253'
+    dirty:
+      - crc: 0xD5DAF34E
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 2
+        udr: 0
+        nav: 0
+  - name: 'delaysteel.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/5253'
+    tag:
+      - Scripts
+    dirty:
+      - crc: 0xE818B262
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 1
+        udr: 0
+        nav: 0
+  - name: 'delayzeta.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/5253'
+    tag:
+      - Scripts
+    dirty:
+      - crc: 0x776851A3
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 2
+        udr: 0
+        nav: 0
   - name: 'Dogmeat_WaitMegaton.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/7732'
     inc: [ 'Dogmeat_WaitMegaton v1.1.esp' ]
