@@ -1591,7 +1591,7 @@ plugins:
       - Actors.AIData
       - Actors.Stats
     dirty:
-      - crc: 0xF952FE7A
+      - crc: 0x88F5A264
         util: *dirtyUtil # FO3Edit 3.0.32
         itm: 6
         udr: 0
