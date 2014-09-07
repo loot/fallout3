@@ -476,6 +476,18 @@ plugins:
         content: 'Do not use with latest FWE, it is already integrated.'
     tag:
       - Names
+  - name: 'Canterbury Commons Interiors Embiggened.esm'
+    url: 'http://www.nexusmods.com/fallout3/mods/13301'
+    inc:
+      - 'Canterbury Commons Interiors Embiggened.esp'
+    tag:
+      - Relations
+    dirty:
+      - crc: 0x43E23B19
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 181
+        udr: 20
+        nav: 3
   - name: 'RH_IRONSIGHTS.esm'
     url: 'http://www.nexusmods.com/fallout3/mods/16787' # Paradox merged mod
     inc:
@@ -4025,6 +4037,18 @@ plugins:
         itm: 2
         udr: 0
         nav: 0
+  - name: 'Canterbury Commons Interiors Embiggened.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/13301'
+    inc:
+      - 'Canterbury Commons Interiors Embiggened.esm'
+    tag:
+      - Relations
+    dirty:
+      - crc: 0x3D8ABED8
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 181
+        udr: 20
+        nav: 3
   - name: 'Caravan Merchants Heal After Combat.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/20548'
     tag: [ Scripts ]
