@@ -3969,6 +3969,12 @@ plugins:
         itm: 6
         udr: 2
         nav: 0
+  - name: 'BornAgain Outcast v3.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/16199'
+    tag:
+      - Graphics
+      - Names
+      - Relev
   - name: 'Bornagain Zeta Combat Armor Texture Patch.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/18220'
     dirty:
