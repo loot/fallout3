@@ -4014,6 +4014,10 @@ plugins:
   - name: 'Dogmeat_WaitMegaton v1.1.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/7732'
     inc: [ 'Dogmeat_WaitMegaton.esp' ]
+  - name: 'Dragonskin Tactical Outfit.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/10183'
+    tag:
+      - Graphics
   - name: 'DynamicCrosshair.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/15724'
     req:
