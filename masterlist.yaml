@@ -1005,7 +1005,7 @@ plugins:
     tag:
       - Relev
     msg:
-      - type: notice
+      - type: say
         # Copied from http://www.nexusmods.com/fallout3/mods/12296
         content: '"Make sure to disable any "tougher stealth" or similar components [of FWE], as it can make one section of this mod quite difficult, if not impossible."'
         condition: 'active("FO3 Wanderers Edition - Main File.esm")'
