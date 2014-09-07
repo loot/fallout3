@@ -382,12 +382,21 @@ plugins:
       - Graphics
       - Names
   - name: 'Mart''s Mutant Mod.esm'
+    url: 'http://www.nexusmods.com/fallout3/mods/3211'
     tag:
       - Delev
+      - Actors.ACBS
       - Invent
       - Names
       - Relations
+      - Relev
       - Scripts
+    dirty:
+      - crc: 0x9695F2A1
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 77
+        udr: 0
+        nav: 0
   - name: 'Arwen_Core.esm'
     tag:
       - Actors.Animations
@@ -2634,9 +2643,21 @@ plugins:
       - Delev
       - Relev
   - name: 'Mart''s Mutant Mod.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/3211'
     tag:
+      - Actors.ACBS
       - Delev
+      - Factions
+      - Invent
+      - Relations
       - Relev
+      - Scripts
+    dirty:
+      - crc: 0xf2b3a052
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 41
+        udr: 0
+        nav: 0
   - name: 'DALCO Inventory Sorter - Mart''s Mutant Mod (Main).esp'
     tag:
       - Names
@@ -2655,36 +2676,53 @@ plugins:
         content: 'Old. Download the latest Project Beauty files.'
         condition: 'file("FOOK2 - Main.esm")'
   - name: 'Mart''s Mutant Mod - DLC Anchorage.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/3211'
     tag:
       - Scripts
   - name: 'Mart''s Mutant Mod - DLC The Pitt.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/3211'
     tag:
       - Delev
       - Relev
       - Scripts
   - name: 'Mart''s Mutant Mod - DLC Broken Steel.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/3211'
     tag:
       - Delev
       - Relev
       - Scripts
+    dirty:
+      - crc: 0x4489C0D6
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 2
+        udr: 0
+        nav: 0
+  - name: 'Mart''s Mutant Mod - DLC Point Lookout.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/3211'
+    tag:
+      - Delev
+      - Relev
+      - Scripts
+  - name: 'Mart''s Mutant Mod - DLC Zeta.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/3211'
+    tag:
+      - Scripts
+    dirty:
+      - crc: 0xCEBFCDBC
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 2
+        udr: 0
+        nav: 0
   - name: 'DALCO Inventory Sorter - Mart''s Mutant Mod (DLC Broken Steel).esp'
     tag:
       - Names
       - NoMerge
-  - name: 'Mart''s Mutant Mod - DLC Point Lookout.esp'
-    tag:
-      - Delev
-      - Relev
-      - Scripts
   - name: 'Project Beauty- Point Lookout MMM.esp'
     tag:
       - Deactivate
       - NoMerge
       - NPC.Race
       - NpcFaces
-  - name: 'Mart''s Mutant Mod - DLC Zeta.esp'
-    tag:
-      - Scripts
   - name: 'DangerousRadroaches_MMM.esp'
     tag:
       - Actors.CombatStyle
@@ -2725,10 +2763,17 @@ plugins:
   - name: 'Mart''s Mutant Mod - Zones Respawn.esp'
     msg:
       - *AlreadyInFWE
+    tag:
+      - Actors.ACBS
+      - Relations
+      - Relev
+      - Scripts
   - name: 'Mart''s Mutant Mod - Tougher Traders.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/3211'
     msg:
       - *AlreadyInFWE
     tag:
+      - Actors.AIData
       - Actors.Stats
       - Factions
       - Relations
