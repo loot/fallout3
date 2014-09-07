@@ -4019,6 +4019,28 @@ plugins:
         itm: 0
         udr: 0
         nav: 7
+  - name: Big Town Overhaul.esp
+    url: 'http://www.nexusmods.com/fallout3/mods/13229'
+    inc:
+      - 'Big Town Overhaul.esm'
+      - 'Big Town Overhaul [GangStore].esp'
+    dirty:
+      - crc: 0x31E2D0E2
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 41
+        udr: 684
+        nav: 0
+  - name: 'Big Town Overhaul [GangStore].esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/13229'
+    inc:
+      - 'Big Town Overhaul.esm'
+      - 'Big Town Overhaul.esp'
+    dirty:
+      - crc: 0x563db400
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 53
+        udr: 684
+        nav: 0
   - name: 'Binoculars.esp'
     url:
       - link: 'http://www.nexusmods.com/fallout3/mods/8909'
