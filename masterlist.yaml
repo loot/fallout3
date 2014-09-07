@@ -1004,6 +1004,11 @@ plugins:
     url: 'http://www.nexusmods.com/fallout3/mods/12296'
     tag:
       - Relev
+    msg:
+      - type: notice
+        # Copied from http://www.nexusmods.com/fallout3/mods/12296
+        content: '"Make sure to disable any "tougher stealth" or similar components [of FWE], as it can make one section of this mod quite difficult, if not impossible."'
+        condition: 'active("FO3 Wanderers Edition - Main File.esm")'
     dirty:
       - crc: 0x663DDF02
         util: *dirtyUtil # FO3Edit 3.0.32
@@ -1018,14 +1023,32 @@ plugins:
         itm: 17
         udr: 0
         nav: 0
+  - name: 'The Mantis Imperative - Combat.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/12296'
+    msg:
+      - &MantisImperativeFWEWarning
+        type: warn
+        # Copied from http://www.nexusmods.com/fallout3/mods/12296
+        content: '"It is recommended that you DO NOT load [this mod] in conjunction with FWE, as their alterations will conflict with each other and may cause issues."'
+        condition: 'active("FO3 Wanderers Edition - Main File.esm")'
+  - name: 'The Mantis Imperative - Medical.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/12296'
+    msg:
+      - *MantisImperativeFWEWarning
   - name: 'The Mantis Imperative - SkillBooks.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/12296'
+    msg:
+      - *MantisImperativeFWEWarning
     dirty:
       - crc: 0xDD2E48B1
         util: *dirtyUtil # FO3Edit 3.0.32
         itm: 1
         udr: 0
         nav: 0
+  - name: 'The Mantis Imperative - XP.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/12296'
+    msg:
+      - *MantisImperativeFWEWarning
   - name: 'The Mantis Imperative - Jello.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/12296'
     tag:
