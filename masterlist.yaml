@@ -1001,6 +1001,33 @@ plugins:
       - 'Regulators _Overhaul_lvl7.esp'
       - 'Regulators.esp'
   - name: 'The Mantis Imperative - Mantis.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/12296'
+    tag:
+      - Relev
+    dirty:
+      - crc: 0x663DDF02
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 0
+        udr: 11
+        nav: 0
+  - name: 'The Mantis Imperative - Nasty Zeta.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/12296'
+    dirty:
+      - crc: 0xBC544F07
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 17
+        udr: 0
+        nav: 0
+  - name: 'The Mantis Imperative - SkillBooks.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/12296'
+    dirty:
+      - crc: 0xDD2E48B1
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 1
+        udr: 0
+        nav: 0
+  - name: 'The Mantis Imperative - Jello.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/12296'
     tag:
       - Relev
   - name: 'Action for men v3.0.esp'
