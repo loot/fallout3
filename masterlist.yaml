@@ -4130,6 +4130,12 @@ plugins:
         itm: 3
         udr: 0
         nav: 0
+  - name: 'Millenia_AK47_replacer.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/18481'
+    tag:
+      - Graphics
+      - Names
+      - Stats
   - name: 'MyMegaton-AmmoPress-Calibr-Plus-Unlocked_v1_21_18605.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/18605'
     tag: [ Names ]
