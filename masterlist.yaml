@@ -3987,6 +3987,14 @@ plugins:
         itm: 6
         udr: 0
         nav: 0
+  - name: 'CALIBRv14 Ammunition Schematics for FWE-WMK-CRAFT-V1_3-18639.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/18639'
+    dirty:
+      - crc: 0x9AB2CF5E
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 2
+        udr: 0
+        nav: 0
   - name: 'Caravan Merchants Heal After Combat.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/20548'
     tag: [ Scripts ]
