@@ -4105,6 +4105,10 @@ plugins:
         itm: 1
         udr: 0
         nav: 0
+  - name: 'PrototypePowerArmorUsesStimpaks.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/20499'
+    tag:
+      - Scripts
   - name: 'RadioTenpenny.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/7236'
     inc: [ 'RadioTenpennyTower.esp' ]
