@@ -4111,6 +4111,14 @@ plugins:
         itm: 336
         udr: 13
         nav: 7
+  - name: 'UrgeWashingtonBoS.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/17939'
+    dirty:
+      - crc: 0x98fd9bed
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 14
+        udr: 16
+        nav: 0
   - name: 'YearlingBooks.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/20483'
     tag:
