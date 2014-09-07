@@ -3916,6 +3916,11 @@ plugins:
     url: 'http://www.nexusmods.com/fallout3/mods/12751'
     tag: [ Stats ]
 
+  - name: '32S&W.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/18743'
+    tag:
+      - Graphics
+      - Stats
   - name: 'ArlingtonRestoration.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/20504'
     msg:
