@@ -4136,6 +4136,12 @@ plugins:
       - Graphics
       - Names
       - Stats
+  - name: 'Millenia_C96_replacer.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/18401'
+    tag:
+      - Graphics
+      - Names
+      - Stats
   - name: 'MyMegaton-AmmoPress-Calibr-Plus-Unlocked_v1_21_18605.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/18605'
     tag: [ Names ]
