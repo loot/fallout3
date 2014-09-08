@@ -4394,6 +4394,18 @@ plugins:
     tag:
       - Sound
       - Stats
+  - name: 'PLFewerItems.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/7268'
+    priority: 100
+    tag:
+      - Delev
+      - Relev
+    dirty:
+      - crc: 0xE3EF4366
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 1
+        udr: 56
+        nav: 0
   - name: 'PPA - FWE.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/13361'
     tag:
