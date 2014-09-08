@@ -968,8 +968,15 @@ plugins:
       - Actors.ACBS
       - Invent
   - name: 'HeirApparent.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/5630'
     tag:
       - Scripts
+    dirty:
+      - crc: 0xB633DB19
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 0
+        udr: 0
+        nav: 1
   - name: 'IntoTheDeepWoods.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/6921'
     tag:
@@ -4237,6 +4244,11 @@ plugins:
     url: 'http://www.nexusmods.com/fallout3/mods/19591'
     req:
       - *FOSE
+  - name: 'FasterMorePowerfulMines.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/5630'
+    after: [ 'The Mantis Imperative - Mantis.esp' ]
+    tag:
+      - Stats
   - name: 'FasterWaiting.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/17755'
     req:
