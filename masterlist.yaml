@@ -4246,7 +4246,7 @@ plugins:
       - *FOSE
   - name: 'FasterMorePowerfulMines.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/5630'
-    after: [ 'The Mantis Imperative - Mantis.esp' ]
+    priority: 100
     tag:
       - Stats
   - name: 'FasterWaiting.esp'
