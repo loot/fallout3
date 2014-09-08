@@ -3986,6 +3986,24 @@ plugins:
     url: 'http://www.nexusmods.com/fallout3/mods/12751'
     tag: [ Stats ]
 
+  - name: '20th Century Weapons -Plus- Reborn FWE-WMK-Calibr14_V1_70RC_18668.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/18668'
+    tag:
+      - Names
+      - Relev
+      - Stats
+    dirty:
+      - crc: 0xDBF185AA
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 474
+        udr: 1
+        nav: 0
+  - name: '20th_Century_Weapons -Plus- Reborn_v1_70RC-18668_Ironsights_v1_1.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/18668'
+    tag:
+      - Graphics
+      - Names
+      - Stats
   - name: '32S&W.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/18743'
     tag:
@@ -4460,6 +4478,14 @@ plugins:
         util: *dirtyUtil # FO3Edit 3.0.32
         itm: 14
         udr: 16
+        nav: 0
+  - name: 'xCALIBR_ammo_Override_v1_01_for_20th Century Weapons -Plus- Reborn FWE-WMK-Calibr14_V1_70RC_18668.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/18668'
+    dirty:
+      - crc: 0x32EAC10D
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 351
+        udr: 1
         nav: 0
   - name: 'YearlingBooks.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/20483'
