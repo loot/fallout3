@@ -4550,6 +4550,19 @@ plugins:
         udr: 0
         nav: 0
 
+  ### Fallout 3 Wanderers Edition-section
+  - name: 'UUF3P - FWE Patch.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/19122'
+    req:
+      - 'FO3 Wanderers Edition - Main File.esp'
+    tag:
+      - Deflst
+      - Factions
+      - Invent
+      - Scripts
+      - Stats
+
+
   ### Load Late-section
 
   - name: 'Bashed Patch, 0.esp'
