@@ -2881,6 +2881,10 @@ plugins:
       - NoMerge
       - NPC.Race
       - NpcFaces
+  - name: 'Mart''s Mutant Mod - DC Interiors.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/18173'
+    tag:
+      - Relations
   - name: 'MMM - FWE & Overhaul Kit_Master Release.esp'
     msg:
       - type: say
@@ -4110,6 +4114,30 @@ plugins:
         itm: 6
         udr: 2
         nav: 0
+  - name: 'Blackened FWE + MMM + Project Beauty.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/18173'
+    tag:
+      - Actors.Stats
+      - Factions
+      - Invent
+      - Names
+      - Relev
+      - Scripts
+    dirty:
+      - crc: 0xD8BB74F2
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 2
+        udr: 0
+        nav: 0
+  - name: 'Blackened FWE + MMM + EVE + Project Beauty.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/18173'
+    tag:
+      - Actors.Stats
+      - Factions
+      - Invent
+      - Names
+      - Relev
+      - Scripts
   - name: 'BornAgain Outcast v3.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/16199'
     tag:
