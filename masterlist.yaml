@@ -4028,6 +4028,10 @@ plugins:
         itm: 6
         udr: 0
         nav: 0
+  - name: 'AnimatedFanV2f3.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/20452'
+    tag:
+      - Destructible
   - name: 'ArefuExpandedByAzar-FixOptAddNew.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/15686'
     dirty:
