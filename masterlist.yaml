@@ -419,8 +419,8 @@ plugins:
   - name: 'ArefuExpandedByAzar.esm'
     url: 'http://www.nexusmods.com/fallout3/mods/12466'
     tag:
+      - Factions
       - Invent
-      - Relations
     dirty:
       - crc: 0x81581FCA
         util: *dirtyUtil # FO3Edit 3.0.32
