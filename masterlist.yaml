@@ -385,7 +385,6 @@ plugins:
     url: 'http://www.nexusmods.com/fallout3/mods/3211'
     tag:
       - Delev
-      - Actors.ACBS
       - Invent
       - Names
       - Relations
@@ -2665,7 +2664,6 @@ plugins:
   - name: 'Mart''s Mutant Mod.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/3211'
     tag:
-      - Actors.ACBS
       - Delev
       - Factions
       - Invent
@@ -2784,7 +2782,6 @@ plugins:
     msg:
       - *AlreadyInFWE
     tag:
-      - Actors.ACBS
       - Relations
       - Relev
       - Scripts
@@ -2797,6 +2794,10 @@ plugins:
       - Actors.Stats
       - Factions
       - Relations
+    msg:
+      - type: say
+        content: 'Fallout 3 Wanderers Edition has an alternate approach to protecting traders that is a little weaker but might be sufficient.'
+        condition: 'file("FO3 Wanderers Edition - Main File.esm")'
   - name: 'Mart''s Mutant Mod - Natural Selection.esp'
     msg:
       - *AlreadyInFWE
