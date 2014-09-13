@@ -4545,6 +4545,10 @@ plugins:
         itm: 34
         udr: 167
         nav: 0
+  - name: 'Tenderizer Fix.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/20551'
+    msg:
+      - *AlreadyInUF3P_1_7
   - name: 'tubRRCompound.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/6068'
     tag:
