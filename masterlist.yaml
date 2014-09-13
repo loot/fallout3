@@ -4306,6 +4306,32 @@ plugins:
   - name: 'FeralGhoulTest.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/16886'
     tag: [ Relev ]
+  - name: 'Fixed Suits.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/19649'
+    inc: [ 'Fixed Suits FWE.esp' ]
+    msg:
+      - *AlreadyInUF3P_1_7
+      - type: warn
+        content: 'Use the Fallout 3 Wanders Edition (FWE) version of this mod instead.'
+        condition: 'active("FO3 Wanderers Edition - Main File.esm")'
+  - name: 'Fixed Suits FWE.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/19649'
+    inc: [ 'Fixed Suits.esp' ]
+    msg:
+      - *AlreadyInUF3P_1_7
+  - name: 'Fixed Suits Anchorage.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/19649'
+    inc: [ 'Fixed Suits Anchorage FWE.esp' ]
+    msg:
+      - *AlreadyInUF3P_1_7
+      - type: warn
+        content: 'Use the Fallout 3 Wanders Edition (FWE) version of this mod instead.'
+        condition: 'active("FO3 Wanderers Edition - Main File.esm")'
+  - name: 'Fixed Suits Anchorage FWE.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/19649'
+    inc: [ 'Fixed Suits Anchorage.esp' ]
+    msg:
+      - *AlreadyInUF3P_1_7
   - name: 'Flashlight-LOS.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/15003'
     req:
