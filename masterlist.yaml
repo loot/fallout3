@@ -4533,6 +4533,14 @@ plugins:
     url: 'http://www.nexusmods.com/fallout3/mods/20143'
     tag:
       - Actors.Skeleton
+  - name: 'RockopolisRebuilt.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/8769'
+    dirty:
+      - crc: 0x51c3dd7a
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 4
+        udr: 0
+        nav: 0
   - name: 'SaveHotKey.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/16434'
     req:
