@@ -4545,6 +4545,10 @@ plugins:
         itm: 1
         udr: 0
         nav: 0
+  - name: 'ProtectronFix.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/20498'
+    msg:
+      - *AlreadyInUF3P_1_7
   - name: 'PrototypePowerArmorUsesStimpaks.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/20499'
     tag:
