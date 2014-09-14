@@ -224,6 +224,8 @@ plugins:
   - name: 'ObjectPlacementFix.esm'
     url: 'http://www.nexusmods.com/fallout3/mods/15600'
     inc: [ 'ObjectPlacementFix.esp' ]
+    msg:
+      - *AlreadyInUF3P_1_7
   - name: 'HairPack.esm'
     tag:
       - Eyes
@@ -578,6 +580,8 @@ plugins:
     url: 'http://www.nexusmods.com/fallout3/mods/15600'
     priority: -300990000
     inc: [ 'ObjectPlacementFix.esm' ]
+    msg:
+      - *AlreadyInUF3P_1_7
   - name: 'The Pitt - Fixes.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/15891'
     tag:
