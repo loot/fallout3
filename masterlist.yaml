@@ -2805,14 +2805,13 @@ plugins:
       - Scripts
   - name: 'Mart''s Mutant Mod - Tougher Traders.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/3211'
-    msg:
-      - *AlreadyInFWE
     tag:
       - Actors.AIData
       - Actors.Stats
       - Factions
       - Relations
     msg:
+      - *AlreadyInFWE
       - type: say
         content: 'Fallout 3 Wanderers Edition has an alternate approach to protecting traders that is a little weaker but might be sufficient.'
         condition: 'file("FO3 Wanderers Edition - Main File.esm")'
