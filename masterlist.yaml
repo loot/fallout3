@@ -404,8 +404,22 @@ plugins:
     tag:
       - Actors.Animations
   - name: 'RobCo Certified v2.esm'
-    url: [ 'http://www.nexusmods.com/fallout3/mods/712' ]
+    url: 'http://www.nexusmods.com/fallout3/mods/712'
     req: [ *FOSE ]
+    dirty:
+      - crc: 0xe363b7d7
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 9
+        udr: 0
+        nav: 0
+  - name: 'Companion Core.esm'
+    url: 'http://www.nexusmods.com/fallout3/mods/712'
+    dirty:
+      - crc: 0x6f02e35
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 2
+        udr: 0
+        nav: 0
   - name: 'Wasteland Whisperer v2.esm'
     req: [ *FOSE ]
   - name: 'Xepha''s Dynamic Weather.esm'
@@ -3765,6 +3779,31 @@ plugins:
       - 'RobCo Certified v2 EVE.esp'
       - 'RobCo Certified v2 FWE.esp'
       - 'RobCo Certified v2 Zeta Addon.esp'
+  - name: 'RobCo Certified v2 Zeta Addon.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/712'
+    inc: [ 'RobCo Certified v2 Omnipatch.esp' ]
+    dirty:
+      - crc: 0x7e827a3
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 2
+        udr: 0
+        nav: 0
+  - name: 'Companion Core DLC Addon.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/712'
+    dirty:
+      - crc: 0x37145cc8
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 1
+        udr: 0
+        nav: 0
+  - name: RobcoCertified24SideMod.esp
+    url: 'http://www.nexusmods.com/fallout3/mods/712'
+    dirty:
+      - crc: 0x9c938fce
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 2
+        udr: 0
+        nav: 0
   - name: 'Mez''s Merged Patch 5-0 - DLC-FWE-WMK-MMM.esp'
     tag:
       - Deflst
