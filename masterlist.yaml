@@ -4513,8 +4513,6 @@ plugins:
         nav: 0
   - name: 'PPA - FWE.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/13361'
-    tag:
-      - Actors.ACBS
     dirty:
       - crc: 0x0D43A04E
         util: *dirtyUtil # FO3Edit 3.0.32
