@@ -4303,6 +4303,14 @@ plugins:
         condition: checksum("Dree Perks.esp", 25D3F8CA)
       - name: Relev
         condition: checksum("Dree Perks.esp", 25D3F8CA)
+  - name: 'DriveableMotorCycle.esp'
+    url: 'http://www.nexusmods.com/fallout3/mods/6005'
+    dirty:
+      - crc: 0x949faf2c
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 3
+        udr: 0
+        nav: 0
   - name: 'DynamicCrosshair.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/15724'
     req:
