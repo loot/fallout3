@@ -4672,10 +4672,19 @@ plugins:
         nav: 0
   - name: 'ZL-MP5 Pack.esp'
     url: 'http://www.nexusmods.com/fallout3/mods/5431'
-    tag:
+    msg:
+  - type: say
+    content: "'ZL-MP5 Pack.esp from KDSZealotleeMP5withIronsights is preferred when using RH_Ironsights'"
+    condition: "active("RH_IRONSIGHTS") and (checksum("ZL-MP5 Pack.esp", 022E817B) or checksum("ZL-MP5 Pack.esp",022E817B))"
+	tag:
       - Stats
     dirty:
       - crc: 0xB7146642
+        util: *dirtyUtil # FO3Edit 3.0.32
+        itm: 6
+        udr: 0
+        nav: 0
+	 - crc: 0xcd453ee7
         util: *dirtyUtil # FO3Edit 3.0.32
         itm: 6
         udr: 0
