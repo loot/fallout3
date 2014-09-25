@@ -211,7 +211,7 @@ plugins:
         content: 'A more recent version of the Updated Unofficial Fallout 3 Patch is [available](http://www.nexusmods.com/fallout3/mods/19122).'
         condition: 'version("Unofficial Fallout 3 Patch.esm", "1.7", <)'
   - name: '20th Century Weapons.esm'
-    url: 'http://www.gamefront.com/files/21184005/20th_centuary_weapons_5.12_with_addons.7z'
+    url: [ 'http://www.gamefront.com/files/21184005/20th_centuary_weapons_5.12_with_addons.7z' ]
     tag:
       - Scripts
   - name: 'Lings.esm'
@@ -222,7 +222,7 @@ plugins:
       - Eyes
       - Hair
   - name: 'ObjectPlacementFix.esm'
-    url: 'http://www.nexusmods.com/fallout3/mods/15600'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/15600' ]
     inc: [ 'ObjectPlacementFix.esp' ]
     msg:
       - *AlreadyInUF3P_1_7
@@ -244,7 +244,7 @@ plugins:
       - Destructible
       - Scripts
   - name: 'xCALIBR.esm'
-    url: 'http://www.nexusmods.com/fallout3/mods/11684'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/11684' ]
     tag:
       - Graphics
       - Names
@@ -354,7 +354,7 @@ plugins:
         content: 'Remove if using FOOK2 1.1 and above'
         condition: 'file("FOOK2 - Main.esm")'
   - name: 'FO3 Wanderers Edition - Main File.esm'
-    url: 'http://www.nexusmods.com/fallout3/mods/2761'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/2761' ]
     msg:
       - type: say
         content: 'Suggested to remove the names tag if using MMM'
@@ -388,7 +388,7 @@ plugins:
       - Graphics
       - Names
   - name: 'Mart''s Mutant Mod.esm'
-    url: 'http://www.nexusmods.com/fallout3/mods/3211'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Delev
       - Invent
@@ -406,7 +406,7 @@ plugins:
     tag:
       - Actors.Animations
   - name: 'RobCo Certified v2.esm'
-    url: 'http://www.nexusmods.com/fallout3/mods/712'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/712' ]
     req: [ *FOSE ]
     dirty:
       - crc: 0xe363b7d7
@@ -415,7 +415,7 @@ plugins:
         udr: 0
         nav: 0
   - name: 'Companion Core.esm'
-    url: 'http://www.nexusmods.com/fallout3/mods/712'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/712' ]
     dirty:
       - crc: 0x6f02e35
         util: *dirtyUtil # FO3Edit 3.0.32
@@ -425,7 +425,7 @@ plugins:
   - name: 'Wasteland Whisperer v2.esm'
     req: [ *FOSE ]
   - name: 'Xepha''s Dynamic Weather.esm'
-    url: 'http://www.nexusmods.com/fallout3/mods/10607'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/10607' ]
     tag:
       - C.Climate
       - Sound
@@ -436,7 +436,7 @@ plugins:
         udr: 0
         nav: 0
   - name: 'ArefuExpandedByAzar.esm'
-    url: 'http://www.nexusmods.com/fallout3/mods/12466'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/12466' ]
     tag:
       - Factions
       - Invent
@@ -462,7 +462,7 @@ plugins:
   - name: 'Animy_prostitution.esm'
     req: [ *FOSE ]
   - name: 'DCInteriors_ComboEdition.esm'
-    url: 'http://www.nexusmods.com/fallout3/mods/5573'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/5573' ]
     inc:
       - 'DCInteriors_LEnfntPl.esm'
       - 'DCInteriors_Mason.esm'
@@ -511,7 +511,7 @@ plugins:
     tag:
       - Names
   - name: 'Canterbury Commons Interiors Embiggened.esm'
-    url: 'http://www.nexusmods.com/fallout3/mods/13301'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/13301' ]
     inc:
       - 'Canterbury Commons Interiors Embiggened.esp'
     tag:
@@ -523,7 +523,9 @@ plugins:
         udr: 20
         nav: 3
   - name: 'RH_IRONSIGHTS.esm'
-    url: 'http://www.nexusmods.com/fallout3/mods/16787' # Paradox merged mod
+    url:
+      # Paradox merged mod
+      - 'http://www.nexusmods.com/fallout3/mods/16787'
     inc:
       - 'Arms_dealer_V1.esp'
     tag:
@@ -535,7 +537,7 @@ plugins:
         udr: 1
         nav: 0
   - name: 'Vault 101 Revisited.esm'
-    url: 'http://www.nexusmods.com/fallout3/mods/13308'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/13308' ]
     dirty:
       - crc: 0x848d8679
         util: *dirtyUtil # FO3Edit 3.0.32
@@ -546,7 +548,7 @@ plugins:
     ### Load Early-section
 
   - name: 'FireLightFix.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/3660'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/3660' ]
     priority: -300990000
     inc: [ 'FireLightFix_rus.esp' ]
     msg: [ *AlreadyInUF3P ]
@@ -559,7 +561,7 @@ plugins:
         udr: 4
         nav: 0
   - name: 'FireLightFix_rus.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/3660'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/3660' ]
     priority: -300990000
     inc: [ 'FireLightFix.esp' ]
     after: [ 'FireLightFix.esp' ]
@@ -573,17 +575,17 @@ plugins:
         udr: 4
         nav: 0
   - name: 'FO3 Error Fixes.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/16490'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/16490' ]
     priority: -300990000
     msg: [ *AlreadyInUF3P ]
   - name: 'ObjectPlacementFix.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/15600'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/15600' ]
     priority: -300990000
     inc: [ 'ObjectPlacementFix.esm' ]
     msg:
       - *AlreadyInUF3P_1_7
   - name: 'The Pitt - Fixes.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/15891'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/15891' ]
     tag:
       - Names
     inc: [ *UF3Pfile_1_7 ]
@@ -989,7 +991,7 @@ plugins:
       - Actors.ACBS
       - Invent
   - name: 'HeirApparent.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/5630'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/5630' ]
     tag:
       - Scripts
     dirty:
@@ -999,7 +1001,7 @@ plugins:
         udr: 0
         nav: 1
   - name: 'IntoTheDeepWoods.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/6921'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/6921' ]
     tag:
       - Scripts
     dirty:
@@ -1032,7 +1034,7 @@ plugins:
         content: 'Only use one Lobotomized! plugin at once'
         condition: 'file("Lobotomized! 400.esp") or file("Lobotomized! 300.esp") or file("Lobotomized! 200.esp")'
   - name: 'NotSoFast.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/4730'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/4730' ]
     tag:
       - Scripts
     dirty:
@@ -1067,7 +1069,7 @@ plugins:
       - 'Regulators _Overhaul_lvl7.esp'
       - 'Regulators.esp'
   - name: 'The Mantis Imperative - Mantis.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/12296'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/12296' ]
     tag:
       - Relev
     msg:
@@ -1082,7 +1084,7 @@ plugins:
         udr: 11
         nav: 0
   - name: 'The Mantis Imperative - Nasty Zeta.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/12296'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/12296' ]
     dirty:
       - crc: 0xBC544F07
         util: *dirtyUtil # FO3Edit 3.0.32
@@ -1090,7 +1092,7 @@ plugins:
         udr: 0
         nav: 0
   - name: 'The Mantis Imperative - Combat.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/12296'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/12296' ]
     msg:
       - &MantisImperativeFWEWarning
         type: warn
@@ -1098,11 +1100,11 @@ plugins:
         content: '"It is recommended that you DO NOT load [this mod] in conjunction with FWE, as their alterations will conflict with each other and may cause issues."'
         condition: 'active("FO3 Wanderers Edition - Main File.esm")'
   - name: 'The Mantis Imperative - Medical.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/12296'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/12296' ]
     msg:
       - *MantisImperativeFWEWarning
   - name: 'The Mantis Imperative - SkillBooks.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/12296'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/12296' ]
     msg:
       - *MantisImperativeFWEWarning
     dirty:
@@ -1112,11 +1114,11 @@ plugins:
         udr: 0
         nav: 0
   - name: 'The Mantis Imperative - XP.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/12296'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/12296' ]
     msg:
       - *MantisImperativeFWEWarning
   - name: 'The Mantis Imperative - Jello.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/12296'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/12296' ]
     tag:
       - Relev
   - name: 'Action for men v3.0.esp'
@@ -1190,7 +1192,7 @@ plugins:
       - Names
       - NoMerge
   - name: 'Chems and Meds Re-Textures Pack.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/15960'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/15960' ]
     tag:
       - Graphics
   - name: 'MAXdog.esp'
@@ -1306,7 +1308,7 @@ plugins:
     tag:
       - Invent
   - name: 'Confessor Cromwell has a Break_EV.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/4660'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/4660' ]
     tag:
       - Actors.AIPackages
   - name: 'CrowdedCities_v2.esp'
@@ -1531,7 +1533,7 @@ plugins:
       - Names
       - NoMerge
   - name: 'FO3 Wanderers Edition - DLC Anchorage.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/2761'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/2761' ]
     tag:
       - Deflst
     dirty:
@@ -1541,7 +1543,7 @@ plugins:
         udr: 0
         nav: 0
   - name: 'FO3 Wanderers Edition - DLC Broken Steel.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/2761'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/2761' ]
     dirty:
       - crc: 0x9226281C
         util: *dirtyUtil # FO3Edit 3.0.32
@@ -1549,7 +1551,7 @@ plugins:
         udr: 0
         nav: 0
   - name: 'FO3 Wanderers Edition - DLC Point Lookout.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/2761'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/2761' ]
     tag:
       - Delev
       - Relev
@@ -1560,7 +1562,7 @@ plugins:
         udr: 0
         nav: 0
   - name: 'FO3 Wanderers Edition - DLC The Pitt.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/2761'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/2761' ]
     tag:
       - Names
     dirty:
@@ -1611,7 +1613,7 @@ plugins:
       - Names
       - NoMerge
   - name: 'FO3 Wanderers Edition - Followers Enhanced (BrokenSteel).esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/2761'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/2761' ]
     inc:
       - 'FO3 Wanderers Edition - Followers Enhanced.esp'
     tag:
@@ -1629,7 +1631,7 @@ plugins:
       - Names
       - NoMerge
   - name: 'FO3 Wanderers Edition - Alternate Travel.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/2761'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/2761' ]
     inc:
       - 'FO3 Wanderers Edition - Optional No Fast Travel.esp'
     dirty:
@@ -1648,7 +1650,7 @@ plugins:
     inc:
       - 'FO3 Wanderers Edition - Alternate Travel.esp'
   - name: 'FO3 Wanderers Edition - Optional VATS Halftime.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/2761'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/2761' ]
     dirty:
       - crc: 0x1B66E394
         util: *dirtyUtil # FO3Edit 3.0.32
@@ -1803,7 +1805,7 @@ plugins:
       - Names
       - NoMerge
   - name: 'WeaponModKits - FWE Master Release.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/17757'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/17757' ]
     tag:
       - Deflst
       - Names
@@ -1815,7 +1817,7 @@ plugins:
         udr: 0
         nav: 0
   - name: 'RH_WMK_Bridge.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/17757'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/17757' ]
     tag:
       - Relev
       - Delev
@@ -2059,7 +2061,7 @@ plugins:
     tag:
       - Graphics
   - name: 'WinterizedT51bDX.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/6167'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/6167' ]
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
@@ -2684,7 +2686,7 @@ plugins:
       - Delev
       - Relev
   - name: 'Mart''s Mutant Mod.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/3211'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Delev
       - Factions
@@ -2716,17 +2718,17 @@ plugins:
         content: 'Old. Download the latest Project Beauty files.'
         condition: 'file("FOOK2 - Main.esm")'
   - name: 'Mart''s Mutant Mod - DLC Anchorage.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/3211'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Scripts
   - name: 'Mart''s Mutant Mod - DLC The Pitt.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/3211'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Delev
       - Relev
       - Scripts
   - name: 'Mart''s Mutant Mod - DLC Broken Steel.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/3211'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Delev
       - Relev
@@ -2738,13 +2740,13 @@ plugins:
         udr: 0
         nav: 0
   - name: 'Mart''s Mutant Mod - DLC Point Lookout.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/3211'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Delev
       - Relev
       - Scripts
   - name: 'Mart''s Mutant Mod - DLC Zeta.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/3211'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Scripts
     dirty:
@@ -2808,7 +2810,7 @@ plugins:
       - Relev
       - Scripts
   - name: 'Mart''s Mutant Mod - Tougher Traders.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/3211'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Actors.AIData
       - Actors.Stats
@@ -2904,7 +2906,7 @@ plugins:
       - NPC.Race
       - NpcFaces
   - name: 'Mart''s Mutant Mod - DC Interiors.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/18173'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/18173' ]
     tag:
       - Relations
   - name: 'MMM - FWE & Overhaul Kit_Master Release.esp'
@@ -3415,7 +3417,7 @@ plugins:
         content: 'Do not use with latest FOOK2, it is already integrated.'
         condition: 'file("FOOK2 - Main.esm")'
   - name: 'Fellout-PointLookout.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/2672'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/2672' ]
     msg:
       - type: say
         content: 'Do not use with latest FOOK2, it is already integrated.'
@@ -3522,7 +3524,7 @@ plugins:
     tag:
       - C.Climate
   - name: 'Xepha''s Dynamic Weather - Main + DLC Merged.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/10607'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/10607' ]
     tag:
       - C.Climate
     dirty:
@@ -3575,7 +3577,7 @@ plugins:
       - 'Xepha''s Dynamic Weather - Weather Machine (Quest Added).esp'
       - 'Xepha''s Dynamic Weather - Weather Machine (Start Game Added).esp'
   - name: 'Xepha''s Dynamic Weather - Weather Machine (Quest Added).esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/10607'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/10607' ]
     inc:
       - 'Xepha''s Dynamic Weather - Weather Machine.esp'
       - 'Xepha''s Dynamic Weather - Weather Machine (+Rain).esp'
@@ -3619,7 +3621,7 @@ plugins:
     tag:
       - Invent
   - name: '20th Century v4 ALIVE (SuperMutant).esp'
-    url: 'http://www.gamefront.com/files/21184005/20th_centuary_weapons_5.12_with_addons.7z'
+    url: [ 'http://www.gamefront.com/files/21184005/20th_centuary_weapons_5.12_with_addons.7z' ]
     tag:
       - Invent
     dirty:
@@ -3629,7 +3631,7 @@ plugins:
         udr: 0
         nav: 0
   - name: '20th Century v4 ALIVE (Vault 101).esp'
-    url: 'http://www.gamefront.com/files/21184005/20th_centuary_weapons_5.12_with_addons.7z'
+    url: [ 'http://www.gamefront.com/files/21184005/20th_centuary_weapons_5.12_with_addons.7z' ]
     tag:
       - Invent
     dirty:
@@ -3678,7 +3680,7 @@ plugins:
     tag:
       - Invent
   - name: '20th Century v5 ALIVE (TEST Container).esp'
-    url: 'http://www.gamefront.com/files/21184005/20th_centuary_weapons_5.12_with_addons.7z'
+    url: [ 'http://www.gamefront.com/files/21184005/20th_centuary_weapons_5.12_with_addons.7z' ]
     dirty:
       - crc: 0x4F5CCD2C
         util: *dirtyUtil # FO3Edit 3.0.32
@@ -3783,7 +3785,7 @@ plugins:
       - 'RobCo Certified v2 FWE.esp'
       - 'RobCo Certified v2 Zeta Addon.esp'
   - name: 'RobCo Certified v2 Zeta Addon.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/712'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/712' ]
     inc: [ 'RobCo Certified v2 Omnipatch.esp' ]
     dirty:
       - crc: 0x7e827a3
@@ -3792,7 +3794,7 @@ plugins:
         udr: 0
         nav: 0
   - name: 'Companion Core DLC Addon.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/712'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/712' ]
     dirty:
       - crc: 0x37145cc8
         util: *dirtyUtil # FO3Edit 3.0.32
@@ -3800,7 +3802,7 @@ plugins:
         udr: 0
         nav: 0
   - name: RobcoCertified24SideMod.esp
-    url: 'http://www.nexusmods.com/fallout3/mods/712'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/712' ]
     dirty:
       - crc: 0x9c938fce
         util: *dirtyUtil # FO3Edit 3.0.32
@@ -3994,7 +3996,7 @@ plugins:
 
     ## Chinese Stealth Armor separators
   - name: '3EFhelmlessstealthsuit.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/3415'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/3415' ]
     inc:
       # While it strictly doesn't conflict with the below mods in the records
       # (at least not after cleaning), it does intend to do the same as these.
@@ -4007,12 +4009,12 @@ plugins:
         udr: 1
         nav: 0
   - name: 'ChineseStealthArmorFixed.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/5045'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/5045' ]
     inc:
       - '3EFhelmlessstealthsuit.esp'
       - 'Chinese Stealth Suit- Removable Helmet.esp'
   - name: 'Chinese Stealth Suit- Removable Helmet.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/17275'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/17275' ]
     inc:
       - '3EFhelmlessstealthsuit.esp'
       - 'ChineseStealthArmorFixed.esp'
@@ -4022,30 +4024,30 @@ plugins:
     tag:
       - ScriptContents
   - name: 'Tenpenny Tower true peace.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/15649'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/15649' ]
     inc: [ 'Tenpenny Tower Alternate Endings.esp' ]
   - name: 'Tenpenny Tower Alternate Endings.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/20069'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/20069' ]
     inc: [ 'Tenpenny Tower true peace.esp' ]
 
     ## T3TForFWE
   - name: 'ACRForFWE.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/12751'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/12751' ]
     tag: [ Stats ]
   - name: 'DTOforFWE.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/12751'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/12751' ]
     tag:
       - Graphics
       - Stats
   - name: 'MP5ForFWE.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/12751'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/12751' ]
     tag: [ Stats ]
   - name: 'SVDForFWE.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/12751'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/12751' ]
     tag: [ Stats ]
 
   - name: '20th Century Weapons -Plus- Reborn FWE-WMK-Calibr14_V1_70RC_18668.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/18668'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/18668' ]
     tag:
       - Names
       - Relev
@@ -4057,18 +4059,18 @@ plugins:
         udr: 1
         nav: 0
   - name: '20th_Century_Weapons -Plus- Reborn_v1_70RC-18668_Ironsights_v1_1.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/18668'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/18668' ]
     tag:
       - Graphics
       - Names
       - Stats
   - name: '32S&W.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/18743'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/18743' ]
     tag:
       - Graphics
       - Stats
   - name: 'ArefuExpandedByAzar-FixMisc.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/15686'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/15686' ]
     dirty:
       - crc: 0x283EAF75
         util: *dirtyUtil # FO3Edit 3.0.32
@@ -4076,11 +4078,11 @@ plugins:
         udr: 0
         nav: 0
   - name: 'AnimatedFanV2f3.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/20452'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/20452' ]
     tag:
       - Destructible
   - name: 'ArefuExpandedByAzar-FixOptAddNew.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/15686'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/15686' ]
     dirty:
       - crc: 0x9B1EFE6B
         util: *dirtyUtil # FO3Edit 3.0.32
@@ -4088,7 +4090,7 @@ plugins:
         udr: 0
         nav: 0
   - name: 'ArefuExpandedByAzar-FixOptRemOld.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/15686'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/15686' ]
     dirty:
       - crc: 0x675E86E8
         util: *dirtyUtil # FO3Edit 3.0.32
@@ -4096,7 +4098,7 @@ plugins:
         udr: 39
         nav: 0
   - name: 'ArlingtonRestoration.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/20504'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/20504' ]
     msg:
       - type: warn
         content: 'The author has posted a cleaned update of the mod. Use that instead.'
@@ -4113,7 +4115,7 @@ plugins:
         udr: 0
         nav: 7
   - name: Big Town Overhaul.esp
-    url: 'http://www.nexusmods.com/fallout3/mods/13229'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/13229' ]
     inc:
       - 'Big Town Overhaul.esm'
       - 'Big Town Overhaul [GangStore].esp'
@@ -4124,7 +4126,7 @@ plugins:
         udr: 684
         nav: 0
   - name: 'Big Town Overhaul [GangStore].esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/13229'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/13229' ]
     inc:
       - 'Big Town Overhaul.esm'
       - 'Big Town Overhaul.esp'
@@ -4148,7 +4150,7 @@ plugins:
         udr: 2
         nav: 0
   - name: 'Binoculars and Scopes.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/8936'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/8936' ]
     inc: [ 'Binoculars.esp' ]
     msg:
       - type: say
@@ -4166,7 +4168,7 @@ plugins:
         udr: 2
         nav: 0
   - name: 'Blackened FWE + MMM + Project Beauty.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/18173'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/18173' ]
     tag:
       - Actors.Stats
       - Factions
@@ -4181,7 +4183,7 @@ plugins:
         udr: 0
         nav: 0
   - name: 'Blackened FWE + MMM + EVE + Project Beauty.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/18173'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/18173' ]
     tag:
       - Actors.Stats
       - Factions
@@ -4190,13 +4192,13 @@ plugins:
       - Relev
       - Scripts
   - name: 'BornAgain Outcast v3.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/16199'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/16199' ]
     tag:
       - Graphics
       - Names
       - Relev
   - name: 'Bornagain Zeta Combat Armor Texture Patch.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/18220'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/18220' ]
     dirty:
       - crc: 0xab095a45
         util: *dirtyUtil # FO3Edit 3.0.32
@@ -4204,7 +4206,7 @@ plugins:
         udr: 0
         nav: 0
   - name: 'Brahmin Dairy Products.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/3809'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/3809' ]
     tag:
       - Relev
     dirty:
@@ -4214,7 +4216,7 @@ plugins:
         udr: 0
         nav: 0
   - name: 'CALIBRv14 Ammunition Schematics for FWE-WMK-CRAFT-V1_3-18639.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/18639'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/18639' ]
     dirty:
       - crc: 0x9AB2CF5E
         util: *dirtyUtil # FO3Edit 3.0.32
@@ -4222,7 +4224,7 @@ plugins:
         udr: 0
         nav: 0
   - name: 'Canterbury Commons Interiors Embiggened.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/13301'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/13301' ]
     inc:
       - 'Canterbury Commons Interiors Embiggened.esm'
     tag:
@@ -4234,23 +4236,23 @@ plugins:
         udr: 20
         nav: 3
   - name: 'Caravan Merchants Heal After Combat.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/20548'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/20548' ]
     tag: [ Scripts ]
   - name: 'CASM.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/3729'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/3729' ]
     req: [ *FOSE ]
   - name: 'Creature Companion Fixes.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/20549'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/20549' ]
     inc: [ 'Creature Companion Fixes No DLC.esp' ]
   - name: 'Creature Companion Fixes No DLC.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/20549'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/20549' ]
     inc: [ 'Creature Companion Fixes.esp' ]
   - name: 'Delay ThePitt + Anchorage.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/5253'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/5253' ]
     tag:
       - Scripts
   - name: 'delaypl.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/5253'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/5253' ]
     dirty:
       - crc: 0xD5DAF34E
         util: *dirtyUtil # FO3Edit 3.0.32
@@ -4258,7 +4260,7 @@ plugins:
         udr: 0
         nav: 0
   - name: 'delaysteel.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/5253'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/5253' ]
     tag:
       - Scripts
     dirty:
@@ -4268,7 +4270,7 @@ plugins:
         udr: 0
         nav: 0
   - name: 'delayzeta.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/5253'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/5253' ]
     tag:
       - Scripts
     dirty:
@@ -4278,14 +4280,14 @@ plugins:
         udr: 0
         nav: 0
   - name: 'Dogmeat_WaitMegaton.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/7732'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/7732' ]
     inc: [ 'Dogmeat_WaitMegaton v1.1.esp' ]
     # "v1.1" is "Dogmeat wait outside Megaton house"
   - name: 'Dogmeat_WaitMegaton v1.1.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/7732'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/7732' ]
     inc: [ 'Dogmeat_WaitMegaton.esp' ]
   - name: 'Dragonskin Tactical Outfit.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/10183'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/10183' ]
     tag:
       - Graphics
     msg:
@@ -4304,7 +4306,7 @@ plugins:
       - name: Relev
         condition: checksum("Dree Perks.esp", 25D3F8CA)
   - name: 'DriveableMotorCycle.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/6005'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/6005' ]
     dirty:
       - crc: 0x949faf2c
         util: *dirtyUtil # FO3Edit 3.0.32
@@ -4312,7 +4314,7 @@ plugins:
         udr: 0
         nav: 0
   - name: 'DynamicCrosshair.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/15724'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/15724' ]
     req:
       - *FOSE
     # TODO: Make this say more intelligent - ie., check whether MTUI or DarnUI is installed.
@@ -4320,7 +4322,7 @@ plugins:
       - type: say
         content: 'Be sure to use the MTUI or Darnified UI version if you are using one of those.'
   - name: 'Existence2.0.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/5612'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/5612' ]
     dirty:
       - crc: 0x0E5309DA
         util: *dirtyUtil # FO3Edit 3.0.32
@@ -4328,24 +4330,24 @@ plugins:
         udr: 0
         nav: 1
   - name: 'Exit Terminals With Q.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/19591'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/19591' ]
     req:
       - *FOSE
   - name: 'FasterMorePowerfulMines.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/5630'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/5630' ]
     priority: 100
     tag:
       - Stats
   - name: 'FasterWaiting.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/17755'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/17755' ]
     req:
       - *FOSE
   - name: 'fasttravelfromindoors.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/15108'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/15108' ]
     priority: -100 # Low priority as it only does non-content changes to cells
     inc: [ 'FastTravelIndoors.esp' ]
   - name: 'FastTravelIndoors.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/7624'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/7624' ]
     priority: -100 # Low priority as it only does non-content changes to cells
     inc: [ 'fasttravelfromindoors.esp' ]
     msg:
@@ -4358,10 +4360,10 @@ plugins:
         udr: 0
         nav: 0
   - name: 'FeralGhoulTest.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/16886'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/16886' ]
     tag: [ Relev ]
   - name: 'Fixed Suits.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/19649'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/19649' ]
     inc: [ 'Fixed Suits FWE.esp' ]
     msg:
       - *AlreadyInUF3P_1_7
@@ -4369,12 +4371,12 @@ plugins:
         content: 'Use the Fallout 3 Wanders Edition (FWE) version of this mod instead.'
         condition: 'active("FO3 Wanderers Edition - Main File.esm")'
   - name: 'Fixed Suits FWE.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/19649'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/19649' ]
     inc: [ 'Fixed Suits.esp' ]
     msg:
       - *AlreadyInUF3P_1_7
   - name: 'Fixed Suits Anchorage.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/19649'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/19649' ]
     inc: [ 'Fixed Suits Anchorage FWE.esp' ]
     msg:
       - *AlreadyInUF3P_1_7
@@ -4382,12 +4384,12 @@ plugins:
         content: 'Use the Fallout 3 Wanders Edition (FWE) version of this mod instead.'
         condition: 'active("FO3 Wanderers Edition - Main File.esm")'
   - name: 'Fixed Suits Anchorage FWE.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/19649'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/19649' ]
     inc: [ 'Fixed Suits Anchorage.esp' ]
     msg:
       - *AlreadyInUF3P_1_7
   - name: 'Flashlight-LOS.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/15003'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/15003' ]
     req:
       - *FOSE
     inc:
@@ -4395,7 +4397,7 @@ plugins:
       - 'Flashlight-LOS-nonFOSE.esp'
       - 'Flashlight-Performance-nonFOSE.esp'
   - name: 'Flashlight-Performance.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/15003'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/15003' ]
     req:
       - *FOSE
     inc:
@@ -4403,23 +4405,23 @@ plugins:
       - 'Flashlight-LOS-nonFOSE.esp'
       - 'Flashlight-Performance-nonFOSE.esp'
   - name: 'Flashlight-LOS-nonFOSE.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/15003'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/15003' ]
     inc:
       - 'Flashlight-LOS.esp'
       - 'Flashlight-Performance.esp'
       - 'Flashlight-Performance-nonFOSE.esp'
   - name: 'Flashlight-Performance-nonFOSE.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/15003'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/15003' ]
     inc:
       - 'Flashlight-LOS.esp'
       - 'Flashlight-Performance.esp'
       - 'Flashlight-LOS-nonFOSE.esp'
   - name: 'FO3_WRP.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/18133'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/18133' ]
     tag:
       - Graphics
   - name: 'FortIndependenceRedesigned.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/17939'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/17939' ]
     dirty:
       - crc: 0xE7BC4BEB
         util: *dirtyUtil # FO3Edit 3.0.32
@@ -4427,29 +4429,29 @@ plugins:
         udr: 716
         nav: 0
   - name: 'GlowingGhouls.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/20321'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/20321' ]
     tag:
       - Scripts
   - name: 'GNR Enhanced.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/14946'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/14946' ]
     tag: [ Scripts ]
   - name: 'hackrate.x2.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/2745'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/2745' ]
     inc:
       - 'hackrate.x4.esp'
       - 'hackrate.x6.esp'
   - name: 'hackrate.x4.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/2745'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/2745' ]
     inc:
       - 'hackrate.x2.esp'
       - 'hackrate.x6.esp'
   - name: 'hackrate.x6.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/2745'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/2745' ]
     inc:
       - 'hackrate.x2.esp'
       - 'hackrate.x4.esp'
   - name: 'Laurens_Bathroom_poetry_V1.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/16160'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/16160' ]
     dirty:
       - crc: 0xD8A75C40
         util: *dirtyUtil # FO3Edit 3.0.32
@@ -4457,7 +4459,7 @@ plugins:
         udr: 0
         nav: 0
   - name: 'Loki_HistoricSpeeches_v1.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/14476'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/14476' ]
     dirty:
       - util: *dirtyUtil # FO3Edit 3.0.32
         crc: 0x21340b32 # Version 1.0
@@ -4465,19 +4467,19 @@ plugins:
         udr: 0
         nav: 0
   - name: 'Millenia_AK47_replacer.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/18481'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/18481' ]
     tag:
       - Graphics
       - Names
       - Stats
   - name: 'Millenia_C96_replacer.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/18401'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/18401' ]
     tag:
       - Graphics
       - Names
       - Stats
   - name: 'MyMegaton-AmmoPress-Calibr-Plus-Unlocked_v1_21_18605.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/18605'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/18605' ]
     tag: [ Names ]
     dirty:
       - crc: 0xC061B97B
@@ -4486,11 +4488,11 @@ plugins:
         udr: 8
         nav: 0
   - name: 'Paradise Lost - Unique Texture and Icon.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/19514'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/19514' ]
     tag:
       - Graphics
   - name: 'People_Radio.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/5021'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/5021' ]
     dirty:
       - util: *dirtyUtil # FO3Edit 3.0.32
         crc: 0x839a113b # Beta version 0.1
@@ -4498,17 +4500,17 @@ plugins:
         udr: 0
         nav: 0
   - name: 'PlasmaRifleAwesomefied.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/3484'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/3484' ]
     tag:
       - Sound
       - Stats
   - name: 'PlasmaRifleAwesomefiedWMK.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/3484'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/3484' ]
     tag:
       - Sound
       - Stats
   - name: 'PLFewerItems.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/7268'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/7268' ]
     priority: 100
     tag:
       - Delev
@@ -4520,7 +4522,7 @@ plugins:
         udr: 56
         nav: 0
   - name: 'PPA - FWE.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/13361'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/13361' ]
     dirty:
       - crc: 0x0D43A04E
         util: *dirtyUtil # FO3Edit 3.0.32
@@ -4528,7 +4530,7 @@ plugins:
         udr: 0
         nav: 0
   - name: 'PPA - FWE 2.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/16591'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/16591' ]
     tag:
       - Stats
     dirty:
@@ -4538,7 +4540,7 @@ plugins:
         udr: 0
         nav: 0
   - name: 'PPA - Mothership Zeta.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/13361'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/13361' ]
     dirty:
       - crc: 0xBC734E8B
         util: *dirtyUtil # FO3Edit 3.0.32
@@ -4546,7 +4548,7 @@ plugins:
         udr: 0
         nav: 0
   - name: 'PPA - FWE Tougher NPC Power Armour.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/16591'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/16591' ]
     tag:
       - Relev
     dirty:
@@ -4556,15 +4558,15 @@ plugins:
         udr: 0
         nav: 0
   - name: 'ProtectronFix.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/20498'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/20498' ]
     msg:
       - *AlreadyInUF3P_1_7
   - name: 'PrototypePowerArmorUsesStimpaks.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/20499'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/20499' ]
     tag:
       - Scripts
   - name: 'RadioTenpenny.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/7236'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/7236' ]
     inc: [ 'RadioTenpennyTower.esp' ]
     dirty:
       - crc: 0xF7ECA8BD # Version 1.0 (23 June 2009)
@@ -4573,7 +4575,7 @@ plugins:
         udr: 0
         nav: 0
   - name: 'RadioTenpennyTower.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/3803'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/3803' ]
     inc: [ 'RadioTenpenny.esp' ]
     dirty:
       - crc: 0x813140D8 # Version 1.0 (9 February 2009)
@@ -4582,11 +4584,11 @@ plugins:
         udr: 0
         nav: 0
   - name: 'RagdollOverhaulFO3.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/20143'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/20143' ]
     tag:
       - Actors.Skeleton
   - name: 'RockopolisRebuilt.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/8769'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/8769' ]
     dirty:
       - crc: 0x51c3dd7a
         util: *dirtyUtil # FO3Edit 3.0.32
@@ -4594,11 +4596,11 @@ plugins:
         udr: 0
         nav: 0
   - name: 'SaveHotKey.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/16434'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/16434' ]
     req:
       - *FOSE
   - name: 'Temple of the Union Overhaul.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/19242'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/19242' ]
     dirty:
       - crc: 0xE4A3C388
         util: *dirtyUtil # FO3Edit 3.0.32
@@ -4606,11 +4608,11 @@ plugins:
         udr: 167
         nav: 0
   - name: 'Tenderizer Fix.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/20551'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/20551' ]
     msg:
       - *AlreadyInUF3P_1_7
   - name: 'tubRRCompound.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/6068'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/6068' ]
     tag:
       - Actors.AIPackages
       - Actors.Stats
@@ -4623,7 +4625,7 @@ plugins:
         udr: 13
         nav: 7
   - name: 'UrgeWashingtonBoS.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/17939'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/17939' ]
     dirty:
       - crc: 0x98fd9bed
         util: *dirtyUtil # FO3Edit 3.0.32
@@ -4631,7 +4633,7 @@ plugins:
         udr: 16
         nav: 0
   - name: 'xCALIBR_ammo_Override_v1_01_for_20th Century Weapons -Plus- Reborn FWE-WMK-Calibr14_V1_70RC_18668.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/18668'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/18668' ]
     dirty:
       - crc: 0x32EAC10D
         util: *dirtyUtil # FO3Edit 3.0.32
@@ -4639,7 +4641,7 @@ plugins:
         udr: 1
         nav: 0
   - name: 'YearlingBooks.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/20483'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/20483' ]
     tag:
       - Scripts
     inc:
@@ -4650,10 +4652,10 @@ plugins:
         content: 'This mod overwrites certain parts of the Brisa Almodovar follower mod. It is advised to use the "YearlingBooksBrisaAlmodovar.esp" version of this mod instead.'
         condition: 'active("RHKBrisaAlmodovar.esm")'
   - name: 'YearlingBooksBrisaAlmodovar.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/20483'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/20483' ]
     inc: [ 'YearlingBooks.esp' ]
   - name: 'X-1_Tales_of_Wonder!.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/17672'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/17672' ]
     dirty:
       - util: *dirtyUtil # FO3Edit 3.0.32
         crc: 0xc8b56e69 # Version 1.0
@@ -4661,7 +4663,7 @@ plugins:
         udr: 0
         nav: 0
   - name: 'ZL-ACR.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/11611'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/11611' ]
     tag:
       - Stats
     dirty:
@@ -4671,7 +4673,7 @@ plugins:
         udr: 0
         nav: 0
   - name: 'ZL-MP5 Pack.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/5431'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/5431' ]
     tag:
       - Stats
     dirty:
@@ -4681,7 +4683,7 @@ plugins:
         udr: 0
         nav: 0
   - name: 'ZL-SVD.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/3759'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/3759' ]
     tag:
       - Stats
     dirty:
@@ -4691,7 +4693,7 @@ plugins:
         udr: 0
         nav: 0
   - name: 'ZL-SVD-CALIBR.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/3759'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/3759' ]
     tag:
       - Stats
     dirty:
@@ -4703,7 +4705,7 @@ plugins:
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
-    url: 'http://www.nexusmods.com/fallout3/mods/19122'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/19122' ]
     req:
       - 'FO3 Wanderers Edition - Main File.esp'
     tag:
