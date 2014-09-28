@@ -4299,7 +4299,7 @@ plugins:
     # The Paradox Ignition version is known to have the CRC 0x25D3F8CA
     url:
       - link: 'http://www.nexusmods.com/fallout3/mods/16787'
-        ver: 'Paradox Ignition presents The Mergers version'
+        ver: [ 'Paradox Ignition presents The Mergers version' ]
     tag:
       - name: Delev
         condition: checksum("Dree Perks.esp", 25D3F8CA)
