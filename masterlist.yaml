@@ -43,11 +43,11 @@ globals:
   - type: say
     content:
       - lang: en
-        str: '[Latest LOOT thread](http://forums.bethsoft.com/topic/1509883-rel-loot-thread-14/).'
+        str: '[Latest LOOT thread](http://forums.bethsoft.com/topic/1511411-rel-loot-thread-15/).'
       - lang: ru
-        str: '[Обсуждение LOOT "(Eng)"](http://forums.bethsoft.com/topic/1509883-rel-loot-thread-14/).'
+        str: '[Обсуждение LOOT "(Eng)"](http://forums.bethsoft.com/topic/1511411-rel-loot-thread-15/).'
       - lang: es
-        str: '[Forum de LOOT](http://forums.bethsoft.com/topic/1509883-rel-loot-thread-14/).'
+        str: '[Forum de LOOT](http://forums.bethsoft.com/topic/1511411-rel-loot-thread-15/).'
 # FOSE plugins
   # Fallout Stutter Remover: http://www.nexusmods.com/fallout3/mods/8886
   - type: warn
