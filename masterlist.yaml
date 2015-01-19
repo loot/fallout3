@@ -1409,12 +1409,12 @@ plugins:
   - name: 'FOOK2 - Main [Hotfix].esp'
     msg:
       - type: error
-        content: 'Please update to FOOK2 1.1 Open Beta 2'
+        content: 'Please update to FOOK2 1.2 Open Beta 2'
         condition: 'file("FOOK2 - Main.esm")'
   - name: 'FOOK2 - DIK [Hotfix].esp'
     msg:
       - type: error
-        content: 'Please update to FOOK2 1.1 Open Beta 2'
+        content: 'Please update to FOOK2 1.2 Open Beta 2'
         condition: 'file("FOOK2 - Main.esm")'
   - name: 'MyFOOK2 - Color Tranquility Lane.esp'
     msg:
