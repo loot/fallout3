@@ -152,7 +152,10 @@ plugins:
     tag:
       - Actors.ACBS
       - Actors.AIPackages
-      - Relev
+      - C.Water
+      - Delev
+      - Factions
+      - Stats
     dirty:
       - util: *dirtyUtil # FO3Edit 3.0.32
         crc: 0x30011b79 # Version 0.94
