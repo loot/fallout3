@@ -3942,12 +3942,6 @@ plugins:
     msg:
       - type: say
         content: 'Do not use with latest FWE, it is already integrated.'
-  - name: 'Merged.esp'
-    tag:
-      - NoMerge
-  - name: 'Merged Patch.esp'
-    tag:
-      - NoMerge
   - name: 'xCALIBRammo_override.esp'
     tag:
       - Graphics
@@ -4720,6 +4714,21 @@ plugins:
 
 
   ### Load Late-section
-
+  - name: 'Merged.esp'
+    priority: 400991000
+    tag:
+      - NoMerge
+  - name: 'Merged Patch.esp'
+    priority: 400991000
+    tag:
+      - NoMerge
+  - name: 'FO3Merged.esp'
+    priority: 400991000
+    tag:
+      - NoMerge
   - name: 'Bashed Patch, 0.esp'
     priority: 400991000
+    after:
+      - 'Merged.esp'
+      - 'Merged Patch.esp'
+      - 'FO3Merged.esp'
