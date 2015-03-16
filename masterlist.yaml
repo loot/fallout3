@@ -1,4 +1,4 @@
-﻿common:
+common:
 # Files
   - &FOSE
     name: '..\fose_loader.exe'
@@ -3840,8 +3840,8 @@ plugins:
       - 'Destruction - DLC.esp'
       - 'FO3 Wanderers Edition - DLC Anchorage.esp'
       - 'FO3 Wanderers Edition - DLC Mothership Zeta.esp'
-      - 'Project Beauty- Broken Steel.esp'
-      - 'Project Beauty- Point Lookout.esp'
+      - 'Project Beauty - Broken Steel.esp'
+      - 'Project Beauty - Point Lookout.esp'
   - name: 'xCALIBRUniverse - WMK.esp'
     tag:
       - Graphics
