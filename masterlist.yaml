@@ -605,25 +605,30 @@ plugins:
       - Names
       - NoMerge
   - name: 'Unofficial Fallout 3 Patch - Operation Anchorage.esp'
+    priority: -400998000
     tag:
       - Deflst
       - Names
   - name: 'Unofficial Fallout 3 Patch - The Pitt.esp'
+    priority: -400998000
     tag:
       - Deflst
       - Names
   - name: 'Unofficial Fallout 3 Patch - Broken Steel.esp'
+    priority: -400998000
     tag:
       - Deflst
       - Names
       - NoMerge
   - name: 'Unofficial Fallout 3 Patch - Point Lookout.esp'
+    priority: -400998000
     tag:
       - Deflst
       - Invent
       - Names
       - Stats
   - name: 'Unofficial Fallout 3 Patch - Mothership Zeta.esp'
+    priority: -400998000
     tag:
       - Deflst
       - Names
