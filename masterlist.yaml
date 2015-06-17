@@ -4737,3 +4737,33 @@ plugins:
       - 'Merged.esp'
       - 'Merged Patch.esp'
       - 'FO3Merged.esp'
+  - name: 'Clarity.esp'
+    dirty:
+      - crc: 0xA9B7F199
+        util: *dirtyUtil
+        itm: 1
+  - name: 'RH_IronSights_Basic_AnchoragePlugin.esp'
+    dirty:
+      - crc: 0x7EF88F51
+        util: *dirtyUtil
+        itm: 1
+  - name: 'RH_EVE_Bridge.esp'
+    dirty:
+      - crc: 0x06239EB2
+        util: *dirtyUtil
+        itm: 3
+  - name: 'RH_IronSights_Basic_ZetaPlugin.esp'
+    dirty:
+      - crc: 0x9449EB44
+        util: *dirtyUtil
+        itm: 5
+  - name: 'RH_IronSights_Basic_PittPlugin.esp'
+    dirty:
+      - crc: 0xF4974E27
+        util: *dirtyUtil
+        itm: 1
+  - name: 'RH_IronSights_Basic_BrokenSteelPlugin.esp'
+    dirty:
+      - crc: 0xA1FEB067
+        util: *dirtyUtil
+        itm: 1
