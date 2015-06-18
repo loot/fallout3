@@ -16,6 +16,9 @@ common:
     type: say
     content: 'Do not use with latest FOOK2, it is already integrated.'
     condition: 'file("FOOK2 - Main.esm")'
+  - &integratedInFWE
+    type: say
+    content: 'Do not use with latest FWE, it is already integrated.'
   - &UF3Pfile_1_7
     name: 'Unofficial Fallout 3 Patch.esm'
     condition: 'version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
@@ -506,9 +509,7 @@ plugins:
     tag:
       - Stats
   - name: 'Abbreviated Effects.esm'
-    msg:
-      - type: say
-        content: 'Do not use with latest FWE, it is already integrated.'
+    msg: [ *integratedInFWE ]
     tag:
       - Names
   - name: 'Canterbury Commons Interiors Embiggened.esm'
@@ -878,29 +879,17 @@ plugins:
       - 'Remove That Glove.esp'
       - '1PipboyPDA.esp'
   - name: 'DK_BulletTime.esp'
-    msg:
-      - type: say
-        content: 'DO not use with latest FWE, it is already integrated.'
+    msg: [ *integratedInFWE ]
   - name: 'Sprint Mod.esp'
-    msg:
-      - type: say
-        content: 'DO not use with latest FWE, it is already integrated.'
+    msg: [ *integratedInFWE ]
   - name: 'Auto Aim Fix v1.1.esp'
-    msg:
-      - type: say
-        content: 'DO not use with latest FWE, it is already integrated.'
+    msg: [ *integratedInFWE ]
   - name: 'KHWeaponscanner.esp'
-    msg:
-      - type: say
-        content: 'DO not use with latest FWE, it is already integrated.'
+    msg: [ *integratedInFWE ]
   - name: 'Alternate Start - Roleplayers.esp'
-    msg:
-      - type: say
-        content: 'DO not use with latest FWE, it is already integrated.'
+    msg: [ *integratedInFWE ]
   - name: 'Selected Containers Respawn.esp'
-    msg:
-      - type: say
-        content: 'DO not use with latest FWE, it is already integrated.'
+    msg: [ *integratedInFWE ]
   - name: 'EVE - RH Ironsights Patch.esp'
     tag:
       - Graphics
@@ -1264,13 +1253,11 @@ plugins:
         content: 'Possible cause of CTDs, try disabling to test for improvments, or try BusworldV1.05noexpl.esp'
   - name: 'FPS Grenade Hotkey.esp'
     msg:
-      - type: say
-        content: 'Do not use with latest FWE, it is already integrated.'
+      - *integratedInFWE
       - *integratedInFOOK2
   - name: 'FPS Grenade Hotkey - Zeta addon.esp'
     msg:
-      - type: say
-        content: 'Do not use with latest FWE, it is already integrated.'
+      - *integratedInFWE
       - *integratedInFOOK2
   - name: 'Mannequin.esp'
     tag:
@@ -1657,9 +1644,7 @@ plugins:
       - type: say
         content: 'Check for updates; you may have the old version installed.'
   - name: 'DarNifiedUIF3_FWE.esp'
-    msg:
-      - type: say
-        content: 'Do not use with latest FWE, it is already integrated.'
+    msg: [ *integratedInFWE ]
   - name: 'FO3 Wanderers Edition - Project Beauty (HD Addition).esp'
     inc:
       - 'Project Beauty.esp'
@@ -2265,9 +2250,7 @@ plugins:
       - 'Improved Turret Reprogramming - Pitt.esp'
       - 'Improved Turret Reprogramming - PL.esp'
   - name: 'Menu Based Hacking & Picking.esp'
-    msg:
-      - type: say
-        content: 'DO not use with latest FWE, it is already integrated.'
+    msg: [ *integratedInFWE ]
   - name: 'OverMightyGold.esp'
     tag:
       - Invent
@@ -2482,41 +2465,29 @@ plugins:
     tag:
       - Names
   - name: 'Persistent Skill Books.esp'
-    msg:
-      - type: say
-        content: 'DO not use with latest FWE, it is already integrated.'
+    msg: [ *integratedInFWE ]
   - name: 'PlasmaWeaponsRedesignRebalance.esp'
-    msg:
-      - type: say
-        content: 'DO not use with latest FWE, it is already integrated.'
+    msg: [ *integratedInFWE ]
     tag:
       - Graphics
       - Sound
   - name: 'PlasmaRifleRedesign.esp'
-    msg:
-      - type: say
-        content: 'DO not use with latest FWE, it is already integrated.'
+    msg: [ *integratedInFWE ]
     tag:
       - Graphics
       - Sound
   - name: 'PlasmaRifleRedesign_A321only.esp'
-    msg:
-      - type: say
-        content: 'DO not use with latest FWE, it is already integrated.'
+    msg: [ *integratedInFWE ]
     tag:
       - Graphics
       - Sound
   - name: 'PlasmaRifleRedesign_standardonly.esp'
-    msg:
-      - type: say
-        content: 'DO not use with latest FWE, it is already integrated.'
+    msg: [ *integratedInFWE ]
     tag:
       - Graphics
       - Sound
   - name: 'PlasmaPistolRedesign.esp'
-    msg:
-      - type: say
-        content: 'DO not use with latest FWE, it is already integrated.'
+    msg: [ *integratedInFWE ]
     tag:
       - Graphics
       - Sound
@@ -3186,9 +3157,7 @@ plugins:
     tag:
       - Relev
   - name: 'T3T_MiscItemIcons.esp'
-    msg:
-      - type: say
-        content: 'Do not use with latest FWE, it is already integrated.'
+    msg: [ *integratedInFWE ]
   - name: 'EnhVision.esp'
     inc:
       - 'EnhVisionHK.esp'
@@ -3319,9 +3288,7 @@ plugins:
       - type: say
         content: 'Older version included in FOOK2'
   - name: 'Realistic Death Physics.esp'
-    msg:
-      - type: say
-        content: 'Do not use with latest FWE, it is already integrated.'
+    msg: [ *integratedInFWE ]
   - name: 'REAL-ThirdViewMod.esp'
     inc:
       - 'LOWER-real-thirdpersonview.esp'
@@ -3865,9 +3832,7 @@ plugins:
       - NPC.Race
       - NpcFaces
   - name: 'CRBSOR.esp'
-    msg:
-      - type: say
-        content: 'Do not use with latest FWE, it is already integrated.'
+    msg: [ *integratedInFWE ]
   - name: 'xCALIBRammo_override.esp'
     tag:
       - Graphics
