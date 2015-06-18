@@ -19,6 +19,11 @@ common:
   - &integratedInFWE
     type: say
     content: 'Do not use with latest FWE, it is already integrated.'
+  - &MantisImperativeFWEWarning
+    type: warn
+    # Copied from http://www.nexusmods.com/fallout3/mods/12296
+    content: 'It is recommended that you DO NOT load this mod in conjunction with FWE, as their alterations will conflict with each other and may cause issues.'
+    condition: 'active("FO3 Wanderers Edition - Main File.esm")'
   - &UF3Pfile_1_7
     name: 'Unofficial Fallout 3 Patch.esm'
     condition: 'version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
@@ -1074,20 +1079,13 @@ plugins:
         nav: 0
   - name: 'The Mantis Imperative - Combat.esp'
     url: [ 'http://www.nexusmods.com/fallout3/mods/12296' ]
-    msg:
-      - &MantisImperativeFWEWarning
-        type: warn
-        # Copied from http://www.nexusmods.com/fallout3/mods/12296
-        content: '"It is recommended that you DO NOT load [this mod] in conjunction with FWE, as their alterations will conflict with each other and may cause issues."'
-        condition: 'active("FO3 Wanderers Edition - Main File.esm")'
+    msg: [ *MantisImperativeFWEWarning ]
   - name: 'The Mantis Imperative - Medical.esp'
     url: [ 'http://www.nexusmods.com/fallout3/mods/12296' ]
-    msg:
-      - *MantisImperativeFWEWarning
+    msg: [ *MantisImperativeFWEWarning ]
   - name: 'The Mantis Imperative - SkillBooks.esp'
     url: [ 'http://www.nexusmods.com/fallout3/mods/12296' ]
-    msg:
-      - *MantisImperativeFWEWarning
+    msg: [ *MantisImperativeFWEWarning ]
     dirty:
       - crc: 0xDD2E48B1
         util: *dirtyUtil # FO3Edit 3.0.32
@@ -1096,8 +1094,7 @@ plugins:
         nav: 0
   - name: 'The Mantis Imperative - XP.esp'
     url: [ 'http://www.nexusmods.com/fallout3/mods/12296' ]
-    msg:
-      - *MantisImperativeFWEWarning
+    msg: [ *MantisImperativeFWEWarning ]
   - name: 'The Mantis Imperative - Jello.esp'
     url: [ 'http://www.nexusmods.com/fallout3/mods/12296' ]
     tag:
