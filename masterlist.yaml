@@ -12,6 +12,10 @@ common:
       str: 'Удалите. Уже включено в Unofficial Fallout 3 Patch.esm.'
     - lang: es
       str: 'Borrar. Esta incluido en Unofficial Fallout 3 Patch.esm.'
+  - &integratedInFOOK2
+    type: say
+    content: 'Do not use with latest FOOK2, it is already integrated.'
+    condition: 'file("FOOK2 - Main.esm")'
   - &UF3Pfile_1_7
     name: 'Unofficial Fallout 3 Patch.esm'
     condition: 'version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
@@ -133,10 +137,7 @@ plugins:
     after:
       - 'thepitt.esm'
       - 'anchorage.esm'
-    msg:
-      - type: say
-        content: 'Do not use with latest FOOK2, it is already integrated.'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *integratedInFOOK2 ]
     dirty:
       - crc: 0xC5690E8E # Version 2.0
         util: *dirtyUtil # FO3Edit 3.0.32
@@ -307,10 +308,7 @@ plugins:
       - Relev
       - Stats
   - name: 'Refurbishes [ALL].esm'
-    msg:
-      - type: say
-        content: 'Do not use with latest FOOK2, it is already integrated.'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *integratedInFOOK2 ]
   - name: 'GNRBuilding_BoS.esm'
     tag:
       - Invent
@@ -862,26 +860,15 @@ plugins:
       - Graphics
   - name: 'StreetLights - Wasteland.esp'
     msg:
-      - type: say
-        content: 'Do not use with latest FOOK2, it is already integrated.'
-        condition: 'file("FOOK2 - Main.esm")'
+      - *integratedInFOOK2
       - type: say
         content: 'Obselete - upgrade to [Fallout Streetlights](http://www.nexusmods.com/fallout3/mods/8069).'
   - name: 'RK-Skelette-3.0.esp'
-    msg:
-      - type: say
-        content: 'Do not use with latest FOOK2, it is already integrated.'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *integratedInFOOK2 ]
   - name: 'praiseatom.esp'
-    msg:
-      - type: say
-        content: 'Do not use with latest FOOK2, it is already integrated.'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *integratedInFOOK2 ]
   - name: 'Internet Mod.esp'
-    msg:
-      - type: say
-        content: 'Do not use with latest FOOK2, it is already integrated.'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *integratedInFOOK2 ]
   - name: 'DALCO Inventory Sorter - CASM.esp'
     tag:
       - Names
@@ -980,10 +967,7 @@ plugins:
       - 'GalaxyNewsRadioFix[N].esp'
       - 'GalaxyNewsRadioFix[S].esp'
   - name: 'ReneersRadioMod.esp'
-    msg:
-      - type: say
-        content: 'Do not use with latest FOOK2, it is already integrated.'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *integratedInFOOK2 ]
     tag:
       - Scripts
   - name: 'RadioHotkey.esp'
@@ -1281,11 +1265,13 @@ plugins:
   - name: 'FPS Grenade Hotkey.esp'
     msg:
       - type: say
-        content: 'Do not use with latest FOOK2/FWE, it is already integrated.'
+        content: 'Do not use with latest FWE, it is already integrated.'
+      - *integratedInFOOK2
   - name: 'FPS Grenade Hotkey - Zeta addon.esp'
     msg:
       - type: say
-        content: 'Do not use with latest FOOK2/FWE, it is already integrated.'
+        content: 'Do not use with latest FWE, it is already integrated.'
+      - *integratedInFOOK2
   - name: 'Mannequin.esp'
     tag:
       - Actors.AIData
@@ -1389,10 +1375,7 @@ plugins:
     tag:
       - C.Light
   - name: 'megalight.esp'
-    msg:
-      - type: say
-        content: 'Do not use with latest FOOK2, it is already integrated.'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *integratedInFOOK2 ]
   - name: 'Towers Hill.esp'
     tag:
       - Invent
@@ -1759,48 +1742,30 @@ plugins:
       - Sound
       - Stats
   - name: 'Refurbishes [ALL].esp'
-    msg:
-      - type: say
-        content: 'Do not use with latest FOOK2, it is already integrated.'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *integratedInFOOK2 ]
   - name: 'Refurbish [OA].esp'
     inc:
       - 'Refurbishes [ALL].esp'
-    msg:
-      - type: say
-        content: 'Do not use with latest FOOK2, it is already integrated.'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *integratedInFOOK2 ]
   - name: 'Refurbish [OA] - FWE.esp'
     inc:
       - 'Refurbishes [ALL].esp'
   - name: 'Refurbish [TP].esp'
     inc:
       - 'Refurbishes [ALL].esp'
-    msg:
-      - type: say
-        content: 'Do not use with latest FOOK2, it is already integrated.'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *integratedInFOOK2 ]
   - name: 'Refurbish [BS].esp'
     inc:
       - 'Refurbishes [ALL].esp'
-    msg:
-      - type: say
-        content: 'Do not use with latest FOOK2, it is already integrated.'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *integratedInFOOK2 ]
   - name: 'Refurbish [PL].esp'
     inc:
       - 'Refurbishes [ALL].esp'
-    msg:
-      - type: say
-        content: 'Do not use with latest FOOK2, it is already integrated.'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *integratedInFOOK2 ]
   - name: 'Refurbish [MZ].esp'
     inc:
       - 'Refurbishes [ALL].esp'
-    msg:
-      - type: say
-        content: 'Do not use with latest FOOK2, it is already integrated.'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *integratedInFOOK2 ]
   - name: 'WeaponModKits.esp'
     tag:
       - Actors.AIData
@@ -2054,26 +2019,18 @@ plugins:
       - Relev
   - name: 'BoS_DX.esp'
     msg:
-      - type: say
-        content: 'Do not use with latest FOOK2, it is already integrated.'
-        condition: 'file("FOOK2 - Main.esm")'
+      - *integratedInFOOK2
       - type: say
         content: 'Old. Upgrade to latest version.'
     tag:
       - Graphics
   - name: 'BoSDX.esp'
-    msg:
-      - type: say
-        content: 'Do not use with latest FOOK2, it is already integrated.'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *integratedInFOOK2 ]
     tag:
       - Graphics
   - name: 'WinterizedT51bDX.esp'
     url: [ 'http://www.nexusmods.com/fallout3/mods/6167' ]
-    msg:
-      - type: say
-        content: 'Do not use with latest FOOK2, it is already integrated.'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *integratedInFOOK2 ]
     tag:
       - Graphics
       - Scripts
@@ -2089,28 +2046,19 @@ plugins:
         udr: 0
         nav: 0
   - name: 'Outcast DX.esp'
-    msg:
-      - type: say
-        content: 'Do not use with latest FOOK2, it is already integrated.'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *integratedInFOOK2 ]
     tag:
       - Graphics
   - name: 'Outcast DX - FWE patch.esp'
     tag:
       - Graphics
   - name: 'Tribal_DX.esp'
-    msg:
-      - type: say
-        content: 'Do not use with latest FOOK2, it is already integrated.'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *integratedInFOOK2 ]
     tag:
       - Deflst
       - Graphics
   - name: 'BoS_FOOKedition_Armor.esp'
-    msg:
-      - type: say
-        content: 'Do not use with latest FOOK2, it is already integrated.'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *integratedInFOOK2 ]
     tag:
       - Graphics
   - name: 'Cat Outfit Fanged.esp'
@@ -3339,23 +3287,14 @@ plugins:
       - Sound
       - Stats
   - name: 'Phalanx-MainFollowerModule.esp'
-    msg:
-      - type: say
-        content: 'Do not use with latest FOOK2, it is already integrated.'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *integratedInFOOK2 ]
     tag:
       - Actors.ACBS
       - Actors.AIPackages
   - name: 'Phalanx-BrokenSteel-Integration.esp'
-    msg:
-      - type: say
-        content: 'Do not use with latest FOOK2, it is already integrated.'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *integratedInFOOK2 ]
   - name: 'Phalanx-PointLookout-Integration.esp'
-    msg:
-      - type: say
-        content: 'Do not use with latest FOOK2, it is already integrated.'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *integratedInFOOK2 ]
   - name: 'EVE - FastTravelIndoors Patch.esp'
     msg:
       - type: say
@@ -3403,33 +3342,18 @@ plugins:
   - name: 'Fellout-Full.esp'
     inc:
       - 'Fellout-SOTD.esp'
-    msg:
-      - type: say
-        content: 'Do not use with latest FOOK2, it is already integrated.'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *integratedInFOOK2 ]
   - name: 'Fellout-SOTD.esp'
     inc:
       - 'Either Fellout-Full.esp'
-    msg:
-      - type: say
-        content: 'Do not use with latest FOOK2, it is already integrated.'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *integratedInFOOK2 ]
   - name: 'Fellout-Anchorage.esp'
-    msg:
-      - type: say
-        content: 'Do not use with latest FOOK2, it is already integrated.'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *integratedInFOOK2 ]
   - name: 'Fellout-BrokenSteel.esp'
-    msg:
-      - type: say
-        content: 'Do not use with latest FOOK2, it is already integrated.'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *integratedInFOOK2 ]
   - name: 'Fellout-PointLookout.esp'
     url: [ 'http://www.nexusmods.com/fallout3/mods/2672' ]
-    msg:
-      - type: say
-        content: 'Do not use with latest FOOK2, it is already integrated.'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *integratedInFOOK2 ]
     dirty:
       - crc: 0xf33277f6 # DLC support pack of 29 July 2010
         util: *dirtyUtil # FO3Edit 3.0.32
@@ -3437,10 +3361,7 @@ plugins:
         udr: 0
         nav: 0
   - name: 'Fellout-Zeta.esp'
-    msg:
-      - type: say
-        content: 'Do not use with latest FOOK2, it is already integrated.'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *integratedInFOOK2 ]
   - name: 'FelloutWithLightingOverhual-1.0.esp'
     tag:
       - C.Light
