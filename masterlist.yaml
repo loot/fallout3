@@ -24,6 +24,19 @@ common:
     # Copied from http://www.nexusmods.com/fallout3/mods/12296
     content: 'It is recommended that you DO NOT load this mod in conjunction with FWE, as their alterations will conflict with each other and may cause issues.'
     condition: 'active("FO3 Wanderers Edition - Main File.esm")'
+  - &obsolete
+    type: say
+    content:
+      - lang: en
+        str: 'Obsolete. Update to latest version.'
+      - lang: ru
+        str: 'Устарело. Обновите до последней версии.'
+      - lang: es
+        str: 'Obsoleto. Actualizar a la última versión.'
+      - lang: ko
+        str: '사용되지 않습니다. 최신 버전으로 업데이트하십시오.'
+      - lang: zh_CN
+        str: '已过时。请升级到最新版本。'
   - &UF3Pfile_1_7
     name: 'Unofficial Fallout 3 Patch.esm'
     condition: 'version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
@@ -1132,9 +1145,7 @@ plugins:
     inc:
       - 'ScrapMetal.esp'
       - 'ScrapMetal_H.esp'
-    msg:
-      - type: say
-        content: '"Old, upgrade to ''CreateScrapMetal.esp''."'
+    msg: [ *obsolete ]
     tag:
       - Invent
   - name: 'CreateScrapMetal.esp'
@@ -1331,9 +1342,7 @@ plugins:
     inc:
       - 'DCStreet - BS.esp'
   - name: 'Megaton Walkway.esp'
-    msg:
-      - type: say
-        content: 'Obsolete upgrade to Megaton Walkway 1.01.esp'
+    msg: [ *obsolete ]
   - name: 'megaton_lighting.esp'
     tag:
       - C.Light
@@ -1619,9 +1628,7 @@ plugins:
       - Delev
       - Relev
   - name: 'FO3 Wanderers Edition - FOOK Support.esp'
-    msg:
-      - type: say
-        content: 'Check for updates; you may have the old version installed.'
+    msg: [ *obsolete ]
   - name: 'DarNifiedUIF3_FWE.esp'
     msg: [ *integratedInFWE ]
   - name: 'FO3 Wanderers Edition - Project Beauty (HD Addition).esp'
@@ -2016,8 +2023,7 @@ plugins:
   - name: 'BoS_DX.esp'
     msg:
       - *integratedInFOOK2
-      - type: say
-        content: 'Old. Upgrade to latest version.'
+      - *obsolete
     tag:
       - Graphics
   - name: 'BoSDX.esp'
@@ -2142,9 +2148,9 @@ plugins:
     tag:
       - Relev
   - name: 'LingsFinerThings.esp'
-    msg:
-      - type: say
-        content: 'Obselete, update to the [latest version](http://www.nexusmods.com/fallout3/mods/17631/).'
+    msg: [ *obsolete ]
+    url:
+      - 'http://www.nexusmods.com/fallout3/mods/17631/'
   - name: 'LingsPrettyThings.esp'
     tag:
       - Eyes
@@ -2217,9 +2223,7 @@ plugins:
     tag:
       - Scripts
   - name: 'Improved Turret Hacking.esp'
-    msg:
-      - type: say
-        content: 'Old. Upgrade to latest version.'
+    msg: [ *obsolete ]
   - name: 'Improved Turret Hacking - BASE.esp'
     inc:
       - 'Improved Turret Hacking - ALL.esp'
@@ -2279,25 +2283,19 @@ plugins:
   - name: 'RealFragGrenade.esp'
     inc:
       - 'RealFragGrenade3.esp'
-    msg:
-      - type: say
-        content: 'upgrade to RealFragGrenade3.esp'
+    msg: [ *obsolete ]
   - name: 'RealFragGrenade3.esp'
     inc:
       - 'RealFragGrenade.esp'
   - name: 'Scavenger World - Updated v0.07.esp'
-    msg:
-      - type: say
-        content: 'Outdated, update to v0.08'
+    msg: [ *obsolete ]
     tag:
       - Relev
   - name: 'Scavenger World - Updated v0.08.esp'
     tag:
       - Relev
   - name: 'Scavenger World - FWE Edition v0.07.esp'
-    msg:
-      - type: say
-        content: 'Outdated, update to v0.08'
+    msg: [ *obsolete ]
     tag:
       - Relev
   - name: 'Scavenger World - FWE Edition v0.08.esp'
@@ -2355,17 +2353,11 @@ plugins:
     inc:
       - 'ZORTS - Disable FOOK2 activate.esp'
   - name: 'Zumbs''_Overhauled_Real_Time_Security.esp'
-    msg:
-      - type: say
-        content: 'Please update to latest version.'
+    msg: [ *obsolete ]
   - name: 'Zumbs''_Overhauled_Real_Time_Security_lockbash_only.esp'
-    msg:
-      - type: say
-        content: 'Please update to latest version.'
+    msg: [ *obsolete ]
   - name: 'Zumbs''_Overhauled_Real_Time_Security_minigames_enabled.esp'
-    msg:
-      - type: say
-        content: 'Please update to latest version.'
+    msg: [ *obsolete ]
   - name: 'Replenishment.esp'
     tag:
       - Scripts
@@ -2571,9 +2563,7 @@ plugins:
     tag:
       - Names
   - name: 'EVE Beta_0.9.4.esp'
-    msg:
-      - type: say
-        content: 'Upgrade needed, there is a new version of EVE available.'
+    msg: [ *obsolete ]
   - name: 'EVE.esp'
     tag:
       - Delev
@@ -2587,9 +2577,7 @@ plugins:
       - Graphics
       - Sound
   - name: 'EVE Main - FWE Master Release.esp'
-    msg:
-      - type: say
-        content: 'May cause crashes at start. If so disable this and find updated version.'
+    msg: [ *obsolete ]
   - name: 'EVE - FWE Master Release.esp'
     tag:
       - Actors.ACBS
@@ -2761,9 +2749,7 @@ plugins:
     tag:
       - Relations
   - name: 'Mart''s Mutant Mod - Mutant Mod Menu.esp'
-    msg:
-      - type: say
-        content: 'Obsolete. Update MMM to latest version.'
+    msg: [ *obsolete ]
   - name: 'Mart''s Mutant Mod - Soft Unleveler.esp'
     inc:
       - 'Mart''s Mutant Mod - Soft Unleveler Hardcore.esp'
@@ -3029,9 +3015,7 @@ plugins:
       - Graphics
       - Stats
   - name: 'Fallout 3 Sexus with Children Empire.esp'
-    msg:
-      - type: say
-        content: 'Obsolete. Update to latest version.'
+    msg: [ *obsolete ]
   - name: 'Ghouls Cohabitate.esp'
     tag:
       - ScriptContents
@@ -3373,15 +3357,11 @@ plugins:
     tag:
       - C.Light
   - name: 'URWL47.esp'
-    msg:
-      - type: say
-        content: 'Old. Upgrade to latest version.'
+    msg: [ *obsolete ]
     tag:
       - C.Light
   - name: 'URWL48.esp'
-    msg:
-      - type: say
-        content: 'Old. Upgrade to latest version.'
+    msg: [ *obsolete ]
     tag:
       - C.Light
   - name: 'URWL.esp'
@@ -3619,9 +3599,7 @@ plugins:
       - type: say
         content: 'Choose only one ''Achievement Remover'' ESP.'
   - name: 'DUIF3Extras.esp'
-    msg:
-      - type: say
-        content: 'Obsolete. Update DarNifiedUIF3 to latest version.'
+    msg: [ *obsolete ]
   - name: 'Dog lover''s mod.esp'
     tag:
       - Deflst
@@ -3662,9 +3640,7 @@ plugins:
     tag:
       - Hair
   - name: 'Shojo Race.esp'
-    msg:
-      - type: say
-        content: 'Old. Upgrade to latest version.'
+    msg: [ *obsolete ]
     tag:
       - Eyes
       - Hair
@@ -3848,9 +3824,7 @@ plugins:
       - Graphics
       - Names
   - name: 'Error Fixes V1.2.esp'
-    msg:
-      - type: say
-        content: 'Old version - consider updating'
+    msg: [ *obsolete ]
   - name: 'Error Fixes V1.5.esp'
     msg:
       - type: say
