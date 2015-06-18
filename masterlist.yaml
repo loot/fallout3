@@ -996,25 +996,25 @@ plugins:
     tag:
       - Invent
   - name: 'Lobotomized! 400.esp'
-    msg:
-      - type: say
-        content: 'Only use one Lobotomized! plugin at once'
-        condition: 'file("Lobotomized! 300.esp") or file("Lobotomized! 200.esp") or file("Lobotomized! 100.esp")'
+    inc:
+      - 'Lobotomized! 300.esp'
+      - 'Lobotomized! 200.esp'
+      - 'Lobotomized! 100.esp'
   - name: 'Lobotomized! 300.esp'
-    msg:
-      - type: say
-        content: 'Only use one Lobotomized! plugin at once'
-        condition: 'file("Lobotomized! 400.esp") or file("Lobotomized! 200.esp") or file("Lobotomized! 100.esp")'
+    inc:
+      - 'Lobotomized! 400.esp'
+      - 'Lobotomized! 200.esp'
+      - 'Lobotomized! 100.esp'
   - name: 'Lobotomized! 200.esp'
-    msg:
-      - type: say
-        content: 'Only use one Lobotomized! plugin at once'
-        condition: 'file("Lobotomized! 400.esp") or file("Lobotomized! 300.esp") or file("Lobotomized! 100.esp")'
+    inc:
+      - 'Lobotomized! 400.esp'
+      - 'Lobotomized! 300.esp'
+      - 'Lobotomized! 100.esp'
   - name: 'Lobotomized! 100.esp'
-    msg:
-      - type: say
-        content: 'Only use one Lobotomized! plugin at once'
-        condition: 'file("Lobotomized! 400.esp") or file("Lobotomized! 300.esp") or file("Lobotomized! 200.esp")'
+    inc:
+      - 'Lobotomized! 400.esp'
+      - 'Lobotomized! 300.esp'
+      - 'Lobotomized! 200.esp'
   - name: 'NotSoFast.esp'
     url: [ 'http://www.nexusmods.com/fallout3/mods/4730' ]
     tag:
@@ -1175,15 +1175,8 @@ plugins:
   - name: 'Megaton Sorter.esp'
     req: [ *FOSE ]
   - name: 'D.C. Confidential.esp'
-    msg:
-      - type: say
-        content: '"Choose only one ''D.C. Confidential'' ESP."'
-        condition: 'file("D.C. Confidential with Glow.esp")'
-  - name: 'D.C. Confidential with Glow.esp'
-    msg:
-      - type: say
-        content: '"Choose only one ''D.C. Confidential'' ESP."'
-        condition: 'file("D.C. Confidential.esp")'
+    inc:
+      - 'D.C. Confidential with Glow.esp'
   - name: 'ShadySands.esp'
     tag:
       - Factions
@@ -1335,15 +1328,8 @@ plugins:
     inc:
       - 'ArefuExpandedByAzar.esm'
   - name: 'DCStreet.esp'
-    msg:
-      - type: say
-        content: 'Only use DCStreet.esp or DCStreet - BS.esp - NOT Both'
-        condition: 'file("DCStreet - BS.esp")'
-  - name: 'DCStreet - BS.esp'
-    msg:
-      - type: say
-        content: 'Only use DCStreet.esp or DCStreet - BS.esp - NOT Both'
-        condition: 'file("DCStreet.esp")'
+    inc:
+      - 'DCStreet - BS.esp'
   - name: 'Megaton Walkway.esp'
     msg:
       - type: say
@@ -1820,59 +1806,91 @@ plugins:
       - Names
       - NoMerge
   - name: 'CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp'
-    msg:
-      - type: say
-        content: 'Only use ONE CRAFTable_WMKs esp file'
-        condition: file("CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_skill_requirements_lead_pipe.esp") or file("CRAFTable_WMKs.esp") or file("CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe.esp") or file("CRAFTable_WMKs_skill_req_Amodeus.esp")
+    inc:
+      - 'CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp'
+      - 'CRAFTable_WMKs_skill_requirements_lead_pipe.esp'
+      - 'CRAFTable_WMKs.esp'
+      - 'CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp'
+      - 'CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp'
+      - 'CRAFTable_WMKs_lead_pipe.esp'
+      - 'CRAFTable_WMKs_skill_req_Amodeus.esp'
     tag:
       - Invent
   - name: 'CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp'
-    msg:
-      - type: say
-        content: 'Only use ONE CRAFTable_WMKs esp file'
-        condition: file("CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp") or file("CRAFTable_WMKs_skill_requirements_lead_pipe.esp") or file("CRAFTable_WMKs.esp") or file("CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe.esp") or file("CRAFTable_WMKs_skill_req_Amodeus.esp")
+    inc:
+      - 'CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp'
+      - 'CRAFTable_WMKs_skill_requirements_lead_pipe.esp'
+      - 'CRAFTable_WMKs.esp'
+      - 'CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp'
+      - 'CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp'
+      - 'CRAFTable_WMKs_lead_pipe.esp'
+      - 'CRAFTable_WMKs_skill_req_Amodeus.esp'
     tag:
       - Invent
   - name: 'CRAFTable_WMKs_skill_requirements_lead_pipe.esp'
-    msg:
-      - type: say
-        content: 'Only use ONE CRAFTable_WMKs esp file'
-        condition: file("CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp") or file("CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs.esp") or file("CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe.esp") or file("CRAFTable_WMKs_skill_req_Amodeus.esp")
+    inc:
+      - 'CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp'
+      - 'CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp'
+      - 'CRAFTable_WMKs.esp'
+      - 'CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp'
+      - 'CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp'
+      - 'CRAFTable_WMKs_lead_pipe.esp'
+      - 'CRAFTable_WMKs_skill_req_Amodeus.esp'
     tag:
       - Invent
   - name: 'CRAFTable_WMKs.esp'
-    msg:
-      - type: say
-        content: 'Only use ONE CRAFTable_WMKs esp file'
-        condition: file("CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp") or file("CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_skill_requirements_lead_pipe.esp") or file("CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe.esp") or file("CRAFTable_WMKs_skill_req_Amodeus.esp")
+    inc:
+      - 'CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp'
+      - 'CRAFTable_WMKs_skill_requirements_lead_pipe.esp'
+      - 'CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp'
+      - 'CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp'
+      - 'CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp'
+      - 'CRAFTable_WMKs_lead_pipe.esp'
+      - 'CRAFTable_WMKs_skill_req_Amodeus.esp'
     tag:
       - Invent
   - name: 'CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp'
-    msg:
-      - type: say
-        content: 'Only use ONE CRAFTable_WMKs esp file'
-        condition: file("CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp") or file("CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_skill_requirements_lead_pipe.esp") or file("CRAFTable_WMKs.esp") or file("CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe.esp") or file("CRAFTable_WMKs_skill_req_Amodeus.esp")
+    inc:
+      - 'CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp'
+      - 'CRAFTable_WMKs_skill_requirements_lead_pipe.esp'
+      - 'CRAFTable_WMKs.esp'
+      - 'CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp'
+      - 'CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp'
+      - 'CRAFTable_WMKs_lead_pipe.esp'
+      - 'CRAFTable_WMKs_skill_req_Amodeus.esp'
     tag:
       - Invent
   - name: 'CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp'
-    msg:
-      - type: say
-        content: 'Only use ONE CRAFTable_WMKs esp file'
-        condition: file("CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp") or file("CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_skill_requirements_lead_pipe.esp") or file("CRAFTable_WMKs.esp") or file("CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe.esp") or file("CRAFTable_WMKs_skill_req_Amodeus.esp")
+    inc:
+      - 'CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp'
+      - 'CRAFTable_WMKs_skill_requirements_lead_pipe.esp'
+      - 'CRAFTable_WMKs.esp'
+      - 'CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp'
+      - 'CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp'
+      - 'CRAFTable_WMKs_lead_pipe.esp'
+      - 'CRAFTable_WMKs_skill_req_Amodeus.esp'
     tag:
       - Invent
   - name: 'CRAFTable_WMKs_lead_pipe.esp'
-    msg:
-      - type: say
-        content: 'Only use ONE CRAFTable_WMKs esp file'
-        condition: file("CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp") or file("CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_skill_requirements_lead_pipe.esp") or file("CRAFTable_WMKs.esp") or file("CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp") or file("CRAFTable_WMKs_skill_req_Amodeus.esp")
+    inc:
+      - 'CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp'
+      - 'CRAFTable_WMKs_skill_requirements_lead_pipe.esp'
+      - 'CRAFTable_WMKs.esp'
+      - 'CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp'
+      - 'CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp'
+      - 'CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp'
+      - 'CRAFTable_WMKs_skill_req_Amodeus.esp'
     tag:
       - Invent
   - name: 'CRAFTable_WMKs_skill_req_Amodeus.esp'
-    msg:
-      - type: say
-        content: 'Only use ONE CRAFTable_WMKs esp file'
-        condition: file("CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp") or file("CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_skill_requirements_lead_pipe.esp") or file("CRAFTable_WMKs.esp") or file("CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp") or file("CRAFTable_WMKs_lead_pipe.esp")
+    inc:
+      - 'CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp'
+      - 'CRAFTable_WMKs_skill_requirements_lead_pipe.esp'
+      - 'CRAFTable_WMKs.esp'
+      - 'CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp'
+      - 'CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp'
+      - 'CRAFTable_WMKs_lead_pipe.esp'
+      - 'CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp'
     tag:
       - Invent
   - name: 'T3T_WMK1.esp'
@@ -2040,17 +2058,13 @@ plugins:
     tag:
       - Graphics
   - name: 'Cat Outfit Fanged.esp'
-    msg:
-      - type: say
-        content: 'Use either ''Cat Outfit Fanged.esp'' or ''Cat Outfit Only.esp'', not both.'
-        condition: 'file("Cat Outfit Only.esp")'
+    inc:
+      - 'Cat Outfit Only.esp'
     tag:
       - Eyes
   - name: 'Cat Outfit Only.esp'
-    msg:
-      - type: say
-        content: 'Use either ''Cat Outfit Fanged.esp'' or ''Cat Outfit Only.esp'', not both.'
-        condition: 'file("Cat Outfit Fanged.esp")'
+    inc:
+      - 'Cat Outfit Fanged.esp'
     tag:
       - Eyes
   - name: 'clearhelmets4radsuits.esp'
@@ -2751,13 +2765,8 @@ plugins:
       - type: say
         content: 'Obsolete. Update MMM to latest version.'
   - name: 'Mart''s Mutant Mod - Soft Unleveler.esp'
-    msg:
-      - type: say
-        content: 'Use either ''Soft Unleveler'' or ''Soft Unleveler Hardcore'' but not both.'
-  - name: 'Mart''s Mutant Mod - Soft Unleveler Hardcore.esp'
-    msg:
-      - type: say
-        content: 'Use either ''Soft Unleveler'' or ''Soft Unleveler Hardcore'' but not both.'
+    inc:
+      - 'Mart''s Mutant Mod - Soft Unleveler Hardcore.esp'
   - name: 'Project Beauty- MMM Raiders.esp'
     msg:
       - type: error
@@ -2913,13 +2922,11 @@ plugins:
       - type: say
         content: 'If using MMM, use ''RoadWardensMMM.esp'' instead'
   - name: 'WRWC - Classic Fallout.esp'
-    msg:
-      - type: say
-        content: 'Use one one type of Weapon Restriction while Crippled'
+    inc:
+      - 'WRWC - Right Handed.esp'
   - name: 'WRWC - Right Handed.esp'
-    msg:
-      - type: say
-        content: 'Use one one type of Weapon Restriction while Crippled'
+    inc:
+      - 'WRWC - Classic Fallout.esp'
   - name: 'RI_LootTableRI.esp'
     tag:
       - Delev
@@ -3038,37 +3045,47 @@ plugins:
     inc:
        - 'Inebriation-FOSE.esp'
   - name: 'KillableKids.esp'
-    msg:
-      - type: say
-        content: 'Choose only one ''KillableKids'' ESP.'
+    inc:
+      - 'KillableKidsOptional.esp'
+      - 'KillableKidsNormalHealth.esp'
+      - 'KillableKidsNormalHealthOptional.esp'
+      - 'KillableKidsNoExtras.esp'
   - name: 'KillableKidsOptional.esp'
-    msg:
-      - type: say
-        content: 'Choose only one ''KillableKids'' ESP.'
+    inc:
+      - 'KillableKids.esp'
+      - 'KillableKidsNormalHealth.esp'
+      - 'KillableKidsNormalHealthOptional.esp'
+      - 'KillableKidsNoExtras.esp'
   - name: 'KillableKidsNormalHealth.esp'
-    msg:
-      - type: say
-        content: 'Choose only one ''KillableKids'' ESP.'
+    inc:
+      - 'KillableKidsOptional.esp'
+      - 'KillableKids.esp'
+      - 'KillableKidsNormalHealthOptional.esp'
+      - 'KillableKidsNoExtras.esp'
   - name: 'KillableKidsNormalHealthOptional.esp'
-    msg:
-      - type: say
-        content: 'Choose only one ''KillableKids'' ESP.'
+    inc:
+      - 'KillableKidsOptional.esp'
+      - 'KillableKidsNormalHealth.esp'
+      - 'KillableKids.esp'
+      - 'KillableKidsNoExtras.esp'
   - name: 'KillableKidsNoExtras.esp'
-    msg:
-      - type: say
-        content: 'Choose only one ''KillableKids'' ESP.'
+    inc:
+      - 'KillableKidsOptional.esp'
+      - 'KillableKidsNormalHealth.esp'
+      - 'KillableKidsNormalHealthOptional.esp'
+      - 'KillableKids.esp'
   - name: 'AttackableBrats.esp'
-    msg:
-      - type: say
-        content: 'Choose only one ''Brats'' ESP.'
+    inc:
+      - 'KillableBrats.esp'
+      - 'BadAssBrats.esp'
   - name: 'KillableBrats.esp'
-    msg:
-      - type: say
-        content: 'Choose only one ''Brats'' ESP.'
+    inc:
+      - 'AttackableBrats.esp'
+      - 'BadAssBrats.esp'
   - name: 'BadAssBrats.esp'
-    msg:
-      - type: say
-        content: 'Choose only one ''Brats'' ESP.'
+    inc:
+      - 'KillableBrats.esp'
+      - 'AttackableBrats.esp'
   - name: 'Kill and Loot Unconscious Essential NPCs.esp'
     inc:
       - 'Kill and Loot Unconscious Essential NPCs_NoGore.esp'
