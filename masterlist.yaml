@@ -4637,3 +4637,11 @@ plugins:
       - crc: 0xA1FEB067
         util: *dirtyUtil
         itm: 1
+  - name: 'Elgar's Extra Random Encounters.esp'
+    dirty:
+      - crc: 0x6FBCB8B4
+        itm: 218
+  - name: 'DLC Enemies Freedom.esp'
+    dirty:
+      - crc: 0x971497C7
+        itm: 21
