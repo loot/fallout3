@@ -4635,6 +4635,7 @@ plugins:
   - name: 'RH_IronSights_Basic_BrokenSteelPlugin.esp'
     dirty:
       - crc: 0xA1FEB067
+        util: *dirtyUtil
         itm: 1
   - name: 'Elgar's Extra Random Encounters.esp'
     dirty:
