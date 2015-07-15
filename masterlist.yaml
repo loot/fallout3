@@ -4033,8 +4033,7 @@ plugins:
         nav: 0
   - name: 'Binoculars.esp'
     url:
-      - link: 'http://www.nexusmods.com/fallout3/mods/8909'
-        ver: [ '2.0' ]
+      - 'http://www.nexusmods.com/fallout3/mods/8909'
     # 'Binoculars and Scopes.esp' is an older version of the mod.
     after: [ 'Binoculars and Scopes.esp' ]
     inc: [ 'Binoculars and Scopes.esp' ]
@@ -4193,8 +4192,7 @@ plugins:
   - name: Dree Perks.esp
     # The Paradox Ignition version is known to have the CRC 0x25D3F8CA
     url:
-      - link: 'http://www.nexusmods.com/fallout3/mods/16787'
-        ver: [ 'Paradox Ignition presents The Mergers version' ]
+      - 'http://www.nexusmods.com/fallout3/mods/16787'
     tag:
       - name: Delev
         condition: checksum("Dree Perks.esp", 25D3F8CA)
