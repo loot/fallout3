@@ -37,6 +37,17 @@ common:
         str: '사용되지 않습니다. 최신 버전으로 업데이트하십시오.'
       - lang: zh_CN
         str: '已过时。请升级到最新版本。'
+  - &doNotClean
+    type: say
+    content:
+      - lang: en
+        str: 'Do not clean ITM records, they are intentional and required for the mod to function. It is safe to undelete records, but do not do anything other than that.'
+      - lang: ru
+        str: 'Не очищать. "Грязные" правки оставлены специально и требуются для функционирования мода.'
+      - lang: es
+        str: 'No limpiar las referencias ITM (iguales al master), ya que son intencionales y necesarias para que el Mod funcione. Sí es seguro restaurar las UDR (referencias borradas), pero no haga más que eso.'
+      - lang: zh_CN
+        str: '不干净。"脏"数据是故意的，这是mod需要的功能。'
   - &UF3Pfile_1_7
     name: 'Unofficial Fallout 3 Patch.esm'
     condition: 'version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
@@ -1310,9 +1321,17 @@ plugins:
   - name: 'MTC Wasteland Travellers (Optional)- Crowded Cities less NPCs.esp'
     inc:
       - 'MTC Wasteland Travellers (Optional)- Crowded Cities.esp'
+    dirty:
+      - crc: 0x0E577EE9
+        util: *dirtyUtil
+        itm: 19
   - name: 'MTC Wasteland Travellers (Optional)- Crowded Cities.esp'
     inc:
       - 'MTC Wasteland Travellers (Optional)- Crowded Cities less NPCs.esp'
+    dirty:
+      - crc: 0x0E577EE9
+        util: *dirtyUtil
+        itm: 23
   - name: 'Outcast Scribes03.esp'
     inc:
       - 'OutcastCasdinArmorFix.esp'
@@ -2731,6 +2750,10 @@ plugins:
       - Relations
       - Relev
       - Scripts
+    dirty:
+      - crc: 0xCB6A4B5F
+        util: *dirtyUtil
+        itm: 9
   - name: 'Mart''s Mutant Mod - Tougher Traders.esp'
     url: [ 'http://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
@@ -4647,3 +4670,28 @@ plugins:
       - crc: 0x971497C7
         util: *dirtyUtil
         itm: 21
+  - name: 'Imperfection.esm'
+    dirty:
+      - crc: 0x219AE3E2
+        util: *dirtyUtil
+        itm: 24
+        udr: 7
+  - name: 'Blackened MMM + EVE + Project Beauty.esp'
+    msg: [ *doNotClean ]
+  - name: 'MTC Wasteland Travellers.esp'
+    dirty:
+      - crc: 0x0A7E3339
+        util: *dirtyUtil
+        itm: 55
+  - name: 'MoreMapMarkers.esp'
+    dirty:
+      - crc: 0xB7F1FA75
+        util: *dirtyUtil
+        itm: 289
+        udr: 1
+  - name: 'RideableCreature.esp'
+    dirty:
+      - crc: 0xB59D8ADE
+        util: *dirtyUtil
+        itm: 4
+        udr: 1
