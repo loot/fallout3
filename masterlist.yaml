@@ -69,8 +69,7 @@ common:
     condition: 'file("FO3 Wanderers Edition - Main File.esm")'
 
 # Other strings
-  - &dirtyUtil
-    '[FO3Edit](http://www.nexusmods.com/fallout3/mods/637)'
+  - &dirtyUtil '[FO3Edit](http://www.nexusmods.com/fallout3/mods/637)'
 
 globals:
   - type: say
