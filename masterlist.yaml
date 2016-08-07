@@ -1,17 +1,17 @@
 common:
 # Files
   - &FOSE
-    name: '..\fose_loader.exe'
+    name: '../fose_loader.exe'
     display: '[FOSE](http://fose.silverlock.org/)'
 
 # Unofficial Fallout 3 Patch
   - &AlreadyInUF3Pmsg
     - lang: en
-      str: 'Delete. Already included or otherwise fixed in Unofficial Fallout 3 Patch.esm.'
+      text: 'Delete. Already included or otherwise fixed in Unofficial Fallout 3 Patch.esm.'
     - lang: ru
-      str: 'Удалите. Уже включено в Unofficial Fallout 3 Patch.esm.'
+      text: 'Удалите. Уже включено в Unofficial Fallout 3 Patch.esm.'
     - lang: es
-      str: 'Borrar. Esta incluido en Unofficial Fallout 3 Patch.esm.'
+      text: 'Borrar. Esta incluido en Unofficial Fallout 3 Patch.esm.'
   - &integratedInFOOK2
     type: say
     content: 'Do not use with latest FOOK2, it is already integrated.'
@@ -28,26 +28,26 @@ common:
     type: say
     content:
       - lang: en
-        str: 'Obsolete. Update to latest version.'
+        text: 'Obsolete. Update to latest version.'
       - lang: ru
-        str: 'Устарело. Обновите до последней версии.'
+        text: 'Устарело. Обновите до последней версии.'
       - lang: es
-        str: 'Obsoleto. Actualizar a la última versión.'
+        text: 'Obsoleto. Actualizar a la última versión.'
       - lang: ko
-        str: '사용되지 않습니다. 최신 버전으로 업데이트하십시오.'
+        text: '사용되지 않습니다. 최신 버전으로 업데이트하십시오.'
       - lang: zh_CN
-        str: '已过时。请升级到最新版本。'
+        text: '已过时。请升级到最新版本。'
   - &doNotClean
     type: say
     content:
       - lang: en
-        str: 'Do not clean ITM records, they are intentional and required for the mod to function. It is safe to undelete records, but do not do anything other than that.'
+        text: 'Do not clean ITM records, they are intentional and required for the mod to function. It is safe to undelete records, but do not do anything other than that.'
       - lang: ru
-        str: 'Не очищать. "Грязные" правки оставлены специально и требуются для функционирования мода.'
+        text: 'Не очищать. "Грязные" правки оставлены специально и требуются для функционирования мода.'
       - lang: es
-        str: 'No limpiar las referencias ITM (iguales al master), ya que son intencionales y necesarias para que el Mod funcione. Sí es seguro restaurar las UDR (referencias borradas), pero no haga más que eso.'
+        text: 'No limpiar las referencias ITM (iguales al master), ya que son intencionales y necesarias para que el Mod funcione. Sí es seguro restaurar las UDR (referencias borradas), pero no haga más que eso.'
       - lang: zh_CN
-        str: '不干净。"脏"数据是故意的，这是mod需要的功能。'
+        text: '不干净。"脏"数据是故意的，这是mod需要的功能。'
   - &UF3Pfile_1_7
     name: 'Unofficial Fallout 3 Patch.esm'
     condition: 'version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
@@ -68,8 +68,10 @@ common:
     content: 'Included in FWE - Not Required'
     condition: 'file("FO3 Wanderers Edition - Main File.esm")'
 
-# Other strings
-  - &dirtyUtil '[FO3Edit](http://www.nexusmods.com/fallout3/mods/637)'
+# Cleaning data
+  - &dirtyPlugin
+    utility: '[TES5Edit](http://www.nexusmods.com/skyrim/mods/25859)'
+    info: 'A cleaning guide is available [here](http://www.creationkit.com/index.php?title=TES5Edit_Cleaning_Guide_-_TES5Edit).'
 
 bash_tags:
   - 'Deflst'
@@ -82,110 +84,110 @@ globals:
   - type: say
     content:
       - lang: en
-        str: '[Latest LOOT thread](%1%).'
+        text: '[Latest LOOT thread](%1%).'
       - lang: ru
-        str: '[Обсуждение LOOT "(Eng)"](%1%).'
+        text: '[Обсуждение LOOT "(Eng)"](%1%).'
       - lang: es
-        str: '[Forum de LOOT](%1%).'
+        text: '[Forum de LOOT](%1%).'
       - lang: ko
-        str: '[최신 LOOT 스레드](%1%).'
+        text: '[최신 LOOT 스레드](%1%).'
       - lang: zh_CN
-        str: '[最新的LOOT版本](%1%)。'
+        text: '[最新的LOOT版本](%1%)。'
     subs: [ 'https://loot.github.io/latest-thread/' ]
 # FOSE plugins
   # Fallout Stutter Remover: http://www.nexusmods.com/fallout3/mods/8886
   - type: warn
-    condition: 'file("FOSE\Plugins\sr_Fallout_Stutter_Remover.dll") and not file("..\fose_loader.exe")'
+    condition: 'file("FOSE/Plugins/sr_Fallout_Stutter_Remover.dll") and not file("../fose_loader.exe")'
     content:
       - lang: en
-        str: 'You have installed Fallout Stutter Remover but FOSE was not found! See [FOSE download page](http://fose.silverlock.org/).'
+        text: 'You have installed Fallout Stutter Remover but FOSE was not found! See [FOSE download page](http://fose.silverlock.org/).'
       - lang: ru
-        str: 'У вас установлен Fallout Stutter Remover, но FOSE не найден! Смотрите страницу загрузки [FOSE](http://fose.silverlock.org/).'
+        text: 'У вас установлен Fallout Stutter Remover, но FOSE не найден! Смотрите страницу загрузки [FOSE](http://fose.silverlock.org/).'
       - lang: es
-        str: 'Tienes Fallout Stutter Remover instalado pero FOSE no se pudo encontrar! Por favor [descarga FOSE](http://fose.silverlock.org/).'
+        text: 'Tienes Fallout Stutter Remover instalado pero FOSE no se pudo encontrar! Por favor [descarga FOSE](http://fose.silverlock.org/).'
   # NVAC: http://www.nexusmods.com/newvegas/mods/53635
   - type: warn
-    condition: 'file("NVSE\Plugins\nvac.dll")'
-    content: 'NVAC is installed under "NVSE\Plugins" but needs to be moved to "FOSE\Plugins" for FOSE to pick it up for Fallout 3.'
+    condition: 'file("NVSE/Plugins/nvac.dll")'
+    content: 'NVAC is installed under "NVSE/Plugins" but needs to be moved to "FOSE/Plugins" for FOSE to pick it up for Fallout 3.'
   - type: warn
-    condition: 'file("FOSE\Plugins\nvac.dll") and not file("..\fose_loader.exe")'
+    condition: 'file("FOSE/Plugins/nvac.dll") and not file("../fose_loader.exe")'
     content:
       - lang: en
-        str: 'You have installed New Vegas Anti Crash but FOSE was not found! See [FOSE download page](http://fose.silverlock.org/).'
+        text: 'You have installed New Vegas Anti Crash but FOSE was not found! See [FOSE download page](http://fose.silverlock.org/).'
       - lang: ru
-        str: 'У вас установлен New Vegas Anti Crash, но FOSE не найден! Смотрите страницу загрузки [FOSE](http://fose.silverlock.org/).'
+        text: 'У вас установлен New Vegas Anti Crash, но FOSE не найден! Смотрите страницу загрузки [FOSE](http://fose.silverlock.org/).'
       - lang: es
-        str: 'Tienes New Vegas Anti Crash instalado pero FOSE no se pudo encontrar! Por favor [descarga FOSE](http://fose.silverlock.org/).'
+        text: 'Tienes New Vegas Anti Crash instalado pero FOSE no se pudo encontrar! Por favor [descarga FOSE](http://fose.silverlock.org/).'
   - type: say
-    condition: 'file("FOSE\Plugins\nvac.dll") and version("FOSE\Plugins\nvac.dll", "7.1.0.0", <)'
+    condition: 'file("FOSE/Plugins/nvac.dll") and version("FOSE/Plugins/nvac.dll", "7.1.0.0", <)'
     content:
       - lang: en
-        str: 'It appears you do not have the [latest version of NVAC - New Vegas Anti Crash](http://www.nexusmods.com/newvegas/mods/53635).'
+        text: 'It appears you do not have the [latest version of NVAC - New Vegas Anti Crash](http://www.nexusmods.com/newvegas/mods/53635).'
       - lang: ru
-        str: 'Возможно, что вы используете НЕ [самую последнюю версию NVAC - New Vegas Anti Crash](http://www.nexusmods.com/newvegas/mods/53635).'
+        text: 'Возможно, что вы используете НЕ [самую последнюю версию NVAC - New Vegas Anti Crash](http://www.nexusmods.com/newvegas/mods/53635).'
       - lang: es
-        str: 'Parece que no tienes la última versión de NVAC - New Vegas Anti Crash. la nueva versión se puede encontrar [aquí](http://www.nexusmods.com/newvegas/mods/53635).'
+        text: 'Parece que no tienes la última versión de NVAC - New Vegas Anti Crash. la nueva versión se puede encontrar [aquí](http://www.nexusmods.com/newvegas/mods/53635).'
   - type: say
-    condition: 'not version("FOSE\Plugins\nvac.dll", "7.1.0.0", <)'
+    condition: 'not version("FOSE/Plugins/nvac.dll", "7.1.0.0", <)'
     content:
       - lang: en
-        str: 'Your NVAC - New Vegas Anti Crash is up-to-date.'
+        text: 'Your NVAC - New Vegas Anti Crash is up-to-date.'
       - lang: ru
-        str: 'Ваш NVAC - New Vegas Anti Crash имеет последнюю версию.'
+        text: 'Ваш NVAC - New Vegas Anti Crash имеет последнюю версию.'
       - lang: es
-        str: 'Tienes la última versión de NVAC - New Vegas Anti Crash.'
+        text: 'Tienes la última versión de NVAC - New Vegas Anti Crash.'
 # FOSE Latest
   - type: say
-    condition: 'file("..\fose_loader.exe") and version("..\fose_loader.exe", "0.1.2.2", <)'
+    condition: 'file("../fose_loader.exe") and version("../fose_loader.exe", "0.1.2.2", <)'
     content:
       - lang: en
-        str: 'It appears you do not have the [latest version of FOSE](http://fose.silverlock.org). Some mods may require functionality added in the latest version of FOSE to work.'
+        text: 'It appears you do not have the [latest version of FOSE](http://fose.silverlock.org). Some mods may require functionality added in the latest version of FOSE to work.'
       - lang: ru
-        str: 'Возможно, что вы используете НЕ [самую последнюю версию FOSE](http://fose.silverlock.org). Для работы некоторых модов может требоваться функционал, добавленный в последнюю версию FOSE.'
+        text: 'Возможно, что вы используете НЕ [самую последнюю версию FOSE](http://fose.silverlock.org). Для работы некоторых модов может требоваться функционал, добавленный в последнюю версию FOSE.'
       - lang: es
-        str: 'Parece que no tienes la última versión de FOSE. la nueva versión se puede encontrar [aquí](http://fose.silverlock.org/).'
+        text: 'Parece que no tienes la última versión de FOSE. la nueva versión se puede encontrar [aquí](http://fose.silverlock.org/).'
   - type: say
-    condition: 'not version("..\fose_loader.exe", "0.1.2.2", <)'
+    condition: 'not version("../fose_loader.exe", "0.1.2.2", <)'
     content:
       - lang: en
-        str: 'Your FOSE is up-to-date.'
+        text: 'Your FOSE is up-to-date.'
       - lang: ru
-        str: 'Ваш FOSE имеет последнюю версию.'
+        text: 'Ваш FOSE имеет последнюю версию.'
       - lang: es
-        str: 'Tienes la última versión de FOSE.'
+        text: 'Tienes la última versión de FOSE.'
 
 plugins:
   - name: 'anchorage.esm'
-    priority: -400999000
+    global_priority: -120
     dirty:
-      - util: *dirtyUtil # FO3Edit 3.0.32
+      - <<: *dirtyPlugin # FO3Edit 3.0.32
         crc: 0xa4ba9d10 # Version 0.94
         itm: 54
         udr: 10
   - name: 'thepitt.esm'
-    priority: -400999000
+    global_priority: -120
     after:
       - 'anchorage.esm'
     dirty:
-      - util: *dirtyUtil # FO3Edit 3.0.32
+      - <<: *dirtyPlugin # FO3Edit 3.0.32
         crc: 0xb38b3e44 # Version 0.94
         itm: 40
         udr: 0
         nav: 5
   - name: 'StreetLights.esm'
-    priority: -400999000
+    global_priority: -120
     after:
       - 'thepitt.esm'
       - 'anchorage.esm'
     msg: [ *integratedInFOOK2 ]
     dirty:
       - crc: 0xC5690E8E # Version 2.0
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 18
         udr: 0
         nav: 0
   - name: 'BrokenSteel.esm'
-    priority: -400999000
+    global_priority: -120
     after:
       - 'thepitt.esm'
       - 'anchorage.esm'
@@ -198,26 +200,26 @@ plugins:
       - Factions
       - Stats
     dirty:
-      - util: *dirtyUtil # FO3Edit 3.0.32
+      - <<: *dirtyPlugin # FO3Edit 3.0.32
         crc: 0x30011b79 # Version 0.94
         itm: 275
         udr: 34
         nav: 12
   - name: 'pointlookout.esm'
-    priority: -400999000
+    global_priority: -120
     after:
       - 'thepitt.esm'
       - 'anchorage.esm'
       - 'StreetLights.esm'
       - 'BrokenSteel.esm'
     dirty:
-      - util: *dirtyUtil # FO3Edit 3.0.32
+      - <<: *dirtyPlugin # FO3Edit 3.0.32
         crc: 0xd92704d8 # Version 0.94
         itm: 21
         udr: 0
         nav: 0
   - name: 'zeta.esm'
-    priority: -400999000
+    global_priority: -120
     after:
       - 'thepitt.esm'
       - 'anchorage.esm'
@@ -225,13 +227,13 @@ plugins:
       - 'BrokenSteel.esm'
       - 'pointlookout.esm'
     dirty:
-      - util: *dirtyUtil # FO3Edit 3.0.32
+      - <<: *dirtyPlugin # FO3Edit 3.0.32
         crc: 0x1d017e23 # Version 0.94
         itm: 15
         udr: 0
         nav: 0
   - name: 'Unofficial Fallout 3 Patch.esm'
-    priority: -400999000
+    global_priority: -120
     after:
       - 'thepitt.esm'
       - 'anchorage.esm'
@@ -411,7 +413,7 @@ plugins:
       - Stats
     dirty:
       - crc: 0x9C986068
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 13
         udr: 0
         nav: 0
@@ -424,7 +426,7 @@ plugins:
     msg:
       - type: warn
         content: 'This mod requires resources from [RH_IronSights](http://www.nexusmods.com/fallout3/mods/6938), please see the mod''s readme.'
-        condition: 'not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")'
+        condition: 'not file("meshes/Characters/_1stperson.nif") or not file("meshes/Characters/_male.nif")'
     tag:
       - Graphics
       - Names
@@ -439,7 +441,7 @@ plugins:
       - Scripts
     dirty:
       - crc: 0x9695F2A1
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 77
         udr: 0
         nav: 0
@@ -451,7 +453,7 @@ plugins:
     req: [ *FOSE ]
     dirty:
       - crc: 0xe363b7d7
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 9
         udr: 0
         nav: 0
@@ -459,7 +461,7 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout3/mods/712' ]
     dirty:
       - crc: 0x6f02e35
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 2
         udr: 0
         nav: 0
@@ -472,7 +474,7 @@ plugins:
       - Sound
     dirty:
       - crc: 0x80ACEA99
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 13
         udr: 0
         nav: 0
@@ -483,7 +485,7 @@ plugins:
       - Invent
     dirty:
       - crc: 0x81581FCA
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 209
         udr: 54
         nav: 16
@@ -511,7 +513,7 @@ plugins:
       - 'DCInteriors_Takoma.esm'
     dirty:
       - crc: 0xF85A5358
-        util: *dirtyUtil #FO3Edit 3.0.32
+        <<: *dirtyPlugin #FO3Edit 3.0.32
         itm: 48
         udr: 0
         nav: 0
@@ -557,7 +559,7 @@ plugins:
       - Relations
     dirty:
       - crc: 0x43E23B19
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 181
         udr: 20
         nav: 3
@@ -571,7 +573,7 @@ plugins:
       - Inven
     dirty:
       - crc: 0xBA4ABFE7
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 0
         udr: 1
         nav: 0
@@ -579,7 +581,7 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout3/mods/13308' ]
     dirty:
       - crc: 0x848d8679
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 33
         udr: 9
         nav: 2
@@ -588,20 +590,20 @@ plugins:
 
   - name: 'FireLightFix.esp'
     url: [ 'http://www.nexusmods.com/fallout3/mods/3660' ]
-    priority: -300990000
+    global_priority: -110
     inc: [ 'FireLightFix_rus.esp' ]
     msg: [ *AlreadyInUF3P ]
     tag:
       - C.Light
     dirty:
       - crc: 0x482C04B2 # Version 2.0.0.9.b (5 February 2009)
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 2
         udr: 4
         nav: 0
   - name: 'FireLightFix_rus.esp'
     url: [ 'http://www.nexusmods.com/fallout3/mods/3660' ]
-    priority: -300990000
+    global_priority: -110
     inc: [ 'FireLightFix.esp' ]
     after: [ 'FireLightFix.esp' ]
     msg: [ *AlreadyInUF3P ]
@@ -609,17 +611,17 @@ plugins:
       - C.Light
     dirty:
       - crc: 0xED54E353 # Version 2.0.0.9.b (5 February 2009)
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 2
         udr: 4
         nav: 0
   - name: 'FO3 Error Fixes.esp'
     url: [ 'http://www.nexusmods.com/fallout3/mods/16490' ]
-    priority: -300990000
+    global_priority: -110
     msg: [ *AlreadyInUF3P ]
   - name: 'ObjectPlacementFix.esp'
     url: [ 'http://www.nexusmods.com/fallout3/mods/15600' ]
-    priority: -300990000
+    global_priority: -110
     inc: [ 'ObjectPlacementFix.esm' ]
     msg:
       - *AlreadyInUF3P_1_7
@@ -641,30 +643,30 @@ plugins:
       - Names
       - NoMerge
   - name: 'Unofficial Fallout 3 Patch - Operation Anchorage.esp'
-    priority: -400998000
+    global_priority: -115
     tag:
       - Deflst
       - Names
   - name: 'Unofficial Fallout 3 Patch - The Pitt.esp'
-    priority: -400998000
+    global_priority: -115
     tag:
       - Deflst
       - Names
   - name: 'Unofficial Fallout 3 Patch - Broken Steel.esp'
-    priority: -400998000
+    global_priority: -115
     tag:
       - Deflst
       - Names
       - NoMerge
   - name: 'Unofficial Fallout 3 Patch - Point Lookout.esp'
-    priority: -400998000
+    global_priority: -115
     tag:
       - Deflst
       - Invent
       - Names
       - Stats
   - name: 'Unofficial Fallout 3 Patch - Mothership Zeta.esp'
-    priority: -400998000
+    global_priority: -115
     tag:
       - Deflst
       - Names
@@ -1010,7 +1012,7 @@ plugins:
       - Scripts
     dirty:
       - crc: 0xB633DB19
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 0
         udr: 0
         nav: 1
@@ -1020,7 +1022,7 @@ plugins:
       - Scripts
     dirty:
       - crc: 0x4D6AE42B
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 7
         udr: 0
         nav: 0
@@ -1053,7 +1055,7 @@ plugins:
       - Scripts
     dirty:
       - crc: 0xFFF16D14
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 0
         udr: 29
         nav: 0
@@ -1093,7 +1095,7 @@ plugins:
         condition: 'active("FO3 Wanderers Edition - Main File.esm")'
     dirty:
       - crc: 0x663DDF02
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 0
         udr: 11
         nav: 0
@@ -1101,7 +1103,7 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout3/mods/12296' ]
     dirty:
       - crc: 0xBC544F07
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 17
         udr: 0
         nav: 0
@@ -1116,7 +1118,7 @@ plugins:
     msg: [ *MantisImperativeFWEWarning ]
     dirty:
       - crc: 0xDD2E48B1
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 1
         udr: 0
         nav: 0
@@ -1331,14 +1333,14 @@ plugins:
       - 'MTC Wasteland Travellers (Optional)- Crowded Cities.esp'
     dirty:
       - crc: 0x0E577EE9
-        util: *dirtyUtil
+        <<: *dirtyPlugin
         itm: 19
   - name: 'MTC Wasteland Travellers (Optional)- Crowded Cities.esp'
     inc:
       - 'MTC Wasteland Travellers (Optional)- Crowded Cities less NPCs.esp'
     dirty:
       - crc: 0x0E577EE9
-        util: *dirtyUtil
+        <<: *dirtyPlugin
         itm: 23
   - name: 'Outcast Scribes03.esp'
     inc:
@@ -1517,7 +1519,7 @@ plugins:
       - Stats
     dirty:
       - crc: 0x01982EC9
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 15
         udr: 0
         nav: 0
@@ -1531,7 +1533,7 @@ plugins:
       - Deflst
     dirty:
       - crc: 0xD6AA0D05
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 3
         udr: 0
         nav: 0
@@ -1539,7 +1541,7 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout3/mods/2761' ]
     dirty:
       - crc: 0x9226281C
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 14
         udr: 0
         nav: 0
@@ -1550,7 +1552,7 @@ plugins:
       - Relev
     dirty:
       - crc: 0xB63AAA64
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 23
         udr: 0
         nav: 0
@@ -1560,7 +1562,7 @@ plugins:
       - Names
     dirty:
       - crc: 0xBFF37246
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 1
         udr: 0
         nav: 0
@@ -1615,7 +1617,7 @@ plugins:
       - Actors.Stats
     dirty:
       - crc: 0x88F5A264
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 6
         udr: 0
         nav: 0
@@ -1629,7 +1631,7 @@ plugins:
       - 'FO3 Wanderers Edition - Optional No Fast Travel.esp'
     dirty:
       - crc: 0x9876E38C
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 3
         udr: 1
         nav: 0
@@ -1646,7 +1648,7 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout3/mods/2761' ]
     dirty:
       - crc: 0x1B66E394
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 1
         udr: 0
         nav: 0
@@ -1675,7 +1677,7 @@ plugins:
         content: 'Outdated. Update to latest version of FWE - Combat Overhaul.'
       - type: warn
         content: 'This mod requires resources from [RH_IronSights](http://www.nexusmods.com/fallout3/mods/6938), please see the mod''s readme.'
-        condition: 'not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")'
+        condition: 'not file("meshes/Characters/_1stperson.nif") or not file("meshes/Characters/_male.nif")'
     tag:
       - Actors.ACBS
       - Deflst
@@ -1696,7 +1698,7 @@ plugins:
         content: 'Outdated. Update to latest version of FWE - Combat Overhaul.'
       - type: warn
         content: 'This mod requires resources from [RH_IronSights](http://www.nexusmods.com/fallout3/mods/6938), please see the mod''s readme.'
-        condition: 'not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")'
+        condition: 'not file("meshes/Characters/_1stperson.nif") or not file("meshes/Characters/_male.nif")'
   - name: 'FWE_Overhaul Kit - Equipment .esp'
     inc:
       - 'EVE.esm'
@@ -1707,7 +1709,7 @@ plugins:
         content: 'Outdated. Update to latest version of FWE - Combat Overhaul.'
       - type: warn
         content: 'This mod requires resources from [RH_IronSights](http://www.nexusmods.com/fallout3/mods/6938), please see the mod''s readme.'
-        condition: 'not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")'
+        condition: 'not file("meshes/Characters/_1stperson.nif") or not file("meshes/Characters/_male.nif")'
     tag:
       - Actors.ACBS
       - Deflst
@@ -1727,7 +1729,7 @@ plugins:
     msg:
       - type: warn
         content: 'This mod requires resources from [RH_IronSights](http://www.nexusmods.com/fallout3/mods/6938), please see the mod''s readme.'
-        condition: 'not file("meshes\Characters\_1stperson.nif") or not file("meshes\Characters\_male.nif")'
+        condition: 'not file("meshes/Characters/_1stperson.nif") or not file("meshes/Characters/_male.nif")'
     tag:
       - Actors.ACBS
       - Deflst
@@ -1783,7 +1785,7 @@ plugins:
       - Relev
     dirty:
       - crc: 0x25042115
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 82
         udr: 0
         nav: 0
@@ -2065,12 +2067,12 @@ plugins:
       - Scripts
     dirty:
       - crc: 0x1D21BEE9
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 1
         udr: 0
         nav: 0
       - crc: 0xB32FD263
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 3
         udr: 0
         nav: 0
@@ -2645,7 +2647,7 @@ plugins:
       - Scripts
     dirty:
       - crc: 0xf2b3a052
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 41
         udr: 0
         nav: 0
@@ -2684,7 +2686,7 @@ plugins:
       - Scripts
     dirty:
       - crc: 0x4489C0D6
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 2
         udr: 0
         nav: 0
@@ -2700,7 +2702,7 @@ plugins:
       - Scripts
     dirty:
       - crc: 0xCEBFCDBC
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 2
         udr: 0
         nav: 0
@@ -2760,7 +2762,7 @@ plugins:
       - Scripts
     dirty:
       - crc: 0xCB6A4B5F
-        util: *dirtyUtil
+        <<: *dirtyPlugin
         itm: 9
   - name: 'Mart''s Mutant Mod - Tougher Traders.esp'
     url: [ 'http://www.nexusmods.com/fallout3/mods/3211' ]
@@ -3348,7 +3350,7 @@ plugins:
     msg: [ *integratedInFOOK2 ]
     dirty:
       - crc: 0xf33277f6 # DLC support pack of 29 July 2010
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 1
         udr: 0
         nav: 0
@@ -3446,7 +3448,7 @@ plugins:
       - C.Climate
     dirty:
       - crc: 0x691323EB
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 13
         udr: 0
         nav: 0
@@ -3501,7 +3503,7 @@ plugins:
       - 'Xepha''s Dynamic Weather - Weather Machine (Start Game Added).esp'
     dirty:
       - crc: 0x21C258F6
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 2
         udr: 0
         nav: 1
@@ -3543,7 +3545,7 @@ plugins:
       - Invent
     dirty:
       - crc: 0x189A679D
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 11
         udr: 0
         nav: 0
@@ -3553,7 +3555,7 @@ plugins:
       - Invent
     dirty:
       - crc: 0xF569054A
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 4
         udr: 0
         nav: 0
@@ -3600,7 +3602,7 @@ plugins:
     url: [ 'http://www.gamefront.com/files/21184005/20th_centuary_weapons_5.12_with_addons.7z' ]
     dirty:
       - crc: 0x4F5CCD2C
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 3
         udr: 0
         nav: 0
@@ -3702,7 +3704,7 @@ plugins:
     inc: [ 'RobCo Certified v2 Omnipatch.esp' ]
     dirty:
       - crc: 0x7e827a3
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 2
         udr: 0
         nav: 0
@@ -3710,7 +3712,7 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout3/mods/712' ]
     dirty:
       - crc: 0x37145cc8
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 1
         udr: 0
         nav: 0
@@ -3718,7 +3720,7 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout3/mods/712' ]
     dirty:
       - crc: 0x9c938fce
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 2
         udr: 0
         nav: 0
@@ -3907,7 +3909,7 @@ plugins:
       - 'Chinese Stealth Suit- Removable Helmet.esp'
     dirty:
       - crc: 0xecf23f # "3EFhelmless 2nd", per 1 February 2009
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 9
         udr: 1
         nav: 0
@@ -3957,7 +3959,7 @@ plugins:
       - Stats
     dirty:
       - crc: 0xDBF185AA
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 474
         udr: 1
         nav: 0
@@ -3976,7 +3978,7 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout3/mods/15686' ]
     dirty:
       - crc: 0x283EAF75
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 6
         udr: 0
         nav: 0
@@ -3988,7 +3990,7 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout3/mods/15686' ]
     dirty:
       - crc: 0x9B1EFE6B
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 4
         udr: 0
         nav: 0
@@ -3996,7 +3998,7 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout3/mods/15686' ]
     dirty:
       - crc: 0x675E86E8
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 0
         udr: 39
         nav: 0
@@ -4008,12 +4010,12 @@ plugins:
         condition: 'checksum("ArlingtonRestoration.esp",7644FFDB)'
     dirty:
       - crc: 0x7644FFDB # Version 1.0
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 11
         udr: 481
         nav: 7
       - crc: 0xBB8568ED # Version 1.0.1
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 0
         udr: 0
         nav: 7
@@ -4024,7 +4026,7 @@ plugins:
       - 'Big Town Overhaul [GangStore].esp'
     dirty:
       - crc: 0x31E2D0E2
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 41
         udr: 684
         nav: 0
@@ -4035,7 +4037,7 @@ plugins:
       - 'Big Town Overhaul.esp'
     dirty:
       - crc: 0x563db400
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 53
         udr: 684
         nav: 0
@@ -4047,7 +4049,7 @@ plugins:
     inc: [ 'Binoculars and Scopes.esp' ]
     dirty:
       - crc: 0x5a50fe32 # Version 2.0
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 15
         udr: 2
         nav: 0
@@ -4058,14 +4060,14 @@ plugins:
       - type: say
         content:
           - lang: en
-            str: 'Obsolete. Update to [latest version](http://www.nexusmods.com/fallout3/mods/8909).'
+            text: 'Obsolete. Update to [latest version](http://www.nexusmods.com/fallout3/mods/8909).'
           - lang: ru
-            str: 'Устарело. Обновите до [последней версии](http://www.nexusmods.com/fallout3/mods/8909).'
+            text: 'Устарело. Обновите до [последней версии](http://www.nexusmods.com/fallout3/mods/8909).'
           - lang: es
-            str: 'Obsoleto. Actualizar a la [última versión](http://www.nexusmods.com/fallout3/mods/8909).'
+            text: 'Obsoleto. Actualizar a la [última versión](http://www.nexusmods.com/fallout3/mods/8909).'
     dirty:
       - crc: 0x30f58333 # Version 1.2
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 6
         udr: 2
         nav: 0
@@ -4080,7 +4082,7 @@ plugins:
       - Scripts
     dirty:
       - crc: 0xD8BB74F2
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 2
         udr: 0
         nav: 0
@@ -4103,7 +4105,7 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout3/mods/18220' ]
     dirty:
       - crc: 0xab095a45
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 2
         udr: 0
         nav: 0
@@ -4113,7 +4115,7 @@ plugins:
       - Relev
     dirty:
       - crc: 0xC01A90C2
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 6
         udr: 0
         nav: 0
@@ -4121,7 +4123,7 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout3/mods/18639' ]
     dirty:
       - crc: 0x9AB2CF5E
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 2
         udr: 0
         nav: 0
@@ -4133,7 +4135,7 @@ plugins:
       - Relations
     dirty:
       - crc: 0x3D8ABED8
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 181
         udr: 20
         nav: 3
@@ -4157,7 +4159,7 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout3/mods/5253' ]
     dirty:
       - crc: 0xD5DAF34E
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 2
         udr: 0
         nav: 0
@@ -4167,7 +4169,7 @@ plugins:
       - Scripts
     dirty:
       - crc: 0xE818B262
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 1
         udr: 0
         nav: 0
@@ -4177,7 +4179,7 @@ plugins:
       - Scripts
     dirty:
       - crc: 0x776851A3
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 2
         udr: 0
         nav: 0
@@ -4196,7 +4198,7 @@ plugins:
       - type: say
         # Copied from the mod's Nexus page:
         content: '"[The] camo-swapping system will only work if you have [FOSE](http://fose.silverlock.org/) installed. Users without FOSE can still use the mod as normal - but the camo-swapping system will simply not work until/unless FOSE is installed (and a message will appear saying as much)."'
-        condition: 'not file("..\fose_loader.exe")'
+        condition: 'not file("../fose_loader.exe")'
   - name: Dree Perks.esp
     # The Paradox Ignition version is known to have the CRC 0x25D3F8CA
     url:
@@ -4210,7 +4212,7 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout3/mods/6005' ]
     dirty:
       - crc: 0x949faf2c
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 3
         udr: 0
         nav: 0
@@ -4226,7 +4228,7 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout3/mods/5612' ]
     dirty:
       - crc: 0x0E5309DA
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 0
         udr: 0
         nav: 1
@@ -4256,7 +4258,7 @@ plugins:
         content: 'In addition to identical-to-master records, this mod also includes several dirty edits in the form of changes to e.g., lighting and water level values. Consider using another mod to do what this does.'
     dirty:
       - crc: 0x42953e9a # Version 1.0 (9 July 2009)
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 6
         udr: 0
         nav: 0
@@ -4325,7 +4327,7 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout3/mods/17939' ]
     dirty:
       - crc: 0xE7BC4BEB
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 20
         udr: 716
         nav: 0
@@ -4355,14 +4357,14 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout3/mods/16160' ]
     dirty:
       - crc: 0xD8A75C40
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 2
         udr: 0
         nav: 0
   - name: 'Loki_HistoricSpeeches_v1.esp'
     url: [ 'http://www.nexusmods.com/fallout3/mods/14476' ]
     dirty:
-      - util: *dirtyUtil # FO3Edit 3.0.32
+      - <<: *dirtyPlugin # FO3Edit 3.0.32
         crc: 0x21340b32 # Version 1.0
         itm: 3
         udr: 0
@@ -4384,7 +4386,7 @@ plugins:
     tag: [ Names ]
     dirty:
       - crc: 0xC061B97B
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 0
         udr: 8
         nav: 0
@@ -4395,7 +4397,7 @@ plugins:
   - name: 'People_Radio.esp'
     url: [ 'http://www.nexusmods.com/fallout3/mods/5021' ]
     dirty:
-      - util: *dirtyUtil # FO3Edit 3.0.32
+      - <<: *dirtyPlugin # FO3Edit 3.0.32
         crc: 0x839a113b # Beta version 0.1
         itm: 3
         udr: 0
@@ -4418,7 +4420,7 @@ plugins:
       - Relev
     dirty:
       - crc: 0xE3EF4366
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 1
         udr: 56
         nav: 0
@@ -4426,7 +4428,7 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout3/mods/13361' ]
     dirty:
       - crc: 0x0D43A04E
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 2
         udr: 0
         nav: 0
@@ -4436,7 +4438,7 @@ plugins:
       - Stats
     dirty:
       - crc: 0x8B401D77
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 1
         udr: 0
         nav: 0
@@ -4444,7 +4446,7 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout3/mods/13361' ]
     dirty:
       - crc: 0xBC734E8B
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 2
         udr: 0
         nav: 0
@@ -4454,7 +4456,7 @@ plugins:
       - Relev
     dirty:
       - crc: 0xD1635385
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 1
         udr: 0
         nav: 0
@@ -4471,7 +4473,7 @@ plugins:
     inc: [ 'RadioTenpennyTower.esp' ]
     dirty:
       - crc: 0xF7ECA8BD # Version 1.0 (23 June 2009)
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 7
         udr: 0
         nav: 0
@@ -4480,7 +4482,7 @@ plugins:
     inc: [ 'RadioTenpenny.esp' ]
     dirty:
       - crc: 0x813140D8 # Version 1.0 (9 February 2009)
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 3
         udr: 0
         nav: 0
@@ -4492,7 +4494,7 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout3/mods/8769' ]
     dirty:
       - crc: 0x51c3dd7a
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 4
         udr: 0
         nav: 0
@@ -4504,7 +4506,7 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout3/mods/19242' ]
     dirty:
       - crc: 0xE4A3C388
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 34
         udr: 167
         nav: 0
@@ -4521,7 +4523,7 @@ plugins:
       - Scripts
     dirty:
       - crc: 0x27BEA633
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 336
         udr: 13
         nav: 7
@@ -4529,7 +4531,7 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout3/mods/17939' ]
     dirty:
       - crc: 0x98fd9bed
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 14
         udr: 16
         nav: 0
@@ -4537,7 +4539,7 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout3/mods/18668' ]
     dirty:
       - crc: 0x32EAC10D
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 351
         udr: 1
         nav: 0
@@ -4558,7 +4560,7 @@ plugins:
   - name: 'X-1_Tales_of_Wonder!.esp'
     url: [ 'http://www.nexusmods.com/fallout3/mods/17672' ]
     dirty:
-      - util: *dirtyUtil # FO3Edit 3.0.32
+      - <<: *dirtyPlugin # FO3Edit 3.0.32
         crc: 0xc8b56e69 # Version 1.0
         itm: 4
         udr: 0
@@ -4569,7 +4571,7 @@ plugins:
       - Stats
     dirty:
       - crc: 0xE4D428D7
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 7
         udr: 0
         nav: 0
@@ -4579,7 +4581,7 @@ plugins:
       - Stats
     dirty:
       - crc: 0xB7146642
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 6
         udr: 0
         nav: 0
@@ -4589,7 +4591,7 @@ plugins:
       - Stats
     dirty:
       - crc: 0x3B754C8B
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 11
         udr: 0
         nav: 0
@@ -4599,7 +4601,7 @@ plugins:
       - Stats
     dirty:
       - crc: 0x1141EE84
-        util: *dirtyUtil # FO3Edit 3.0.32
+        <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 11
         udr: 0
         nav: 0
@@ -4619,19 +4621,19 @@ plugins:
 
   ### Load Late-section
   - name: 'Merged.esp'
-    priority: 400991000
+    global_priority: 110
     tag:
       - NoMerge
   - name: 'Merged Patch.esp'
-    priority: 400991000
+    global_priority: 110
     tag:
       - NoMerge
   - name: 'FO3Merged.esp'
-    priority: 400991000
+    global_priority: 110
     tag:
       - NoMerge
   - name: 'Bashed Patch, 0.esp'
-    priority: 400991000
+    global_priority: 110
     after:
       - 'Merged.esp'
       - 'Merged Patch.esp'
@@ -4639,47 +4641,47 @@ plugins:
   - name: 'Clarity.esp'
     dirty:
       - crc: 0xA9B7F199
-        util: *dirtyUtil
+        <<: *dirtyPlugin
         itm: 1
   - name: 'RH_IronSights_Basic_AnchoragePlugin.esp'
     dirty:
       - crc: 0x7EF88F51
-        util: *dirtyUtil
+        <<: *dirtyPlugin
         itm: 1
   - name: 'RH_EVE_Bridge.esp'
     dirty:
       - crc: 0x06239EB2
-        util: *dirtyUtil
+        <<: *dirtyPlugin
         itm: 3
   - name: 'RH_IronSights_Basic_ZetaPlugin.esp'
     dirty:
       - crc: 0x9449EB44
-        util: *dirtyUtil
+        <<: *dirtyPlugin
         itm: 5
   - name: 'RH_IronSights_Basic_PittPlugin.esp'
     dirty:
       - crc: 0xF4974E27
-        util: *dirtyUtil
+        <<: *dirtyPlugin
         itm: 1
   - name: 'RH_IronSights_Basic_BrokenSteelPlugin.esp'
     dirty:
       - crc: 0xA1FEB067
-        util: *dirtyUtil
+        <<: *dirtyPlugin
         itm: 1
   - name: 'Elgar''s Extra Random Encounters.esp'
     dirty:
       - crc: 0x6FBCB8B4
-        util: *dirtyUtil
+        <<: *dirtyPlugin
         itm: 218
   - name: 'DLC Enemies Freedom.esp'
     dirty:
       - crc: 0x971497C7
-        util: *dirtyUtil
+        <<: *dirtyPlugin
         itm: 21
   - name: 'Imperfection.esm'
     dirty:
       - crc: 0x219AE3E2
-        util: *dirtyUtil
+        <<: *dirtyPlugin
         itm: 24
         udr: 7
   - name: 'Blackened MMM + EVE + Project Beauty.esp'
@@ -4687,17 +4689,17 @@ plugins:
   - name: 'MTC Wasteland Travellers.esp'
     dirty:
       - crc: 0x0A7E3339
-        util: *dirtyUtil
+        <<: *dirtyPlugin
         itm: 55
   - name: 'MoreMapMarkers.esp'
     dirty:
       - crc: 0xB7F1FA75
-        util: *dirtyUtil
+        <<: *dirtyPlugin
         itm: 289
         udr: 1
   - name: 'RideableCreature.esp'
     dirty:
       - crc: 0xB59D8ADE
-        util: *dirtyUtil
+        <<: *dirtyPlugin
         itm: 4
         udr: 1
