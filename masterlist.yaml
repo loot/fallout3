@@ -70,8 +70,8 @@ common:
 
 # Cleaning data
   - &dirtyPlugin
-    utility: '[TES5Edit](http://www.nexusmods.com/skyrim/mods/25859)'
-    info: 'A cleaning guide is available [here](http://www.creationkit.com/index.php?title=TES5Edit_Cleaning_Guide_-_TES5Edit).'
+    utility: '[FO3Edit](http://www.nexusmods.com/fallout3/mods/637)'
+    info: ''
 
 bash_tags:
   - 'Deflst'
