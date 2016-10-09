@@ -590,7 +590,7 @@ plugins:
 
   - name: 'FireLightFix.esp'
     url: [ 'http://www.nexusmods.com/fallout3/mods/3660' ]
-    global_priority: -110
+    global_priority: -90
     inc: [ 'FireLightFix_rus.esp' ]
     msg: [ *AlreadyInUF3P ]
     tag:
@@ -603,7 +603,7 @@ plugins:
         nav: 0
   - name: 'FireLightFix_rus.esp'
     url: [ 'http://www.nexusmods.com/fallout3/mods/3660' ]
-    global_priority: -110
+    global_priority: -90
     inc: [ 'FireLightFix.esp' ]
     after: [ 'FireLightFix.esp' ]
     msg: [ *AlreadyInUF3P ]
@@ -617,11 +617,11 @@ plugins:
         nav: 0
   - name: 'FO3 Error Fixes.esp'
     url: [ 'http://www.nexusmods.com/fallout3/mods/16490' ]
-    global_priority: -110
+    global_priority: -90
     msg: [ *AlreadyInUF3P ]
   - name: 'ObjectPlacementFix.esp'
     url: [ 'http://www.nexusmods.com/fallout3/mods/15600' ]
-    global_priority: -110
+    global_priority: -90
     inc: [ 'ObjectPlacementFix.esm' ]
     msg:
       - *AlreadyInUF3P_1_7
@@ -643,30 +643,30 @@ plugins:
       - Names
       - NoMerge
   - name: 'Unofficial Fallout 3 Patch - Operation Anchorage.esp'
-    global_priority: -115
+    global_priority: -100
     tag:
       - Deflst
       - Names
   - name: 'Unofficial Fallout 3 Patch - The Pitt.esp'
-    global_priority: -115
+    global_priority: -100
     tag:
       - Deflst
       - Names
   - name: 'Unofficial Fallout 3 Patch - Broken Steel.esp'
-    global_priority: -115
+    global_priority: -100
     tag:
       - Deflst
       - Names
       - NoMerge
   - name: 'Unofficial Fallout 3 Patch - Point Lookout.esp'
-    global_priority: -115
+    global_priority: -100
     tag:
       - Deflst
       - Invent
       - Names
       - Stats
   - name: 'Unofficial Fallout 3 Patch - Mothership Zeta.esp'
-    global_priority: -115
+    global_priority: -100
     tag:
       - Deflst
       - Names
@@ -4621,19 +4621,19 @@ plugins:
 
   ### Load Late-section
   - name: 'Merged.esp'
-    global_priority: 110
+    global_priority: 80
     tag:
       - NoMerge
   - name: 'Merged Patch.esp'
-    global_priority: 110
+    global_priority: 80
     tag:
       - NoMerge
   - name: 'FO3Merged.esp'
-    global_priority: 110
+    global_priority: 80
     tag:
       - NoMerge
   - name: 'Bashed Patch, 0.esp'
-    global_priority: 110
+    global_priority: 80
     after:
       - 'Merged.esp'
       - 'Merged Patch.esp'
