@@ -70,7 +70,7 @@ common:
 
 # Cleaning data
   - &dirtyPlugin
-    utility: '[FO3Edit](http://www.nexusmods.com/fallout3/mods/637)'
+    util: '[FO3Edit](http://www.nexusmods.com/fallout3/mods/637)'
     info: ''
 
 bash_tags:
