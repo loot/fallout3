@@ -4573,7 +4573,9 @@ plugins:
         udr: 0
         nav: 0
   - name: 'ZL-MP5 Pack.esp'
-    url: [ 'http://www.nexusmods.com/fallout3/mods/5431' ]
+    url:
+      - 'http://www.nexusmods.com/fallout3/mods/5431'
+      - 'http://www.nexusmods.com/fallout3/mods/17749/'
     tag:
       - Stats
     dirty:
@@ -4582,6 +4584,13 @@ plugins:
         itm: 6
         udr: 0
         nav: 0
+      - crc: 0xcd453ee7
+        <<: *dirtyPlugin
+        itm: 6
+    msg:
+      - type: say
+        content: 'ZL-MP5 Pack.esp from [KDS Zealotlee MP5 With Ironsights](http://www.nexusmods.com/fallout3/mods/17749/) is preferred when using RH_Ironsights'
+        condition: 'active("RH_IRONSIGHTS.esm") and (checksum("ZL-MP5 Pack.esp", 022E817B) or checksum("ZL-MP5 Pack.esp", 022E817B))'
   - name: 'ZL-SVD.esp'
     url: [ 'http://www.nexusmods.com/fallout3/mods/3759' ]
     tag:
