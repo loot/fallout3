@@ -4217,10 +4217,10 @@ plugins:
     url: [ 'http://www.nexusmods.com/fallout3/mods/15724' ]
     req:
       - *FOSE
-    # TODO: Make this say more intelligent - ie., check whether MTUI or DarnUI is installed.
-    msg:
-      - type: say
-        content: 'Be sure to use the MTUI or Darnified UI version if you are using one of those.'
+    inc:
+      - 'DarNifiedUIF3.esp'
+      - name: 'Textures/MTUI'
+        display: 'MTUI'
   - name: 'Existence2.0.esp'
     url: [ 'http://www.nexusmods.com/fallout3/mods/5612' ]
     dirty:
