@@ -4563,7 +4563,9 @@ plugins:
         udr: 0
         nav: 0
   - name: 'ZL-ACR.esp'
-    url: [ 'http://www.nexusmods.com/fallout3/mods/11611' ]
+    url:
+      - 'http://www.nexusmods.com/fallout3/mods/11611'
+      - 'http://www.nexusmods.com/fallout3/mods/17748/'
     tag:
       - Stats
     dirty:
@@ -4572,6 +4574,13 @@ plugins:
         itm: 7
         udr: 0
         nav: 0
+      - crc: 0xE94AC8C2
+        <<: *dirtyPlugin
+        itm: 7
+    msg:
+      - type: say
+        content: ZL-ACR.esp from [KDS Zealotlee ACR with Ironsights](http://www.nexusmods.com/fallout3/mods/17748/) is preferred when using RH_Ironsights, or alternatively the version in the Zealotlee Adaptive Combat Rifle Script Bugfix mod can be used.
+        condition: active("RH_IRONSIGHTS.esm") and checksum("ZL-ACR.esp", E4D428D7)
   - name: 'ZL-MP5 Pack.esp'
     url:
       - 'http://www.nexusmods.com/fallout3/mods/5431'
