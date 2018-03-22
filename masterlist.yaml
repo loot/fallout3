@@ -162,11 +162,17 @@ groups:
   - name: &fixesGroup Fixes
     after: [ *uf4pGroup ]
 
-  - name: default
+  - name: &fastTravelIndoorsGroup Fast Travel Indoors
     after: [ *fixesGroup ]
 
-  - name: &dynamicPatchesGroup Dynamic Patches
+  - name: default
+    after: [ *fastTravelIndoorsGroup ]
+
+  - name: &overridesGroup Overrides
     after: [ default ]
+
+  - name: &dynamicPatchesGroup Dynamic Patches
+    after: [ *overridesGroup ]
 
 plugins:
   - name: 'anchorage.esm'
@@ -1011,9 +1017,7 @@ plugins:
     tag:
       - Scripts
   - name: 'RadioHotkey.esp'
-    priority: 1
-  - name: 'RadioHotkey_RadioBluesAddon.esp'
-    priority: 1
+    group: *overridesGroup
   - name: 'Despicable Dashwood v2.esp'
     tag:
       - Actors.ACBS
@@ -4250,7 +4254,7 @@ plugins:
       - *FOSE
   - name: 'FasterMorePowerfulMines.esp'
     url: [ 'http://www.nexusmods.com/fallout3/mods/5630' ]
-    priority: 100
+    group: *overridesGroup
     tag:
       - Stats
   - name: 'FasterWaiting.esp'
@@ -4259,11 +4263,11 @@ plugins:
       - *FOSE
   - name: 'fasttravelfromindoors.esp'
     url: [ 'http://www.nexusmods.com/fallout3/mods/15108' ]
-    priority: -100 # Low priority as it only does non-content changes to cells
+    group: *fastTravelIndoorsGroup # It only does non-content changes to cells
     inc: [ 'FastTravelIndoors.esp' ]
   - name: 'FastTravelIndoors.esp'
     url: [ 'http://www.nexusmods.com/fallout3/mods/7624' ]
-    priority: -100 # Low priority as it only does non-content changes to cells
+    group: *fastTravelIndoorsGroup # It only does non-content changes to cells
     inc: [ 'fasttravelfromindoors.esp' ]
     msg:
       - type: warn
@@ -4426,7 +4430,7 @@ plugins:
       - Stats
   - name: 'PLFewerItems.esp'
     url: [ 'http://www.nexusmods.com/fallout3/mods/7268' ]
-    priority: 100
+    group: *overridesGroup
     tag:
       - Delev
       - Relev
