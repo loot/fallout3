@@ -182,6 +182,15 @@ plugins:
         crc: 0xa4ba9d10 # Version 0.94
         itm: 54
         udr: 10
+        nav: 0
+      - <<: *dirtyPlugin # FO3Edit 3.2.1
+        crc: 0xA17537F9 # Version GOG 0.94
+        itm: 54
+        udr: 10
+        nav: 0
+    clean:
+      - crc: 0x0E23F2EE # Version GOG 0.94
+        util: FO3Edit 3.2.1
   - name: 'thepitt.esm'
     group: *dlcGroup
     after:
@@ -192,6 +201,14 @@ plugins:
         itm: 40
         udr: 0
         nav: 5
+      - <<: *dirtyPlugin # FO3Edit 3.2.1
+        crc: 0x1533A8BE # Version GOG 0.94
+        itm: 39
+        udr: 4
+        nav: 5
+    clean:
+      - crc: 0xDD37EC11 # Version GOG 0.94
+        util: FO3Edit 3.2.1
   - name: 'StreetLights.esm'
     group: *dlcGroup
     after:
@@ -223,6 +240,14 @@ plugins:
         itm: 275
         udr: 34
         nav: 12
+      - <<: *dirtyPlugin # FO3Edit 3.2.1
+        crc: 0xA4AE55B2 # Version GOG 0.94
+        itm: 267
+        udr: 34
+        nav: 12
+    clean:
+      - crc: 0xC6315349 # Version GOG 0.94
+        util: FO3Edit 3.2.1
   - name: 'pointlookout.esm'
     group: *dlcGroup
     after:
@@ -236,6 +261,14 @@ plugins:
         itm: 21
         udr: 0
         nav: 0
+      - <<: *dirtyPlugin # FO3Edit 3.2.1
+        crc: 0xFFF434D0 # Version GOG 0.94
+        itm: 21
+        udr: 0
+        nav: 0
+    clean:
+      - crc: 0x58BAC54E # Version GOG 0.94
+        util: FO3Edit 3.2.1
   - name: 'zeta.esm'
     group: *dlcGroup
     after:
@@ -250,6 +283,14 @@ plugins:
         itm: 15
         udr: 0
         nav: 0
+      - <<: *dirtyPlugin # FO3Edit 3.2.1
+        crc: 0xC5ADF13F # Version GOG 0.94
+        itm: 14
+        udr: 0
+        nav: 0
+    clean:
+      - crc: 0xD90EF484 # Version GOG 0.94
+        util: FO3Edit 3.2.1
   - name: 'Unofficial Fallout 3 Patch.esm'
     group: *uf4pGroup
     after:
