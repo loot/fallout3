@@ -1318,6 +1318,16 @@ plugins:
     tag:
       - Destructible
       - Scripts
+  - name: 'Destructable Building Materials 3000 Beta v1.5 (PITT REQUIRED).esp'
+    msg:
+      - type: warn
+        content: 'Choose only one of Error Fixes V1.5.esp or Error Fixes V1.5 - Higher FPS.esp, not both.'
+        condition: 'file("Destructable Building Materials 3000 Beta v1.5.esp")'
+  - name: 'Destructable Building Materials 3000 Beta v1.5.esp'
+    msg:
+      - type: warn
+        content: 'Choose only one of Error Fixes V1.5.esp or Error Fixes V1.5 - Higher FPS.esp, not both.'
+        condition: 'file("Destructable Building Materials 3000 Beta v1.5 (PITT REQUIRED).esp")'
   - name: 'Classic Fallout Weapons BETA.esp'
     tag:
       - Invent
