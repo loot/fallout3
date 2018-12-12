@@ -71,7 +71,13 @@ common:
 # Cleaning data
   - &dirtyPlugin
     util: '[FO3Edit](https://www.nexusmods.com/fallout3/mods/637)'
-    info: ''
+    info: 'A cleaning guide is available [here](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#Apendix-B).'
+  - &quickClean
+    util: '[FO3Edit](https://www.nexusmods.com/fallout3/mods/637) **Quick Auto Clean**'
+    info: 'A guide for running **Quick Auto Clean** can be found [here](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#quickautoclean).'
+  - &reqManualFix
+    util: '[FO3Edit](https://www.nexusmods.com/fallout3/mods/637) **Quick Auto Clean**'
+    info: 'A guide for running **Quick Auto Clean** can be found [here](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#quickautoclean). It is strongly recommended not to use mods that contain **Deleted navmeshes** as they''re known to cause crashes. **Deleted navmeshes** must be corrected manually. More information on **Deleted navmeshes** is provided [here](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#Apendix-A).'
 
 bash_tags:
   - 'Deflst'
@@ -178,37 +184,32 @@ plugins:
   - name: 'anchorage.esm'
     group: *dlcGroup
     dirty:
-      - <<: *dirtyPlugin # FO3Edit 3.0.32
-        crc: 0xa4ba9d10 # Version 0.94
-        itm: 54
+      # version: 1.7.0.3
+      - <<: *quickClean
+        crc: 0xA4BA9D10
+        util: '[FO3Edit v4.0.0](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 55
         udr: 10
-        nav: 0
-      - <<: *dirtyPlugin # FO3Edit 3.2.1
-        crc: 0xA17537F9 # Version GOG 0.94
-        itm: 54
-        udr: 10
-        nav: 0
+      # version: 1.7.0.3, before second pass of cleaning.
+      - <<: *quickClean
+        crc: 0x1BB2684E
+        util: '[FO3Edit v4.0.0](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 3
     clean:
-      - crc: 0x0E23F2EE # Version GOG 0.94
-        util: FO3Edit 3.2.1
+      # version: 1.7.0.3
+      - crc: 0x557B5854
+        util: 'FO3Edit v4.0.0'
   - name: 'thepitt.esm'
     group: *dlcGroup
     after:
       - 'anchorage.esm'
     dirty:
-      - <<: *dirtyPlugin # FO3Edit 3.0.32
-        crc: 0xb38b3e44 # Version 0.94
-        itm: 40
-        udr: 0
+      # version: 1.7.0.3
+      - <<: *quickClean
+        crc: 0xB38B3E44
+        util: '[FO3Edit v4.0.0](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 53
         nav: 5
-      - <<: *dirtyPlugin # FO3Edit 3.2.1
-        crc: 0x1533A8BE # Version GOG 0.94
-        itm: 39
-        udr: 4
-        nav: 5
-    clean:
-      - crc: 0xDD37EC11 # Version GOG 0.94
-        util: FO3Edit 3.2.1
   - name: 'StreetLights.esm'
     group: *dlcGroup
     after:
@@ -235,19 +236,19 @@ plugins:
       - Factions
       - Stats
     dirty:
-      - <<: *dirtyPlugin # FO3Edit 3.0.32
-        crc: 0x30011b79 # Version 0.94
-        itm: 275
+      # version: 1.7.0.3
+      - <<: *quickClean
+        crc: 0x30011B79
+        util: '[FO3Edit v4.0.0](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 276
         udr: 34
         nav: 12
-      - <<: *dirtyPlugin # FO3Edit 3.2.1
-        crc: 0xA4AE55B2 # Version GOG 0.94
-        itm: 267
-        udr: 34
+      # version: 1.7.0.3, before second pass of cleaning.
+      - <<: *quickClean
+        crc: 0x1AC4D764
+        util: '[FO3Edit v4.0.0](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 3
         nav: 12
-    clean:
-      - crc: 0xC6315349 # Version GOG 0.94
-        util: FO3Edit 3.2.1
   - name: 'pointlookout.esm'
     group: *dlcGroup
     after:
@@ -256,19 +257,15 @@ plugins:
       - 'StreetLights.esm'
       - 'BrokenSteel.esm'
     dirty:
-      - <<: *dirtyPlugin # FO3Edit 3.0.32
-        crc: 0xd92704d8 # Version 0.94
+      # version: 1.7.0.3
+      - <<: *quickClean
+        crc: 0xD92704D8
+        util: '[FO3Edit v4.0.0](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 21
-        udr: 0
-        nav: 0
-      - <<: *dirtyPlugin # FO3Edit 3.2.1
-        crc: 0xFFF434D0 # Version GOG 0.94
-        itm: 21
-        udr: 0
-        nav: 0
     clean:
-      - crc: 0x58BAC54E # Version GOG 0.94
-        util: FO3Edit 3.2.1
+      # version: 1.7.0.3
+      - crc: 0xFB43FA4D
+        util: 'FO3Edit v4.0.0'
   - name: 'zeta.esm'
     group: *dlcGroup
     after:
@@ -278,19 +275,15 @@ plugins:
       - 'BrokenSteel.esm'
       - 'pointlookout.esm'
     dirty:
-      - <<: *dirtyPlugin # FO3Edit 3.0.32
-        crc: 0x1d017e23 # Version 0.94
+      # version: 1.7.0.3
+      - <<: *quickClean
+        crc: 0x1D017E23
+        util: '[FO3Edit v4.0.0](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 15
-        udr: 0
-        nav: 0
-      - <<: *dirtyPlugin # FO3Edit 3.2.1
-        crc: 0xC5ADF13F # Version GOG 0.94
-        itm: 14
-        udr: 0
-        nav: 0
     clean:
-      - crc: 0xD90EF484 # Version GOG 0.94
-        util: FO3Edit 3.2.1
+      # version: 1.7.0.3
+      - crc: 0x5DACDA77
+        util: 'FO3Edit v4.0.0'
   - name: 'Unofficial Fallout 3 Patch.esm'
     group: *uf4pGroup
     after:
