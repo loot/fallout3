@@ -9,9 +9,9 @@ common:
     - lang: en
       text: 'Delete. Already included or otherwise fixed in Unofficial Fallout 3 Patch.esm.'
     - lang: ru
-      text: 'Удалите. Уже включено в Unofficial Fallout 3 Patch.esm.'
+      text: 'Удалите. Уже включено в Unofficial Fallout 3 Patch.esm или исправлено иным образом.'
     - lang: es
-      text: 'Borrar. Esta incluido en Unofficial Fallout 3 Patch.esm.'
+      text: 'Borrar. Esta incluido, o de otra modo, arreglado en el Unofficial Fallout 3 Patch.esm.'
   - &integratedInFOOK2
     type: say
     content: 'Do not use with latest FOOK2, it is already integrated.'
