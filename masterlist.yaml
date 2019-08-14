@@ -2869,40 +2869,52 @@ plugins:
     tag:
       - Actors.CombatStyle
   - name: 'Mart''s Mutant Mod - No Abominable Mutants.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Relev
   - name: 'Mart''s Mutant Mod - No Corpse Flies.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Relev
   - name: 'Mart''s Mutant Mod - No Floaters.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Relev
   - name: 'Mart''s Mutant Mod - No Geckos.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Relev
   - name: 'Mart''s Mutant Mod - No Iguanas.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Relev
   - name: 'Mart''s Mutant Mod - No Stalker Creatures.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Relev
   - name: 'Mart''s Mutant Mod - No Wanamingos.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Relev
   - name: 'Mart''s Mutant Mod - Feral Ghoul Rampage.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Relev
   - name: 'Mart''s Mutant Mod - Increased Increased Spawns.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Relev
   - name: 'Mart''s Mutant Mod - Increased Spawns.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Relev
   - name: 'Mart''s Mutant Mod - Reduced Wasteland Spawns.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Delev
       - Relev
   - name: 'Mart''s Mutant Mod - Zones Respawn.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     msg:
       - *AlreadyInFWE
     tag:
@@ -2926,6 +2938,7 @@ plugins:
         content: 'Fallout 3 Wanderers Edition has an alternate approach to protecting traders that is a little weaker but might be sufficient.'
         condition: 'file("FO3 Wanderers Edition - Main File.esm")'
   - name: 'Mart''s Mutant Mod - Natural Selection.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     msg:
       - *AlreadyInFWE
     tag:
@@ -2933,6 +2946,7 @@ plugins:
   - name: 'Mart''s Mutant Mod - Mutant Mod Menu.esp'
     msg: [ *obsolete ]
   - name: 'Mart''s Mutant Mod - Soft Unleveler.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     inc:
       - 'Mart''s Mutant Mod - Soft Unleveler Hardcore.esp'
   - name: 'Project Beauty- MMM Raiders.esp'
@@ -2941,6 +2955,7 @@ plugins:
         content: 'Old. Download the latest Project Beauty files.'
         condition: 'file("FOOK2 - Main.esm")'
   - name: 'Mart''s Mutant Mod - Project Beauty.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
     tag:
       - NoMerge
       - NPC.Race
@@ -2966,12 +2981,15 @@ plugins:
         content: 'Get FOOK2'
         condition: 'file("FOOK2 - Main.esm")'
   - name: 'Mart''s Mutant Mod - FOOK2.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
     tag:
       - Relations
   - name: 'Mart''s Mutant Mod - FOOK2 - DIK.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
     tag:
       - Relations
   - name: 'Mart''s Mutant Mod - FWE Master Release.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
     tag:
       - Invent
       - Relations
@@ -2980,11 +2998,13 @@ plugins:
       - Names
       - NoMerge
   - name: 'Mart''s Mutant Mod - FWE Master Release + DLCs.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
     tag:
       - Invent
       - Relations
       - Scripts
   - name: 'Mart''s Mutant Mod - FWE Master Release + Project Beauty.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
     tag:
       - NoMerge
       - NPC.Race
