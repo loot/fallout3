@@ -1065,9 +1065,11 @@ plugins:
     tag:
       - Graphics
   - name: 'PAL - MERGED.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11326' ]
     inc:
       - 'PAL - BASE File.esp'
   - name: 'PAL - BASE File.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11326' ]
     inc:
       - 'PAL - MERGED.esp'
   - name: 'GalaxyNewsRadioFix[N].esp'
