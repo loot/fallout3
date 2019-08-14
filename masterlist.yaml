@@ -2182,6 +2182,7 @@ plugins:
     tag:
       - Deflst
   - name: 'BBBackpacks-v1-1.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/14994' ]
     tag:
       - Stats
   - name: 'BnB special armors.esp'
