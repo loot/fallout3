@@ -497,6 +497,7 @@ plugins:
       - ScriptContents
       - Scripts
   - name: 'EVE.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/8340' ]
     tag:
       - Graphics
       - Invent
@@ -2750,6 +2751,7 @@ plugins:
   - name: 'EVE Main - FWE Master Release.esp'
     msg: [ *obsolete ]
   - name: 'EVE - FWE Master Release.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
     tag:
       - Actors.ACBS
       - Graphics
@@ -2757,6 +2759,7 @@ plugins:
       - Sound
       - Stats
   - name: 'EVE - FWE Master Release (Follower Enhanced).esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
     tag:
       - Graphics
       - Sound
@@ -2767,10 +2770,12 @@ plugins:
       - Invent
       - Stats
   - name: 'EVE Anchorage - FWE DLC Anchorage.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
     tag:
       - Graphics
       - Sound
   - name: 'EVE - FWE with WeaponModKits.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
     tag:
       - Graphics
       - Sound
