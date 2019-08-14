@@ -1643,6 +1643,7 @@ plugins:
         content: 'Old, please update to the latest version'
         condition: 'file("FOOK2 - Main.esm")'
   - name: 'FO3 Wanderers Edition - Main File.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
     tag:
       - Actors.ACBS
       - Actors.AIData
@@ -1738,6 +1739,7 @@ plugins:
     inc:
       - 'FO3 Wanderers Edition - Lvl 30 Balance.esp'
   - name: 'FO3 Wanderers Edition - Followers Enhanced.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
     inc:
       - 'FO3 Wanderers Edition - Followers Enhanced (BrokenSteel).esp'
     tag:
