@@ -3888,6 +3888,7 @@ plugins:
       - Sound
       - Stats
   - name: 'Blackened FWE + MMM + EVE + Project Beauty + Destruction.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
     after:
       - 'Destruction - Main.esp'
       - 'Destruction - DLC.esp'
@@ -4844,6 +4845,7 @@ plugins:
         itm: 24
         udr: 7
   - name: 'Blackened MMM + EVE + Project Beauty.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
     msg: [ *doNotClean ]
   - name: 'MTC Wasteland Travellers.esp'
     dirty:
