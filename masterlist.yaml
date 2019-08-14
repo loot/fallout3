@@ -1520,6 +1520,7 @@ plugins:
     tag:
       - C.Light
   - name: 'megalight.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/7875' ]
     msg: [ *integratedInFOOK2 ]
   - name: 'Towers Hill.esp'
     tag:
