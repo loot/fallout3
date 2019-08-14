@@ -2363,6 +2363,7 @@ plugins:
     tag:
       - Invent
   - name: 'AutoGates.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15685' ]
     tag:
       - Scripts
   - name: 'CALIBR Ammo Schematics - CRAFT.esp'
