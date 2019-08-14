@@ -3968,21 +3968,25 @@ plugins:
       - Names
       - Stats
   - name: 'FWE(v.5.04)+WMK_weapons_xCALIBRified.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/12487' ]
     tag:
       - Graphics
       - Names
       - Stats
   - name: 'FWE+WMKexcalibrified(Anch).esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/12487' ]
     tag:
       - Graphics
       - Names
       - Stats
   - name: 'FWE+WMKexcalibrified(Pitt).esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/12487' ]
     tag:
       - Graphics
       - Names
       - Stats
   - name: 'FWE+WMKexcalibrified(Lkout).esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/12487' ]
     tag:
       - Graphics
       - Names
