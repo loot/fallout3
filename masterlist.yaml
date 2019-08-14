@@ -3453,6 +3453,7 @@ plugins:
     tag:
       - Names
   - name: 'dD - Enhanced Blood Main.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/16787' ]
     msg:
       - type: say
         content: 'Older version included in FOOK2'
