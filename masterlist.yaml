@@ -3482,6 +3482,7 @@ plugins:
       - type: say
         content: 'Includes all Dust-away, paper-shredder and Rock-out plugins'
   - name: 'Fellout-Full.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/16787' ]
     inc:
       - 'Fellout-SOTD.esp'
     msg: [ *integratedInFOOK2 ]
