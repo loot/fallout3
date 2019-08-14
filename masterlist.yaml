@@ -4888,6 +4888,7 @@ plugins:
         <<: *dirtyPlugin
         itm: 55
   - name: 'MoreMapMarkers.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2446' ]
     dirty:
       - crc: 0xB7F1FA75
         <<: *dirtyPlugin
