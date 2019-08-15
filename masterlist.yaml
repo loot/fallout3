@@ -439,6 +439,7 @@ plugins:
         content: 'Old. Download the latest Project Beauty files.'
         condition: 'file("FOOK2 - Main.esm")'
   - name: 'Project Beauty.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
     tag:
       - Body-F
       - Body-M
@@ -947,12 +948,14 @@ plugins:
         content: 'Old. Download the latest Project Beauty files.'
         condition: 'file("FOOK2 - Main.esm")'
   - name: 'Project Beauty- Broken Steel.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
     tag:
       - Deactivate
       - NoMerge
       - NPC.Race
       - NpcFaces
   - name: 'Project Beauty- Point Lookout.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
     tag:
       - Deactivate
       - NoMerge
