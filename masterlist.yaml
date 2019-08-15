@@ -3875,6 +3875,7 @@ plugins:
       - Eyes
       - Hair
   - name: 'RobCo Certified v2 Omnipatch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/8340' ]
     inc:
       - 'RobCo Certified v2 EVE.esp'
       - 'RobCo Certified v2 FWE.esp'
