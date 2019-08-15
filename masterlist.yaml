@@ -365,6 +365,7 @@ plugins:
       - crc: 0x5DACDA77
         util: 'FO3Edit v4.0.0'
   - name: 'Unofficial Fallout 3 Patch.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/19122' ]
     group: *uf4pGroup
     after:
       - 'thepitt.esm'
