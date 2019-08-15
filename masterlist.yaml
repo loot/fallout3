@@ -2236,6 +2236,7 @@ plugins:
     tag:
       - Graphics
   - name: 'Tribal_DX.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6520' ]
     msg: [ *integratedInFOOK2 ]
     tag:
       - Deflst
