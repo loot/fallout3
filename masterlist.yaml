@@ -1192,6 +1192,7 @@ plugins:
         udr: 29
         nav: 0
   - name: 'PLweightadjust.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/7268' ]
     tag:
       - Invent
       - Scripts
