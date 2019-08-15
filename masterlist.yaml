@@ -3614,6 +3614,7 @@ plugins:
     tag:
       - C.Light
   - name: 'Xepha''s Dynamic Weather - Main.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     tag:
       - C.Climate
   - name: 'Xepha''s Dynamic Weather - Anchorage.esp'
