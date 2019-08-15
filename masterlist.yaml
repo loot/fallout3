@@ -3539,6 +3539,7 @@ plugins:
     tag:
       - C.Light
   - name: 'Realistic Interior Lighting.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/16787' ]
     tag:
       - C.Light
   - name: 'Realistic Interior Lighting - BS.esp'
