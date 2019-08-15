@@ -3983,6 +3983,7 @@ plugins:
       - Graphics
       - Names
   - name: 'xCALIBRammo_FWE.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11684' ]
     tag:
       - Graphics
       - Names
@@ -3995,6 +3996,7 @@ plugins:
       - Graphics
       - Names
   - name: 'xCALIBR_20CW_v5.12.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11684' ]
     tag:
       - Graphics
       - Names
@@ -4045,6 +4047,7 @@ plugins:
   - name: 'CRBSOR.esp'
     msg: [ *integratedInFWE ]
   - name: 'xCALIBRammo_override.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11684' ]
     tag:
       - Graphics
       - Names
