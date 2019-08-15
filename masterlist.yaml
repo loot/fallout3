@@ -2181,6 +2181,7 @@ plugins:
     inc:
       - 'WieldableTorches (Main).esp'
   - name: 'WMKAA12Shotgun.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3388' ]
     tag:
       - Graphics
   - name: 'DALCO Inventory Sorter - WMKAA12Shotgun.esp'
