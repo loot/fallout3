@@ -1919,6 +1919,7 @@ plugins:
       - 'Refurbishes [ALL].esp'
     msg: [ *integratedInFOOK2 ]
   - name: 'WeaponModKits.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3388' ]
     tag:
       - Actors.AIData
       - Delev
