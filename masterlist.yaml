@@ -290,6 +290,7 @@ plugins:
         itm: 53
         nav: 5
   - name: 'StreetLights.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/8069' ]
     group: *dlcGroup
     after:
       - 'thepitt.esm'
