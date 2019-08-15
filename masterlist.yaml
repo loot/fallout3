@@ -4847,6 +4847,7 @@ plugins:
         <<: *dirtyPlugin
         itm: 1
   - name: 'RH_IronSights_Basic_AnchoragePlugin.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
     dirty:
       - crc: 0x7EF88F51
         <<: *dirtyPlugin
@@ -4857,16 +4858,19 @@ plugins:
         <<: *dirtyPlugin
         itm: 3
   - name: 'RH_IronSights_Basic_ZetaPlugin.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
     dirty:
       - crc: 0x9449EB44
         <<: *dirtyPlugin
         itm: 5
   - name: 'RH_IronSights_Basic_PittPlugin.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
     dirty:
       - crc: 0xF4974E27
         <<: *dirtyPlugin
         itm: 1
   - name: 'RH_IronSights_Basic_BrokenSteelPlugin.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
     dirty:
       - crc: 0xA1FEB067
         <<: *dirtyPlugin
