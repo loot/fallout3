@@ -3492,6 +3492,7 @@ plugins:
       - type: say
         content: 'Older version included in FOOK2'
   - name: 'Realistic Death Physics.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/12306' ]
     msg: [ *integratedInFWE ]
   - name: 'REAL-ThirdViewMod.esp'
     inc:
