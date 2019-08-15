@@ -2677,6 +2677,7 @@ plugins:
       - Graphics
       - NoMerge
   - name: 'schematics2.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/13036' ]
     tag:
       - Graphics
       - NoMerge
