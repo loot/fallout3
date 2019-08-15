@@ -290,6 +290,7 @@ plugins:
         itm: 53
         nav: 5
   - name: 'StreetLights.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/8069' ]
     group: *dlcGroup
     after:
       - 'thepitt.esm'
@@ -364,6 +365,7 @@ plugins:
       - crc: 0x5DACDA77
         util: 'FO3Edit v4.0.0'
   - name: 'Unofficial Fallout 3 Patch.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/19122' ]
     group: *uf4pGroup
     after:
       - 'thepitt.esm'
@@ -439,6 +441,7 @@ plugins:
         content: 'Old. Download the latest Project Beauty files.'
         condition: 'file("FOOK2 - Main.esm")'
   - name: 'Project Beauty.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
     tag:
       - Body-F
       - Body-M
@@ -497,6 +500,7 @@ plugins:
       - ScriptContents
       - Scripts
   - name: 'EVE.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/8340' ]
     tag:
       - Graphics
       - Invent
@@ -946,12 +950,14 @@ plugins:
         content: 'Old. Download the latest Project Beauty files.'
         condition: 'file("FOOK2 - Main.esm")'
   - name: 'Project Beauty- Broken Steel.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
     tag:
       - Deactivate
       - NoMerge
       - NPC.Race
       - NpcFaces
   - name: 'Project Beauty- Point Lookout.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
     tag:
       - Deactivate
       - NoMerge
@@ -1064,9 +1070,11 @@ plugins:
     tag:
       - Graphics
   - name: 'PAL - MERGED.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11326' ]
     inc:
       - 'PAL - BASE File.esp'
   - name: 'PAL - BASE File.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11326' ]
     inc:
       - 'PAL - MERGED.esp'
   - name: 'GalaxyNewsRadioFix[N].esp'
@@ -1189,6 +1197,7 @@ plugins:
         udr: 29
         nav: 0
   - name: 'PLweightadjust.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/7268' ]
     tag:
       - Invent
       - Scripts
@@ -1507,6 +1516,7 @@ plugins:
     inc:
       - 'ArefuExpandedByAzar.esm'
   - name: 'DCStreet.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/16924']
     inc:
       - 'DCStreet - BS.esp'
   - name: 'Megaton Walkway.esp'
@@ -1518,6 +1528,7 @@ plugins:
     tag:
       - C.Light
   - name: 'megalight.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/7875' ]
     msg: [ *integratedInFOOK2 ]
   - name: 'Towers Hill.esp'
     tag:
@@ -1641,6 +1652,7 @@ plugins:
         content: 'Old, please update to the latest version'
         condition: 'file("FOOK2 - Main.esm")'
   - name: 'FO3 Wanderers Edition - Main File.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
     tag:
       - Actors.ACBS
       - Actors.AIData
@@ -1736,6 +1748,7 @@ plugins:
     inc:
       - 'FO3 Wanderers Edition - Lvl 30 Balance.esp'
   - name: 'FO3 Wanderers Edition - Followers Enhanced.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
     inc:
       - 'FO3 Wanderers Edition - Followers Enhanced (BrokenSteel).esp'
     tag:
@@ -1906,6 +1919,7 @@ plugins:
       - 'Refurbishes [ALL].esp'
     msg: [ *integratedInFOOK2 ]
   - name: 'WeaponModKits.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3388' ]
     tag:
       - Actors.AIData
       - Delev
@@ -2167,6 +2181,7 @@ plugins:
     inc:
       - 'WieldableTorches (Main).esp'
   - name: 'WMKAA12Shotgun.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3388' ]
     tag:
       - Graphics
   - name: 'DALCO Inventory Sorter - WMKAA12Shotgun.esp'
@@ -2182,6 +2197,7 @@ plugins:
     tag:
       - Deflst
   - name: 'BBBackpacks-v1-1.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/14994' ]
     tag:
       - Stats
   - name: 'BnB special armors.esp'
@@ -2223,6 +2239,7 @@ plugins:
     tag:
       - Graphics
   - name: 'Tribal_DX.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6520' ]
     msg: [ *integratedInFOOK2 ]
     tag:
       - Deflst
@@ -2363,6 +2380,7 @@ plugins:
     tag:
       - Invent
   - name: 'AutoGates.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15685' ]
     tag:
       - Scripts
   - name: 'CALIBR Ammo Schematics - CRAFT.esp'
@@ -2664,6 +2682,7 @@ plugins:
       - Graphics
       - NoMerge
   - name: 'schematics2.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/13036' ]
     tag:
       - Graphics
       - NoMerge
@@ -2747,6 +2766,7 @@ plugins:
   - name: 'EVE Main - FWE Master Release.esp'
     msg: [ *obsolete ]
   - name: 'EVE - FWE Master Release.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
     tag:
       - Actors.ACBS
       - Graphics
@@ -2754,6 +2774,7 @@ plugins:
       - Sound
       - Stats
   - name: 'EVE - FWE Master Release (Follower Enhanced).esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
     tag:
       - Graphics
       - Sound
@@ -2764,10 +2785,12 @@ plugins:
       - Invent
       - Stats
   - name: 'EVE Anchorage - FWE DLC Anchorage.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
     tag:
       - Graphics
       - Sound
   - name: 'EVE - FWE with WeaponModKits.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
     tag:
       - Graphics
       - Sound
@@ -2859,40 +2882,52 @@ plugins:
     tag:
       - Actors.CombatStyle
   - name: 'Mart''s Mutant Mod - No Abominable Mutants.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Relev
   - name: 'Mart''s Mutant Mod - No Corpse Flies.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Relev
   - name: 'Mart''s Mutant Mod - No Floaters.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Relev
   - name: 'Mart''s Mutant Mod - No Geckos.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Relev
   - name: 'Mart''s Mutant Mod - No Iguanas.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Relev
   - name: 'Mart''s Mutant Mod - No Stalker Creatures.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Relev
   - name: 'Mart''s Mutant Mod - No Wanamingos.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Relev
   - name: 'Mart''s Mutant Mod - Feral Ghoul Rampage.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Relev
   - name: 'Mart''s Mutant Mod - Increased Increased Spawns.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Relev
   - name: 'Mart''s Mutant Mod - Increased Spawns.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Relev
   - name: 'Mart''s Mutant Mod - Reduced Wasteland Spawns.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Delev
       - Relev
   - name: 'Mart''s Mutant Mod - Zones Respawn.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     msg:
       - *AlreadyInFWE
     tag:
@@ -2916,6 +2951,7 @@ plugins:
         content: 'Fallout 3 Wanderers Edition has an alternate approach to protecting traders that is a little weaker but might be sufficient.'
         condition: 'file("FO3 Wanderers Edition - Main File.esm")'
   - name: 'Mart''s Mutant Mod - Natural Selection.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     msg:
       - *AlreadyInFWE
     tag:
@@ -2923,6 +2959,7 @@ plugins:
   - name: 'Mart''s Mutant Mod - Mutant Mod Menu.esp'
     msg: [ *obsolete ]
   - name: 'Mart''s Mutant Mod - Soft Unleveler.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     inc:
       - 'Mart''s Mutant Mod - Soft Unleveler Hardcore.esp'
   - name: 'Project Beauty- MMM Raiders.esp'
@@ -2931,6 +2968,7 @@ plugins:
         content: 'Old. Download the latest Project Beauty files.'
         condition: 'file("FOOK2 - Main.esm")'
   - name: 'Mart''s Mutant Mod - Project Beauty.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
     tag:
       - NoMerge
       - NPC.Race
@@ -2956,12 +2994,15 @@ plugins:
         content: 'Get FOOK2'
         condition: 'file("FOOK2 - Main.esm")'
   - name: 'Mart''s Mutant Mod - FOOK2.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
     tag:
       - Relations
   - name: 'Mart''s Mutant Mod - FOOK2 - DIK.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
     tag:
       - Relations
   - name: 'Mart''s Mutant Mod - FWE Master Release.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
     tag:
       - Invent
       - Relations
@@ -2970,11 +3011,13 @@ plugins:
       - Names
       - NoMerge
   - name: 'Mart''s Mutant Mod - FWE Master Release + DLCs.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
     tag:
       - Invent
       - Relations
       - Scripts
   - name: 'Mart''s Mutant Mod - FWE Master Release + Project Beauty.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
     tag:
       - NoMerge
       - NPC.Race
@@ -3450,10 +3493,12 @@ plugins:
     tag:
       - Names
   - name: 'dD - Enhanced Blood Main.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/16787' ]
     msg:
       - type: say
         content: 'Older version included in FOOK2'
   - name: 'Realistic Death Physics.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/12306' ]
     msg: [ *integratedInFWE ]
   - name: 'REAL-ThirdViewMod.esp'
     inc:
@@ -3473,6 +3518,7 @@ plugins:
       - type: say
         content: 'Includes all Dust-away, paper-shredder and Rock-out plugins'
   - name: 'Fellout-Full.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/16787' ]
     inc:
       - 'Fellout-SOTD.esp'
     msg: [ *integratedInFOOK2 ]
@@ -3499,6 +3545,7 @@ plugins:
     tag:
       - C.Light
   - name: 'Realistic Interior Lighting.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/16787' ]
     tag:
       - C.Light
   - name: 'Realistic Interior Lighting - BS.esp'
@@ -3567,6 +3614,7 @@ plugins:
     tag:
       - C.Light
   - name: 'Xepha''s Dynamic Weather - Main.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     tag:
       - C.Climate
   - name: 'Xepha''s Dynamic Weather - Anchorage.esp'
@@ -3834,6 +3882,7 @@ plugins:
       - Eyes
       - Hair
   - name: 'RobCo Certified v2 Omnipatch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/8340' ]
     inc:
       - 'RobCo Certified v2 EVE.esp'
       - 'RobCo Certified v2 FWE.esp'
@@ -3886,6 +3935,7 @@ plugins:
       - Sound
       - Stats
   - name: 'Blackened FWE + MMM + EVE + Project Beauty + Destruction.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
     after:
       - 'Destruction - Main.esp'
       - 'Destruction - DLC.esp'
@@ -3934,6 +3984,7 @@ plugins:
       - Graphics
       - Names
   - name: 'xCALIBRammo_FWE.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11684' ]
     tag:
       - Graphics
       - Names
@@ -3946,6 +3997,7 @@ plugins:
       - Graphics
       - Names
   - name: 'xCALIBR_20CW_v5.12.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11684' ]
     tag:
       - Graphics
       - Names
@@ -3955,21 +4007,25 @@ plugins:
       - Names
       - Stats
   - name: 'FWE(v.5.04)+WMK_weapons_xCALIBRified.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/12487' ]
     tag:
       - Graphics
       - Names
       - Stats
   - name: 'FWE+WMKexcalibrified(Anch).esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/12487' ]
     tag:
       - Graphics
       - Names
       - Stats
   - name: 'FWE+WMKexcalibrified(Pitt).esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/12487' ]
     tag:
       - Graphics
       - Names
       - Stats
   - name: 'FWE+WMKexcalibrified(Lkout).esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/12487' ]
     tag:
       - Graphics
       - Names
@@ -3992,6 +4048,7 @@ plugins:
   - name: 'CRBSOR.esp'
     msg: [ *integratedInFWE ]
   - name: 'xCALIBRammo_override.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11684' ]
     tag:
       - Graphics
       - Names
@@ -4801,6 +4858,7 @@ plugins:
         <<: *dirtyPlugin
         itm: 1
   - name: 'RH_IronSights_Basic_AnchoragePlugin.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
     dirty:
       - crc: 0x7EF88F51
         <<: *dirtyPlugin
@@ -4811,16 +4869,19 @@ plugins:
         <<: *dirtyPlugin
         itm: 3
   - name: 'RH_IronSights_Basic_ZetaPlugin.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
     dirty:
       - crc: 0x9449EB44
         <<: *dirtyPlugin
         itm: 5
   - name: 'RH_IronSights_Basic_PittPlugin.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
     dirty:
       - crc: 0xF4974E27
         <<: *dirtyPlugin
         itm: 1
   - name: 'RH_IronSights_Basic_BrokenSteelPlugin.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
     dirty:
       - crc: 0xA1FEB067
         <<: *dirtyPlugin
@@ -4842,6 +4903,7 @@ plugins:
         itm: 24
         udr: 7
   - name: 'Blackened MMM + EVE + Project Beauty.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
     msg: [ *doNotClean ]
   - name: 'MTC Wasteland Travellers.esp'
     dirty:
@@ -4849,6 +4911,7 @@ plugins:
         <<: *dirtyPlugin
         itm: 55
   - name: 'MoreMapMarkers.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2446' ]
     dirty:
       - crc: 0xB7F1FA75
         <<: *dirtyPlugin
