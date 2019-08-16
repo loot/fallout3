@@ -4857,6 +4857,8 @@ plugins:
         itm: 11
         udr: 0
         nav: 0
+  - name: 'Barkskin.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/273' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
