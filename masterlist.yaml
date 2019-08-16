@@ -3493,10 +3493,48 @@ plugins:
     tag:
       - Names
   - name: 'dD - Enhanced Blood Main.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/16787' ]
+    url:
+      - 'https://www.nexusmods.com/fallout3/mods/101'
+      - 'https://www.nexusmods.com/fallout3/mods/16787'
     msg:
       - type: say
         content: 'Older version included in FOOK2'
+  - name: 'dD-Full Screen Blood Instant Remove.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101' ]
+  - name: 'dD-Less Screen Blood Time.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101' ]
+  - name: 'dD-More Gore.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101' ]
+  - name: 'dD-More Gore-The Pitt.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101' ]
+  - name: 'dD-More Gore-BrokenSteel.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101' ]
+  - name: 'dD-More Gore-PointLookout.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101' ]
+  - name: 'dD-More Gore-Zeta.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101' ]
+  - name: 'dD-No Screen Blood.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101' ]
+  - name: 'dD-Reduced Dismember Force.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101' ]
+  - name: 'dD-Reduced Ragdoll Force.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101' ]
+  - name: 'dD-Screen Blood Vanilla.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101' ]
+  - name: 'dD-Smaller Spatters Default.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101' ]
+  - name: 'dD-Smaller Spatters Realistic.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101' ]
+  - name: 'dD-Smaller Wounds.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101' ]
+  - name: 'FO3 Wanderers Edition - More Gore.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101' ]
+  - name: 'FO3 Wanderers Edition - More Gore The Pitt.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101' ]
+  - name: 'FO3 Wanderers Edition - More Gore PointLookout.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101' ]
+  - name: 'FO3 Wanderers Edition - More Gore Zeta.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101' ]
   - name: 'Realistic Death Physics.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12306' ]
     msg: [ *integratedInFWE ]
