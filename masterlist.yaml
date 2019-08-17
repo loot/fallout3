@@ -552,6 +552,108 @@ plugins:
         itm: 13
         udr: 0
         nav: 0
+  - name: 'FO3 Wanderers Edition - Main File.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
+    tag:
+      - Actors.ACBS
+      - Actors.AIData
+      - Actors.AIPackages
+      - Actors.CombatStyle
+      - Actors.Stats
+      - Deflst
+      - Delev
+      - Destructible
+      - Graphics
+      - Invent
+      - Names
+      - Relev
+      - Scripts
+      - Stats
+    dirty:
+      - crc: 0x01982EC9
+        <<: *dirtyPlugin # FO3Edit 3.0.32
+        itm: 15
+        udr: 0
+        nav: 0
+  - name: 'FO3 Wanderers Edition - DLC Anchorage.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
+    tag:
+      - Deflst
+    dirty:
+      - crc: 0xD6AA0D05
+        <<: *dirtyPlugin # FO3Edit 3.0.32
+        itm: 3
+        udr: 0
+        nav: 0
+  - name: 'FO3 Wanderers Edition - DLC Broken Steel.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
+    dirty:
+      - crc: 0x9226281C
+        <<: *dirtyPlugin # FO3Edit 3.0.32
+        itm: 14
+        udr: 0
+        nav: 0
+  - name: 'FO3 Wanderers Edition - DLC Point Lookout.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
+    tag:
+      - Delev
+      - Relev
+    dirty:
+      - crc: 0xB63AAA64
+        <<: *dirtyPlugin # FO3Edit 3.0.32
+        itm: 23
+        udr: 0
+        nav: 0
+  - name: 'FO3 Wanderers Edition - DLC The Pitt.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
+    tag:
+      - Names
+    dirty:
+      - crc: 0xBFF37246
+        <<: *dirtyPlugin # FO3Edit 3.0.32
+        itm: 1
+        udr: 0
+        nav: 0
+  - name: 'FO3 Wanderers Edition - Followers Enhanced.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
+    inc:
+      - 'FO3 Wanderers Edition - Followers Enhanced (BrokenSteel).esp'
+    tag:
+      - Actors.ACBS
+      - Actors.AIData
+      - Actors.Stats
+  - name: 'FO3 Wanderers Edition - Followers Enhanced (BrokenSteel).esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
+    inc:
+      - 'FO3 Wanderers Edition - Followers Enhanced.esp'
+    tag:
+      - Actors.ACBS
+      - Actors.AIData
+      - Actors.Stats
+    dirty:
+      - crc: 0x88F5A264
+        <<: *dirtyPlugin # FO3Edit 3.0.32
+        itm: 6
+        udr: 0
+        nav: 0
+  - name: 'FO3 Wanderers Edition - Alternate Travel.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
+    inc:
+      - 'FO3 Wanderers Edition - Optional No Fast Travel.esp'
+    dirty:
+      - crc: 0x9876E38C
+        <<: *dirtyPlugin # FO3Edit 3.0.32
+        itm: 3
+        udr: 1
+        nav: 0
+  - name: 'FO3 Wanderers Edition - Optional VATS Halftime.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
+    dirty:
+      - crc: 0x1B66E394
+        <<: *dirtyPlugin # FO3Edit 3.0.32
+        itm: 1
+        udr: 0
+        nav: 0
   - name: 'FWE - Combat Overhaul_Core.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15578' ]
     inc:
@@ -1696,72 +1798,10 @@ plugins:
       - type: error
         content: 'Old, please update to the latest version'
         condition: 'file("FOOK2 - Main.esm")'
-  - name: 'FO3 Wanderers Edition - Main File.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
-    tag:
-      - Actors.ACBS
-      - Actors.AIData
-      - Actors.AIPackages
-      - Actors.CombatStyle
-      - Actors.Stats
-      - Deflst
-      - Delev
-      - Destructible
-      - Graphics
-      - Invent
-      - Names
-      - Relev
-      - Scripts
-      - Stats
-    dirty:
-      - crc: 0x01982EC9
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 15
-        udr: 0
-        nav: 0
   - name: 'DALCO Inventory Sorter - FWE (Main File).esp'
     tag:
       - Names
       - NoMerge
-  - name: 'FO3 Wanderers Edition - DLC Anchorage.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
-    tag:
-      - Deflst
-    dirty:
-      - crc: 0xD6AA0D05
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 3
-        udr: 0
-        nav: 0
-  - name: 'FO3 Wanderers Edition - DLC Broken Steel.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
-    dirty:
-      - crc: 0x9226281C
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 14
-        udr: 0
-        nav: 0
-  - name: 'FO3 Wanderers Edition - DLC Point Lookout.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
-    tag:
-      - Delev
-      - Relev
-    dirty:
-      - crc: 0xB63AAA64
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 23
-        udr: 0
-        nav: 0
-  - name: 'FO3 Wanderers Edition - DLC The Pitt.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
-    tag:
-      - Names
-    dirty:
-      - crc: 0xBFF37246
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 1
-        udr: 0
-        nav: 0
   - name: 'DALCO Inventory Sorter - FWE (Operation Anchorage).esp'
     tag:
       - Names
@@ -1792,46 +1832,14 @@ plugins:
   - name: 'FO3 Wanderers Edition - Lvl 30 More Skills.esp'
     inc:
       - 'FO3 Wanderers Edition - Lvl 30 Balance.esp'
-  - name: 'FO3 Wanderers Edition - Followers Enhanced.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
-    inc:
-      - 'FO3 Wanderers Edition - Followers Enhanced (BrokenSteel).esp'
-    tag:
-      - Actors.ACBS
-      - Actors.AIData
-      - Actors.Stats
   - name: 'DALCO Inventory Sorter - FWE (Followers Enh).esp'
     tag:
       - Names
       - NoMerge
-  - name: 'FO3 Wanderers Edition - Followers Enhanced (BrokenSteel).esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
-    inc:
-      - 'FO3 Wanderers Edition - Followers Enhanced.esp'
-    tag:
-      - Actors.ACBS
-      - Actors.AIData
-      - Actors.Stats
-    dirty:
-      - crc: 0x88F5A264
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 6
-        udr: 0
-        nav: 0
   - name: 'DALCO Inventory Sorter - FWE (Followers Enh (BrS)).esp'
     tag:
       - Names
       - NoMerge
-  - name: 'FO3 Wanderers Edition - Alternate Travel.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
-    inc:
-      - 'FO3 Wanderers Edition - Optional No Fast Travel.esp'
-    dirty:
-      - crc: 0x9876E38C
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 3
-        udr: 1
-        nav: 0
   - name: 'FO3 Wanderers Edition - Optional Free Play After MQ.esp'
     inc:
       - 'BrokenSteel.esm'
@@ -1841,14 +1849,6 @@ plugins:
   - name: 'FO3 Wanderers Edition - Optional No Fast Travel.esp'
     inc:
       - 'FO3 Wanderers Edition - Alternate Travel.esp'
-  - name: 'FO3 Wanderers Edition - Optional VATS Halftime.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
-    dirty:
-      - crc: 0x1B66E394
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 1
-        udr: 0
-        nav: 0
   - name: 'FO3 Wanderers Edition - Optional Worn Weapons.esp'
     tag:
       - Delev
