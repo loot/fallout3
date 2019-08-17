@@ -531,6 +531,8 @@ plugins:
       - type: error
         content: 'Remove if using FOOK2 1.1 and above'
         condition: 'file("FOOK2 - Main.esm")'
+  - name: 'CALIBR.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
   - name: 'FO3 Wanderers Edition - Main File.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
     msg:
@@ -614,6 +616,8 @@ plugins:
         itm: 1
         udr: 0
         nav: 0
+  - name: 'FO3 Wanderers Edition - DLC Mothership Zeta.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
   - name: 'FO3 Wanderers Edition - Followers Enhanced.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
     inc:
@@ -654,6 +658,12 @@ plugins:
         itm: 1
         udr: 0
         nav: 0
+  - name: 'FO3 Wanderers Edition - Optional VATS Realtime.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
+  - name: 'FO3 Wanderers Edition - Optional Restore Tracers.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
+  - name: 'FO3 Wanderers Edition - Optional Restore Tracers (automatics only).esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
   - name: 'FWE - Combat Overhaul_Core.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15578' ]
     inc:
