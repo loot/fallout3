@@ -4875,6 +4875,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/273' ]
   - name: 'AutoAim_6000_v1.0.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1919' ]
+  - name: 'Overhead3PCamera.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2190' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
