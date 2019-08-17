@@ -692,6 +692,140 @@ plugins:
         itm: 77
         udr: 0
         nav: 0
+  - name: 'Mart''s Mutant Mod.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
+    tag:
+      - Delev
+      - Factions
+      - Invent
+      - Relations
+      - Relev
+      - Scripts
+    dirty:
+      - crc: 0xf2b3a052
+        <<: *dirtyPlugin # FO3Edit 3.0.32
+        itm: 41
+        udr: 0
+        nav: 0
+  - name: 'Mart''s Mutant Mod - DLC Anchorage.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
+    tag:
+      - Scripts
+  - name: 'Mart''s Mutant Mod - DLC The Pitt.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
+    tag:
+      - Delev
+      - Relev
+      - Scripts
+  - name: 'Mart''s Mutant Mod - DLC Broken Steel.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
+    tag:
+      - Delev
+      - Relev
+      - Scripts
+    dirty:
+      - crc: 0x4489C0D6
+        <<: *dirtyPlugin # FO3Edit 3.0.32
+        itm: 2
+        udr: 0
+        nav: 0
+  - name: 'Mart''s Mutant Mod - DLC Point Lookout.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
+    tag:
+      - Delev
+      - Relev
+      - Scripts
+  - name: 'Mart''s Mutant Mod - DLC Zeta.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
+    tag:
+      - Scripts
+    dirty:
+      - crc: 0xCEBFCDBC
+        <<: *dirtyPlugin # FO3Edit 3.0.32
+        itm: 2
+        udr: 0
+        nav: 0
+  - name: 'Mart''s Mutant Mod - No Abominable Mutants.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
+    tag:
+      - Relev
+  - name: 'Mart''s Mutant Mod - No Corpse Flies.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
+    tag:
+      - Relev
+  - name: 'Mart''s Mutant Mod - No Floaters.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
+    tag:
+      - Relev
+  - name: 'Mart''s Mutant Mod - No Geckos.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
+    tag:
+      - Relev
+  - name: 'Mart''s Mutant Mod - No Iguanas.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
+    tag:
+      - Relev
+  - name: 'Mart''s Mutant Mod - No Stalker Creatures.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
+    tag:
+      - Relev
+  - name: 'Mart''s Mutant Mod - No Wanamingos.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
+    tag:
+      - Relev
+  - name: 'Mart''s Mutant Mod - Feral Ghoul Rampage.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
+    tag:
+      - Relev
+  - name: 'Mart''s Mutant Mod - Increased Increased Spawns.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
+    tag:
+      - Relev
+  - name: 'Mart''s Mutant Mod - Increased Spawns.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
+    tag:
+      - Relev
+  - name: 'Mart''s Mutant Mod - Reduced Wasteland Spawns.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
+    tag:
+      - Delev
+      - Relev
+  - name: 'Mart''s Mutant Mod - Zones Respawn.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
+    msg:
+      - *AlreadyInFWE
+    tag:
+      - Relations
+      - Relev
+      - Scripts
+    dirty:
+      - crc: 0xCB6A4B5F
+        <<: *dirtyPlugin
+        itm: 9
+  - name: 'Mart''s Mutant Mod - Tougher Traders.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
+    tag:
+      - Actors.AIData
+      - Actors.Stats
+      - Factions
+      - Relations
+    msg:
+      - *AlreadyInFWE
+      - type: say
+        content: 'Fallout 3 Wanderers Edition has an alternate approach to protecting traders that is a little weaker but might be sufficient.'
+        condition: 'file("FO3 Wanderers Edition - Main File.esm")'
+  - name: 'Mart''s Mutant Mod - Natural Selection.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
+    msg:
+      - *AlreadyInFWE
+    tag:
+      - Relations
+  - name: 'Mart''s Mutant Mod - Mutant Mod Menu.esp'
+    msg: [ *obsolete ]
+  - name: 'Mart''s Mutant Mod - Soft Unleveler.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
+    inc:
+      - 'Mart''s Mutant Mod - Soft Unleveler Hardcore.esp'
   - name: 'Arwen_Core.esm'
     tag:
       - Actors.Animations
@@ -2853,21 +2987,6 @@ plugins:
     tag:
       - Delev
       - Relev
-  - name: 'Mart''s Mutant Mod.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
-    tag:
-      - Delev
-      - Factions
-      - Invent
-      - Relations
-      - Relev
-      - Scripts
-    dirty:
-      - crc: 0xf2b3a052
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 41
-        udr: 0
-        nav: 0
   - name: 'DALCO Inventory Sorter - Mart''s Mutant Mod (Main).esp'
     tag:
       - Names
@@ -2885,44 +3004,6 @@ plugins:
       - type: error
         content: 'Old. Download the latest Project Beauty files.'
         condition: 'file("FOOK2 - Main.esm")'
-  - name: 'Mart''s Mutant Mod - DLC Anchorage.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
-    tag:
-      - Scripts
-  - name: 'Mart''s Mutant Mod - DLC The Pitt.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
-    tag:
-      - Delev
-      - Relev
-      - Scripts
-  - name: 'Mart''s Mutant Mod - DLC Broken Steel.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
-    tag:
-      - Delev
-      - Relev
-      - Scripts
-    dirty:
-      - crc: 0x4489C0D6
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 2
-        udr: 0
-        nav: 0
-  - name: 'Mart''s Mutant Mod - DLC Point Lookout.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
-    tag:
-      - Delev
-      - Relev
-      - Scripts
-  - name: 'Mart''s Mutant Mod - DLC Zeta.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
-    tag:
-      - Scripts
-    dirty:
-      - crc: 0xCEBFCDBC
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 2
-        udr: 0
-        nav: 0
   - name: 'DALCO Inventory Sorter - Mart''s Mutant Mod (DLC Broken Steel).esp'
     tag:
       - Names
@@ -2936,87 +3017,6 @@ plugins:
   - name: 'DangerousRadroaches_MMM.esp'
     tag:
       - Actors.CombatStyle
-  - name: 'Mart''s Mutant Mod - No Abominable Mutants.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
-    tag:
-      - Relev
-  - name: 'Mart''s Mutant Mod - No Corpse Flies.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
-    tag:
-      - Relev
-  - name: 'Mart''s Mutant Mod - No Floaters.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
-    tag:
-      - Relev
-  - name: 'Mart''s Mutant Mod - No Geckos.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
-    tag:
-      - Relev
-  - name: 'Mart''s Mutant Mod - No Iguanas.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
-    tag:
-      - Relev
-  - name: 'Mart''s Mutant Mod - No Stalker Creatures.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
-    tag:
-      - Relev
-  - name: 'Mart''s Mutant Mod - No Wanamingos.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
-    tag:
-      - Relev
-  - name: 'Mart''s Mutant Mod - Feral Ghoul Rampage.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
-    tag:
-      - Relev
-  - name: 'Mart''s Mutant Mod - Increased Increased Spawns.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
-    tag:
-      - Relev
-  - name: 'Mart''s Mutant Mod - Increased Spawns.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
-    tag:
-      - Relev
-  - name: 'Mart''s Mutant Mod - Reduced Wasteland Spawns.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
-    tag:
-      - Delev
-      - Relev
-  - name: 'Mart''s Mutant Mod - Zones Respawn.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
-    msg:
-      - *AlreadyInFWE
-    tag:
-      - Relations
-      - Relev
-      - Scripts
-    dirty:
-      - crc: 0xCB6A4B5F
-        <<: *dirtyPlugin
-        itm: 9
-  - name: 'Mart''s Mutant Mod - Tougher Traders.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
-    tag:
-      - Actors.AIData
-      - Actors.Stats
-      - Factions
-      - Relations
-    msg:
-      - *AlreadyInFWE
-      - type: say
-        content: 'Fallout 3 Wanderers Edition has an alternate approach to protecting traders that is a little weaker but might be sufficient.'
-        condition: 'file("FO3 Wanderers Edition - Main File.esm")'
-  - name: 'Mart''s Mutant Mod - Natural Selection.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
-    msg:
-      - *AlreadyInFWE
-    tag:
-      - Relations
-  - name: 'Mart''s Mutant Mod - Mutant Mod Menu.esp'
-    msg: [ *obsolete ]
-  - name: 'Mart''s Mutant Mod - Soft Unleveler.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
-    inc:
-      - 'Mart''s Mutant Mod - Soft Unleveler Hardcore.esp'
   - name: 'Project Beauty- MMM Raiders.esp'
     msg:
       - type: error
