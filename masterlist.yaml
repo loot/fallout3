@@ -4963,6 +4963,16 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/6103' ]
   - name: 'Conelrad 640-1240.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6104' ]
+  - name: 'Enhanced Weather - Radioactive Rain and Snow Plugin.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6170' ]
+  - name: 'Enhanced Weather - Rain and Snow in Fallout.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6170' ]
+  - name: 'Enhanced Weather - Rain and Snow.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6170' ]
+  - name: 'Enhanced Weather - Sneak Bonus during Storms.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6170' ]
+  - name: 'Enhanced Weather - Weather Sounds in Interiors.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6170' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
