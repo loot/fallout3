@@ -4903,6 +4903,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/1919' ]
   - name: 'Overhead3PCamera.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2190' ]
+  - name: 'Echo_UseBothGloves.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3412' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
