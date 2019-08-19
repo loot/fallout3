@@ -1765,6 +1765,8 @@ plugins:
   - name: 'Clothed Sarah Lyons - Sleepwear.esp'
     tag:
       - Invent
+  - name: 'Beichtvater Cromwell macht Pause_DV.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4660' ]
   - name: 'Confessor Cromwell has a Break_EV.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4660' ]
     tag:
