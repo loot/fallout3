@@ -4992,6 +4992,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/6170' ]
   - name: 'Enhanced Weather - Weather Sounds in Interiors.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6170' ]
+  - name: 'MTCBigTownRobotFix.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6685' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
