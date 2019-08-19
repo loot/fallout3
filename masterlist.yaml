@@ -4449,6 +4449,10 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/5253' ]
     tag:
       - Scripts
+  - name: 'DelayAnchorage.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/5253' ]
+  - name: 'DelayThePitt.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/5253' ]
   - name: 'delaypl.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5253' ]
     dirty:
