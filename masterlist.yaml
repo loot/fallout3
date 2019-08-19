@@ -4461,7 +4461,7 @@ plugins:
         itm: 2
         udr: 0
         nav: 0
-  - name: 'delaysteel.esp'
+  - name: 'DelaySteel.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5253' ]
     tag:
       - Scripts
