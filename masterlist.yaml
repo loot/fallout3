@@ -4951,6 +4951,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/4719' ]
   - name: 'Trooper_outfits.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5208' ]
+  - name: 'House.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/5559' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
