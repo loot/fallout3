@@ -4953,6 +4953,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/5208' ]
   - name: 'House.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5559' ]
+  - name: 'Refugee Clothing.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/5580' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
