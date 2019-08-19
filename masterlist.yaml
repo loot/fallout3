@@ -4812,6 +4812,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/20551' ]
     msg:
       - *AlreadyInUF3P_1_7
+  - name: 'tubrrCompound.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6068' ]
   - name: 'tubRRCompound.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6068' ]
     tag:
