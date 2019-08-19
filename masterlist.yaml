@@ -1011,6 +1011,7 @@ plugins:
         nav: 3
   - name: 'RH_IRONSIGHTS.esm'
     url:
+      - 'https://www.nexusmods.com/fallout3/mods/6938'
       # Paradox merged mod
       - 'https://www.nexusmods.com/fallout3/mods/16787'
     inc:
@@ -5061,6 +5062,16 @@ plugins:
       - crc: 0xA1FEB067
         <<: *dirtyPlugin
         itm: 1
+  - name: 'RH_IronSights_Basic_PointLookoutPlugin.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
+  - name: 'RH_IronSights_Basic_VanillaPlugin.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
+  - name: 'RH_IronSights_Pitt_NewRifleSights.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
+  - name: 'RH_IronSights_PL_NewItems.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
+  - name: 'RH_IronSights_RemoveReticule.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
   - name: 'Elgar''s Extra Random Encounters.esp'
     dirty:
       - crc: 0x6FBCB8B4
