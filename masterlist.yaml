@@ -4955,6 +4955,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/5559' ]
   - name: 'Refugee Clothing.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5580' ]
+  - name: 'Rivet City Realignment.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/5831' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
