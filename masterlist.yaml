@@ -1274,6 +1274,12 @@ plugins:
       - NoMerge
       - NPC.Race
       - NpcFaces
+  - name: 'FOOK - DIK - Project Beauty.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
+  - name: 'FOOK2 - Project Beauty.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
+  - name: 'Project Beauty - Fallout Character Overhaul.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
   - name: 'Raider preset beta.esp'
     tag:
       - Deactivate
