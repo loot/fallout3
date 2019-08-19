@@ -4522,7 +4522,7 @@ plugins:
       - 'DarNifiedUIF3.esp'
       - name: 'Textures/MTUI'
         display: 'MTUI'
-  - name: 'Existence2.0.esp'
+  - name: 'Existence 2.0.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5612' ]
     dirty:
       - crc: 0x0E5309DA
