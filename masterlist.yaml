@@ -531,6 +531,10 @@ plugins:
       - type: error
         content: 'Remove if using FOOK2 1.1 and above'
         condition: 'file("FOOK2 - Main.esm")'
+  - name: 'CRAFT.esm'
+    url:
+      - 'https://www.nexusmods.com/fallout3/mods/2761'
+      - 'https://www.nexusmods.com/fallout3/mods/4447'
   - name: 'CALIBR.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
   - name: 'FO3 Wanderers Edition - Main File.esm'
