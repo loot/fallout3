@@ -4911,6 +4911,10 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/3412' ]
   - name: 'DIM TYPE3clothesRETAIL.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4280' ]
+  - name: 'Hi-Res Weapons & Ammo Textures.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4457' ]
+  - name: 'Hi-Res Weapons & Ammo Textures - The Pitt.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4457' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
