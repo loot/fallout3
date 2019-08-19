@@ -3134,6 +3134,20 @@ plugins:
       - Relations
       - Scripts
       - Stats
+  - name: 'FO3 Wanderers Edition - Project Beauty.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
+  - name: 'FO3 Wanderers Edition - Project Beauty (Followers Enhanced).esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
+  - name: 'WeaponModKits - OperationAnchorage.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
+  - name: 'WeaponModKits - ThePitt.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
+  - name: 'WeaponModKits - BrokenSteel.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
+  - name: 'WeaponModKits - PointLookout.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
+  - name: 'WeaponModKits - Zeta.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
   - name: 'AmyWong - DLCs (FOOK2 1.1 DIK).esp'
     inc:
       - 'AmyWong - DLCs.esp'
