@@ -5013,6 +5013,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/8050' ]
   - name: 'Mothership Crew.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8747' ]
+  - name: 'Freebooter_Armor.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/8754' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
