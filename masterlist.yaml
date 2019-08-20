@@ -5017,6 +5017,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/8754' ]
   - name: 'Tattered_suits.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/9167' ]
+  - name: 'T3_MadLax_Outfit.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/9258' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
