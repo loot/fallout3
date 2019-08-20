@@ -506,6 +506,8 @@ plugins:
       - Invent
       - Scripts
       - Sound
+  - name: 'EVE_CHEAT.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/8340' ]
   - name: 'EWE Energy Weapons Enhanced.esm'
     tag:
       - Deflst
