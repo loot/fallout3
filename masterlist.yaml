@@ -915,17 +915,6 @@ plugins:
         nav: 0
   - name: 'Wasteland Whisperer v2.esm'
     req: [ *FOSE ]
-  - name: 'Xepha''s Dynamic Weather.esm'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
-    tag:
-      - C.Climate
-      - Sound
-    dirty:
-      - crc: 0x80ACEA99
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 13
-        udr: 0
-        nav: 0
   - name: 'ArefuExpandedByAzar.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12466' ]
     tag:
@@ -3751,20 +3740,35 @@ plugins:
   - name: 'Xepha''s Darkened Interiors - PL.esp'
     tag:
       - C.Light
+  - name: 'Xepha''s Dynamic Weather.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
+    tag:
+      - C.Climate
+      - Sound
+    dirty:
+      - crc: 0x80ACEA99
+        <<: *dirtyPlugin # FO3Edit 3.0.32
+        itm: 13
+        udr: 0
+        nav: 0
   - name: 'Xepha''s Dynamic Weather - Main.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     tag:
       - C.Climate
   - name: 'Xepha''s Dynamic Weather - Anchorage.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     tag:
       - C.Climate
   - name: 'Xepha''s Dynamic Weather - The Pitt.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     tag:
       - C.Climate
   - name: 'Xepha''s Dynamic Weather - Broken Steel.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     tag:
       - C.Climate
   - name: 'Xepha''s Dynamic Weather - Point Lookout.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     tag:
       - C.Climate
   - name: 'Xepha''s Dynamic Weather - Main + DLC Merged.esp'
@@ -3777,6 +3781,22 @@ plugins:
         itm: 13
         udr: 0
         nav: 0
+  - name: 'Xepha''s Dynamic Weather - Dynamic Sneak Bonus.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
+  - name: 'Xepha''s Dynamic Weather - Anchorage (NEE).esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
+  - name: 'Xepha''s Dynamic Weather - Night Eye Edition.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
+  - name: 'Xepha''s Dynamic Weather - Night Eye Edition Merged (NEE+OA+Rain).esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
+  - name: 'Xepha''s Dynamic Weather - Rain.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
+  - name: 'Xepha''s Dynamic Weather - Rain (NEE).esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
+  - name: 'WeatherGroupScriptTest.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
+  - name: 'Xepha''s Dynamic Weather - Green Tint Remover.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
   - name: 'Xepha''s Dynamic Weather - Climate OverRider (OA + Rain).esp'
     inc:
       - 'Xepha''s Dynamic Weather - Climate OverRider (OA).esp'
@@ -3807,9 +3827,14 @@ plugins:
       - 'Xepha''s Dynamic Weather - Climate OverRider (OA).esp'
       - 'Xepha''s Dynamic Weather - Climate OverRider (Rain).esp'
       - 'Xepha''s Dynamic Weather - Climate OverRider.esp'
-  - name: 'Xepha''s Dynamic Weather - Sandstorms + Armor Damage (FOSE).esp'
+  - name: 'Xepha''s Dynamic Weather - Sandstorms.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     inc:
-      - 'Dynamic Weather - Sandstorms.esp'
+      - 'Xepha''s Dynamic Weather - Sandstorms + Armor Damage (FOSE).esp'
+  - name: 'Xepha''s Dynamic Weather - Sandstorms + Armor Damage (FOSE).esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
+    inc:
+      - 'Xepha''s Dynamic Weather - Sandstorms.esp'
   - name: 'Xepha''s Dynamic Weather - Weather Machine.esp'
     inc:
       - 'Xepha''s Dynamic Weather - Weather Machine (+Rain).esp'
