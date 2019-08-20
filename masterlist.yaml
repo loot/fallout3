@@ -5096,6 +5096,10 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/11283' ]
   - name: 'HelmPOV.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11474' ]
+  - name: 'Merc Adventurer Armor - eng.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/13155' ]
+  - name: 'Merc Adventurer Armor - rus.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/13155' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
