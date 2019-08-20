@@ -1386,6 +1386,16 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/11326' ]
     inc:
       - 'PAL - BASE File.esp'
+  - name: 'PAL - Broken Steel.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11326' ]
+  - name: 'PAL - Operation Anchorage.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11326' ]
+  - name: 'PAL - Point Lookout.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11326' ]
+  - name: 'PAL - The Pitt.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11326' ]
+  - name: 'PAL - Mothership Zeta.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11326' ]
   - name: 'GalaxyNewsRadioFix[N].esp'
     inc:
       - 'GalaxyNewsRadio100[M].esp'
