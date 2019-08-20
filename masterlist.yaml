@@ -5094,6 +5094,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/11046' ]
   - name: 'A Trail of Crumbs.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11283' ]
+  - name: 'HelmPOV.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11474' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
