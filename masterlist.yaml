@@ -5100,6 +5100,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/13155' ]
   - name: 'Merc Adventurer Armor - rus.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13155' ]
+  - name: 'T3_leather armors.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/13280' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
