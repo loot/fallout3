@@ -5003,6 +5003,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/7378' ]
   - name: 'Less_Blood.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7400' ]
+  - name: 'Lookout Outfits.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/7682' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
