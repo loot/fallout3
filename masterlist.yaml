@@ -5140,6 +5140,16 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/14730' ]
   - name: 'Enclave Radio Enhanced.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14947' ]
+  - name: 'Detect Traps.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15641' ]
+  - name: 'Advanced Recon Tech - Detect Traps.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15641' ]
+  - name: 'Detect Traps - DLC.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15641' ]
+  - name: 'Detect Traps - Perk.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15641' ]
+  - name: 'Detect Traps - The Traponator 4000.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15641' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
