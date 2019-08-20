@@ -4999,6 +4999,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/7318' ]
   - name: 'Gore_No_More_Basic.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7318' ]
+  - name: 'Double barreled shotgun fix.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/7378' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
