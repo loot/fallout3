@@ -4781,6 +4781,34 @@ plugins:
         itm: 1
         udr: 56
         nav: 0
+  - name: 'Powered Power Armor.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
+  - name: 'PPA - Operation Anchorage.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
+  - name: 'PPA - The Pitt.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
+  - name: 'PPA - Broken Steel.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
+  - name: 'PPA - Mothership Zeta.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
+    dirty:
+      - crc: 0xBC734E8B
+        <<: *dirtyPlugin # FO3Edit 3.0.32
+        itm: 2
+        udr: 0
+        nav: 0
+  - name: 'PPA - Ambient Temperature.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
+  - name: 'PPA - IMCN.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
+  - name: 'PPA - Readius.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
+  - name: 'PPA - Super Human Jump Perk.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
+  - name: 'Inventory Access.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
+  - name: 'No Scopeless Zooming - PPA Edition.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
   - name: 'PPA - FWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
     dirty:
@@ -4797,14 +4825,6 @@ plugins:
       - crc: 0x8B401D77
         <<: *dirtyPlugin # FO3Edit 3.0.32
         itm: 1
-        udr: 0
-        nav: 0
-  - name: 'PPA - Mothership Zeta.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
-    dirty:
-      - crc: 0xBC734E8B
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 2
         udr: 0
         nav: 0
   - name: 'PPA - FWE Tougher NPC Power Armour.esp'
