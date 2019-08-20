@@ -5005,6 +5005,10 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/7400' ]
   - name: 'Lookout Outfits.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7682' ]
+  - name: 'Stealth Kills Enabled.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/8050' ]
+  - name: 'Stealth Kills Enabled - Pitt Compatibility.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/8050' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
