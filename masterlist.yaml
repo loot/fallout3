@@ -5019,6 +5019,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/9167' ]
   - name: 'T3_MadLax_Outfit.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/9258' ]
+  - name: 'blackrock_shooter.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/9633' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
