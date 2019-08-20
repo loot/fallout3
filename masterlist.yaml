@@ -5076,6 +5076,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/10740' ]
   - name: 'PiPBoy Yellow Light.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10740' ]
+  - name: 'Radio Active.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10900' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
