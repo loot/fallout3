@@ -5134,6 +5134,10 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/14448' ]
   - name: 'RHKBrisaRiPnO - Compatibility.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14448' ]
+  - name: 'Stimpak Counter.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/14730' ]
+  - name: 'WeightAmmo.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/14730' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
