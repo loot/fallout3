@@ -5138,6 +5138,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/14730' ]
   - name: 'WeightAmmo.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14730' ]
+  - name: 'Enclave Radio Enhanced.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/14947' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
