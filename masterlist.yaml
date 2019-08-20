@@ -5050,6 +5050,32 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/9633' ]
   - name: 'Radio_Neutron.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10147' ]
+  - name: 'PiPBoy Blue Light.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10740' ]
+  - name: 'PiPBoy Cyan Light.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10740' ]
+  - name: 'PiPBoy Grey Light.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10740' ]
+  - name: 'PiPBoy Light Range Infinity.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10740' ]
+  - name: 'PiPBoy Light Range x2.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10740' ]
+  - name: 'PiPBoy Light Range x3.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10740' ]
+  - name: 'PiPBoy Light Range x4.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10740' ]
+  - name: 'PiPBoy Light Range x5.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10740' ]
+  - name: 'PiPBoy Light Range x6.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10740' ]
+  - name: 'PiPBoy Purple Light.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10740' ]
+  - name: 'PiPBoy Red Light.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10740' ]
+  - name: 'PiPBoy White Light.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10740' ]
+  - name: 'PiPBoy Yellow Light.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10740' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
