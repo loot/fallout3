@@ -5150,6 +5150,14 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/15641' ]
   - name: 'Detect Traps - The Traponator 4000.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15641' ]
+  - name: 'Advanced Recon Tech.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15653' ]
+  - name: 'Advanced Recon Tech.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15653' ]
+  - name: 'Advanced Recon Gear.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15653' ]
+  - name: 'Advanced Recon Tech FWE.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15653' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
