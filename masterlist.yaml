@@ -1378,14 +1378,14 @@ plugins:
   - name: 'EVE - RH Ironsights Patch.esp'
     tag:
       - Graphics
-  - name: 'PAL - MERGED.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/11326' ]
-    inc:
-      - 'PAL - BASE File.esp'
   - name: 'PAL - BASE File.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11326' ]
     inc:
       - 'PAL - MERGED.esp'
+  - name: 'PAL - MERGED.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11326' ]
+    inc:
+      - 'PAL - BASE File.esp'
   - name: 'GalaxyNewsRadioFix[N].esp'
     inc:
       - 'GalaxyNewsRadio100[M].esp'
