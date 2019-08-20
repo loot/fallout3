@@ -5001,6 +5001,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/7318' ]
   - name: 'Double barreled shotgun fix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7378' ]
+  - name: 'Less_Blood.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/7400' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
