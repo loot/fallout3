@@ -5208,6 +5208,10 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/17965' ]
   - name: 'AWOP4FO3BOEPatch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17965' ]
+  - name: 'WastelandGuards01.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18112' ]
+  - name: 'WastelandGuardsBOEPatch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18112' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
