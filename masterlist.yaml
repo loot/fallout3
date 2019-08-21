@@ -4606,6 +4606,10 @@ plugins:
         itm: 3
         udr: 0
         nav: 0
+  - name: 'DarNifiedUIF3.esp'
+    url: [ 'http://modsreloaded.com/darnified-ui-f3' ]
+    inc:
+      - 'DynamicCrosshair.esp'
   - name: 'DynamicCrosshair.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15724' ]
     req:
