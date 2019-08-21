@@ -5467,6 +5467,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
   - name: 'WastelandGuards01 - Essential NPCs.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: 'RH_IronSights - Cool Lasers.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21801' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
