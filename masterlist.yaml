@@ -5255,6 +5255,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/19758' ]
   - name: 'Flora Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19864' ]
+  - name: 'Point Lookout Reborn.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/19891' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
