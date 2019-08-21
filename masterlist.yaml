@@ -5475,6 +5475,10 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/21841' ]
   - name: 'cCCursorNotOnMaps.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22036' ]
+  - name: 'HKG3.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/22085' ]
+  - name: 'HKG3test.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/22085' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
