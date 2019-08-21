@@ -4320,10 +4320,6 @@ plugins:
         itm: 6
         udr: 0
         nav: 0
-  - name: 'AnimatedFanV2f3.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/20452' ]
-    tag:
-      - Destructible
   - name: 'ArefuExpandedByAzar-FixOptAddNew.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15686' ]
     dirty:
@@ -4340,6 +4336,24 @@ plugins:
         itm: 0
         udr: 39
         nav: 0
+  - name: 'ArefuExpandedByAzar-FixBrahmin.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15686' ]
+  - name: 'ArefuExpandedByAzar-FixCrimBaseDoor.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15686' ]
+  - name: 'ArefuExpandedByAzar-FixEyes.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15686' ]
+  - name: 'ArefuExpandedByAzar-FixIdles.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15686' ]
+  - name: 'ArefuExpandedByAzar-FixOptFireBarrels.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15686' ]
+  - name: 'ArefuExpandedByAzar-FixTurrets.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15686' ]
+  - name: 'ArefuExpandedByAzar-Radio.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15686' ]
+  - name: 'AnimatedFanV2f3.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20452' ]
+    tag:
+      - Destructible
   - name: 'ArlingtonRestoration.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20504' ]
     msg:
