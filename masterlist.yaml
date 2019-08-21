@@ -1837,9 +1837,13 @@ plugins:
     inc:
       - 'ArefuExpandedByAzar.esm'
   - name: 'DCStreet.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/16924']
+    url: [ 'https://www.nexusmods.com/fallout3/mods/16924' ]
     inc:
       - 'DCStreet - BS.esp'
+  - name: 'DCStreet - BS.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/16924' ]
+    inc:
+      - 'DCStreet.esp'
   - name: 'Megaton Walkway.esp'
     msg: [ *obsolete ]
   - name: 'megaton_lighting.esp'
