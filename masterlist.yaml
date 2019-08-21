@@ -5553,6 +5553,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/23183' ]
   - name: 'You gotta Shoot Em'' In the Head Fixes Updated.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/23540' ]
+  - name: 'Compiled fixes for Fallout 3 ( compatible with UOFO3P ).esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/23584' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
