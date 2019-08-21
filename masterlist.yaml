@@ -5265,6 +5265,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/19988' ]
   - name: 'FCOMaster.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20004' ]
+  - name: 'JIP Selective-Fire.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20012' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
