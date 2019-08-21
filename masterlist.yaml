@@ -5180,6 +5180,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/15790' ]
   - name: 'aHUD.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15886' ]
+  - name: 'No UI Blur.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/16171' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
