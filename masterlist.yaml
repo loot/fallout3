@@ -5517,6 +5517,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/22405' ]
   - name: 'd7_robco.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22430' ]
+  - name: 'CouncilSeatFix.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/22490' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
