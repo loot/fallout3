@@ -5224,6 +5224,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/18156' ]
   - name: 'RealisticBulletsWMKtracers.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18156' ]
+  - name: 'FWEAlienWorkBenchFix.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18234' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
