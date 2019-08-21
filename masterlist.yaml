@@ -5212,6 +5212,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/18112' ]
   - name: 'WastelandGuardsBOEPatch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18112' ]
+  - name: 'Millenia_AKS74U.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18137' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
