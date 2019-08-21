@@ -5561,6 +5561,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/23584' ]
   - name: 'Exeter-Type3-armor.esp'
     url: [ 'https://wiki.step-project.com/User:Kelmych/Fallout3#Other_Clothing_and_Light_or_Medium_Armor' ]
+  - name: 'GeorgetownExpansion.esm'
+    url: [ 'https://mega.nz/#!xoo2jagI!Z2gpo2aGjL5m3pVkMNQpjkT8BqIacDcujQeARNT8Ib0' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
