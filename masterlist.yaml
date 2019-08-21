@@ -5241,6 +5241,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/18968' ]
   - name: 'GilbertToys.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19000' ]
+  - name: 'rmSaveManager.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/19119' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
