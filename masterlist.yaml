@@ -5503,6 +5503,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/22222' ]
   - name: 'Proper Drinking.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22234' ]
+  - name: 'Headwraps Galore.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/22260' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
