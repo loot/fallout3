@@ -5545,6 +5545,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/23037' ]
   - name: 'UniqueWeaponsRetextured.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/23163' ]
+  - name: 'WMK_Fixes_dlc.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/23172' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
