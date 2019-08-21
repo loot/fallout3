@@ -5505,6 +5505,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/22234' ]
   - name: 'Headwraps Galore.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22260' ]
+  - name: 'ThreeDogsToaster.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/22265' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
