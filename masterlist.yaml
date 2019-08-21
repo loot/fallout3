@@ -5249,6 +5249,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/19191' ]
   - name: 'PointLookout Moods.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19191' ]
+  - name: 'BauPetSupplies.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/19473' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
