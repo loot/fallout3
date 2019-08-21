@@ -5235,6 +5235,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/18506' ]
   - name: 'BeardsofFallout.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18622' ]
+  - name: 'New Toys - Cars.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18734' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
