@@ -5214,6 +5214,16 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/18112' ]
   - name: 'Millenia_AKS74U.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18137' ]
+  - name: 'RBS -Laser and Plasma Projectiles Optional.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18156' ]
+  - name: 'RealisticBulletsNoTracers.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18156' ]
+  - name: 'RealisticBulletsTracers.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18156' ]
+  - name: 'RealisticBulletsWMKnoTracers.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18156' ]
+  - name: 'RealisticBulletsWMKtracers.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18156' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
