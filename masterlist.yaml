@@ -5489,6 +5489,12 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/22122' ]
   - name: 'EVE Grenade Explosion.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22148' ]
+  - name: 'FinalCourierMod .esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/22168' ]
+  - name: 'FinalCourierMod_BankOfTheWastelandPatch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/22168' ]
+  - name: 'FinalCourierMod_BlackWolfBackpackPatch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/22168' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
