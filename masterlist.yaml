@@ -5513,6 +5513,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/22283' ]
   - name: 'Real Radiation Suits- Science Suit Rad Protection-FO3.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22283' ]
+  - name: 'MegatonClinicRefurb.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/22405' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
