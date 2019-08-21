@@ -5311,6 +5311,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
   - name: 'Winterized_T51b_Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20042' ]
+  - name: 'Vault 101 Revisited James Room.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20278' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
