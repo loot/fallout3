@@ -3160,6 +3160,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
   - name: 'WeaponModKits - Zeta.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
+  - name: 'WeaponModKits - FWE Talon Loot Crash Fix.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/22109' ]
   - name: 'AmyWong - DLCs (FOOK2 1.1 DIK).esp'
     inc:
       - 'AmyWong - DLCs.esp'
