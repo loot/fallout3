@@ -5182,6 +5182,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/15886' ]
   - name: 'No UI Blur.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16171' ]
+  - name: 'FO3NeckChains.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/16230' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
