@@ -5541,6 +5541,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/22881' ]
   - name: 'AutomatFix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22947' ]
+  - name: 'Simply Uncut.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/23037' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
