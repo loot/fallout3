@@ -5200,6 +5200,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/16654' ]
   - name: 'Gore objects Plus.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16927' ]
+  - name: 'CoolLasersMod.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/17320' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
