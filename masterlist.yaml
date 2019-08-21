@@ -5319,6 +5319,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/20278' ]
   - name: 'PotomacSteamworks.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20843' ]
+  - name: 'Dragonskin_for_FWE_2014.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20874' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
