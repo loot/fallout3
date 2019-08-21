@@ -5469,6 +5469,10 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
   - name: 'RH_IronSights - Cool Lasers.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21801' ]
+  - name: 'Boulevard of Broken Dreams.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21841' ]
+  - name: 'Boulevard of Broken Dreams_TTW.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21841' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
