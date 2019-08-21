@@ -5325,6 +5325,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/20945' ]
   - name: 'DCInt_ARoomWithAView.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20959' ]
+  - name: 'IMPACT.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20977' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
