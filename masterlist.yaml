@@ -5226,6 +5226,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/18156' ]
   - name: 'FWEAlienWorkBenchFix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18234' ]
+  - name: 'Millenia_CombatShotgun_replacer.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18506' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
