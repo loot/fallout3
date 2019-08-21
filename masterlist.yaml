@@ -5367,6 +5367,106 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/21628' ]
   - name: 'RiversideCafe.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21628' ]
+  - name: '(TWPC) 20CWRE-UUF3P-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) 20CWRE-WMK-RIFWC-UUF3P-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) 20CWRE-WMK-UUF3P-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) 20CWRECW-UUF3P-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) 20CWRECW-WMK-RIFWC-UUF3P-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) BBB-UUF3P-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) BBD-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) BFM-UUF3P-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) BFO-EVE-UUF3P-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) BFO-MMM-EVE-UUF3P-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) BFO-MMM-UUF3P-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) BFO-UUF3P-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) BRCC-PB Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) BVR-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) CMRP-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) CPWM-UUF3P-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) DIFF3-RI-EVE-MMM-WMK-PRA-F3HMG-F3HF-20CWRE-IMPACT-UUF3P-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) DIFF3-UUF3P-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) DM-UUF3P-DW Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) GE-UUF3P Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) HFA-UUF3P-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) HRWW-DIFF3-UUF3P-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) K9B-MMM-UUF3P-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) K9B-UUF3P-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) MMM-EBTMGFWE-UUF3P-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) PLR-MMM Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) PLR-UUF3P-ISS Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) Point Lookout Moods - English Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) PRA-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) RBS-MMM Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) RBS-MMM-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) RIL-UUF3P-DM Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) RRE-FWE.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) RRE-PB-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) The Pitt Moods - English Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) TMI-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) TMI-MMM-EVE-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) TMI-MMM-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) TMIC-FWE.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) TMIM-DIFF Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) TMIM-DIFF-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) TMIM-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) TMIM-HFA-UUF3P-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) TMIM-PB-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) TMIS-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) WD-DIFF3-UUF3P-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) WD-UUF3P-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: '(TWPC) WMK-UUF3P-FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: 'Crowded Cities Redux.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+  - name: 'WastelandGuards01 - Essential NPCs.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
