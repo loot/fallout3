@@ -5359,6 +5359,10 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/21401' ]
   - name: 'FO3DLCOptimized.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21401' ]
+  - name: 'UF3P - Exotic Caravans.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21458' ]
+  - name: 'UF3P - Exotic Caravans (Essential).esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21458' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
