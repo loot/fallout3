@@ -5321,6 +5321,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/20843' ]
   - name: 'Dragonskin_for_FWE_2014.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20874' ]
+  - name: 'ClearAndPresentAdjustment_Beauty_Weapons_1_1-1.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20945' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
