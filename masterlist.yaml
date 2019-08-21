@@ -5176,6 +5176,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/15657' ]
   - name: 'Advanced Recon Range Finder.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15744' ]
+  - name: 'iHUD.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15790' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
