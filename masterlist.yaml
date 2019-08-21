@@ -5327,6 +5327,10 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/20959' ]
   - name: 'IMPACT.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20977' ]
+  - name: 'Assaultrifle_replacers_WMK+RH+FWE.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20982' ]
+  - name: 'Assaultrifle_replacers_WMK+RH.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20982' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
