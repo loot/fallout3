@@ -5529,6 +5529,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/22579' ]
   - name: 'STDG.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22663' ]
+  - name: 'DeNerfing Colonel Autumns Laser Pistol.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/22821' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
