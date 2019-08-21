@@ -5537,6 +5537,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/22829' ]
   - name: 'Deathclaw Gauntlet Man Opener Armor Piercing Restored.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22833' ]
+  - name: 'Paradise Rising.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/22881' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
