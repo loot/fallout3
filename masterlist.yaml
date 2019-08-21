@@ -5263,6 +5263,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/19951' ]
   - name: 'MetroCars.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19988' ]
+  - name: 'FCOMaster.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20004' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
