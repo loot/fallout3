@@ -5320,6 +5320,30 @@ plugins:
   - name: 'Blackened MMM + EVE + Project Beauty.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
     msg: [ *doNotClean ]
+  - name: 'Blackened EVE + Project Beauty.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
+  - name: 'Blackened FWE + EVE + Project Beauty.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
+  - name: 'Blackened FWE + EVE.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
+  - name: 'Blackened FWE + MMM + EVE.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
+  - name: 'Blackened FWE + MMM.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
+  - name: 'Blackened MMM + EVE.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
+  - name: 'Blackened RH + FWE + EVE.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
+  - name: 'Destruction - DC Moods.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
+  - name: 'Destruction - FNNsys.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
+  - name: 'Destruction - xCALIBRammo_FWE.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
+  - name: 'Gunfire Sound Range Increased - Core + DLC + EVE + FWE.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
+  - name: 'Gunfire Sound Range Increased - Core + DLC + EVE.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
   - name: 'MTC Wasteland Travellers.esp'
     dirty:
       - crc: 0x0A7E3339
