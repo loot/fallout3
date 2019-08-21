@@ -5174,6 +5174,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/15653' ]
   - name: 'AquaPura 3000.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15657' ]
+  - name: 'Advanced Recon Range Finder.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15744' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
