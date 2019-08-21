@@ -4841,6 +4841,8 @@ plugins:
         itm: 1
         udr: 0
         nav: 0
+  - name: 'PPA - FWE TalonExtraArmor.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/16591' ]
   - name: 'PPA - FWE Tougher NPC Power Armour.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16591' ]
     tag:
