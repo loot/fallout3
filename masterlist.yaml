@@ -5343,6 +5343,10 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/21148' ]
   - name: 'Quieter Nuka-Cola Sign.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21195' ]
+  - name: 'UniqueWeaponsRetexturedPITT_FWE.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21262' ]
+  - name: 'UniqueWeaponsRetextured_FWE.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21262' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
