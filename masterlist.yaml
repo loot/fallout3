@@ -4723,6 +4723,10 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/20321' ]
     tag:
       - Scripts
+  - name: 'GlowingGhouls-DeathGlow.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20321' ]
+  - name: 'GlowingGhouls-MMM.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20321' ]
   - name: 'GNR Enhanced.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14946' ]
     tag: [ Scripts ]
