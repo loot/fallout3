@@ -5347,6 +5347,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/21262' ]
   - name: 'UniqueWeaponsRetextured_FWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21262' ]
+  - name: 'lexx_brahmin-variant-Fo3.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21308' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
