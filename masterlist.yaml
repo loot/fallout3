@@ -5499,6 +5499,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/22174' ]
   - name: 'MusTechGenRoom.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22174' ]
+  - name: 'Grave Digger.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/22222' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
