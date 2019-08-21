@@ -5309,6 +5309,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
   - name: 'JIP Companions Command & Control.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
+  - name: 'Winterized_T51b_Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20042' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
