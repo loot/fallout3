@@ -5355,6 +5355,10 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/21363' ]
   - name: 'MegatonLightingPlusNoNeonSignGlow.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21363' ]
+  - name: 'FO3Optimized.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21401' ]
+  - name: 'FO3DLCOptimized.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21401' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
