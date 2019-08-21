@@ -5479,6 +5479,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/22085' ]
   - name: 'HKG3test.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22085' ]
+  - name: 'Purity Crash Fix.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/22086' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
