@@ -5363,6 +5363,10 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/21458' ]
   - name: 'UF3P - Exotic Caravans (Essential).esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21458' ]
+  - name: 'RiversideCafe.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21628' ]
+  - name: 'RiversideCafe.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21628' ]
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
