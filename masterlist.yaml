@@ -274,7 +274,7 @@ groups:
     after: [ *overridesGroup ]
 
 plugins:
-  - name: 'anchorage.esm'
+  - name: 'Anchorage.esm'
     group: *dlcGroup
     dirty:
       # version: 1.7.0.3
@@ -292,10 +292,10 @@ plugins:
       # version: 1.7.0.3
       - crc: 0x557B5854
         util: 'FO3Edit v4.0.0'
-  - name: 'thepitt.esm'
+  - name: 'ThePitt.esm'
     group: *dlcGroup
     after:
-      - 'anchorage.esm'
+      - 'Anchorage.esm'
     dirty:
       # version: 1.7.0.3
       - <<: *quickClean
@@ -307,8 +307,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/8069' ]
     group: *dlcGroup
     after:
-      - 'thepitt.esm'
-      - 'anchorage.esm'
+      - 'ThePitt.esm'
+      - 'Anchorage.esm'
     msg: [ *integratedInFOOK2 ]
     dirty:
       - crc: 0xC5690E8E # Version 2.0
@@ -319,8 +319,8 @@ plugins:
   - name: 'BrokenSteel.esm'
     group: *dlcGroup
     after:
-      - 'thepitt.esm'
-      - 'anchorage.esm'
+      - 'ThePitt.esm'
+      - 'Anchorage.esm'
       - 'StreetLights.esm'
     tag:
       - Actors.ACBS
@@ -343,11 +343,11 @@ plugins:
         util: '[FO3Edit v4.0.0](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 3
         nav: 12
-  - name: 'pointlookout.esm'
+  - name: 'PointLookout.esm'
     group: *dlcGroup
     after:
-      - 'thepitt.esm'
-      - 'anchorage.esm'
+      - 'ThePitt.esm'
+      - 'Anchorage.esm'
       - 'StreetLights.esm'
       - 'BrokenSteel.esm'
     dirty:
@@ -360,14 +360,14 @@ plugins:
       # version: 1.7.0.3
       - crc: 0xFB43FA4D
         util: 'FO3Edit v4.0.0'
-  - name: 'zeta.esm'
+  - name: 'Zeta.esm'
     group: *dlcGroup
     after:
-      - 'thepitt.esm'
-      - 'anchorage.esm'
+      - 'ThePitt.esm'
+      - 'Anchorage.esm'
       - 'StreetLights.esm'
       - 'BrokenSteel.esm'
-      - 'pointlookout.esm'
+      - 'PointLookout.esm'
     dirty:
       # version: 1.7.0.3
       - <<: *quickClean
@@ -382,12 +382,12 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/19122' ]
     group: *uf4pGroup
     after:
-      - 'thepitt.esm'
-      - 'anchorage.esm'
+      - 'ThePitt.esm'
+      - 'Anchorage.esm'
       - 'StreetLights.esm'
       - 'BrokenSteel.esm'
-      - 'pointlookout.esm'
-      - 'zeta.esm'
+      - 'PointLookout.esm'
+      - 'Zeta.esm'
       - 'ObjectPlacementFix.esm'
     tag:
       - C.Music
