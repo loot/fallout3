@@ -3314,6 +3314,9 @@ plugins:
   - name: 'RI_LootTableRI.esp'
     tag:
       - Delev
+    clean:
+      - crc: 0xDDE8B333
+        util: 'FO3Edit v4.0.2e'
   - name: 'RI_LootTablePN.esp'
     tag:
       - Delev
