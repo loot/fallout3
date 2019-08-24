@@ -5272,6 +5272,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/18734' ]
   - name: 'JIP Realistic Weapon Overheating.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18968' ]
+    clean:
+      - crc: 0x89E55C22
+        util: 'FO3Edit v4.0.2e'
   - name: 'GilbertToys.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19000' ]
   - name: 'rmSaveManager.esp'
@@ -5300,48 +5303,114 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/20004' ]
   - name: 'JIP Selective-Fire.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20012' ]
-  - name: 'JIP CC&C - Amanda (Ties That Bind).esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
-  - name: 'JIP CC&C - Amata.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
-  - name: 'JIP CC&C - Angel (Slave Raider).esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
-  - name: 'JIP CC&C - Bittercup.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
-  - name: 'JIP CC&C - Brianna (The Family).esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
-  - name: 'JIP CC&C - Brisa Almodovar.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
-  - name: 'JIP CC&C - Bryan Wilks.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
-  - name: 'JIP CC&C - Crystal.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
-  - name: 'JIP CC&C - Jasmine.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
-  - name: 'JIP CC&C - Jessi.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
-  - name: 'JIP CC&C - Kat.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
-  - name: 'JIP CC&C - Kelsey.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
-  - name: 'JIP CC&C - Lucy West.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
-  - name: 'JIP CC&C - Malika Kiowa.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
-  - name: 'JIP CC&C - Mika the Sniper (Essential).esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
-  - name: 'JIP CC&C - Mika the Sniper.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
-  - name: 'JIP CC&C - Nitro (Outcast).esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
-  - name: 'JIP CC&C - Quo Vagis.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
-  - name: 'JIP CC&C - Sarah Lyons.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
-  - name: 'JIP CC&C - Sydney.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
+    clean:
+      - crc: 0xCE472142
+        util: 'FO3Edit v4.0.2e'
   - name: 'JIP Companions Command & Control.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
+    clean:
+      - crc: 0x1B8A468F
+        util: 'FO3Edit v4.0.2e'
+  - name: 'JIP CC&C - Amanda (Ties That Bind).esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
+    clean:
+      - crc: 0xAA78BB24
+        util: 'FO3Edit v4.0.2e'
+  - name: 'JIP CC&C - Amata.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
+    clean:
+      - crc: 0xCA3745C3
+        util: 'FO3Edit v4.0.2e'
+  - name: 'JIP CC&C - Angel (Slave Raider).esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
+    clean:
+      - crc: 0xDEB57931
+        util: 'FO3Edit v4.0.2e'
+  - name: 'JIP CC&C - Bittercup.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
+    clean:
+      - crc: 0x769F5D74
+        util: 'FO3Edit v4.0.2e'
+  - name: 'JIP CC&C - Brianna (The Family).esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
+    clean:
+      - crc: 0x240AF3A4
+        util: 'FO3Edit v4.0.2e'
+  - name: 'JIP CC&C - Brisa Almodovar.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
+    clean:
+      - crc: 0x08456270
+        util: 'FO3Edit v4.0.2e'
+  - name: 'JIP CC&C - Bryan Wilks.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
+    clean:
+      - crc: 0x8CB6C63E
+        util: 'FO3Edit v4.0.2e'
+  - name: 'JIP CC&C - Crystal.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
+    clean:
+      - crc: 0x410976E0
+        util: 'FO3Edit v4.0.2e'
+  - name: 'JIP CC&C - Jasmine.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
+    clean:
+      - crc: 0xDF1F7C93
+        util: 'FO3Edit v4.0.2e'
+  - name: 'JIP CC&C - Jessi.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
+    clean:
+      - crc: 0x107027B7
+        util: 'FO3Edit v4.0.2e'
+  - name: 'JIP CC&C - Kat.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
+    clean:
+      - crc: 0x5E0B3C6A
+        util: 'FO3Edit v4.0.2e'
+  - name: 'JIP CC&C - Kelsey.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
+    clean:
+      - crc: 0x1E08924C
+        util: 'FO3Edit v4.0.2e'
+  - name: 'JIP CC&C - Lucy West.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
+    clean:
+      - crc: 0xAD855ACA
+        util: 'FO3Edit v4.0.2e'
+  - name: 'JIP CC&C - Malika Kiowa.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
+    clean:
+      - crc: 0x49513B64
+        util: 'FO3Edit v4.0.2e'
+  - name: 'JIP CC&C - Mika the Sniper (Essential).esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
+    clean:
+      - crc: 0x5A6B51DB
+        util: 'FO3Edit v4.0.2e'
+  - name: 'JIP CC&C - Mika the Sniper.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
+    clean:
+      - crc: 0xCCFDA14C
+        util: 'FO3Edit v4.0.2e'
+  - name: 'JIP CC&C - Nitro (Outcast).esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
+    clean:
+      - crc: 0xDB7BDB7B
+        util: 'FO3Edit v4.0.2e'
+  - name: 'JIP CC&C - Quo Vagis.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
+    clean:
+      - crc: 0xE913AAE2
+        util: 'FO3Edit v4.0.2e'
+  - name: 'JIP CC&C - Sarah Lyons.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
+    clean:
+      - crc: 0x7DEFFDB2
+        util: 'FO3Edit v4.0.2e'
+  - name: 'JIP CC&C - Sydney.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20035' ]
+    clean:
+      - crc: 0x8A12C8D6
+        util: 'FO3Edit v4.0.2e'
   - name: 'Winterized_T51b_Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20042' ]
   - name: 'Vault 101 Revisited James Room.esp'
