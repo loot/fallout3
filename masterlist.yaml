@@ -5862,6 +5862,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/21841' ]
   - name: 'cCCursorNotOnMaps.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22036' ]
+    clean:
+      - crc: 0x0B584848
+        util: 'FO3Edit v4.0.2e'
   - name: 'HKG3.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22085' ]
   - name: 'HKG3test.esp'
