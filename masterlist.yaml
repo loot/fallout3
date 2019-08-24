@@ -5262,14 +5262,29 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/14947' ]
   - name: 'Detect Traps.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15641' ]
+    clean:
+      - crc: 0x71EEC635
+        util: 'FO3Edit v4.0.2e'
   - name: 'Advanced Recon Tech - Detect Traps.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15641' ]
+    clean:
+      - crc: 0xEE15FC2B
+        util: 'FO3Edit v4.0.2e'
   - name: 'Detect Traps - DLC.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15641' ]
+    clean:
+      - crc: 0xBDB5D6B3
+        util: 'FO3Edit v4.0.2e'
   - name: 'Detect Traps - Perk.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15641' ]
+    clean:
+      - crc: 0x1C0FBB3D
+        util: 'FO3Edit v4.0.2e'
   - name: 'Detect Traps - The Traponator 4000.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15641' ]
+    clean:
+      - crc: 0x39C43097
+        util: 'FO3Edit v4.0.2e'
   - name: 'Advanced Recon Tech.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15653' ]
   - name: 'Advanced Recon Tech.esp'
