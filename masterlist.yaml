@@ -4746,6 +4746,9 @@ plugins:
   - name: 'CASM.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3729' ]
     req: [ *FOSE ]
+    clean:
+      - crc: 0x40AAEFBB
+        util: 'FO3Edit v4.0.2e'
   - name: 'Creature Companion Fixes.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20549' ]
     inc: [ 'Creature Companion Fixes No DLC.esp' ]
