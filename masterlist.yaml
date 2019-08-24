@@ -5284,6 +5284,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/15744' ]
   - name: 'iHUD.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15790' ]
+    clean:
+      - crc: 0x5D5C0D47
+        util: 'FO3Edit v4.0.2e'
   - name: 'aHUD.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15886' ]
     clean:
