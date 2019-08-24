@@ -3344,6 +3344,14 @@ plugins:
   - name: 'IMCN - FWE Compatibility and Ingestibles.esp'
     tag:
       - Stats
+    dirty:
+      - <<: *quickClean
+        crc: 0xE14E3330
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 5
+    clean:
+      - crc: 0xA86B44C1
+        util: 'FO3Edit v4.0.2e'
   - name: 'IMCN - FOOK2 Ingestibles.esp'
     tag:
       - Stats
