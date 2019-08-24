@@ -4499,6 +4499,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/20452' ]
     tag:
       - Destructible
+    clean:
+      - crc: 0x3DC16555
+        util: 'FO3Edit v4.0.2e'
   - name: 'ArlingtonRestoration.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20504' ]
     msg:
