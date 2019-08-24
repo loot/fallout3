@@ -5893,6 +5893,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/22168' ]
   - name: 'ChopShopModv13.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22174' ]
+    clean:
+      - crc: 0xADFC7D98
+        util: 'FO3Edit v4.0.2e'
   - name: 'MusTechGenRoom.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22174' ]
   - name: 'Grave Digger.esp'
