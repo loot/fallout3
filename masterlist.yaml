@@ -1076,6 +1076,7 @@ plugins:
         nav: 3
   - name: 'RH_IRONSIGHTS.esm'
     url:
+      # RH_IronSights - FOSE
       - 'https://www.nexusmods.com/fallout3/mods/6938'
       # Paradox merged mod
       - 'https://www.nexusmods.com/fallout3/mods/16787'
@@ -1084,11 +1085,18 @@ plugins:
     tag:
       - Inven
     dirty:
-      - crc: 0xBA4ABFE7
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 0
+      # Paradox merged mod
+      - <<: *quickClean
+        crc: 0xBA4ABFE7
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         udr: 1
-        nav: 0
+    clean:
+      # RH_IronSights - FOSE
+      - crc: 0xE3972362
+        util: 'FO3Edit v4.0.2e'
+      # Paradox merged mod
+      - crc: 0x08328958
+        util: 'FO3Edit v4.0.2e'
   - name: 'Vault 101 Revisited.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13308' ]
     dirty:
