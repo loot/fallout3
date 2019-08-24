@@ -5252,16 +5252,39 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/13280' ]
   - name: 'RHKBrisaAlmodovar.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14448' ]
+    clean:
+      - crc: 0xE68896ED
+        util: 'FO3Edit v4.0.2e'
   - name: 'RHKBrisaAlmodovar - DLC.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14448' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x0461A867
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 3
+    clean:
+      - crc: 0x749D34C6
+        util: 'FO3Edit v4.0.2e'
   - name: 'RHKBrisaAlmodovar - FWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14448' ]
+    clean:
+      - crc: 0xF0BB63EA
+        util: 'FO3Edit v4.0.2e'
   - name: 'RHKBrisa - IMCN - FWE balanced patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14448' ]
+    clean:
+      - crc: 0x55EAD152
+        util: 'FO3Edit v4.0.2e'
   - name: 'RHKBrisa - IMCN patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14448' ]
+    clean:
+      - crc: 0x26A85AF5
+        util: 'FO3Edit v4.0.2e'
   - name: 'RHKBrisaRiPnO - Compatibility.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14448' ]
+    clean:
+      - crc: 0xED0D755D
+        util: 'FO3Edit v4.0.2e'
   - name: 'Stimpak Counter.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14730' ]
   - name: 'WeightAmmo.esp'
