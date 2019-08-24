@@ -4556,6 +4556,9 @@ plugins:
     tag:
       - Graphics
       - Stats
+    clean:
+      - crc: 0x22391518
+        util: 'FO3Edit v4.0.2e'
   - name: 'ArefuExpandedByAzar-FixMisc.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15686' ]
     dirty:
