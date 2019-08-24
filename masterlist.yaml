@@ -1838,10 +1838,16 @@ plugins:
       - Invent
   - name: 'Beichtvater Cromwell macht Pause_DV.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4660' ]
+    clean:
+      - crc: 0x8F54FADF
+        util: 'FO3Edit v4.0.2e'
   - name: 'Confessor Cromwell has a Break_EV.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4660' ]
     tag:
       - Actors.AIPackages
+    clean:
+      - crc: 0xAD77AE99
+        util: 'FO3Edit v4.0.2e'
   - name: 'CrowdedCities_v2.esp'
     inc:
       - 'CrowdedCities_v2_lessNPCs.esp'
