@@ -5393,6 +5393,15 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/19891' ]
   - name: 'TiesThatBind.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19941' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xC9592AE8
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 33
+        udr: 4
+    clean:
+      - crc: 0x523BBFFB
+        util: 'FO3Edit v4.0.2e'
   - name: 'Museum.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19951' ]
   - name: 'MetroCars.esp'
