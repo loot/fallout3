@@ -762,11 +762,13 @@ plugins:
       - Relev
       - Scripts
     dirty:
-      - crc: 0x9695F2A1
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0x895521AD
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 77
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0xB2A96AB3
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
@@ -777,11 +779,13 @@ plugins:
       - Relev
       - Scripts
     dirty:
-      - crc: 0xf2b3a052
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0xFB3CE701
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 41
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0x2A40EF59
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - DLC Anchorage.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
