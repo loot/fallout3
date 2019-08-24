@@ -5287,12 +5287,24 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Advanced Recon Tech.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15653' ]
+    clean:
+      - crc: 0xF19C92D7
+        util: 'FO3Edit v4.0.2e'
   - name: 'Advanced Recon Tech.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15653' ]
+    clean:
+      - crc: 0x7B11D089
+        util: 'FO3Edit v4.0.2e'
   - name: 'Advanced Recon Gear.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15653' ]
+    clean:
+      - crc: 0x874EF7B8
+        util: 'FO3Edit v4.0.2e'
   - name: 'Advanced Recon Tech FWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15653' ]
+    clean:
+      - crc: 0xB3AF6E6C
+        util: 'FO3Edit v4.0.2e'
   - name: 'AquaPura 3000.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15657' ]
   - name: 'Advanced Recon Range Finder.esp'
