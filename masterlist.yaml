@@ -5381,6 +5381,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'AquaPura 3000.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15657' ]
+    clean:
+      - crc: 0x08A1C04E
+        util: 'FO3Edit v4.0.2e'
   - name: 'Advanced Recon Range Finder.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15744' ]
     clean:
