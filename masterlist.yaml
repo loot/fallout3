@@ -556,6 +556,9 @@ plugins:
     url:
       - 'https://www.nexusmods.com/fallout3/mods/2761'
       - 'https://www.nexusmods.com/fallout3/mods/4447'
+    clean:
+      - crc: 0xAE67CA57
+        util: 'FO3Edit v4.0.2e'
   - name: 'CALIBR.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
     clean:
