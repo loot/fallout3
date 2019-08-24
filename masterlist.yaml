@@ -5255,14 +5255,23 @@ plugins:
     tag:
       - Stats
     dirty:
-      - crc: 0xE4D428D7
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      # 11611
+      - <<: *quickClean
+        crc: 0xE4D428D7
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 7
-        udr: 0
-        nav: 0
-      - crc: 0xE94AC8C2
-        <<: *dirtyPlugin
+      # 17748
+      - <<: *quickClean
+        crc: 0x373C0213
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 7
+    clean:
+      # 11611
+      - crc: 0xFC773730
+        util: 'FO3Edit v4.0.2e'
+      # 17748
+      - crc: 0x05EACBF1
+        util: 'FO3Edit v4.0.2e'
     msg:
       - type: say
         content: ZL-ACR.esp from [KDS Zealotlee ACR with Ironsights](https://www.nexusmods.com/fallout3/mods/17748/) is preferred when using RH_Ironsights, or alternatively the version in the Zealotlee Adaptive Combat Rifle Script Bugfix mod can be used.
@@ -5274,14 +5283,23 @@ plugins:
     tag:
       - Stats
     dirty:
-      - crc: 0xB7146642
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      # 5431
+      - <<: *quickClean
+        crc: 0xB7146642
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 6
-        udr: 0
-        nav: 0
-      - crc: 0xcd453ee7
-        <<: *dirtyPlugin
+      # 17749
+      - <<: *quickClean
+        crc: 0xCD453EE7
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 6
+    clean:
+      # 5431
+      - crc: 0x022E817B
+        util: 'FO3Edit v4.0.2e'
+      # 17749
+      - crc: 0xE51C05AA
+        util: 'FO3Edit v4.0.2e'
     msg:
       - type: say
         content: 'ZL-MP5 Pack.esp from [KDS Zealotlee MP5 With Ironsights](https://www.nexusmods.com/fallout3/mods/17749/) is preferred when using RH_Ironsights'
@@ -5291,21 +5309,25 @@ plugins:
     tag:
       - Stats
     dirty:
-      - crc: 0x3B754C8B
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0x3B754C8B
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 11
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0xA0961926
+        util: 'FO3Edit v4.0.2e'
   - name: 'ZL-SVD-CALIBR.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3759' ]
     tag:
       - Stats
     dirty:
-      - crc: 0x1141EE84
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0x1141EE84
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 11
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0x89406FB9
+        util: 'FO3Edit v4.0.2e'
   - name: 'Barkskin.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/273' ]
   - name: 'krzymar-MoonSize_(\d\d\d)%\.esp'
