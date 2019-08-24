@@ -5286,6 +5286,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/15790' ]
   - name: 'aHUD.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15886' ]
+    clean:
+      - crc: 0x6F401E38
+        util: 'FO3Edit v4.0.2e'
   - name: 'No UI Blur.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16171' ]
   - name: 'FO3NeckChains.esp'
