@@ -558,6 +558,9 @@ plugins:
       - 'https://www.nexusmods.com/fallout3/mods/4447'
   - name: 'CALIBR.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
+    clean:
+      - crc: 0x61D51135
+        util: 'FO3Edit v4.0.2e'
   - name: 'FO3 Wanderers Edition - Main File.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
     msg:
