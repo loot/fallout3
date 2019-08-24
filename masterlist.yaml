@@ -4519,6 +4519,9 @@ plugins:
   - name: 'SVDForFWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12751' ]
     tag: [ Stats ]
+    clean:
+      - crc: 0x72260754
+        util: 'FO3Edit v4.0.2e'
   - name: '20th Century Weapons -Plus- Reborn FWE-WMK-Calibr14_V1_70RC_18668.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18668' ]
     tag:
