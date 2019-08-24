@@ -5835,6 +5835,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/22881' ]
   - name: 'AutomatFix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22947' ]
+    clean:
+      - crc: 0x97814A6C
+        util: 'FO3Edit v4.0.2e'
   - name: 'Simply Uncut.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/23037' ]
   - name: 'UniqueWeaponsRetextured.esp'
