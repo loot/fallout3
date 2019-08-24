@@ -280,18 +280,13 @@ plugins:
       # version: 1.7.0.3
       - <<: *quickClean
         crc: 0xA4BA9D10
-        util: '[FO3Edit v4.0.0](https://www.nexusmods.com/fallout3/mods/637)'
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 55
         udr: 10
-      # version: 1.7.0.3, before second pass of cleaning.
-      - <<: *quickClean
-        crc: 0x1BB2684E
-        util: '[FO3Edit v4.0.0](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 3
     clean:
       # version: 1.7.0.3
-      - crc: 0x557B5854
-        util: 'FO3Edit v4.0.0'
+      - crc: 0xCBF8B425
+        util: 'FO3Edit v4.0.2e'
   - name: 'ThePitt.esm'
     group: *dlcGroup
     after:
@@ -300,8 +295,14 @@ plugins:
       # version: 1.7.0.3
       - <<: *quickClean
         crc: 0xB38B3E44
-        util: '[FO3Edit v4.0.0](https://www.nexusmods.com/fallout3/mods/637)'
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 53
+        nav: 5
+    dirty:
+      # version: 1.7.0.3
+      - <<: *quickClean
+        crc: 0x29597BB9
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 5
   - name: 'StreetLights.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8069' ]
@@ -333,15 +334,20 @@ plugins:
       # version: 1.7.0.3
       - <<: *quickClean
         crc: 0x30011B79
-        util: '[FO3Edit v4.0.0](https://www.nexusmods.com/fallout3/mods/637)'
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 276
         udr: 34
         nav: 12
       # version: 1.7.0.3, before second pass of cleaning.
       - <<: *quickClean
-        crc: 0x1AC4D764
-        util: '[FO3Edit v4.0.0](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 3
+        crc: 0x323DA7DC
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+        nav: 12
+      # version: 1.7.0.3, before third pass of cleaning.
+      - <<: *quickClean
+        crc: 0xE046396D
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 12
   - name: 'PointLookout.esm'
     group: *dlcGroup
@@ -354,12 +360,12 @@ plugins:
       # version: 1.7.0.3
       - <<: *quickClean
         crc: 0xD92704D8
-        util: '[FO3Edit v4.0.0](https://www.nexusmods.com/fallout3/mods/637)'
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 21
     clean:
       # version: 1.7.0.3
-      - crc: 0xFB43FA4D
-        util: 'FO3Edit v4.0.0'
+      - crc: 0xBC6DCE5F
+        util: 'FO3Edit v4.0.2e'
   - name: 'Zeta.esm'
     group: *dlcGroup
     after:
@@ -372,12 +378,12 @@ plugins:
       # version: 1.7.0.3
       - <<: *quickClean
         crc: 0x1D017E23
-        util: '[FO3Edit v4.0.0](https://www.nexusmods.com/fallout3/mods/637)'
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 15
     clean:
       # version: 1.7.0.3
-      - crc: 0x5DACDA77
-        util: 'FO3Edit v4.0.0'
+      - crc: 0x6F102CEE
+        util: 'FO3Edit v4.0.2e'
   - name: 'Unofficial Fallout 3 Patch.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19122' ]
     group: *uf4pGroup
