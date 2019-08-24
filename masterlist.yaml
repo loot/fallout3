@@ -5540,6 +5540,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/18112' ]
   - name: 'Millenia_AKS74U.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18137' ]
+    clean:
+      - crc: 0xFF76E545
+        util: 'FO3Edit v4.0.2e'
   - name: 'RBS -Laser and Plasma Projectiles Optional.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18156' ]
   - name: 'RealisticBulletsNoTracers.esp'
