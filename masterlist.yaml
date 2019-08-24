@@ -2243,6 +2243,9 @@ plugins:
       - Invent
       - Names
       - Relev
+    clean:
+      - crc: 0x3E2861DB
+        util: 'FO3Edit v4.0.2e'
   - name: 'DALCO Inventory Sorter - Weapon Mod Kits (Base).esp'
     tag:
       - Names
@@ -2254,11 +2257,13 @@ plugins:
       - Names
       - Relev
     dirty:
-      - crc: 0x25042115
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 82
-        udr: 0
-        nav: 0
+      - <<: *quickClean
+        crc: 0x25042115
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 79
+    clean:
+      - crc: 0xB9A7FC28
+        util: 'FO3Edit v4.0.2e'
   - name: 'RH_WMK_Bridge.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17757' ]
     tag:
