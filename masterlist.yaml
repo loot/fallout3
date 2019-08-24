@@ -5279,6 +5279,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/11046' ]
   - name: 'A Trail of Crumbs.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11283' ]
+    clean:
+      - crc: 0x6A82EA92
+        util: 'FO3Edit v4.0.2e'
   - name: 'HelmPOV.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11474' ]
   - name: 'Merc Adventurer Armor - eng.esp'
