@@ -5014,12 +5014,18 @@ plugins:
       - Graphics
       - Names
       - Stats
+    clean:
+      - crc: 0x6D952CFE
+        util: 'FO3Edit v4.0.2e'
   - name: 'Millenia_C96_replacer.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18401' ]
     tag:
       - Graphics
       - Names
       - Stats
+    clean:
+      - crc: 0x77460C85
+        util: 'FO3Edit v4.0.2e'
   - name: 'MyMegaton-AmmoPress-Calibr-Plus-Unlocked_v1_21_18605.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18605' ]
     tag: [ Names ]
@@ -5557,6 +5563,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/18234' ]
   - name: 'Millenia_CombatShotgun_replacer.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18506' ]
+    clean:
+      - crc: 0x743C77B3
+        util: 'FO3Edit v4.0.2e'
   - name: 'BeardsofFallout.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18622' ]
   - name: 'New Toys - Cars.esp'
