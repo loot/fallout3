@@ -298,8 +298,7 @@ plugins:
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 53
         nav: 5
-    dirty:
-      # version: 1.7.0.3
+      # version: 1.7.0.3, before second pass of cleaning.
       - <<: *quickClean
         crc: 0x29597BB9
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
