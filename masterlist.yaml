@@ -1843,7 +1843,7 @@ plugins:
         util: 'FO3Edit v4.0.2e'
     msg:
       - type: warn
-        content: 'This plugin is read-only. Make sure to remove this flag in it's properties!'
+        content: 'This plugin is read-only. Make sure to remove this flag in it''s properties!'
   - name: 'Confessor Cromwell has a Break_EV.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4660' ]
     tag:
