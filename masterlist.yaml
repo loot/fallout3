@@ -6087,8 +6087,14 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/20977' ]
   - name: 'Assaultrifle_replacers_WMK+RH+FWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20982' ]
+    clean:
+      - crc: 0xE3317BA8
+        util: 'FO3Edit v4.0.2e'
   - name: 'Assaultrifle_replacers_WMK+RH.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20982' ]
+    clean:
+      - crc: 0x77BEB3E1
+        util: 'FO3Edit v4.0.2e'
   - name: 'Zeta Turret Drone Karma Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21118' ]
   - name: 'Zeta Turret Drone Karma Fix - MMM.esp'
