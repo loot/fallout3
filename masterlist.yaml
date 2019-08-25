@@ -6237,6 +6237,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'DCInt_ARoomWithAView.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20959' ]
+    clean:
+      - crc: 0x33A5B27C
+        util: 'FO3Edit v4.0.2e'
   - name: 'IMPACT.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20977' ]
   - name: 'Assaultrifle_replacers_WMK+RH+FWE.esp'
