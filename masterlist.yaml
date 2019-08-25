@@ -480,6 +480,9 @@ plugins:
       - R.Teeth
       - Voice-F
       - Voice-M
+    clean:
+      - crc: 0x06AA1298
+        util: 'FO3Edit v4.0.2e'
   - name: 'FACE3.esm'
     tag:
       - Body-F
