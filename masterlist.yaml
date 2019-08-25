@@ -5439,10 +5439,29 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/4541' ]
   - name: 'bzArmour-non-nude.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4719' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xC9884346
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+    clean:
+      - crc: 0x2019034A
+        util: 'FO3Edit v4.0.2e'
   - name: 'bzArmour-nude.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4719' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xF5263046
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+    clean:
+      - crc: 0xAB17B621
+        util: 'FO3Edit v4.0.2e'
   - name: 'bzBodySuits.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4719' ]
+    clean:
+      - crc: 0x29A3A3FD
+        util: 'FO3Edit v4.0.2e'
   - name: 'Trooper_outfits.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5208' ]
   - name: 'House.esp'
