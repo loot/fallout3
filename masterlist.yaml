@@ -446,9 +446,13 @@ plugins:
       - NPC.Race
       - NpcFaces
   - name: 'Destruction.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1904' ]
     tag:
       - Destructible
       - Scripts
+    clean:
+      - crc: 0xBD5F2D97
+        util: 'FO3Edit v4.0.2e'
   - name: 'xCALIBR.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11684' ]
     tag:
@@ -1847,14 +1851,42 @@ plugins:
     tag:
       - Graphics
   - name: 'Destruction - Main.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1904' ]
     tag:
       - Destructible
       - Graphics
       - Scripts
+    clean:
+      - crc: 0x166F49CF
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Destruction - Main - Statics.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1904' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xD9B8D76C
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 7
+    clean:
+      - crc: 0x65F3F5F2
+        util: 'FO3Edit v4.0.2e'
   - name: 'Destruction - DLC.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1904' ]
     tag:
       - Destructible
       - Scripts
+    clean:
+      - crc: 0x5E0D32E3
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Destruction - DLC - Statics.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1904' ]
+    clean:
+      - crc: 0x04CF4703
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Destruction - CP - Fellout.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1904' ]
+    clean:
+      - crc: 0x16BE22B6
+        util: 'FO3Edit v4.0.2e'
   - name: 'Destructable Building Materials 3000 Beta v1.5 (PITT REQUIRED).esp'
     msg:
       - type: warn
@@ -6694,10 +6726,16 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Destruction - DC Moods.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
+    clean:
+      - crc: 0x9952050A
+        util: 'FO3Edit v4.0.2e'
   - name: 'Destruction - FNNsys.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
   - name: 'Destruction - xCALIBRammo_FWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
+    clean:
+      - crc: 0x484BD230
+        util: 'FO3Edit v4.0.2e'
   - name: 'Gunfire Sound Range Increased - Core + DLC + EVE + FWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
   - name: 'Gunfire Sound Range Increased - Core + DLC + EVE.esp'
