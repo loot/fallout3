@@ -4957,12 +4957,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/3809' ]
     tag:
       - Relev
-    dirty:
-      - crc: 0xC01A90C2
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 6
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0x94CB8DA8
+        util: 'FO3Edit v4.0.2e'
   - name: 'CALIBRv14 Ammunition Schematics for FWE-WMK-CRAFT-V1_3-18639.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18639' ]
     dirty:
