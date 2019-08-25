@@ -5758,6 +5758,17 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/19864' ]
   - name: 'Point Lookout Reborn.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19891' ]
+    dirty:
+      - <<: *reqManualFix
+        crc: 0xB5771C47
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 47
+        udr: 4
+        nav: 14
+      - <<: *reqManualFix
+        crc: 0x2812CA6E
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        nav: 14
   - name: 'TiesThatBind.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19941' ]
     dirty:
