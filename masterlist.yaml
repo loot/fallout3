@@ -4562,6 +4562,9 @@ plugins:
     tag:
       - Graphics
       - Names
+    clean:
+      - crc: 0xA0EC8FA7
+        util: 'FO3Edit v4.0.2e'
   - name: 'FWE+WMK_weapons_xCALIBRified.esp'
     tag:
       - Graphics
