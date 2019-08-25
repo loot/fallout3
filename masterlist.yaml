@@ -437,8 +437,19 @@ plugins:
       - Eyes
       - Hair
   - name: 'FNNsys.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/14354' ]
     tag:
       - Scripts
+    clean:
+      - crc: 0xD7A0F321
+        util: 'FO3Edit v4.0.2e'
+  - name: 'FNNsys - FWE.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/14354' ]
+    tag:
+      - Scripts
+    clean:
+      - crc: 0xBFCE2871
+        util: 'FO3Edit v4.0.2e'
   - name: 'FaceMe.esm'
     tag:
       - Eyes
@@ -4516,9 +4527,6 @@ plugins:
       - Invent
       - Relations
       - Relev
-      - Scripts
-  - name: 'FNNsys - FWE.esp'
-    tag:
       - Scripts
   - name: 'xCALIBRuniverse.esp'
     tag:
