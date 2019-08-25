@@ -1058,11 +1058,13 @@ plugins:
   - name: 'RobcoCertified24SideMod.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/712' ]
     dirty:
-      - crc: 0x9c938fce
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0x9C938FCE
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0x75DBB79D
+        util: 'FO3Edit v4.0.2e'
   - name: 'Wasteland Whisperer v2.esm'
     req: [ *FOSE ]
   - name: 'ArefuExpandedByAzar.esm'
