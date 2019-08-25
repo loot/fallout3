@@ -2532,6 +2532,17 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/14994' ]
     tag:
       - Stats
+    dirty:
+      - <<: *reqManualFix
+        crc: 0x88843B25
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 9
+        udr: 1
+        nav: 1
+      - <<: *reqManualFix
+        crc: 0x3B59F79E
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        nav: 1
   - name: 'BnB special armors.esp'
     tag:
       - Invent
