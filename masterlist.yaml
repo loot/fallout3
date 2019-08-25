@@ -6630,6 +6630,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'DCRWAV-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22579' ]
+    clean:
+      - crc: 0xF98846B7
+        util: 'FO3Edit v4.0.2e'
   - name: 'STDG.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22663' ]
   - name: 'DeNerfing Colonel Autumns Laser Pistol.esp'
