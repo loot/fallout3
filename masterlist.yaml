@@ -1613,6 +1613,9 @@ plugins:
       - Invent
       - Scripts
       - Stats
+    clean:
+      - crc: 0xE79B4E74
+        util: 'FO3Edit v4.0.2e'
   - name: 'RatTrapRadio.esp'
     inc:
       - 'Regulators_Overhaul.esp'
