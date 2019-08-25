@@ -5298,6 +5298,9 @@ plugins:
       - *AlreadyInUF3P_1_7
   - name: 'tubrrCompound.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6068' ]
+    clean:
+      - crc: 0x76716ACE
+        util: 'FO3Edit v4.0.2e'
   - name: 'tubRRCompound.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6068' ]
     tag:
@@ -5306,10 +5309,15 @@ plugins:
       - Inven
       - Scripts
     dirty:
-      - crc: 0x27BEA633
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *reqManualFix
+        crc: 0xDEF7A2A3
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 336
         udr: 13
+        nav: 7
+      - <<: *reqManualFix
+        crc: 0xF7400EF3
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 7
   - name: 'UrgeWashingtonBoS.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17939' ]
