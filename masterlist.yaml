@@ -1657,11 +1657,14 @@ plugins:
         content: '"Make sure to disable any "tougher stealth" or similar components [of FWE], as it can make one section of this mod quite difficult, if not impossible."'
         condition: 'active("FO3 Wanderers Edition - Main File.esm")'
     dirty:
-      - crc: 0x663DDF02
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 0
+      - <<: *quickClean
+        crc: 0x90814119
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 19
         udr: 11
-        nav: 0
+    clean:
+      - crc: 0xFE791FEE
+        util: 'FO3Edit v4.0.2e'
   - name: 'The Mantis Imperative - Nasty Zeta.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12296' ]
     dirty:
@@ -1673,25 +1676,44 @@ plugins:
   - name: 'The Mantis Imperative - Combat.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12296' ]
     msg: [ *MantisImperativeFWEWarning ]
+    clean:
+      - crc: 0x95B17A5D
+        util: 'FO3Edit v4.0.2e'
   - name: 'The Mantis Imperative - Medical.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12296' ]
+    clean:
+      - crc: 0xB9154606
+        util: 'FO3Edit v4.0.2e'
     msg: [ *MantisImperativeFWEWarning ]
   - name: 'The Mantis Imperative - SkillBooks.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12296' ]
     msg: [ *MantisImperativeFWEWarning ]
     dirty:
-      - crc: 0xDD2E48B1
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0xCF546D5A
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0xEC82D148
+        util: 'FO3Edit v4.0.2e'
   - name: 'The Mantis Imperative - XP.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12296' ]
     msg: [ *MantisImperativeFWEWarning ]
+    clean:
+      - crc: 0x6AEF38ED
+        util: 'FO3Edit v4.0.2e'
   - name: 'The Mantis Imperative - Jello.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12296' ]
     tag:
       - Relev
+    dirty:
+      - <<: *quickClean
+        crc: 0x24C45694
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 104
+    clean:
+      - crc: 0x301F21ED
+        util: 'FO3Edit v4.0.2e'
   - name: 'Action for men v3.0.esp'
     tag:
       - Invent
