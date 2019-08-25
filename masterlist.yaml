@@ -5712,6 +5712,14 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'CanterburyCommonsInteriors.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11046' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x3030F941
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+    clean:
+      - crc: 0x2E6504FC
+        util: 'FO3Edit v4.0.2e'
   - name: 'A Trail of Crumbs.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11283' ]
     clean:
