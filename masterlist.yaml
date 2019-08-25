@@ -6016,6 +6016,15 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/19191' ]
   - name: 'DC Moods.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19191' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x895EE13B
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 270
+        udr: 108
+    clean:
+      - crc: 0xDA1E9B57
+        util: 'FO3Edit v4.0.2e'
   - name: 'PointLookout Moods.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19191' ]
   - name: 'BauPetSupplies.esp'
