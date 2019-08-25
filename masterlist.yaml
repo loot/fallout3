@@ -412,6 +412,9 @@ plugins:
     url: [ 'http://www.gamefront.com/files/21184005/20th_centuary_weapons_5.12_with_addons.7z' ]
     tag:
       - Scripts
+    clean:
+      - crc: 0x8A5BC2AF
+        util: 'FO3Edit v4.0.2e'
   - name: 'Lings.esm'
     tag:
       - Hair
@@ -4162,44 +4165,89 @@ plugins:
   - name: '20th Century v5 ALIVE (Vendor).esp'
     tag:
       - Invent
+    clean:
+      - crc: 0x6A6EC211
+        util: 'FO3Edit v4.0.2e'
   - name: '20th Century v5 ALIVE (Containers).esp'
     tag:
       - Invent
+    clean:
+      - crc: 0x650A585B
+        util: 'FO3Edit v4.0.2e'
   - name: '20th Century v5 ALIVE (NPC_Settler).esp'
     tag:
       - Invent
+    clean:
+      - crc: 0x6A62989B
+        util: 'FO3Edit v4.0.2e'
   - name: '20th Century v5 ALIVE (Vault 101).esp'
     tag:
       - Invent
+    dirty:
+      - <<: *quickClean
+        crc: 0xF569054A
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 4
+    clean:
+      - crc: 0xE9B22AAC
+        util: 'FO3Edit v4.0.2e'
   - name: '20th Century v5 ALIVE (RivetCity).esp'
     tag:
       - Invent
+    clean:
+      - crc: 0x21D53DF5
+        util: 'FO3Edit v4.0.2e'
   - name: '20th Century v5 ALIVE (Raider).esp'
     tag:
       - Invent
+    clean:
+      - crc: 0x5727EF5F
+        util: 'FO3Edit v4.0.2e'
   - name: '20th Century v5 ALIVE (Slaver).esp'
     tag:
       - Invent
+    clean:
+      - crc: 0xB5590C3C
+        util: 'FO3Edit v4.0.2e'
   - name: '20th Century v5 ALIVE (Chinese Ghoul).esp'
     tag:
       - Invent
+    clean:
+      - crc: 0xF1838342
+        util: 'FO3Edit v4.0.2e'
   - name: '20th Century v5 ALIVE (SuperMutant).esp'
     tag:
       - Invent
+    dirty:
+      - <<: *quickClean
+        crc: 0x189A679D
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 11
+    clean:
+      - crc: 0x5F83E84D
+        util: 'FO3Edit v4.0.2e'
   - name: '20th Century v5 ALIVE (Talon_Regulator).esp'
     tag:
       - Invent
+    clean:
+      - crc: 0xF270D88F
+        util: 'FO3Edit v4.0.2e'
   - name: '20th Century v5 ALIVE (Brotherhood_Outcast).esp'
     tag:
       - Invent
+    clean:
+      - crc: 0x456DED89
+        util: 'FO3Edit v4.0.2e'
   - name: '20th Century v5 ALIVE (TEST Container).esp'
     url: [ 'http://www.gamefront.com/files/21184005/20th_centuary_weapons_5.12_with_addons.7z' ]
     dirty:
-      - crc: 0x4F5CCD2C
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0x4F5CCD2C
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 3
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0x82C0561A
+        util: 'FO3Edit v4.0.2e'
   - name: 'FWE Ammo Weight for 20th Century.esp'
     inc:
       - 'FWE Realistic Ammo Weight inc 20th Cent.esp'
@@ -4532,11 +4580,14 @@ plugins:
       - Relev
       - Stats
     dirty:
-      - crc: 0xDBF185AA
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 474
+      - <<: *quickClean
+        crc: 0xDBF185AA
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 333
         udr: 1
-        nav: 0
+    clean:
+      - crc: 0x6D4B6BED
+        util: 'FO3Edit v4.0.2e'
   - name: '20th_Century_Weapons -Plus- Reborn_v1_70RC-18668_Ironsights_v1_1.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18668' ]
     tag:
@@ -4553,10 +4604,24 @@ plugins:
         nav: 0
   - name: '20th Century Weapons -Plus- Reborn v1_70RC-18668-ALIVE (TEST Container).esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18668' ]
+    clean:
+      - crc: 0xFE58587F
+        util: 'FO3Edit v4.0.2e'
   - name: '20th Century Weapons -Plus- Reborn v1_70RC-18668-ALIVE(Chinese Ghoul).esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18668' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x4CBD7F38
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 12
+    clean:
+      - crc: 0x5FB0FEE5
+        util: 'FO3Edit v4.0.2e'
   - name: '20th Century Weapons -Plus- Reborn V1_70RC-18668-ALIVE(SuperMutant).esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18668' ]
+    clean:
+      - crc: 0x4EDA53E4
+        util: 'FO3Edit v4.0.2e'
   - name: '32S&W.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18743' ]
     tag:
