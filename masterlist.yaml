@@ -3933,6 +3933,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/16787' ]
     tag:
       - C.Light
+    clean:
+      - crc: 0x409A2BD8
+        util: 'FO3Edit v4.0.2e'
   - name: 'Realistic Interior Lighting - BS.esp'
     tag:
       - C.Light
