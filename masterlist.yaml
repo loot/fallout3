@@ -5170,11 +5170,27 @@ plugins:
     tag:
       - Sound
       - Stats
+    dirty:
+      - <<: *quickClean
+        crc: 0x1F5F8C3D
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+    clean:
+      - crc: 0x2BBAC9C5
+        util: 'FO3Edit v4.0.2e'
   - name: 'PlasmaRifleAwesomefiedWMK.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3484' ]
     tag:
       - Sound
       - Stats
+    dirty:
+      - <<: *quickClean
+        crc: 0x597E4C09
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+    clean:
+      - crc: 0x0F164590
+        util: 'FO3Edit v4.0.2e'
   - name: 'PLFewerItems.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7268' ]
     group: *overridesGroup
