@@ -5567,6 +5567,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Barkskin.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/273' ]
+    clean:
+      - crc: 0xB21535A9
+        util: 'FO3Edit v4.0.2e'
   - name: 'krzymar-MoonSize_(\d\d\d)%\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/572' ]
   - name: 'AutoAim_6000_v1.0.esp'
