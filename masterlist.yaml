@@ -4966,11 +4966,13 @@ plugins:
   - name: 'CALIBRv14 Ammunition Schematics for FWE-WMK-CRAFT-V1_3-18639.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18639' ]
     dirty:
-      - crc: 0x9AB2CF5E
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 2
-        udr: 0
-        nav: 0
+      - <<: *quickClean
+        crc: 0x9AB2CF5E
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 5
+    clean:
+      - crc: 0x7F7525E5
+        util: 'FO3Edit v4.0.2e'
   - name: 'Canterbury Commons Interiors Embiggened.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13301' ]
     inc:
