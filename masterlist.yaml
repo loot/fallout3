@@ -5928,6 +5928,11 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/17320' ]
   - name: 'Billboard Camps.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17703' ]
+    dirty:
+      - <<: *reqManualFix
+        crc: 0x546BA172
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        nav: 3
   - name: 'AWorldOfPainFO3.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17965' ]
     dirty:
