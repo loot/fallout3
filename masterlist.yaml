@@ -5926,6 +5926,14 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/19191' ]
   - name: 'BauPetSupplies.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19473' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x63A09AC1
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 23
+    clean:
+      - crc: 0xEA58293C
+        util: 'FO3Edit v4.0.2e'
   - name: 'BaileysCrossingMetro.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19758' ]
     dirty:
