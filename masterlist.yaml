@@ -6448,8 +6448,14 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Armor Repair Kits - FO3.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22541' ]
+    clean:
+      - crc: 0xE1297B92
+        util: 'FO3Edit v4.0.2e'
   - name: 'Armor Repair Kits PL - FO3.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22541' ]
+    clean:
+      - crc: 0x909A50BF
+        util: 'FO3Edit v4.0.2e'
   - name: 'DCRWAV-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22579' ]
   - name: 'STDG.esp'
