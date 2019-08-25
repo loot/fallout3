@@ -5948,6 +5948,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/16927' ]
   - name: 'CoolLasersMod.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17320' ]
+    clean:
+      - crc: 0x64BEAA11
+        util: 'FO3Edit v4.0.2e'
   - name: 'Billboard Camps.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17703' ]
     dirty:
