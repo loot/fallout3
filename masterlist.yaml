@@ -965,11 +965,13 @@ plugins:
   - name: 'Companion Core.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/712' ]
     dirty:
-      - crc: 0x6f02e35
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0x06F02E35
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0x0F258351
+        util: 'FO3Edit v4.0.2e'
   - name: 'Companion Core DLC Addon.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/712' ]
     dirty:
