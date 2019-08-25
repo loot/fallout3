@@ -6357,6 +6357,9 @@ plugins:
       - Invent
       - Scripts
       - Stats
+    clean:
+      - crc: 0xF404243F
+        util: 'FO3Edit v4.0.2e'
 
 
   ### Load Late-section
