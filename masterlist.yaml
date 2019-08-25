@@ -6490,6 +6490,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Crowded Cities Redux.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0xF0C7CEAB
+        util: 'FO3Edit v4.0.2e'
   - name: 'WastelandGuards01 - Essential NPCs.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
   - name: 'RH_IronSights - Cool Lasers.esp'
