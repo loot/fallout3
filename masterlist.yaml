@@ -5894,100 +5894,238 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/21628' ]
   - name: '(TWPC) 20CWRE-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0x263D7B5F
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) 20CWRE-WMK-RIFWC-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0x6764FFE6
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) 20CWRE-WMK-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0xF6FBE4CF
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) 20CWRECW-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
   - name: '(TWPC) 20CWRECW-WMK-RIFWC-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
   - name: '(TWPC) BBB-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0x289306D0
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) BBD-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0x3B234A8D
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) BFM-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
   - name: '(TWPC) BFO-EVE-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0x0CC4D21D
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) BFO-MMM-EVE-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0x077A92D4
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) BFO-MMM-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0xA7F22C66
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) BFO-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0x70814740
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) BRCC-PB Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0xADA18F5B
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) BVR-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0x8E972AC6
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) CMRP-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0xE3E8E63C
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) CPWM-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0xB7C782D4
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) DIFF3-RI-EVE-MMM-WMK-PRA-F3HMG-F3HF-20CWRE-IMPACT-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
   - name: '(TWPC) DIFF3-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0x692B9C3C
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) DM-UUF3P-DW Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0x136B97B4
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) GE-UUF3P Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0xD1D87233
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) HFA-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0x89025941
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) HRWW-DIFF3-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0x0D95C028
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) K9B-MMM-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0x213F66A0
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) K9B-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0x8EF29CD7
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) MMM-EBTMGFWE-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0x8FEB6809
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) PLR-MMM Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0x62F5DF9B
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) PLR-UUF3P-ISS Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0x96734CF2
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) Point Lookout Moods - English Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x46E6E3AF
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 3
+        udr: 1
+    clean:
+      - crc: 0xCEA2D57D
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) PRA-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0xB580FBFF
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) RBS-MMM Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0xE7F1F5B0
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) RBS-MMM-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0x0BF5317D
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) RIL-UUF3P-DM Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0xBEDC50DF
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) RRE-FWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0x2A39F5F0
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) RRE-PB-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0x75D597A8
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) The Pitt Moods - English Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0xA70243B3
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) TMI-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0x7DEC2321
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) TMI-MMM-EVE-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0xBBBF8890
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) TMI-MMM-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0x43C35DAF
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) TMIC-FWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0xED313B26
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) TMIM-DIFF Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0x173864E6
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) TMIM-DIFF-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0xF1627C46
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) TMIM-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0x6DC5D618
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) TMIM-HFA-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0xF4698C9E
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) TMIM-PB-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0xA3069845
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) TMIS-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0x6C318734
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) WD-DIFF3-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0xEE8D886F
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) WD-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0x077FB7A9
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) WMK-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    clean:
+      - crc: 0xFB2C3869
+        util: 'FO3Edit v4.0.2e'
   - name: 'Crowded Cities Redux.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
   - name: 'WastelandGuards01 - Essential NPCs.esp'
