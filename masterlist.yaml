@@ -6181,6 +6181,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/21801' ]
   - name: 'Boulevard of Broken Dreams.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21841' ]
+    clean:
+      - crc: 0xB8A70A37
+        util: 'FO3Edit v4.0.2e'
   - name: 'Boulevard of Broken Dreams_TTW.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21841' ]
   - name: 'cCCursorNotOnMaps.esp'
