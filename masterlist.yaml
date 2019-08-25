@@ -4862,11 +4862,14 @@ plugins:
       - 'Big Town Overhaul.esm'
       - 'Big Town Overhaul [GangStore].esp'
     dirty:
-      - crc: 0x31E2D0E2
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0xC6024D8A
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 41
         udr: 684
-        nav: 0
+    clean:
+      - crc: 0x8D2F0510
+        util: 'FO3Edit v4.0.2e'
   - name: 'Big Town Overhaul [GangStore].esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13229' ]
     inc:
