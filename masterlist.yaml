@@ -5925,6 +5925,14 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/19473' ]
   - name: 'BaileysCrossingMetro.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19758' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xE297EF4B
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 9
+    clean:
+      - crc: 0xE5200CA8
+        util: 'FO3Edit v4.0.2e'
   - name: 'Flora Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19864' ]
   - name: 'Point Lookout Reborn.esm'
