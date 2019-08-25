@@ -5564,6 +5564,14 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/10900' ]
   - name: 'Better RC Church.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11020' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xDCD417A8
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+    clean:
+      - crc: 0xBF354DFB
+        util: 'FO3Edit v4.0.2e'
   - name: 'CanterburyCommonsInteriors.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11046' ]
   - name: 'A Trail of Crumbs.esp'
