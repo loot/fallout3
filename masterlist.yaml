@@ -5699,6 +5699,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/6103' ]
   - name: 'Conelrad 640-1240.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6104' ]
+    clean:
+      - crc: 0x4485D042
+        util: 'FO3Edit v4.0.2e'
   - name: 'Enhanced Weather - Radioactive Rain and Snow Plugin.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6170' ]
   - name: 'Enhanced Weather - Rain and Snow in Fallout.esp'
