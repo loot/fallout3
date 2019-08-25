@@ -5639,12 +5639,29 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/16230' ]
   - name: 'K9Breeds.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16654' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xC8683445
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 11
+    clean:
+      - crc: 0xF5E4AE9E
+        util: 'FO3Edit v4.0.2e'
   - name: 'K9BreedsMoreDogs.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16654' ]
+    clean:
+      - crc: 0x75B13906
+        util: 'FO3Edit v4.0.2e'
   - name: 'K9BreedsPatchDLCPitt.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16654' ]
+    clean:
+      - crc: 0xFC07ADF1
+        util: 'FO3Edit v4.0.2e'
   - name: 'K9BreedsPatchMMM.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16654' ]
+    clean:
+      - crc: 0x6F765D48
+        util: 'FO3Edit v4.0.2e'
   - name: 'Gore objects Plus.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16927' ]
   - name: 'CoolLasersMod.esp'
