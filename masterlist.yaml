@@ -4238,7 +4238,7 @@ plugins:
     clean:
       - crc: 0x02127A1B
         util: 'FO3Edit v4.0.2e'
-  - name: 'Xepha's Dynamic Weather - Weather Machine (Vendor Added).esp'
+  - name: 'Xepha''s Dynamic Weather - Weather Machine (Vendor Added).esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     clean:
       - crc: 0xEA546B62
