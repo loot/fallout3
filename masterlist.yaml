@@ -1055,7 +1055,7 @@ plugins:
     clean:
       - crc: 0xB39664E2
         util: 'FO3Edit v4.0.2e'
-  - name: RobcoCertified24SideMod.esp
+  - name: 'RobcoCertified24SideMod.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/712' ]
     dirty:
       - crc: 0x9c938fce
