@@ -4825,6 +4825,9 @@ plugins:
       - Graphics
       - Names
       - Relev
+    clean:
+      - crc: 0x1278B2C3
+        util: 'FO3Edit v4.0.2e'
   - name: 'Bornagain Zeta Combat Armor Texture Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18220' ]
     dirty:
