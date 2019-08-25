@@ -6574,6 +6574,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/22430' ]
   - name: 'CouncilSeatFix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22490' ]
+    clean:
+      - crc: 0xB9A3AC07
+        util: 'FO3Edit v4.0.2e'
   - name: 'Another Interior Mod.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22523' ]
     dirty:
