@@ -5858,6 +5858,18 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/17703' ]
   - name: 'AWorldOfPainFO3.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17965' ]
+    dirty:
+      - <<: *reqManualFix
+        crc: 0x4F6B4072
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 192
+        udr: 2
+        nav: 1
+    dirty:
+      - <<: *reqManualFix
+        crc: 0x53ADCE4B
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        nav: 1
   - name: 'AWOP4FO3BOEPatch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17965' ]
   - name: 'WastelandGuards01.esm'
