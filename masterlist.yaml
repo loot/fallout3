@@ -6572,6 +6572,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/22405' ]
   - name: 'd7_robco.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22430' ]
+    clean:
+      - crc: 0x46686583
+        util: 'FO3Edit v4.0.2e'
   - name: 'CouncilSeatFix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22490' ]
     clean:
