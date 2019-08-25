@@ -5670,6 +5670,14 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/9258' ]
   - name: 'blackrock_shooter.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/9633' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x448E4CA4
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+    clean:
+      - crc: 0x963DBEC5
+        util: 'FO3Edit v4.0.2e'
   - name: 'Radio_Neutron.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10147' ]
   - name: 'PiPBoy Blue Light.esp'
