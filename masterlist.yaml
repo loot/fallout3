@@ -4654,6 +4654,14 @@ plugins:
     tag:
       - Graphics
       - Names
+    dirty:
+      - <<: *quickClean
+        crc: 0xC8E1AA9C
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 133
+    clean:
+      - crc: 0x78FCDE26
+        util: 'FO3Edit v4.0.2e'
   - name: 'Error Fixes V1.2.esp'
     msg: [ *obsolete ]
   - name: 'Error Fixes V1.5.esp'
