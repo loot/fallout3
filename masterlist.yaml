@@ -986,32 +986,59 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/712' ]
     req: [ *FOSE ]
     dirty:
-      - crc: 0xe363b7d7
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0xE363B7D7
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 9
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0x7DD00C57
+        util: 'FO3Edit v4.0.2e'
   - name: 'RobCo Certified v2 Version Updater.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/712' ]
+    clean:
+      - crc: 0x0E007E3F
+        util: 'FO3Edit v4.0.2e'
   - name: 'RobCo Certified v2 Zeta Addon.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/712' ]
     inc: [ 'RobCo Certified v2 Omnipatch.esp' ]
     dirty:
-      - crc: 0x7e827a3
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0x07E827A3
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0xAD6BF510
+        util: 'FO3Edit v4.0.2e'
   - name: 'RobCo Certified v2 Mechanist''s Edition.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/712' ]
+    clean:
+      - crc: 0x585DB726
+        util: 'FO3Edit v4.0.2e'
   - name: 'RobCo Certified v2 EVE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/712' ]
+    clean:
+      - crc: 0x2E46868B
+        util: 'FO3Edit v4.0.2e'
   - name: 'RobCo Certified v2 FWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/712' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x0285EF04
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+    clean:
+      - crc: 0xAAEEEFA5
+        util: 'FO3Edit v4.0.2e'
   - name: 'RobCo Certified v2 Impervious FWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/712' ]
+    clean:
+      - crc: 0x2BE7D0B7
+        util: 'FO3Edit v4.0.2e'
   - name: 'RobCo Certified v2 Impervious.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/712' ]
+    clean:
+      - crc: 0xCDDBF05B
+        util: 'FO3Edit v4.0.2e'
   - name: 'RobCo Certified v2 Omnipatch.esp'
     url:
       - 'https://www.nexusmods.com/fallout3/mods/712'
@@ -1020,6 +1047,14 @@ plugins:
       - 'RobCo Certified v2 EVE.esp'
       - 'RobCo Certified v2 FWE.esp'
       - 'RobCo Certified v2 Zeta Addon.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xBBE23ACF
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+    clean:
+      - crc: 0xB39664E2
+        util: 'FO3Edit v4.0.2e'
   - name: RobcoCertified24SideMod.esp
     url: [ 'https://www.nexusmods.com/fallout3/mods/712' ]
     dirty:
