@@ -975,11 +975,13 @@ plugins:
   - name: 'Companion Core DLC Addon.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/712' ]
     dirty:
-      - crc: 0x37145cc8
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0x37145CC8
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0x77D32801
+        util: 'FO3Edit v4.0.2e'
   - name: 'RobCo Certified v2.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/712' ]
     req: [ *FOSE ]
