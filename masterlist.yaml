@@ -4696,6 +4696,9 @@ plugins:
   - name: 'ACRForFWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12751' ]
     tag: [ Stats ]
+    clean:
+      - crc: 0x45B47CD0
+        util: 'FO3Edit v4.0.2e'
   - name: 'DTOforFWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12751' ]
     tag:
