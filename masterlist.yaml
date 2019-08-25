@@ -1065,11 +1065,15 @@ plugins:
       - 'DCInteriors_SewardSq.esm'
       - 'DCInteriors_Takoma.esm'
     dirty:
-      - crc: 0xF85A5358
-        <<: *dirtyPlugin #FO3Edit 3.0.32
-        itm: 48
-        udr: 0
-        nav: 0
+      - <<: *reqManualFix
+        crc: 0x55B93FDE
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 24
+        nav: 4
+      - <<: *reqManualFix
+        crc: 0x09D2A485
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        nav: 4
   - name: 'DCInteriors_Georgtown.esm'
     inc:
       - 'DCInteriors_ComboEdition.esm'
