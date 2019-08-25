@@ -5965,6 +5965,14 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/21262' ]
   - name: 'lexx_brahmin-variant-Fo3.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21308' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xA6F26EC7
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        udr: 8
+    clean:
+      - crc: 0x0A74D05D
+        util: 'FO3Edit v4.0.2e'
   - name: 'MegatonLighting.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21363' ]
   - name: 'MegatonLightingPlusNeonSignGlow.esp'
