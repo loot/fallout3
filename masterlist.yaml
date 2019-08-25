@@ -6755,6 +6755,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Destruction - FNNsys.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
+    clean:
+      - crc: 0x8B306831
+        util: 'FO3Edit v4.0.2e'
   - name: 'Destruction - xCALIBRammo_FWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
     clean:
