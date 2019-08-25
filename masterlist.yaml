@@ -4507,6 +4507,9 @@ plugins:
       - 'FO3 Wanderers Edition - DLC Mothership Zeta.esp'
       - 'Project Beauty- Broken Steel.esp'
       - 'Project Beauty- Point Lookout.esp'
+    clean:
+      - crc: 0x9BBFC6B5
+        util: 'FO3Edit v4.0.2e'
   - name: 'xCALIBRUniverse - WMK.esp'
     tag:
       - Graphics
