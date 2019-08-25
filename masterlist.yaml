@@ -5907,6 +5907,14 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'BeardsofFallout.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18622' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xE1C4BD80
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+    clean:
+      - crc: 0xEBE3DE1C
+        util: 'FO3Edit v4.0.2e'
   - name: 'New Toys - Cars.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18734' ]
   - name: 'JIP Realistic Weapon Overheating.esp'
