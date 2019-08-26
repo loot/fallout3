@@ -5287,12 +5287,9 @@ plugins:
         display: 'MTUI'
   - name: 'Existence 2.0.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5612' ]
-    dirty:
-      - crc: 0x0E5309DA
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 0
-        udr: 0
-        nav: 1
+    clean:
+      - crc: 0xB2038790
+        util: 'FO3Edit v4.0.2e'
   - name: 'Exit Terminals With Q.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19591' ]
     req:
