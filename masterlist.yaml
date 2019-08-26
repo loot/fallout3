@@ -5826,8 +5826,14 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Hi-Res Weapons & Ammo Textures.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4457' ]
+    clean:
+      - crc: 0xE4F7B017
+        util: 'FO3Edit v4.0.2e'
   - name: 'Hi-Res Weapons & Ammo Textures - The Pitt.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4457' ]
+    clean:
+      - crc: 0x4631BAEE
+        util: 'FO3Edit v4.0.2e'
   - name: 'Miniguns Replacer.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4541' ]
   - name: 'Miniguns Replacer Backpack.esp'
