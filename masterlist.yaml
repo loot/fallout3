@@ -6825,6 +6825,16 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Girdershade Reborn.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22829' ]
+    dirty:
+      - <<: *reqManualFix
+        crc: 0x42251929
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 5
+        nav: 5
+      - <<: *reqManualFix
+        crc: 0xEC323FC0
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        nav: 5
   - name: 'Girdershade Reborn.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22829' ]
   - name: 'Deathclaw Gauntlet Man Opener Armor Piercing Restored.esp'
