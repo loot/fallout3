@@ -5209,6 +5209,9 @@ plugins:
         condition: checksum("Dree Perks.esp", 25D3F8CA)
       - name: Relev
         condition: checksum("Dree Perks.esp", 25D3F8CA)
+    clean:
+      - crc: 0x9A20FA79
+        util: 'FO3Edit v4.0.2e'
   - name: 'Dree Perks Anchorage.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6190' ]
     clean:
