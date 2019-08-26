@@ -5363,6 +5363,9 @@ plugins:
       - 'Flashlight-Performance.esp'
       - 'Flashlight-LOS-nonFOSE.esp'
       - 'Flashlight-Performance-nonFOSE.esp'
+    clean:
+      - crc: 0x0939B0D0
+        util: 'FO3Edit v4.0.2e'
   - name: 'Flashlight-Performance.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15003' ]
     req:
@@ -5371,18 +5374,27 @@ plugins:
       - 'Flashlight-LOS.esp'
       - 'Flashlight-LOS-nonFOSE.esp'
       - 'Flashlight-Performance-nonFOSE.esp'
+    clean:
+      - crc: 0x2299D5BD
+        util: 'FO3Edit v4.0.2e'
   - name: 'Flashlight-LOS-nonFOSE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15003' ]
     inc:
       - 'Flashlight-LOS.esp'
       - 'Flashlight-Performance.esp'
       - 'Flashlight-Performance-nonFOSE.esp'
+    clean:
+      - crc: 0xD2A22DC5
+        util: 'FO3Edit v4.0.2e'
   - name: 'Flashlight-Performance-nonFOSE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15003' ]
     inc:
       - 'Flashlight-LOS.esp'
       - 'Flashlight-Performance.esp'
       - 'Flashlight-LOS-nonFOSE.esp'
+    clean:
+      - crc: 0xDEEFA0B4
+        util: 'FO3Edit v4.0.2e'
   - name: 'FO3_WRP.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18133' ]
     tag:
