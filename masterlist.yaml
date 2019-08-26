@@ -6239,6 +6239,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/19988' ]
   - name: 'FCOMaster.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20004' ]
+    clean:
+      - crc: 0x9885B726
+        util: 'FO3Edit v4.0.2e'
   - name: 'JIP Selective-Fire.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20012' ]
     clean:
