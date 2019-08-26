@@ -1451,8 +1451,14 @@ plugins:
       - NpcFaces
   - name: 'FOOK - DIK - Project Beauty.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
+    clean:
+      - crc: 0x3C492333
+        util: 'FO3Edit v4.0.2e'
   - name: 'FOOK2 - Project Beauty.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
+    clean:
+      - crc: 0x278F38CC
+        util: 'FO3Edit v4.0.2e'
   - name: 'Project Beauty - Fallout Character Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
   - name: 'Raider preset beta.esp'
