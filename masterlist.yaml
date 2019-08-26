@@ -5209,11 +5209,13 @@ plugins:
   - name: 'DriveableMotorCycle.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6005' ]
     dirty:
-      - crc: 0x949faf2c
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0x949FAF2C
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 3
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0x18D7A513
+        util: 'FO3Edit v4.0.2e'
   - name: 'DarNifiedUIF3.esp'
     url: [ 'http://modsreloaded.com/darnified-ui-f3' ]
     inc:
