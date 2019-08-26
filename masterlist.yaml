@@ -6163,6 +6163,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Gore objects Plus.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16927' ]
+    clean:
+      - crc: 0xC22BCBF5
+        util: 'FO3Edit v4.0.2e'
   - name: 'CoolLasersMod.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17320' ]
     clean:
