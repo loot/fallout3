@@ -4726,12 +4726,18 @@ plugins:
       - Graphics
       - Names
       - Stats
+    clean:
+      - crc: 0x9D4BEC32
+        util: 'FO3Edit v4.0.2e'
   - name: 'FWE+WMKexcalibrified(Lkout).esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12487' ]
     tag:
       - Graphics
       - Names
       - Stats
+    clean:
+      - crc: 0xD5304D07
+        util: 'FO3Edit v4.0.2e'
   - name: 'frederyck+FWE+xCALIBR.esp'
     tag:
       - Graphics
