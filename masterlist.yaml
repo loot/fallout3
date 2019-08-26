@@ -4717,6 +4717,9 @@ plugins:
       - Graphics
       - Names
       - Stats
+    clean:
+      - crc: 0x59FFE3BE
+        util: 'FO3Edit v4.0.2e'
   - name: 'FWE+WMKexcalibrified(Pitt).esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12487' ]
     tag:
