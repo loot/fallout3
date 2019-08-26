@@ -6278,6 +6278,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'GilbertToys.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19000' ]
+    clean:
+      - crc: 0x656A0707
+        util: 'FO3Edit v4.0.2e'
   - name: 'rmSaveManager.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19119' ]
   - name: 'The  Pitt Moods.esp'
