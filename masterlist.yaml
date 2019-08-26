@@ -2167,6 +2167,14 @@ plugins:
     clean:
       - crc: 0x61940688
         util: 'FO3Edit v4.0.2e'
+  - name: 'FOOK2 - [DIK] DLC Improvement Kit.ESM'
+    clean:
+      - crc: 0xE3578337
+        util: 'FO3Edit v4.0.2e'
+  - name: 'FOOK2 - [DIK] DLC Improvement Kit.esp'
+    clean:
+      - crc: 0xC36DD709
+        util: 'FO3Edit v4.0.2e'
   - name: 'MyFOOK2 - Color Tranquility Lane.esp'
     msg:
       - type: error
