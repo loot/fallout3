@@ -5171,6 +5171,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/10183' ]
     tag:
       - Graphics
+    clean:
+      - crc: 0x45FB7F26
+        util: 'FO3Edit v4.0.2e'
     msg:
       - type: say
         # Copied from the mod's Nexus page:
@@ -5178,6 +5181,9 @@ plugins:
         condition: 'not file("../fose_loader.exe")'
   - name: 'DragonskinBonusPack.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10183' ]
+    clean:
+      - crc: 0xF5552A78
+        util: 'FO3Edit v4.0.2e'
   - name: Dree Perks.esp
     # The Paradox Ignition version is known to have the CRC 0x25D3F8CA
     url:
@@ -6272,6 +6278,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/20843' ]
   - name: 'Dragonskin_for_FWE_2014.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20874' ]
+    clean:
+      - crc: 0xB8BBA8DB
+        util: 'FO3Edit v4.0.2e'
   - name: 'ClearAndPresentAdjustment_Beauty_Weapons_1_1-1.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20945' ]
     clean:
