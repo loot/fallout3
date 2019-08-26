@@ -6705,6 +6705,14 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/22663' ]
   - name: 'DeNerfing Colonel Autumns Laser Pistol.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22821' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x41B004B9
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+    clean:
+      - crc: 0xDCF972EC
+        util: 'FO3Edit v4.0.2e'
   - name: 'Girdershade Reborn.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22829' ]
   - name: 'Girdershade Reborn.esp'
