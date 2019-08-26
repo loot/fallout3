@@ -7071,8 +7071,14 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Gunfire Sound Range Increased - Core + DLC + EVE + FWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
+    clean:
+      - crc: 0xB1BC598F
+        util: 'FO3Edit v4.0.2e'
   - name: 'Gunfire Sound Range Increased - Core + DLC + EVE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
+    clean:
+      - crc: 0xE5EEC89C
+        util: 'FO3Edit v4.0.2e'
   - name: 'MTC Wasteland Travellers.esp'
     dirty:
       - crc: 0x0A7E3339
