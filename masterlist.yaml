@@ -2137,6 +2137,9 @@ plugins:
     tag:
       - Delev
       - Relev
+    clean:
+      - crc: 0x84EEFB8E
+        util: 'FO3Edit v4.0.2e'
   - name: 'FOOK2 - [EVE] Energy Visuals Enhanced.esp'
     msg:
       - type: error
