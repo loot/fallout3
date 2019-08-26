@@ -5558,6 +5558,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
   - name: 'Inventory Access.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
+    clean:
+      - crc: 0x269183D8
+        util: 'FO3Edit v4.0.2e'
   - name: 'No Scopeless Zooming - PPA Edition.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
   - name: 'PPA - FWE.esp'
