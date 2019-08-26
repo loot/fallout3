@@ -6455,6 +6455,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'IMPACT.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20977' ]
+    clean:
+      - crc: 0xDEEC99EA
+        util: 'FO3Edit v4.0.2e'
   - name: 'Assaultrifle_replacers_WMK+RH+FWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20982' ]
     clean:
