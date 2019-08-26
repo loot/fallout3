@@ -1636,10 +1636,9 @@ plugins:
     tag:
       - Scripts
     dirty:
-      - crc: 0xB633DB19
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 0
-        udr: 0
+      - <<: *reqManualFix
+        crc: 0xC2B7410D
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 1
   - name: 'IntoTheDeepWoods.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6921' ]
