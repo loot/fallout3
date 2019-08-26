@@ -5399,6 +5399,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/18133' ]
     tag:
       - Graphics
+    clean:
+      - crc: 0xBB485846
+        util: 'FO3Edit v4.0.2e'
   - name: 'FortIndependenceRedesigned.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17939' ]
     dirty:
