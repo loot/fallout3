@@ -5411,11 +5411,14 @@ plugins:
   - name: 'FortIndependenceRedesigned.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17939' ]
     dirty:
-      - crc: 0xE7BC4BEB
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0xE7BC4BEB
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 20
         udr: 716
-        nav: 0
+    clean:
+      - crc: 0x8B5012B6
+        util: 'FO3Edit v4.0.2e'
   - name: 'GlowingGhouls.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20321' ]
     tag:
