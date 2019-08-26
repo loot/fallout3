@@ -6879,6 +6879,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'GeorgetownExpansion.esm'
     url: [ 'https://mega.nz/#!xoo2jagI!Z2gpo2aGjL5m3pVkMNQpjkT8BqIacDcujQeARNT8Ib0' ]
+    clean:
+      - crc: 0x196F177D
+        util: 'FO3Edit v4.0.2e'
 
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
