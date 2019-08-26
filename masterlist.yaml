@@ -5302,6 +5302,9 @@ plugins:
     group: *overridesGroup
     tag:
       - Stats
+    clean:
+      - crc: 0xE12B96AE
+        util: 'FO3Edit v4.0.2e'
   - name: 'FasterWaiting.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17755' ]
     req:
