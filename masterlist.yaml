@@ -6233,6 +6233,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Flora Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19864' ]
+    clean:
+      - crc: 0x3D98151F
+        util: 'FO3Edit v4.0.2e'
   - name: 'Point Lookout Reborn.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19891' ]
     dirty:
