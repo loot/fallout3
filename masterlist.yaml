@@ -4834,6 +4834,9 @@ plugins:
     tag:
       - Graphics
       - Stats
+    clean:
+      - crc: 0xA0BF018D
+        util: 'FO3Edit v4.0.2e'
   - name: 'MP5ForFWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12751' ]
     tag: [ Stats ]
