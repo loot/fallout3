@@ -6005,6 +6005,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/14730' ]
   - name: 'Enclave Radio Enhanced.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14947' ]
+    clean:
+      - crc: 0xFAFADE92
+        util: 'FO3Edit v4.0.2e'
   - name: 'Detect Traps.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15641' ]
     clean:
