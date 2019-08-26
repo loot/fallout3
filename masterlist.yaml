@@ -2150,6 +2150,9 @@ plugins:
       - type: error
         content: 'Please update to FOOK2 1.2 Open Beta 2'
         condition: 'file("FOOK2 - Main.esm")'
+    clean:
+      - crc: 0x893514E3
+        util: 'FO3Edit v4.0.2e'
   - name: 'FOOK2 - DIK [Hotfix].esp'
     msg:
       - type: error
