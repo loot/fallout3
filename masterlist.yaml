@@ -5885,6 +5885,15 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/6685' ]
   - name: 'Gore_No_More.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7318' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x579B05A0
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+        udr: 1178
+    clean:
+      - crc: 0xF7A4A23D
+        util: 'FO3Edit v4.0.2e'
   - name: 'Gore_No_More_Basic.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7318' ]
   - name: 'Double barreled shotgun fix.esp'
