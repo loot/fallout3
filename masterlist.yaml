@@ -570,7 +570,7 @@ plugins:
       - Relev
       - Scripts
       - Stats
-  - name: 'FOOK2 - Main.esm'
+  - name: 'FOOK2 - Main.ESM'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4448' ]
     tag:
       - Factions
