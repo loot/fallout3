@@ -5326,6 +5326,9 @@ plugins:
   - name: 'FeralGhoulTest.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16886' ]
     tag: [ Relev ]
+    clean:
+      - crc: 0x3C835495
+        util: 'FO3Edit v4.0.2e'
   - name: 'Fixed Suits.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19649' ]
     inc: [ 'Fixed Suits FWE.esp' ]
