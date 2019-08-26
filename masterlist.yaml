@@ -6098,6 +6098,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/16171' ]
   - name: 'FO3NeckChains.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16230' ]
+    clean:
+      - crc: 0xD742DE35
+        util: 'FO3Edit v4.0.2e'
   - name: 'K9Breeds.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16654' ]
     dirty:
