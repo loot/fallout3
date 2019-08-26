@@ -6801,6 +6801,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/22234' ]
   - name: 'Headwraps Galore.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22260' ]
+    clean:
+      - crc: 0x13010118
+        util: 'FO3Edit v4.0.2e'
   - name: 'ThreeDogsToaster.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22265' ]
   - name: 'Real Rad-X FO3.esp'
