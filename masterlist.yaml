@@ -828,12 +828,18 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Scripts
+    clean:
+      - crc: 0x5D392FF2
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - DLC The Pitt.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Delev
       - Relev
       - Scripts
+    clean:
+      - crc: 0x53DC9D8F
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - DLC Broken Steel.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
@@ -841,17 +847,22 @@ plugins:
       - Relev
       - Scripts
     dirty:
-      - crc: 0x4489C0D6
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0x89BF5711
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0x1F7A55CB
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - DLC Point Lookout.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Delev
       - Relev
       - Scripts
+    clean:
+      - crc: 0xA4E67116
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - DLC Zeta.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
@@ -3402,6 +3413,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
     tag:
       - Relations
+    clean:
+      - crc: 0xACAB6229
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - FWE Master Release.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
     tag:
