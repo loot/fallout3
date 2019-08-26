@@ -6452,8 +6452,14 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/21363' ]
   - name: 'FO3Optimized.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21401' ]
+    clean:
+      - crc: 0xF0D55578
+        util: 'FO3Edit v4.0.2e'
   - name: 'FO3DLCOptimized.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21401' ]
+    clean:
+      - crc: 0xF0D55578
+        util: 'FO3Edit v4.0.2e'
   - name: 'UF3P - Exotic Caravans.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21458' ]
   - name: 'UF3P - Exotic Caravans (Essential).esm'
