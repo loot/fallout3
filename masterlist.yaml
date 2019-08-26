@@ -5826,16 +5826,31 @@ plugins:
     clean:
       - crc: 0x4485D042
         util: 'FO3Edit v4.0.2e'
-  - name: 'Enhanced Weather - Radioactive Rain and Snow Plugin.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6170' ]
-  - name: 'Enhanced Weather - Rain and Snow in Fallout.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6170' ]
   - name: 'Enhanced Weather - Rain and Snow.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6170' ]
+    clean:
+      - crc: 0xE6437A8D
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Enhanced Weather - Radioactive Rain and Snow Plugin.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6170' ]
+    clean:
+      - crc: 0x054E6CF7
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Enhanced Weather - Rain and Snow in Fallout.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6170' ]
+    clean:
+      - crc: 0xD1FF1478
+        util: 'FO3Edit v4.0.2e'
   - name: 'Enhanced Weather - Sneak Bonus during Storms.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6170' ]
+    clean:
+      - crc: 0x2341E90B
+        util: 'FO3Edit v4.0.2e'
   - name: 'Enhanced Weather - Weather Sounds in Interiors.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6170' ]
+    clean:
+      - crc: 0xF61A557E
+        util: 'FO3Edit v4.0.2e'
   - name: 'MTCBigTownRobotFix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6685' ]
   - name: 'Gore_No_More.esp'
