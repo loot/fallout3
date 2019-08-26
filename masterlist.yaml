@@ -5964,6 +5964,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/8747' ]
   - name: 'Freebooter_Armor.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8754' ]
+    clean:
+      - crc: 0x5BDAE823
+        util: 'FO3Edit v4.0.2e'
   - name: 'Tattered_suits.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/9167' ]
   - name: 'T3_MadLax_Outfit.esp'
