@@ -5199,7 +5199,7 @@ plugins:
     clean:
       - crc: 0xF5552A78
         util: 'FO3Edit v4.0.2e'
-  - name: Dree Perks.esp
+  - name: 'Dree Perks.esp'
     # The Paradox Ignition version is known to have the CRC 0x25D3F8CA
     url:
       - 'https://www.nexusmods.com/fallout3/mods/6190'
