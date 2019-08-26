@@ -577,6 +577,9 @@ plugins:
       - Invent
       - Relations
       - Stats
+    clean:
+      - crc: 0x7315B71D
+        util: 'FO3Edit v4.0.2e'
   - name: 'FOOK.ESM'
     msg:
       - type: error
