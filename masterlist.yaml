@@ -6825,6 +6825,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Exeter-Type3-armor.esp'
     url: [ 'https://wiki.step-project.com/User:Kelmych/Fallout3#Other_Clothing_and_Light_or_Medium_Armor' ]
+    clean:
+      - crc: 0x0FD9B1DF
+        util: 'FO3Edit v4.0.2e'
   - name: 'GeorgetownExpansion.esm'
     url: [ 'https://mega.nz/#!xoo2jagI!Z2gpo2aGjL5m3pVkMNQpjkT8BqIacDcujQeARNT8Ib0' ]
 
