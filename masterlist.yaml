@@ -1655,12 +1655,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/6921' ]
     tag:
       - Scripts
-    dirty:
-      - crc: 0x4D6AE42B
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 7
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0x6C2E8EBB
+        util: 'FO3Edit v4.0.2e'
   - name: 'Lawbringer Boutnies Ver1.1.esp'
     tag:
       - Invent
