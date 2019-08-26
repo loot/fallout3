@@ -5735,6 +5735,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/3412' ]
   - name: 'DIM TYPE3clothesRETAIL.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4280' ]
+    clean:
+      - crc: 0x392EAE2E
+        util: 'FO3Edit v4.0.2e'
   - name: 'Hi-Res Weapons & Ammo Textures.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4457' ]
   - name: 'Hi-Res Weapons & Ammo Textures - The Pitt.esp'
