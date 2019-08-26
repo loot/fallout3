@@ -6009,6 +6009,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'HelmPOV.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11474' ]
+    clean:
+      - crc: 0xE117C34E
+        util: 'FO3Edit v4.0.2e'
   - name: 'Merc Adventurer Armor - eng.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13155' ]
   - name: 'Merc Adventurer Armor - rus.esp'
