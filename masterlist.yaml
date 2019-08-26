@@ -6794,6 +6794,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/22174' ]
   - name: 'Grave Digger.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22222' ]
+    clean:
+      - crc: 0xFC3F456E
+        util: 'FO3Edit v4.0.2e'
   - name: 'Proper Drinking.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22234' ]
   - name: 'Headwraps Galore.esp'
