@@ -5808,6 +5808,14 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/7318' ]
   - name: 'Double barreled shotgun fix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7378' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xA5A695FC
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+    clean:
+      - crc: 0x9AC26851
+        util: 'FO3Edit v4.0.2e'
   - name: 'Less_Blood.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7400' ]
   - name: 'Lookout Outfits.esp'
