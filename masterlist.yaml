@@ -6243,6 +6243,14 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/18156' ]
   - name: 'FWEAlienWorkBenchFix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18234' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xCB9512C4
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 8
+    clean:
+      - crc: 0x35FFCA4D
+        util: 'FO3Edit v4.0.2e'
   - name: 'Millenia_CombatShotgun_replacer.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18506' ]
     clean:
