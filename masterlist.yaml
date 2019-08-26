@@ -5441,6 +5441,9 @@ plugins:
   - name: 'GNR Enhanced.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14946' ]
     tag: [ Scripts ]
+    clean:
+      - crc: 0x97A0D403
+        util: 'FO3Edit v4.0.2e'
   - name: 'hackrate.x2.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2745' ]
     inc:
