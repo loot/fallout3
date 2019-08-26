@@ -5882,6 +5882,15 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/5208' ]
   - name: 'House.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5559' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x43705D5D
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 4
+        udr: 1
+    clean:
+      - crc: 0x543D30FC
+        util: 'FO3Edit v4.0.2e'
   - name: 'Refugee Clothing.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5580' ]
   - name: 'Rivet City Realignment.esp'
