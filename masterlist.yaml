@@ -5425,10 +5425,19 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/20321' ]
     tag:
       - Scripts
+    clean:
+      - crc: 0x38F39745
+        util: 'FO3Edit v4.0.2e'
   - name: 'GlowingGhouls-DeathGlow.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20321' ]
+    clean:
+      - crc: 0x2DCAC769
+        util: 'FO3Edit v4.0.2e'
   - name: 'GlowingGhouls-MMM.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20321' ]
+    clean:
+      - crc: 0xF39F664E
+        util: 'FO3Edit v4.0.2e'
   - name: 'GNR Enhanced.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14946' ]
     tag: [ Scripts ]
