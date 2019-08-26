@@ -5769,6 +5769,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/2190' ]
   - name: 'Echo_UseBothGloves.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3412' ]
+    clean:
+      - crc: 0x33199FBF
+        util: 'FO3Edit v4.0.2e'
   - name: 'DIM TYPE3clothesRETAIL.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4280' ]
     clean:
