@@ -6301,6 +6301,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/9167' ]
   - name: 'T3_MadLax_Outfit.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/9258' ]
+    clean:
+      - crc: 0xF958C967
+        util: 'FO3Edit v4.0.2e'
   - name: 'blackrock_shooter.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/9633' ]
     dirty:
@@ -6433,6 +6436,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'T3_leather armors.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13280' ]
+    clean:
+      - crc: 0x1D9D3B75
+        util: 'FO3Edit v4.0.2e'
   - name: 'Impervious Power Armour.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13325' ]
     clean:
