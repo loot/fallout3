@@ -7246,6 +7246,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Proper Drinking.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22234' ]
+    clean:
+      - crc: 0x16EAD25E
+        util: 'FO3Edit v4.0.2e'
   - name: 'Headwraps Galore.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22260' ]
     clean:
