@@ -6104,6 +6104,14 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Lookout Outfits.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7682' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x24EAFAC0
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+    clean:
+      - crc: 0x6A799BE8
+        util: 'FO3Edit v4.0.2e'
   - name: 'Stealth Kills Enabled.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8050' ]
   - name: 'Stealth Kills Enabled - Pitt Compatibility.esp'
