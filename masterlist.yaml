@@ -6332,6 +6332,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Radio Active.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10900' ]
+    clean:
+      - crc: 0x6B9D956C
+        util: 'FO3Edit v4.0.2e'
   - name: 'Better RC Church.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11020' ]
     dirty:
