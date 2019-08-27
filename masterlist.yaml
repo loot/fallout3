@@ -6136,6 +6136,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/5580' ]
   - name: 'Rivet City Realignment.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5831' ]
+    clean:
+      - crc: 0xAB5D3B95
+        util: 'FO3Edit v4.0.2e'
   - name: 'Scout Outfits.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6103' ]
   - name: 'Conelrad 640-1240.esp'
