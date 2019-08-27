@@ -7080,6 +7080,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'MusTechGenRoom.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22174' ]
+    clean:
+      - crc: 0x9CB4F0C9
+        util: 'FO3Edit v4.0.2e'
   - name: 'Grave Digger.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22222' ]
     clean:
