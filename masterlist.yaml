@@ -6270,6 +6270,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/8050' ]
   - name: 'Stealth Kills Enabled - Pitt Compatibility.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8050' ]
+    clean:
+      - crc: 0x3CB47128
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mothership Crew.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8747' ]
     dirty:
