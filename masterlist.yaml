@@ -7013,8 +7013,19 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'UniqueWeaponsRetexturedPITT_FWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21262' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x097E3452
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 4
+    clean:
+      - crc: 0x7232A8AC
+        util: 'FO3Edit v4.0.2e'
   - name: 'UniqueWeaponsRetextured_FWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21262' ]
+    clean:
+      - crc: 0xD6984EF1
+        util: 'FO3Edit v4.0.2e'
   - name: 'lexx_brahmin-variant-Fo3.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21308' ]
     dirty:
@@ -7534,6 +7545,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'UniqueWeaponsRetextured.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/23163' ]
+    clean:
+      - crc: 0x50E4BBE8
+        util: 'FO3Edit v4.0.2e'
   - name: 'WMK_Fixes_dlc.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/23172' ]
   - name: 'Millenia_C96_replacer_WMKpatch.esp'
