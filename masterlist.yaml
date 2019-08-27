@@ -6255,6 +6255,14 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Radio_Neutron.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10147' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x647BF93F
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 6
+    clean:
+      - crc: 0x6B39E929
+        util: 'FO3Edit v4.0.2e'
   - name: 'PiPBoy Blue Light.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10740' ]
     clean:
