@@ -6875,6 +6875,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Quieter Nuka-Cola Sign.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21195' ]
+    clean:
+      - crc: 0x200A81C4
+        util: 'FO3Edit v4.0.2e'
   - name: 'UniqueWeaponsRetexturedPITT_FWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21262' ]
   - name: 'UniqueWeaponsRetextured_FWE.esp'
