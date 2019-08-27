@@ -871,72 +871,136 @@ plugins:
     tag:
       - Scripts
     dirty:
-      - crc: 0xCEBFCDBC
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0x627BE465
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0x0F1A89DB
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - Dynamic Player Scaling.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
+    clean:
+      - crc: 0x72EC84EE
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - Feral Ghoul Rampage.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Relev
+    clean:
+      - crc: 0x6D9534D5
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - Hunting & Looting.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
+    clean:
+      - crc: 0x8F002AAB
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - Increased Increased Spawns.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Relev
+    clean:
+      - crc: 0xA8485E28
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - Increased Spawns.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Relev
+    dirty:
+      - <<: *quickClean
+        crc: 0x03C7D1C0
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+    clean:
+      - crc: 0xBB007608
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - Master Menu Module.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
+    clean:
+      - crc: 0x3CAF7F12
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - No Abominable Mutants.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Relev
+    clean:
+      - crc: 0x0A3BCC90
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - No Corpse Flies.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Relev
+    clean:
+      - crc: 0xA8FD8631
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - No DLC Increased Spawns.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
+    clean:
+      - crc: 0x838E300A
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - No Floaters.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Relev
+    clean:
+      - crc: 0x6CCB5409
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - No Geckos.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Relev
+    clean:
+      - crc: 0x23F99275
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - No Ghoul Raise.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
+    clean:
+      - crc: 0x6B86D599
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - No Iguanas.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Relev
+    clean:
+      - crc: 0xA05B56EA
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - No Size Scaling.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
+    clean:
+      - crc: 0x72D20FCB
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - No Skeleton Decay.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
+    clean:
+      - crc: 0xEAAC3865
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - No Stalker Creatures.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Relev
+    clean:
+      - crc: 0xBDA85572
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - No Wanamingos.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Relev
+    clean:
+      - crc: 0x4CFE5C8A
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - Reduced Wasteland Spawns.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
       - Delev
       - Relev
+    clean:
+      - crc: 0x6945ADAF
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - Soft Unleveler Hardcore.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
+    clean:
+      - crc: 0x5DDA5F88
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - Zones Respawn.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     msg:
@@ -946,9 +1010,13 @@ plugins:
       - Relev
       - Scripts
     dirty:
-      - crc: 0xCB6A4B5F
-        <<: *dirtyPlugin
+      - <<: *quickClean
+        crc: 0xCB6A4B5F
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 9
+    clean:
+      - crc: 0xD156DDF4
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - Tougher Traders.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
@@ -956,6 +1024,9 @@ plugins:
       - Actors.Stats
       - Factions
       - Relations
+    clean:
+      - crc: 0x6548C4D4
+        util: 'FO3Edit v4.0.2e'
     msg:
       - *AlreadyInFWE
       - type: say
@@ -967,12 +1038,18 @@ plugins:
       - *AlreadyInFWE
     tag:
       - Relations
+    clean:
+      - crc: 0x1AA10DF8
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - Mutant Mod Menu.esp'
     msg: [ *obsolete ]
   - name: 'Mart''s Mutant Mod - Soft Unleveler.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     inc:
       - 'Mart''s Mutant Mod - Soft Unleveler Hardcore.esp'
+    clean:
+      - crc: 0x1B67B3DA
+        util: 'FO3Edit v4.0.2e'
   - name: 'Arwen_Core.esm'
     tag:
       - Actors.Animations
@@ -3405,6 +3482,9 @@ plugins:
       - NoMerge
       - NPC.Race
       - NpcFaces
+    clean:
+      - crc: 0x7B1D30CA
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - Project Beauty + FWE.esp'
     tag:
       - NoMerge
@@ -3444,6 +3524,14 @@ plugins:
     tag:
       - Invent
       - Relations
+    dirty:
+      - <<: *quickClean
+        crc: 0x7A8FAA71
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 10
+    clean:
+      - crc: 0x805D7284
+        util: 'FO3Edit v4.0.2e'
   - name: 'DALCO Inventory Sorter - MMM - FWE.esp'
     tag:
       - Names
@@ -3454,12 +3542,18 @@ plugins:
       - Invent
       - Relations
       - Scripts
+    clean:
+      - crc: 0x7E10DA47
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - FWE Master Release + Project Beauty.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
     tag:
       - NoMerge
       - NPC.Race
       - NpcFaces
+    clean:
+      - crc: 0x9B509FB5
+        util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - FWE with EVE.esp'
     tag:
       - Invent
@@ -3477,6 +3571,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
     tag:
       - Relations
+    clean:
+      - crc: 0x4A807315
+        util: 'FO3Edit v4.0.2e'
   - name: 'MMM - FWE & Overhaul Kit_Master Release.esp'
     msg:
       - type: say
