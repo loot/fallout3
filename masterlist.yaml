@@ -7203,10 +7203,14 @@ plugins:
   - name: 'MoreMapMarkers.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2446' ]
     dirty:
-      - crc: 0xB7F1FA75
-        <<: *dirtyPlugin
+      - <<: *quickClean
+        crc: 0xB7F1FA75
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 289
         udr: 1
+    clean:
+      - crc: 0xD48EC701
+        util: 'FO3Edit v4.0.2e'
   - name: 'RideableCreature.esp'
     dirty:
       - crc: 0xB59D8ADE
