@@ -6591,6 +6591,14 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/17965' ]
   - name: 'WastelandGuards01.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18112' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x45BF153A
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 4
+    clean:
+      - crc: 0x8F97D495
+        util: 'FO3Edit v4.0.2e'
   - name: 'WastelandGuardsBOEPatch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18112' ]
   - name: 'Millenia_AKS74U.esp'
