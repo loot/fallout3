@@ -5954,11 +5954,14 @@ plugins:
   - name: 'UrgeWashingtonBoS.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17939' ]
     dirty:
-      - crc: 0x98fd9bed
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0x98FD9BED
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 14
         udr: 16
-        nav: 0
+    clean:
+      - crc: 0xAC93A94B
+        util: 'FO3Edit v4.0.2e'
   - name: 'YearlingBooks.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20483' ]
     tag:
