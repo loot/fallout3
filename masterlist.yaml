@@ -6503,6 +6503,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'WeightAmmo.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14730' ]
+    clean:
+      - crc: 0x443A1512
+        util: 'FO3Edit v4.0.2e'
   - name: 'Enclave Radio Enhanced.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14947' ]
     clean:
