@@ -5969,6 +5969,9 @@ plugins:
     inc:
       - 'RHKBrisaAlmodovar.esm'
       - 'YearlingBooksBrisaAlmodovar.esp'
+    clean:
+      - crc: 0xCA2F0F7F
+        util: 'FO3Edit v4.0.2e'
     msg:
       - type: warn
         content: 'This mod overwrites certain parts of the Brisa Almodovar follower mod. It is advised to use the "YearlingBooksBrisaAlmodovar.esp" version of this mod instead.'
