@@ -7409,6 +7409,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'STDG.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22663' ]
+    clean:
+      - crc: 0xE362271F
+        util: 'FO3Edit v4.0.2e'
   - name: 'DeNerfing Colonel Autumns Laser Pistol.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22821' ]
     dirty:
