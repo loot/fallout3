@@ -6210,30 +6210,69 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/10147' ]
   - name: 'PiPBoy Blue Light.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10740' ]
+    clean:
+      - crc: 0xAE891A66
+        util: 'FO3Edit v4.0.2e'
   - name: 'PiPBoy Cyan Light.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10740' ]
+    clean:
+      - crc: 0x5ABE6B6E
+        util: 'FO3Edit v4.0.2e'
   - name: 'PiPBoy Grey Light.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10740' ]
+    clean:
+      - crc: 0x1BD922D6
+        util: 'FO3Edit v4.0.2e'
   - name: 'PiPBoy Light Range Infinity.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10740' ]
+    clean:
+      - crc: 0x4F6623DE
+        util: 'FO3Edit v4.0.2e'
   - name: 'PiPBoy Light Range x2.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10740' ]
+    clean:
+      - crc: 0x799BC187
+        util: 'FO3Edit v4.0.2e'
   - name: 'PiPBoy Light Range x3.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10740' ]
+    clean:
+      - crc: 0x2C087763
+        util: 'FO3Edit v4.0.2e'
   - name: 'PiPBoy Light Range x4.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10740' ]
+    clean:
+      - crc: 0xA9A9E700
+        util: 'FO3Edit v4.0.2e'
   - name: 'PiPBoy Light Range x5.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10740' ]
+    clean:
+      - crc: 0x872F1AAB
+        util: 'FO3Edit v4.0.2e'
   - name: 'PiPBoy Light Range x6.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10740' ]
+    clean:
+      - crc: 0x028E8AC8
+        util: 'FO3Edit v4.0.2e'
   - name: 'PiPBoy Purple Light.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10740' ]
+    clean:
+      - crc: 0xA0A6A525
+        util: 'FO3Edit v4.0.2e'
   - name: 'PiPBoy Red Light.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10740' ]
+    clean:
+      - crc: 0x4362FC33
+        util: 'FO3Edit v4.0.2e'
   - name: 'PiPBoy White Light.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10740' ]
+    clean:
+      - crc: 0x5491D42D
+        util: 'FO3Edit v4.0.2e'
   - name: 'PiPBoy Yellow Light.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10740' ]
+    clean:
+      - crc: 0xB7558D3B
+        util: 'FO3Edit v4.0.2e'
   - name: 'Radio Active.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10900' ]
   - name: 'Better RC Church.esp'
