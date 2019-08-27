@@ -2893,6 +2893,9 @@ plugins:
     tag:
       - Deflst
       - Graphics
+    clean:
+      - crc: 0x9203ACF5
+        util: 'FO3Edit v4.0.2e'
   - name: 'BoS_FOOKedition_Armor.esp'
     msg: [ *integratedInFOOK2 ]
     tag:
