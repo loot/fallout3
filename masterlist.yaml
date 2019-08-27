@@ -6896,6 +6896,15 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/20042' ]
   - name: 'Vault 101 Revisited James Room.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20278' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xF1ACD72F
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 9
+        udr: 7
+    clean:
+      - crc: 0x57EEF46F
+        util: 'FO3Edit v4.0.2e'
   - name: 'PotomacSteamworks.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20843' ]
     dirty:
