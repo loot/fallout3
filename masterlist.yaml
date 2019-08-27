@@ -6093,6 +6093,14 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'MTCBigTownRobotFix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6685' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xC455F11B
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 3
+    clean:
+      - crc: 0x0969FEB6
+        util: 'FO3Edit v4.0.2e'
   - name: 'Gore_No_More.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7318' ]
     dirty:
