@@ -6180,6 +6180,14 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Scout Outfits.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6103' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x0C8273FB
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 6
+    clean:
+      - crc: 0x98CB5E5E
+        util: 'FO3Edit v4.0.2e'
   - name: 'Conelrad 640-1240.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6104' ]
     clean:
