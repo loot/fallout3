@@ -7577,6 +7577,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'You gotta Shoot Em'' In the Head Fixes Updated.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/23540' ]
+    clean:
+      - crc: 0x1C89A24B
+        util: 'FO3Edit v4.0.2e'
   - name: 'Compiled fixes for Fallout 3 ( compatible with UOFO3P ).esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/23584' ]
     clean:
