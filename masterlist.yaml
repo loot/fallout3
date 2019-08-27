@@ -5997,6 +5997,15 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/8050' ]
   - name: 'Mothership Crew.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8747' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x93255384
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 14
+        udr: 1
+    clean:
+      - crc: 0x241CC1FD
+        util: 'FO3Edit v4.0.2e'
   - name: 'Freebooter_Armor.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8754' ]
     clean:
