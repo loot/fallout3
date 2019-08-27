@@ -5680,6 +5680,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/19514' ]
     tag:
       - Graphics
+    clean:
+      - crc: 0xB54B154B
+        util: 'FO3Edit v4.0.2e'
   - name: 'People_Radio.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5021' ]
     dirty:
