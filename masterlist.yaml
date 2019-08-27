@@ -6580,12 +6580,24 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'RealisticBulletsNoTracers.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18156' ]
+    clean:
+      - crc: 0x4B545770
+        util: 'FO3Edit v4.0.2e'
   - name: 'RealisticBulletsTracers.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18156' ]
+    clean:
+      - crc: 0xAEBD8DB9
+        util: 'FO3Edit v4.0.2e'
   - name: 'RealisticBulletsWMKnoTracers.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18156' ]
+    clean:
+      - crc: 0xA87C58DB
+        util: 'FO3Edit v4.0.2e'
   - name: 'RealisticBulletsWMKtracers.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18156' ]
+    clean:
+      - crc: 0x2CCBB039
+        util: 'FO3Edit v4.0.2e'
   - name: 'FWEAlienWorkBenchFix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18234' ]
     dirty:
