@@ -6395,6 +6395,15 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/19951' ]
   - name: 'MetroCars.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19988' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x5F89A907
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 77
+        udr: 4
+    clean:
+      - crc: 0x73362E86
+        util: 'FO3Edit v4.0.2e'
   - name: 'FCOMaster.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20004' ]
     clean:
