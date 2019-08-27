@@ -6691,10 +6691,19 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'MegatonLighting.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21363' ]
+    clean:
+      - crc: 0x2126E81E
+        util: 'FO3Edit v4.0.2e'
   - name: 'MegatonLightingPlusNeonSignGlow.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21363' ]
+    clean:
+      - crc: 0x7DCD1D55
+        util: 'FO3Edit v4.0.2e'
   - name: 'MegatonLightingPlusNoNeonSignGlow.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21363' ]
+    clean:
+      - crc: 0x05CDE33B
+        util: 'FO3Edit v4.0.2e'
   - name: 'FO3Optimized.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21401' ]
     clean:
