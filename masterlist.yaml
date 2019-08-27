@@ -5973,6 +5973,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Overhead3PCamera.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2190' ]
+    clean:
+      - crc: 0xA774190F
+        util: 'FO3Edit v4.0.2e'
   - name: 'Echo_UseBothGloves.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3412' ]
     clean:
