@@ -6920,6 +6920,14 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/21458' ]
   - name: 'RiversideCafe.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21628' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x76FCB140
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 4
+    clean:
+      - crc: 0x8B1F66D2
+        util: 'FO3Edit v4.0.2e'
   - name: 'RiversideCafe.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21628' ]
   - name: '(TWPC) 20CWRE-UUF3P-FWE Patch.esp'
