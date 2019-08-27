@@ -6367,6 +6367,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'No UI Blur.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16171' ]
+    clean:
+      - crc: 0x93641DAC
+        util: 'FO3Edit v4.0.2e'
   - name: 'FO3NeckChains.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16230' ]
     clean:
