@@ -474,6 +474,7 @@ plugins:
       - crc: 0x01D2F0D5
         util: 'FO3Edit v4.0.2e'
   - name: 'xCALIBRuniverse.esm'
+    url: []
     tag:
       - Graphics
       - Invent
