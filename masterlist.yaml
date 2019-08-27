@@ -6475,6 +6475,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Stimpak Counter.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14730' ]
+    clean:
+      - crc: 0x85CD4735
+        util: 'FO3Edit v4.0.2e'
   - name: 'WeightAmmo.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14730' ]
   - name: 'Enclave Radio Enhanced.esp'
