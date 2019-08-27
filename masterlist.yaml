@@ -1519,6 +1519,9 @@ plugins:
       - NoMerge
       - NPC.Race
       - NpcFaces
+    clean:
+      - crc: 0xDA6E632C
+        util: 'FO3Edit v4.0.2e'
   - name: 'Project Beauty- Point Lookout.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
     tag:
@@ -1526,6 +1529,9 @@ plugins:
       - NoMerge
       - NPC.Race
       - NpcFaces
+    clean:
+      - crc: 0x431457E1
+        util: 'FO3Edit v4.0.2e'
   - name: 'FOOK - DIK - Project Beauty.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
     clean:
