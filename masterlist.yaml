@@ -6720,6 +6720,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'The  Pitt Moods.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19191' ]
+    clean:
+      - crc: 0x51D1F79B
+        util: 'FO3Edit v4.0.2e'
   - name: 'DC Moods.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19191' ]
     dirty:
