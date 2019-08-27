@@ -6651,6 +6651,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'rmSaveManager.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19119' ]
+    clean:
+      - crc: 0xF5A9F688
+        util: 'FO3Edit v4.0.2e'
   - name: 'The  Pitt Moods.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19191' ]
   - name: 'DC Moods.esp'
