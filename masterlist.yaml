@@ -1279,10 +1279,15 @@ plugins:
   - name: 'Vault 101 Revisited.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13308' ]
     dirty:
-      - crc: 0x848d8679
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *reqManualFix
+        crc: 0x848D8679
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 33
         udr: 9
+        nav: 2
+      - <<: *reqManualFix
+        crc: 0x0C189D25
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 2
 
     ### Load Early-section
