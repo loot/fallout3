@@ -6299,6 +6299,14 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Tattered_suits.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/9167' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xC5589397
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+    clean:
+      - crc: 0x7B93F9BA
+        util: 'FO3Edit v4.0.2e'
   - name: 'T3_MadLax_Outfit.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/9258' ]
     clean:
