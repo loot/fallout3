@@ -5494,6 +5494,9 @@ plugins:
       - 'DarNifiedUIF3.esp'
       - name: 'Textures/MTUI'
         display: 'MTUI'
+    clean:
+      - crc: 0xAF474D90
+        util: 'FO3Edit v4.0.2e'
   - name: 'Existence 2.0.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5612' ]
     clean:
