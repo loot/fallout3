@@ -5739,6 +5739,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'No Scopeless Zooming - PPA Edition.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
+    clean:
+      - crc: 0x78C2FD51
+        util: 'FO3Edit v4.0.2e'
   - name: 'PPA - FWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
     dirty:
