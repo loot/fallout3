@@ -5992,12 +5992,34 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Miniguns Replacer.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4541' ]
+    clean:
+      - crc: 0x2273ED4C
+        util: 'FO3Edit v4.0.2e'
   - name: 'Miniguns Replacer Backpack.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4541' ]
+    clean:
+      - crc: 0x6B1DDDC3
+        util: 'FO3Edit v4.0.2e'
   - name: 'Miniguns Non Replacer.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4541' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xDB3918BE
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 3
+    clean:
+      - crc: 0xB241CEE6
+        util: 'FO3Edit v4.0.2e'
   - name: 'Miniguns Non Replacer Backpack.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4541' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x49CD3FE0
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 3
+    clean:
+      - crc: 0xF9974473
+        util: 'FO3Edit v4.0.2e'
   - name: 'bzArmour-non-nude.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4719' ]
     dirty:
