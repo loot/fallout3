@@ -6469,6 +6469,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'New Toys - Cars.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18734' ]
+    clean:
+      - crc: 0xA80EB9E8
+        util: 'FO3Edit v4.0.2e'
   - name: 'JIP Realistic Weapon Overheating.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18968' ]
     clean:
