@@ -4243,6 +4243,9 @@ plugins:
   - name: 'Realistic Death Physics.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12306' ]
     msg: [ *integratedInFWE ]
+    clean:
+      - crc: 0x034B7601
+        util: 'FO3Edit v4.0.2e'
   - name: 'REAL-ThirdViewMod.esp'
     inc:
       - 'LOWER-real-thirdpersonview.esp'
