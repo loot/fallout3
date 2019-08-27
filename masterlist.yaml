@@ -6547,6 +6547,15 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Museum.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19951' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xE48A7F85
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+        udr: 18
+    clean:
+      - crc: 0xEF89F5F3
+        util: 'FO3Edit v4.0.2e'
   - name: 'MetroCars.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19988' ]
     dirty:
