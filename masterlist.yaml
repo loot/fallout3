@@ -7074,6 +7074,14 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'overhead.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22122' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xF0C484D5
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 5
+    clean:
+      - crc: 0x99D8720C
+        util: 'FO3Edit v4.0.2e'
   - name: 'EVE Grenade Explosion.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22148' ]
     clean:
