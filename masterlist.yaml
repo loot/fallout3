@@ -7294,10 +7294,19 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/22265' ]
   - name: 'Real Rad-X FO3.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22283' ]
+    clean:
+      - crc: 0x15350A81
+        util: 'FO3Edit v4.0.2e'
   - name: 'Real Radiation Suit FO3.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22283' ]
+    clean:
+      - crc: 0xE2C979B0
+        util: 'FO3Edit v4.0.2e'
   - name: 'Real Radiation Suits- Science Suit Rad Protection-FO3.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22283' ]
+    clean:
+      - crc: 0xD3FEF46B
+        util: 'FO3Edit v4.0.2e'
   - name: 'MegatonClinicRefurb.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22405' ]
     clean:
