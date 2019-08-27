@@ -2576,6 +2576,9 @@ plugins:
     tag:
       - Relev
       - Delev
+    clean:
+      - crc: 0x130108AC
+        util: 'FO3Edit v4.0.2e'
   - name: 'WeaponModKits - FWE Optional Worn Weapons.esp'
     tag:
       - Delev
@@ -7514,21 +7517,38 @@ plugins:
   - name: 'RH_IronSights_Basic_PittPlugin.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
     dirty:
-      - crc: 0xF4974E27
-        <<: *dirtyPlugin
+      - <<: *quickClean
+        crc: 0xF4974E27
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
+    clean:
+      - crc: 0x95346C83
+        util: 'FO3Edit v4.0.2e'
   - name: 'RH_IronSights_Basic_BrokenSteelPlugin.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
     dirty:
-      - crc: 0xA1FEB067
-        <<: *dirtyPlugin
+      - <<: *quickClean
+        crc: 0xA1FEB067
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
+    clean:
+      - crc: 0x3769FDB6
+        util: 'FO3Edit v4.0.2e'
   - name: 'RH_IronSights_Basic_PointLookoutPlugin.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
+    clean:
+      - crc: 0x7578E98E
+        util: 'FO3Edit v4.0.2e'
   - name: 'RH_IronSights_Basic_VanillaPlugin.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
+    clean:
+      - crc: 0xB801247C
+        util: 'FO3Edit v4.0.2e'
   - name: 'RH_IronSights_Pitt_NewRifleSights.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
+    clean:
+      - crc: 0xA9268C1E
+        util: 'FO3Edit v4.0.2e'
   - name: 'RH_IronSights_PL_NewItems.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
     clean:
@@ -7536,6 +7556,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'RH_IronSights_RemoveReticule.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
+    clean:
+      - crc: 0xBC65E0C9
+        util: 'FO3Edit v4.0.2e'
   - name: 'Elgar''s Extra Random Encounters.esp'
     dirty:
       - crc: 0x6FBCB8B4
