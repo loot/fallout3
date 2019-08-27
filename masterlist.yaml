@@ -7433,6 +7433,14 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Simply Uncut.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/23037' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x090AC9D2
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 43
+    clean:
+      - crc: 0x349785D8
+        util: 'FO3Edit v4.0.2e'
   - name: 'UniqueWeaponsRetextured.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/23163' ]
   - name: 'WMK_Fixes_dlc.esp'
