@@ -4467,6 +4467,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
   - name: 'WeatherGroupScriptTest.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
+    clean:
+      - crc: 0xCB83B785
+        util: 'FO3Edit v4.0.2e'
   - name: 'Xepha''s Dynamic Weather - Green Tint Remover.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     clean:
