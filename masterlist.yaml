@@ -5913,11 +5913,14 @@ plugins:
   - name: 'Temple of the Union Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19242' ]
     dirty:
-      - crc: 0xE4A3C388
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0xE4A3C388
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 34
         udr: 167
-        nav: 0
+    clean:
+      - crc: 0xAAEA8236
+        util: 'FO3Edit v4.0.2e'
   - name: 'Tenderizer Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20551' ]
     msg:
