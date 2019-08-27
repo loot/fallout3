@@ -6155,6 +6155,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Trooper_outfits.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5208' ]
+    clean:
+      - crc: 0xE534A0FB
+        util: 'FO3Edit v4.0.2e'
   - name: 'House.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5559' ]
     dirty:
