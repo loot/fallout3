@@ -2822,6 +2822,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/3388' ]
     tag:
       - Graphics
+    clean:
+      - crc: 0x9DCD1FF0
+        util: 'FO3Edit v4.0.2e'
   - name: 'DALCO Inventory Sorter - WMKAA12Shotgun.esp'
     tag:
       - Names
