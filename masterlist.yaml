@@ -3332,6 +3332,14 @@ plugins:
     tag:
       - Graphics
       - NoMerge
+    dirty:
+      - <<: *quickClean
+        crc: 0x5BCB1790
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+    clean:
+      - crc: 0xD1D1B648
+        util: 'FO3Edit v4.0.2e'
   - name: 'Item Descriptions Img.esp'
     tag:
       - Graphics
