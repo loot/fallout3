@@ -7186,6 +7186,18 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Purity Crash Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22086' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xCBDFBCB6
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        udr: 1
+      - <<: *quickClean
+        crc: 0xD0823818
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 3
+    clean:
+      - crc: 0x209B2242
+        util: 'FO3Edit v4.0.2e'
   - name: 'GaryIterrogationHolo.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22122' ]
     dirty:
