@@ -6572,6 +6572,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'RBS -Laser and Plasma Projectiles Optional.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18156' ]
+    clean:
+      - crc: 0x8477DE65
+        util: 'FO3Edit v4.0.2e'
   - name: 'RealisticBulletsNoTracers.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18156' ]
   - name: 'RealisticBulletsTracers.esp'
