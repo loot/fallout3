@@ -6568,6 +6568,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/21118' ]
   - name: 'majormodder''s Junk Food to Barbeque Crisps.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21130' ]
+    clean:
+      - crc: 0x87EA5BB1
+        util: 'FO3Edit v4.0.2e'
   - name: 'DIFF.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21148' ]
     clean:
