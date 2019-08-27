@@ -7159,6 +7159,14 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Paradise Rising.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22881' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xE57F88D3
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+    clean:
+      - crc: 0x1D4604F4
+        util: 'FO3Edit v4.0.2e'
   - name: 'AutomatFix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22947' ]
     clean:
