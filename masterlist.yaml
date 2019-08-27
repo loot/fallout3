@@ -6816,6 +6816,14 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/20278' ]
   - name: 'PotomacSteamworks.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20843' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xF705D620
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 5
+    clean:
+      - crc: 0x4B23F6F4
+        util: 'FO3Edit v4.0.2e'
   - name: 'Dragonskin_for_FWE_2014.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20874' ]
     clean:
