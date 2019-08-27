@@ -5508,11 +5508,13 @@ plugins:
   - name: 'Laurens_Bathroom_poetry_V1.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16160' ]
     dirty:
-      - crc: 0xD8A75C40
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0xD8A75C40
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0xD414BFED
+        util: 'FO3Edit v4.0.2e'
   - name: 'Loki_HistoricSpeeches_v1.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14476' ]
     dirty:
