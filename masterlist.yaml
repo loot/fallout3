@@ -1538,6 +1538,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Project Beauty - Fallout Character Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
+    clean:
+      - crc: 0x0E3E0664
+        util: 'FO3Edit v4.0.2e'
   - name: 'Raider preset beta.esp'
     tag:
       - Deactivate
