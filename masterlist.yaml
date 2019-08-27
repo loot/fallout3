@@ -7355,6 +7355,15 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'ThreeDogsToaster.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22265' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x37AF2488
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+        udr: 9
+    clean:
+      - crc: 0x1A3CE1DB
+        util: 'FO3Edit v4.0.2e'
   - name: 'Real Rad-X FO3.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22283' ]
     clean:
