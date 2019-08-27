@@ -6583,6 +6583,15 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'PointLookout Moods.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19191' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xE673A705
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 15
+        udr: 2
+    clean:
+      - crc: 0xAE45BA91
+        util: 'FO3Edit v4.0.2e'
   - name: 'BauPetSupplies.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19473' ]
     dirty:
