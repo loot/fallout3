@@ -7442,9 +7442,13 @@ plugins:
   - name: 'RH_IronSights_Basic_AnchoragePlugin.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
     dirty:
-      - crc: 0x7EF88F51
-        <<: *dirtyPlugin
+      - <<: *quickClean
+        crc: 0x7EF88F51
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
+    clean:
+      - crc: 0x4358A923
+        util: 'FO3Edit v4.0.2e'
   - name: 'RH_EVE_Bridge.esp'
     dirty:
       - crc: 0x06239EB2
@@ -7476,6 +7480,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
   - name: 'RH_IronSights_PL_NewItems.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
+    clean:
+      - crc: 0xEE22209F
+        util: 'FO3Edit v4.0.2e'
   - name: 'RH_IronSights_RemoveReticule.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
   - name: 'Elgar''s Extra Random Encounters.esp'
