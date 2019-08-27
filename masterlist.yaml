@@ -5991,6 +5991,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Less_Blood.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7400' ]
+    clean:
+      - crc: 0xFD4591BB
+        util: 'FO3Edit v4.0.2e'
   - name: 'Lookout Outfits.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7682' ]
   - name: 'Stealth Kills Enabled.esp'
