@@ -5745,26 +5745,49 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'PPA - Operation Anchorage.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
+    clean:
+      - crc: 0xA90A480A
+        util: 'FO3Edit v4.0.2e'
   - name: 'PPA - The Pitt.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
+    clean:
+      - crc: 0xF0F11983
+        util: 'FO3Edit v4.0.2e'
   - name: 'PPA - Broken Steel.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
+    clean:
+      - crc: 0xAC6C2F96
+        util: 'FO3Edit v4.0.2e'
   - name: 'PPA - Mothership Zeta.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
     dirty:
-      - crc: 0xBC734E8B
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0xBC734E8B
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0x9F0214F1
+        util: 'FO3Edit v4.0.2e'
   - name: 'PPA - Ambient Temperature.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
+    clean:
+      - crc: 0x857C70F6
+        util: 'FO3Edit v4.0.2e'
   - name: 'PPA - IMCN.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
+    clean:
+      - crc: 0xC8B5F4C3
+        util: 'FO3Edit v4.0.2e'
   - name: 'PPA - Readius.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
+    clean:
+      - crc: 0x576727CD
+        util: 'FO3Edit v4.0.2e'
   - name: 'PPA - Super Human Jump Perk.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
+    clean:
+      - crc: 0xFC7F0CCE
+        util: 'FO3Edit v4.0.2e'
   - name: 'Inventory Access.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
     clean:
@@ -5778,33 +5801,42 @@ plugins:
   - name: 'PPA - FWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
     dirty:
-      - crc: 0x0D43A04E
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0x0D43A04E
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0x7A647EF5
+        util: 'FO3Edit v4.0.2e'
   - name: 'PPA - FWE 2.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16591' ]
     tag:
       - Stats
     dirty:
-      - crc: 0x8B401D77
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0x8B401D77
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0xCF7183B9
+        util: 'FO3Edit v4.0.2e'
   - name: 'PPA - FWE TalonExtraArmor.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16591' ]
+    clean:
+      - crc: 0xE8CD44AA
+        util: 'FO3Edit v4.0.2e'
   - name: 'PPA - FWE Tougher NPC Power Armour.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16591' ]
     tag:
       - Relev
     dirty:
-      - crc: 0xD1635385
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0xD1635385
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0x715D3B5C
+        util: 'FO3Edit v4.0.2e'
   - name: 'ProtectronFix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20498' ]
     msg:
