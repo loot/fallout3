@@ -2204,6 +2204,14 @@ plugins:
   - name: 'megalight.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7875' ]
     msg: [ *integratedInFOOK2 ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xEF1BF5C3
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 4
+    clean:
+      - crc: 0xCDA4180F
+        util: 'FO3Edit v4.0.2e'
   - name: 'Towers Hill.esp'
     tag:
       - Invent
