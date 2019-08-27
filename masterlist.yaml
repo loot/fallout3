@@ -6197,8 +6197,14 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Merc Adventurer Armor - eng.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13155' ]
+    clean:
+      - crc: 0x3EE071C7
+        util: 'FO3Edit v4.0.2e'
   - name: 'Merc Adventurer Armor - rus.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13155' ]
+    clean:
+      - crc: 0x3E37D073
+        util: 'FO3Edit v4.0.2e'
   - name: 'T3_leather armors.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13280' ]
   - name: 'Impervious Power Armour.esm'
