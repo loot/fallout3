@@ -5733,11 +5733,14 @@ plugins:
       - Delev
       - Relev
     dirty:
-      - crc: 0xE3EF4366
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0xE3EF4366
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
         udr: 56
-        nav: 0
+    clean:
+      - crc: 0x37C9AF44
+        util: 'FO3Edit v4.0.2e'
   - name: 'Powered Power Armor.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
     clean:
