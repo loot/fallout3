@@ -1771,12 +1771,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/4730' ]
     tag:
       - Scripts
-    dirty:
-      - crc: 0xFFF16D14
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 0
-        udr: 29
-        nav: 0
+    clean:
+      - crc: 0xE52E603F
+        util: 'FO3Edit v4.0.2e'
   - name: 'PLweightadjust.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7268' ]
     tag:
