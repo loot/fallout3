@@ -5707,6 +5707,9 @@ plugins:
         nav: 0
   - name: 'Powered Power Armor.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
+    clean:
+      - crc: 0xEE4B6291
+        util: 'FO3Edit v4.0.2e'
   - name: 'PPA - Operation Anchorage.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
   - name: 'PPA - The Pitt.esp'
