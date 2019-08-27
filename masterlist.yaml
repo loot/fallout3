@@ -6142,6 +6142,14 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Refugee Clothing.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5580' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x9C5A8E8B
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+    clean:
+      - crc: 0x33B356F1
+        util: 'FO3Edit v4.0.2e'
   - name: 'Rivet City Realignment.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5831' ]
     clean:
