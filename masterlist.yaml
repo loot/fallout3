@@ -2870,16 +2870,13 @@ plugins:
       - Graphics
       - Scripts
     dirty:
-      - crc: 0x1D21BEE9
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 1
-        udr: 0
-        nav: 0
-      - crc: 0xB32FD263
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0xB32FD263
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 3
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0xBAAAD03E
+        util: 'FO3Edit v4.0.2e'
   - name: 'Outcast DX.esp'
     msg: [ *integratedInFOOK2 ]
     tag:
@@ -6945,6 +6942,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Winterized_T51b_Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20042' ]
+    clean:
+      - crc: 0xEC5E9DAB
+        util: 'FO3Edit v4.0.2e'
   - name: 'Vault 101 Revisited James Room.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20278' ]
     dirty:
