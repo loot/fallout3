@@ -5866,7 +5866,7 @@ plugins:
         itm: 3
         udr: 0
         nav: 0
-  - name: 'RagdollOverhaulFO3.esp'
+  - name: 'RagdollOverhaulFo3.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20143' ]
     tag:
       - Actors.Skeleton
