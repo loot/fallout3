@@ -5870,6 +5870,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/20143' ]
     tag:
       - Actors.Skeleton
+    clean:
+      - crc: 0xAA5588CE
+        util: 'FO3Edit v4.0.2e'
   - name: 'RockopolisRebuilt.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8769' ]
     dirty:
