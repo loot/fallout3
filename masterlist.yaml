@@ -7565,6 +7565,14 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'WMK_Fixes_dlc.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/23172' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x97F87AF1
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 3
+    clean:
+      - crc: 0x05E09063
+        util: 'FO3Edit v4.0.2e'
   - name: 'Millenia_C96_replacer_WMKpatch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/23183' ]
     clean:
