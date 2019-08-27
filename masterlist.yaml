@@ -4996,6 +4996,9 @@ plugins:
   - name: 'MP5ForFWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12751' ]
     tag: [ Stats ]
+    clean:
+      - crc: 0x223F6962
+        util: 'FO3Edit v4.0.2e'
   - name: 'SVDForFWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12751' ]
     tag: [ Stats ]
