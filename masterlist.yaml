@@ -7133,6 +7133,8 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'UF3P - Exotic Caravans.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21458' ]
+    tag:
+      - Invent
     clean:
       - crc: 0x8DBAA092
         util: 'FO3Edit v4.0.2e'
