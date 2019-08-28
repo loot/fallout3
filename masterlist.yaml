@@ -5813,6 +5813,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Powered Power Armor.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
+    tag:
+      - Actors.AIData
+      - Stats
     clean:
       - crc: 0xEE4B6291
         util: 'FO3Edit v4.0.2e'
@@ -5873,6 +5876,8 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'PPA - FWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
+    tag:
+      - Delev
     dirty:
       - <<: *quickClean
         crc: 0x0D43A04E
