@@ -631,6 +631,10 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'FO3 Wanderers Edition - Main File.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
+    after:
+      - 'FasterMorePowerfulMines.esp'
+      - 'GlowingGhouls.esp'
+      - 'The Mantis Imperative - Mantis.esp'
     tag:
       - Actors.ACBS
       - Actors.AIData
