@@ -5109,6 +5109,10 @@ plugins:
       - Scripts
   - name: 'xCALIBR_ammo_Override_v1_01_for_20th Century Weapons -Plus- Reborn FWE-WMK-Calibr14_V1_70RC_18668.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18668' ]
+    tag:
+      - Names
+      - Destructible
+      - Stats
     dirty:
       - crc: 0x32EAC10D
         <<: *dirtyPlugin # FO3Edit 3.0.32
