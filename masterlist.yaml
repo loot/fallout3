@@ -5265,6 +5265,10 @@ plugins:
         nav: 0
   - name: 'Blackened FWE + MMM + Project Beauty.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
+    after:
+      - 'UUF3P - FWE Patch.esp'
+    req:
+      - 'FO3 Wanderers Edition - Main File.esp'
     tag:
       - Actors.Stats
       - Factions
@@ -5277,6 +5281,10 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Blackened FWE + MMM + EVE + Project Beauty.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
+    after:
+      - 'Impact.esp'
+      - 'UUF3P - FWE Patch.esp'
+      - 'WeaponModKits - FWE Master Release.esp'
     tag:
       - Actors.Stats
       - Factions
@@ -5284,6 +5292,11 @@ plugins:
       - Names
       - Relev
       - Scripts
+      - C.Light
+      - C.Music
+      - C.Name
+      - C.Owner
+      - C.Water
     clean:
       - crc: 0x010B36EC
         util: 'FO3Edit v4.0.2e'
@@ -7808,6 +7821,8 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Blackened RH + FWE + EVE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
+    after:
+      - 'Blackened FWE + MMM + EVE + Project Beauty.esp'
     clean:
       - crc: 0xB30A2388
         util: 'FO3Edit v4.0.2e'
