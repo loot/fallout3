@@ -4465,6 +4465,7 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Xepha''s Dynamic Weather - Main + DLC Merged.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
+    group: *overridesGroup
     tag:
       - C.Climate
     dirty:
