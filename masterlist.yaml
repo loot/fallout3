@@ -7494,6 +7494,8 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Armor Repair Kits PL - FO3.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22541' ]
+    tag:
+      - Invent
     clean:
       - crc: 0x909A50BF
         util: 'FO3Edit v4.0.2e'
