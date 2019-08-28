@@ -6137,6 +6137,8 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Hi-Res Weapons & Ammo Textures.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4457' ]
+    tag:
+      - Graphics
     clean:
       - crc: 0xE4F7B017
         util: 'FO3Edit v4.0.2e'
