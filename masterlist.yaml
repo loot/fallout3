@@ -6865,6 +6865,21 @@ plugins:
         crc: 0x2812CA6E
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 14
+  - name: 'Fo3HirezdFlamer.esp'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/19931' ]
+    tag:
+      - Graphics
+      - Stats
+    clean:
+      - crc: 0x019DA08F
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Fo3HirezdMinigun.esp'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/19931' ]
+    tag:
+      - Graphics
+    clean:
+      - crc: 0x572E720A
+        util: 'FO3Edit v4.0.2e'
   - name: 'TiesThatBind.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19941' ]
     dirty:
