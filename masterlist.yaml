@@ -1825,6 +1825,8 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'PLweightadjust.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7268' ]
+    after:
+      - 'Another Interior Mod.esp'
     tag:
       - Invent
       - Scripts
