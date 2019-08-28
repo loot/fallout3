@@ -825,6 +825,7 @@ plugins:
   - name: 'Mart''s Mutant Mod.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
+      - Actors.ACBS
       - Delev
       - Factions
       - Invent
