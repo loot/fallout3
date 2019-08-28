@@ -658,6 +658,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
     tag:
       - Deflst
+      - Graphics
+      - Stats
     dirty:
       - <<: *quickClean
         crc: 0xD2346227
