@@ -631,6 +631,10 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'FO3 Wanderers Edition - Main File.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
+    after:
+      - 'FasterMorePowerfulMines.esp'
+      - 'GlowingGhouls.esp'
+      - 'The Mantis Imperative - Mantis.esp'
     tag:
       - Actors.ACBS
       - Actors.AIData
@@ -658,6 +662,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
     tag:
       - Deflst
+      - Graphics
+      - Stats
     dirty:
       - <<: *quickClean
         crc: 0xD2346227
@@ -703,6 +709,11 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'FO3 Wanderers Edition - DLC Mothership Zeta.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
+    tag:
+      - Destructible
+      - Graphics
+      - Names
+      - Stats
     clean:
       - crc: 0x54C6A319
         util: 'FO3Edit v4.0.2e'
@@ -814,6 +825,7 @@ plugins:
   - name: 'Mart''s Mutant Mod.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
     tag:
+      - Actors.ACBS
       - Delev
       - Factions
       - Invent
@@ -1164,6 +1176,7 @@ plugins:
     tag:
       - Factions
       - Invent
+      - Relations
     dirty:
       - <<: *reqManualFix
         crc: 0x81581FCA
@@ -1812,6 +1825,8 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'PLweightadjust.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7268' ]
+    after:
+      - 'Another Interior Mod.esp'
     tag:
       - Invent
       - Scripts
@@ -1857,14 +1872,44 @@ plugins:
     clean:
       - crc: 0xFE791FEE
         util: 'FO3Edit v4.0.2e'
+  - name: 'The Mantis Imperative - FlatVATS.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/12296' ]
+    clean:
+      - crc: 0x21656566
+        util: 'FO3Edit v4.0.2e'
   - name: 'The Mantis Imperative - Nasty Zeta.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12296' ]
+    tag:
+      - -Actors.ACBS
+      - -C.Encounter
+      - -C.Name
+      - -Delev
+      - -Destructible
+      - -Graphics
+      - -Invent
+      - -Relev
+      - -Scripts
+      - -Stats
     dirty:
-      - crc: 0xBC544F07
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0xBC544F07
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 17
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0xA55B80F5
+        util: 'FO3Edit v4.0.2e'
+  - name: 'The Mantis Imperative - Nasty Zeta No Scaling.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/12296' ]
+    tag:
+      - Relev
+    dirty:
+      - <<: *quickClean
+        crc: 0x03333A78
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+    clean:
+      - crc: 0x58D24D52
+        util: 'FO3Edit v4.0.2e'
   - name: 'The Mantis Imperative - Combat.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12296' ]
     msg: [ *MantisImperativeFWEWarning ]
@@ -1898,6 +1943,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/12296' ]
     tag:
       - Relev
+      - Invent
     dirty:
       - <<: *quickClean
         crc: 0x24C45694
@@ -2136,6 +2182,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/4660' ]
     tag:
       - Actors.AIPackages
+      - Graphics
     clean:
       - crc: 0xAD77AE99
         util: 'FO3Edit v4.0.2e'
@@ -2569,6 +2616,7 @@ plugins:
       - Deflst
       - Names
       - Relev
+      - Stats
     dirty:
       - <<: *quickClean
         crc: 0x25042115
@@ -2579,6 +2627,8 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'RH_WMK_Bridge.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17757' ]
+    after:
+      - 'WMK Uniques for FWE_EVE Addon.esp'
     tag:
       - Relev
       - Delev
@@ -3669,6 +3719,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'WeaponModKits - BrokenSteel.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
+    tag:
+      - Graphics
+      - Stats
     clean:
       - crc: 0x377467AC
         util: 'FO3Edit v4.0.2e'
@@ -3679,6 +3732,8 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'WeaponModKits - Zeta.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
+    tag:
+      - Stats
     clean:
       - crc: 0x6C23E64A
         util: 'FO3Edit v4.0.2e'
@@ -4440,6 +4495,7 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Xepha''s Dynamic Weather - Main + DLC Merged.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
+    group: *overridesGroup
     tag:
       - C.Climate
     dirty:
@@ -5064,6 +5120,8 @@ plugins:
       - Names
       - Relev
       - Stats
+      - Invent
+      - Scripts
     dirty:
       - <<: *quickClean
         crc: 0xDBF185AA
@@ -5079,8 +5137,13 @@ plugins:
       - Graphics
       - Names
       - Stats
+      - Scripts
   - name: 'xCALIBR_ammo_Override_v1_01_for_20th Century Weapons -Plus- Reborn FWE-WMK-Calibr14_V1_70RC_18668.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18668' ]
+    tag:
+      - Names
+      - Destructible
+      - Stats
     dirty:
       - crc: 0x32EAC10D
         <<: *dirtyPlugin # FO3Edit 3.0.32
@@ -5117,6 +5180,8 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'ArefuExpandedByAzar-FixMisc.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15686' ]
+    tag:
+      - Graphics
     dirty:
       - <<: *quickClean
         crc: 0x283EAF75
@@ -5259,6 +5324,10 @@ plugins:
         nav: 0
   - name: 'Blackened FWE + MMM + Project Beauty.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
+    after:
+      - 'UUF3P - FWE Patch.esp'
+    req:
+      - 'FO3 Wanderers Edition - Main File.esp'
     tag:
       - Actors.Stats
       - Factions
@@ -5271,6 +5340,10 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Blackened FWE + MMM + EVE + Project Beauty.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
+    after:
+      - 'Impact.esp'
+      - 'UUF3P - FWE Patch.esp'
+      - 'WeaponModKits - FWE Master Release.esp'
     tag:
       - Actors.Stats
       - Factions
@@ -5278,6 +5351,11 @@ plugins:
       - Names
       - Relev
       - Scripts
+      - C.Light
+      - C.Music
+      - C.Name
+      - C.Owner
+      - C.Water
     clean:
       - crc: 0x010B36EC
         util: 'FO3Edit v4.0.2e'
@@ -5302,11 +5380,15 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/3809' ]
     tag:
       - Relev
+      - Invent
     clean:
       - crc: 0x94CB8DA8
         util: 'FO3Edit v4.0.2e'
   - name: 'CALIBRv14 Ammunition Schematics for FWE-WMK-CRAFT-V1_3-18639.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18639' ]
+    tag:
+      - Scripts
+      - Stats
     dirty:
       - <<: *quickClean
         crc: 0x9AB2CF5E
@@ -5329,7 +5411,9 @@ plugins:
         nav: 3
   - name: 'Caravan Merchants Heal After Combat.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20548' ]
-    tag: [ Scripts ]
+    tag:
+      - Scripts
+      - Actors.Stats
   - name: 'CASM.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3729' ]
     req: [ *FOSE ]
@@ -5404,6 +5488,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/10183' ]
     tag:
       - Graphics
+      - Stats
     clean:
       - crc: 0x45FB7F26
         util: 'FO3Edit v4.0.2e'
@@ -5772,6 +5857,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Powered Power Armor.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
+    tag:
+      - Actors.AIData
+      - Stats
     clean:
       - crc: 0xEE4B6291
         util: 'FO3Edit v4.0.2e'
@@ -5832,6 +5920,8 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'PPA - FWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
+    tag:
+      - Delev
     dirty:
       - <<: *quickClean
         crc: 0x0D43A04E
@@ -6099,6 +6189,8 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Hi-Res Weapons & Ammo Textures.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4457' ]
+    tag:
+      - Graphics
     clean:
       - crc: 0xE4F7B017
         util: 'FO3Edit v4.0.2e'
@@ -6459,6 +6551,8 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'T3_leather armors.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13280' ]
+    tag:
+      - Graphics
     clean:
       - crc: 0x1D9D3B75
         util: 'FO3Edit v4.0.2e'
@@ -6801,6 +6895,21 @@ plugins:
         crc: 0x2812CA6E
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 14
+  - name: 'Fo3HirezdFlamer.esp'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/19931' ]
+    tag:
+      - Graphics
+      - Stats
+    clean:
+      - crc: 0x019DA08F
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Fo3HirezdMinigun.esp'
+    url: [ 'http://www.nexusmods.com/fallout3/mods/19931' ]
+    tag:
+      - Graphics
+    clean:
+      - crc: 0x572E720A
+        util: 'FO3Edit v4.0.2e'
   - name: 'TiesThatBind.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19941' ]
     dirty:
@@ -6977,6 +7086,8 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Dragonskin_for_FWE_2014.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20874' ]
+    tag:
+      - Stats
     clean:
       - crc: 0xB8BBA8DB
         util: 'FO3Edit v4.0.2e'
@@ -7078,9 +7189,13 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'UF3P - Exotic Caravans.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21458' ]
+    tag:
+      - Invent
     clean:
       - crc: 0x8DBAA092
         util: 'FO3Edit v4.0.2e'
+  - name: 'UF3P - Exotic Caravans.esp'
+    msg: [ *obsolete ]
   - name: 'UF3P - Exotic Caravans (Essential).esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21458' ]
     clean:
@@ -7117,8 +7232,12 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
   - name: '(TWPC) 20CWRECW-WMK-RIFWC-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    after:
+      - 'Bashed Patch, 0.esp'
   - name: '(TWPC) BBB-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    after:
+      - 'Bashed Patch, 0.esp'
     clean:
       - crc: 0x289306D0
         util: 'FO3Edit v4.0.2e'
@@ -7136,6 +7255,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) BFO-MMM-EVE-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    after:
+      - '(TWPC) DIFF3-RI-EVE-MMM-WMK-PRA-F3HMG-F3HF-20CWRE-IMPACT-UUF3P-FWE Patch.esp'
+      - 'Bashed Patch, 0.esp'
     clean:
       - crc: 0x077A92D4
         util: 'FO3Edit v4.0.2e'
@@ -7151,16 +7273,22 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) BRCC-PB Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    after:
+      - 'Bashed Patch, 0.esp'
     clean:
       - crc: 0xADA18F5B
         util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) BVR-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    after:
+      - 'Bashed Patch, 0.esp'
     clean:
       - crc: 0x8E972AC6
         util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) CMRP-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    after:
+      - 'Bashed Patch, 0.esp'
     clean:
       - crc: 0xE3E8E63C
         util: 'FO3Edit v4.0.2e'
@@ -7171,6 +7299,11 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) DIFF3-RI-EVE-MMM-WMK-PRA-F3HMG-F3HF-20CWRE-IMPACT-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    after:
+      - '(TWPC) 20CWRECW-WMK-RIFWC-UUF3P-FWE Patch.esp'
+      - '(TWPC) BFO-MMM-EVE-UUF3P-FWE Patch.esp'
+      - '(TWPC) WD-DIFF3-UUF3P-FWE Patch.esp'
+      - 'Bashed Patch, 0.esp'
   - name: '(TWPC) DIFF3-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
     clean:
@@ -7183,6 +7316,8 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) GE-UUF3P Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    after:
+      - 'Bashed Patch, 0.esp'
     clean:
       - crc: 0xD1D87233
         util: 'FO3Edit v4.0.2e'
@@ -7198,6 +7333,8 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) K9B-MMM-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    after:
+      - 'Bashed Patch, 0.esp'
     clean:
       - crc: 0x213F66A0
         util: 'FO3Edit v4.0.2e'
@@ -7218,6 +7355,8 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) PLR-UUF3P-ISS Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    after:
+      - 'Bashed Patch, 0.esp'
     clean:
       - crc: 0x96734CF2
         util: 'FO3Edit v4.0.2e'
@@ -7249,6 +7388,8 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) RIL-UUF3P-DM Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    after:
+      - 'Bashed Patch, 0.esp'
     clean:
       - crc: 0xBEDC50DF
         util: 'FO3Edit v4.0.2e'
@@ -7259,6 +7400,8 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) RRE-PB-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    after:
+      - 'Bashed Patch, 0.esp'
     clean:
       - crc: 0x75D597A8
         util: 'FO3Edit v4.0.2e'
@@ -7269,6 +7412,8 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) TMI-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    after:
+      - 'Bashed Patch, 0.esp'
     clean:
       - crc: 0x7DEC2321
         util: 'FO3Edit v4.0.2e'
@@ -7319,6 +7464,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) WD-DIFF3-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
+    after:
+      - '(TWPC) DIFF3-RI-EVE-MMM-WMK-PRA-F3HMG-F3HF-20CWRE-IMPACT-UUF3P-FWE Patch.esp'
+      - 'Bashed Patch, 0.esp'
     clean:
       - crc: 0xEE8D886F
         util: 'FO3Edit v4.0.2e'
@@ -7494,6 +7642,8 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Armor Repair Kits PL - FO3.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22541' ]
+    tag:
+      - Invent
     clean:
       - crc: 0x909A50BF
         util: 'FO3Edit v4.0.2e'
@@ -7610,12 +7760,24 @@ plugins:
   ### Fallout 3 Wanderers Edition-section
   - name: 'UUF3P - FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19122' ]
+    after:
+      - 'delaypl.esp'
+      - 'FO3 Wanderers Edition - Main File.esp'
     req:
       - 'FO3 Wanderers Edition - Main File.esp'
     tag:
+      - Actors.ACBS
+      - Actors.AIData
+      - Actors.Stats
       - Deflst
+      - Delev
+      - Destructible
       - Factions
+      - Graphics
       - Invent
+      - Names
+      - Relations
+      - Relev
       - Scripts
       - Stats
     clean:
@@ -7767,6 +7929,8 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Blackened RH + FWE + EVE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
+    after:
+      - 'Blackened FWE + MMM + EVE + Project Beauty.esp'
     clean:
       - crc: 0xB30A2388
         util: 'FO3Edit v4.0.2e'
