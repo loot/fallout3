@@ -1913,6 +1913,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/12296' ]
     tag:
       - Relev
+      - Invent
     dirty:
       - <<: *quickClean
         crc: 0x24C45694
@@ -6509,7 +6510,8 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'T3_leather armors.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13280' ]
-
+    tag:
+      - Graphics
     clean:
       - crc: 0x1D9D3B75
         util: 'FO3Edit v4.0.2e'
