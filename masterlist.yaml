@@ -6509,6 +6509,7 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'T3_leather armors.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13280' ]
+
     clean:
       - crc: 0x1D9D3B75
         util: 'FO3Edit v4.0.2e'
