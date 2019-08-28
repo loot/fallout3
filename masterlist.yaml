@@ -5352,7 +5352,9 @@ plugins:
         nav: 3
   - name: 'Caravan Merchants Heal After Combat.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20548' ]
-    tag: [ Scripts ]
+    tag:
+      - Scripts
+      - Actors.Stats
   - name: 'CASM.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3729' ]
     req: [ *FOSE ]
