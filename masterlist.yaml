@@ -1872,14 +1872,44 @@ plugins:
     clean:
       - crc: 0xFE791FEE
         util: 'FO3Edit v4.0.2e'
+  - name: 'The Mantis Imperative - FlatVATS.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/12296' ]
+    clean:
+      - crc: 0x21656566
+        util: 'FO3Edit v4.0.2e'
   - name: 'The Mantis Imperative - Nasty Zeta.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12296' ]
+    tag:
+      - -Actors.ACBS
+      - -C.Encounter
+      - -C.Name
+      - -Delev
+      - -Destructible
+      - -Graphics
+      - -Invent
+      - -Relev
+      - -Scripts
+      - -Stats
     dirty:
-      - crc: 0xBC544F07
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0xBC544F07
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 17
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0xA55B80F5
+        util: 'FO3Edit v4.0.2e'
+  - name: 'The Mantis Imperative - Nasty Zeta No Scaling.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/12296' ]
+    tag:
+      - Relev
+    dirty:
+      - <<: *quickClean
+        crc: 0x03333A78
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+    clean:
+      - crc: 0x58D24D52
+        util: 'FO3Edit v4.0.2e'
   - name: 'The Mantis Imperative - Combat.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12296' ]
     msg: [ *MantisImperativeFWEWarning ]
