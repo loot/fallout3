@@ -5065,6 +5065,8 @@ plugins:
       - Names
       - Relev
       - Stats
+      - Invent
+      - Scripts
     dirty:
       - <<: *quickClean
         crc: 0xDBF185AA
@@ -5080,6 +5082,7 @@ plugins:
       - Graphics
       - Names
       - Stats
+      - Scripts
   - name: 'xCALIBR_ammo_Override_v1_01_for_20th Century Weapons -Plus- Reborn FWE-WMK-Calibr14_V1_70RC_18668.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18668' ]
     dirty:
