@@ -5327,6 +5327,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'CALIBRv14 Ammunition Schematics for FWE-WMK-CRAFT-V1_3-18639.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18639' ]
+    tag:
+      - Scripts
+      - Stats
     dirty:
       - <<: *quickClean
         crc: 0x9AB2CF5E
