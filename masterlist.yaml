@@ -5321,6 +5321,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/3809' ]
     tag:
       - Relev
+      - Invent
     clean:
       - crc: 0x94CB8DA8
         util: 'FO3Edit v4.0.2e'
