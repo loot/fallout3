@@ -2137,6 +2137,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/4660' ]
     tag:
       - Actors.AIPackages
+      - Graphics
     clean:
       - crc: 0xAD77AE99
         util: 'FO3Edit v4.0.2e'
