@@ -705,6 +705,11 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'FO3 Wanderers Edition - DLC Mothership Zeta.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
+    tag:
+      - Destructible
+      - Graphics
+      - Names
+      - Stats
     clean:
       - crc: 0x54C6A319
         util: 'FO3Edit v4.0.2e'
