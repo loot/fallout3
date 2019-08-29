@@ -5664,8 +5664,9 @@ plugins:
     clean:
       - crc: 0x3C835495
         util: 'FO3Edit v4.0.2e'
-  - name: 'Fixed Suits.esp'
+  - name: 'Fixed Suits( Anchorage)?( FWE)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19649' ]
+  - name: 'Fixed Suits.esp'
     inc: [ 'Fixed Suits FWE.esp' ]
     msg:
       - *alreadyInOrFixedByUFO3Pv1_7
@@ -5673,11 +5674,9 @@ plugins:
         content: 'Use the Fallout 3 Wanders Edition (FWE) version of this mod instead.'
         condition: 'active("FO3 Wanderers Edition - Main File.esm")'
   - name: 'Fixed Suits FWE.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/19649' ]
     inc: [ 'Fixed Suits.esp' ]
     msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
   - name: 'Fixed Suits Anchorage.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/19649' ]
     inc: [ 'Fixed Suits Anchorage FWE.esp' ]
     msg:
       - *alreadyInOrFixedByUFO3Pv1_7
@@ -5685,7 +5684,6 @@ plugins:
         content: 'Use the Fallout 3 Wanders Edition (FWE) version of this mod instead.'
         condition: 'active("FO3 Wanderers Edition - Main File.esm")'
   - name: 'Fixed Suits Anchorage FWE.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/19649' ]
     inc: [ 'Fixed Suits Anchorage.esp' ]
     msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
   - name: 'Flashlight-LOS.esp'
