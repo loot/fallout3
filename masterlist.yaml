@@ -4822,9 +4822,11 @@ plugins:
       - Names
       - Stats
   - name: 'Achievement\sRemover\s\[(All)?(FO3)?(\+OA)?(\+TP)?(\+BS)?(\+PL)?(\+MZ)?\]\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3813/' ]
     msg:
-      - type: say
-        content: 'Choose only one ''Achievement Remover'' ESP.'
+      - <<: *useOnlyOneX
+        subs: [ 'Achievement Remover' ]
+        condition: 'many("Achievement\sRemover\s\[(All)?(FO3)?(\+OA)?(\+TP)?(\+BS)?(\+PL)?(\+MZ)?\]\.esp")'
   - name: 'DUIF3Extras.esp'
     msg: [ *obsolete ]
   - name: 'Dog lover''s mod.esp'
