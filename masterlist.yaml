@@ -3847,9 +3847,9 @@ plugins:
     tag:
       - Actors.ACBS
   - name: 'RoadWardens.esp'
-    msg:
-      - type: say
-        content: 'If using MMM, use ''RoadWardensMMM.esp'' instead'
+  - name: 'RoadWardensMMM.esp'
+    req:
+      - 'RoadWardens.esp'
   - name: 'WRWC - Classic Fallout.esp'
     inc:
       - 'WRWC - Right Handed.esp'
