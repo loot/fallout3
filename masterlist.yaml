@@ -115,6 +115,7 @@ common:
       - lang: de
         text: 'Veraltet. Aktualisiere zur letzten Version. %1%'
     subs: [ '' ]
+
   - &doNotClean
     type: say
     content:
@@ -532,9 +533,8 @@ plugins:
       - Stats
   - name: 'Project Beauty HD version.esm'
     msg:
-      - type: error
-        content: 'Old. Download the latest Project Beauty files.'
-        condition: 'file("FOOK2 - Main.esm")'
+      - <<: *obsolete
+        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
   - name: 'Project Beauty.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
     tag:
@@ -1282,9 +1282,8 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'PB mika.esm'
     msg:
-      - type: error
-        content: 'Old. Download the latest Project Beauty files.'
-        condition: 'file("FOOK2 - Main.esm")'
+      - <<: *obsolete
+        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
   - name: 'Animy_prostitution.esm'
     req: [ *FOSE ]
   - name: 'DCInteriors_ComboEdition.esm'
@@ -1623,9 +1622,8 @@ plugins:
       - NoMerge
   - name: 'Project Beauty.esp'
     msg:
-      - type: error
-        content: 'Old. Download the latest Project Beauty files.'
-        condition: 'file("FOOK2 - Main.esm")'
+      - <<: *obsolete
+        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
   - name: 'Project Beauty- Broken Steel.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
     tag:
@@ -3572,14 +3570,12 @@ plugins:
       - Invent
   - name: 'PB MMM HD.esp'
     msg:
-      - type: error
-        content: 'Old. Download the latest Project Beauty files.'
-        condition: 'file("FOOK2 - Main.esm")'
+      - <<: *obsolete
+        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
   - name: 'PB MMM.esp'
     msg:
-      - type: error
-        content: 'Old. Download the latest Project Beauty files.'
-        condition: 'file("FOOK2 - Main.esm")'
+      - <<: *obsolete
+        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
   - name: 'DALCO Inventory Sorter - Mart''s Mutant Mod (DLC Broken Steel).esp'
     tag:
       - Names
@@ -3595,9 +3591,8 @@ plugins:
       - Actors.CombatStyle
   - name: 'Project Beauty- MMM Raiders.esp'
     msg:
-      - type: error
-        content: 'Old. Download the latest Project Beauty files.'
-        condition: 'file("FOOK2 - Main.esm")'
+      - <<: *obsolete
+        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
   - name: 'Mart''s Mutant Mod - Project Beauty.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
     tag:
@@ -3682,9 +3677,8 @@ plugins:
       - Relations
   - name: 'Mart''s Mutant Mod - Project Beauty (HD Addition).esp'
     msg:
-      - type: error
-        content: 'Old. Download the latest Project Beauty files.'
-        condition: 'file("FOOK2 - Main.esm")'
+      - <<: *obsolete
+        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
     tag:
       - NoMerge
       - NPC.Race
