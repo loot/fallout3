@@ -107,9 +107,6 @@ common:
         text: 'ITM 자료를 삭제하지 마십시오. 모드가 정상 작동하기 위해 의도적으로 남겨진 자료입니다. 삭제를 취소하는 것 이외에는 안전하지 않습니다.'
       - lang: pt
         text: 'Não apagar os registos ITM. São intencionais e necessárias para o funcionamento do mod. É seguro restaurar os registos, mas não faça nada mais que isso.'
-  - &UF3Pfile_1_7
-    name: 'Unofficial Fallout 3 Patch.esm'
-    condition: 'version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
 
 # Dirty Aliases
   - &dirtyPlugin
@@ -1370,7 +1367,10 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/15891' ]
     tag:
       - Names
-    inc: [ *UF3Pfile_1_7 ]
+    inc:
+      - name: 'Unofficial Fallout 3 Patch.esm'
+        display: 'Unofficial Fallout 3 Patch v1.7+'
+        condition: 'version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
     msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
 
     ### Imported ESPs from BOSS masterlist
