@@ -2165,16 +2165,12 @@ plugins:
     clean:
       - crc: 0x16BE22B6
         util: 'FO3Edit v4.0.2e'
-  - name: 'Destructable Building Materials 3000 Beta v1.5 (PITT REQUIRED).esp'
+  - name: 'Destructable Building Materials 3000 Beta v1.5( (PITT REQUIRED))?\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/12978' ]
     msg:
-      - type: warn
-        content: 'Choose only one of Error Fixes V1.5.esp or Error Fixes V1.5 - Higher FPS.esp, not both.'
-        condition: 'file("Destructable Building Materials 3000 Beta v1.5.esp")'
-  - name: 'Destructable Building Materials 3000 Beta v1.5.esp'
-    msg:
-      - type: warn
-        content: 'Choose only one of Error Fixes V1.5.esp or Error Fixes V1.5 - Higher FPS.esp, not both.'
-        condition: 'file("Destructable Building Materials 3000 Beta v1.5 (PITT REQUIRED).esp")'
+      - <<: *useOnlyOneX
+        subs: [ 'Destructable Building Materials 3000 Beta v1.5' ]
+        condition: 'many("Destructable Building Materials 3000 Beta v1.5( (PITT REQUIRED))?\.esp")'
   - name: 'Classic Fallout Weapons BETA.esp'
     tag:
       - Invent
