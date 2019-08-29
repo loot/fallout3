@@ -5332,7 +5332,7 @@ plugins:
         udr: 684
         nav: 0
   - name: 'Binoculars.esp'
-    url:[ 'https://www.nexusmods.com/fallout3/mods/8909' ]
+    url: [ 'https://www.nexusmods.com/fallout3/mods/8909' ]
     dirty:
       - <<: *quickClean
         crc: 0x5A50FE32
