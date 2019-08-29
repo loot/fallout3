@@ -5334,11 +5334,11 @@ plugins:
           - lang: es
             text: 'Obsoleto. Actualizar a la [última versión](https://www.nexusmods.com/fallout3/mods/8909).'
     dirty:
-      - crc: 0x30f58333 # Version 1.2
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0x30F58333
+        util: '[FO3Edit v4.0.2](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 6
         udr: 2
-        nav: 0
   - name: 'Blackened FWE + MMM + Project Beauty.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
     after:
