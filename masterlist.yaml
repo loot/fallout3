@@ -35,16 +35,20 @@ common:
     subs: [ 'FO3 Wanderers Edition' ]
     condition: 'file("FO3 Wanderers Edition - Main File.esm")'
 
-  # Unofficial Fallout 3 Patch
-  - &AlreadyInUF3Pmsg
+  - &alreadyInOrFixedByX
     - lang: en
-      text: 'Delete. Already included or otherwise fixed in Unofficial Fallout 3 Patch.esm.'
+      text: 'Delete. Already included or otherwise fixed in %1%.'
     - lang: ru
-      text: 'Удалите. Уже включено в Unofficial Fallout 3 Patch.esm или исправлено иным образом.'
+      text: 'Удалите. Уже включено в %1% или исправлено иным образом.'
     - lang: de
-      text: 'Löschen. Bereits enthalten oder anderweitig korrigiert in Unofficial Fallout 3 Patch.esm.'
+      text: 'Löschen. Bereits enthalten oder anderweitig korrigiert in %1%.'
     - lang: es
-      text: 'Borrar. Esta incluido, o de otra modo, arreglado en el Unofficial Fallout 3 Patch.esm.'
+      text: 'Borrar. Esta incluido, o de otra modo, arreglado en el %1%.'
+  - &alreadyInOrFixedByUFO3P
+    <<: *alreadyInOrFixedByX
+    subs: [ 'Unofficial Fallout 3 Patch' ]
+    condition: 'file("Unofficial Fallout 3 Patch.esm")'
+
   - &integratedInFOOK2
     type: say
     content: 'Do not use with latest FOOK2, it is already integrated.'
@@ -104,12 +108,12 @@ common:
   - &AlreadyInUF3P
     type: error
     content:
-      *AlreadyInUF3Pmsg
+      *alreadyInOrFixedByUFO3P
     condition: 'active("Unofficial Fallout 3 Patch.esm")'
   - &AlreadyInUF3P_1_7
     type: error
     content:
-      *AlreadyInUF3Pmsg
+      *alreadyInOrFixedByUFO3P
     condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
 
 # Dirty Aliases
