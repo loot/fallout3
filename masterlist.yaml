@@ -30,6 +30,10 @@ common:
         text: 'Delete. Já icluído em %1%'
       - lang: pl
         text: 'Usuń. Już zawarte w %1%'
+  - &AlreadyInFWE
+    <<: *alreadyInX
+    subs: [ 'FO3 Wanderers Edition' ]
+    condition: 'file("FO3 Wanderers Edition - Main File.esm")'
 
   # Unofficial Fallout 3 Patch
   - &AlreadyInUF3Pmsg
@@ -107,12 +111,6 @@ common:
     content:
       *AlreadyInUF3Pmsg
     condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
-
-# Fallout 3 Wanderers Edition
-  - &AlreadyInFWE
-    type: say
-    content: 'Included in FWE - Not Required'
-    condition: 'file("FO3 Wanderers Edition - Main File.esm")'
 
 # Dirty Aliases
   - &dirtyPlugin
