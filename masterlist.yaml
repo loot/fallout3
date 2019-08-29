@@ -5678,6 +5678,7 @@ plugins:
         subs: [ 'Fixed Suits Anchorage' ]
         condition: 'many("Fixed Suits Anchorage( FWE)?\.esp")'
   - name: 'Fixed Suits( Anchorage)?\.esp'
+    inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
     msg:
       - type: warn
         content: 'Use the Fallout 3 Wanders Edition (FWE) version of this mod instead.'
