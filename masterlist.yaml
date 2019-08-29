@@ -36,6 +36,8 @@ common:
     condition: 'file("FO3 Wanderers Edition - Main File.esm")'
 
   - &alreadyInOrFixedByX
+    type: error
+    content:
     - lang: en
       text: 'Delete. Already included or otherwise fixed in %1%.'
     - lang: ru
@@ -47,7 +49,10 @@ common:
   - &alreadyInOrFixedByUFO3P
     <<: *alreadyInOrFixedByX
     subs: [ 'Unofficial Fallout 3 Patch' ]
-    condition: 'file("Unofficial Fallout 3 Patch.esm")'
+    condition: 'active("Unofficial Fallout 3 Patch.esm")'
+  - &alreadyInOrFixedByUFO3Pv1_7
+    <<: *alreadyInOrFixedByUFO3P
+    condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
 
   - &integratedInFOOK2
     type: say
@@ -105,16 +110,6 @@ common:
   - &UF3Pfile_1_7
     name: 'Unofficial Fallout 3 Patch.esm'
     condition: 'version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
-  - &AlreadyInUF3P
-    type: error
-    content:
-      *alreadyInOrFixedByUFO3P
-    condition: 'active("Unofficial Fallout 3 Patch.esm")'
-  - &AlreadyInUF3P_1_7
-    type: error
-    content:
-      *alreadyInOrFixedByUFO3P
-    condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
 
 # Dirty Aliases
   - &dirtyPlugin
@@ -460,7 +455,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/15600' ]
     inc: [ 'ObjectPlacementFix.esp' ]
     msg:
-      - *AlreadyInUF3P_1_7
+      - *alreadyInOrFixedByUFO3Pv1_7
   - name: 'HairPack.esm'
     tag:
       - Eyes
@@ -1338,7 +1333,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/3660' ]
     group: *fixesGroup
     inc: [ 'FireLightFix_rus.esp' ]
-    msg: [ *AlreadyInUF3P ]
+    msg: [ *alreadyInOrFixedByUFO3P ]
     tag:
       - C.Light
     dirty:
@@ -1352,7 +1347,7 @@ plugins:
     group: *fixesGroup
     inc: [ 'FireLightFix.esp' ]
     after: [ 'FireLightFix.esp' ]
-    msg: [ *AlreadyInUF3P ]
+    msg: [ *alreadyInOrFixedByUFO3P ]
     tag:
       - C.Light
     dirty:
@@ -1364,19 +1359,19 @@ plugins:
   - name: 'FO3 Error Fixes.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16490' ]
     group: *fixesGroup
-    msg: [ *AlreadyInUF3P ]
+    msg: [ *alreadyInOrFixedByUFO3P ]
   - name: 'ObjectPlacementFix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15600' ]
     group: *fixesGroup
     inc: [ 'ObjectPlacementFix.esm' ]
     msg:
-      - *AlreadyInUF3P_1_7
+      - *alreadyInOrFixedByUFO3Pv1_7
   - name: 'The Pitt - Fixes.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15891' ]
     tag:
       - Names
     inc: [ *UF3Pfile_1_7 ]
-    msg: [ *AlreadyInUF3P_1_7 ]
+    msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
 
     ### Imported ESPs from BOSS masterlist
 
@@ -1469,31 +1464,31 @@ plugins:
     tag:
       - Scripts
   - name: 'PyromaniacFix-Burnmaster.esp'
-    msg: [ *AlreadyInUF3P ]
+    msg: [ *alreadyInOrFixedByUFO3P ]
     tag:
       - Deflst
   - name: 'PyromaniacFix-Burnmaster-BS.esp'
-    msg: [ *AlreadyInUF3P ]
+    msg: [ *alreadyInOrFixedByUFO3P ]
     tag:
       - Deflst
   - name: 'PyromaniacFix-Both.esp'
-    msg: [ *AlreadyInUF3P ]
+    msg: [ *alreadyInOrFixedByUFO3P ]
     tag:
       - Deflst
   - name: 'PyromaniacFix-Both-BS.esp'
-    msg: [ *AlreadyInUF3P ]
+    msg: [ *alreadyInOrFixedByUFO3P ]
     tag:
       - Deflst
   - name: 'PyromaniacFix-Both+Nuka.esp'
-    msg: [ *AlreadyInUF3P ]
+    msg: [ *alreadyInOrFixedByUFO3P ]
     tag:
       - Deflst
   - name: 'PyromaniacFix-Both+Nuka-BS.esp'
-    msg: [ *AlreadyInUF3P ]
+    msg: [ *alreadyInOrFixedByUFO3P ]
     tag:
       - Deflst
   - name: 'DemolitionExpertFix-Nuka.esp'
-    msg: [ *AlreadyInUF3P ]
+    msg: [ *alreadyInOrFixedByUFO3P ]
   - name: 'MS11fix.esp'
     tag:
       - Actors.AIPackages
@@ -5665,7 +5660,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/19649' ]
     inc: [ 'Fixed Suits FWE.esp' ]
     msg:
-      - *AlreadyInUF3P_1_7
+      - *alreadyInOrFixedByUFO3Pv1_7
       - type: warn
         content: 'Use the Fallout 3 Wanders Edition (FWE) version of this mod instead.'
         condition: 'active("FO3 Wanderers Edition - Main File.esm")'
@@ -5673,12 +5668,12 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/19649' ]
     inc: [ 'Fixed Suits.esp' ]
     msg:
-      - *AlreadyInUF3P_1_7
+      - *alreadyInOrFixedByUFO3Pv1_7
   - name: 'Fixed Suits Anchorage.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19649' ]
     inc: [ 'Fixed Suits Anchorage FWE.esp' ]
     msg:
-      - *AlreadyInUF3P_1_7
+      - *alreadyInOrFixedByUFO3Pv1_7
       - type: warn
         content: 'Use the Fallout 3 Wanders Edition (FWE) version of this mod instead.'
         condition: 'active("FO3 Wanderers Edition - Main File.esm")'
@@ -5686,7 +5681,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/19649' ]
     inc: [ 'Fixed Suits Anchorage.esp' ]
     msg:
-      - *AlreadyInUF3P_1_7
+      - *alreadyInOrFixedByUFO3Pv1_7
   - name: 'Flashlight-LOS.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15003' ]
     req:
@@ -5991,7 +5986,7 @@ plugins:
   - name: 'ProtectronFix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20498' ]
     msg:
-      - *AlreadyInUF3P_1_7
+      - *alreadyInOrFixedByUFO3Pv1_7
   - name: 'PrototypePowerArmorUsesStimpaks.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20499' ]
     tag:
@@ -6049,7 +6044,7 @@ plugins:
   - name: 'Tenderizer Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20551' ]
     msg:
-      - *AlreadyInUF3P_1_7
+      - *alreadyInOrFixedByUFO3Pv1_7
   - name: 'tubrrCompound.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6068' ]
     clean:
