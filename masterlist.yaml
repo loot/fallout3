@@ -5051,14 +5051,11 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Error Fixes V1.2.esp'
     msg: [ *obsolete ]
-  - name: 'Error Fixes V1.5.esp'
+  - name: 'Error Fixes V1.5( - Higher FPS)?\.esp'
     msg:
-      - type: say
-        content: 'Choose only one of Error Fixes V1.5.esp or Error Fixes V1.5 - Higher FPS.esp, not both.'
-  - name: 'Error Fixes V1.5 - Higher FPS.esp'
-    msg:
-      - type: say
-        content: 'Choose only one of Error Fixes V1.5.esp or Error Fixes V1.5 - Higher FPS.esp, not both.'
+      - <<: *useOnlyOneX
+        subs: [ 'Error Corrections Reduce CTD' ]
+        condition: 'many("Error Fixes V1.5( - Higher FPS)?\.esp")'
   - name: 'Fallout 3 Master Fix.esp'
     inc:
       - 'Fallout 3 Master Fix - Higher FPS.esp'
