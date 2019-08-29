@@ -641,9 +641,8 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'FOOK.ESM'
     msg:
-      - type: error
-        content: 'Get FOOK2'
-        condition: 'file("FOOK2 - Main.esm")'
+      - <<: *obsolete
+        subs: [ '[FOOK2](https://www.nexusmods.com/fallout3/mods/4448/)' ]
   - name: 'FOOK2 - [WANK] World And Neighbourhood Kit.esm'
     msg:
       - type: error
