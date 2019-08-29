@@ -665,16 +665,14 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'FO3 Wanderers Edition - Main File.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
-    msg:
-      - type: say
-        content: 'Suggested to remove the names tag if using MMM'
     tag:
       - Actors.ACBS
       - Actors.Stats
       - Deflst
       - Delev
       - Invent
-      - Names
+      - name: "Names"
+        condition: 'not file("Mart''s Mutant Mod.esm")'
       - Relations
       - Relev
       - Stats
