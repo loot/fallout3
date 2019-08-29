@@ -448,8 +448,7 @@ plugins:
   - name: 'ObjectPlacementFix.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15600' ]
     inc: [ 'ObjectPlacementFix.esp' ]
-    msg:
-      - *alreadyInOrFixedByUFO3Pv1_7
+    msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
   - name: 'HairPack.esm'
     tag:
       - Eyes
@@ -1034,8 +1033,7 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - Zones Respawn.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
-    msg:
-      - *alreadyInFWE
+    msg: [ *alreadyInFWE ]
     tag:
       - Relations
       - Relev
@@ -1065,8 +1063,7 @@ plugins:
         condition: 'file("FO3 Wanderers Edition - Main File.esm")'
   - name: 'Mart''s Mutant Mod - Natural Selection.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
-    msg:
-      - *alreadyInFWE
+    msg: [ *alreadyInFWE ]
     tag:
       - Relations
     clean:
@@ -1358,8 +1355,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/15600' ]
     group: *fixesGroup
     inc: [ 'ObjectPlacementFix.esm' ]
-    msg:
-      - *alreadyInOrFixedByUFO3Pv1_7
+    msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
   - name: 'The Pitt - Fixes.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15891' ]
     tag:
@@ -5664,8 +5660,7 @@ plugins:
   - name: 'Fixed Suits FWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19649' ]
     inc: [ 'Fixed Suits.esp' ]
-    msg:
-      - *alreadyInOrFixedByUFO3Pv1_7
+    msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
   - name: 'Fixed Suits Anchorage.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19649' ]
     inc: [ 'Fixed Suits Anchorage FWE.esp' ]
@@ -5677,8 +5672,7 @@ plugins:
   - name: 'Fixed Suits Anchorage FWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19649' ]
     inc: [ 'Fixed Suits Anchorage.esp' ]
-    msg:
-      - *alreadyInOrFixedByUFO3Pv1_7
+    msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
   - name: 'Flashlight-LOS.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15003' ]
     req:
@@ -5982,8 +5976,7 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'ProtectronFix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20498' ]
-    msg:
-      - *alreadyInOrFixedByUFO3Pv1_7
+    msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
   - name: 'PrototypePowerArmorUsesStimpaks.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20499' ]
     tag:
@@ -6040,8 +6033,7 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Tenderizer Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20551' ]
-    msg:
-      - *alreadyInOrFixedByUFO3Pv1_7
+    msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
   - name: 'tubrrCompound.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6068' ]
     clean:
