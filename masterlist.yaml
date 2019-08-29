@@ -4,23 +4,60 @@ common:
     name: '../fose_loader.exe'
     display: '[FOSE](http://fose.silverlock.org/)'
 
-# Unofficial Fallout 3 Patch
-  - &AlreadyInUF3Pmsg
-    - lang: en
-      text: 'Delete. Already included or otherwise fixed in Unofficial Fallout 3 Patch.esm.'
-    - lang: ru
-      text: 'Удалите. Уже включено в Unofficial Fallout 3 Patch.esm или исправлено иным образом.'
-    - lang: de
-      text: 'Löschen. Bereits enthalten oder anderweitig korrigiert in Unofficial Fallout 3 Patch.esm.'
-    - lang: es
-      text: 'Borrar. Esta incluido, o de otra modo, arreglado en el Unofficial Fallout 3 Patch.esm.'
-  - &integratedInFOOK2
-    type: say
-    content: 'Do not use with latest FOOK2, it is already integrated.'
+# Messages
+  - &alreadyInX
+    type: error
+    content:
+      - lang: en
+        text: 'Delete. Already included in %1%.'
+      - lang: ru
+        text: 'Удалите. Уже включено в %1%.'
+      - lang: es
+        text: 'Borrar. Esta incluido en %1%.'
+      - lang: ko
+        text: '삭제하십시오. 이미 %1%에 포함되어 있습니다.'
+      - lang: zh_CN
+        text: '删除。已包含在%1%中。'
+      - lang: da
+        text: 'Slet. Allerede inkluderet i %1%.'
+      - lang: ja
+        text: '削除してください。既に%1%に含まれています。'
+      - lang: de
+        text: 'Löschen. Bereits in %1% enthalten.'
+      - lang: pt
+        text: 'Apagar. Já incluído em %1%.'
+      - lang: pt_BR
+        text: 'Delete. Já icluído em %1%'
+      - lang: pl
+        text: 'Usuń. Już zawarte w %1%'
+  - &alreadyInFOOK2
+    <<: *alreadyInX
+    subs: [ 'FOOK 2 (Fallout Overhaul Kit)' ]
     condition: 'file("FOOK2 - Main.esm")'
-  - &integratedInFWE
-    type: say
-    content: 'Do not use with latest FWE, it is already integrated.'
+  - &alreadyInFWE
+    <<: *alreadyInX
+    subs: [ 'FO3 Wanderers Edition' ]
+    condition: 'file("FO3 Wanderers Edition - Main File.esm")'
+
+  - &alreadyInOrFixedByX
+    type: error
+    content:
+    - lang: en
+      text: 'Delete. Already included or otherwise fixed in %1%.'
+    - lang: ru
+      text: 'Удалите. Уже включено в %1% или исправлено иным образом.'
+    - lang: de
+      text: 'Löschen. Bereits enthalten oder anderweitig korrigiert in %1%.'
+    - lang: es
+      text: 'Borrar. Esta incluido, o de otra modo, arreglado en el %1%.'
+  - &alreadyInOrFixedByUFO3P
+    <<: *alreadyInOrFixedByX
+    subs: [ 'Unofficial Fallout 3 Patch' ]
+    condition: 'active("Unofficial Fallout 3 Patch.esm")'
+  - &alreadyInOrFixedByUFO3Pv1_7
+    <<: *alreadyInOrFixedByUFO3P
+    condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
+
   - &MantisImperativeFWEWarning
     type: warn
     # Copied from https://www.nexusmods.com/fallout3/mods/12296
@@ -67,25 +104,6 @@ common:
         text: 'ITM 자료를 삭제하지 마십시오. 모드가 정상 작동하기 위해 의도적으로 남겨진 자료입니다. 삭제를 취소하는 것 이외에는 안전하지 않습니다.'
       - lang: pt
         text: 'Não apagar os registos ITM. São intencionais e necessárias para o funcionamento do mod. É seguro restaurar os registos, mas não faça nada mais que isso.'
-  - &UF3Pfile_1_7
-    name: 'Unofficial Fallout 3 Patch.esm'
-    condition: 'version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
-  - &AlreadyInUF3P
-    type: error
-    content:
-      *AlreadyInUF3Pmsg
-    condition: 'active("Unofficial Fallout 3 Patch.esm")'
-  - &AlreadyInUF3P_1_7
-    type: error
-    content:
-      *AlreadyInUF3Pmsg
-    condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
-
-# Fallout 3 Wanderers Edition
-  - &AlreadyInFWE
-    type: say
-    content: 'Included in FWE - Not Required'
-    condition: 'file("FO3 Wanderers Edition - Main File.esm")'
 
 # Dirty Aliases
   - &dirtyPlugin
@@ -309,7 +327,7 @@ plugins:
     after:
       - 'ThePitt.esm'
       - 'Anchorage.esm'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *alreadyInFOOK2 ]
     dirty:
       - crc: 0xC5690E8E # Version 2.0
         <<: *dirtyPlugin # FO3Edit 3.0.32
@@ -430,8 +448,7 @@ plugins:
   - name: 'ObjectPlacementFix.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15600' ]
     inc: [ 'ObjectPlacementFix.esp' ]
-    msg:
-      - *AlreadyInUF3P_1_7
+    msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
   - name: 'HairPack.esm'
     tag:
       - Eyes
@@ -533,7 +550,7 @@ plugins:
       - Relev
       - Stats
   - name: 'Refurbishes [ALL].esm'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *alreadyInFOOK2 ]
   - name: 'GNRBuilding_BoS.esm'
     tag:
       - Invent
@@ -1016,8 +1033,7 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - Zones Respawn.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
-    msg:
-      - *AlreadyInFWE
+    msg: [ *alreadyInFWE ]
     tag:
       - Relations
       - Relev
@@ -1041,14 +1057,13 @@ plugins:
       - crc: 0x6548C4D4
         util: 'FO3Edit v4.0.2e'
     msg:
-      - *AlreadyInFWE
+      - *alreadyInFWE
       - type: say
         content: 'Fallout 3 Wanderers Edition has an alternate approach to protecting traders that is a little weaker but might be sufficient.'
         condition: 'file("FO3 Wanderers Edition - Main File.esm")'
   - name: 'Mart''s Mutant Mod - Natural Selection.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
-    msg:
-      - *AlreadyInFWE
+    msg: [ *alreadyInFWE ]
     tag:
       - Relations
     clean:
@@ -1251,7 +1266,7 @@ plugins:
     tag:
       - Stats
   - name: 'Abbreviated Effects.esm'
-    msg: [ *integratedInFWE ]
+    msg: [ *alreadyInFWE ]
     tag:
       - Names
   - name: 'Canterbury Commons Interiors Embiggened.esm'
@@ -1309,7 +1324,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/3660' ]
     group: *fixesGroup
     inc: [ 'FireLightFix_rus.esp' ]
-    msg: [ *AlreadyInUF3P ]
+    msg: [ *alreadyInOrFixedByUFO3P ]
     tag:
       - C.Light
     dirty:
@@ -1323,7 +1338,7 @@ plugins:
     group: *fixesGroup
     inc: [ 'FireLightFix.esp' ]
     after: [ 'FireLightFix.esp' ]
-    msg: [ *AlreadyInUF3P ]
+    msg: [ *alreadyInOrFixedByUFO3P ]
     tag:
       - C.Light
     dirty:
@@ -1335,19 +1350,21 @@ plugins:
   - name: 'FO3 Error Fixes.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16490' ]
     group: *fixesGroup
-    msg: [ *AlreadyInUF3P ]
+    msg: [ *alreadyInOrFixedByUFO3P ]
   - name: 'ObjectPlacementFix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15600' ]
     group: *fixesGroup
     inc: [ 'ObjectPlacementFix.esm' ]
-    msg:
-      - *AlreadyInUF3P_1_7
+    msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
   - name: 'The Pitt - Fixes.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15891' ]
     tag:
       - Names
-    inc: [ *UF3Pfile_1_7 ]
-    msg: [ *AlreadyInUF3P_1_7 ]
+    inc:
+      - name: 'Unofficial Fallout 3 Patch.esm'
+        display: 'Unofficial Fallout 3 Patch v1.7+'
+        condition: 'version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
+    msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
 
     ### Imported ESPs from BOSS masterlist
 
@@ -1440,31 +1457,31 @@ plugins:
     tag:
       - Scripts
   - name: 'PyromaniacFix-Burnmaster.esp'
-    msg: [ *AlreadyInUF3P ]
+    msg: [ *alreadyInOrFixedByUFO3P ]
     tag:
       - Deflst
   - name: 'PyromaniacFix-Burnmaster-BS.esp'
-    msg: [ *AlreadyInUF3P ]
+    msg: [ *alreadyInOrFixedByUFO3P ]
     tag:
       - Deflst
   - name: 'PyromaniacFix-Both.esp'
-    msg: [ *AlreadyInUF3P ]
+    msg: [ *alreadyInOrFixedByUFO3P ]
     tag:
       - Deflst
   - name: 'PyromaniacFix-Both-BS.esp'
-    msg: [ *AlreadyInUF3P ]
+    msg: [ *alreadyInOrFixedByUFO3P ]
     tag:
       - Deflst
   - name: 'PyromaniacFix-Both+Nuka.esp'
-    msg: [ *AlreadyInUF3P ]
+    msg: [ *alreadyInOrFixedByUFO3P ]
     tag:
       - Deflst
   - name: 'PyromaniacFix-Both+Nuka-BS.esp'
-    msg: [ *AlreadyInUF3P ]
+    msg: [ *alreadyInOrFixedByUFO3P ]
     tag:
       - Deflst
   - name: 'DemolitionExpertFix-Nuka.esp'
-    msg: [ *AlreadyInUF3P ]
+    msg: [ *alreadyInOrFixedByUFO3P ]
   - name: 'MS11fix.esp'
     tag:
       - Actors.AIPackages
@@ -1640,15 +1657,15 @@ plugins:
       - Graphics
   - name: 'StreetLights - Wasteland.esp'
     msg:
-      - *integratedInFOOK2
+      - *alreadyInFOOK2
       - type: say
         content: 'Obselete - upgrade to [Fallout Streetlights](https://www.nexusmods.com/fallout3/mods/8069).'
   - name: 'RK-Skelette-3.0.esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *alreadyInFOOK2 ]
   - name: 'praiseatom.esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *alreadyInFOOK2 ]
   - name: 'Internet Mod.esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *alreadyInFOOK2 ]
   - name: 'DALCO Inventory Sorter - CASM.esp'
     tag:
       - Names
@@ -1658,17 +1675,17 @@ plugins:
       - 'Remove That Glove.esp'
       - '1PipboyPDA.esp'
   - name: 'DK_BulletTime.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *alreadyInFWE ]
   - name: 'Sprint Mod.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *alreadyInFWE ]
   - name: 'Auto Aim Fix v1.1.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *alreadyInFWE ]
   - name: 'KHWeaponscanner.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *alreadyInFWE ]
   - name: 'Alternate Start - Roleplayers.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *alreadyInFWE ]
   - name: 'Selected Containers Respawn.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *alreadyInFWE ]
   - name: 'EVE - RH Ironsights Patch.esp'
     tag:
       - Graphics
@@ -1768,7 +1785,7 @@ plugins:
       - 'GalaxyNewsRadioFix[N].esp'
       - 'GalaxyNewsRadioFix[S].esp'
   - name: 'ReneersRadioMod.esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *alreadyInFOOK2 ]
     tag:
       - Scripts
   - name: 'RadioHotkey.esp'
@@ -2135,12 +2152,12 @@ plugins:
         content: 'Possible cause of CTDs, try disabling to test for improvments, or try BusworldV1.05noexpl.esp'
   - name: 'FPS Grenade Hotkey.esp'
     msg:
-      - *integratedInFWE
-      - *integratedInFOOK2
+      - *alreadyInFWE
+      - *alreadyInFOOK2
   - name: 'FPS Grenade Hotkey - Zeta addon.esp'
     msg:
-      - *integratedInFWE
-      - *integratedInFOOK2
+      - *alreadyInFWE
+      - *alreadyInFOOK2
   - name: 'Mannequin.esp'
     tag:
       - Actors.AIData
@@ -2283,7 +2300,7 @@ plugins:
       - C.Light
   - name: 'megalight.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7875' ]
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *alreadyInFOOK2 ]
     dirty:
       - <<: *quickClean
         crc: 0xEF1BF5C3
@@ -2488,7 +2505,7 @@ plugins:
   - name: 'FO3 Wanderers Edition - FOOK Support.esp'
     msg: [ *obsolete ]
   - name: 'DarNifiedUIF3_FWE.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *alreadyInFWE ]
   - name: 'FO3 Wanderers Edition - Project Beauty (HD Addition).esp'
     inc:
       - 'Project Beauty.esp'
@@ -2571,30 +2588,30 @@ plugins:
       - Sound
       - Stats
   - name: 'Refurbishes [ALL].esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *alreadyInFOOK2 ]
   - name: 'Refurbish [OA].esp'
     inc:
       - 'Refurbishes [ALL].esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *alreadyInFOOK2 ]
   - name: 'Refurbish [OA] - FWE.esp'
     inc:
       - 'Refurbishes [ALL].esp'
   - name: 'Refurbish [TP].esp'
     inc:
       - 'Refurbishes [ALL].esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *alreadyInFOOK2 ]
   - name: 'Refurbish [BS].esp'
     inc:
       - 'Refurbishes [ALL].esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *alreadyInFOOK2 ]
   - name: 'Refurbish [PL].esp'
     inc:
       - 'Refurbishes [ALL].esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *alreadyInFOOK2 ]
   - name: 'Refurbish [MZ].esp'
     inc:
       - 'Refurbishes [ALL].esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *alreadyInFOOK2 ]
   - name: 'WeaponModKits.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3388' ]
     tag:
@@ -2908,17 +2925,17 @@ plugins:
       - Relev
   - name: 'BoS_DX.esp'
     msg:
-      - *integratedInFOOK2
+      - *alreadyInFOOK2
       - *obsolete
     tag:
       - Graphics
   - name: 'BoSDX.esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *alreadyInFOOK2 ]
     tag:
       - Graphics
   - name: 'WinterizedT51bDX.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6167' ]
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *alreadyInFOOK2 ]
     tag:
       - Graphics
       - Scripts
@@ -2931,7 +2948,7 @@ plugins:
       - crc: 0xBAAAD03E
         util: 'FO3Edit v4.0.2e'
   - name: 'Outcast DX.esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *alreadyInFOOK2 ]
     tag:
       - Graphics
   - name: 'Outcast DX - FWE patch.esp'
@@ -2939,7 +2956,7 @@ plugins:
       - Graphics
   - name: 'Tribal_DX.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6520' ]
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *alreadyInFOOK2 ]
     tag:
       - Deflst
       - Graphics
@@ -2947,7 +2964,7 @@ plugins:
       - crc: 0x9203ACF5
         util: 'FO3Edit v4.0.2e'
   - name: 'BoS_FOOKedition_Armor.esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *alreadyInFOOK2 ]
     tag:
       - Graphics
   - name: 'Cat Outfit Fanged.esp'
@@ -3152,7 +3169,7 @@ plugins:
       - 'Improved Turret Reprogramming - Pitt.esp'
       - 'Improved Turret Reprogramming - PL.esp'
   - name: 'Menu Based Hacking & Picking.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *alreadyInFWE ]
   - name: 'OverMightyGold.esp'
     tag:
       - Invent
@@ -3355,29 +3372,29 @@ plugins:
     tag:
       - Names
   - name: 'Persistent Skill Books.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *alreadyInFWE ]
   - name: 'PlasmaWeaponsRedesignRebalance.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *alreadyInFWE ]
     tag:
       - Graphics
       - Sound
   - name: 'PlasmaRifleRedesign.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *alreadyInFWE ]
     tag:
       - Graphics
       - Sound
   - name: 'PlasmaRifleRedesign_A321only.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *alreadyInFWE ]
     tag:
       - Graphics
       - Sound
   - name: 'PlasmaRifleRedesign_standardonly.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *alreadyInFWE ]
     tag:
       - Graphics
       - Sound
   - name: 'PlasmaPistolRedesign.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *alreadyInFWE ]
     tag:
       - Graphics
       - Sound
@@ -4084,7 +4101,7 @@ plugins:
     tag:
       - Relev
   - name: 'T3T_MiscItemIcons.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *alreadyInFWE ]
   - name: 'EnhVision.esp'
     inc:
       - 'EnhVisionHK.esp'
@@ -4183,14 +4200,14 @@ plugins:
       - Sound
       - Stats
   - name: 'Phalanx-MainFollowerModule.esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *alreadyInFOOK2 ]
     tag:
       - Actors.ACBS
       - Actors.AIPackages
   - name: 'Phalanx-BrokenSteel-Integration.esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *alreadyInFOOK2 ]
   - name: 'Phalanx-PointLookout-Integration.esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *alreadyInFOOK2 ]
   - name: 'EVE - FastTravelIndoors Patch.esp'
     msg:
       - type: say
@@ -4317,7 +4334,7 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Realistic Death Physics.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12306' ]
-    msg: [ *integratedInFWE ]
+    msg: [ *alreadyInFWE ]
     clean:
       - crc: 0x034B7601
         util: 'FO3Edit v4.0.2e'
@@ -4345,18 +4362,18 @@ plugins:
     clean:
       - crc: 0x1C4CD93B
         util: 'FO3Edit v4.0.2e'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *alreadyInFOOK2 ]
   - name: 'Fellout-SOTD.esp'
     inc:
       - 'Either Fellout-Full.esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *alreadyInFOOK2 ]
   - name: 'Fellout-Anchorage.esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *alreadyInFOOK2 ]
   - name: 'Fellout-BrokenSteel.esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *alreadyInFOOK2 ]
   - name: 'Fellout-PointLookout.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2672' ]
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *alreadyInFOOK2 ]
     dirty:
       - crc: 0xf33277f6 # DLC support pack of 29 July 2010
         <<: *dirtyPlugin # FO3Edit 3.0.32
@@ -4364,7 +4381,7 @@ plugins:
         udr: 0
         nav: 0
   - name: 'Fellout-Zeta.esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *alreadyInFOOK2 ]
   - name: 'FelloutWithLightingOverhual-1.0.esp'
     tag:
       - C.Light
@@ -4994,7 +5011,7 @@ plugins:
       - NPC.Race
       - NpcFaces
   - name: 'CRBSOR.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *alreadyInFWE ]
   - name: 'xCALIBRammo_override.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11684' ]
     tag:
@@ -5636,28 +5653,26 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/19649' ]
     inc: [ 'Fixed Suits FWE.esp' ]
     msg:
-      - *AlreadyInUF3P_1_7
+      - *alreadyInOrFixedByUFO3Pv1_7
       - type: warn
         content: 'Use the Fallout 3 Wanders Edition (FWE) version of this mod instead.'
         condition: 'active("FO3 Wanderers Edition - Main File.esm")'
   - name: 'Fixed Suits FWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19649' ]
     inc: [ 'Fixed Suits.esp' ]
-    msg:
-      - *AlreadyInUF3P_1_7
+    msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
   - name: 'Fixed Suits Anchorage.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19649' ]
     inc: [ 'Fixed Suits Anchorage FWE.esp' ]
     msg:
-      - *AlreadyInUF3P_1_7
+      - *alreadyInOrFixedByUFO3Pv1_7
       - type: warn
         content: 'Use the Fallout 3 Wanders Edition (FWE) version of this mod instead.'
         condition: 'active("FO3 Wanderers Edition - Main File.esm")'
   - name: 'Fixed Suits Anchorage FWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19649' ]
     inc: [ 'Fixed Suits Anchorage.esp' ]
-    msg:
-      - *AlreadyInUF3P_1_7
+    msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
   - name: 'Flashlight-LOS.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15003' ]
     req:
@@ -5961,8 +5976,7 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'ProtectronFix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20498' ]
-    msg:
-      - *AlreadyInUF3P_1_7
+    msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
   - name: 'PrototypePowerArmorUsesStimpaks.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20499' ]
     tag:
@@ -6019,8 +6033,7 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Tenderizer Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20551' ]
-    msg:
-      - *AlreadyInUF3P_1_7
+    msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
   - name: 'tubrrCompound.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6068' ]
     clean:
