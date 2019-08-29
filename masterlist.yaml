@@ -3847,6 +3847,9 @@ plugins:
     tag:
       - Actors.ACBS
   - name: 'RoadWardens.esp'
+    after:
+      - 'Mart''s Mutant Mod.esp'
+      - 'Mart''s Mutant Mod - Tougher Traders.esp'
   - name: 'RoadWardensMMM.esp'
     req:
       - 'RoadWardens.esp'
