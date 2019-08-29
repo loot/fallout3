@@ -58,6 +58,14 @@ common:
     <<: *alreadyInOrFixedByUFO3P
     condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
 
+  - &useInstead
+    type: warn
+    content:
+      - lang: en
+        text: 'Use %1% instead.'
+      - lang: ja
+        text: '代わりに%1%を使用してください。'
+
   - &useOnlyOneX
     type: error
     content:
@@ -5680,8 +5688,8 @@ plugins:
   - name: 'Fixed Suits( Anchorage)?\.esp'
     inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
     msg:
-      - type: warn
-        content: 'Use the Fallout 3 Wanders Edition (FWE) version of this mod instead.'
+      - <<: *useInstead
+        subs: [ 'FO3 Wanderers Edition (FWE) version' ]
         condition: 'active("FO3 Wanderers Edition - Main File.esm")'
   - name: 'Flashlight-LOS.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15003' ]
