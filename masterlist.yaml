@@ -30,6 +30,10 @@ common:
         text: 'Delete. Já icluído em %1%'
       - lang: pl
         text: 'Usuń. Już zawarte w %1%'
+  - &AlreadyInFOOK2
+    <<: *alreadyInX
+    subs: [ 'FOOK 2 (Fallout Overhaul Kit)' ]
+    condition: 'file("FOOK2 - Main.esm")'
   - &AlreadyInFWE
     <<: *alreadyInX
     subs: [ 'FO3 Wanderers Edition' ]
@@ -54,10 +58,6 @@ common:
     <<: *alreadyInOrFixedByUFO3P
     condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
 
-  - &integratedInFOOK2
-    type: say
-    content: 'Do not use with latest FOOK2, it is already integrated.'
-    condition: 'file("FOOK2 - Main.esm")'
   - &integratedInFWE
     type: say
     content: 'Do not use with latest FWE, it is already integrated.'
@@ -330,7 +330,7 @@ plugins:
     after:
       - 'ThePitt.esm'
       - 'Anchorage.esm'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *AlreadyInFOOK2 ]
     dirty:
       - crc: 0xC5690E8E # Version 2.0
         <<: *dirtyPlugin # FO3Edit 3.0.32
@@ -554,7 +554,7 @@ plugins:
       - Relev
       - Stats
   - name: 'Refurbishes [ALL].esm'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *AlreadyInFOOK2 ]
   - name: 'GNRBuilding_BoS.esm'
     tag:
       - Invent
@@ -1664,15 +1664,15 @@ plugins:
       - Graphics
   - name: 'StreetLights - Wasteland.esp'
     msg:
-      - *integratedInFOOK2
+      - *AlreadyInFOOK2
       - type: say
         content: 'Obselete - upgrade to [Fallout Streetlights](https://www.nexusmods.com/fallout3/mods/8069).'
   - name: 'RK-Skelette-3.0.esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *AlreadyInFOOK2 ]
   - name: 'praiseatom.esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *AlreadyInFOOK2 ]
   - name: 'Internet Mod.esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *AlreadyInFOOK2 ]
   - name: 'DALCO Inventory Sorter - CASM.esp'
     tag:
       - Names
@@ -1792,7 +1792,7 @@ plugins:
       - 'GalaxyNewsRadioFix[N].esp'
       - 'GalaxyNewsRadioFix[S].esp'
   - name: 'ReneersRadioMod.esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *AlreadyInFOOK2 ]
     tag:
       - Scripts
   - name: 'RadioHotkey.esp'
@@ -2160,11 +2160,11 @@ plugins:
   - name: 'FPS Grenade Hotkey.esp'
     msg:
       - *integratedInFWE
-      - *integratedInFOOK2
+      - *AlreadyInFOOK2
   - name: 'FPS Grenade Hotkey - Zeta addon.esp'
     msg:
       - *integratedInFWE
-      - *integratedInFOOK2
+      - *AlreadyInFOOK2
   - name: 'Mannequin.esp'
     tag:
       - Actors.AIData
@@ -2307,7 +2307,7 @@ plugins:
       - C.Light
   - name: 'megalight.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7875' ]
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *AlreadyInFOOK2 ]
     dirty:
       - <<: *quickClean
         crc: 0xEF1BF5C3
@@ -2595,30 +2595,30 @@ plugins:
       - Sound
       - Stats
   - name: 'Refurbishes [ALL].esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *AlreadyInFOOK2 ]
   - name: 'Refurbish [OA].esp'
     inc:
       - 'Refurbishes [ALL].esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *AlreadyInFOOK2 ]
   - name: 'Refurbish [OA] - FWE.esp'
     inc:
       - 'Refurbishes [ALL].esp'
   - name: 'Refurbish [TP].esp'
     inc:
       - 'Refurbishes [ALL].esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *AlreadyInFOOK2 ]
   - name: 'Refurbish [BS].esp'
     inc:
       - 'Refurbishes [ALL].esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *AlreadyInFOOK2 ]
   - name: 'Refurbish [PL].esp'
     inc:
       - 'Refurbishes [ALL].esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *AlreadyInFOOK2 ]
   - name: 'Refurbish [MZ].esp'
     inc:
       - 'Refurbishes [ALL].esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *AlreadyInFOOK2 ]
   - name: 'WeaponModKits.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3388' ]
     tag:
@@ -2932,17 +2932,17 @@ plugins:
       - Relev
   - name: 'BoS_DX.esp'
     msg:
-      - *integratedInFOOK2
+      - *AlreadyInFOOK2
       - *obsolete
     tag:
       - Graphics
   - name: 'BoSDX.esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *AlreadyInFOOK2 ]
     tag:
       - Graphics
   - name: 'WinterizedT51bDX.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6167' ]
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *AlreadyInFOOK2 ]
     tag:
       - Graphics
       - Scripts
@@ -2955,7 +2955,7 @@ plugins:
       - crc: 0xBAAAD03E
         util: 'FO3Edit v4.0.2e'
   - name: 'Outcast DX.esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *AlreadyInFOOK2 ]
     tag:
       - Graphics
   - name: 'Outcast DX - FWE patch.esp'
@@ -2963,7 +2963,7 @@ plugins:
       - Graphics
   - name: 'Tribal_DX.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6520' ]
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *AlreadyInFOOK2 ]
     tag:
       - Deflst
       - Graphics
@@ -2971,7 +2971,7 @@ plugins:
       - crc: 0x9203ACF5
         util: 'FO3Edit v4.0.2e'
   - name: 'BoS_FOOKedition_Armor.esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *AlreadyInFOOK2 ]
     tag:
       - Graphics
   - name: 'Cat Outfit Fanged.esp'
@@ -4207,14 +4207,14 @@ plugins:
       - Sound
       - Stats
   - name: 'Phalanx-MainFollowerModule.esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *AlreadyInFOOK2 ]
     tag:
       - Actors.ACBS
       - Actors.AIPackages
   - name: 'Phalanx-BrokenSteel-Integration.esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *AlreadyInFOOK2 ]
   - name: 'Phalanx-PointLookout-Integration.esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *AlreadyInFOOK2 ]
   - name: 'EVE - FastTravelIndoors Patch.esp'
     msg:
       - type: say
@@ -4369,18 +4369,18 @@ plugins:
     clean:
       - crc: 0x1C4CD93B
         util: 'FO3Edit v4.0.2e'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *AlreadyInFOOK2 ]
   - name: 'Fellout-SOTD.esp'
     inc:
       - 'Either Fellout-Full.esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *AlreadyInFOOK2 ]
   - name: 'Fellout-Anchorage.esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *AlreadyInFOOK2 ]
   - name: 'Fellout-BrokenSteel.esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *AlreadyInFOOK2 ]
   - name: 'Fellout-PointLookout.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2672' ]
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *AlreadyInFOOK2 ]
     dirty:
       - crc: 0xf33277f6 # DLC support pack of 29 July 2010
         <<: *dirtyPlugin # FO3Edit 3.0.32
@@ -4388,7 +4388,7 @@ plugins:
         udr: 0
         nav: 0
   - name: 'Fellout-Zeta.esp'
-    msg: [ *integratedInFOOK2 ]
+    msg: [ *AlreadyInFOOK2 ]
   - name: 'FelloutWithLightingOverhual-1.0.esp'
     tag:
       - C.Light
