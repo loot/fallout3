@@ -58,6 +58,30 @@ common:
     <<: *alreadyInOrFixedByUFO3P
     condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
 
+  - &useOnlyOneX
+    type: error
+    content:
+      - lang: en
+        text: 'Use only one %1%.'
+      - lang: ru
+        text: 'Используйте только один %1%.'
+      - lang: es
+        text: 'Utilizar solo un %1%.'
+      - lang: ko
+        text: '%1%을 한 개만 사용하십시오.'
+      - lang: zh_CN
+        text: '只使用一个%1%。'
+      - lang: ja
+        text: '%1%は一つだけ使用してください。'
+      - lang: de
+        text: 'Nutzen Sie nur einen %1%.'
+      - lang: pt
+        text: 'Utilizar apenas um %1%.'
+      - lang: pt_BR
+        text: 'Utilize apenas um %1%'
+      - lang: pl
+        text: 'Używa tylko jednego %1%'
+
   - &MantisImperativeFWEWarning
     type: warn
     # Copied from https://www.nexusmods.com/fallout3/mods/12296
@@ -5308,11 +5332,7 @@ plugins:
         udr: 684
         nav: 0
   - name: 'Binoculars.esp'
-    url:
-      - 'https://www.nexusmods.com/fallout3/mods/8909'
-    # 'Binoculars and Scopes.esp' is an older version of the mod.
-    after: [ 'Binoculars and Scopes.esp' ]
-    inc: [ 'Binoculars and Scopes.esp' ]
+    url:[ 'https://www.nexusmods.com/fallout3/mods/8909' ]
     dirty:
       - <<: *quickClean
         crc: 0x5A50FE32
@@ -5321,24 +5341,17 @@ plugins:
         udr: 2
   - name: 'Binoculars and Scopes.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8936' ]
-    inc: [ 'Binoculars.esp' ]
-    msg:
-      - type: say
-        content:
-          - lang: en
-            text: 'Obsolete. Update to [latest version](https://www.nexusmods.com/fallout3/mods/8909).'
-          - lang: ru
-            text: 'Устарело. Обновите до [последней версии](https://www.nexusmods.com/fallout3/mods/8909).'
-          - lang: de
-            text: 'Veraltet. Aktualisiere zur [letzten Version](https://www.nexusmods.com/fallout3/mods/8909).'
-          - lang: es
-            text: 'Obsoleto. Actualizar a la [última versión](https://www.nexusmods.com/fallout3/mods/8909).'
     dirty:
       - <<: *quickClean
         crc: 0x30F58333
         util: '[FO3Edit v4.0.2](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 6
         udr: 2
+  - name: 'Binoculars( and Scopes)?\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Binoculars or Binoculars and Scopes' ]
+        condition: 'many("Binoculars( and Scopes)?\.esp")'
   - name: 'Blackened FWE + MMM + Project Beauty.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
     after:
