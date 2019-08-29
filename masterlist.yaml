@@ -444,6 +444,10 @@ plugins:
       - 'PointLookout.esm'
       - 'Zeta.esm'
       - 'ObjectPlacementFix.esm'
+    msg:
+      - <<: *obsolete
+        subs: [ '[Updated Unofficial Fallout 3 Patch](https://www.nexusmods.com/fallout3/mods/19122)' ]
+        condition: 'version("Unofficial Fallout 3 Patch.esm", "1.8", <)'
     tag:
       - C.Music
       - Deflst
@@ -459,10 +463,6 @@ plugins:
         crc: 0x7AAABC4D
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 2
-    msg:
-      - type: say
-        content: 'A more recent version of the Updated Unofficial Fallout 3 Patch is [available](https://www.nexusmods.com/fallout3/mods/19122).'
-        condition: 'version("Unofficial Fallout 3 Patch.esm", "1.8", <)'
   - name: '20th Century Weapons.esm'
     url: [ 'http://www.gamefront.com/files/21184005/20th_centuary_weapons_5.12_with_addons.7z' ]
     tag:
