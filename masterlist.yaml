@@ -58,9 +58,6 @@ common:
     <<: *alreadyInOrFixedByUFO3P
     condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
 
-  - &integratedInFWE
-    type: say
-    content: 'Do not use with latest FWE, it is already integrated.'
   - &MantisImperativeFWEWarning
     type: warn
     # Copied from https://www.nexusmods.com/fallout3/mods/12296
@@ -1272,7 +1269,7 @@ plugins:
     tag:
       - Stats
   - name: 'Abbreviated Effects.esm'
-    msg: [ *integratedInFWE ]
+    msg: [ *AlreadyInFWE ]
     tag:
       - Names
   - name: 'Canterbury Commons Interiors Embiggened.esm'
@@ -1682,17 +1679,17 @@ plugins:
       - 'Remove That Glove.esp'
       - '1PipboyPDA.esp'
   - name: 'DK_BulletTime.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *AlreadyInFWE ]
   - name: 'Sprint Mod.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *AlreadyInFWE ]
   - name: 'Auto Aim Fix v1.1.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *AlreadyInFWE ]
   - name: 'KHWeaponscanner.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *AlreadyInFWE ]
   - name: 'Alternate Start - Roleplayers.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *AlreadyInFWE ]
   - name: 'Selected Containers Respawn.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *AlreadyInFWE ]
   - name: 'EVE - RH Ironsights Patch.esp'
     tag:
       - Graphics
@@ -2159,11 +2156,11 @@ plugins:
         content: 'Possible cause of CTDs, try disabling to test for improvments, or try BusworldV1.05noexpl.esp'
   - name: 'FPS Grenade Hotkey.esp'
     msg:
-      - *integratedInFWE
+      - *AlreadyInFWE
       - *AlreadyInFOOK2
   - name: 'FPS Grenade Hotkey - Zeta addon.esp'
     msg:
-      - *integratedInFWE
+      - *AlreadyInFWE
       - *AlreadyInFOOK2
   - name: 'Mannequin.esp'
     tag:
@@ -2512,7 +2509,7 @@ plugins:
   - name: 'FO3 Wanderers Edition - FOOK Support.esp'
     msg: [ *obsolete ]
   - name: 'DarNifiedUIF3_FWE.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *AlreadyInFWE ]
   - name: 'FO3 Wanderers Edition - Project Beauty (HD Addition).esp'
     inc:
       - 'Project Beauty.esp'
@@ -3176,7 +3173,7 @@ plugins:
       - 'Improved Turret Reprogramming - Pitt.esp'
       - 'Improved Turret Reprogramming - PL.esp'
   - name: 'Menu Based Hacking & Picking.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *AlreadyInFWE ]
   - name: 'OverMightyGold.esp'
     tag:
       - Invent
@@ -3379,29 +3376,29 @@ plugins:
     tag:
       - Names
   - name: 'Persistent Skill Books.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *AlreadyInFWE ]
   - name: 'PlasmaWeaponsRedesignRebalance.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *AlreadyInFWE ]
     tag:
       - Graphics
       - Sound
   - name: 'PlasmaRifleRedesign.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *AlreadyInFWE ]
     tag:
       - Graphics
       - Sound
   - name: 'PlasmaRifleRedesign_A321only.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *AlreadyInFWE ]
     tag:
       - Graphics
       - Sound
   - name: 'PlasmaRifleRedesign_standardonly.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *AlreadyInFWE ]
     tag:
       - Graphics
       - Sound
   - name: 'PlasmaPistolRedesign.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *AlreadyInFWE ]
     tag:
       - Graphics
       - Sound
@@ -4108,7 +4105,7 @@ plugins:
     tag:
       - Relev
   - name: 'T3T_MiscItemIcons.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *AlreadyInFWE ]
   - name: 'EnhVision.esp'
     inc:
       - 'EnhVisionHK.esp'
@@ -4341,7 +4338,7 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Realistic Death Physics.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12306' ]
-    msg: [ *integratedInFWE ]
+    msg: [ *AlreadyInFWE ]
     clean:
       - crc: 0x034B7601
         util: 'FO3Edit v4.0.2e'
@@ -5018,7 +5015,7 @@ plugins:
       - NPC.Race
       - NpcFaces
   - name: 'CRBSOR.esp'
-    msg: [ *integratedInFWE ]
+    msg: [ *AlreadyInFWE ]
   - name: 'xCALIBRammo_override.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11684' ]
     tag:
