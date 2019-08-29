@@ -1375,6 +1375,15 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/16490' ]
     group: *fixesGroup
     msg: [ *alreadyInOrFixedByUFO3P ]
+  - name: 'Error Fixes V1.(\d)( - Higher FPS)?\.esp'
+    msg:
+      - <<: *obsolete
+        auba: [ '[Error Corrections - Reduce CTD](https://www.nexusmods.com/fallout3/mods/16490/)' ]
+  - name: 'Error Fixes V1.5( - Higher FPS)?\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Error Corrections Reduce CTD' ]
+        condition: 'many("Error Fixes V1.5( - Higher FPS)?\.esp")'
   - name: 'ObjectPlacementFix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15600' ]
     group: *fixesGroup
@@ -5049,16 +5058,6 @@ plugins:
     clean:
       - crc: 0x78FCDE26
         util: 'FO3Edit v4.0.2e'
-  - name: 'Error Fixes V1.2.esp'
-    msg: [ *obsolete ]
-  - name: 'Error Fixes V1.5.esp'
-    msg:
-      - type: say
-        content: 'Choose only one of Error Fixes V1.5.esp or Error Fixes V1.5 - Higher FPS.esp, not both.'
-  - name: 'Error Fixes V1.5 - Higher FPS.esp'
-    msg:
-      - type: say
-        content: 'Choose only one of Error Fixes V1.5.esp or Error Fixes V1.5 - Higher FPS.esp, not both.'
   - name: 'Fallout 3 Master Fix.esp'
     inc:
       - 'Fallout 3 Master Fix - Higher FPS.esp'
