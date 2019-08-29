@@ -644,10 +644,10 @@ plugins:
       - <<: *obsolete
         subs: [ '[FOOK2](https://www.nexusmods.com/fallout3/mods/4448/)' ]
   - name: 'FOOK2 - [WANK] World And Neighbourhood Kit.esm'
-    msg:
-      - type: error
-        content: 'Remove if using FOOK2 1.1 and above'
-        condition: 'file("FOOK2 - Main.esm")'
+    inc:
+      - name: 'FOOK2 - Main.esm'
+        display: 'FOOK2 v1.1+'
+        condition: 'version("FOOK2 - Main.esm", "1.1". >=)'
   - name: 'CRAFT.esm'
     url:
       - 'https://www.nexusmods.com/fallout3/mods/2761'
@@ -2396,10 +2396,10 @@ plugins:
       - crc: 0x84EEFB8E
         util: 'FO3Edit v4.0.2e'
   - name: 'FOOK2 - [EVE] Energy Visuals Enhanced.esp'
-    msg:
-      - type: error
-        content: 'Remove if using FOOK2 1.1 and above'
-        condition: 'file("FOOK2 - Main.esm")'
+    inc:
+      - name: 'FOOK2 - Main.esm'
+        display: 'FOOK2 v1.1+'
+        condition: 'version("FOOK2 - Main.esm", "1.1". >=)'
   - name: 'FOOK2 - Main [Hotfix].esp'
     msg:
       - type: error
@@ -2425,30 +2425,30 @@ plugins:
       - crc: 0xC36DD709
         util: 'FO3Edit v4.0.2e'
   - name: 'MyFOOK2 - Color Tranquility Lane.esp'
-    msg:
-      - type: error
-        content: 'Remove if using FOOK2 1.1 and above'
-        condition: 'file("FOOK2 - Main.esm")'
+    inc:
+      - name: 'FOOK2 - Main.esm'
+        display: 'FOOK2 v1.1+'
+        condition: 'version("FOOK2 - Main.esm", "1.1". >=)'
   - name: 'MyFOOK2 - No Nightvision on Power Helmets.esp'
-    msg:
-      - type: error
-        content: 'Remove if using FOOK2 1.1 and above'
-        condition: 'file("FOOK2 - Main.esm")'
+    inc:
+      - name: 'FOOK2 - Main.esm'
+        display: 'FOOK2 v1.1+'
+        condition: 'version("FOOK2 - Main.esm", "1.1". >=)'
   - name: 'MyFOOK2 - No RAPE Victims.esp'
-    msg:
-      - type: error
-        content: 'Remove if using FOOK2 1.1 and above'
-        condition: 'file("FOOK2 - Main.esm")'
+    inc:
+      - name: 'FOOK2 - Main.esm'
+        display: 'FOOK2 v1.1+'
+        condition: 'version("FOOK2 - Main.esm", "1.1". >=)'
   - name: 'MyFOOK2 - S.H.A.D.E.esp'
-    msg:
-      - type: error
-        content: 'Remove if using FOOK2 1.1 and above'
-        condition: 'file("FOOK2 - Main.esm")'
+    inc:
+      - name: 'FOOK2 - Main.esm'
+        display: 'FOOK2 v1.1+'
+        condition: 'version("FOOK2 - Main.esm", "1.1". >=)'
   - name: 'MyFOOK2 - Black & White Tranquility Lane.esp'
-    msg:
-      - type: error
-        content: 'Remove if using FOOK2 1.1 and above'
-        condition: 'file("FOOK2 - Main.esm")'
+    inc:
+      - name: 'FOOK2 - Main.esm'
+        display: 'FOOK2 v1.1+'
+        condition: 'version("FOOK2 - Main.esm", "1.1". >=)'
   - name: 'FOOK2 - [DESTRUCTION] Main.esp'
     tag:
       - Destructible
@@ -2462,15 +2462,15 @@ plugins:
       - Destructible
       - Scripts
   - name: 'FPS Grenade Hotkey - FOOK2.esp'
-    msg:
-      - type: error
-        content: 'Remove if using FOOK2 1.1 and above'
-        condition: 'file("FOOK2 - Main.esm")'
+    inc:
+      - name: 'FOOK2 - Main.esm'
+        display: 'FOOK2 v1.1+'
+        condition: 'version("FOOK2 - Main.esm", "1.1". >=)'
   - name: 'FPS Grenade Hotkey - FOOK2 DIK.esp'
-    msg:
-      - type: error
-        content: 'Remove if using FOOK2 1.1 and above'
-        condition: 'file("FOOK2 - Main.esm")'
+    inc:
+      - name: 'FOOK2 - Main.esm'
+        display: 'FOOK2 v1.1+'
+        condition: 'version("FOOK2 - Main.esm", "1.1". >=)'
   - name: 'Apocalypse Armory.esp'
     tag:
       - Delev
