@@ -589,6 +589,13 @@ plugins:
       - Invent
       - ScriptContents
       - Scripts
+  - name: 'RoadWardens.esp'
+    after:
+      - 'Mart''s Mutant Mod.esp'
+      - 'Mart''s Mutant Mod - Tougher Traders.esp'
+  - name: 'RoadWardensMMM.esp'
+    req:
+      - 'RoadWardens.esp'
   - name: 'EVE.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8340' ]
     tag:
@@ -3846,13 +3853,6 @@ plugins:
   - name: 'mesme.esp'
     tag:
       - Actors.ACBS
-  - name: 'RoadWardens.esp'
-    after:
-      - 'Mart''s Mutant Mod.esp'
-      - 'Mart''s Mutant Mod - Tougher Traders.esp'
-  - name: 'RoadWardensMMM.esp'
-    req:
-      - 'RoadWardens.esp'
   - name: 'WRWC - Classic Fallout.esp'
     inc:
       - 'WRWC - Right Handed.esp'
