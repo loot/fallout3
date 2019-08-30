@@ -1249,9 +1249,18 @@ plugins:
       - 'ArefuExpandedByAzar.esm'
       - '1PipboyPDA.esp'
   - name: 'RTS NW.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/7070' ]
     inc:
       - 'ArefuExpandedByAzar.esm'
       - '1PipboyPDA.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x5761E748
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 3
+    clean:
+      - crc: 0xD0D81B0E
+        util: 'FO3Edit v4.0.2e'
   - name: 'PB mika.esm'
     msg:
       - type: error
@@ -4935,6 +4944,7 @@ plugins:
       - crc: 0x9BBFC6B5
         util: 'FO3Edit v4.0.2e'
   - name: 'xCALIBRUniverse - WMK.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/14776' ]
     tag:
       - Graphics
       - Names
@@ -6366,6 +6376,11 @@ plugins:
     clean:
       - crc: 0x0969FEB6
         util: 'FO3Edit v4.0.2e'
+  - name: 'ReillysRangerHelmetReward.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/7225' ]
+    clean:
+      - crc: 0xCB1C254D
+        util: 'FO3Edit v4.0.2e'
   - name: 'Gore_No_More.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7318' ]
     dirty:
@@ -6560,6 +6575,16 @@ plugins:
     clean:
       - crc: 0x2E6504FC
         util: 'FO3Edit v4.0.2e'
+  - name: 'AAR525.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11182' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xD22B50B3
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 6
+    clean:
+      - crc: 0x56BFBF2A
+        util: 'FO3Edit v4.0.2e'
   - name: 'A Trail of Crumbs.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11283' ]
     clean:
@@ -6569,6 +6594,26 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/11474' ]
     clean:
       - crc: 0xE117C34E
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Modified_Races.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/12908' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x9FB32029
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 3
+    clean:
+      - crc: 0x1CB61F0D
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Modified_Races_MMM.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/12908' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x2077ED92
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 3
+    clean:
+      - crc: 0xE181FE90
         util: 'FO3Edit v4.0.2e'
   - name: 'Merc Adventurer Armor - eng.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13155' ]
@@ -6626,6 +6671,26 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/14448' ]
     clean:
       - crc: 0xED0D755D
+        util: 'FO3Edit v4.0.2e'
+  - name: 'FWEAcceptableTech.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/14672' ]
+    clean:
+      - crc: 0x67644D24
+        util: 'FO3Edit v4.0.2e'
+  - name: 'FWEAcceptableTechEVE.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/14672' ]
+    clean:
+      - crc: 0x73F0291D
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Reign of Grelok.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/14681' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xF1274C43
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        udr: 1
+    clean:
+      - crc: 0x5930BE01
         util: 'FO3Edit v4.0.2e'
   - name: 'Stimpak Counter.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14730' ]
@@ -6702,10 +6767,60 @@ plugins:
     clean:
       - crc: 0x5D5C0D47
         util: 'FO3Edit v4.0.2e'
+  - name: 'Weap_Spread.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15879' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x00FF8EF8
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+    clean:
+      - crc: 0x353EA6DF
+        util: 'FO3Edit v4.0.2e'
   - name: 'aHUD.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15886' ]
     clean:
       - crc: 0x6F401E38
+        util: 'FO3Edit v4.0.2e'
+  - name: 'MyDog - Globals (keep this active).esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15973' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x6CD17B8E
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 3
+    clean:
+      - crc: 0x2CF9C91D
+        util: 'FO3Edit v4.0.2e'
+  - name: 'MyDog.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15973' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xEAE14E21
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 6
+    clean:
+      - crc: 0xDC00258B
+        util: 'FO3Edit v4.0.2e'
+  - name: 'MyDog - Anchorage.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15973' ]
+    clean:
+      - crc: 0x7113035A
+        util: 'FO3Edit v4.0.2e'
+  - name: 'MyDog - MMM Foods integrated.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15973' ]
+    clean:
+      - crc: 0xC7953E1C
+        util: 'FO3Edit v4.0.2e'
+  - name: 'MyDog - Bypass Hire Quest.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15973' ]
+    clean:
+      - crc: 0x2B525BB7
+        util: 'FO3Edit v4.0.2e'
+  - name: 'MyDog-RTS NoRTSDialogOnDogPatch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15973' ]
+    clean:
+      - crc: 0x708E4DDB
         util: 'FO3Edit v4.0.2e'
   - name: 'No UI Blur.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16171' ]
@@ -6747,10 +6862,55 @@ plugins:
     clean:
       - crc: 0xC22BCBF5
         util: 'FO3Edit v4.0.2e'
+  - name: 'Tactical Flamer.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/17124' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x11C458FB
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 5
+    clean:
+      - crc: 0x06336262
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Tactical Flamer - 4PAK.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/17124' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x4CF31B80
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 5
+    clean:
+      - crc: 0x05509753
+        util: 'FO3Edit v4.0.2e'
   - name: 'CoolLasersMod.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17320' ]
     clean:
       - crc: 0x64BEAA11
+        util: 'FO3Edit v4.0.2e'
+  - name: 'UniqueItems_1.1_ENG.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/17450' ]
+    clean:
+      - crc: 0xC26A2608
+        util: 'FO3Edit v4.0.2e'
+  - name: 'UniqueItems_1.1_PL.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/17450' ]
+    clean:
+      - crc: 0x5911481F
+        util: 'FO3Edit v4.0.2e'
+  - name: 'UseableToilets.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/17566' ]
+    clean:
+      - crc: 0x9544475C
+        util: 'FO3Edit v4.0.2e'
+  - name: 'UseableToiletsUninstalled.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/17566' ]
+    clean:
+      - crc: 0x83B8D2E9
+        util: 'FO3Edit v4.0.2e'
+  - name: 'HT Unlimited Ammo.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/17666' ]
+    clean:
+      - crc: 0x2D26B736
         util: 'FO3Edit v4.0.2e'
   - name: 'Billboard Camps.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17703' ]
@@ -6759,6 +6919,33 @@ plugins:
         crc: 0x546BA172
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 3
+  - name: 'NIW_experimental.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/17831' ]
+    msg:
+      - type: error
+        content: 'Do not use this plugin. It contains unresolved references which can potentially break your game.'
+  - name: 'Simply_Lockers_rev01.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/17964' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x7FDF76DF
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 3
+        udr: 161
+    clean:
+      - crc: 0xE6258140
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Simply_Lockers_revYnotDrol.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/17964' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x95083BED
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 3
+        udr: 161
+    clean:
+      - crc: 0xA7E88F25
+        util: 'FO3Edit v4.0.2e'
   - name: 'AWorldOfPainFO3.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17965' ]
     dirty:
