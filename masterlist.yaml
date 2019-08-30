@@ -6767,6 +6767,16 @@ plugins:
     clean:
       - crc: 0x5D5C0D47
         util: 'FO3Edit v4.0.2e'
+  - name: 'Weap_Spread.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15879' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x00FF8EF8
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+    clean:
+      - crc: 0x353EA6DF
+        util: 'FO3Edit v4.0.2e'
   - name: 'aHUD.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15886' ]
     clean:
