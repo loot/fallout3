@@ -6782,6 +6782,46 @@ plugins:
     clean:
       - crc: 0x6F401E38
         util: 'FO3Edit v4.0.2e'
+  - name: 'MyDog - Globals (keep this active).esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15973' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x6CD17B8E
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 3
+    clean:
+      - crc: 0x2CF9C91D
+        util: 'FO3Edit v4.0.2e'
+  - name: 'MyDog.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15973' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xEAE14E21
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 6
+    clean:
+      - crc: 0xDC00258B
+        util: 'FO3Edit v4.0.2e'
+  - name: 'MyDog - Anchorage.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15973' ]
+    clean:
+      - crc: 0x7113035A
+        util: 'FO3Edit v4.0.2e'
+  - name: 'MyDog - MMM Foods integrated.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15973' ]
+    clean:
+      - crc: 0xC7953E1C
+        util: 'FO3Edit v4.0.2e'
+  - name: 'MyDog - Bypass Hire Quest.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15973' ]
+    clean:
+      - crc: 0x2B525BB7
+        util: 'FO3Edit v4.0.2e'
+  - name: 'MyDog-RTS NoRTSDialogOnDogPatch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15973' ]
+    clean:
+      - crc: 0x708E4DDB
+        util: 'FO3Edit v4.0.2e'
   - name: 'No UI Blur.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16171' ]
     clean:
