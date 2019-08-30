@@ -6671,6 +6671,16 @@ plugins:
     clean:
       - crc: 0xED0D755D
         util: 'FO3Edit v4.0.2e'
+  - name: 'FWEAcceptableTech.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/14672' ]
+    clean:
+      - crc: 0x67644D24
+        util: 'FO3Edit v4.0.2e'
+  - name: 'FWEAcceptableTechEVE.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/14672' ]
+    clean:
+      - crc: 0x73F0291D
+        util: 'FO3Edit v4.0.2e'
   - name: 'Stimpak Counter.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14730' ]
     clean:
