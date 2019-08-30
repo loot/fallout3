@@ -6919,6 +6919,11 @@ plugins:
         crc: 0x546BA172
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 3
+  - name: 'NIW_experimental.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/17831' ]
+    msg:
+      - type: error
+        content: 'Do not use this plugin. It contains unresolved references which can potentially break your game.'
   - name: 'Simply_Lockers_rev01.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17964' ]
     dirty:
