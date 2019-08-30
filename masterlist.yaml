@@ -6887,6 +6887,16 @@ plugins:
     clean:
       - crc: 0x64BEAA11
         util: 'FO3Edit v4.0.2e'
+  - name: 'UniqueItems_1.1_ENG.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/17450' ]
+    clean:
+      - crc: 0xC26A2608
+        util: 'FO3Edit v4.0.2e'
+  - name: 'UniqueItems_1.1_PL.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/17450' ]
+    clean:
+      - crc: 0x5911481F
+        util: 'FO3Edit v4.0.2e'
   - name: 'Billboard Camps.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17703' ]
     dirty:
