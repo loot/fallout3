@@ -6897,6 +6897,16 @@ plugins:
     clean:
       - crc: 0x5911481F
         util: 'FO3Edit v4.0.2e'
+  - name: 'UseableToilets.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/17566' ]
+    clean:
+      - crc: 0x9544475C
+        util: 'FO3Edit v4.0.2e'
+  - name: 'UseableToiletsUninstalled.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/17566' ]
+    clean:
+      - crc: 0x83B8D2E9
+        util: 'FO3Edit v4.0.2e'
   - name: 'Billboard Camps.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17703' ]
     dirty:
