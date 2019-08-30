@@ -6375,6 +6375,11 @@ plugins:
     clean:
       - crc: 0x0969FEB6
         util: 'FO3Edit v4.0.2e'
+  - name: 'ReillysRangerHelmetReward.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/7225' ]
+    clean:
+      - crc: 0xCB1C254D
+        util: 'FO3Edit v4.0.2e'
   - name: 'Gore_No_More.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7318' ]
     dirty:
