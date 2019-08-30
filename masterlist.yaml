@@ -6594,6 +6594,26 @@ plugins:
     clean:
       - crc: 0xE117C34E
         util: 'FO3Edit v4.0.2e'
+  - name: 'Modified_Races.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/12908' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x9FB32029
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 3
+    clean:
+      - crc: 0x1CB61F0D
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Modified_Races_MMM.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/12908' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x2077ED92
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 3
+    clean:
+      - crc: 0xE181FE90
+        util: 'FO3Edit v4.0.2e'
   - name: 'Merc Adventurer Armor - eng.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13155' ]
     clean:
