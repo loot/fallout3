@@ -6907,6 +6907,11 @@ plugins:
     clean:
       - crc: 0x83B8D2E9
         util: 'FO3Edit v4.0.2e'
+  - name: 'HT Unlimited Ammo.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/17666' ]
+    clean:
+      - crc: 0x2D26B736
+        util: 'FO3Edit v4.0.2e'
   - name: 'Billboard Camps.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17703' ]
     dirty:
