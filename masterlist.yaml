@@ -6681,6 +6681,16 @@ plugins:
     clean:
       - crc: 0x73F0291D
         util: 'FO3Edit v4.0.2e'
+  - name: 'Reign of Grelok.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/14681' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xF1274C43
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        udr: 1
+    clean:
+      - crc: 0x5930BE01
+        util: 'FO3Edit v4.0.2e'
   - name: 'Stimpak Counter.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14730' ]
     clean:
