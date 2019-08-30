@@ -6919,6 +6919,28 @@ plugins:
         crc: 0x546BA172
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 3
+  - name: 'Simply_Lockers_rev01.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/17964' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x7FDF76DF
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 3
+        udr: 161
+    clean:
+      - crc: 0xE6258140
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Simply_Lockers_revYnotDrol.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/17964' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x95083BED
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 3
+        udr: 161
+    clean:
+      - crc: 0xA7E88F25
+        util: 'FO3Edit v4.0.2e'
   - name: 'AWorldOfPainFO3.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17965' ]
     dirty:
