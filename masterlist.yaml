@@ -6009,13 +6009,16 @@ plugins:
     clean:
       - crc: 0xAC93A94B
         util: 'FO3Edit v4.0.2e'
-  - name: 'YearlingBooks.esp'
+  - name: 'YearlingBooks(BrisaAlmodovar)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20483' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ '"YearlingBooks.esp" or "YearlingBooksBrisaAlmodovar.esp"' ]
+        condition: 'many("YearlingBooks(BrisaAlmodovar)?\.esp")'
     tag:
       - Scripts
-    inc:
-      - 'RHKBrisaAlmodovar.esm'
-      - 'YearlingBooksBrisaAlmodovar.esp'
+  - name: 'YearlingBooks.esp'
+    inc: [ 'RHKBrisaAlmodovar.esm' ]
     msg:
       - <<: *useInstead
         subs: [ '[Yearling takes all Books Brisa Almodovar edition](https://www.nexusmods.com/fallout3/mods/20483) "YearlingBooksBrisaAlmodovar.esp"' ]
@@ -6023,9 +6026,6 @@ plugins:
     clean:
       - crc: 0xCA2F0F7F
         util: 'FO3Edit v4.0.2e'
-  - name: 'YearlingBooksBrisaAlmodovar.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/20483' ]
-    inc: [ 'YearlingBooks.esp' ]
   - name: 'X-1_Tales_of_Wonder!.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17672' ]
     dirty:
