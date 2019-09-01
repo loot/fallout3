@@ -3598,6 +3598,10 @@ plugins:
         condition: 'file("FOOK2 - Main.esm")'
   - name: 'Mart''s Mutant Mod - FOOK2.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'FOIP "Fallout Remastered - FOOK2 + MMM.esp"' ]
+        condition: 'active("Fallout Remastered - FOOK2 + MMM.esp")'
     tag:
       - Relations
     clean:
@@ -3612,6 +3616,10 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - FWE Master Release.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'FOIP "Fallout Remastered FWE + MMM.esp"' ]
+        condition: 'active("Fallout Remastered - FWE + MMM.esp")'
     tag:
       - Invent
       - Relations
@@ -5016,14 +5024,6 @@ plugins:
     inc:
       - 'Fallout 3 Master Fix.esp'
       - 'James Invisible Walls Remover.esp'
-  - name: 'Fallout Remastered - FOOK2 + MMM.esp'
-    msg:
-      - type: say
-        content: 'Does not require a FOIP, provides complete compatibility between these two files'
-  - name: 'Fallout Remastered - FWE + MMM.esp'
-    msg:
-      - type: say
-        content: 'Does not require a FOIP, provides complete compatibility between these two files'
 
     ## Chinese Stealth Armor separators
   - name: '3EFhelmlessstealthsuit.esp'
