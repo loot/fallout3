@@ -2143,29 +2143,14 @@ plugins:
   - name: 'Angry Scientists.esp'
     tag:
       - Invent
-  - name: 'ScrapMetal.esp'
-    inc:
-      - 'ScrapMetal_H.esp'
-      - 'ScrapMetal_Q.esp'
+  - name: 'ScrapMetal(_Q|_H)?\.esp'
     msg:
-      - type: say
-        content: '"Old, upgrade to ''CreateScrapMetal.esp''."'
-    tag:
-      - Invent
-  - name: 'ScrapMetal_H.esp'
-    inc:
-      - 'ScrapMetal.esp'
-      - 'ScrapMetal_Q.esp'
-    msg:
-      - type: say
-        content: '"Old, upgrade to ''CreateScrapMetal.esp''."'
-    tag:
-      - Invent
-  - name: 'ScrapMetal_Q.esp'
-    inc:
-      - 'ScrapMetal.esp'
-      - 'ScrapMetal_H.esp'
-    msg: [ *obsolete ]
+      - *obsolete
+      - <<: *useInstead
+        subs: [ 'CreateScrapMetal.esp' ]
+      - <<: *useOnlyOneX
+        subs: [ 'ScrapMetal' ]
+        condition: 'many("ScrapMetal(_Q|_H)?\.esp")'
     tag:
       - Invent
   - name: 'CreateScrapMetal.esp'
