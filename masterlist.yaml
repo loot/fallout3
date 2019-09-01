@@ -2574,8 +2574,8 @@ plugins:
       - 'RH_IronSights_Basic_VanillaPlugin.esp'
       - 'WeaponModKits.esp'
     msg:
-      - type: say
-        content: 'Outdated. Update to latest version of FWE - Combat Overhaul.'
+      - <<: *obsolete
+        subs: [ '[FWE - Combat Overhaul](https://www.nexusmods.com/fallout3/mods/15578)' ]
       - type: warn
         content: 'This mod requires resources from [RH_IronSights](https://www.nexusmods.com/fallout3/mods/6938), please see the mod''s readme.'
         condition: 'not file("meshes/Characters/_1stperson.nif") or not file("meshes/Characters/_male.nif")'
@@ -2595,8 +2595,8 @@ plugins:
       - 'RH_IronSights_Basic_VanillaPlugin.esp'
       - 'WeaponModKits.esp'
     msg:
-      - type: say
-        content: 'Outdated. Update to latest version of FWE - Combat Overhaul.'
+      - <<: *obsolete
+        subs: [ '[FWE - Combat Overhaul](https://www.nexusmods.com/fallout3/mods/15578)' ]
       - type: warn
         content: 'This mod requires resources from [RH_IronSights](https://www.nexusmods.com/fallout3/mods/6938), please see the mod''s readme.'
         condition: 'not file("meshes/Characters/_1stperson.nif") or not file("meshes/Characters/_male.nif")'
@@ -2606,8 +2606,8 @@ plugins:
       - 'RH_IronSights_Basic_VanillaPlugin.esp'
       - 'WeaponModKits.esp'
     msg:
-      - type: say
-        content: 'Outdated. Update to latest version of FWE - Combat Overhaul.'
+      - <<: *obsolete
+        subs: [ '[FWE - Combat Overhaul](https://www.nexusmods.com/fallout3/mods/15578)' ]
       - type: warn
         content: 'This mod requires resources from [RH_IronSights](https://www.nexusmods.com/fallout3/mods/6938), please see the mod''s readme.'
         condition: 'not file("meshes/Characters/_1stperson.nif") or not file("meshes/Characters/_male.nif")'
@@ -3753,12 +3753,12 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'MMM - FWE & Overhaul Kit_Master Release.esp'
     msg:
-      - type: say
-        content: 'Outdated. Update to latest version of FWE - Combat Overhaul'
+      - <<: *obsolete
+        subs: [ '[FWE - Combat Overhaul](https://www.nexusmods.com/fallout3/mods/15578)' ]
   - name: 'MMM - FWE Overhaul Kit_Master Release Alpha.esp'
     msg:
-      - type: say
-        content: 'Outdated. Update to latest version of FWE - Combat Overhaul'
+      - <<: *obsolete
+        subs: [ '[FWE - Combat Overhaul](https://www.nexusmods.com/fallout3/mods/15578)' ]
   - name: 'MMM - FWE_Combat Overhaul Master Release.esp'
     tag:
       - Actors.ACBS
