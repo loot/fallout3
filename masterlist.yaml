@@ -3593,8 +3593,8 @@ plugins:
       - NpcFaces
   - name: 'Mart''s Mutant Mod - FOOK.esp'
     msg:
-      - type: error
-        content: 'Get FOOK2'
+      - <<: *useInstead
+        subs: [ 'FOIP - Marts Mutant Mod and FOOK2' ]
         condition: 'file("FOOK2 - Main.esm")'
   - name: 'Mart''s Mutant Mod - FOOK2.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
