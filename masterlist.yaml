@@ -203,6 +203,30 @@ common:
       - lang: pl
         text: 'Używa tylko jednego %1%'
 
+  - &versionOldX
+    type: say
+    content:
+      - lang: en
+        text: 'It appears you do not have the latest version of %1%. Some mods may require functionality added in the latest version of %1% to work.'
+      - lang: ru
+        text: 'Возможно у вас не установлена новейшая версия %1%. Для работы некоторых модов может требоваться функционал, добавленный в последней версии %1%'
+      - lang: es
+        text: 'Parece que no tienes la última versión de %1%. Algunos mods pueden requerir funcionalidad añadida en la última versión de %1% para funcionar.'
+      - lang: ko
+        text: '%1%의 최신 버전이 없는 것 같습니다. 일부 모드는 %1%의 최신 버전에 추가된 기능을 필요로 할 수 있습니다.'
+      - lang: zh_CN
+        text: '你的%1%似乎不是最新的。有些插件可能需要最新的%1%才能工作。'
+      - lang: ja
+        text: '%1%が最新版ではないようです。一部のModを動作させるには最新版の%1%で追加された機能が必要となる場合があります。'
+      - lang: de
+        text: 'Sie haben anscheinend nicht die aktuellste Version von %1% installiert. Einige Mods könnten Funktionalitäten benötigen, die nur in der aktuellsten Version von %1% enthalten sind, um zu funktionieren.'
+      - lang: pt
+        text: 'Aparenta que você não tem a versão mais recente de %1%. Alguns mods podem requerir funcinalidades adicionadas na última versão de %1% para funcionar.'
+      - lang: pt_BR
+        text: 'Você aparenta não ter a versão mais recente de %1%. Alguns mods podem requerer funcionalidade que foi adicionada na versão mais recente de %1%.'
+      - lang: pl
+        text: 'Wygląda na to że nie masz ostatniej aktualnej wersji %1%. Część modów może wymagać funkcjonalności dodanej w ostatniej wersji %1% aby działać poprawnie.'
+
   - &versionUpToDateX
     type: say
     content:
@@ -353,36 +377,23 @@ globals:
     subs: [ '[NVAC - New Vegas Anti Crash](https://www.nexusmods.com/newvegas/mods/53635)' ]
     condition: 'file("FOSE/Plugins/nvac.dll") and not file("../fose_loader.exe")'
 
-  # NVAC: https://www.nexusmods.com/newvegas/mods/53635
-  - type: warn
-    condition: 'file("NVSE/Plugins/nvac.dll")'
-    content: 'NVAC is installed under "NVSE/Plugins" but needs to be moved to "FOSE/Plugins" for FOSE to pick it up for Fallout 3.'
-  - type: say
-    condition: 'file("FOSE/Plugins/nvac.dll") and version("FOSE/Plugins/nvac.dll", "7.1.0.0", <)'
-    content:
-      - lang: en
-        text: 'It appears you do not have the [latest version of NVAC - New Vegas Anti Crash](https://www.nexusmods.com/newvegas/mods/53635).'
-      - lang: ru
-        text: 'Возможно, что вы используете НЕ [самую последнюю версию NVAC - New Vegas Anti Crash](https://www.nexusmods.com/newvegas/mods/53635).'
-      - lang: de
-        text: 'Sie haben anscheinend nicht die [aktuelle Version von NVAC - New Vegas Anti Crash](https://www.nexusmods.com/newvegas/mods/53635).'
-      - lang: es
-        text: 'Parece que no tienes la última versión de NVAC - New Vegas Anti Crash. la nueva versión se puede encontrar [aquí](https://www.nexusmods.com/newvegas/mods/53635).'
+# FOSE Plugins - Latest
+  - <<: *versionOldX
+    subs: [ '**([NVAC - New Vegas Anti Crash](https://www.nexusmods.com/newvegas/mods/53635))**' ]
+    condition: 'file("FOSE/Plugins/nvac.dll") and version("FOSE/Plugins/nvac.dll", "7.5.0.0", <)'
   - <<: *versionUpToDateX
     subs: [ '**([NVAC - New Vegas Anti Crash](https://www.nexusmods.com/newvegas/mods/53635))**' ]
     condition: 'file("FOSE/Plugins/nvac.dll") and version("FOSE/Plugins/nvac.dll", "7.5.0.0", >=)'
+
+# FOSE Plugins - Other messages
+  - type: warn
+    condition: 'file("NVSE/Plugins/nvac.dll")'
+    content: 'NVAC is installed under "NVSE/Plugins" but needs to be moved to "FOSE/Plugins" for FOSE to pick it up for Fallout 3.'
+
 # FOSE Latest
-  - type: say
+  - <<: *versionOldX
+    subs: [ '**Script Extender ([FOSE](http://fose.silverlock.org))**' ]
     condition: 'file("../fose_loader.exe") and version("../fose_loader.exe", "0.1.2.2", <)'
-    content:
-      - lang: en
-        text: 'It appears you do not have the [latest version of FOSE](http://fose.silverlock.org). Some mods may require functionality added in the latest version of FOSE to work.'
-      - lang: ru
-        text: 'Возможно, что вы используете НЕ [самую последнюю версию FOSE](http://fose.silverlock.org). Для работы некоторых модов может требоваться функционал, добавленный в последнюю версию FOSE.'
-      - lang: de
-        text: 'Sie haben anscheinend nicht die [aktuelle Version von FOSE](http://fose.silverlock.org). Einige Mods könnten Funktionalitäten benötigen, die nur in der aktuellen Version von FOSE enthalten sind.'
-      - lang: es
-        text: 'Parece que no tienes la última versión de FOSE. la nueva versión se puede encontrar [aquí](http://fose.silverlock.org/).'
   - <<: *versionUpToDateX
     subs: [ '**Script Extender ([FOSE](http://fose.silverlock.org))**' ]
     condition: 'file("../fose_loader.exe") and version("../fose_loader.exe", "0.1.2.2", >=)'
