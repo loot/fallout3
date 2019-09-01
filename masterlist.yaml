@@ -3,7 +3,7 @@ common:
   - &FOOK2v1_1
     name: 'FOOK2 - Main.esm'
     display: 'FOOK2 v1.1+'
-    condition: 'version("FOOK2 - Main.esm", "1.1". >=)'
+    condition: 'version("FOOK2 - Main.esm", "1.1", >=)'
   - &FOSE
     name: '../fose_loader.exe'
     display: '[FOSE](http://fose.silverlock.org/)'
