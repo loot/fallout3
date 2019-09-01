@@ -343,6 +343,10 @@ globals:
     subs: [ 'https://loot.github.io/latest-thread/' ]
 # FOSE plugins - Requirements
   - <<: *requiresFOSE
+    subs: [ 'an FOSE Plugin' ]
+    condition: 'file("FOSE/Plugins/([^\.]+\.dll)") and not file("../fose_loader.exe")'
+
+  - <<: *requiresFOSE
     subs: [ '[Fallout Stutter Remover](https://www.nexusmods.com/fallout3/mods/8886)' ]
     condition: 'file("FOSE/Plugins/sr_Fallout_Stutter_Remover.dll") and not file("../fose_loader.exe")'
   - <<: *requiresFOSE
