@@ -2468,8 +2468,8 @@ plugins:
       - Stats
   - name: 'Apocalypse Armory Preview - Grenades.esp'
     msg:
-      - type: say
-        content: 'Included in Apocalypse Armory'
+      - <<: *alreadyInX
+        subs: [ 'Apocalypse Armory' ]
         condition: 'file("Apocalypse Armory.esp")'
   - name: 'Apocalypse Armory - Grenade Hotkeys.esp'
     inc:
