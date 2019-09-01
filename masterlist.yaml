@@ -4348,17 +4348,13 @@ plugins:
   - name: 'LOWER-real-thirdpersonview.esp'
     inc:
       - 'REAL-ThirdViewMod.esp'
-  - name: 'Clean-Deluxe GOTY.esp'
-    inc:
-      - 'Dust-away.esp'
-      - 'Dust-away - DLC support.esp'
-      - 'Paper-Shredder.esp'
-      - 'Paper-Shredder - DLC Support.esp'
-      - 'Rock-Out.esp'
-      - 'Rock-Out - DLC Support.esp'
+  - name: '(Clean-Deluxe GOTY|(Dust-away|Paper-Shredder|Rock-Out)( - DLC support)?)\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/17115' ]
+  - name: '(Dust-away|Paper-Shredder|Rock-Out)( - DLC support)?\.esp'
     msg:
-      - type: say
-        content: 'Includes all Dust-away, paper-shredder and Rock-out plugins'
+      - <<: *alreadyInX
+        subs: [ 'Clean-Deluxe GOTY.esp' ]
+        condition: 'active("Clean-Deluxe GOTY.esp")'
   - name: 'Fellout-Full.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16787' ]
     inc:
