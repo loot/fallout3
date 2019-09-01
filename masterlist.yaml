@@ -1,5 +1,9 @@
 common:
 # Files
+  - &FOOK2v1_1
+    name: 'FOOK2 - Main.esm'
+    display: 'FOOK2 v1.1+'
+    condition: 'version("FOOK2 - Main.esm", "1.1", >=)'
   - &FOSE
     name: '../fose_loader.exe'
     display: '[FOSE](http://fose.silverlock.org/)'
@@ -58,6 +62,131 @@ common:
     <<: *alreadyInOrFixedByUFO3P
     condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
 
+  - &doNotClean
+    type: say
+    content:
+      - lang: en
+        text: 'Do not clean ITM records, they are intentional and required for the mod to function. It is safe to undelete records, but do not do anything other than that.'
+      - lang: ru
+        text: 'Не очищать ITM-записи. "Грязные" правки оставлены специально и требуются для функционирования мода. Восстановить удаленные записи (UDR) можно безопасно, но идентичные мастерфайлу лучше оставить.'
+      - lang: es
+        text: 'No limpiar las referencias ITM (iguales al master), ya que son intencionales y necesarias para que el Mod funcione. Sí es seguro restaurar las UDR (referencias borradas), pero no haga más que eso.'
+      - lang: zh_CN
+        text: '不干净。"脏"数据是故意的，这是mod需要的功能。'
+      - lang: da
+        text: 'Rengør ikke ITM-poster: de er forsætlige og krævede for at mod’en fungerer. Det er sikkert at gendanne poster, men gør ikke andet end dét.'
+      - lang: ja
+        text: 'IMTレコードはクリーンしないでください。これらは意図的に残されたデータであり、Modを機能させるために必要です。削除の取り消しは安全に行えますが、それ以外のことは行わないでください。'
+      - lang: de
+        text: 'ITM-Einträge in diesem Plugin sollten nicht gesäubert werden, sie sind absichtlich enthalten und werden benötigt, damit die Mod richtig funktioniert. Gelöschte Einträge wiederherzustellen ist in Ordnung, alles andere aber nicht.'
+      - lang: ko
+        text: 'ITM 자료를 삭제하지 마십시오. 모드가 정상 작동하기 위해 의도적으로 남겨진 자료입니다. 삭제를 취소하는 것 이외에는 안전하지 않습니다.'
+      - lang: pt
+        text: 'Não apagar os registos ITM. São intencionais e necessárias para o funcionamento do mod. É seguro restaurar os registos, mas não faça nada mais que isso.'
+
+  - &obsolete
+    type: say
+    content:
+      - lang: en
+        text: 'Obsolete. Update to the latest version. %1%'
+      - lang: ru
+        text: 'Устарело. Обновите до последней версии. %1%'
+      - lang: es
+        text: 'Obsoleto. Actualizar a la última versión. %1%'
+      - lang: ko
+        text: '사용되지 않습니다. 최신 버전으로 업데이트하십시오. %1%'
+      - lang: zh_CN
+        text: '已过时。请升级到最新版本。 %1%'
+      - lang: da
+        text: 'Forældet. Opdatér til den nyeste version. %1%'
+      - lang: ja
+        text: '旧式のプラグインです。最新版に更新してください。 %1%'
+      - lang: de
+        text: 'Veraltet. Aktualisiere zur letzten Version. %1%'
+    subs: [ '' ]
+
+  - &missingRequirementXforPlugin
+    type: warn
+    content:
+      - lang: en
+        text: 'Some of this plugins requirements seem to be missing. Please ensure you have correctly installed **%1%**.'
+      - lang: ru
+        text: 'Некоторые его требования отсутствуют. Убедитесь, что правильно установили **%1%**.'
+      - lang: de
+        text: 'Einige der Voraussetzungen dieses Plugins scheinen zu fehlen. Bitte stellen Sie sicher, dass Sie **%1%** korrekt installiert haben.'
+      - lang: ja
+        text: 'このプラグインに必要なものの一部が不足しているようです。**%1%**が正しくインストールされていることを確認してください。'
+      - lang: pt_BR
+        text: 'Alguns dos requerimentos deste plugin estão faltando. Por favor tenha certeza de que você instalou **%1%** corretamente.'
+      - lang: pl
+        text: 'Część wymagań dla tej wtyczki wydaje się być brakująca. Upewnij się że poprawnie zainstalowałeś **%1%**.'
+
+  - &patch3rdParty
+    type: say
+    content:
+      - lang: en
+        text: 'You seem to be using **%1%**, but you have not enabled a compatibility patch for this mod. A third party patch is available here: %2%'
+      - lang: ru
+        text: 'Похоже, что используется **%1%**, но патч совместимости для него не был подключен. Патч совместимости можно найти здесь: %2%'
+      - lang: de
+        text: 'Sie scheinen **%1%** zu nutzen, aber Sie haben keinen Kompatibilitätspatch für diesen Mod aktiviert. Ein Patch von Dritten ist hier verfügbar: %2%'
+      - lang: ko
+        text: '**%1%** 모드와 사용하기 위한 호환성 패치가 작동 중이지 않습니다. 제3자 제공 호환성 패치는 여기에서 다운로드 가능합니다: %2%'
+      - lang: ja
+        text: '**%1%**を使用しているようですが、このmodの互換性パッチが有効になっていません。サードパーティのパッチはここで入手できます:%2%'
+      - lang: pt
+        text: 'Você aparenta estar a utilizar **%1%**, mas não ativou o patch de compatibilidade para este mod. Um patch feito por terceiros está disponível aqui: %2%'
+      - lang: pt_BR
+        text: 'Você aparenta estar usando **%1%**, mas não habilitou o patch de compatibilidade para este mod. Um patch feito por terceiros está disponível aqui: %2%'
+      - lang: pl
+        text: 'Wygląda na to że używasz **%1%**, ale nie masz aktywnej łatki zgodności dla tego moda. Łatka trzeciej strony jest dostępna tutaj: %2%'
+
+  - &patchIncluded
+    type: say
+    content:
+      - lang: en
+        text: 'You seem to be using **%1%**, but you have not enabled a compatibility patch for this mod. A compatibility patch is included with this plugin''s installer.'
+      - lang: ru
+        text: 'Похоже, что используется **%1%**, но патч совместимости для него не был подключен. Патч совместимости можно найти в установщике плагина.'
+      - lang: de
+        text: 'Sie scheinen **%1%** zu nutzen, aber Sie haben keinen Kompatibilitätspatch für diese Mod aktiviert. Ein Kompatibilitätspatch ist enthalten mit dem Installer dieses Plugins.'
+      - lang: ko
+        text: '**%1%** 모드와 사용하기 위한 호환성 패치가 작동 중이지 않습니다. 호환성 패치는 이 플러그인의 인스톨러에 포함되어 있습니다.'
+      - lang: ja
+        text: '**%1%**を使用しているようですが、このmodの互換性パッチが有効になっていません。互換性パッチは、このプラグインのインストーラーに含まれています。'
+      - lang: pt
+        text: 'Você aparenta estar a utilizar **%1%**, mas não ativou o patch de compatibilidade para este mod. Um patch de compatibilidade está incluído com o instalador do plugin'
+      - lang: pt_BR
+        text: 'Você aparenta estar usando **%1%**, mas não habilitou o patch de compatibilidade para este mod. Um patch de compatibilidade está incluso com o instalador desse plugin.'
+      - lang: pl
+        text: 'Wygląda na to że używasz **%1%**, ale nie masz aktywnej łatki zgodności dla tego moda. Łatka zgodności jest dostarczona wraz z instalatorem tej wtyczki.'
+
+  - &requiresFOSE
+    type: error
+    content:
+      - lang: en
+        text: 'You have installed %1% but FOSE was not found! See FOSE download page: [FOSE](http://fose.silverlock.org).'
+      - lang: ru
+        text: 'У вас установлен %1%, но FOSE не найден! Смотрите страницу загрузки [FOSE](http://fose.silverlock.org).'
+      - lang: es
+        text: 'Tienes %1% instalado pero FOSE no se pudo encontrar! Por favor descarga FOSE: [FOSE](http://fose.silverlock.org).'
+      - lang: ko
+        text: '%1%가 설치되었지만 FOSE를 찾을 수 없습니다! FOSE 다운로드 페이지를 참조하십시오: [FOSE](http://fose.silverlock.org).'
+      - lang: zh_CN
+        text: '你已经安装了%1%，但是未发现FOSE！请查看FOSE的下载页面：[FOSE](http://fose.silverlock.org)。'
+      - lang: da
+        text: 'Du har installeret %1% men FOSE blev ikke fundet! Se FOSE-downloadsiden: [FOSE](http://fose.silverlock.org).'
+      - lang: ja
+        text: '%1%はインストールされていますが、FOSEが見つかりません！FOSEのダウンロードページを確認してください。[FOSE](http://fose.silverlock.org)'
+      - lang: de
+        text: 'Sie haben %1% installiert, aber FOSE wurde nicht gefunden! FOSE kann hier heruntergeladen werden: [FOSE](http://fose.silverlock.org).'
+      - lang: pt
+        text: 'Você instalou %1% mas o FOSE não foi encontrado! Veja a página de download do FOSE: [FOSE](http://fose.silverlock.org).'
+      - lang: pt_BR
+        text: 'Você tem %1% instalado mas o FOSE não foi encontrado! Veja a página de download do FOSE: [FOSE](https://FOSE.silverlock.org).'
+      - lang: pl
+        text: 'Zainstalowałeś %1% ale nie odnaleziono FOSE! Odwiedź stronę pobierania FOSE: [FOSE](https://FOSE.silverlock.org).'
+
   - &useInstead
     type: warn
     content:
@@ -90,52 +219,76 @@ common:
       - lang: pl
         text: 'Używa tylko jednego %1%'
 
-  - &MantisImperativeFWEWarning
-    type: warn
-    # Copied from https://www.nexusmods.com/fallout3/mods/12296
-    content: 'It is recommended that you DO NOT load this mod in conjunction with FWE, as their alterations will conflict with each other and may cause issues.'
-    condition: 'active("FO3 Wanderers Edition - Main File.esm")'
-  - &obsolete
+  - &versionOldX
     type: say
     content:
       - lang: en
-        text: 'Obsolete. Update to the latest version. %1%'
+        text: 'It appears you do not have the latest version of %1%. Some mods may require functionality added in the latest version of %1% to work.'
       - lang: ru
-        text: 'Устарело. Обновите до последней версии. %1%'
+        text: 'Возможно у вас не установлена новейшая версия %1%. Для работы некоторых модов может требоваться функционал, добавленный в последней версии %1%'
       - lang: es
-        text: 'Obsoleto. Actualizar a la última versión. %1%'
+        text: 'Parece que no tienes la última versión de %1%. Algunos mods pueden requerir funcionalidad añadida en la última versión de %1% para funcionar.'
       - lang: ko
-        text: '사용되지 않습니다. 최신 버전으로 업데이트하십시오. %1%'
+        text: '%1%의 최신 버전이 없는 것 같습니다. 일부 모드는 %1%의 최신 버전에 추가된 기능을 필요로 할 수 있습니다.'
       - lang: zh_CN
-        text: '已过时。请升级到最新版本。 %1%'
-      - lang: da
-        text: 'Forældet. Opdatér til den nyeste version. %1%'
+        text: '你的%1%似乎不是最新的。有些插件可能需要最新的%1%才能工作。'
       - lang: ja
-        text: '旧式のプラグインです。最新版に更新してください。 %1%'
+        text: '%1%が最新版ではないようです。一部のModを動作させるには最新版の%1%で追加された機能が必要となる場合があります。'
       - lang: de
-        text: 'Veraltet. Aktualisiere zur letzten Version. %1%'
-    subs: [ '' ]
-  - &doNotClean
-    type: say
-    content:
-      - lang: en
-        text: 'Do not clean ITM records, they are intentional and required for the mod to function. It is safe to undelete records, but do not do anything other than that.'
-      - lang: ru
-        text: 'Не очищать ITM-записи. "Грязные" правки оставлены специально и требуются для функционирования мода. Восстановить удаленные записи (UDR) можно безопасно, но идентичные мастерфайлу лучше оставить.'
-      - lang: es
-        text: 'No limpiar las referencias ITM (iguales al master), ya que son intencionales y necesarias para que el Mod funcione. Sí es seguro restaurar las UDR (referencias borradas), pero no haga más que eso.'
-      - lang: zh_CN
-        text: '不干净。"脏"数据是故意的，这是mod需要的功能。'
-      - lang: da
-        text: 'Rengør ikke ITM-poster: de er forsætlige og krævede for at mod’en fungerer. Det er sikkert at gendanne poster, men gør ikke andet end dét.'
-      - lang: ja
-        text: 'IMTレコードはクリーンしないでください。これらは意図的に残されたデータであり、Modを機能させるために必要です。削除の取り消しは安全に行えますが、それ以外のことは行わないでください。'
-      - lang: de
-        text: 'ITM-Einträge in diesem Plugin sollten nicht gesäubert werden, sie sind absichtlich enthalten und werden benötigt, damit die Mod richtig funktioniert. Gelöschte Einträge wiederherzustellen ist in Ordnung, alles andere aber nicht.'
-      - lang: ko
-        text: 'ITM 자료를 삭제하지 마십시오. 모드가 정상 작동하기 위해 의도적으로 남겨진 자료입니다. 삭제를 취소하는 것 이외에는 안전하지 않습니다.'
+        text: 'Sie haben anscheinend nicht die aktuellste Version von %1% installiert. Einige Mods könnten Funktionalitäten benötigen, die nur in der aktuellsten Version von %1% enthalten sind, um zu funktionieren.'
       - lang: pt
-        text: 'Não apagar os registos ITM. São intencionais e necessárias para o funcionamento do mod. É seguro restaurar os registos, mas não faça nada mais que isso.'
+        text: 'Aparenta que você não tem a versão mais recente de %1%. Alguns mods podem requerir funcinalidades adicionadas na última versão de %1% para funcionar.'
+      - lang: pt_BR
+        text: 'Você aparenta não ter a versão mais recente de %1%. Alguns mods podem requerer funcionalidade que foi adicionada na versão mais recente de %1%.'
+      - lang: pl
+        text: 'Wygląda na to że nie masz ostatniej aktualnej wersji %1%. Część modów może wymagać funkcjonalności dodanej w ostatniej wersji %1% aby działać poprawnie.'
+
+  - &versionUpToDateX
+    type: say
+    content:
+      - lang: en
+        text: 'Your %1% is up-to-date.'
+      - lang: ru
+        text: 'Ваш %1% обновлен.'
+      - lang: es
+        text: 'Tienes la última versión de %1%'
+      - lang: ko
+        text: '%1%가 최신 버전입니다.'
+      - lang: zh_CN
+        text: '你的%1%是最新的。'
+      - lang: da
+        text: 'Din %1% er opdateret.'
+      - lang: ja
+        text: '%1%は最新版です。'
+      - lang: de
+        text: 'Ihr %1% ist aktuell.'
+      - lang: pt
+        text: 'O seu %1% está atualizado.'
+      - lang: pt_BR
+        text: 'Seu %1% está atualizado.'
+      - lang: pl
+        text: 'Twój %1% jest aktualny.'
+
+  - &wildEdits
+    type: say
+    content:
+      - lang: en
+        text: 'This plugin contains wild edits beyond ITM and UDR records and deleted navmeshes and may require additional manual cleaning to not interfere with other mods. %1%'
+      - lang: ru
+        text: 'Плагин содержит дикие правки, кроме ITM, UDR записей и удаленных навмешей и может потребовать дополнительной ручной чистки, чтобы не пересекаться с другими модами. %1%'
+      - lang: da
+        text: 'Dette plugin indeholder ukontrollerede redigeringer udover ITM- og UDR-poster og slettede navmesher og kan behøve yderligere manuel oprydning for ikke at forstyrre andre mods. %1%'
+      - lang: de
+        text: 'Dieses Plugin enthält wilde Modifikationen weit über ITM-, und UDR Einträge und entfernte Navmeshes hinaus und benötigt vermutlich mehr manuelle Säuberung um andere Mods nicht zu beeinträchtigen. %1%'
+      - lang: ja
+        text: 'このプラグインにはITMおよびUDRレコード以外の誤った編集(Wild Edit)が含まれており、navmeshが削除されています。他のmodと干渉しないように、追加の手動クリーニングが必要になる場合があります。%1%'
+      - lang: pt
+        text: 'Este plugin contém edições selvagens (Wild Edits) para além dos registros ITM e UDR, e Navmeshes apagadas. Pode requerer limpeza manual adicional de forma a não interferir com outros mods. %1%'
+      - lang: pt_BR
+        text: 'Este plugin contém edições não-intencionais (Wild Edits) além dos registros ITM e UDR e Navmeshes deletadas e pode requerer limpeza manual adicional de forma que não interfira com outros mods. %1%'
+      - lang: pl
+        text: 'Ta wtyczka zawiera dzikie edycje (Wild Edit) poza rekordami ITM i UDR oraz usunięte siatki nawigacyjne i może wymagać dodatkowego ręcznego czyszczenia aby nie kolidować z innymi modami. %1%'
+    subs: [ '' ]
 
 # Dirty Aliases
   - &dirtyPlugin
@@ -228,79 +381,38 @@ globals:
       - lang: pt
         text: '[Postagem mais recente do LOOT](%1%).'
     subs: [ 'https://loot.github.io/latest-thread/' ]
-# FOSE plugins
-  # Fallout Stutter Remover: https://www.nexusmods.com/fallout3/mods/8886
-  - type: warn
+# FOSE plugins - Requirements
+  - <<: *requiresFOSE
+    subs: [ 'an FOSE Plugin' ]
+    condition: 'file("FOSE/Plugins/([^\.]+\.dll)") and not file("../fose_loader.exe")'
+
+  - <<: *requiresFOSE
+    subs: [ '[Fallout Stutter Remover](https://www.nexusmods.com/fallout3/mods/8886)' ]
     condition: 'file("FOSE/Plugins/sr_Fallout_Stutter_Remover.dll") and not file("../fose_loader.exe")'
-    content:
-      - lang: en
-        text: 'You have installed Fallout Stutter Remover but FOSE was not found! See [FOSE download page](http://fose.silverlock.org/).'
-      - lang: ru
-        text: 'У вас установлен Fallout Stutter Remover, но FOSE не найден! Смотрите страницу загрузки [FOSE](http://fose.silverlock.org/).'
-      - lang: de
-        text: 'Sie haben Fallout Stutter Remover installiert, aber FOSE wurde nicht gefunden! FOSE kann hier heruntergeladen werden: [FOSE](http://fose.silverlock.org/).'
-      - lang: es
-        text: 'Tienes Fallout Stutter Remover instalado pero FOSE no se pudo encontrar! Por favor [descarga FOSE](http://fose.silverlock.org/).'
-  # NVAC: https://www.nexusmods.com/newvegas/mods/53635
+  - <<: *requiresFOSE
+    subs: [ '[NVAC - New Vegas Anti Crash](https://www.nexusmods.com/newvegas/mods/53635)' ]
+    condition: 'file("FOSE/Plugins/nvac.dll") and not file("../fose_loader.exe")'
+
+# FOSE Plugins - Latest
+  - <<: *versionOldX
+    subs: [ '**([NVAC - New Vegas Anti Crash](https://www.nexusmods.com/newvegas/mods/53635))**' ]
+    condition: 'file("FOSE/Plugins/nvac.dll") and version("FOSE/Plugins/nvac.dll", "7.5.0.0", <)'
+  - <<: *versionUpToDateX
+    subs: [ '**([NVAC - New Vegas Anti Crash](https://www.nexusmods.com/newvegas/mods/53635))**' ]
+    condition: 'file("FOSE/Plugins/nvac.dll") and version("FOSE/Plugins/nvac.dll", "7.5.0.0", >=)'
+
+# FOSE Plugins - Other messages
   - type: warn
     condition: 'file("NVSE/Plugins/nvac.dll")'
     content: 'NVAC is installed under "NVSE/Plugins" but needs to be moved to "FOSE/Plugins" for FOSE to pick it up for Fallout 3.'
-  - type: warn
-    condition: 'file("FOSE/Plugins/nvac.dll") and not file("../fose_loader.exe")'
-    content:
-      - lang: en
-        text: 'You have installed New Vegas Anti Crash but FOSE was not found! See [FOSE download page](http://fose.silverlock.org/).'
-      - lang: ru
-        text: 'У вас установлен New Vegas Anti Crash, но FOSE не найден! Смотрите страницу загрузки [FOSE](http://fose.silverlock.org/).'
-      - lang: de
-        text: 'Sie haben New Vegas Anti Crash installiert, aber FOSE wurde nicht gefunden! FOSE kann hier heruntergeladen werden: [FOSE](http://fose.silverlock.org/).'
-      - lang: es
-        text: 'Tienes New Vegas Anti Crash instalado pero FOSE no se pudo encontrar! Por favor [descarga FOSE](http://fose.silverlock.org/).'
-  - type: say
-    condition: 'file("FOSE/Plugins/nvac.dll") and version("FOSE/Plugins/nvac.dll", "7.1.0.0", <)'
-    content:
-      - lang: en
-        text: 'It appears you do not have the [latest version of NVAC - New Vegas Anti Crash](https://www.nexusmods.com/newvegas/mods/53635).'
-      - lang: ru
-        text: 'Возможно, что вы используете НЕ [самую последнюю версию NVAC - New Vegas Anti Crash](https://www.nexusmods.com/newvegas/mods/53635).'
-      - lang: de
-        text: 'Sie haben anscheinend nicht die [aktuelle Version von NVAC - New Vegas Anti Crash](https://www.nexusmods.com/newvegas/mods/53635).'
-      - lang: es
-        text: 'Parece que no tienes la última versión de NVAC - New Vegas Anti Crash. la nueva versión se puede encontrar [aquí](https://www.nexusmods.com/newvegas/mods/53635).'
-  - type: say
-    condition: 'not version("FOSE/Plugins/nvac.dll", "7.1.0.0", <)'
-    content:
-      - lang: en
-        text: 'Your NVAC - New Vegas Anti Crash is up-to-date.'
-      - lang: ru
-        text: 'Ваш NVAC - New Vegas Anti Crash имеет последнюю версию.'
-      - lang: de
-        text: 'Ihr NVAC - New Vegas Anti Crash is aktuell.'
-      - lang: es
-        text: 'Tienes la última versión de NVAC - New Vegas Anti Crash.'
+
 # FOSE Latest
-  - type: say
+  - <<: *versionOldX
+    subs: [ '**Script Extender ([FOSE](http://fose.silverlock.org))**' ]
     condition: 'file("../fose_loader.exe") and version("../fose_loader.exe", "0.1.2.2", <)'
-    content:
-      - lang: en
-        text: 'It appears you do not have the [latest version of FOSE](http://fose.silverlock.org). Some mods may require functionality added in the latest version of FOSE to work.'
-      - lang: ru
-        text: 'Возможно, что вы используете НЕ [самую последнюю версию FOSE](http://fose.silverlock.org). Для работы некоторых модов может требоваться функционал, добавленный в последнюю версию FOSE.'
-      - lang: de
-        text: 'Sie haben anscheinend nicht die [aktuelle Version von FOSE](http://fose.silverlock.org). Einige Mods könnten Funktionalitäten benötigen, die nur in der aktuellen Version von FOSE enthalten sind.'
-      - lang: es
-        text: 'Parece que no tienes la última versión de FOSE. la nueva versión se puede encontrar [aquí](http://fose.silverlock.org/).'
-  - type: say
-    condition: 'not version("../fose_loader.exe", "0.1.2.2", <)'
-    content:
-      - lang: en
-        text: 'Your FOSE is up-to-date.'
-      - lang: ru
-        text: 'Ваш FOSE имеет последнюю версию.'
-      - lang: de
-        text: 'Ihr FOSE ist aktuell.'
-      - lang: es
-        text: 'Tienes la última versión de FOSE.'
+  - <<: *versionUpToDateX
+    subs: [ '**Script Extender ([FOSE](http://fose.silverlock.org))**' ]
+    condition: 'file("../fose_loader.exe") and version("../fose_loader.exe", "0.1.2.2", >=)'
 
 groups:
   - name: &dlcGroup DLC
@@ -444,6 +556,10 @@ plugins:
       - 'PointLookout.esm'
       - 'Zeta.esm'
       - 'ObjectPlacementFix.esm'
+    msg:
+      - <<: *obsolete
+        subs: [ '[Updated Unofficial Fallout 3 Patch](https://www.nexusmods.com/fallout3/mods/19122)' ]
+        condition: 'version("Unofficial Fallout 3 Patch.esm", "1.8", <)'
     tag:
       - C.Music
       - Deflst
@@ -459,10 +575,6 @@ plugins:
         crc: 0x7AAABC4D
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 2
-    msg:
-      - type: say
-        content: 'A more recent version of the Updated Unofficial Fallout 3 Patch is [available](https://www.nexusmods.com/fallout3/mods/19122).'
-        condition: 'version("Unofficial Fallout 3 Patch.esm", "1.8", <)'
   - name: '20th Century Weapons.esm'
     url: [ 'http://www.gamefront.com/files/21184005/20th_centuary_weapons_5.12_with_addons.7z' ]
     tag:
@@ -532,9 +644,8 @@ plugins:
       - Stats
   - name: 'Project Beauty HD version.esm'
     msg:
-      - type: error
-        content: 'Old. Download the latest Project Beauty files.'
-        condition: 'file("FOOK2 - Main.esm")'
+      - <<: *obsolete
+        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
   - name: 'Project Beauty.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
     tag:
@@ -641,14 +752,10 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'FOOK.ESM'
     msg:
-      - type: error
-        content: 'Get FOOK2'
-        condition: 'file("FOOK2 - Main.esm")'
+      - <<: *obsolete
+        subs: [ '[FOOK2](https://www.nexusmods.com/fallout3/mods/4448/)' ]
   - name: 'FOOK2 - [WANK] World And Neighbourhood Kit.esm'
-    msg:
-      - type: error
-        content: 'Remove if using FOOK2 1.1 and above'
-        condition: 'file("FOOK2 - Main.esm")'
+    inc: [ *FOOK2v1_1 ]
   - name: 'CRAFT.esm'
     url:
       - 'https://www.nexusmods.com/fallout3/mods/2761'
@@ -666,16 +773,14 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'FO3 Wanderers Edition - Main File.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
-    msg:
-      - type: say
-        content: 'Suggested to remove the names tag if using MMM'
     tag:
       - Actors.ACBS
       - Actors.Stats
       - Deflst
       - Delev
       - Invent
-      - Names
+      - name: "Names"
+        condition: 'not file("Mart''s Mutant Mod.esm")'
       - Relations
       - Relev
       - Stats
@@ -867,8 +972,8 @@ plugins:
       - 'EVE.esm'
       - 'RH_IronSights_Basic_VanillaPlugin.esp'
     msg:
-      - type: warn
-        content: 'This mod requires resources from [RH_IronSights](https://www.nexusmods.com/fallout3/mods/6938), please see the mod''s readme.'
+      - <<: *missingRequirementXforPlugin
+        subs: [ '[RH_IronSights](https://www.nexusmods.com/fallout3/mods/6938). Only install the **meshes/Characters/_1stperson.nif** & **meshes/Characters/_male.nif**' ]
         condition: 'version("FWE - Combat Overhaul_Core.esm", "2.0", <) and (not file("meshes/Characters/_1stperson.nif") or not file("meshes/Characters/_male.nif"))'
     tag:
       - Graphics
@@ -1282,9 +1387,8 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'PB mika.esm'
     msg:
-      - type: error
-        content: 'Old. Download the latest Project Beauty files.'
-        condition: 'file("FOOK2 - Main.esm")'
+      - <<: *obsolete
+        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
   - name: 'Animy_prostitution.esm'
     req: [ *FOSE ]
   - name: 'DCInteriors_ComboEdition.esm'
@@ -1482,10 +1586,6 @@ plugins:
     tag:
       - Deflst
       - Names
-  - name: 'EVE - UF3P Patch.esp'
-    msg:
-      - type: say
-        content: 'Paradox Ignition EVE-merger - compatibility patch for the Unofficial Fallout 3 Patch.'
   - name: 'CinderBlockRockFix.esp'
     inc:
       - 'CinderblockRockFix2.esp'
@@ -1528,9 +1628,7 @@ plugins:
     inc:
       - 'Error Correction - All Transparency & Trees.esp'
   - name: 'BringBackBael.esp'
-    msg:
-      - type: say
-        content: 'Obsolete. Now integrated into Fallout Remastered.esp, upgrade to latest version.'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6545' ]
   - name: 'BlackWidowBurkeFix.esp'
     tag:
       - Scripts
@@ -1623,9 +1721,8 @@ plugins:
       - NoMerge
   - name: 'Project Beauty.esp'
     msg:
-      - type: error
-        content: 'Old. Download the latest Project Beauty files.'
-        condition: 'file("FOOK2 - Main.esm")'
+      - <<: *obsolete
+        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
   - name: 'Project Beauty- Broken Steel.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
     tag:
@@ -1736,8 +1833,8 @@ plugins:
   - name: 'StreetLights - Wasteland.esp'
     msg:
       - *alreadyInFOOK2
-      - type: say
-        content: 'Obselete - upgrade to [Fallout Streetlights](https://www.nexusmods.com/fallout3/mods/8069).'
+      - <<: *obsolete
+        subs: [ '[Fallout Streetlights](https://www.nexusmods.com/fallout3/mods/8069)' ]
   - name: 'RK-Skelette-3.0.esp'
     msg: [ *alreadyInFOOK2 ]
   - name: 'praiseatom.esp'
@@ -2007,19 +2104,19 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'The Mantis Imperative - Combat.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12296' ]
-    msg: [ *MantisImperativeFWEWarning ]
+    inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
     clean:
       - crc: 0x95B17A5D
         util: 'FO3Edit v4.0.2e'
   - name: 'The Mantis Imperative - Medical.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12296' ]
+    inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
     clean:
       - crc: 0xB9154606
         util: 'FO3Edit v4.0.2e'
-    msg: [ *MantisImperativeFWEWarning ]
   - name: 'The Mantis Imperative - SkillBooks.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12296' ]
-    msg: [ *MantisImperativeFWEWarning ]
+    inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
     dirty:
       - <<: *quickClean
         crc: 0xCF546D5A
@@ -2030,7 +2127,7 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'The Mantis Imperative - XP.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12296' ]
-    msg: [ *MantisImperativeFWEWarning ]
+    inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
     clean:
       - crc: 0x6AEF38ED
         util: 'FO3Edit v4.0.2e'
@@ -2062,29 +2159,14 @@ plugins:
   - name: 'Angry Scientists.esp'
     tag:
       - Invent
-  - name: 'ScrapMetal.esp'
-    inc:
-      - 'ScrapMetal_H.esp'
-      - 'ScrapMetal_Q.esp'
+  - name: 'ScrapMetal(_Q|_H)?\.esp'
     msg:
-      - type: say
-        content: '"Old, upgrade to ''CreateScrapMetal.esp''."'
-    tag:
-      - Invent
-  - name: 'ScrapMetal_H.esp'
-    inc:
-      - 'ScrapMetal.esp'
-      - 'ScrapMetal_Q.esp'
-    msg:
-      - type: say
-        content: '"Old, upgrade to ''CreateScrapMetal.esp''."'
-    tag:
-      - Invent
-  - name: 'ScrapMetal_Q.esp'
-    inc:
-      - 'ScrapMetal.esp'
-      - 'ScrapMetal_H.esp'
-    msg: [ *obsolete ]
+      - *obsolete
+      - <<: *useInstead
+        subs: [ 'CreateScrapMetal.esp' ]
+      - <<: *useOnlyOneX
+        subs: [ 'ScrapMetal' ]
+        condition: 'many("ScrapMetal(_Q|_H)?\.esp")'
     tag:
       - Invent
   - name: 'CreateScrapMetal.esp'
@@ -2403,23 +2485,12 @@ plugins:
       - crc: 0x84EEFB8E
         util: 'FO3Edit v4.0.2e'
   - name: 'FOOK2 - [EVE] Energy Visuals Enhanced.esp'
-    msg:
-      - type: error
-        content: 'Remove if using FOOK2 1.1 and above'
-        condition: 'file("FOOK2 - Main.esm")'
+    inc: [ *FOOK2v1_1 ]
   - name: 'FOOK2 - Main [Hotfix].esp'
-    msg:
-      - type: error
-        content: 'Please update to FOOK2 1.2 Open Beta 2'
-        condition: 'file("FOOK2 - Main.esm")'
     clean:
       - crc: 0x893514E3
         util: 'FO3Edit v4.0.2e'
   - name: 'FOOK2 - DIK [Hotfix].esp'
-    msg:
-      - type: error
-        content: 'Please update to FOOK2 1.2 Open Beta 2'
-        condition: 'file("FOOK2 - Main.esm")'
     clean:
       - crc: 0x61940688
         util: 'FO3Edit v4.0.2e'
@@ -2432,30 +2503,15 @@ plugins:
       - crc: 0xC36DD709
         util: 'FO3Edit v4.0.2e'
   - name: 'MyFOOK2 - Color Tranquility Lane.esp'
-    msg:
-      - type: error
-        content: 'Remove if using FOOK2 1.1 and above'
-        condition: 'file("FOOK2 - Main.esm")'
+    inc: [ *FOOK2v1_1 ]
   - name: 'MyFOOK2 - No Nightvision on Power Helmets.esp'
-    msg:
-      - type: error
-        content: 'Remove if using FOOK2 1.1 and above'
-        condition: 'file("FOOK2 - Main.esm")'
+    inc: [ *FOOK2v1_1 ]
   - name: 'MyFOOK2 - No RAPE Victims.esp'
-    msg:
-      - type: error
-        content: 'Remove if using FOOK2 1.1 and above'
-        condition: 'file("FOOK2 - Main.esm")'
+    inc: [ *FOOK2v1_1 ]
   - name: 'MyFOOK2 - S.H.A.D.E.esp'
-    msg:
-      - type: error
-        content: 'Remove if using FOOK2 1.1 and above'
-        condition: 'file("FOOK2 - Main.esm")'
+    inc: [ *FOOK2v1_1 ]
   - name: 'MyFOOK2 - Black & White Tranquility Lane.esp'
-    msg:
-      - type: error
-        content: 'Remove if using FOOK2 1.1 and above'
-        condition: 'file("FOOK2 - Main.esm")'
+    inc: [ *FOOK2v1_1 ]
   - name: 'FOOK2 - [DESTRUCTION] Main.esp'
     tag:
       - Destructible
@@ -2469,15 +2525,9 @@ plugins:
       - Destructible
       - Scripts
   - name: 'FPS Grenade Hotkey - FOOK2.esp'
-    msg:
-      - type: error
-        content: 'Remove if using FOOK2 1.1 and above'
-        condition: 'file("FOOK2 - Main.esm")'
+    inc: [ *FOOK2v1_1 ]
   - name: 'FPS Grenade Hotkey - FOOK2 DIK.esp'
-    msg:
-      - type: error
-        content: 'Remove if using FOOK2 1.1 and above'
-        condition: 'file("FOOK2 - Main.esm")'
+    inc: [ *FOOK2v1_1 ]
   - name: 'Apocalypse Armory.esp'
     tag:
       - Delev
@@ -2498,8 +2548,8 @@ plugins:
       - Stats
   - name: 'Apocalypse Armory Preview - Grenades.esp'
     msg:
-      - type: say
-        content: 'Included in Apocalypse Armory'
+      - <<: *alreadyInX
+        subs: [ 'Apocalypse Armory' ]
         condition: 'file("Apocalypse Armory.esp")'
   - name: 'Apocalypse Armory - Grenade Hotkeys.esp'
     inc:
@@ -2512,15 +2562,9 @@ plugins:
       - 'Apocalypse Armory - Grenade Hotkeys.esp'
       - 'Apocalypse Armory + WMK.esp'
   - name: 'GSoS - FOOK2 Open Beta - Combat and Sneaking Overhaul.esp'
-    msg:
-      - type: error
-        content: 'Old, please update to the latest version'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *obsolete ]
   - name: 'GSoS - FOOK2 Open Beta - XP Tag Perks.esp'
-    msg:
-      - type: error
-        content: 'Old, please update to the latest version'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *obsolete ]
   - name: 'DALCO Inventory Sorter - FWE (Main File).esp'
     tag:
       - Names
@@ -3094,8 +3138,9 @@ plugins:
       - Invent
   - name: 'Reclothing For LPT and Flash.esp'
     msg:
-      - type: say
-        content: 'Outdated, use latest Wrye Flash version'
+      - *obsolete
+      - <<: *useInstead
+        subs: [ '[Wrye Flash](https://www.nexusmods.com/fallout3/mods/11336)' ]
     tag:
       - Invent
   - name: 'AutoGates.esp'
@@ -3366,8 +3411,10 @@ plugins:
       - Stats
   - name: 'AddBottle.esp'
     msg:
-      - type: say
-        content: 'DO not use with latest FWE or RI - Primary Needs, it is already integrated.'
+      - *alreadyInFWE
+      - <<: *alreadyInX
+        subs: [ 'RI - Primary Needs' ]
+        condition: 'active("RI_Core.esm")'
   - name: 'Empty Nuka-Cola Quantum Bottles.esp'
     tag:
       - Names
@@ -3572,14 +3619,12 @@ plugins:
       - Invent
   - name: 'PB MMM HD.esp'
     msg:
-      - type: error
-        content: 'Old. Download the latest Project Beauty files.'
-        condition: 'file("FOOK2 - Main.esm")'
+      - <<: *obsolete
+        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
   - name: 'PB MMM.esp'
     msg:
-      - type: error
-        content: 'Old. Download the latest Project Beauty files.'
-        condition: 'file("FOOK2 - Main.esm")'
+      - <<: *obsolete
+        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
   - name: 'DALCO Inventory Sorter - Mart''s Mutant Mod (DLC Broken Steel).esp'
     tag:
       - Names
@@ -3595,9 +3640,8 @@ plugins:
       - Actors.CombatStyle
   - name: 'Project Beauty- MMM Raiders.esp'
     msg:
-      - type: error
-        content: 'Old. Download the latest Project Beauty files.'
-        condition: 'file("FOOK2 - Main.esm")'
+      - <<: *obsolete
+        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
   - name: 'Mart''s Mutant Mod - Project Beauty.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
     tag:
@@ -3624,11 +3668,15 @@ plugins:
       - NpcFaces
   - name: 'Mart''s Mutant Mod - FOOK.esp'
     msg:
-      - type: error
-        content: 'Get FOOK2'
+      - <<: *useInstead
+        subs: [ 'FOIP - Marts Mutant Mod and FOOK2' ]
         condition: 'file("FOOK2 - Main.esm")'
   - name: 'Mart''s Mutant Mod - FOOK2.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'FOIP "Fallout Remastered - FOOK2 + MMM.esp"' ]
+        condition: 'active("Fallout Remastered - FOOK2 + MMM.esp")'
     tag:
       - Relations
     clean:
@@ -3643,6 +3691,10 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - FWE Master Release.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'FOIP "Fallout Remastered FWE + MMM.esp"' ]
+        condition: 'active("Fallout Remastered - FWE + MMM.esp")'
     tag:
       - Invent
       - Relations
@@ -3682,9 +3734,8 @@ plugins:
       - Relations
   - name: 'Mart''s Mutant Mod - Project Beauty (HD Addition).esp'
     msg:
-      - type: error
-        content: 'Old. Download the latest Project Beauty files.'
-        condition: 'file("FOOK2 - Main.esm")'
+      - <<: *obsolete
+        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
     tag:
       - NoMerge
       - NPC.Race
@@ -4204,10 +4255,6 @@ plugins:
     msg: [ *alreadyInFOOK2 ]
   - name: 'Phalanx-PointLookout-Integration.esp'
     msg: [ *alreadyInFOOK2 ]
-  - name: 'EVE - FastTravelIndoors Patch.esp'
-    msg:
-      - type: say
-        content: 'Paradox Ignition EVE-merger - compatibility patch for Fast Travel from Indoors.'
   - name: 'GH-HealingRebalanceMod_Infirmary+Lab.esp'
     tag:
       - Scripts
@@ -4230,9 +4277,6 @@ plugins:
     clean:
       - crc: 0x5F849C37
         util: 'FO3Edit v4.0.2e'
-    msg:
-      - type: say
-        content: 'Older version included in FOOK2'
   - name: 'dD-Full Screen Blood Instant Remove.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/101' ]
     clean:
@@ -4340,17 +4384,13 @@ plugins:
   - name: 'LOWER-real-thirdpersonview.esp'
     inc:
       - 'REAL-ThirdViewMod.esp'
-  - name: 'Clean-Deluxe GOTY.esp'
-    inc:
-      - 'Dust-away.esp'
-      - 'Dust-away - DLC support.esp'
-      - 'Paper-Shredder.esp'
-      - 'Paper-Shredder - DLC Support.esp'
-      - 'Rock-Out.esp'
-      - 'Rock-Out - DLC Support.esp'
+  - name: '(Clean-Deluxe GOTY|(Dust-away|Paper-Shredder|Rock-Out)( - DLC support)?)\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/17115' ]
+  - name: '(Dust-away|Paper-Shredder|Rock-Out)( - DLC support)?\.esp'
     msg:
-      - type: say
-        content: 'Includes all Dust-away, paper-shredder and Rock-out plugins'
+      - <<: *alreadyInX
+        subs: [ 'Clean-Deluxe GOTY.esp' ]
+        condition: 'active("Clean-Deluxe GOTY.esp")'
   - name: 'Fellout-Full.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16787' ]
     inc:
@@ -4439,15 +4479,17 @@ plugins:
     tag:
       - C.Light
   - name: 'Xepha''s Darkened Interiors.esp'
+    msg:
+      - <<: *patchIncluded
+        type: error
+        subs: [ 'BrokenSteel.esm' ]
+        condition: 'active("BrokenSteel.esm") and not active("Xepha''s Darkened Interiors - BS.esp")'
     tag:
       - C.Light
   - name: 'Xepha''s Darkened Interiors - OA.esp'
     tag:
       - C.Light
   - name: 'Xepha''s Darkened Interiors - BS.esp'
-    msg:
-      - type: say
-        content: 'Manditory use if using BrokenSteel'
     tag:
       - C.Light
   - name: 'Xepha''s Darkened Interiors - PL.esp'
@@ -5048,14 +5090,6 @@ plugins:
     inc:
       - 'Fallout 3 Master Fix.esp'
       - 'James Invisible Walls Remover.esp'
-  - name: 'Fallout Remastered - FOOK2 + MMM.esp'
-    msg:
-      - type: say
-        content: 'Does not require a FOIP, provides complete compatibility between these two files'
-  - name: 'Fallout Remastered - FWE + MMM.esp'
-    msg:
-      - type: say
-        content: 'Does not require a FOIP, provides complete compatibility between these two files'
 
     ## Chinese Stealth Armor separators
   - name: '3EFhelmlessstealthsuit.esp'
@@ -5613,14 +5647,14 @@ plugins:
     group: *fastTravelIndoorsGroup # It only does non-content changes to cells
     inc: [ 'fasttravelfromindoors.esp' ]
     msg:
-      - type: warn
-        content: 'In addition to identical-to-master records, this mod also includes several dirty edits in the form of changes to e.g., lighting and water level values. Consider using another mod to do what this does.'
+      - <<: *wildEdits
+        subs: [ 'Includes several dirty edits in the form of changes to e.g., lighting and water level values.' ]
+        condition: 'checksum("FastTravelIndoors.esp", 42953E9A) or checksum("FastTravelIndoors.esp", 7C71E003)'
     dirty:
-      - crc: 0x42953e9a # Version 1.0 (9 July 2009)
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0x42953E9A
+        util: '[FO3Edit v4.0.2](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 6
-        udr: 0
-        nav: 0
   - name: 'FeralGhoulTest.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16886' ]
     tag: [ Relev ]
@@ -6041,23 +6075,23 @@ plugins:
     clean:
       - crc: 0xAC93A94B
         util: 'FO3Edit v4.0.2e'
-  - name: 'YearlingBooks.esp'
+  - name: 'YearlingBooks(BrisaAlmodovar)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20483' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ '"YearlingBooks.esp" or "YearlingBooksBrisaAlmodovar.esp"' ]
+        condition: 'many("YearlingBooks(BrisaAlmodovar)?\.esp")'
     tag:
       - Scripts
-    inc:
-      - 'RHKBrisaAlmodovar.esm'
-      - 'YearlingBooksBrisaAlmodovar.esp'
+  - name: 'YearlingBooks.esp'
+    inc: [ 'RHKBrisaAlmodovar.esm' ]
+    msg:
+      - <<: *useInstead
+        subs: [ '[Yearling takes all Books Brisa Almodovar edition](https://www.nexusmods.com/fallout3/mods/20483) "YearlingBooksBrisaAlmodovar.esp"' ]
+        condition: 'active("RHKBrisaAlmodovar.esm")'
     clean:
       - crc: 0xCA2F0F7F
         util: 'FO3Edit v4.0.2e'
-    msg:
-      - type: warn
-        content: 'This mod overwrites certain parts of the Brisa Almodovar follower mod. It is advised to use the "YearlingBooksBrisaAlmodovar.esp" version of this mod instead.'
-        condition: 'active("RHKBrisaAlmodovar.esm")'
-  - name: 'YearlingBooksBrisaAlmodovar.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/20483' ]
-    inc: [ 'YearlingBooks.esp' ]
   - name: 'X-1_Tales_of_Wonder!.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17672' ]
     dirty:
@@ -6091,8 +6125,10 @@ plugins:
       - crc: 0x05EACBF1
         util: 'FO3Edit v4.0.2e'
     msg:
-      - type: say
-        content: ZL-ACR.esp from [KDS Zealotlee ACR with Ironsights](https://www.nexusmods.com/fallout3/mods/17748/) is preferred when using RH_Ironsights, or alternatively the version in the Zealotlee Adaptive Combat Rifle Script Bugfix mod can be used.
+      - <<: *patch3rdParty
+        subs:
+          - 'RH Ironsights'
+          - '[KDS Zealotlee ACR with Ironsights](https://www.nexusmods.com/fallout3/mods/17748/) or [Zealotlee Adaptive Combat Rifle Script Bugfix](https://www.nexusmods.com/fallout3/mods/18120/)'
         condition: active("RH_IRONSIGHTS.esm") and checksum("ZL-ACR.esp", E4D428D7)
   - name: 'ZL-MP5 Pack.esp'
     url:
@@ -6119,8 +6155,10 @@ plugins:
       - crc: 0xE51C05AA
         util: 'FO3Edit v4.0.2e'
     msg:
-      - type: say
-        content: 'ZL-MP5 Pack.esp from [KDS Zealotlee MP5 With Ironsights](https://www.nexusmods.com/fallout3/mods/17749/) is preferred when using RH_Ironsights'
+      - <<: *patch3rdParty
+        subs:
+          - 'RH Ironsights'
+          - '[KDS Zealotlee MP5 With Ironsights](https://www.nexusmods.com/fallout3/mods/17749/)'
         condition: 'active("RH_IRONSIGHTS.esm") and (checksum("ZL-MP5 Pack.esp", 022E817B) or checksum("ZL-MP5 Pack.esp", 022E817B))'
   - name: 'ZL-SVD.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3759' ]
