@@ -105,6 +105,22 @@ common:
         text: 'Veraltet. Aktualisiere zur letzten Version. %1%'
     subs: [ '' ]
 
+  - &missingRequirementXforPlugin
+    type: warn
+    content:
+      - lang: en
+        text: 'Some of this plugins requirements seem to be missing. Please ensure you have correctly installed **%1%**.'
+      - lang: ru
+        text: 'Некоторые его требования отсутствуют. Убедитесь, что правильно установили **%1%**.'
+      - lang: de
+        text: 'Einige der Voraussetzungen dieses Plugins scheinen zu fehlen. Bitte stellen Sie sicher, dass Sie **%1%** korrekt installiert haben.'
+      - lang: ja
+        text: 'このプラグインに必要なものの一部が不足しているようです。**%1%**が正しくインストールされていることを確認してください。'
+      - lang: pt_BR
+        text: 'Alguns dos requerimentos deste plugin estão faltando. Por favor tenha certeza de que você instalou **%1%** corretamente.'
+      - lang: pl
+        text: 'Część wymagań dla tej wtyczki wydaje się być brakująca. Upewnij się że poprawnie zainstalowałeś **%1%**.'
+
   - &patch3rdParty
     type: say
     content:
@@ -956,8 +972,8 @@ plugins:
       - 'EVE.esm'
       - 'RH_IronSights_Basic_VanillaPlugin.esp'
     msg:
-      - type: warn
-        content: 'This mod requires resources from [RH_IronSights](https://www.nexusmods.com/fallout3/mods/6938), please see the mod''s readme.'
+      - <<: *missingRequirementXforPlugin
+        subs: [ '[RH_IronSights](https://www.nexusmods.com/fallout3/mods/6938). Only install the **meshes/Characters/_1stperson.nif** & **meshes/Characters/_male.nif**' ]
         condition: 'version("FWE - Combat Overhaul_Core.esm", "2.0", <) and (not file("meshes/Characters/_1stperson.nif") or not file("meshes/Characters/_male.nif"))'
     tag:
       - Graphics
