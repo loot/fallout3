@@ -177,6 +177,32 @@ common:
       - lang: pl
         text: 'Używa tylko jednego %1%'
 
+  - &versionUpToDateX
+    type: say
+    content:
+      - lang: en
+        text: 'Your %1% is up-to-date.'
+      - lang: ru
+        text: 'Ваш %1% обновлен.'
+      - lang: es
+        text: 'Tienes la última versión de %1%'
+      - lang: ko
+        text: '%1%가 최신 버전입니다.'
+      - lang: zh_CN
+        text: '你的%1%是最新的。'
+      - lang: da
+        text: 'Din %1% er opdateret.'
+      - lang: ja
+        text: '%1%は最新版です。'
+      - lang: de
+        text: 'Ihr %1% ist aktuell.'
+      - lang: pt
+        text: 'O seu %1% está atualizado.'
+      - lang: pt_BR
+        text: 'Seu %1% está atualizado.'
+      - lang: pl
+        text: 'Twój %1% jest aktualny.'
+
   - &wildEdits
     type: say
     content:
@@ -328,17 +354,9 @@ globals:
         text: 'Sie haben anscheinend nicht die [aktuelle Version von NVAC - New Vegas Anti Crash](https://www.nexusmods.com/newvegas/mods/53635).'
       - lang: es
         text: 'Parece que no tienes la última versión de NVAC - New Vegas Anti Crash. la nueva versión se puede encontrar [aquí](https://www.nexusmods.com/newvegas/mods/53635).'
-  - type: say
-    condition: 'not version("FOSE/Plugins/nvac.dll", "7.1.0.0", <)'
-    content:
-      - lang: en
-        text: 'Your NVAC - New Vegas Anti Crash is up-to-date.'
-      - lang: ru
-        text: 'Ваш NVAC - New Vegas Anti Crash имеет последнюю версию.'
-      - lang: de
-        text: 'Ihr NVAC - New Vegas Anti Crash is aktuell.'
-      - lang: es
-        text: 'Tienes la última versión de NVAC - New Vegas Anti Crash.'
+  - <<: *versionUpToDateX
+    subs: [ '**([NVAC - New Vegas Anti Crash](https://www.nexusmods.com/newvegas/mods/53635))**' ]
+    condition: 'file("FOSE/Plugins/nvac.dll") and version("FOSE/Plugins/nvac.dll", "7.5.0.0", >=)'
 # FOSE Latest
   - type: say
     condition: 'file("../fose_loader.exe") and version("../fose_loader.exe", "0.1.2.2", <)'
@@ -351,17 +369,9 @@ globals:
         text: 'Sie haben anscheinend nicht die [aktuelle Version von FOSE](http://fose.silverlock.org). Einige Mods könnten Funktionalitäten benötigen, die nur in der aktuellen Version von FOSE enthalten sind.'
       - lang: es
         text: 'Parece que no tienes la última versión de FOSE. la nueva versión se puede encontrar [aquí](http://fose.silverlock.org/).'
-  - type: say
-    condition: 'not version("../fose_loader.exe", "0.1.2.2", <)'
-    content:
-      - lang: en
-        text: 'Your FOSE is up-to-date.'
-      - lang: ru
-        text: 'Ваш FOSE имеет последнюю версию.'
-      - lang: de
-        text: 'Ihr FOSE ist aktuell.'
-      - lang: es
-        text: 'Tienes la última versión de FOSE.'
+  - <<: *versionUpToDateX
+    subs: [ '**Script Extender ([FOSE](http://fose.silverlock.org))**' ]
+    condition: 'file("../fose_loader.exe") and version("../fose_loader.exe", "0.1.2.2", >=)'
 
 groups:
   - name: &dlcGroup DLC
