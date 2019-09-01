@@ -3122,8 +3122,9 @@ plugins:
       - Invent
   - name: 'Reclothing For LPT and Flash.esp'
     msg:
-      - type: say
-        content: 'Outdated, use latest Wrye Flash version'
+      - *obsolete
+      - <<: *useInstead
+        subs: [ '[Wrye Flash](https://www.nexusmods.com/fallout3/mods/11336)' ]
     tag:
       - Invent
   - name: 'AutoGates.esp'
