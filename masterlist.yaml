@@ -3336,8 +3336,10 @@ plugins:
       - Stats
   - name: 'AddBottle.esp'
     msg:
-      - type: say
-        content: 'DO not use with latest FWE or RI - Primary Needs, it is already integrated.'
+      - *alreadyInFWE
+      - <<: *alreadyInX
+        subs: [ 'RI - Primary Needs' ]
+        condition: 'active("RI_Core.esm")'
   - name: 'Empty Nuka-Cola Quantum Bottles.esp'
     tag:
       - Names
