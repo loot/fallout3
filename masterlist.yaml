@@ -1540,10 +1540,6 @@ plugins:
     tag:
       - Deflst
       - Names
-  - name: 'EVE - UF3P Patch.esp'
-    msg:
-      - type: say
-        content: 'Paradox Ignition EVE-merger - compatibility patch for the Unofficial Fallout 3 Patch.'
   - name: 'CinderBlockRockFix.esp'
     inc:
       - 'CinderblockRockFix2.esp'
@@ -4233,10 +4229,6 @@ plugins:
     msg: [ *alreadyInFOOK2 ]
   - name: 'Phalanx-PointLookout-Integration.esp'
     msg: [ *alreadyInFOOK2 ]
-  - name: 'EVE - FastTravelIndoors Patch.esp'
-    msg:
-      - type: say
-        content: 'Paradox Ignition EVE-merger - compatibility patch for Fast Travel from Indoors.'
   - name: 'GH-HealingRebalanceMod_Infirmary+Lab.esp'
     tag:
       - Scripts
