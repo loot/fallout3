@@ -155,11 +155,6 @@ common:
         text: 'Ta wtyczka zawiera dzikie edycje (Wild Edit) poza rekordami ITM i UDR oraz usunięte siatki nawigacyjne i może wymagać dodatkowego ręcznego czyszczenia aby nie kolidować z innymi modami. %1%'
     subs: [ '' ]
 
-  - &MantisImperativeFWEWarning
-    type: warn
-    # Copied from https://www.nexusmods.com/fallout3/mods/12296
-    content: 'It is recommended that you DO NOT load this mod in conjunction with FWE, as their alterations will conflict with each other and may cause issues.'
-    condition: 'active("FO3 Wanderers Edition - Main File.esm")'
   - &obsolete
     type: say
     content:
@@ -2058,19 +2053,19 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'The Mantis Imperative - Combat.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12296' ]
-    msg: [ *MantisImperativeFWEWarning ]
+    inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
     clean:
       - crc: 0x95B17A5D
         util: 'FO3Edit v4.0.2e'
   - name: 'The Mantis Imperative - Medical.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12296' ]
+    inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
     clean:
       - crc: 0xB9154606
         util: 'FO3Edit v4.0.2e'
-    msg: [ *MantisImperativeFWEWarning ]
   - name: 'The Mantis Imperative - SkillBooks.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12296' ]
-    msg: [ *MantisImperativeFWEWarning ]
+    inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
     dirty:
       - <<: *quickClean
         crc: 0xCF546D5A
@@ -2081,7 +2076,7 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'The Mantis Imperative - XP.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12296' ]
-    msg: [ *MantisImperativeFWEWarning ]
+    inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
     clean:
       - crc: 0x6AEF38ED
         util: 'FO3Edit v4.0.2e'
