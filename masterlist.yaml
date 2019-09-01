@@ -1,5 +1,9 @@
 common:
 # Files
+  - &FOOK2v1_1
+    name: 'FOOK2 - Main.esm'
+    display: 'FOOK2 v1.1+'
+    condition: 'version("FOOK2 - Main.esm", "1.1". >=)'
   - &FOSE
     name: '../fose_loader.exe'
     display: '[FOSE](http://fose.silverlock.org/)'
@@ -644,10 +648,7 @@ plugins:
       - <<: *obsolete
         subs: [ '[FOOK2](https://www.nexusmods.com/fallout3/mods/4448/)' ]
   - name: 'FOOK2 - [WANK] World And Neighbourhood Kit.esm'
-    inc:
-      - name: 'FOOK2 - Main.esm'
-        display: 'FOOK2 v1.1+'
-        condition: 'version("FOOK2 - Main.esm", "1.1". >=)'
+    inc: [ *FOOK2v1_1 ]
   - name: 'CRAFT.esm'
     url:
       - 'https://www.nexusmods.com/fallout3/mods/2761'
@@ -2396,10 +2397,7 @@ plugins:
       - crc: 0x84EEFB8E
         util: 'FO3Edit v4.0.2e'
   - name: 'FOOK2 - [EVE] Energy Visuals Enhanced.esp'
-    inc:
-      - name: 'FOOK2 - Main.esm'
-        display: 'FOOK2 v1.1+'
-        condition: 'version("FOOK2 - Main.esm", "1.1". >=)'
+    inc: [ *FOOK2v1_1 ]
   - name: 'FOOK2 - Main [Hotfix].esp'
     msg:
       - type: error
@@ -2425,30 +2423,15 @@ plugins:
       - crc: 0xC36DD709
         util: 'FO3Edit v4.0.2e'
   - name: 'MyFOOK2 - Color Tranquility Lane.esp'
-    inc:
-      - name: 'FOOK2 - Main.esm'
-        display: 'FOOK2 v1.1+'
-        condition: 'version("FOOK2 - Main.esm", "1.1". >=)'
+    inc: [ *FOOK2v1_1 ]
   - name: 'MyFOOK2 - No Nightvision on Power Helmets.esp'
-    inc:
-      - name: 'FOOK2 - Main.esm'
-        display: 'FOOK2 v1.1+'
-        condition: 'version("FOOK2 - Main.esm", "1.1". >=)'
+    inc: [ *FOOK2v1_1 ]
   - name: 'MyFOOK2 - No RAPE Victims.esp'
-    inc:
-      - name: 'FOOK2 - Main.esm'
-        display: 'FOOK2 v1.1+'
-        condition: 'version("FOOK2 - Main.esm", "1.1". >=)'
+    inc: [ *FOOK2v1_1 ]
   - name: 'MyFOOK2 - S.H.A.D.E.esp'
-    inc:
-      - name: 'FOOK2 - Main.esm'
-        display: 'FOOK2 v1.1+'
-        condition: 'version("FOOK2 - Main.esm", "1.1". >=)'
+    inc: [ *FOOK2v1_1 ]
   - name: 'MyFOOK2 - Black & White Tranquility Lane.esp'
-    inc:
-      - name: 'FOOK2 - Main.esm'
-        display: 'FOOK2 v1.1+'
-        condition: 'version("FOOK2 - Main.esm", "1.1". >=)'
+    inc: [ *FOOK2v1_1 ]
   - name: 'FOOK2 - [DESTRUCTION] Main.esp'
     tag:
       - Destructible
@@ -2462,15 +2445,9 @@ plugins:
       - Destructible
       - Scripts
   - name: 'FPS Grenade Hotkey - FOOK2.esp'
-    inc:
-      - name: 'FOOK2 - Main.esm'
-        display: 'FOOK2 v1.1+'
-        condition: 'version("FOOK2 - Main.esm", "1.1". >=)'
+    inc: [ *FOOK2v1_1 ]
   - name: 'FPS Grenade Hotkey - FOOK2 DIK.esp'
-    inc:
-      - name: 'FOOK2 - Main.esm'
-        display: 'FOOK2 v1.1+'
-        condition: 'version("FOOK2 - Main.esm", "1.1". >=)'
+    inc: [ *FOOK2v1_1 ]
   - name: 'Apocalypse Armory.esp'
     tag:
       - Delev
