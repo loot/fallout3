@@ -859,7 +859,8 @@ plugins:
     msg:
       - type: warn
         content: 'This mod requires resources from [RH_IronSights](https://www.nexusmods.com/fallout3/mods/6938), please see the mod''s readme.'
-        condition: 'not file("meshes/Characters/_1stperson.nif") or not file("meshes/Characters/_male.nif")'
+        condition: 'version("FWE - Combat Overhaul_Core.esm", "2.0", <) and (not file("meshes/Characters/_1stperson.nif") or not file("meshes/Characters/_male.nif"))'
+    req: [ *FOSE ]
     tag:
       - Graphics
       - Names
