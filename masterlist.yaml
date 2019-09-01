@@ -1817,8 +1817,8 @@ plugins:
   - name: 'StreetLights - Wasteland.esp'
     msg:
       - *alreadyInFOOK2
-      - type: say
-        content: 'Obselete - upgrade to [Fallout Streetlights](https://www.nexusmods.com/fallout3/mods/8069).'
+      - <<: *obsolete
+        subs: [ '[Fallout Streetlights](https://www.nexusmods.com/fallout3/mods/8069)' ]
   - name: 'RK-Skelette-3.0.esp'
     msg: [ *alreadyInFOOK2 ]
   - name: 'praiseatom.esp'
