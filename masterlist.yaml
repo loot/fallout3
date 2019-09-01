@@ -6016,13 +6016,13 @@ plugins:
     inc:
       - 'RHKBrisaAlmodovar.esm'
       - 'YearlingBooksBrisaAlmodovar.esp'
+    msg:
+      - <<: *useInstead
+        subs: [ '[Yearling takes all Books Brisa Almodovar edition](https://www.nexusmods.com/fallout3/mods/20483) "YearlingBooksBrisaAlmodovar.esp"' ]
+        condition: 'active("RHKBrisaAlmodovar.esm")'
     clean:
       - crc: 0xCA2F0F7F
         util: 'FO3Edit v4.0.2e'
-    msg:
-      - type: warn
-        content: 'This mod overwrites certain parts of the Brisa Almodovar follower mod. It is advised to use the "YearlingBooksBrisaAlmodovar.esp" version of this mod instead.'
-        condition: 'active("RHKBrisaAlmodovar.esm")'
   - name: 'YearlingBooksBrisaAlmodovar.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20483' ]
     inc: [ 'YearlingBooks.esp' ]
