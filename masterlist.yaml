@@ -2546,15 +2546,9 @@ plugins:
       - 'Apocalypse Armory - Grenade Hotkeys.esp'
       - 'Apocalypse Armory + WMK.esp'
   - name: 'GSoS - FOOK2 Open Beta - Combat and Sneaking Overhaul.esp'
-    msg:
-      - type: error
-        content: 'Old, please update to the latest version'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *obsolete ]
   - name: 'GSoS - FOOK2 Open Beta - XP Tag Perks.esp'
-    msg:
-      - type: error
-        content: 'Old, please update to the latest version'
-        condition: 'file("FOOK2 - Main.esm")'
+    msg: [ *obsolete ]
   - name: 'DALCO Inventory Sorter - FWE (Main File).esp'
     tag:
       - Names
