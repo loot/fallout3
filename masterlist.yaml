@@ -62,6 +62,26 @@ common:
     <<: *alreadyInOrFixedByUFO3P
     condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
 
+  - &patchIncluded
+    type: say
+    content:
+      - lang: en
+        text: 'You seem to be using **%1%**, but you have not enabled a compatibility patch for this mod. A compatibility patch is included with this plugin''s installer.'
+      - lang: ru
+        text: 'Похоже, что используется **%1%**, но патч совместимости для него не был подключен. Патч совместимости можно найти в установщике плагина.'
+      - lang: de
+        text: 'Sie scheinen **%1%** zu nutzen, aber Sie haben keinen Kompatibilitätspatch für diese Mod aktiviert. Ein Kompatibilitätspatch ist enthalten mit dem Installer dieses Plugins.'
+      - lang: ko
+        text: '**%1%** 모드와 사용하기 위한 호환성 패치가 작동 중이지 않습니다. 호환성 패치는 이 플러그인의 인스톨러에 포함되어 있습니다.'
+      - lang: ja
+        text: '**%1%**を使用しているようですが、このmodの互換性パッチが有効になっていません。互換性パッチは、このプラグインのインストーラーに含まれています。'
+      - lang: pt
+        text: 'Você aparenta estar a utilizar **%1%**, mas não ativou o patch de compatibilidade para este mod. Um patch de compatibilidade está incluído com o instalador do plugin'
+      - lang: pt_BR
+        text: 'Você aparenta estar usando **%1%**, mas não habilitou o patch de compatibilidade para este mod. Um patch de compatibilidade está incluso com o instalador desse plugin.'
+      - lang: pl
+        text: 'Wygląda na to że używasz **%1%**, ale nie masz aktywnej łatki zgodności dla tego moda. Łatka zgodności jest dostarczona wraz z instalatorem tej wtyczki.'
+
   - &useInstead
     type: warn
     content:
@@ -4415,15 +4435,17 @@ plugins:
     tag:
       - C.Light
   - name: 'Xepha''s Darkened Interiors.esp'
+    msg:
+      - <<: *patchIncluded
+        type: error
+        subs: [ 'BrokenSteel.esm' ]
+        condition: 'active("BrokenSteel.esm") and not active("Xepha''s Darkened Interiors - BS.esp")'
     tag:
       - C.Light
   - name: 'Xepha''s Darkened Interiors - OA.esp'
     tag:
       - C.Light
   - name: 'Xepha''s Darkened Interiors - BS.esp'
-    msg:
-      - type: say
-        content: 'Manditory use if using BrokenSteel'
     tag:
       - C.Light
   - name: 'Xepha''s Darkened Interiors - PL.esp'
