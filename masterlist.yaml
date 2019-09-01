@@ -4277,9 +4277,6 @@ plugins:
     clean:
       - crc: 0x5F849C37
         util: 'FO3Edit v4.0.2e'
-    msg:
-      - type: say
-        content: 'Older version included in FOOK2'
   - name: 'dD-Full Screen Blood Instant Remove.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/101' ]
     clean:
