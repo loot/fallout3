@@ -7264,6 +7264,16 @@ plugins:
     clean:
       - crc: 0xEC5E9DAB
         util: 'FO3Edit v4.0.2e'
+  - name: 'Sealurk Radioactive Bites & Stings v2.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20229' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x81FA8C2F
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+    clean:
+      - crc: 0xD34DD782
+        util: 'FO3Edit v4.0.2e'
   - name: 'Vault 101 Revisited James Room.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20278' ]
     dirty:
