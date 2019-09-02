@@ -7424,6 +7424,11 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'RiversideCafe.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21628' ]
+  - name: 'HDRealWorldWater.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21636' ]
+    clean:
+      - crc: 0x213B398E
+        util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) 20CWRE-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
     clean:
