@@ -7402,6 +7402,16 @@ plugins:
     clean:
       - crc: 0x4CDAD25C
         util: 'FO3Edit v4.0.2e'
+  - name: 'HumanFleshAddiction.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21486' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x28A1207F
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+    clean:
+      - crc: 0x02F474AA
+        util: 'FO3Edit v4.0.2e'
   - name: 'RiversideCafe.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21628' ]
     dirty:
