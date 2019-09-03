@@ -5041,10 +5041,6 @@ plugins:
       - Graphics
       - Names
       - Stats
-  - name: 'Compatibility_Plugin_TalonExtraArmor_FWE_BrokenSteel.esp'
-    tag:
-      - Delev
-      - Relev
   - name: 'Choose your own hairstyle (load this last on FOMM).esp'
     tag:
       - Eyes
@@ -5929,6 +5925,9 @@ plugins:
         util: 'FO3Edit v4.0.2f'
   - name: 'Compatibility_Plugin_TalonExtraArmor_FWE_BrokenSteel.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5483' ]
+    tag:
+      - Delev
+      - Relev
     clean:
       - crc: 0xB9157DA1
         util: 'FO3Edit v4.0.2f'
