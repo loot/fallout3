@@ -5836,6 +5836,11 @@ plugins:
         itm: 3
         udr: 0
         nav: 0
+  - name: 'super_jump_perk.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2471' ]
+    clean:
+      - crc: 0x231C4287
+        util: 'FO3Edit v4.0.2e'
   - name: 'BlackWolf Backpack.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2553' ]
     clean:
