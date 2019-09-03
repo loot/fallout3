@@ -6300,6 +6300,11 @@ plugins:
     clean:
       - crc: 0xBCF0FC35
         util: 'FO3Edit v4.0.2e'
+  - name: 'JessiCompanion.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2732' ]
+    clean:
+      - crc: 0xBDCAF237
+        util: 'FO3Edit v4.0.2e'
   - name: 'Echo_UseBothGloves.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3412' ]
     clean:
