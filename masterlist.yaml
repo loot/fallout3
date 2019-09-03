@@ -6290,6 +6290,16 @@ plugins:
     clean:
       - crc: 0xA774190F
         util: 'FO3Edit v4.0.2e'
+  - name: 'slaveraider.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2390' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x15B14E83
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        udr: 1
+    clean:
+      - crc: 0xBCF0FC35
+        util: 'FO3Edit v4.0.2e'
   - name: 'Echo_UseBothGloves.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3412' ]
     clean:
