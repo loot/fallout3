@@ -6711,6 +6711,21 @@ plugins:
     clean:
       - crc: 0xE181FE90
         util: 'FO3Edit v4.0.2e'
+  - name: 'Adopt Bryan.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/12936' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xEA02E6AB
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+    clean:
+      - crc: 0xC5522FE8
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Adopt Bryan DV.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/12936' ]
+    clean:
+      - crc: 0x4FC179BA
+        util: 'FO3Edit v4.0.2f'
   - name: 'Merc Adventurer Armor - eng.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13155' ]
     clean:
