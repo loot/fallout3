@@ -6662,6 +6662,15 @@ plugins:
     clean:
       - crc: 0xE117C34E
         util: 'FO3Edit v4.0.2e'
+  - name: '1PipboyPDA.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/12833' ]
+    inc:
+      - 'RTS.esm'
+      - 'RTS NW.esm'
+      - 'Zumbs'' Equipable Pip Boy.esp'
+    clean:
+      - crc: 0x22450D06
+        util: 'FO3Edit v4.0.2e'
   - name: 'Modified_Races.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12908' ]
     dirty:
