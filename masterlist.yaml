@@ -6280,6 +6280,11 @@ plugins:
     clean:
       - crc: 0xE7CA9C95
         util: 'FO3Edit v4.0.2e'
+  - name: 'bittercup_comp.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1991' ]
+    clean:
+      - crc: 0x1FFE0410
+        util: 'FO3Edit v4.0.2e'
   - name: 'Overhead3PCamera.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2190' ]
     clean:
