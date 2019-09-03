@@ -5967,6 +5967,21 @@ plugins:
     clean:
       - crc: 0x7A647EF5
         util: 'FO3Edit v4.0.2e'
+  - name: 'Ambient Temperature.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/13430' ]
+    clean:
+      - crc: 0x94C86AF1
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Ambient Temperature - OA.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/13430' ]
+    clean:
+      - crc: 0xEFE458F7
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Ambient Temperature HUD.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/13430' ]
+    clean:
+      - crc: 0x25D64E19
+        util: 'FO3Edit v4.0.2e'
   - name: 'PPA - FWE 2.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16591' ]
     tag:
