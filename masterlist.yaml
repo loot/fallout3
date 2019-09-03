@@ -7792,10 +7792,42 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'FinalCourierMod .esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22168' ]
+    msg:
+      - type: error
+        content: 'In order to use this plugin, remove the empty space before the .esm in it''s filename.'
+  - name: 'FinalCourierMod.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/22168' ]
+    dirty:
+      - <<: *reqManualFix
+        crc: 0x11516512
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 149
+        udr: 9
+        nav: 1
+      - <<: *reqManualFix
+        crc: 0x9870E320
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
+        nav: 1
   - name: 'FinalCourierMod_BankOfTheWastelandPatch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22168' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xBA8E0477
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+    clean:
+      - crc: 0x09D52945
+        util: 'FO3Edit v4.0.2f'
   - name: 'FinalCourierMod_BlackWolfBackpackPatch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22168' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xD12B2A85
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+    clean:
+      - crc: 0x695C5C86
+        util: 'FO3Edit v4.0.2f'
   - name: 'ChopShopModv13.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22174' ]
     clean:
