@@ -6327,6 +6327,18 @@ plugins:
     clean:
       - crc: 0x4631BAEE
         util: 'FO3Edit v4.0.2e'
+  - name: 'MalikaTheGypsyByAzar.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4523' ]
+    dirty:
+      - <<: *reqManualFix
+        crc: 0xA27257AF
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 45
+        nav: 2
+      - <<: *reqManualFix
+        crc: 0x23A066E1
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        nav: 2
   - name: 'Miniguns Replacer.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4541' ]
     clean:
