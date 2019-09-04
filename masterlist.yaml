@@ -6731,6 +6731,26 @@ plugins:
     clean:
       - crc: 0x4FC179BA
         util: 'FO3Edit v4.0.2f'
+  - name: 'Kat_Companion_V1.0a.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/12965' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x2412B0EC
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+    clean:
+      - crc: 0xA5F34C24
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Kat_Companion_V1.0b.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/12965' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xDB9DAB37
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+    clean:
+      - crc: 0xBC83844D
+        util: 'FO3Edit v4.0.2e'
   - name: 'Merc Adventurer Armor - eng.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13155' ]
     clean:
