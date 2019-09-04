@@ -3909,39 +3909,49 @@ plugins:
   - name: 'RI_LootTablePN.esp'
     tag:
       - Delev
+  - name: 'IMCN.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11418' ]
+    clean:
+      - crc: 0xC01F0403
+        util: 'FO3Edit v4.0.2f'
   - name: 'Imp''s More Complex Needs.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11418' ]
     tag:
       - Delev
       - Relev
       - Stats
-  - name: 'IMCN - 5 DLC Merged.esp'
-    tag:
-      - Stats
-  - name: 'IMCN - Operation Anchorage.esp'
-    inc:
-      - 'IMCN - 5 DLC Merged.esp'
-    tag:
-      - Stats
     clean:
-      - crc: 0x5E5887FD
-        util: 'FO3Edit v4.0.2e'
+      - crc: 0x1814842E
+        util: 'FO3Edit v4.0.2f'
   - name: 'IMCN - The Pitt.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11418' ]
     inc:
       - 'IMCN - 5 DLC Merged.esp'
     tag:
       - Stats
     clean:
       - crc: 0x9CD68B6B
-        util: 'FO3Edit v4.0.2e'
-  - name: 'IMCN - Broken Steel.esp'
+        util: 'FO3Edit v4.0.2f'
+  - name: 'IMCN - Operation Anchorage.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11418' ]
     inc:
       - 'IMCN - 5 DLC Merged.esp'
-    clean:
-      - crc: 0x51A172E3
-        util: 'FO3Edit v4.0.2e'
     tag:
       - Stats
+    clean:
+      - crc: 0x5E5887FD
+        util: 'FO3Edit v4.0.2f'
+  - name: 'IMCN - Broken Steel.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11418' ]
+    inc:
+      - 'IMCN - 5 DLC Merged.esp'
+    tag:
+      - Stats
+    clean:
+      - crc: 0x51A172E3
+        util: 'FO3Edit v4.0.2f'
   - name: 'IMCN - Point Lookout.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11418' ]
     inc:
       - 'IMCN - 5 DLC Merged.esp'
     tag:
@@ -3949,12 +3959,13 @@ plugins:
     dirty:
       - <<: *quickClean
         crc: 0xC8D6C13A
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
     clean:
       - crc: 0xFA654B98
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.2f'
   - name: 'IMCN - Mothership Zeta.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11418' ]
     inc:
       - 'IMCN - 5 DLC Merged.esp'
     tag:
@@ -3962,43 +3973,84 @@ plugins:
     dirty:
       - <<: *quickClean
         crc: 0x7B503991
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
     clean:
       - crc: 0xB07263DE
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.2f'
+  - name: 'IMCN - 5 DLC Merged.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11418' ]
+    clean:
+      - crc: 0xB4F0F9EF
+        util: 'FO3Edit v4.0.2f'
+  - name: 'IMCN - Ambient Temperature.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11418' ]
+    clean:
+      - crc: 0x0265C091
+        util: 'FO3Edit v4.0.2f'
+  - name: 'IMCN - FOOK2 Ingestibles.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11418' ]
+    tag:
+      - Stats
+    clean:
+      - crc: 0x01044C0B
+        util: 'FO3Edit v4.0.2f'
   - name: 'IMCN - FWE Compatibility and Ingestibles.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11418' ]
     tag:
       - Stats
     dirty:
       - <<: *quickClean
         crc: 0xE14E3330
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 5
     clean:
       - crc: 0xA86B44C1
-        util: 'FO3Edit v4.0.2e'
-  - name: 'IMCN - FOOK2 Ingestibles.esp'
-    tag:
-      - Stats
-  - name: 'IMCN - BLTC Compatibility and Ingestibles.esp'
-    inc:
-      - 'IMCN - FWE Compatibility and Ingestibles.esp'
-    tag:
-      - Stats
+        util: 'FO3Edit v4.0.2f'
   - name: 'IMCN - BLTC RiPnO Combined Compatibility.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11418' ]
     inc:
       - 'IMCN - FWE Compatibility and Ingestibles.esp'
-  - name: 'IMCN - RiPnO Compatibility and Ingestibles.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x55C29F58
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+    clean:
+      - crc: 0x40BE9986
+        util: 'FO3Edit v4.0.2f'
+  - name: 'IMCN - BLTC Compatibility and Ingestibles.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11418' ]
     inc:
       - 'IMCN - FWE Compatibility and Ingestibles.esp'
     tag:
       - Stats
+    dirty:
+      - <<: *quickClean
+        crc: 0x3756B7E2
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+    clean:
+      - crc: 0x070A9701
+        util: 'FO3Edit v4.0.2f'
   - name: 'IMCN - MMM Meats, Bloods, and Eyeballs.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11418' ]
     tag:
       - Delev
       - Relev
       - Stats
+    clean:
+      - crc: 0x20F95793
+        util: 'FO3Edit v4.0.2f'
+  - name: 'IMCN - RiPnO Compatibility and Ingestibles.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11418' ]
+    inc:
+      - 'IMCN - FWE Compatibility and Ingestibles.esp'
+    tag:
+      - Stats
+    clean:
+      - crc: 0x2118AF0B
+        util: 'FO3Edit v4.0.2f'
   - name: 'All Companions Essential.esp'
     tag:
       - Actors.ACBS
