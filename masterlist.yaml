@@ -6748,6 +6748,18 @@ plugins:
     clean:
       - crc: 0x22450D06
         util: 'FO3Edit v4.0.2e'
+  - name: 'Crystal.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/12840' ]
+    dirty:
+      - <<: *reqManualFix
+        crc: 0x414FE430
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 13
+        nav: 4
+      - <<: *reqManualFix
+        crc: 0xD79E284E
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        nav: 4
   - name: 'Modified_Races.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12908' ]
     dirty:
