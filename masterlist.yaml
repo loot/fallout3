@@ -6408,6 +6408,11 @@ plugins:
     clean:
       - crc: 0x33B356F1
         util: 'FO3Edit v4.0.2e'
+  - name: 'LucyWestCompanion.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/5696' ]
+    clean:
+      - crc: 0xEC881E91
+        util: 'FO3Edit v4.0.2e'
   - name: 'Rivet City Realignment.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5831' ]
     clean:
