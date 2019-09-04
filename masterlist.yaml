@@ -6325,6 +6325,16 @@ plugins:
     clean:
       - crc: 0xBDCAF237
         util: 'FO3Edit v4.0.2e'
+  - name: 'outcast_comp.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2889' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xE2281B57
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 3
+    clean:
+      - crc: 0x84639F57
+        util: 'FO3Edit v4.0.2e'
   - name: 'Echo_UseBothGloves.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3412' ]
     clean:
