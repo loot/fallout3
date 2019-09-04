@@ -6373,6 +6373,21 @@ plugins:
     clean:
       - crc: 0x2B0405CB
         util: 'FO3Edit v4.0.2e'
+  - name: 'BLTC.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1745' ]
+    clean:
+      - crc: 0xF7E654C4
+        util: 'FO3Edit v4.0.2f'
+  - name: 'BLTC Hypo Fix.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1745' ]
+    clean:
+      - crc: 0xA5A5478E
+        util: 'FO3Edit v4.0.2f'
+  - name: 'BLTC Immersion Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1745' ]
+    clean:
+      - crc: 0x94E1CD86
+        util: 'FO3Edit v4.0.2f'
   - name: 'AutoAim_6000_v1.0.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1919' ]
     clean:
@@ -6593,7 +6608,46 @@ plugins:
     clean:
       - crc: 0xF61A557E
         util: 'FO3Edit v4.0.2e'
-
+  - name: 'RiPnO CorePatch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6661' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x45F37F1A
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 6
+    clean:
+      - crc: 0x7A34610F
+        util: 'FO3Edit v4.0.2e'
+  - name: 'RiPnO DLC01 The Pitt.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6661' ]
+    clean:
+      - crc: 0xE89DDC2C
+        util: 'FO3Edit v4.0.2e'
+  - name: 'RiPnO DLC02 Operation Anchorage.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6661' ]
+    clean:
+      - crc: 0xA587AAE0
+        util: 'FO3Edit v4.0.2e'
+  - name: 'RiPnO DLC03 Broken Steel.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6661' ]
+    clean:
+      - crc: 0xEB00AD2B
+        util: 'FO3Edit v4.0.2e'
+  - name: 'RiPnO DLC04 Point Lookout.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6661' ]
+    clean:
+      - crc: 0x14A6B1F5
+        util: 'FO3Edit v4.0.2e'
+  - name: 'RiPnO DLC05 Mothership Zeta.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6661' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x495DEF82
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+    clean:
+      - crc: 0x3737B14D
+        util: 'FO3Edit v4.0.2e'
   - name: 'MTCBigTownRobotFix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6685' ]
     dirty:
