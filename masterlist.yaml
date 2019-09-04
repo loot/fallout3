@@ -6553,6 +6553,11 @@ plugins:
     clean:
       - crc: 0xFD4591BB
         util: 'FO3Edit v4.0.2e'
+  - name: 'BriannaCompanion.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/7408' ]
+    clean:
+      - crc: 0xF951BD9F
+        util: 'FO3Edit v4.0.2e'
   - name: 'Lookout Outfits.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7682' ]
     dirty:
