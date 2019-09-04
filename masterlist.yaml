@@ -6908,6 +6908,16 @@ plugins:
     clean:
       - crc: 0xD38CB14B
         util: 'FO3Edit v4.0.2e'
+  - name: 'jasmine.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15758' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xE1A0BEF4
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 8
+    clean:
+      - crc: 0xCA807DFF
+        util: 'FO3Edit v4.0.2e'
   - name: 'iHUD.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15790' ]
     clean:
