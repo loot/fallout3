@@ -6593,6 +6593,7 @@ plugins:
     clean:
       - crc: 0xF61A557E
         util: 'FO3Edit v4.0.2e'
+
   - name: 'MTCBigTownRobotFix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6685' ]
     dirty:
