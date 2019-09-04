@@ -7222,6 +7222,16 @@ plugins:
     clean:
       - crc: 0xAE45BA91
         util: 'FO3Edit v4.0.2e'
+  - name: 'BelthansQuoVagis.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/19305' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x2A3804E7
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 8
+    clean:
+      - crc: 0x10E92BAC
+        util: 'FO3Edit v4.0.2e'
   - name: 'BauPetSupplies.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19473' ]
     dirty:
