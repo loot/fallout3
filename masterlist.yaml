@@ -6424,6 +6424,16 @@ plugins:
     clean:
       - crc: 0x29A3A3FD
         util: 'FO3Edit v4.0.2e'
+  - name: 'Follower Amata ULTIMATE.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4887' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xDC832D5B
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 6
+    clean:
+      - crc: 0xD5F749E5
+        util: 'FO3Edit v4.0.2e'
   - name: 'Trooper_outfits.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5208' ]
     clean:
