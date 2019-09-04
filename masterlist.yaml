@@ -6543,6 +6543,16 @@ plugins:
     clean:
       - crc: 0x6A799BE8
         util: 'FO3Edit v4.0.2e'
+  - name: 'Sarah Lyons Companion.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/7956' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xBED4DC2F
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 6
+    clean:
+      - crc: 0xF4A2B368
+        util: 'FO3Edit v4.0.2e'
   - name: 'Stealth Kills Enabled.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8050' ]
     dirty:
