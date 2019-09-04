@@ -6557,6 +6557,16 @@ plugins:
     clean:
       - crc: 0xF958C967
         util: 'FO3Edit v4.0.2e'
+  - name: 'Sydney Follower.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/9320' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xA11B8CD5
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 9
+    clean:
+      - crc: 0xAD8E043B
+        util: 'FO3Edit v4.0.2e'
   - name: 'blackrock_shooter.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/9633' ]
     dirty:
