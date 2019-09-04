@@ -6275,6 +6275,26 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'krzymar-MoonSize_(\d\d\d)%\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/572' ]
+  - name: 'mika.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1448' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x4B21D128
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+    clean:
+      - crc: 0x3C108C8E
+        util: 'FO3Edit v4.0.2e'
+  - name: 'mika_essential.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1448' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x78D51015
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+    clean:
+      - crc: 0x2B0405CB
+        util: 'FO3Edit v4.0.2e'
   - name: 'AutoAim_6000_v1.0.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1919' ]
     clean:
