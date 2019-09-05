@@ -5577,11 +5577,18 @@ plugins:
   - name: 'Bornagain Zeta Combat Armor Texture Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18220' ]
     dirty:
-      - crc: 0xab095a45
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0xAB095A45
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0x108DDC92
+        util: 'FO3Edit v4.0.2f'
+  - name: 'Bornagain Reillys Rangers Helmet Texture Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18220' ]
+    clean:
+      - crc: 0x2F164DCA
+        util: 'FO3Edit v4.0.2f'
   - name: 'Brahmin Dairy Products.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3809' ]
     tag:
