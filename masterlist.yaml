@@ -5202,11 +5202,14 @@ plugins:
       - 'ChineseStealthArmorFixed.esp'
       - 'Chinese Stealth Suit- Removable Helmet.esp'
     dirty:
-      - crc: 0xecf23f # "3EFhelmless 2nd", per 1 February 2009
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0x00ECF23F
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 9
         udr: 1
-        nav: 0
+    clean:
+      - crc: 0xD4712A4A
+        util: 'FO3Edit v4.0.2f'
   - name: 'ChineseStealthArmorFixed.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5045' ]
     inc:
