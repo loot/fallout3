@@ -2405,20 +2405,40 @@ plugins:
   - name: 'Named Wasteland.esp'
     tag:
       - Names
-  - name: 'MTC Wasteland Travellers (Optional)- Crowded Cities less NPCs.esp'
-    inc:
-      - 'MTC Wasteland Travellers (Optional)- Crowded Cities.esp'
+  - name: 'MTC Wasteland Travellers.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6044' ]
     dirty:
-      - crc: 0x0E577EE9
-        <<: *dirtyPlugin
-        itm: 19
+      - <<: *quickClean
+        crc: 0x0A7E3339
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 55
+    clean:
+      - crc: 0x71DAACCD
+        util: 'FO3Edit v4.0.2f'
   - name: 'MTC Wasteland Travellers (Optional)- Crowded Cities.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6044' ]
     inc:
       - 'MTC Wasteland Travellers (Optional)- Crowded Cities less NPCs.esp'
     dirty:
-      - crc: 0x0E577EE9
-        <<: *dirtyPlugin
+      - <<: *quickClean
+        crc: 0x0E577EE9
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 23
+    clean:
+      - crc: 0x53D0E17F
+        util: 'FO3Edit v4.0.2f'
+  - name: 'MTC Wasteland Travellers (Optional)- Crowded Cities less NPCs.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6044' ]
+    inc:
+      - 'MTC Wasteland Travellers (Optional)- Crowded Cities.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x540018FA
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 19
+    clean:
+      - crc: 0x9BB29F93
+        util: 'FO3Edit v4.0.2f'
   - name: 'Outcast Scribes03.esp'
     inc:
       - 'OutcastCasdinArmorFix.esp'
@@ -8760,11 +8780,6 @@ plugins:
     clean:
       - crc: 0xE5EEC89C
         util: 'FO3Edit v4.0.2e'
-  - name: 'MTC Wasteland Travellers.esp'
-    dirty:
-      - crc: 0x0A7E3339
-        <<: *dirtyPlugin
-        itm: 55
   - name: 'MoreMapMarkers.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2446' ]
     dirty:
