@@ -8712,11 +8712,16 @@ plugins:
       - crc: 0xACB37DB6
         util: 'FO3Edit v4.0.2f'
   - name: 'Imperfection.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18434' ]
     dirty:
-      - crc: 0x219AE3E2
-        <<: *dirtyPlugin
+      - <<: *quickClean
+        crc: 0x219AE3E2
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 24
         udr: 7
+    clean:
+      - crc: 0x18F80859
+        util: 'FO3Edit v4.0.2f'
   - name: 'Blackened MMM + EVE + Project Beauty.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
     msg: [ *doNotClean ]
