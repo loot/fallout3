@@ -8802,8 +8802,13 @@ plugins:
       - crc: 0xD48EC701
         util: 'FO3Edit v4.0.2e'
   - name: 'RideableCreature.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3330' ]
     dirty:
-      - crc: 0xB59D8ADE
-        <<: *dirtyPlugin
+      - <<: *quickClean
+        crc: 0xB59D8ADE
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 4
         udr: 1
+    clean:
+      - crc: 0x718060AE
+        util: 'FO3Edit v4.0.2f'
