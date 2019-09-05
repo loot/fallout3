@@ -4498,10 +4498,16 @@ plugins:
         subs: [ 'Clean-Deluxe GOTY.esp' ]
         condition: 'active("Clean-Deluxe GOTY.esp")'
   - name: 'Fellout-Full.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/16787' ]
+    url:
+      - 'https://www.nexusmods.com/fallout3/mods/2672'
+      - 'https://www.nexusmods.com/fallout3/mods/16787'
     inc:
       - 'Fellout-SOTD.esp'
     clean:
+      # 2672
+      - crc: 0xEA441324
+        util: 'FO3Edit v4.0.2f'
+      # 16787
       - crc: 0x1C4CD93B
         util: 'FO3Edit v4.0.2e'
     msg: [ *alreadyInFOOK2 ]
