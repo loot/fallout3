@@ -4516,20 +4516,39 @@ plugins:
       - 'Either Fellout-Full.esp'
     msg: [ *alreadyInFOOK2 ]
   - name: 'Fellout-Anchorage.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2672' ]
     msg: [ *alreadyInFOOK2 ]
+    clean:
+      - crc: 0x3C103AD6
+        util: 'FO3Edit v4.0.2f'
   - name: 'Fellout-BrokenSteel.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2672' ]
     msg: [ *alreadyInFOOK2 ]
+    clean:
+      - crc: 0xA2832075
+        util: 'FO3Edit v4.0.2f'
   - name: 'Fellout-PointLookout.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2672' ]
     msg: [ *alreadyInFOOK2 ]
     dirty:
-      - crc: 0xf33277f6 # DLC support pack of 29 July 2010
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0xF33277F6
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0x61314352
+        util: 'FO3Edit v4.0.2f'
   - name: 'Fellout-Zeta.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2672' ]
     msg: [ *alreadyInFOOK2 ]
+    clean:
+      - crc: 0x10F67831
+        util: 'FO3Edit v4.0.2f'
+  - name: 'Fellout-pipboylight.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2672' ]
+    clean:
+      - crc: 0xF5E44077
+        util: 'FO3Edit v4.0.2f'
   - name: 'FelloutWithLightingOverhual-1.0.esp'
     tag:
       - C.Light
