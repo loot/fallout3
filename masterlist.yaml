@@ -6365,11 +6365,13 @@ plugins:
   - name: 'X-1_Tales_of_Wonder!.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17672' ]
     dirty:
-      - <<: *dirtyPlugin # FO3Edit 3.0.32
-        crc: 0xc8b56e69 # Version 1.0
+      - <<: *quickClean
+        crc: 0xC8B56E69
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 4
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0xC20F962C
+        util: 'FO3Edit v4.0.2f'
   - name: 'ZL-ACR.esp'
     url:
       - 'https://www.nexusmods.com/fallout3/mods/11611'
