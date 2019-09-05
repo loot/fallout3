@@ -5961,11 +5961,13 @@ plugins:
   - name: 'Loki_HistoricSpeeches_v1.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14476' ]
     dirty:
-      - <<: *dirtyPlugin # FO3Edit 3.0.32
-        crc: 0x21340b32 # Version 1.0
+      - <<: *quickClean
+        crc: 0x21340B32
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 3
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0x1307AA8B
+        util: 'FO3Edit v4.0.2f'
   - name: 'Millenia_AK47_replacer.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18481' ]
     tag:
