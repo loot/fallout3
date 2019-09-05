@@ -6005,11 +6005,13 @@ plugins:
   - name: 'People_Radio.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5021' ]
     dirty:
-      - <<: *dirtyPlugin # FO3Edit 3.0.32
-        crc: 0x839a113b # Beta version 0.1
+      - <<: *quickClean
+        crc: 0x839A113B
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 3
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0x440F44CC
+        util: 'FO3Edit v4.0.2f'
   - name: 'super_jump_perk.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2471' ]
     clean:
