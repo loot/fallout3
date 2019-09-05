@@ -473,11 +473,13 @@ plugins:
       - 'Anchorage.esm'
     msg: [ *alreadyInFOOK2 ]
     dirty:
-      - crc: 0xC5690E8E # Version 2.0
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0xC5690E8E
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 18
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0x14016C17
+        util: 'FO3Edit v4.0.2f'
   - name: 'BrokenSteel.esm'
     group: *dlcGroup
     after:
@@ -576,7 +578,7 @@ plugins:
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 2
   - name: '20th Century Weapons.esm'
-    url: [ 'http://www.gamefront.com/files/21184005/20th_centuary_weapons_5.12_with_addons.7z' ]
+    url: [ 'http://modsreloaded.com/19th-and-20th-century-weapons' ]
     tag:
       - Scripts
     clean:
@@ -1449,10 +1451,32 @@ plugins:
     tag:
       - Relations
     dirty:
-      - crc: 0x43E23B19
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *reqManualFix
+        crc: 0x43E23B19
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 181
         udr: 20
+        nav: 3
+      - <<: *reqManualFix
+        crc: 0xE97F8B04
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
+        nav: 3
+  - name: 'Canterbury Commons Interiors Embiggened.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/13301' ]
+    inc:
+      - 'Canterbury Commons Interiors Embiggened.esm'
+    tag:
+      - Relations
+    dirty:
+      - <<: *reqManualFix
+        crc: 0x3D8ABED8
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 181
+        udr: 20
+        nav: 3
+      - <<: *reqManualFix
+        crc: 0x31F67AB0
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 3
   - name: 'RH_IRONSIGHTS.esm'
     url:
@@ -1501,11 +1525,13 @@ plugins:
     tag:
       - C.Light
     dirty:
-      - crc: 0x482C04B2 # Version 2.0.0.9.b (5 February 2009)
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0x482C04B2
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
-        udr: 4
-        nav: 0
+    clean:
+      - crc: 0x90A5C409
+        util: 'FO3Edit v4.0.2f'
   - name: 'FireLightFix_rus.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3660' ]
     group: *fixesGroup
@@ -1515,11 +1541,13 @@ plugins:
     tag:
       - C.Light
     dirty:
-      - crc: 0xED54E353 # Version 2.0.0.9.b (5 February 2009)
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0xED54E353
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
-        udr: 4
-        nav: 0
+    clean:
+      - crc: 0x6A7D4996
+        util: 'FO3Edit v4.0.2f'
   - name: 'FO3 Error Fixes.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16490' ]
     group: *fixesGroup
@@ -2377,20 +2405,40 @@ plugins:
   - name: 'Named Wasteland.esp'
     tag:
       - Names
-  - name: 'MTC Wasteland Travellers (Optional)- Crowded Cities less NPCs.esp'
-    inc:
-      - 'MTC Wasteland Travellers (Optional)- Crowded Cities.esp'
+  - name: 'MTC Wasteland Travellers.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6044' ]
     dirty:
-      - crc: 0x0E577EE9
-        <<: *dirtyPlugin
-        itm: 19
+      - <<: *quickClean
+        crc: 0x0A7E3339
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 55
+    clean:
+      - crc: 0x71DAACCD
+        util: 'FO3Edit v4.0.2f'
   - name: 'MTC Wasteland Travellers (Optional)- Crowded Cities.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6044' ]
     inc:
       - 'MTC Wasteland Travellers (Optional)- Crowded Cities less NPCs.esp'
     dirty:
-      - crc: 0x0E577EE9
-        <<: *dirtyPlugin
+      - <<: *quickClean
+        crc: 0x0E577EE9
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 23
+    clean:
+      - crc: 0x53D0E17F
+        util: 'FO3Edit v4.0.2f'
+  - name: 'MTC Wasteland Travellers (Optional)- Crowded Cities less NPCs.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6044' ]
+    inc:
+      - 'MTC Wasteland Travellers (Optional)- Crowded Cities.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x540018FA
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 19
+    clean:
+      - crc: 0x9BB29F93
+        util: 'FO3Edit v4.0.2f'
   - name: 'Outcast Scribes03.esp'
     inc:
       - 'OutcastCasdinArmorFix.esp'
@@ -2666,7 +2714,7 @@ plugins:
       - Relev
     clean:
       - crc: 0x3E2861DB
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.2f'
   - name: 'DALCO Inventory Sorter - Weapon Mod Kits (Base).esp'
     tag:
       - Names
@@ -3776,33 +3824,63 @@ plugins:
       - crc: 0xADDA0623
         util: 'FO3Edit v4.0.2e'
   - name: 'WeaponModKits - OperationAnchorage.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
+    url:
+      - 'https://www.nexusmods.com/fallout3/mods/3388'
+      - 'https://www.nexusmods.com/fallout3/mods/4968'
     clean:
+      # 3388
+      - crc: 0x729D51D2
+        util: 'FO3Edit v4.0.2f' 
+      # 4968        
       - crc: 0x13A76792
         util: 'FO3Edit v4.0.2e'
   - name: 'WeaponModKits - ThePitt.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
+    url:
+      - 'https://www.nexusmods.com/fallout3/mods/3388'
+      - 'https://www.nexusmods.com/fallout3/mods/4968'
     clean:
+      # 3388
+      - crc: 0x4C3C90A9
+        util: 'FO3Edit v4.0.2f'
+      # 4968
       - crc: 0x2F7C9661
         util: 'FO3Edit v4.0.2e'
   - name: 'WeaponModKits - BrokenSteel.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
+    url:
+      - 'https://www.nexusmods.com/fallout3/mods/3388'
+      - 'https://www.nexusmods.com/fallout3/mods/4968'
     tag:
       - Graphics
       - Stats
     clean:
+      # 3388
+      - crc: 0x80A8FF0F
+        util: 'FO3Edit v4.0.2f'
+      # 4968
       - crc: 0x377467AC
         util: 'FO3Edit v4.0.2e'
   - name: 'WeaponModKits - PointLookout.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
+    url:
+      - 'https://www.nexusmods.com/fallout3/mods/3388'
+      - 'https://www.nexusmods.com/fallout3/mods/4968'
     clean:
+      # 3388
+      - crc: 0x5AD5E950
+        util: 'FO3Edit v4.0.2f'
+      # 4968
       - crc: 0x7C6C6D97
         util: 'FO3Edit v4.0.2e'
   - name: 'WeaponModKits - Zeta.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
+    url:
+      - 'https://www.nexusmods.com/fallout3/mods/3388'
+      - 'https://www.nexusmods.com/fallout3/mods/4968'
     tag:
       - Stats
     clean:
+      # 3388
+      - crc: 0x85241841
+        util: 'FO3Edit v4.0.2f'
+      # 4968
       - crc: 0x6C23E64A
         util: 'FO3Edit v4.0.2e'
   - name: 'WeaponModKits - FWE Talon Loot Crash Fix.esp'
@@ -4470,10 +4548,16 @@ plugins:
         subs: [ 'Clean-Deluxe GOTY.esp' ]
         condition: 'active("Clean-Deluxe GOTY.esp")'
   - name: 'Fellout-Full.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/16787' ]
+    url:
+      - 'https://www.nexusmods.com/fallout3/mods/2672'
+      - 'https://www.nexusmods.com/fallout3/mods/16787'
     inc:
       - 'Fellout-SOTD.esp'
     clean:
+      # 2672
+      - crc: 0xEA441324
+        util: 'FO3Edit v4.0.2f'
+      # 16787
       - crc: 0x1C4CD93B
         util: 'FO3Edit v4.0.2e'
     msg: [ *alreadyInFOOK2 ]
@@ -4482,20 +4566,39 @@ plugins:
       - 'Either Fellout-Full.esp'
     msg: [ *alreadyInFOOK2 ]
   - name: 'Fellout-Anchorage.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2672' ]
     msg: [ *alreadyInFOOK2 ]
+    clean:
+      - crc: 0x3C103AD6
+        util: 'FO3Edit v4.0.2f'
   - name: 'Fellout-BrokenSteel.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2672' ]
     msg: [ *alreadyInFOOK2 ]
+    clean:
+      - crc: 0xA2832075
+        util: 'FO3Edit v4.0.2f'
   - name: 'Fellout-PointLookout.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2672' ]
     msg: [ *alreadyInFOOK2 ]
     dirty:
-      - crc: 0xf33277f6 # DLC support pack of 29 July 2010
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0xF33277F6
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0x61314352
+        util: 'FO3Edit v4.0.2f'
   - name: 'Fellout-Zeta.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2672' ]
     msg: [ *alreadyInFOOK2 ]
+    clean:
+      - crc: 0x10F67831
+        util: 'FO3Edit v4.0.2f'
+  - name: 'Fellout-pipboylight.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2672' ]
+    clean:
+      - crc: 0xF5E44077
+        util: 'FO3Edit v4.0.2f'
   - name: 'FelloutWithLightingOverhual-1.0.esp'
     tag:
       - C.Light
@@ -4776,25 +4879,13 @@ plugins:
     tag:
       - Invent
   - name: '20th Century v4 ALIVE (SuperMutant).esp'
-    url: [ 'http://www.gamefront.com/files/21184005/20th_centuary_weapons_5.12_with_addons.7z' ]
+    url: [ '' ]
     tag:
       - Invent
-    dirty:
-      - crc: 0x189A679D
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 11
-        udr: 0
-        nav: 0
   - name: '20th Century v4 ALIVE (Vault 101).esp'
-    url: [ 'http://www.gamefront.com/files/21184005/20th_centuary_weapons_5.12_with_addons.7z' ]
+    url: [ '' ]
     tag:
       - Invent
-    dirty:
-      - crc: 0xF569054A
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 4
-        udr: 0
-        nav: 0
   - name: '20th Century v4 ALIVE (Chinese Ghoul).esp'
     tag:
       - Invent
@@ -4802,24 +4893,28 @@ plugins:
     tag:
       - Invent
   - name: '20th Century v5 ALIVE (Vendor).esp'
+    url: [ 'http://modsreloaded.com/19th-and-20th-century-weapons' ]
     tag:
       - Invent
     clean:
       - crc: 0x6A6EC211
         util: 'FO3Edit v4.0.2e'
   - name: '20th Century v5 ALIVE (Containers).esp'
+    url: [ 'http://modsreloaded.com/19th-and-20th-century-weapons' ]
     tag:
       - Invent
     clean:
       - crc: 0x650A585B
         util: 'FO3Edit v4.0.2e'
   - name: '20th Century v5 ALIVE (NPC_Settler).esp'
+    url: [ 'http://modsreloaded.com/19th-and-20th-century-weapons' ]
     tag:
       - Invent
     clean:
       - crc: 0x6A62989B
         util: 'FO3Edit v4.0.2e'
   - name: '20th Century v5 ALIVE (Vault 101).esp'
+    url: [ 'http://modsreloaded.com/19th-and-20th-century-weapons' ]
     tag:
       - Invent
     dirty:
@@ -4831,30 +4926,35 @@ plugins:
       - crc: 0xE9B22AAC
         util: 'FO3Edit v4.0.2e'
   - name: '20th Century v5 ALIVE (RivetCity).esp'
+    url: [ 'http://modsreloaded.com/19th-and-20th-century-weapons' ]
     tag:
       - Invent
     clean:
       - crc: 0x21D53DF5
         util: 'FO3Edit v4.0.2e'
   - name: '20th Century v5 ALIVE (Raider).esp'
+    url: [ 'http://modsreloaded.com/19th-and-20th-century-weapons' ]
     tag:
       - Invent
     clean:
       - crc: 0x5727EF5F
         util: 'FO3Edit v4.0.2e'
   - name: '20th Century v5 ALIVE (Slaver).esp'
+    url: [ 'http://modsreloaded.com/19th-and-20th-century-weapons' ]
     tag:
       - Invent
     clean:
       - crc: 0xB5590C3C
         util: 'FO3Edit v4.0.2e'
   - name: '20th Century v5 ALIVE (Chinese Ghoul).esp'
+    url: [ 'http://modsreloaded.com/19th-and-20th-century-weapons' ]
     tag:
       - Invent
     clean:
       - crc: 0xF1838342
         util: 'FO3Edit v4.0.2e'
   - name: '20th Century v5 ALIVE (SuperMutant).esp'
+    url: [ 'http://modsreloaded.com/19th-and-20th-century-weapons' ]
     tag:
       - Invent
     dirty:
@@ -4866,19 +4966,21 @@ plugins:
       - crc: 0x5F83E84D
         util: 'FO3Edit v4.0.2e'
   - name: '20th Century v5 ALIVE (Talon_Regulator).esp'
+    url: [ 'http://modsreloaded.com/19th-and-20th-century-weapons' ]
     tag:
       - Invent
     clean:
       - crc: 0xF270D88F
         util: 'FO3Edit v4.0.2e'
   - name: '20th Century v5 ALIVE (Brotherhood_Outcast).esp'
+    url: [ 'http://modsreloaded.com/19th-and-20th-century-weapons' ]
     tag:
       - Invent
     clean:
       - crc: 0x456DED89
         util: 'FO3Edit v4.0.2e'
   - name: '20th Century v5 ALIVE (TEST Container).esp'
-    url: [ 'http://www.gamefront.com/files/21184005/20th_centuary_weapons_5.12_with_addons.7z' ]
+    url: [ 'http://modsreloaded.com/19th-and-20th-century-weapons' ]
     dirty:
       - <<: *quickClean
         crc: 0x4F5CCD2C
@@ -5174,11 +5276,14 @@ plugins:
       - 'ChineseStealthArmorFixed.esp'
       - 'Chinese Stealth Suit- Removable Helmet.esp'
     dirty:
-      - crc: 0xecf23f # "3EFhelmless 2nd", per 1 February 2009
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0x00ECF23F
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 9
         udr: 1
-        nav: 0
+    clean:
+      - crc: 0xD4712A4A
+        util: 'FO3Edit v4.0.2f'
   - name: 'ChineseStealthArmorFixed.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5045' ]
     inc:
@@ -5258,12 +5363,6 @@ plugins:
       - Names
       - Destructible
       - Stats
-    dirty:
-      - crc: 0x32EAC10D
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 351
-        udr: 1
-        nav: 0
   - name: '20th Century Weapons -Plus- Reborn v1_70RC-18668-ALIVE (TEST Container).esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18668' ]
     clean:
@@ -5379,6 +5478,20 @@ plugins:
         crc: 0xDB92D1DC
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 7
+  - name: 'Big Town Overhaul.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/13229' ]
+    inc:
+      - 'Big Town Overhaul.esp'
+      - 'Big Town Overhaul [GangStore].esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x7B37FC41
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 41
+        udr: 684
+    clean:
+      - crc: 0x8B5DEEB9
+        util: 'FO3Edit v4.0.2f'
   - name: 'Big Town Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13229' ]
     inc:
@@ -5386,24 +5499,27 @@ plugins:
       - 'Big Town Overhaul [GangStore].esp'
     dirty:
       - <<: *quickClean
-        crc: 0xC6024D8A
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        crc: 0x31E2D0E2
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 41
         udr: 684
     clean:
-      - crc: 0x8D2F0510
-        util: 'FO3Edit v4.0.2e'
+      - crc: 0x6537560B
+        util: 'FO3Edit v4.0.2f'
   - name: 'Big Town Overhaul [GangStore].esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13229' ]
     inc:
       - 'Big Town Overhaul.esm'
       - 'Big Town Overhaul.esp'
     dirty:
-      - crc: 0x563db400
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0x563DB400
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 53
         udr: 684
-        nav: 0
+    clean:
+      - crc: 0xE827303C
+        util: 'FO3Edit v4.0.2f'
   - name: 'Binoculars.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8909' ]
     dirty:
@@ -5474,11 +5590,18 @@ plugins:
   - name: 'Bornagain Zeta Combat Armor Texture Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18220' ]
     dirty:
-      - crc: 0xab095a45
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0xAB095A45
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0x108DDC92
+        util: 'FO3Edit v4.0.2f'
+  - name: 'Bornagain Reillys Rangers Helmet Texture Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18220' ]
+    clean:
+      - crc: 0x2F164DCA
+        util: 'FO3Edit v4.0.2f'
   - name: 'Brahmin Dairy Products.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3809' ]
     tag:
@@ -5500,18 +5623,6 @@ plugins:
     clean:
       - crc: 0x7F7525E5
         util: 'FO3Edit v4.0.2e'
-  - name: 'Canterbury Commons Interiors Embiggened.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/13301' ]
-    inc:
-      - 'Canterbury Commons Interiors Embiggened.esm'
-    tag:
-      - Relations
-    dirty:
-      - crc: 0x3D8ABED8
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 181
-        udr: 20
-        nav: 3
   - name: 'Caravan Merchants Heal After Combat.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20548' ]
     tag:
@@ -5863,11 +5974,13 @@ plugins:
   - name: 'Loki_HistoricSpeeches_v1.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14476' ]
     dirty:
-      - <<: *dirtyPlugin # FO3Edit 3.0.32
-        crc: 0x21340b32 # Version 1.0
+      - <<: *quickClean
+        crc: 0x21340B32
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 3
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0x1307AA8B
+        util: 'FO3Edit v4.0.2f'
   - name: 'Millenia_AK47_replacer.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18481' ]
     tag:
@@ -5890,11 +6003,13 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/18605' ]
     tag: [ Names ]
     dirty:
-      - crc: 0xC061B97B
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 0
+      - <<: *quickClean
+        crc: 0xC061B97B
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         udr: 8
-        nav: 0
+    clean:
+      - crc: 0x70A402C9
+        util: 'FO3Edit v4.0.2f'
   - name: 'Paradise Lost - Unique Texture and Icon.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19514' ]
     tag:
@@ -5905,11 +6020,13 @@ plugins:
   - name: 'People_Radio.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5021' ]
     dirty:
-      - <<: *dirtyPlugin # FO3Edit 3.0.32
-        crc: 0x839a113b # Beta version 0.1
+      - <<: *quickClean
+        crc: 0x839A113B
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 3
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0x440F44CC
+        util: 'FO3Edit v4.0.2f'
   - name: 'super_jump_perk.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2471' ]
     clean:
@@ -6154,20 +6271,24 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/7236' ]
     inc: [ 'RadioTenpennyTower.esp' ]
     dirty:
-      - crc: 0xF7ECA8BD # Version 1.0 (23 June 2009)
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0xF7ECA8BD
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 7
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0x60E89D4A
+        util: 'FO3Edit v4.0.2f'
   - name: 'RadioTenpennyTower.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3803' ]
     inc: [ 'RadioTenpenny.esp' ]
     dirty:
-      - crc: 0x813140D8 # Version 1.0 (9 February 2009)
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0x813140D8
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 3
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0x0E6EEEB6
+        util: 'FO3Edit v4.0.2f'
   - name: 'RagdollOverhaulFo3.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20143' ]
     tag:
@@ -6257,11 +6378,13 @@ plugins:
   - name: 'X-1_Tales_of_Wonder!.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17672' ]
     dirty:
-      - <<: *dirtyPlugin # FO3Edit 3.0.32
-        crc: 0xc8b56e69 # Version 1.0
+      - <<: *quickClean
+        crc: 0xC8B56E69
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 4
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0xC20F962C
+        util: 'FO3Edit v4.0.2f'
   - name: 'ZL-ACR.esp'
     url:
       - 'https://www.nexusmods.com/fallout3/mods/11611'
@@ -8494,10 +8617,15 @@ plugins:
       - 'Merged Patch.esp'
       - 'FO3Merged.esp'
   - name: 'Clarity.esp'
-    dirty:
-      - crc: 0xA9B7F199
-        <<: *dirtyPlugin
-        itm: 1
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21319' ]
+    clean:
+      - crc: 0x4E7BDD5B
+        util: 'FO3Edit v4.0.2f'
+  - name: 'Clarity - Dark Nights.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21319' ]
+    clean:
+      - crc: 0x6062B73A
+        util: 'FO3Edit v4.0.2f'
   - name: 'RH_IronSights_Basic_AnchoragePlugin.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
     dirty:
@@ -8509,16 +8637,25 @@ plugins:
       - crc: 0x4358A923
         util: 'FO3Edit v4.0.2e'
   - name: 'RH_EVE_Bridge.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
     dirty:
-      - crc: 0x06239EB2
-        <<: *dirtyPlugin
+      - <<: *quickClean
+        crc: 0x06239EB2
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 3
+    clean:
+      - crc: 0x36C4D215
+        util: 'FO3Edit v4.0.2f'
   - name: 'RH_IronSights_Basic_ZetaPlugin.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
     dirty:
-      - crc: 0x9449EB44
-        <<: *dirtyPlugin
+      - <<: *quickClean
+        crc: 0x9449EB44
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 5
+    clean:
+      - crc: 0x826E5852
+        util: 'FO3Edit v4.0.2f'
   - name: 'RH_IronSights_Basic_PittPlugin.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
     dirty:
@@ -8564,22 +8701,27 @@ plugins:
     clean:
       - crc: 0xBC65E0C9
         util: 'FO3Edit v4.0.2e'
-  - name: 'Elgar''s Extra Random Encounters.esp'
-    dirty:
-      - crc: 0x6FBCB8B4
-        <<: *dirtyPlugin
-        itm: 218
   - name: 'DLC Enemies Freedom.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18691' ]
     dirty:
-      - crc: 0x971497C7
-        <<: *dirtyPlugin
-        itm: 21
+      - <<: *quickClean
+        crc: 0x971497C7
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+    clean:
+      - crc: 0xACB37DB6
+        util: 'FO3Edit v4.0.2f'
   - name: 'Imperfection.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18434' ]
     dirty:
-      - crc: 0x219AE3E2
-        <<: *dirtyPlugin
+      - <<: *quickClean
+        crc: 0x219AE3E2
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 24
         udr: 7
+    clean:
+      - crc: 0x18F80859
+        util: 'FO3Edit v4.0.2f'
   - name: 'Blackened MMM + EVE + Project Beauty.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
     msg: [ *doNotClean ]
@@ -8648,11 +8790,6 @@ plugins:
     clean:
       - crc: 0xE5EEC89C
         util: 'FO3Edit v4.0.2e'
-  - name: 'MTC Wasteland Travellers.esp'
-    dirty:
-      - crc: 0x0A7E3339
-        <<: *dirtyPlugin
-        itm: 55
   - name: 'MoreMapMarkers.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2446' ]
     dirty:
@@ -8665,8 +8802,13 @@ plugins:
       - crc: 0xD48EC701
         util: 'FO3Edit v4.0.2e'
   - name: 'RideableCreature.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3330' ]
     dirty:
-      - crc: 0xB59D8ADE
-        <<: *dirtyPlugin
+      - <<: *quickClean
+        crc: 0xB59D8ADE
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 4
         udr: 1
+    clean:
+      - crc: 0x718060AE
+        util: 'FO3Edit v4.0.2f'
