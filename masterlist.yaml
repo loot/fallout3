@@ -1461,6 +1461,18 @@ plugins:
         crc: 0xE97F8B04
         util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 3
+  - name: 'Canterbury Commons Interiors Embiggened.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/13301' ]
+    inc:
+      - 'Canterbury Commons Interiors Embiggened.esm'
+    tag:
+      - Relations
+    dirty:
+      - crc: 0x3D8ABED8
+        <<: *dirtyPlugin # FO3Edit 3.0.32
+        itm: 181
+        udr: 20
+        nav: 3
   - name: 'RH_IRONSIGHTS.esm'
     url:
       # RH_IronSights - FOSE
@@ -5507,18 +5519,6 @@ plugins:
     clean:
       - crc: 0x7F7525E5
         util: 'FO3Edit v4.0.2e'
-  - name: 'Canterbury Commons Interiors Embiggened.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/13301' ]
-    inc:
-      - 'Canterbury Commons Interiors Embiggened.esm'
-    tag:
-      - Relations
-    dirty:
-      - crc: 0x3D8ABED8
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 181
-        udr: 20
-        nav: 3
   - name: 'Caravan Merchants Heal After Combat.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20548' ]
     tag:
