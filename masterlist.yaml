@@ -6267,11 +6267,13 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/3803' ]
     inc: [ 'RadioTenpenny.esp' ]
     dirty:
-      - crc: 0x813140D8 # Version 1.0 (9 February 2009)
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *quickClean
+        crc: 0x813140D8
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 3
-        udr: 0
-        nav: 0
+    clean:
+      - crc: 0x0E6EEEB6
+        util: 'FO3Edit v4.0.2f'
   - name: 'RagdollOverhaulFo3.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/20143' ]
     tag:
