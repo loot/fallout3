@@ -5343,12 +5343,6 @@ plugins:
       - Names
       - Destructible
       - Stats
-    dirty:
-      - crc: 0x32EAC10D
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 351
-        udr: 1
-        nav: 0
   - name: '20th Century Weapons -Plus- Reborn v1_70RC-18668-ALIVE (TEST Container).esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18668' ]
     clean:
