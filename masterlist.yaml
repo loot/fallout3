@@ -5990,11 +5990,13 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/18605' ]
     tag: [ Names ]
     dirty:
-      - crc: 0xC061B97B
-        <<: *dirtyPlugin # FO3Edit 3.0.32
-        itm: 0
+      - <<: *quickClean
+        crc: 0xC061B97B
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         udr: 8
-        nav: 0
+    clean:
+      - crc: 0x70A402C9
+        util: 'FO3Edit v4.0.2f'
   - name: 'Paradise Lost - Unique Texture and Icon.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19514' ]
     tag:
