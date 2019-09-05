@@ -1468,10 +1468,15 @@ plugins:
     tag:
       - Relations
     dirty:
-      - crc: 0x3D8ABED8
-        <<: *dirtyPlugin # FO3Edit 3.0.32
+      - <<: *reqManualFix
+        crc: 0x3D8ABED8
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 181
         udr: 20
+        nav: 3
+      - <<: *reqManualFix
+        crc: 0x31F67AB0
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 3
   - name: 'RH_IRONSIGHTS.esm'
     url:
