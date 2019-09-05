@@ -8619,16 +8619,25 @@ plugins:
       - crc: 0x4358A923
         util: 'FO3Edit v4.0.2e'
   - name: 'RH_EVE_Bridge.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
     dirty:
-      - crc: 0x06239EB2
-        <<: *dirtyPlugin
+      - <<: *quickClean
+        crc: 0x06239EB2
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 3
+    clean:
+      - crc: 0x36C4D215
+        util: 'FO3Edit v4.0.2f'
   - name: 'RH_IronSights_Basic_ZetaPlugin.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
     dirty:
-      - crc: 0x9449EB44
-        <<: *dirtyPlugin
+      - <<: *quickClean
+        crc: 0x9449EB44
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 5
+    clean:
+      - crc: 0x826E5852
+        util: 'FO3Edit v4.0.2f'
   - name: 'RH_IronSights_Basic_PittPlugin.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
     dirty:
