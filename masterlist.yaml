@@ -8701,11 +8701,6 @@ plugins:
     clean:
       - crc: 0xBC65E0C9
         util: 'FO3Edit v4.0.2e'
-  - name: 'Elgar''s Extra Random Encounters.esp'
-    dirty:
-      - crc: 0x6FBCB8B4
-        <<: *dirtyPlugin
-        itm: 218
   - name: 'DLC Enemies Freedom.esp'
     dirty:
       - crc: 0x971497C7
