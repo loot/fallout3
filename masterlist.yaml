@@ -348,6 +348,68 @@ common:
       - lang: zh_CN
         text: '只使用一个%1%。'
 
+  - &useVersion
+    type: error
+    content:
+      - lang: en
+        text: 'Use %1% version.'
+      - lang: de
+        text: 'Benutzen Sie die %1% Version.'
+      - lang: ja
+        text: '%1%バージョンを使用してください。'
+      - lang: ru
+        text: 'Используйте версию для %1%'
+  - &useVersionAnchorage
+    <<: *useVersion
+    subs: [ 'Anchorage' ]
+    condition: 'active("Anchorage.esm")'
+  - &useVersionThePitt
+    <<: *useVersion
+    subs: [ 'The Pitt' ]
+    condition: 'active("ThePitt.esm")'
+  - &useVersionBrokenSteel
+    <<: *useVersion
+    subs: [ 'Broken Steel' ]
+    condition: 'active("BrokenSteel.esm")'
+  - &useVersionPointLookout
+    <<: *useVersion
+    subs: [ 'Point Lookout' ]
+    condition: 'active("PointLookout.esm")'
+  - &useVersionZeta
+    <<: *useVersion
+    subs: [ 'Zeta' ]
+    condition: 'active("Zeta.esm")'
+
+  - &useVersionNon
+    type: error
+    content:
+      - lang: en
+        text: 'Use non-%1% version.'
+      - lang: de
+        text: 'Benutzen Sie die Nicht-%1% Version.'
+      - lang: ja
+        text: '%1%バージョン以外を使用してください。'
+  - &useVersionNonAnchorage
+    <<: *useVersionNon
+    subs: [ 'Anchorage' ]
+    condition: 'not active("Anchorage.esm")'
+  - &useVersionNonThePitt
+    <<: *useVersionNon
+    subs: [ 'The Pitt' ]
+    condition: 'not active("ThePitt.esm")'
+  - &useVersionNonBrokenSteel
+    <<: *useVersionNon
+    subs: [ 'Broken Steel' ]
+    condition: 'not active("BrokenSteel.esm")'
+  - &useVersionNonPointLookout
+    <<: *useVersionNon
+    subs: [ 'Point Lookout' ]
+    condition: 'not active("PointLookout.esm")'
+  - &useVersionNonZeta
+    <<: *useVersionNon
+    subs: [ 'Zeta' ]
+    condition: 'not active("Zeta.esm")'
+
   - &versionOldX
     type: say
     content:
