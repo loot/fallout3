@@ -84,6 +84,22 @@ common:
       - lang: zh_CN
         text: '不干净。"脏"数据是故意的，这是mod需要的功能。'
 
+  - &missingRequirementXforPlugin
+    type: warn
+    content:
+      - lang: en
+        text: 'Some of this plugins requirements seem to be missing. Please ensure you have correctly installed **%1%**.'
+      - lang: de
+        text: 'Einige der Voraussetzungen dieses Plugins scheinen zu fehlen. Bitte stellen Sie sicher, dass Sie **%1%** korrekt installiert haben.'
+      - lang: ja
+        text: 'このプラグインに必要なものの一部が不足しているようです。**%1%**が正しくインストールされていることを確認してください。'
+      - lang: pl
+        text: 'Część wymagań dla tej wtyczki wydaje się być brakująca. Upewnij się że poprawnie zainstalowałeś **%1%**.'
+      - lang: pt_BR
+        text: 'Alguns dos requerimentos deste plugin estão faltando. Por favor tenha certeza de que você instalou **%1%** corretamente.'
+      - lang: ru
+        text: 'Некоторые его требования отсутствуют. Убедитесь, что правильно установили **%1%**.'
+
   - &obsolete
     type: say
     content:
@@ -104,22 +120,6 @@ common:
       - lang: zh_CN
         text: '已过时。请升级到最新版本。 %1%'
     subs: [ '' ]
-
-  - &missingRequirementXforPlugin
-    type: warn
-    content:
-      - lang: en
-        text: 'Some of this plugins requirements seem to be missing. Please ensure you have correctly installed **%1%**.'
-      - lang: de
-        text: 'Einige der Voraussetzungen dieses Plugins scheinen zu fehlen. Bitte stellen Sie sicher, dass Sie **%1%** korrekt installiert haben.'
-      - lang: ja
-        text: 'このプラグインに必要なものの一部が不足しているようです。**%1%**が正しくインストールされていることを確認してください。'
-      - lang: pl
-        text: 'Część wymagań dla tej wtyczki wydaje się być brakująca. Upewnij się że poprawnie zainstalowałeś **%1%**.'
-      - lang: pt_BR
-        text: 'Alguns dos requerimentos deste plugin estão faltando. Por favor tenha certeza de que você instalou **%1%** corretamente.'
-      - lang: ru
-        text: 'Некоторые его требования отсутствуют. Убедитесь, что правильно установили **%1%**.'
 
   - &patch3rdParty
     type: say
