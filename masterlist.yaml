@@ -62,6 +62,65 @@ common:
     <<: *alreadyInOrFixedByUFO3P
     condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
 
+  - &alsoUseX
+    type: say
+    content:
+      - lang: en
+        text: 'It is highly recommended that you also use %1%.'
+      - lang: de
+        text: 'Es wird dringend empfohlen, dass Sie auch %1% benutzen.'
+
+  - &corrupt
+    type: warn
+    content:
+      - lang: en
+        text: 'This file is corrupt and should not be used.'
+      - lang: de
+        text: 'Diese Datei ist korrupt und sollte nicht benutzt werden.'
+      - lang: es
+        text: 'Este archivo puede corromper tu juego y no debería ser utilizado.'
+      - lang: ja
+        text: 'このファイルは壊れています。使用しないでください。'
+      - lang: pl
+        text: 'Ten plik jest zepsuty i nie powinien być używany.'
+      - lang: pt_BR
+        text: 'Este arquivo está corrompido e não deveria ser utilizado.'
+      - lang: ru
+        text: 'Файл испорчен и не должен использоваться.'
+
+  - &deleteOrDeactivateX
+    type: error
+    content:
+      - lang: en
+        text: 'Delete or deactivate. %1%'
+      - lang: de
+        text: 'Lösche oder deaktiviere. %1%'
+      - lang: ja
+        text: '%1%を削除するか非アクティブにしてください。'
+      - lang: ru
+        text: 'Не забудьте отключить или удалить. %1%'
+    subs: [ '' ]
+
+  - &deletePlugin
+    type: warn
+    content:
+      - lang: en
+        text: 'When using **%1%**. It''s recommended that you deactivate or delete this ESP file, but keep the resources (e.g. meshes, textures) installed with this mod. As they''re still required by **%1%**.'
+      - lang: de
+        text: 'Beim Nutzen von **%1%** ist es empfohlen, dass Sie die ESP-Datei deaktivieren oder löschen, aber die mitgelieferten Mittel (z.B Meshes, Texturen) beibehalten die mit dieser Mod mitinstalliert wurden. Diese werden immer noch von **%1%** vorausgesetzt.'
+      - lang: ja
+        text: '**%1%**を使用中の場合。このespファイルは無効化あるいは削除するのはおすすめしますが、このmodによってインストールされたリソース(メッシュ、テクスチャなど)はそのままにしておいてください。これらは**%1%**によって引き続き必要とされてます。'
+      - lang: ko
+        text: '**%1%** 모드를 사용중일 떈, 이 ESP 파일을 삭제하고 함께 설치된 리소스(예: 메쉬, 텍스쳐)만 남겨두는 걸 권장합니다. 리소스는 **%1%** 모드에서 필요로 합니다.'
+      - lang: pl
+        text: 'Używając **%1%**, jest rekomendowane abyś dezaktywował lub usunął ten plik ESP, ale pozostawił zasoby (siatki, tekstury) zainstalowane z tym modem. Ponieważ są wciąż wymagane przez **%1%**.'
+      - lang: pt
+        text: 'Ao utilizar **%1%**, é recomendado que você desative ou apage este ficheiro ESP, mas mantenha os recursos (ex. meshes, texturas) instalados por este mod. Sendo que os mesmos ainda são necessitados por **%1%**. '
+      - lang: pt_BR
+        text: 'Quando se usa **%1%**, é recomendado que você desative ou delete este arquivo ESP, mas que mantenha os recursos (ex. meshes, texturas) que vieram com esse mod.'
+      - lang: ru
+        text: 'Пока используется **%1%**, рекомендуется отключить или удалить esp этого мода, но оставить установленные ресурсы (meshes, textures). Т.к. они все еще требуются для **%1%**.'
+
   - &doNotClean
     type: say
     content:
@@ -77,12 +136,44 @@ common:
         text: 'IMTレコードはクリーンしないでください。これらは意図的に残されたデータであり、Modを機能させるために必要です。削除の取り消しは安全に行えますが、それ以外のことは行わないでください。'
       - lang: ko
         text: 'ITM 자료를 삭제하지 마십시오. 모드가 정상 작동하기 위해 의도적으로 남겨진 자료입니다. 삭제를 취소하는 것 이외에는 안전하지 않습니다.'
+      - lang: pl
+        text: 'Nie czyść rekordów ITM, są one zamierzone i potrzebne do działania tego moda. Jest bezpieczne aby cofnąć usunięcie rekordów (UDR), ale nie rób nic innego ponad to. '
       - lang: pt
         text: 'Não apagar os registos ITM. São intencionais e necessárias para o funcionamento do mod. É seguro restaurar os registos, mas não faça nada mais que isso.'
+      - lang: pt_BR
+        text: 'Não apague os registros ITM. Eles são intencionais e necessários para que o mod funcione. É seguro restaurar os registros, mas nada mais além disso.'
       - lang: ru
         text: 'Не очищать ITM-записи. "Грязные" правки оставлены специально и требуются для функционирования мода. Восстановить удаленные записи (UDR) можно безопасно, но идентичные мастерфайлу лучше оставить.'
       - lang: zh_CN
         text: '不干净。"脏"数据是故意的，这是mod需要的功能。'
+
+  - &harmful
+    type: warn
+    content:
+      - lang: en
+        text: 'This plugin is now considered harmful and should not be used.'
+      - lang: de
+        text: 'Diese Datei wird nun als schädlich angesehen und sollte nicht benutzt werden.'
+      - lang: ja
+        text: '現在では悪影響を与えると見なされているプラグインです。使用しないでください。'
+      - lang: ru
+        text: 'Этот плагин теперь считается небезопасным и не должен использоваться.'
+
+  - &missingRequirementXforPlugin
+    type: warn
+    content:
+      - lang: en
+        text: 'Some of this plugins requirements seem to be missing. Please ensure you have correctly installed **%1%**.'
+      - lang: de
+        text: 'Einige der Voraussetzungen dieses Plugins scheinen zu fehlen. Bitte stellen Sie sicher, dass Sie **%1%** korrekt installiert haben.'
+      - lang: ja
+        text: 'このプラグインに必要なものの一部が不足しているようです。**%1%**が正しくインストールされていることを確認してください。'
+      - lang: pl
+        text: 'Część wymagań dla tej wtyczki wydaje się być brakująca. Upewnij się że poprawnie zainstalowałeś **%1%**.'
+      - lang: pt_BR
+        text: 'Alguns dos requerimentos deste plugin estão faltando. Por favor tenha certeza de que você instalou **%1%** corretamente.'
+      - lang: ru
+        text: 'Некоторые его требования отсутствуют. Убедитесь, что правильно установили **%1%**.'
 
   - &obsolete
     type: say
@@ -104,22 +195,6 @@ common:
       - lang: zh_CN
         text: '已过时。请升级到最新版本。 %1%'
     subs: [ '' ]
-
-  - &missingRequirementXforPlugin
-    type: warn
-    content:
-      - lang: en
-        text: 'Some of this plugins requirements seem to be missing. Please ensure you have correctly installed **%1%**.'
-      - lang: de
-        text: 'Einige der Voraussetzungen dieses Plugins scheinen zu fehlen. Bitte stellen Sie sicher, dass Sie **%1%** korrekt installiert haben.'
-      - lang: ja
-        text: 'このプラグインに必要なものの一部が不足しているようです。**%1%**が正しくインストールされていることを確認してください。'
-      - lang: pl
-        text: 'Część wymagań dla tej wtyczki wydaje się być brakująca. Upewnij się że poprawnie zainstalowałeś **%1%**.'
-      - lang: pt_BR
-        text: 'Alguns dos requerimentos deste plugin estão faltando. Por favor tenha certeza de que você instalou **%1%** corretamente.'
-      - lang: ru
-        text: 'Некоторые его требования отсутствуют. Убедитесь, что правильно установили **%1%**.'
 
   - &patch3rdParty
     type: say
@@ -161,6 +236,40 @@ common:
       - lang: ru
         text: 'Похоже, что используется **%1%**, но патч совместимости для него не был подключен. Патч совместимости можно найти в установщике плагина.'
 
+  - &patchProvided
+    type: say
+    content:
+      - lang: en
+        text: 'You seem to be using **%1%**, but you have not enabled a compatibility patch for this mod. A compatibility patch is provided on this plugin''s mod page.'
+      - lang: de
+        text: 'Sie scheinen **%1%** zu nutzen, aber Sie haben keinen Kompatibilitätspatch für diese Mod aktiviert. Ein Kompatibilitätspatch wird auf dieser Plugins Mod-Seite zur Verfügung gestellt.'
+      - lang: ja
+        text: '**%1%**を使用しているようですが、このmodの互換性パッチが有効になっていません。互換性パッチは、このプラグインのmodページにあります。.'
+      - lang: ko
+        text: '**%1%** 모드와 사용하기 위한 호환성 패치가 작동 중이지 않습니다. 호환성 패치는 이 플러그인의 모드 페이지에서 제공 중입니다.'
+      - lang: pl
+        text: 'Wygląda na to że używasz **%1%**, ale nie masz aktywnej łatki zgodności dla tego moda. Łatka zgodności jest dostarczona na stronie internetowej tej wtyczki.'
+      - lang: pt
+        text: 'Você aparenta estar a utilizar **%1%**, mas não ativou o patch de compatibilidade para este mod. Um patch de compatibilidade está disponível na página mod deste plugin.'
+      - lang: pt_BR
+        text: 'Você aparenta estar usando **%1%**, mas não habilitou o patch de compatibilidade para este mod. Um patch de compatibilidade é provido na página desse plugin.'
+      - lang: ru
+        text: 'Похоже, что используется **%1%**, но патч совместимости для него не был подключен. Патч совместимости можно найти на странице плагина.'
+
+  - &requiresX
+    type: warn
+    content:
+      - lang: en
+        text: 'Requires: %1%'
+      - lang: de
+        text: 'Benötigt: %1%'
+      - lang: es
+        text: 'Requiere: %1%'
+      - lang: ja
+        text: '要: %1%'
+      - lang: ru
+        text: 'Требуется: %1%'
+
   - &requiresFOSE
     type: error
     content:
@@ -187,6 +296,24 @@ common:
       - lang: zh_CN
         text: '你已经安装了%1%，但是未发现FOSE！请查看FOSE的下载页面：[FOSE](http://fose.silverlock.org)。'
 
+  - &semiCompatible
+    type: say
+    content:
+      - lang: en
+        text: '%1% is not fully compatible with this mod. %2%'
+      - lang: de
+        text: '%1% ist nicht voll kompatibel mit dieser Mod. %2%'
+      - lang: ja
+        text: '%1%は%2%と完全な互換性がありません。'
+      - lang: ko
+        text: '%1% 모드는 이 모드와 완벽히 호환되지 않습니다. %2%'
+      - lang: pt
+        text: '%1% não é totalmente compatível com este mod. %2%'
+      - lang: pt_BR
+        text: '%1% não é completamente compatível com este mod. %2%'
+      - lang: ru
+        text: '%1% не полностью совместим с этим модом. %2%'
+
   - &useInstead
     type: warn
     content:
@@ -200,6 +327,8 @@ common:
     content:
       - lang: en
         text: 'Use only one %1%.'
+      - lang: da
+        text: 'Brug kun én %1%.'
       - lang: de
         text: 'Nutzen Sie nur einen %1%.'
       - lang: es
@@ -218,6 +347,68 @@ common:
         text: 'Используйте только один %1%.'
       - lang: zh_CN
         text: '只使用一个%1%。'
+
+  - &useVersion
+    type: error
+    content:
+      - lang: en
+        text: 'Use %1% version.'
+      - lang: de
+        text: 'Benutzen Sie die %1% Version.'
+      - lang: ja
+        text: '%1%バージョンを使用してください。'
+      - lang: ru
+        text: 'Используйте версию для %1%'
+  - &useVersionAnchorage
+    <<: *useVersion
+    subs: [ 'Anchorage' ]
+    condition: 'active("Anchorage.esm")'
+  - &useVersionThePitt
+    <<: *useVersion
+    subs: [ 'The Pitt' ]
+    condition: 'active("ThePitt.esm")'
+  - &useVersionBrokenSteel
+    <<: *useVersion
+    subs: [ 'Broken Steel' ]
+    condition: 'active("BrokenSteel.esm")'
+  - &useVersionPointLookout
+    <<: *useVersion
+    subs: [ 'Point Lookout' ]
+    condition: 'active("PointLookout.esm")'
+  - &useVersionZeta
+    <<: *useVersion
+    subs: [ 'Zeta' ]
+    condition: 'active("Zeta.esm")'
+
+  - &useVersionNon
+    type: error
+    content:
+      - lang: en
+        text: 'Use non-%1% version.'
+      - lang: de
+        text: 'Benutzen Sie die Nicht-%1% Version.'
+      - lang: ja
+        text: '%1%バージョン以外を使用してください。'
+  - &useVersionNonAnchorage
+    <<: *useVersionNon
+    subs: [ 'Anchorage' ]
+    condition: 'not active("Anchorage.esm")'
+  - &useVersionNonThePitt
+    <<: *useVersionNon
+    subs: [ 'The Pitt' ]
+    condition: 'not active("ThePitt.esm")'
+  - &useVersionNonBrokenSteel
+    <<: *useVersionNon
+    subs: [ 'Broken Steel' ]
+    condition: 'not active("BrokenSteel.esm")'
+  - &useVersionNonPointLookout
+    <<: *useVersionNon
+    subs: [ 'Point Lookout' ]
+    condition: 'not active("PointLookout.esm")'
+  - &useVersionNonZeta
+    <<: *useVersionNon
+    subs: [ 'Zeta' ]
+    condition: 'not active("Zeta.esm")'
 
   - &versionOldX
     type: say
@@ -269,6 +460,28 @@ common:
       - lang: zh_CN
         text: '你的%1%是最新的。'
 
+  - &versionXIncY
+    type: error
+    content:
+      - lang: en
+        text: 'Your installed version of %1% is not compatible with your version of %2%.'
+      - lang: da
+        text: 'Din installerede version af %1% er ikke kompatibel med din version af %2%.'
+      - lang: de
+        text: 'Ihre installierte Version von %1% ist nicht kompatibel mit Ihrer Version von %2%.'
+      - lang: ja
+        text: 'インストールされている%1%は使用中のバージョンの%2%との互換性がありません。'
+      - lang: ko
+        text: '현재 설치된 %1%의 버전은 %2%의 버전과 호환되지 않습니다.'
+      - lang: pl
+        text: 'Twoja zainstalowana wersja %1% nie jest kompatybilna z twoją wersją %2%.'
+      - lang: pt
+        text: 'A sua versão instalada de %1% não é compatível com a sua versão de %2%.'
+      - lang: pt_BR
+        text: 'A sua versão instalada de %1% não é compatível com a sua versão de %2%.'
+      - lang: ru
+        text: 'Установленная у вас версия %1% несовместима с версией %2%.'
+
   - &wildEdits
     type: say
     content:
@@ -290,7 +503,7 @@ common:
         text: 'Плагин содержит дикие правки, кроме ITM, UDR записей и удаленных навмешей и может потребовать дополнительной ручной чистки, чтобы не пересекаться с другими модами. %1%'
     subs: [ '' ]
 
-# Dirty Aliases
+# Cleaning data
   - &dirtyPlugin
     util: '[FO3Edit](https://www.nexusmods.com/fallout3/mods/637)'
     info:
@@ -300,8 +513,12 @@ common:
         text: 'Eine englische Säuberungsanleitung ist [hier](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3) verfügbar.'
       - lang: ja
         text: 'Dirty Editsについては[ここ](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#Apendix-A)を参照してください。'
+      - lang: pl
+        text: 'Wytłumaczenie o brudnych wtyczkach (Dirty Edits) jest dostępne [tutaj](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#Apendix-A).'
       - lang: pt
         text: 'Uma explição em inglês de Edição Suja (Dirty Edits) está disponível [aqui](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#Apendix-A).'
+      - lang: pt_BR
+        text: 'Uma explicação de Edições Sujas (Dirty Edits) está disponível [aqui](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#Apendix-A).'
       - lang: ru
         text: 'Объяснение по грязным правкам доступно [здесь](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#Apendix-A).'
   - &quickClean
@@ -315,8 +532,12 @@ common:
         text: 'xEdit 4.0.x+の公式リリースでクリーニングプロセスが改善されたため、以前のバージョンのxEditでクリーニングした場合は、追加のクリーニングが必要になることがあります。xEdit 4.0.x+を**Quick Auto Clean**モードで実行するためのガイドがあります[ここ] (https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3-4)。'
       - lang: ko
         text: 'xEdit 4.0.x+ 공식 출시와 함께 소개된 향상된 청소 기능으로 인해, 구 버전의 xEdit로 검증되었던 모드는 추가적인 청소가 필요할 수 있습니다. xEdit 4.0.x+ **Quick Auto Clean** 모드 실행 설명서는 [여기](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3-4)에서 찾을 수 있습니다. '
+      - lang: pl
+        text: 'W związku z ulepszeniami w procesie czyszczenia z oficjalnym wydaniem xEdit 4.0.x+, każdy mod zweryfikowany jako czysty w starszej wersji xEdit może wymagać dodatkowego czyszczenia. Poradnik jak używać xEdit 4.0.x+ w trybie **Szybkie Auto Czyszczenie** można znaleźć [tutaj](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3-4).'
       - lang: pt
         text: 'Devido a melhorias feitas ao processo de limpeza com o lançamento oficial de xEdit 4.0.x+, qualquer mod que seja verificado como limpo por versões anteriores de xEdit podem agora necessitar de limpeza adicional. Um guia em inglês para utilizar xEdit 4.0.x+ no modo **Limpeza Automática Rápida** pode ser encontrado [aqui](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3-4).'
+      - lang: pt_BR
+        text: 'Devido a melhorias feitas ao processo de limpeza com o lançamento oficial do xEdit 4.0.x+, quaisquer mods que foram verificados como limpos com versões antigas do xEdit podem agora necessitar de limpeza adicional. Uma guia para utilizar o xEdit 4.0.x+ no modo **Limpeza Automática Rápida** (Quick Auto Clean) pode ser encontrado [aqui](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3-4).'
       - lang: ru
         text: 'Из-за изменений в способе очистки в версии xEdit 4.0.x+, моды, что были проверены как чистые с предыдущими версиями xEdit могут вновь потребовать очистки. Руководство по запуску xEdit 4.0.x+ в режиме **Быстрой очистки** может быть найдено [здесь](https://tes5edit.github.io/docs/5-mod-cleaning-and-error-checking.html#s_5-3-4).'
   - &reqManualFix
@@ -328,8 +549,12 @@ common:
         text: 'Es wird streng empfohlen, keine Mods zu verwenden die **Gelöschte Navmeshes** beinhalten, da diese dafür bekannt sind Abstürze auszulösen. **Gelöschte Navmeshes** müssen manuell korrigiert werden (ein komplexer Prozess der vom Mod-Autor erledigt werden sollte). Mehr Informationen über **Gelöschte Navmeshes** werden [hier](https://www.creationkit.com/index.php?title=Fixing_Navmesh_Deletion_Tutorial) geboten.'
       - lang: ja
         text: '**navmeshの削除**を含むmodは使用しないことを強く推奨します。クラッシュの原因になります。**navmeshの削除**は手動で修正する必要があります(mod作成者が行う必要がある複雑なプロセスです)。**navmeshの削除**の詳細については[ここ](https://www.creationkit.com/index.php?title=Fixing_Navmesh_Deletion_Tutorial)を参照してください。'
+      - lang: pl
+        text: 'Jest silnie zalecane aby nie używać modów zawierających **Usunięte navmeshe** jako że są znane jako powód awarii. **Usunięte navmeshe** muszą zostać poprawione ręcznie(skomplikowany proces który powinien być wykonany przez autora modu). Więcej informacji o **Usuniętych navmeshach** można znaleźć [tutaj](https://www.creationkit.com/index.php?title=Fixing_Navmesh_Deletion_Tutorial).'
       - lang: pt
         text: 'É fortemente recomandado não utilizar mods que contenham **Navmeshes apagados** sendo que são conhecidos por causar falhas. **Navmeshes apagados** devem ser corrigidos manualmente(Um processo complexo que deve ser feito pelo autor do mod). Mais informação sobre **Navmeshes apagados** está disponível em inglês [aqui] (https://www.creationkit.com/index.php?title=Fixing_Navmesh_Deletion_Tutorial).'
+      - lang: pt_BR
+        text: 'É fortemente recomendade que você não utilize mods que contenham **Navmeshes deletados** pois eles são conhecidos por causar crashes. **Navmeshes deletados devem ser corrigos manualmente (Um processo complexo que deve ser feito pelo autor do mod). Mais informações em **Navmeshes deletadas** está disponível [aqui](https://www.creationkit.com/index.php?title=Fixing_Navmesh_Deletion_Tutorial).'
       - lang: ru
         text: 'Настоятельно не рекомендуется использовать моды с **удаленными навмешами** т.к. известно, что они вызывают вылеты. **удаленные навмеши** должны быть исправлены вручную(Комплексный процесс, который должен быть выполнен автором мода). Больше информации о **удаленных навмешах** можно найти [здесь](https://www.creationkit.com/index.php?title=Fixing_Navmesh_Deletion_Tutorial).'
 
