@@ -187,7 +187,7 @@ common:
       - lang: da
         text: 'Forældet. Opdatér til den nyeste version. %1%'
       - lang: de
-        text: 'Veraltet. Aktualisiere zur letzten Version. %1%'
+        text: 'Veraltet. Aktualisieren Sie zur letzten Version. %1%'
       - lang: es
         text: 'Obsoleto. Actualizar a la última versión. %1%'
       - lang: ja
@@ -343,6 +343,8 @@ common:
     content:
       - lang: en
         text: 'Use %1% instead.'
+      - lang: de
+        text: 'Nutzen Sie %1% stattdessen.'
       - lang: ja
         text: '代わりに%1%を使用してください。'
 
@@ -679,7 +681,11 @@ globals:
 # FOSE Plugins - Other messages
   - type: warn
     condition: 'file("NVSE/Plugins/nvac.dll")'
-    content: 'NVAC is installed under "NVSE/Plugins" but needs to be moved to "FOSE/Plugins" for FOSE to pick it up for Fallout 3.'
+    content:
+      - lang: en
+        text: 'NVAC is installed under "NVSE/Plugins" but needs to be moved to "FOSE/Plugins" for FOSE to pick it up for Fallout 3.'
+      - lang: de
+        text: 'NVAC ist unter "NVSE/Plugins" installiert aber es muss nach "FOSE/Plugins" verschoben werden um von FOSE erkannt zu werden für Fallout 3.'
 
 # FOSE Latest
   - <<: *versionOldX
@@ -1501,7 +1507,11 @@ plugins:
     msg:
       - *alreadyInFWE
       - type: say
-        content: 'Fallout 3 Wanderers Edition has an alternate approach to protecting traders that is a little weaker but might be sufficient.'
+        content:
+          - lang: en
+            text: 'Fallout 3 Wanderers Edition has an alternate approach to protecting traders that is a little weaker but might be sufficient.'
+          - lang: de
+            text: 'Fallout 3 Wanderers Edition hat einen alternativen Ansatz um Händler zu beschützen der zwar etwas schwächer ist aber möglicherweise ausreicht.'
         condition: 'file("FO3 Wanderers Edition - Main File.esm")'
   - name: 'Mart''s Mutant Mod - Natural Selection.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
@@ -2356,7 +2366,11 @@ plugins:
     msg:
       - type: say
         # Copied from https://www.nexusmods.com/fallout3/mods/12296
-        content: '"Make sure to disable any "tougher stealth" or similar components [of FWE], as it can make one section of this mod quite difficult, if not impossible."'
+        content:
+          - lang: en
+            text: '"Make sure to disable any "tougher stealth" or similar components [of FWE], as it can make one section of this mod quite difficult, if not impossible."'
+          - lang: de
+            text: '"Stellen Sie sicher jegliche "stärkere Tarnung(tougher stealth)" oder ähnlicher Komponenten [von FWE] zu deaktivieren, da es eine Sektion dieser Mod als sehr anstrengend bis womöglich unschaffbar gestalten könnte."'
         condition: 'active("FO3 Wanderers Edition - Main File.esm")'
     dirty:
       - <<: *quickClean
@@ -2608,7 +2622,11 @@ plugins:
   - name: 'BusworldV1.05.esp'
     msg:
       - type: say
-        content: 'Possible cause of CTDs, try disabling to test for improvments, or try BusworldV1.05noexpl.esp'
+        content:
+          - lang: en
+            text: 'Possible cause of CTDs, try disabling to test for improvments, or try BusworldV1.05noexpl.esp'
+          - lang: de
+            text: 'Mögliche Ursache von CTDs, versuchen Sie es zu deaktivieren um zu sehen ob sich Verbesserungen ergeben, oder versuchen Sie BusworldV1.05noexpl.esp'
   - name: 'FPS Grenade Hotkey.esp'
     msg:
       - *alreadyInFWE
@@ -2653,7 +2671,11 @@ plugins:
         util: 'FO3Edit v4.0.2e'
     msg:
       - type: warn
-        content: 'This plugin is read-only. Make sure to remove this flag in it''s properties!'
+        content:
+          - lang: en
+            text: 'This plugin is read-only. Make sure to remove this flag in it''s properties!'
+          - lang: de
+            text: 'Dieses Plugin ist schreibgeschützt. Stellen Sie sicher dieses Attribut unter dessen Eigenschaften zu entfernen!'
   - name: 'Confessor Cromwell has a Break_EV.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4660' ]
     tag:
@@ -3235,7 +3257,11 @@ plugins:
   - name: 'Tactical Weapons-Calibr-V3 762 fix.esp'
     msg:
       - type: say
-        content: 'Requires  resources from "Tactical Weapons by gRs Frederyck", but not the esp file'
+        content:
+          - lang: en
+            text: 'Requires resources from "Tactical Weapons by gRs Frederyck", but not the esp file'
+          - lang: de
+            text: 'Benötigt Ressourcen von "Tactical Weapons by gRs Frederyck", aber nicht die ESP Datei'
     tag:
       - Invent
   - name: 'frederyck calibr fix-excalibrified.esp'
@@ -4605,11 +4631,19 @@ plugins:
   - name: 'ZumbsDarkerSunglasses_no_replace.esp'
     msg:
       - type: say
-        content: 'Zumbs has asked you to rename this to ZumbsDarkerSunglasses.esp'
+        content:
+          - lang: en
+            text: 'Zumbs has asked you to rename this to ZumbsDarkerSunglasses.esp'
+          - lang: de
+            text: 'Zumbs bittet darum die Datei in ZumbsDarkerSunglasses.esp umzubenennen'
   - name: 'ZumbsDarkerSunglasses_screen_effect.esp'
     msg:
       - type: say
-        content: 'Zumbs has asked you to rename this to ZumbsDarkerSunglasses.esp'
+        content:
+          - lang: en
+            text: 'Zumbs has asked you to rename this to ZumbsDarkerSunglasses.esp'
+          - lang: de
+            text: 'Zumbs bittet darum die Datei in ZumbsDarkerSunglasses.esp umzubenennen'
   - name: 'Arwen_Realism_Core.esp'
     tag:
       - Actors.CombatStyle
@@ -5984,7 +6018,11 @@ plugins:
     msg:
       - type: say
         # Copied from the mod's Nexus page:
-        content: '"[The] camo-swapping system will only work if you have [FOSE](http://fose.silverlock.org/) installed. Users without FOSE can still use the mod as normal - but the camo-swapping system will simply not work until/unless FOSE is installed (and a message will appear saying as much)."'
+        content:
+          - lang: en
+            text: '"[The] camo-swapping system will only work if you have [FOSE](http://fose.silverlock.org/) installed. Users without FOSE can still use the mod as normal - but the camo-swapping system will simply not work until/unless FOSE is installed (and a message will appear saying as much)."'
+          - lang: de
+            text: '"[Das] Tarnungs-Tausch System wird nur funktionieren wenn Sie [FOSE](http://fose.silverlock.org/) installiert haben. Nutzer ohne FOSE können die Mod weiterhin wie normal verwenden - aber das Tarnungs-Tausch System wird solange nicht funktionieren solange nicht FOSE installiert ist (und eine Meldung wird erscheinen die diesen Umstand auch so wiedergibt)."'
         condition: 'not file("../fose_loader.exe")'
   - name: 'DragonskinBonusPack.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10183' ]
@@ -7720,7 +7758,11 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/17831' ]
     msg:
       - type: error
-        content: 'Do not use this plugin. It contains unresolved references which can potentially break your game.'
+        content:
+          - lang: en
+            text: 'Do not use this plugin. It contains unresolved references which can potentially break your game.'
+          - lang: de
+            text: 'Nutzen Sie nicht dieses Plugin. Es beinhaltet offene Referenzen welche möglicherweise Ihr Spiel kaputtmachen können.'
   - name: 'Simply_Lockers_rev01.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17964' ]
     dirty:
@@ -8612,7 +8654,11 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/22168' ]
     msg:
       - type: error
-        content: 'In order to use this plugin, remove the empty space before the .esm in it''s filename.'
+        content:
+          - lang: en
+            text: 'In order to use this plugin, remove the empty space before the .esm in it''s filename.'
+          - lang: de
+            text: 'Um dieses Plugin nutzen zu können, entfernen Sie das Leerzeichen vor dem .esm im dessen Dateinamen.'
   - name: 'FinalCourierMod.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22168' ]
     dirty:
