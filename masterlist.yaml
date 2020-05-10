@@ -4966,6 +4966,11 @@ plugins:
     clean:
       - crc: 0xE147E6CD
         util: 'FO3Edit v4.0.2e'
+  - name: 'Xepha''s Dynamic Weather - (Main|Anchorage|The Pitt|Broken Steel|Point Lookout).esp'
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Xepha''s Dynamic Weather - Main + DLC Merged.esp' ]
+        condition: 'file("Xepha''s Dynamic Weather - Main + DLC Merged.esp")'
   - name: 'Xepha''s Dynamic Weather - Main.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     tag:
