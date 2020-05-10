@@ -4975,6 +4975,10 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     tag:
       - C.Climate
+    msg:
+      - <<: *useInstead
+        subs: [ 'Xepha''s Dynamic Weather - Main + DLC Merged.esp' ]
+        condition: 'not file("Xepha''s Dynamic Weather - Main + DLC Merged.esp") and active("Anchorage.esm") and active("ThePitt.esm") and active("BrokenSteel.esm") and active("PointLookout.esm")'
     dirty:
       - <<: *quickClean
         crc: 0x9108F0AA
