@@ -4957,6 +4957,7 @@ plugins:
   - name: 'Xepha''s Dynamic Weather.*\.es(m|p)'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
   - name: 'Xepha''s Dynamic Weather.esm'
+    group: *overridesGroup
     tag:
       - C.Climate
       - Sound
@@ -4974,6 +4975,7 @@ plugins:
         subs: [ 'Xepha''s Dynamic Weather - Main + DLC Merged.esp' ]
         condition: 'active("Xepha''s Dynamic Weather - Main + DLC Merged.esp") and active("Anchorage.esm") and active("ThePitt.esm") and active("BrokenSteel.esm") and active("PointLookout.esm")'
   - name: 'Xepha''s Dynamic Weather - Main.esp'
+    group: *overridesGroup
     tag: [ C.Climate ]
     msg:
       - <<: *useInstead
