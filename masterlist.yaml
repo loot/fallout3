@@ -5106,16 +5106,6 @@ plugins:
     clean:
       - crc: 0x21D8EF94
         util: 'FO3Edit v4.0.2e'
-  - name: 'Xepha''s Dynamic Weather - Weather Machine.esp'
-    inc:
-      - 'Xepha''s Dynamic Weather - Weather Machine (+Rain).esp'
-      - 'Xepha''s Dynamic Weather - Weather Machine (Quest Added).esp'
-      - 'Xepha''s Dynamic Weather - Weather Machine (Start Game Added).esp'
-  - name: 'Xepha''s Dynamic Weather - Weather Machine (+Rain).esp'
-    inc:
-      - 'Xepha''s Dynamic Weather - Weather Machine.esp'
-      - 'Xepha''s Dynamic Weather - Weather Machine (Quest Added).esp'
-      - 'Xepha''s Dynamic Weather - Weather Machine (Start Game Added).esp'
   - name: 'Xepha''s Dynamic Weather - Weather Machine (Quest Added).esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     after: [ 'Xepha''s Dynamic Weather - Main + DLC Merged.esp' ]
