@@ -5084,14 +5084,17 @@ plugins:
     clean:
       - crc: 0xB5AF1AB2
         util: 'FO3Edit v4.0.2e'
+  - name: 'Xepha''s Dynamic Weather - Sandstorms.*\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Sandstorms ESP' ]
+        condition: 'many("Xepha''s Dynamic Weather - Sandstorms.*\.esp")'
   - name: 'Xepha''s Dynamic Weather - Sandstorms.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     after: [ 'Xepha''s Dynamic Weather - Main + DLC Merged.esp' ]
     req:
       - name: 'Xepha''s Dynamic Weather - Main.esp'
         condition: 'not file("Xepha''s Dynamic Weather - Main + DLC Merged.esp")'
-    inc:
-      - 'Xepha''s Dynamic Weather - Sandstorms + Armor Damage (FOSE).esp'
     clean:
       - crc: 0x0C2741F1
         util: 'FO3Edit v4.0.2e'
@@ -5101,8 +5104,6 @@ plugins:
     req:
       - name: 'Xepha''s Dynamic Weather - Main.esp'
         condition: 'not file("Xepha''s Dynamic Weather - Main + DLC Merged.esp")'
-    inc:
-      - 'Xepha''s Dynamic Weather - Sandstorms.esp'
     clean:
       - crc: 0x21D8EF94
         util: 'FO3Edit v4.0.2e'
