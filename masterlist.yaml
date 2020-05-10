@@ -5032,6 +5032,11 @@ plugins:
     clean:
       - crc: 0x2E88F8A9
         util: 'FO3Edit v4.0.2e'
+  - name: 'Xepha''s Dynamic Weather - (Anchorage /(NEE/)|Night Eye Edition|Rain /(NEE/)).esp'
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Xepha''s Dynamic Weather - Night Eye Edition Merged (NEE+OA+Rain).esp' ]
+        condition: 'active("Xepha''s Dynamic Weather - Night Eye Edition Merged (NEE+OA+Rain).esp") and active("Anchorage.esm") and active("Enhanced Weather - Rain and Snow.esm")'
   - name: 'Xepha''s Dynamic Weather - Anchorage (NEE).esp'
     after: [ 'Xepha''s Dynamic Weather - Main + DLC Merged.esp' ]
     req:
