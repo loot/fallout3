@@ -4953,8 +4953,10 @@ plugins:
   - name: 'Xepha''s Darkened Interiors - PL.esp'
     tag:
       - C.Light
-  - name: 'Xepha''s Dynamic Weather.esm'
+
+  - name: 'Xepha''s Dynamic Weather.*\.es(m|p)'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
+  - name: 'Xepha''s Dynamic Weather.esm'
     tag:
       - C.Climate
       - Sound
@@ -4972,7 +4974,6 @@ plugins:
         subs: [ 'Xepha''s Dynamic Weather - Main + DLC Merged.esp' ]
         condition: 'active("Xepha''s Dynamic Weather - Main + DLC Merged.esp") and active("Anchorage.esm") and active("ThePitt.esm") and active("BrokenSteel.esm") and active("PointLookout.esm")'
   - name: 'Xepha''s Dynamic Weather - Main.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     tag: [ C.Climate ]
     msg:
       - <<: *useInstead
@@ -4987,35 +4988,30 @@ plugins:
       - crc: 0xD1169DC5
         util: 'FO3Edit v4.0.2e'
   - name: 'Xepha''s Dynamic Weather - Anchorage.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     req: [ 'Xepha''s Dynamic Weather - Main.esp' ]
     tag: [ C.Climate ]
     clean:
       - crc: 0x92BD8F02
         util: 'FO3Edit v4.0.2e'
   - name: 'Xepha''s Dynamic Weather - The Pitt.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     req: [ 'Xepha''s Dynamic Weather - Main.esp' ]
     tag: [ C.Climate ]
     clean:
       - crc: 0x4C006640
         util: 'FO3Edit v4.0.2e'
   - name: 'Xepha''s Dynamic Weather - Broken Steel.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     req: [ 'Xepha''s Dynamic Weather - Main.esp' ]
     tag: [ C.Climate ]
     clean:
       - crc: 0x5925F03A
         util: 'FO3Edit v4.0.2e'
   - name: 'Xepha''s Dynamic Weather - Point Lookout.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     req: [ 'Xepha''s Dynamic Weather - Main.esp' ]
     tag: [ C.Climate ]
     clean:
       - crc: 0xEACE6C48
         util: 'FO3Edit v4.0.2e'
   - name: 'Xepha''s Dynamic Weather - Main + DLC Merged.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     group: *overridesGroup
     tag: [ C.Climate ]
     dirty:
@@ -5027,7 +5023,6 @@ plugins:
       - crc: 0x3023A75C
         util: 'FO3Edit v4.0.2e'
   - name: 'Xepha''s Dynamic Weather - Dynamic Sneak Bonus.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     after: [ 'Xepha''s Dynamic Weather - Main + DLC Merged.esp' ]
     req:
       - name: 'Xepha''s Dynamic Weather - Main.esp'
@@ -5036,31 +5031,26 @@ plugins:
       - crc: 0x2E88F8A9
         util: 'FO3Edit v4.0.2e'
   - name: 'Xepha''s Dynamic Weather - Anchorage (NEE).esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     after: [ 'Xepha''s Dynamic Weather - Main + DLC Merged.esp' ]
     req:
       - name: 'Xepha''s Dynamic Weather - Main.esp'
         condition: 'not file("Xepha''s Dynamic Weather - Main + DLC Merged.esp")'
   - name: 'Xepha''s Dynamic Weather - Night Eye Edition.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     after: [ 'Xepha''s Dynamic Weather - Main + DLC Merged.esp' ]
     req:
       - name: 'Xepha''s Dynamic Weather - Main.esp'
         condition: 'not file("Xepha''s Dynamic Weather - Main + DLC Merged.esp")'
   - name: 'Xepha''s Dynamic Weather - Night Eye Edition Merged (NEE+OA+Rain).esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     after: [ 'Xepha''s Dynamic Weather - Main + DLC Merged.esp' ]
     req:
       - name: 'Xepha''s Dynamic Weather - Main.esp'
         condition: 'not file("Xepha''s Dynamic Weather - Main + DLC Merged.esp")'
   - name: 'Xepha''s Dynamic Weather - Rain.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     after: [ 'Xepha''s Dynamic Weather - Main + DLC Merged.esp' ]
     req:
       - name: 'Xepha''s Dynamic Weather - Main.esp'
         condition: 'not file("Xepha''s Dynamic Weather - Main + DLC Merged.esp")'
   - name: 'Xepha''s Dynamic Weather - Rain (NEE).esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     after: [ 'Xepha''s Dynamic Weather - Main + DLC Merged.esp' ]
     req:
       - name: 'Xepha''s Dynamic Weather - Main.esp'
@@ -5071,7 +5061,6 @@ plugins:
       - crc: 0xCB83B785
         util: 'FO3Edit v4.0.2e'
   - name: 'Xepha''s Dynamic Weather - Green Tint Remover.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     clean:
       - crc: 0xB5AF1AB2
         util: 'FO3Edit v4.0.2e'
@@ -5081,7 +5070,6 @@ plugins:
         subs: [ 'Sandstorms ESP' ]
         condition: 'many("Xepha''s Dynamic Weather - Sandstorms.*\.esp")'
   - name: 'Xepha''s Dynamic Weather - Sandstorms.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     after: [ 'Xepha''s Dynamic Weather - Main + DLC Merged.esp' ]
     req:
       - name: 'Xepha''s Dynamic Weather - Main.esp'
@@ -5090,7 +5078,6 @@ plugins:
       - crc: 0x0C2741F1
         util: 'FO3Edit v4.0.2e'
   - name: 'Xepha''s Dynamic Weather - Sandstorms + Armor Damage (FOSE).esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     after: [ 'Xepha''s Dynamic Weather - Main + DLC Merged.esp' ]
     req:
       - name: 'Xepha''s Dynamic Weather - Main.esp'
@@ -5104,7 +5091,6 @@ plugins:
         subs: [ 'Weather Machine ESP' ]
         condition: 'many("Xepha''s Dynamic Weather - Weather Machine.*\.esp")'
   - name: 'Xepha''s Dynamic Weather - Weather Machine (Quest Added).esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     after: [ 'Xepha''s Dynamic Weather - Main + DLC Merged.esp' ]
     req:
       - name: 'Xepha''s Dynamic Weather - Main.esp'
@@ -5120,7 +5106,6 @@ plugins:
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 1
   - name: 'Xepha''s Dynamic Weather - Weather Machine (Start Game Added).esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     after: [ 'Xepha''s Dynamic Weather - Main + DLC Merged.esp' ]
     req:
       - name: 'Xepha''s Dynamic Weather - Main.esp'
@@ -5129,7 +5114,6 @@ plugins:
       - crc: 0x02127A1B
         util: 'FO3Edit v4.0.2e'
   - name: 'Xepha''s Dynamic Weather - Weather Machine (Vendor Added).esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     after: [ 'Xepha''s Dynamic Weather - Main + DLC Merged.esp' ]
     req:
       - name: 'Xepha''s Dynamic Weather - Main.esp'
@@ -5137,6 +5121,7 @@ plugins:
     clean:
       - crc: 0xEA546B62
         util: 'FO3Edit v4.0.2e'
+
   - name: 'Better DC Weather - 60-40.esp'
     inc:
       - 'Better DC Weather - 80-20.esp'
