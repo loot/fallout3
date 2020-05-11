@@ -5050,11 +5050,6 @@ plugins:
     clean:
       - crc: 0xAB6BAB61
         util: 'FO3Edit v4.0.3'
-  - name: 'WeatherGroupScriptTest.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
-    clean:
-      - crc: 0xCB83B785
-        util: 'FO3Edit v4.0.3'
   - name: 'Xepha''s Dynamic Weather - Sandstorms.*\.esp'
     msg:
       - <<: *useOnlyOneX
@@ -5092,6 +5087,11 @@ plugins:
   - name: 'Xepha''s Dynamic Weather - Weather Machine (Vendor Added).esp'
     clean:
       - crc: 0xEA546B62
+        util: 'FO3Edit v4.0.3'
+  - name: 'WeatherGroupScriptTest.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
+    clean:
+      - crc: 0xCB83B785
         util: 'FO3Edit v4.0.3'
 
   - name: 'Better DC Weather - 60-40.esp'
