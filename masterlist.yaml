@@ -5039,10 +5039,12 @@ plugins:
         subs: [ 'Xepha''s Dynamic Weather - Night Eye Edition Merged (NEE+OA+Rain).esp' ]
         condition: 'active("Xepha''s Dynamic Weather - Night Eye Edition Merged (NEE+OA+Rain).esp") and active("Anchorage.esm") and active("Enhanced Weather - Rain and Snow.esm")'
   - name: 'Xepha''s Dynamic Weather - Anchorage (NEE).esp'
+    after: [ 'Xepha''s Dynamic Weather - Anchorage.esp' ]
   - name: 'Xepha''s Dynamic Weather - Night Eye Edition.esp'
   - name: 'Xepha''s Dynamic Weather - Night Eye Edition Merged (NEE+OA+Rain).esp'
   - name: 'Xepha''s Dynamic Weather - Rain.esp'
   - name: 'Xepha''s Dynamic Weather - Rain (NEE).esp'
+    after: [ 'Xepha''s Dynamic Weather - Rain.esp' ]
   - name: 'WeatherGroupScriptTest.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
     clean:
