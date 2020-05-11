@@ -4989,27 +4989,22 @@ plugins:
     clean:
       - crc: 0xD1169DC5
         util: 'FO3Edit v4.0.2e'
-  - name: 'Xepha''s Dynamic Weather - Anchorage.esp'
+  - name: 'Xepha''s Dynamic Weather - (Anchorage|The Pitt|Broken Steel|Point Lookout).esp'
     req: [ 'Xepha''s Dynamic Weather - Main.esp' ]
     tag: [ C.Climate ]
+  - name: 'Xepha''s Dynamic Weather - Anchorage.esp'
     clean:
       - crc: 0x92BD8F02
         util: 'FO3Edit v4.0.2e'
   - name: 'Xepha''s Dynamic Weather - The Pitt.esp'
-    req: [ 'Xepha''s Dynamic Weather - Main.esp' ]
-    tag: [ C.Climate ]
     clean:
       - crc: 0x4C006640
         util: 'FO3Edit v4.0.2e'
   - name: 'Xepha''s Dynamic Weather - Broken Steel.esp'
-    req: [ 'Xepha''s Dynamic Weather - Main.esp' ]
-    tag: [ C.Climate ]
     clean:
       - crc: 0x5925F03A
         util: 'FO3Edit v4.0.2e'
   - name: 'Xepha''s Dynamic Weather - Point Lookout.esp'
-    req: [ 'Xepha''s Dynamic Weather - Main.esp' ]
-    tag: [ C.Climate ]
     clean:
       - crc: 0xEACE6C48
         util: 'FO3Edit v4.0.2e'
