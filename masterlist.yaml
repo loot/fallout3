@@ -5038,15 +5038,18 @@ plugins:
       - crc: 0x8F53F3BA
         util: 'FO3Edit v4.0.3'
   - name: 'Xepha''s Dynamic Weather - Night Eye Edition Merged (NEE+OA+Rain).esp'
+    tag: [ Sound ]
     clean:
       - crc: 0xC854F8D0
         util: 'FO3Edit v4.0.3'
   - name: 'Xepha''s Dynamic Weather - Rain.esp'
+    tag: [ Sound ]
     clean:
       - crc: 0x19BE6839
         util: 'FO3Edit v4.0.3'
   - name: 'Xepha''s Dynamic Weather - Rain (NEE).esp'
     after: [ 'Xepha''s Dynamic Weather - Rain.esp' ]
+    tag: [ Sound ]
     clean:
       - crc: 0xAB6BAB61
         util: 'FO3Edit v4.0.3'
