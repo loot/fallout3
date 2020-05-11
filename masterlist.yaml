@@ -5019,7 +5019,7 @@ plugins:
     clean:
       - crc: 0x3023A75C
         util: 'FO3Edit v4.0.2e'
-  - name: 'Xepha''s Dynamic Weather - (Anchorage /(NEE/|Dynamic Sneak Bonus|Green Tint Remover|Night Eye Edition|Rain|Sandstorms|Weather Machine).*\.esp'
+  - name: 'Xepha''s Dynamic Weather - (Anchorage /(NEE/)|Dynamic Sneak Bonus|Green Tint Remover|Night Eye Edition|Rain|Sandstorms|Weather Machine).*\.esp'
     after: [ 'Xepha''s Dynamic Weather - Main + DLC Merged.esp' ]
     req:
       - name: 'Xepha''s Dynamic Weather - Main.esp'
