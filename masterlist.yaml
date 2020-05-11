@@ -4981,7 +4981,7 @@ plugins:
     dirty:
       - <<: *quickClean
         crc: 0x9108F0AA
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 13
   - name: 'Xepha''s Dynamic Weather - (Anchorage|The Pitt|Broken Steel|Point Lookout).esp'
     req: [ 'Xepha''s Dynamic Weather - Main.esp' ]
