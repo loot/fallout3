@@ -618,19 +618,26 @@ bash_tags:
   - 'Factions'
   - 'Filter'
   - 'Graphics'
-  - 'Invent'
+  - 'Invent.Add'
+  - 'Invent.Change'
+  - 'Invent.Remove'
   - 'MustBeActiveIfImported'
   - 'Names'
   - 'NoMerge'
   - 'NPC.Class'
   - 'NPC.Race'
-  - 'Relations'
+  - 'Relations.Add'
+  - 'Relations.Change'
+  - 'Relations.Remove'
   - 'Relev'
   - 'Scripts'
   - 'Sound'
   - 'SpellStats'
   - 'Stats'
   - 'Text'
+  ## Removed & Deprecated Bash Tags ##
+  - 'Invent'
+  - 'Relations'
 
 globals:
   - type: say
