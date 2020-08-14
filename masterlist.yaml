@@ -632,6 +632,7 @@ bash_tags:
   - 'NPC.FaceGen'
   - 'NPC.Hair'
   - 'NPC.Race'
+  - 'ObjectBounds'
   - 'Relations.Add'
   - 'Relations.Change'
   - 'Relations.Remove'
@@ -643,6 +644,9 @@ bash_tags:
   - 'Text'
   ## Removed & Deprecated Bash Tags ##
   - 'Invent'
+  - 'NpcFaces'
+  - 'Npc.EyesOnly'
+  - 'Npc.HairOnly'
   - 'Relations'
 
 globals:
