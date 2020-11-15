@@ -736,6 +736,7 @@ groups:
     after: [ *overridesGroup ]
 
 plugins:
+###### Official Game Files ######
   - name: 'Anchorage.esm'
     group: *dlcGroup
     dirty:
@@ -746,42 +747,24 @@ plugins:
         udr: 10
   - name: 'ThePitt.esm'
     group: *dlcGroup
-    after:
-      - 'Anchorage.esm'
+    after: [ 'Anchorage.esm' ]
     dirty:
       - <<: *quickClean
         crc: 0xB38B3E44
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 53
         nav: 5
-  - name: 'StreetLights.esm'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/8069' ]
-    group: *dlcGroup
-    after:
-      - 'ThePitt.esm'
-      - 'Anchorage.esm'
-    msg: [ *alreadyInFOOK2 ]
-    dirty:
-      - <<: *quickClean
-        crc: 0xC5690E8E
-        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 18
-    clean:
-      - crc: 0x14016C17
-        util: 'FO3Edit v4.0.2f'
   - name: 'BrokenSteel.esm'
     group: *dlcGroup
     after:
-      - 'ThePitt.esm'
       - 'Anchorage.esm'
+      - 'ThePitt.esm'
       - 'StreetLights.esm'
     tag:
-      - Actors.ACBS
-      - Actors.AIPackages
+      - C.Regions
       - C.Water
       - Delev
-      - Factions
-      - Stats
+      - Relev
     dirty:
       - <<: *quickClean
         crc: 0x30011B79
@@ -792,10 +775,10 @@ plugins:
   - name: 'PointLookout.esm'
     group: *dlcGroup
     after:
-      - 'ThePitt.esm'
       - 'Anchorage.esm'
-      - 'StreetLights.esm'
+      - 'ThePitt.esm'
       - 'BrokenSteel.esm'
+      - 'StreetLights.esm'
     dirty:
       - <<: *quickClean
         crc: 0xD92704D8
@@ -804,11 +787,11 @@ plugins:
   - name: 'Zeta.esm'
     group: *dlcGroup
     after:
-      - 'ThePitt.esm'
       - 'Anchorage.esm'
-      - 'StreetLights.esm'
+      - 'ThePitt.esm'
       - 'BrokenSteel.esm'
       - 'PointLookout.esm'
+      - 'StreetLights.esm'
     dirty:
       - <<: *quickClean
         crc: 0x1D017E23
@@ -845,6 +828,23 @@ plugins:
         crc: 0x7AAABC4D
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 2
+
+  - name: 'StreetLights.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/8069' ]
+    group: *dlcGroup
+    after:
+      - 'ThePitt.esm'
+      - 'Anchorage.esm'
+    msg: [ *alreadyInFOOK2 ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xC5690E8E
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 18
+    clean:
+      - crc: 0x14016C17
+        util: 'FO3Edit v4.0.2f'
+
   - name: '20th Century Weapons.esm'
     url: [ 'http://modsreloaded.com/19th-and-20th-century-weapons' ]
     tag:
