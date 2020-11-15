@@ -747,8 +747,7 @@ plugins:
         udr: 10
   - name: 'ThePitt.esm'
     group: *dlcGroup
-    after:
-      - 'Anchorage.esm'
+    after: [ 'Anchorage.esm' ]
     dirty:
       - <<: *quickClean
         crc: 0xB38B3E44
@@ -758,8 +757,8 @@ plugins:
   - name: 'BrokenSteel.esm'
     group: *dlcGroup
     after:
-      - 'ThePitt.esm'
       - 'Anchorage.esm'
+      - 'ThePitt.esm'
       - 'StreetLights.esm'
     tag:
       - Actors.ACBS
@@ -778,10 +777,10 @@ plugins:
   - name: 'PointLookout.esm'
     group: *dlcGroup
     after:
-      - 'ThePitt.esm'
       - 'Anchorage.esm'
-      - 'StreetLights.esm'
+      - 'ThePitt.esm'
       - 'BrokenSteel.esm'
+      - 'StreetLights.esm'
     dirty:
       - <<: *quickClean
         crc: 0xD92704D8
@@ -790,11 +789,11 @@ plugins:
   - name: 'Zeta.esm'
     group: *dlcGroup
     after:
-      - 'ThePitt.esm'
       - 'Anchorage.esm'
-      - 'StreetLights.esm'
+      - 'ThePitt.esm'
       - 'BrokenSteel.esm'
       - 'PointLookout.esm'
+      - 'StreetLights.esm'
     dirty:
       - <<: *quickClean
         crc: 0x1D017E23
