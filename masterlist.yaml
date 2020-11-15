@@ -721,12 +721,9 @@ groups:
   - name: &dlcGroup DLC
     after: [ *veryEarlyGroup ]
 
-  - name: &uf4pGroup Unofficial Patches
-    after: [ *dlcGroup ]
-
   - name: &fixesGroup Fixes & Resources
     description: 'A group for modules that fix issues and bugs or add resources for other mods.'
-    after: [ *uf4pGroup ]
+    after: [ *dlcGroup ]
 
   - name: &fastTravelIndoorsGroup Fast Travel Indoors
     after: [ *fixesGroup ]
@@ -802,7 +799,7 @@ plugins:
 
   - name: 'Unofficial Fallout 3 Patch.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19122' ]
-    group: *uf4pGroup
+    group: *fixesGroup
     after:
       - 'ThePitt.esm'
       - 'Anchorage.esm'
@@ -1861,30 +1858,30 @@ plugins:
       - Names
       - NoMerge
   - name: 'Unofficial Fallout 3 Patch - Operation Anchorage.esp'
-    group: *uf4pGroup
+    group: *fixesGroup
     tag:
       - Deflst
       - Names
   - name: 'Unofficial Fallout 3 Patch - The Pitt.esp'
-    group: *uf4pGroup
+    group: *fixesGroup
     tag:
       - Deflst
       - Names
   - name: 'Unofficial Fallout 3 Patch - Broken Steel.esp'
-    group: *uf4pGroup
+    group: *fixesGroup
     tag:
       - Deflst
       - Names
       - NoMerge
   - name: 'Unofficial Fallout 3 Patch - Point Lookout.esp'
-    group: *uf4pGroup
+    group: *fixesGroup
     tag:
       - Deflst
       - Invent
       - Names
       - Stats
   - name: 'Unofficial Fallout 3 Patch - Mothership Zeta.esp'
-    group: *uf4pGroup
+    group: *fixesGroup
     tag:
       - Deflst
       - Names
