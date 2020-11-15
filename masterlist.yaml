@@ -724,7 +724,8 @@ groups:
   - name: &uf4pGroup Unofficial Patches
     after: [ *dlcGroup ]
 
-  - name: &fixesGroup Fixes
+  - name: &fixesGroup Fixes & Resources
+    description: 'A group for modules that fix issues and bugs or add resources for other mods.'
     after: [ *uf4pGroup ]
 
   - name: &fastTravelIndoorsGroup Fast Travel Indoors
