@@ -828,6 +828,34 @@ plugins:
         crc: 0x7AAABC4D
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 2
+  - name: 'Unofficial Fallout 3 Patch - Operation Anchorage.esp'
+    group: *fixesGroup
+    tag:
+      - Deflst
+      - Names
+  - name: 'Unofficial Fallout 3 Patch - The Pitt.esp'
+    group: *fixesGroup
+    tag:
+      - Deflst
+      - Names
+  - name: 'Unofficial Fallout 3 Patch - Broken Steel.esp'
+    group: *fixesGroup
+    tag:
+      - Deflst
+      - Names
+      - NoMerge
+  - name: 'Unofficial Fallout 3 Patch - Point Lookout.esp'
+    group: *fixesGroup
+    tag:
+      - Deflst
+      - Invent
+      - Names
+      - Stats
+  - name: 'Unofficial Fallout 3 Patch - Mothership Zeta.esp'
+    group: *fixesGroup
+    tag:
+      - Deflst
+      - Names
 
   - name: 'StreetLights.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8069' ]
@@ -1858,34 +1886,6 @@ plugins:
     tag:
       - Names
       - NoMerge
-  - name: 'Unofficial Fallout 3 Patch - Operation Anchorage.esp'
-    group: *fixesGroup
-    tag:
-      - Deflst
-      - Names
-  - name: 'Unofficial Fallout 3 Patch - The Pitt.esp'
-    group: *fixesGroup
-    tag:
-      - Deflst
-      - Names
-  - name: 'Unofficial Fallout 3 Patch - Broken Steel.esp'
-    group: *fixesGroup
-    tag:
-      - Deflst
-      - Names
-      - NoMerge
-  - name: 'Unofficial Fallout 3 Patch - Point Lookout.esp'
-    group: *fixesGroup
-    tag:
-      - Deflst
-      - Invent
-      - Names
-      - Stats
-  - name: 'Unofficial Fallout 3 Patch - Mothership Zeta.esp'
-    group: *fixesGroup
-    tag:
-      - Deflst
-      - Names
   - name: 'CinderBlockRockFix.esp'
     inc:
       - 'CinderblockRockFix2.esp'
