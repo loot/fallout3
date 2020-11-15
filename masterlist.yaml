@@ -725,11 +725,12 @@ groups:
     description: 'A group for modules that fix issues and bugs or add resources for other mods.'
     after: [ *dlcGroup ]
 
-  - name: &fastTravelIndoorsGroup Fast Travel Indoors
+  - name: &earlyLoadersGroup Early Loaders
+    description: 'A group for modules that should load early before most other mods.'
     after: [ *fixesGroup ]
 
   - name: default
-    after: [ *fastTravelIndoorsGroup ]
+    after: [ *earlyLoadersGroup ]
 
   - name: &overridesGroup Overrides
     after: [ default ]
@@ -6093,11 +6094,11 @@ plugins:
       - *FOSE
   - name: 'fasttravelfromindoors.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15108' ]
-    group: *fastTravelIndoorsGroup # It only does non-content changes to cells
+    group: *earlyLoadersGroup # It only does non-content changes to cells
     inc: [ 'FastTravelIndoors.esp' ]
   - name: 'FastTravelIndoors.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7624' ]
-    group: *fastTravelIndoorsGroup # It only does non-content changes to cells
+    group: *earlyLoadersGroup # It only does non-content changes to cells
     inc: [ 'fasttravelfromindoors.esp' ]
     msg:
       - <<: *wildEdits
