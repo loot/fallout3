@@ -760,13 +760,6 @@ plugins:
       - 'Anchorage.esm'
       - 'ThePitt.esm'
       - 'StreetLights.esm'
-    tag:
-      - Actors.ACBS
-      - Actors.AIPackages
-      - C.Water
-      - Delev
-      - Factions
-      - Stats
     dirty:
       - <<: *quickClean
         crc: 0x30011B79
