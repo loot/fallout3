@@ -799,7 +799,11 @@ plugins:
         itm: 15
 
   - name: 'Unofficial Fallout 3 Patch.esm'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/19122' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/3808/'
+        name: 'Unofficial Fallout 3 Patch'
+      - link: 'https://www.nexusmods.com/fallout3/mods/19122/'
+        name: 'Updated Unofficial Fallout 3 Patch'
     group: *fixesGroup
     after:
       - 'ThePitt.esm'
@@ -828,6 +832,10 @@ plugins:
         crc: 0x7AAABC4D
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 2
+  - name: 'Unofficial Fallout 3 Patch - (Operation Anchorage|The Pitt|Broken Steel|Point Lookout|Mothership Zeta)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/3808/'
+        name: 'Unofficial Fallout 3 Patch'
   - name: 'Unofficial Fallout 3 Patch - Operation Anchorage.esp'
     group: *fixesGroup
     tag:
