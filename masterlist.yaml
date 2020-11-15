@@ -809,7 +809,7 @@ plugins:
     msg:
       - <<: *obsolete
         subs: [ '[Updated Unofficial Fallout 3 Patch](https://www.nexusmods.com/fallout3/mods/19122)' ]
-        condition: 'version("Unofficial Fallout 3 Patch.esm", "1.8", <)'
+        condition: 'version("Unofficial Fallout 3 Patch.esm", "3.0", <)'
     tag:
       - C.Music
       - Deflst
