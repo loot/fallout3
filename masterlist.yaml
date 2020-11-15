@@ -715,7 +715,11 @@ globals:
     condition: 'file("../fose_loader.exe") and version("../fose_loader.exe", "0.1.2.2", >=)'
 
 groups:
+  - name: &veryEarlyGroup Very Early Loaders
+    description: 'A group for modules that should load early before the DLC and Unofficial patches.'
+
   - name: &dlcGroup DLC
+    after: [ *veryEarlyGroup ]
 
   - name: &uf4pGroup Unofficial Patches
     after: [ *dlcGroup ]
