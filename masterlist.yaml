@@ -798,6 +798,7 @@ plugins:
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 15
 
+###### Unofficial Patches ######
   - name: 'Unofficial Fallout 3 Patch.esm'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/19122/'
