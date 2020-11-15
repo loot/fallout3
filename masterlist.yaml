@@ -805,14 +805,7 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/19122/'
         name: 'Updated Unofficial Fallout 3 Patch'
     group: *fixesGroup
-    after:
-      - 'ThePitt.esm'
-      - 'Anchorage.esm'
-      - 'StreetLights.esm'
-      - 'BrokenSteel.esm'
-      - 'PointLookout.esm'
-      - 'Zeta.esm'
-      - 'ObjectPlacementFix.esm'
+    after: [ 'ObjectPlacementFix.esm' ]
     msg:
       - <<: *obsolete
         subs: [ '[Updated Unofficial Fallout 3 Patch](https://www.nexusmods.com/fallout3/mods/19122)' ]
