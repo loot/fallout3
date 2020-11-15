@@ -715,19 +715,22 @@ globals:
     condition: 'file("../fose_loader.exe") and version("../fose_loader.exe", "0.1.2.2", >=)'
 
 groups:
-  - name: &dlcGroup DLC
+  - name: &veryEarlyGroup Very Early Loaders
+    description: 'A group for modules that should load early before the DLC and Unofficial patches.'
 
-  - name: &uf4pGroup Unofficial Patches
+  - name: &dlcGroup DLC
+    after: [ *veryEarlyGroup ]
+
+  - name: &fixesGroup Fixes & Resources
+    description: 'A group for modules that fix issues and bugs or add resources for other mods.'
     after: [ *dlcGroup ]
 
-  - name: &fixesGroup Fixes
-    after: [ *uf4pGroup ]
-
-  - name: &fastTravelIndoorsGroup Fast Travel Indoors
+  - name: &earlyLoadersGroup Early Loaders
+    description: 'A group for modules that should load early before most other mods.'
     after: [ *fixesGroup ]
 
   - name: default
-    after: [ *fastTravelIndoorsGroup ]
+    after: [ *earlyLoadersGroup ]
 
   - name: &overridesGroup Overrides
     after: [ default ]
@@ -759,7 +762,6 @@ plugins:
     after:
       - 'Anchorage.esm'
       - 'ThePitt.esm'
-      - 'StreetLights.esm'
     tag:
       - C.Regions
       - C.Water
@@ -778,7 +780,6 @@ plugins:
       - 'Anchorage.esm'
       - 'ThePitt.esm'
       - 'BrokenSteel.esm'
-      - 'StreetLights.esm'
     dirty:
       - <<: *quickClean
         crc: 0xD92704D8
@@ -791,7 +792,6 @@ plugins:
       - 'ThePitt.esm'
       - 'BrokenSteel.esm'
       - 'PointLookout.esm'
-      - 'StreetLights.esm'
     dirty:
       - <<: *quickClean
         crc: 0x1D017E23
@@ -800,7 +800,7 @@ plugins:
 
   - name: 'Unofficial Fallout 3 Patch.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19122' ]
-    group: *uf4pGroup
+    group: *fixesGroup
     after:
       - 'ThePitt.esm'
       - 'Anchorage.esm'
@@ -831,10 +831,10 @@ plugins:
 
   - name: 'StreetLights.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8069' ]
-    group: *dlcGroup
+    group: *veryEarlyGroup
     after:
-      - 'ThePitt.esm'
       - 'Anchorage.esm'
+      - 'ThePitt.esm'
     msg: [ *alreadyInFOOK2 ]
     dirty:
       - <<: *quickClean
@@ -1859,30 +1859,30 @@ plugins:
       - Names
       - NoMerge
   - name: 'Unofficial Fallout 3 Patch - Operation Anchorage.esp'
-    group: *uf4pGroup
+    group: *fixesGroup
     tag:
       - Deflst
       - Names
   - name: 'Unofficial Fallout 3 Patch - The Pitt.esp'
-    group: *uf4pGroup
+    group: *fixesGroup
     tag:
       - Deflst
       - Names
   - name: 'Unofficial Fallout 3 Patch - Broken Steel.esp'
-    group: *uf4pGroup
+    group: *fixesGroup
     tag:
       - Deflst
       - Names
       - NoMerge
   - name: 'Unofficial Fallout 3 Patch - Point Lookout.esp'
-    group: *uf4pGroup
+    group: *fixesGroup
     tag:
       - Deflst
       - Invent
       - Names
       - Stats
   - name: 'Unofficial Fallout 3 Patch - Mothership Zeta.esp'
-    group: *uf4pGroup
+    group: *fixesGroup
     tag:
       - Deflst
       - Names
@@ -6094,11 +6094,11 @@ plugins:
       - *FOSE
   - name: 'fasttravelfromindoors.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15108' ]
-    group: *fastTravelIndoorsGroup # It only does non-content changes to cells
+    group: *earlyLoadersGroup # It only does non-content changes to cells
     inc: [ 'FastTravelIndoors.esp' ]
   - name: 'FastTravelIndoors.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7624' ]
-    group: *fastTravelIndoorsGroup # It only does non-content changes to cells
+    group: *earlyLoadersGroup # It only does non-content changes to cells
     inc: [ 'fasttravelfromindoors.esp' ]
     msg:
       - <<: *wildEdits
