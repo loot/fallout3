@@ -763,7 +763,6 @@ plugins:
     after:
       - 'Anchorage.esm'
       - 'ThePitt.esm'
-      - 'StreetLights.esm'
     tag:
       - C.Regions
       - C.Water
@@ -782,7 +781,6 @@ plugins:
       - 'Anchorage.esm'
       - 'ThePitt.esm'
       - 'BrokenSteel.esm'
-      - 'StreetLights.esm'
     dirty:
       - <<: *quickClean
         crc: 0xD92704D8
@@ -795,7 +793,6 @@ plugins:
       - 'ThePitt.esm'
       - 'BrokenSteel.esm'
       - 'PointLookout.esm'
-      - 'StreetLights.esm'
     dirty:
       - <<: *quickClean
         crc: 0x1D017E23
@@ -835,10 +832,10 @@ plugins:
 
   - name: 'StreetLights.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8069' ]
-    group: *dlcGroup
+    group: *veryEarlyGroup
     after:
-      - 'ThePitt.esm'
       - 'Anchorage.esm'
+      - 'ThePitt.esm'
     msg: [ *alreadyInFOOK2 ]
     dirty:
       - <<: *quickClean
