@@ -800,8 +800,6 @@ plugins:
 
   - name: 'Unofficial Fallout 3 Patch.esm'
     url:
-      - link: 'https://www.nexusmods.com/fallout3/mods/3808/'
-        name: 'Unofficial Fallout 3 Patch'
       - link: 'https://www.nexusmods.com/fallout3/mods/19122/'
         name: 'Updated Unofficial Fallout 3 Patch'
     group: *fixesGroup
@@ -823,34 +821,6 @@ plugins:
     clean:
       - crc: 0xF71755E7
         util: 'FO3Edit v4.0.3'
-  - name: 'Unofficial Fallout 3 Patch - (Operation Anchorage|The Pitt|Broken Steel|Point Lookout|Mothership Zeta)\.esp'
-    url:
-      - link: 'https://www.nexusmods.com/fallout3/mods/3808/'
-        name: 'Unofficial Fallout 3 Patch'
-    group: *fixesGroup
-  - name: 'Unofficial Fallout 3 Patch - Operation Anchorage.esp'
-    tag:
-      - Deflst
-      - Names
-  - name: 'Unofficial Fallout 3 Patch - The Pitt.esp'
-    tag:
-      - Deflst
-      - Names
-  - name: 'Unofficial Fallout 3 Patch - Broken Steel.esp'
-    tag:
-      - Deflst
-      - Names
-      - NoMerge
-  - name: 'Unofficial Fallout 3 Patch - Point Lookout.esp'
-    tag:
-      - Deflst
-      - Invent
-      - Names
-      - Stats
-  - name: 'Unofficial Fallout 3 Patch - Mothership Zeta.esp'
-    tag:
-      - Deflst
-      - Names
 
   - name: 'StreetLights.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8069' ]
