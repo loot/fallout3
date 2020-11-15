@@ -760,6 +760,11 @@ plugins:
       - 'Anchorage.esm'
       - 'ThePitt.esm'
       - 'StreetLights.esm'
+    tag:
+      - C.Regions
+      - C.Water
+      - Delev
+      - Relev
     dirty:
       - <<: *quickClean
         crc: 0x30011B79
