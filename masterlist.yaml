@@ -812,6 +812,31 @@ plugins:
     clean:
       - crc: 0xF71755E7
         util: 'FO3Edit v4.0.3'
+  - name: 'UUF3P - FWE Patch.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/19122' ]
+    after:
+      - 'delaypl.esp'
+      - 'FO3 Wanderers Edition - Main File.esp'
+    req:
+      - 'FO3 Wanderers Edition - Main File.esp'
+    tag:
+      - Actors.ACBS
+      - Actors.AIData
+      - Actors.Stats
+      - Deflst
+      - Delev
+      - Destructible
+      - Factions
+      - Graphics
+      - Invent
+      - Names
+      - Relations
+      - Relev
+      - Scripts
+      - Stats
+    clean:
+      - crc: 0xF404243F
+        util: 'FO3Edit v4.0.2e'
 
   - name: 'StreetLights.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8069' ]
@@ -8801,34 +8826,6 @@ plugins:
     clean:
       - crc: 0x196F177D
         util: 'FO3Edit v4.0.2e'
-
-  ### Fallout 3 Wanderers Edition-section
-  - name: 'UUF3P - FWE Patch.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/19122' ]
-    after:
-      - 'delaypl.esp'
-      - 'FO3 Wanderers Edition - Main File.esp'
-    req:
-      - 'FO3 Wanderers Edition - Main File.esp'
-    tag:
-      - Actors.ACBS
-      - Actors.AIData
-      - Actors.Stats
-      - Deflst
-      - Delev
-      - Destructible
-      - Factions
-      - Graphics
-      - Invent
-      - Names
-      - Relations
-      - Relev
-      - Scripts
-      - Stats
-    clean:
-      - crc: 0xF404243F
-        util: 'FO3Edit v4.0.2e'
-
 
   ### Load Late-section
   - name: 'Merged.esp'
