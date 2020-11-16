@@ -814,10 +814,8 @@ plugins:
         util: 'FO3Edit v4.0.3'
   - name: 'UUF3P - FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19122' ]
-    after:
-      - 'delaypl.esp'
-    req:
-      - 'FO3 Wanderers Edition - Main File.esp'
+    after: [ 'delaypl.esp' ]
+    req: [ 'FO3 Wanderers Edition - Main File.esp' ]
     clean:
       - crc: 0xF404243F
         util: 'FO3Edit v4.0.2e'
