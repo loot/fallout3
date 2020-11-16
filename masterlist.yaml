@@ -816,7 +816,6 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/19122' ]
     after:
       - 'delaypl.esp'
-      - 'FO3 Wanderers Edition - Main File.esp'
     req:
       - 'FO3 Wanderers Edition - Main File.esp'
     clean:
