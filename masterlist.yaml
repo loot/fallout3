@@ -856,10 +856,6 @@ plugins:
     clean:
       - crc: 0xF71755E7
         util: 'FO3Edit v4.0.3'
-  - name: 'UUF3P - FWE Patch.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/19122' ]
-    after: [ 'delaypl.esp' ]
-    req: [ 'FO3 Wanderers Edition - Main File.esp' ]
 
   - name: 'StreetLights.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8069' ]
