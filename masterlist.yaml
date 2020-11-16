@@ -819,21 +819,6 @@ plugins:
       - 'FO3 Wanderers Edition - Main File.esp'
     req:
       - 'FO3 Wanderers Edition - Main File.esp'
-    tag:
-      - Actors.ACBS
-      - Actors.AIData
-      - Actors.Stats
-      - Deflst
-      - Delev
-      - Destructible
-      - Factions
-      - Graphics
-      - Invent
-      - Names
-      - Relations
-      - Relev
-      - Scripts
-      - Stats
     clean:
       - crc: 0xF404243F
         util: 'FO3Edit v4.0.2e'
