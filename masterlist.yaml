@@ -8381,9 +8381,6 @@ plugins:
         crc: 0xA1FEB067
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
-    clean:
-      - crc: 0x3769FDB6
-        util: 'FO3Edit v4.0.2e'
   - name: 'RH_IronSights_Basic_PointLookoutPlugin.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
     clean:
