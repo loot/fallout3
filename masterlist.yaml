@@ -805,6 +805,7 @@ plugins:
         name: 'Updated Unofficial Fallout 3 Patch'
     group: *fixesGroup
     after: [ 'ObjectPlacementFix.esm' ]
+    req: [ *FOSE ]
     msg:
       - <<: *obsolete
         subs: [ '[Updated Unofficial Fallout 3 Patch](https://www.nexusmods.com/fallout3/mods/19122)' ]
