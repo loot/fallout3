@@ -1015,8 +1015,7 @@ plugins:
       - 'Mart''s Mutant Mod.esp'
       - 'Mart''s Mutant Mod - Tougher Traders.esp'
   - name: 'RoadWardensMMM.esp'
-    req:
-      - 'RoadWardens.esp'
+    req: [ 'RoadWardens.esp' ]
   - name: 'EVE.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8340' ]
     tag:
@@ -5610,8 +5609,7 @@ plugins:
   - name: 'Blackened FWE + MMM + Project Beauty.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
     after: [ 'UUF3P - FWE Patch.esp' ]
-    req:
-      - 'FO3 Wanderers Edition - Main File.esp'
+    req: [ 'FO3 Wanderers Edition - Main File.esp' ]
     tag:
       - Actors.Stats
       - Factions
@@ -5835,8 +5833,7 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'DynamicCrosshair.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15724' ]
-    req:
-      - *FOSE
+    req: [ *FOSE ]
     inc:
       - 'DarNifiedUIF3.esp'
       - name: 'Textures/MTUI'
@@ -5851,8 +5848,7 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Exit Terminals With Q.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19591' ]
-    req:
-      - *FOSE
+    req: [ *FOSE ]
   - name: 'FasterMorePowerfulMines.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5630' ]
     group: *overridesGroup
@@ -5863,8 +5859,7 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'FasterWaiting.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17755' ]
-    req:
-      - *FOSE
+    req: [ *FOSE ]
   - name: 'fasttravelfromindoors.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15108' ]
     group: *earlyLoadersGroup # It only does non-content changes to cells
@@ -5909,8 +5904,7 @@ plugins:
         condition: 'active("FO3 Wanderers Edition - Main File.esm")'
   - name: 'Flashlight-LOS.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15003' ]
-    req:
-      - *FOSE
+    req: [ *FOSE ]
     inc:
       - 'Flashlight-Performance.esp'
       - 'Flashlight-LOS-nonFOSE.esp'
@@ -5920,8 +5914,7 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Flashlight-Performance.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15003' ]
-    req:
-      - *FOSE
+    req: [ *FOSE ]
     inc:
       - 'Flashlight-LOS.esp'
       - 'Flashlight-LOS-nonFOSE.esp'
@@ -6299,8 +6292,7 @@ plugins:
         itm: 3
   - name: 'SaveHotKey.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16434' ]
-    req:
-      - *FOSE
+    req: [ *FOSE ]
   - name: 'Temple of the Union Overhaul.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19242' ]
     dirty:
