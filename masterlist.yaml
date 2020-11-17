@@ -1156,8 +1156,7 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'FO3 Wanderers Edition - Followers Enhanced.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
-    inc:
-      - 'FO3 Wanderers Edition - Followers Enhanced (BrokenSteel).esp'
+    inc: [ 'FO3 Wanderers Edition - Followers Enhanced (BrokenSteel).esp' ]
     tag:
       - Actors.ACBS
       - Actors.AIData
@@ -1169,8 +1168,7 @@ plugins:
         itm: 5
   - name: 'FO3 Wanderers Edition - Followers Enhanced (BrokenSteel).esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
-    inc:
-      - 'FO3 Wanderers Edition - Followers Enhanced.esp'
+    inc: [ 'FO3 Wanderers Edition - Followers Enhanced.esp' ]
     tag:
       - Actors.ACBS
       - Actors.AIData
@@ -1182,8 +1180,7 @@ plugins:
         itm: 6
   - name: 'FO3 Wanderers Edition - Alternate Travel.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
-    inc:
-      - 'FO3 Wanderers Edition - Optional No Fast Travel.esp'
+    inc: [ 'FO3 Wanderers Edition - Optional No Fast Travel.esp' ]
     dirty:
       - <<: *quickClean
         crc: 0x24711BA6
@@ -1469,8 +1466,7 @@ plugins:
     msg: [ *obsolete ]
   - name: 'Mart''s Mutant Mod - Soft Unleveler.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211' ]
-    inc:
-      - 'Mart''s Mutant Mod - Soft Unleveler Hardcore.esp'
+    inc: [ 'Mart''s Mutant Mod - Soft Unleveler Hardcore.esp' ]
     clean:
       - crc: 0x1B67B3DA
         util: 'FO3Edit v4.0.2e'
@@ -1615,20 +1611,15 @@ plugins:
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 4
   - name: 'DCInteriors_Georgtown.esm'
-    inc:
-      - 'DCInteriors_ComboEdition.esm'
+    inc: [ 'DCInteriors_ComboEdition.esm' ]
   - name: 'DCInteriors_LEnfntPl.esm'
-    inc:
-      - 'DCInteriors_ComboEdition.esm'
+    inc: [ 'DCInteriors_ComboEdition.esm' ]
   - name: 'DCInteriors_Mason.esm'
-    inc:
-      - 'DCInteriors_ComboEdition.esm'
+    inc: [ 'DCInteriors_ComboEdition.esm' ]
   - name: 'DCInteriors_SewardSq.esm'
-    inc:
-      - 'DCInteriors_ComboEdition.esm'
+    inc: [ 'DCInteriors_ComboEdition.esm' ]
   - name: 'DCInteriors_Takoma.esm'
-    inc:
-      - 'DCInteriors_ComboEdition.esm'
+    inc: [ 'DCInteriors_ComboEdition.esm' ]
   - name: 'Shojo Race.esm'
     tag:
       - Eyes
@@ -1648,8 +1639,7 @@ plugins:
     tag: [ Names ]
   - name: 'Canterbury Commons Interiors Embiggened.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13301' ]
-    inc:
-      - 'Canterbury Commons Interiors Embiggened.esp'
+    inc: [ 'Canterbury Commons Interiors Embiggened.esp' ]
     tag: [ Relations ]
     dirty:
       - <<: *reqManualFix
@@ -1664,8 +1654,7 @@ plugins:
         nav: 3
   - name: 'Canterbury Commons Interiors Embiggened.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13301' ]
-    inc:
-      - 'Canterbury Commons Interiors Embiggened.esm'
+    inc: [ 'Canterbury Commons Interiors Embiggened.esm' ]
     tag: [ Relations ]
     dirty:
       - <<: *reqManualFix
@@ -1684,8 +1673,7 @@ plugins:
       - 'https://www.nexusmods.com/fallout3/mods/6938'
       # Paradox merged mod
       - 'https://www.nexusmods.com/fallout3/mods/16787'
-    inc:
-      - 'Arms_dealer_V1.esp'
+    inc: [ 'Arms_dealer_V1.esp' ]
     tag: [ Invent ]
     dirty:
       # Paradox merged mod
@@ -1792,8 +1780,7 @@ plugins:
   - name: 'Error Correction.esp'
     tag: [ Scripts ]
   - name: 'Error Correction - All Transparency & Trees.esp'
-    inc:
-      - 'Error Correction - All Transparency.esp'
+    inc: [ 'Error Correction - All Transparency.esp' ]
   - name: 'Error Correction - Transparency Megaton.esp'
     inc:
       - 'Error Correction - All Transparency.esp'
@@ -1807,8 +1794,7 @@ plugins:
       - 'Error Correction - All Transparency.esp'
       - 'Error Correction - All Transparency & Trees.esp'
   - name: 'Error Correction - Trees.esp'
-    inc:
-      - 'Error Correction - All Transparency & Trees.esp'
+    inc: [ 'Error Correction - All Transparency & Trees.esp' ]
   - name: 'BringBackBael.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6545' ]
   - name: 'BlackWidowBurkeFix.esp'
@@ -1963,11 +1949,9 @@ plugins:
       - NPC.Race
       - NpcFaces
   - name: 'Fast VATS 1.esp'
-    inc:
-      - 'Fast VATS 2.esp'
+    inc: [ 'Fast VATS 2.esp' ]
   - name: 'Fast VATS 2.esp'
-    inc:
-      - 'Fast VATS 1.esp'
+    inc: [ 'Fast VATS 1.esp' ]
   - name: 'VATS_Normal_dmg_to_player.esp'
     inc:
       - 'Fast VATS 1.esp'
@@ -2036,15 +2020,13 @@ plugins:
     tag: [ Graphics ]
   - name: 'PAL - BASE File.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11326' ]
-    inc:
-      - 'PAL - MERGED.esp'
+    inc: [ 'PAL - MERGED.esp' ]
     clean:
       - crc: 0xF4D07D58
         util: 'FO3Edit v4.0.2e'
   - name: 'PAL - MERGED.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11326' ]
-    inc:
-      - 'PAL - BASE File.esp'
+    inc: [ 'PAL - BASE File.esp' ]
     clean:
       - crc: 0x36DC01F5
         util: 'FO3Edit v4.0.2e'
@@ -2298,11 +2280,9 @@ plugins:
   - name: 'Action for men v3.0.esp'
     tag: [ Invent ]
   - name: 'BoSTeslaEarly.esp'
-    inc:
-      - 'BoSTesla.esp'
+    inc: [ 'BoSTesla.esp' ]
   - name: 'BoSTesla.esp'
-    inc:
-      - 'BoSTeslaEarly.esp'
+    inc: [ 'BoSTeslaEarly.esp' ]
   - name: 'FF_DestructibleRadios.esp'
     tag: [ Destructible ]
   - name: 'Angry Scientists.esp'
@@ -2333,11 +2313,9 @@ plugins:
   - name: 'SelfSurgeryKit.esp'
     tag: [ Relev ]
   - name: 'RobCo Universal Battery Charger Kit.esp'
-    inc:
-      - 'RobCo Universal Battery Charger Kit - Zeta.esp'
+    inc: [ 'RobCo Universal Battery Charger Kit - Zeta.esp' ]
   - name: 'RobCo Universal Battery Charger Kit - Zeta.esp'
-    inc:
-      - 'RobCo Universal Battery Charger Kit.esp'
+    inc: [ 'RobCo Universal Battery Charger Kit.esp' ]
   - name: 'DALCO Inventory Sorter - Sack of Holding.esp'
     tag:
       - Names
@@ -2353,8 +2331,7 @@ plugins:
   - name: 'Megaton Sorter.esp'
     req: [ *FOSE ]
   - name: 'D.C. Confidential.esp'
-    inc:
-      - 'D.C. Confidential with Glow.esp'
+    inc: [ 'D.C. Confidential with Glow.esp' ]
   - name: 'ShadySands.esp'
     tag:
       - Factions
@@ -2491,11 +2468,9 @@ plugins:
       - crc: 0xAD77AE99
         util: 'FO3Edit v4.0.2e'
   - name: 'CrowdedCities_v2.esp'
-    inc:
-      - 'CrowdedCities_v2_lessNPCs.esp'
+    inc: [ 'CrowdedCities_v2_lessNPCs.esp' ]
   - name: 'CrowdedCities_v2_lessNPCs.esp'
-    inc:
-      - 'CrowdedCities_v2.esp'
+    inc: [ 'CrowdedCities_v2.esp' ]
   - name: 'Essential Caravan Merchants.esp'
     tag: [ Actors.ACBS ]
   - name: 'Essential_Zeta_Allies.esp'
@@ -2513,8 +2488,7 @@ plugins:
         itm: 55
   - name: 'MTC Wasteland Travellers (Optional)- Crowded Cities.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6044' ]
-    inc:
-      - 'MTC Wasteland Travellers (Optional)- Crowded Cities less NPCs.esp'
+    inc: [ 'MTC Wasteland Travellers (Optional)- Crowded Cities less NPCs.esp' ]
     dirty:
       - <<: *quickClean
         crc: 0x0E577EE9
@@ -2522,16 +2496,14 @@ plugins:
         itm: 23
   - name: 'MTC Wasteland Travellers (Optional)- Crowded Cities less NPCs.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6044' ]
-    inc:
-      - 'MTC Wasteland Travellers (Optional)- Crowded Cities.esp'
+    inc: [ 'MTC Wasteland Travellers (Optional)- Crowded Cities.esp' ]
     dirty:
       - <<: *quickClean
         crc: 0x540018FA
         util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 19
   - name: 'Outcast Scribes03.esp'
-    inc:
-      - 'OutcastCasdinArmorFix.esp'
+    inc: [ 'OutcastCasdinArmorFix.esp' ]
   - name: 'royphilipsevil.esp'
     tag:
       - Actors.ACBS
@@ -2551,12 +2523,10 @@ plugins:
   - name: 'Wasteland Gigolo.esp'
     tag: [ Scripts ]
   - name: 'Arefu Player House.esp'
-    inc:
-      - 'ArefuExpandedByAzar.esm'
+    inc: [ 'ArefuExpandedByAzar.esm' ]
   - name: 'DCStreet.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16924' ]
-    inc:
-      - 'DCStreet - BS.esp'
+    inc: [ 'DCStreet - BS.esp' ]
     dirty:
       - <<: *reqManualFix
         crc: 0x60D55E6B
@@ -2570,8 +2540,7 @@ plugins:
         nav: 8
   - name: 'DCStreet - BS.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16924' ]
-    inc:
-      - 'DCStreet.esp'
+    inc: [ 'DCStreet.esp' ]
     dirty:
       - <<: *reqManualFix
         crc: 0xA35DAE19
@@ -2604,8 +2573,7 @@ plugins:
       - Names
       - NoMerge
   - name: 'Vault 89 (player home) V1-35.esp'
-    inc:
-      - 'FNNSys.esm'
+    inc: [ 'FNNSys.esm' ]
     tag: [ Scripts ]
   - name: 'FOOK2 - Main.esp'
     tag:
@@ -2682,11 +2650,9 @@ plugins:
         subs: [ 'Apocalypse Armory' ]
         condition: 'file("Apocalypse Armory.esp")'
   - name: 'Apocalypse Armory - Grenade Hotkeys.esp'
-    inc:
-      - 'Apocalypse Armory - Grenade Hotkeys for DLC.esp'
+    inc: [ 'Apocalypse Armory - Grenade Hotkeys for DLC.esp' ]
   - name: 'Apocalypse Armory - Grenade Hotkeys for DLC.esp'
-    inc:
-      - 'Apocalypse Armory - Grenade Hotkeys.esp'
+    inc: [ 'Apocalypse Armory - Grenade Hotkeys.esp' ]
   - name: 'AA - FWE + DMG Replacement.esp'
     inc:
       - 'Apocalypse Armory - Grenade Hotkeys.esp'
@@ -2724,11 +2690,9 @@ plugins:
       - Names
       - NoMerge
   - name: 'FO3 Wanderers Edition - Lvl 30 Balance.esp'
-    inc:
-      - 'FO3 Wanderers Edition - Lvl 30 More Skills.esp'
+    inc: [ 'FO3 Wanderers Edition - Lvl 30 More Skills.esp' ]
   - name: 'FO3 Wanderers Edition - Lvl 30 More Skills.esp'
-    inc:
-      - 'FO3 Wanderers Edition - Lvl 30 Balance.esp'
+    inc: [ 'FO3 Wanderers Edition - Lvl 30 Balance.esp' ]
   - name: 'DALCO Inventory Sorter - FWE (Followers Enh).esp'
     tag:
       - Names
@@ -2738,14 +2702,11 @@ plugins:
       - Names
       - NoMerge
   - name: 'FO3 Wanderers Edition - Optional Free Play After MQ.esp'
-    inc:
-      - 'BrokenSteel.esm'
+    inc: [ 'BrokenSteel.esm' ]
   - name: 'FO3 Wanderers Edition - Optional Free Play After Mainquest.esp'
-    inc:
-      - 'BrokenSteel.esm'
+    inc: [ 'BrokenSteel.esm' ]
   - name: 'FO3 Wanderers Edition - Optional No Fast Travel.esp'
-    inc:
-      - 'FO3 Wanderers Edition - Alternate Travel.esp'
+    inc: [ 'FO3 Wanderers Edition - Alternate Travel.esp' ]
   - name: 'FO3 Wanderers Edition - Optional Worn Weapons.esp'
     tag:
       - Delev
@@ -2755,8 +2716,7 @@ plugins:
   - name: 'DarNifiedUIF3_FWE.esp'
     msg: [ *alreadyInFWE ]
   - name: 'FO3 Wanderers Edition - Project Beauty (HD Addition).esp'
-    inc:
-      - 'Project Beauty.esp'
+    inc: [ 'Project Beauty.esp' ]
   - name: 'FO3 Wanderers Edition - Talon Loot Crash Fix.esp'
     tag:
       - Delev
@@ -2764,27 +2724,21 @@ plugins:
   - name: 'Refurbishes [ALL].esp'
     msg: [ *alreadyInFOOK2 ]
   - name: 'Refurbish [OA].esp'
-    inc:
-      - 'Refurbishes [ALL].esp'
+    inc: [ 'Refurbishes [ALL].esp' ]
     msg: [ *alreadyInFOOK2 ]
   - name: 'Refurbish [OA] - FWE.esp'
-    inc:
-      - 'Refurbishes [ALL].esp'
+    inc: [ 'Refurbishes [ALL].esp' ]
   - name: 'Refurbish [TP].esp'
-    inc:
-      - 'Refurbishes [ALL].esp'
+    inc: [ 'Refurbishes [ALL].esp' ]
     msg: [ *alreadyInFOOK2 ]
   - name: 'Refurbish [BS].esp'
-    inc:
-      - 'Refurbishes [ALL].esp'
+    inc: [ 'Refurbishes [ALL].esp' ]
     msg: [ *alreadyInFOOK2 ]
   - name: 'Refurbish [PL].esp'
-    inc:
-      - 'Refurbishes [ALL].esp'
+    inc: [ 'Refurbishes [ALL].esp' ]
     msg: [ *alreadyInFOOK2 ]
   - name: 'Refurbish [MZ].esp'
-    inc:
-      - 'Refurbishes [ALL].esp'
+    inc: [ 'Refurbishes [ALL].esp' ]
     msg: [ *alreadyInFOOK2 ]
   - name: 'WeaponModKits.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3388' ]
@@ -2971,8 +2925,7 @@ plugins:
   - name: 'alienblasterammo.esp'
     tag: [ Stats ]
   - name: 'Arms_dealer_V1.esp'
-    inc:
-      - 'RH_IRONSIGHTS.esm'
+    inc: [ 'RH_IRONSIGHTS.esm' ]
   - name: 'ColtM4Carbines_RHIronSights.esp'
     tag: [ Graphics ]
   - name: 'Drone Cannon Fix.esp'
@@ -2980,11 +2933,9 @@ plugins:
   - name: 'EWE Supermutant Energy Weapons.esp'
     tag: [ Relev ]
   - name: 'H.E.R.K. - GOTY.esp'
-    inc:
-      - 'H.E.R.K. - GOTY & WMK.esp'
+    inc: [ 'H.E.R.K. - GOTY & WMK.esp' ]
   - name: 'H.E.R.K. - GOTY & WMK.esp'
-    inc:
-      - 'H.E.R.K. - GOTY.esp'
+    inc: [ 'H.E.R.K. - GOTY.esp' ]
   - name: 'laserPistolRetextured-IronSightsPatch.esp'
     tag: [ Graphics ]
   - name: 'laserRifleRetexturedScoped.esp'
@@ -2996,11 +2947,9 @@ plugins:
   - name: 'More308Ammo.esp'
     tag: [ Relev ]
   - name: 'RimfireRevolver.esp'
-    inc:
-      - 'RimfireRevolverCommon.esp'
+    inc: [ 'RimfireRevolverCommon.esp' ]
   - name: 'RimfireRevolverCommon.esp'
-    inc:
-      - 'RimfireRevolver.esp'
+    inc: [ 'RimfireRevolver.esp' ]
   - name: 'Silenced DKS-501.esp'
     tag:
       - Deflst
@@ -3027,11 +2976,9 @@ plugins:
       - Relev
       - Stats
   - name: 'WieldableTorches (Main).esp'
-    inc:
-      - 'Wieldable Torches (Optional).esp'
+    inc: [ 'Wieldable Torches (Optional).esp' ]
   - name: 'Wieldable Torches (Optional).esp'
-    inc:
-      - 'WieldableTorches (Main).esp'
+    inc: [ 'WieldableTorches (Main).esp' ]
   - name: 'WMKAA12Shotgun.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3388' ]
     tag: [ Graphics ]
@@ -3104,12 +3051,10 @@ plugins:
     msg: [ *alreadyInFOOK2 ]
     tag: [ Graphics ]
   - name: 'Cat Outfit Fanged.esp'
-    inc:
-      - 'Cat Outfit Only.esp'
+    inc: [ 'Cat Outfit Only.esp' ]
     tag: [ Eyes ]
   - name: 'Cat Outfit Only.esp'
-    inc:
-      - 'Cat Outfit Fanged.esp'
+    inc: [ 'Cat Outfit Fanged.esp' ]
     tag: [ Eyes ]
   - name: 'clearhelmets4radsuits.esp'
     tag: [ Graphics ]
@@ -3126,11 +3071,9 @@ plugins:
       - 'FO3Moon.esp'
       - 'FO3Nami.esp'
   - name: 'jonasclothesnonrplcr.esp'
-    inc:
-      - 'jonasclothesreplacer.esp'
+    inc: [ 'jonasclothesreplacer.esp' ]
   - name: 'jonasclothesreplacer.esp'
-    inc:
-      - 'jonasclothesnonrplcr.esp'
+    inc: [ 'jonasclothesnonrplcr.esp' ]
   - name: 'K2_ArmorsRedone_Raiders.esp'
     tag: [ Graphics ]
   - name: 'K2_GirlieGirlVaultBabe.esp'
@@ -3226,16 +3169,13 @@ plugins:
       - crc: 0xFBB84C75
         util: 'FO3Edit v4.0.2e'
   - name: 'CALIBR Ammo Schematics - CRAFT.esp'
-    inc:
-      - 'xCALIBR_Universe.esp'
+    inc: [ 'xCALIBR_Universe.esp' ]
   - name: 'Bobbleheads Begone.esp'
     tag: [ Scripts ]
   - name: 'BottleBrahminMilk.esp'
-    inc:
-      - 'BottleBrahminMilkFWE.esp'
+    inc: [ 'BottleBrahminMilkFWE.esp' ]
   - name: 'BottleBrahminMilkFWE.esp'
-    inc:
-      - 'BottleBrahminMilk.esp'
+    inc: [ 'BottleBrahminMilk.esp' ]
   - name: 'CantaburyCommonsGuards.esp'
     tag: [ Actors.ACBS ]
   - name: 'CantaburyCommonsGuards - DTO.esp'
@@ -3249,17 +3189,13 @@ plugins:
   - name: 'Improved Turret Hacking.esp'
     msg: [ *obsolete ]
   - name: 'Improved Turret Hacking - BASE.esp'
-    inc:
-      - 'Improved Turret Hacking - ALL.esp'
+    inc: [ 'Improved Turret Hacking - ALL.esp' ]
   - name: 'Improved Turret Hacking - BS.esp'
-    inc:
-      - 'Improved Turret Hacking - ALL.esp'
+    inc: [ 'Improved Turret Hacking - ALL.esp' ]
   - name: 'Improved Turret Hacking - Pitt.esp'
-    inc:
-      - 'Improved Turret Hacking - ALL.esp'
+    inc: [ 'Improved Turret Hacking - ALL.esp' ]
   - name: 'Improved Turret Hacking - PL.esp'
-    inc:
-      - 'Improved Turret Hacking - ALL.esp'
+    inc: [ 'Improved Turret Hacking - ALL.esp' ]
   - name: 'Improved Turret Hacking - ALL.esp'
     inc:
       - 'Improved Turret Hacking - BASE.esp'
@@ -3267,17 +3203,13 @@ plugins:
       - 'Improved Turret Hacking - Pitt.esp'
       - 'Improved Turret Hacking - PL.esp'
   - name: 'Improved Turret Reprogramming - BASE.esp'
-    inc:
-      - 'Improved Turret Reprogramming - ALL.esp'
+    inc: [ 'Improved Turret Reprogramming - ALL.esp' ]
   - name: 'Improved Turret Reprogramming - BS.esp'
-    inc:
-      - 'Improved Turret Reprogramming - ALL.esp'
+    inc: [ 'Improved Turret Reprogramming - ALL.esp' ]
   - name: 'Improved Turret Reprogramming - Pitt.esp'
-    inc:
-      - 'Improved Turret Reprogramming - ALL.esp'
+    inc: [ 'Improved Turret Reprogramming - ALL.esp' ]
   - name: 'Improved Turret Reprogramming - PL.esp'
-    inc:
-      - 'Improved Turret Reprogramming - ALL.esp'
+    inc: [ 'Improved Turret Reprogramming - ALL.esp' ]
   - name: 'Improved Turret Reprogramming - ALL.esp'
     inc:
       - 'Improved Turret Reprogramming - BASE.esp'
@@ -3299,12 +3231,10 @@ plugins:
   - name: 'Everso Slightly More Ammo.esp'
     tag: [ Relev ]
   - name: 'RealFragGrenade.esp'
-    inc:
-      - 'RealFragGrenade3.esp'
+    inc: [ 'RealFragGrenade3.esp' ]
     msg: [ *obsolete ]
   - name: 'RealFragGrenade3.esp'
-    inc:
-      - 'RealFragGrenade.esp'
+    inc: [ 'RealFragGrenade.esp' ]
   - name: 'Scavenger World - Updated v0.07.esp'
     msg: [ *obsolete ]
     tag: [ Relev ]
@@ -3336,11 +3266,9 @@ plugins:
       - Invent
       - Relev
   - name: 'ZORTS - Content Destruction - Normal.esp'
-    inc:
-      - 'ZORTS - Content Destruction - Extreme.esp'
+    inc: [ 'ZORTS - Content Destruction - Extreme.esp' ]
   - name: 'ZORTS - Content Destruction - Extreme.esp'
-    inc:
-      - 'ZORTS - Content Destruction - Normal.esp'
+    inc: [ 'ZORTS - Content Destruction - Normal.esp' ]
   - name: 'ZORTS - Custom HP.esp'
     inc:
       - 'ZORTS - Custom HP - FOOK2.esp'
@@ -3357,11 +3285,9 @@ plugins:
       - 'ZORTS - Custom HP - FOOK2.esp'
     tag: [ Scripts ]
   - name: 'ZORTS - Disable FOOK2 activate.esp'
-    inc:
-      - 'ZORTS - Disable FWE activate.esp'
+    inc: [ 'ZORTS - Disable FWE activate.esp' ]
   - name: 'ZORTS - Disable FWE activate.esp'
-    inc:
-      - 'ZORTS - Disable FOOK2 activate.esp'
+    inc: [ 'ZORTS - Disable FOOK2 activate.esp' ]
   - name: 'Zumbs''_Overhauled_Real_Time_Security.esp'
     msg: [ *obsolete ]
   - name: 'Zumbs''_Overhauled_Real_Time_Security_lockbash_only.esp'
@@ -3371,62 +3297,50 @@ plugins:
   - name: 'Replenishment.esp'
     tag: [ Scripts ]
   - name: 'UWWUT.esp'
-    inc:
-      - 'UWWUT_WT.esp'
+    inc: [ 'UWWUT_WT.esp' ]
     tag: [ Graphics ]
   - name: 'UWWUT - The Pitt Addon.esp'
-    inc:
-      - 'UWWUT_WT - TP Addon.esp'
+    inc: [ 'UWWUT_WT - TP Addon.esp' ]
     tag: [ Graphics ]
   - name: 'UWWUT - Broken Steel Addon.esp'
-    inc:
-      - 'UWWUT_WT - BS Addon.esp'
+    inc: [ 'UWWUT_WT - BS Addon.esp' ]
     tag: [ Graphics ]
   - name: 'UWWUT - WMK Addon.esp'
-    inc:
-      - 'UWWUT_WT - WMK Addon.esp'
+    inc: [ 'UWWUT_WT - WMK Addon.esp' ]
     tag: [ Graphics ]
   - name: 'UWWUT_WT.esp'
-    inc:
-      - 'UWWUT.esp'
+    inc: [ 'UWWUT.esp' ]
     tag:
       - Graphics
       - Stats
   - name: 'UWWUT_WT - TP Addon.esp'
-    inc:
-      - 'UWWUT - The Pitt Addon.esp'
+    inc: [ 'UWWUT - The Pitt Addon.esp' ]
     tag:
       - Graphics
       - Stats
   - name: 'UWWUT_WT - BS Addon.esp'
-    inc:
-      - 'UWWUT - Broken Steel Addon.esp'
+    inc: [ 'UWWUT - Broken Steel Addon.esp' ]
     tag:
       - Graphics
       - Stats
   - name: 'UWWUT_WT - WMK Addon.esp'
-    inc:
-      - 'UWWUT - WMK Addon.esp'
+    inc: [ 'UWWUT - WMK Addon.esp' ]
     tag:
       - Graphics
       - Stats
   - name: 'WeaponModKits-Unique.esp'
     tag: [ Graphics ]
   - name: 'unique_uniques.esp'
-    inc:
-      - 'unique_uniquesDLC.esp'
+    inc: [ 'unique_uniquesDLC.esp' ]
     tag: [ Graphics ]
   - name: 'unique_uniquesCut.esp'
-    inc:
-      - 'unique_uniquesCutDLC.esp'
+    inc: [ 'unique_uniquesCutDLC.esp' ]
     tag: [ Graphics ]
   - name: 'unique_uniquesDLC.esp'
-    inc:
-      - 'unique_uniques.esp'
+    inc: [ 'unique_uniques.esp' ]
     tag: [ Graphics ]
   - name: 'unique_uniquesCutDLC.esp'
-    inc:
-      - 'unique_uniquesCut.esp'
+    inc: [ 'unique_uniquesCut.esp' ]
     tag: [ Graphics ]
   - name: 'Less Useless Karma Gifts.esp'
     tag:
@@ -3516,23 +3430,17 @@ plugins:
       - NoMerge
       - Sound
   - name: 'WYB-Base.esp'
-    inc:
-      - 'WYB-Base+DLCs-Merged.esp'
+    inc: [ 'WYB-Base+DLCs-Merged.esp' ]
   - name: 'WYB-DLC-Anchorage.esp'
-    inc:
-      - 'WYB-Base+DLCs-Merged.esp'
+    inc: [ 'WYB-Base+DLCs-Merged.esp' ]
   - name: 'WYB-DLC-ThePitt.esp'
-    inc:
-      - 'WYB-Base+DLCs-Merged.esp'
+    inc: [ 'WYB-Base+DLCs-Merged.esp' ]
   - name: 'WYB-DLC-BrokenSteel.esp'
-    inc:
-      - 'WYB-Base+DLCs-Merged.esp'
+    inc: [ 'WYB-Base+DLCs-Merged.esp' ]
   - name: 'WYB-DLC-PointLookout.esp'
-    inc:
-      - 'WYB-Base+DLCs-Merged.esp'
+    inc: [ 'WYB-Base+DLCs-Merged.esp' ]
   - name: 'WYB-DLC-Zeta.esp'
-    inc:
-      - 'WYB-Base+DLCs-Merged.esp'
+    inc: [ 'WYB-Base+DLCs-Merged.esp' ]
   - name: 'Weld - Badge.esp'
     tag:
       - Actors.Anims
@@ -3861,23 +3769,17 @@ plugins:
   - name: 'WeaponModKits - FWE Talon Loot Crash Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22109' ]
   - name: 'AmyWong - DLCs (FOOK2 1.1 DIK).esp'
-    inc:
-      - 'AmyWong - DLCs.esp'
+    inc: [ 'AmyWong - DLCs.esp' ]
   - name: 'AmyWong - DLC01 Anchorage.esp'
-    inc:
-      - 'AmyWong - DLCs.esp'
+    inc: [ 'AmyWong - DLCs.esp' ]
   - name: 'AmyWong - DLC02 The Pitt.esp'
-    inc:
-      - 'AmyWong - DLCs.esp'
+    inc: [ 'AmyWong - DLCs.esp' ]
   - name: 'AmyWong - DLC03 Broken Steel.esp'
-    inc:
-      - 'AmyWong - DLCs.esp'
+    inc: [ 'AmyWong - DLCs.esp' ]
   - name: 'AmyWong - DLC04 Pt.Lookout.esp'
-    inc:
-      - 'AmyWong - DLCs.esp'
+    inc: [ 'AmyWong - DLCs.esp' ]
   - name: 'AmyWong - DLC05 Zeta.esp'
-    inc:
-      - 'AmyWong - DLCs.esp'
+    inc: [ 'AmyWong - DLCs.esp' ]
   - name: 'AmyWong - CALIBR 1.3 (FWE 5).esp'
     inc:
       - 'AmyWong - CALIBR 1.3.esp'
@@ -3895,8 +3797,7 @@ plugins:
       - Invent
       - Stats
   - name: 'Brisa - Cooking with FWE & MMM 6.esp'
-    inc:
-      - 'Brisa and FWE - Primary Needs Patch.esp'
+    inc: [ 'Brisa and FWE - Primary Needs Patch.esp' ]
   - name: 'slaveraider_newlook.esp'
     tag: [ Graphics ]
   - name: 'CharonImproved.esp'
@@ -3917,11 +3818,9 @@ plugins:
   - name: 'mesme.esp'
     tag: [ Actors.ACBS ]
   - name: 'WRWC - Classic Fallout.esp'
-    inc:
-      - 'WRWC - Right Handed.esp'
+    inc: [ 'WRWC - Right Handed.esp' ]
   - name: 'WRWC - Right Handed.esp'
-    inc:
-      - 'WRWC - Classic Fallout.esp'
+    inc: [ 'WRWC - Classic Fallout.esp' ]
   - name: 'RI_Core.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/834' ]
     clean:
@@ -3971,32 +3870,28 @@ plugins:
         util: 'FO3Edit v4.0.2f'
   - name: 'IMCN - The Pitt.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11418' ]
-    inc:
-      - 'IMCN - 5 DLC Merged.esp'
+    inc: [ 'IMCN - 5 DLC Merged.esp' ]
     tag: [ Stats ]
     clean:
       - crc: 0x9CD68B6B
         util: 'FO3Edit v4.0.2f'
   - name: 'IMCN - Operation Anchorage.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11418' ]
-    inc:
-      - 'IMCN - 5 DLC Merged.esp'
+    inc: [ 'IMCN - 5 DLC Merged.esp' ]
     tag: [ Stats ]
     clean:
       - crc: 0x5E5887FD
         util: 'FO3Edit v4.0.2f'
   - name: 'IMCN - Broken Steel.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11418' ]
-    inc:
-      - 'IMCN - 5 DLC Merged.esp'
+    inc: [ 'IMCN - 5 DLC Merged.esp' ]
     tag: [ Stats ]
     clean:
       - crc: 0x51A172E3
         util: 'FO3Edit v4.0.2f'
   - name: 'IMCN - Point Lookout.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11418' ]
-    inc:
-      - 'IMCN - 5 DLC Merged.esp'
+    inc: [ 'IMCN - 5 DLC Merged.esp' ]
     tag: [ Stats ]
     dirty:
       - <<: *quickClean
@@ -4005,8 +3900,7 @@ plugins:
         itm: 2
   - name: 'IMCN - Mothership Zeta.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11418' ]
-    inc:
-      - 'IMCN - 5 DLC Merged.esp'
+    inc: [ 'IMCN - 5 DLC Merged.esp' ]
     tag: [ Stats ]
     dirty:
       - <<: *quickClean
@@ -4039,8 +3933,7 @@ plugins:
         itm: 5
   - name: 'IMCN - BLTC RiPnO Combined Compatibility.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11418' ]
-    inc:
-      - 'IMCN - FWE Compatibility and Ingestibles.esp'
+    inc: [ 'IMCN - FWE Compatibility and Ingestibles.esp' ]
     dirty:
       - <<: *quickClean
         crc: 0x55C29F58
@@ -4048,8 +3941,7 @@ plugins:
         itm: 1
   - name: 'IMCN - BLTC Compatibility and Ingestibles.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11418' ]
-    inc:
-      - 'IMCN - FWE Compatibility and Ingestibles.esp'
+    inc: [ 'IMCN - FWE Compatibility and Ingestibles.esp' ]
     tag: [ Stats ]
     dirty:
       - <<: *quickClean
@@ -4067,8 +3959,7 @@ plugins:
         util: 'FO3Edit v4.0.2f'
   - name: 'IMCN - RiPnO Compatibility and Ingestibles.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11418' ]
-    inc:
-      - 'IMCN - FWE Compatibility and Ingestibles.esp'
+    inc: [ 'IMCN - FWE Compatibility and Ingestibles.esp' ]
     tag: [ Stats ]
     clean:
       - crc: 0x2118AF0B
@@ -4095,11 +3986,9 @@ plugins:
       - Actors.ACBS
       - Scripts
   - name: 'Easier_hacking_5_8.esp'
-    inc:
-      - 'Lucky_hacking_5.esp'
+    inc: [ 'Lucky_hacking_5.esp' ]
   - name: 'Lucky_hacking_5.esp'
-    inc:
-      - 'Easier_hacking_5_8.esp'
+    inc: [ 'Easier_hacking_5_8.esp' ]
   - name: 'EWE DLC Addon.esp'
     tag:
       - Deflst
@@ -4112,11 +4001,9 @@ plugins:
   - name: 'infiltrations.esp'
     tag: [ Scripts ]
   - name: 'Inebriation.esp'
-    inc:
-       - 'Inebriation.esp'
+    inc: [ 'Inebriation.esp' ]
   - name: 'Inebriation-FOSE.esp'
-    inc:
-       - 'Inebriation-FOSE.esp'
+    inc: [ 'Inebriation-FOSE.esp' ]
   - name: 'KillableKids.esp'
     inc:
       - 'KillableKidsOptional.esp'
@@ -4200,11 +4087,9 @@ plugins:
   - name: 'Owned!.esp'
     tag: [ Factions ]
   - name: 'RebalancedFire-Vanilla.esp'
-    inc:
-      - 'RebalancedFire-BrokenSteel.esp'
+    inc: [ 'RebalancedFire-BrokenSteel.esp' ]
   - name: 'RebalancedFire-BrokenSteel.esp'
-    inc:
-      - 'RebalancedFire-Vanilla.esp'
+    inc: [ 'RebalancedFire-Vanilla.esp' ]
   - name: 'RRRU +4 UFP.esp'
     tag: [ Deflst ]
   - name: 'RRRU +4.esp'
@@ -4224,11 +4109,9 @@ plugins:
   - name: 'T3T_MiscItemIcons.esp'
     msg: [ *alreadyInFWE ]
   - name: 'EnhVision.esp'
-    inc:
-      - 'EnhVisionHK.esp'
+    inc: [ 'EnhVisionHK.esp' ]
   - name: 'EnhVisionHK.esp'
-    inc:
-      - 'EnhVision.esp'
+    inc: [ 'EnhVision.esp' ]
   - name: 'Weapon Repair Kits.esp'
     tag: [ Relev ]
   - name: 'WRK Final - Plugin.esp'
@@ -4281,29 +4164,21 @@ plugins:
   - name: 'Arwen_GOTY_Hard-Core.esp'
     tag: [ NoMerge ]
   - name: 'Arwen_Armor.esp'
-    inc:
-      - 'Arwen_FULL_Tweaks.esp'
+    inc: [ 'Arwen_FULL_Tweaks.esp' ]
   - name: 'Arwen_Less_Is_More.esp'
-    inc:
-      - 'Arwen_FULL_Tweaks.esp'
+    inc: [ 'Arwen_FULL_Tweaks.esp' ]
   - name: 'Arwen_Less-Is-More.esp'
-    inc:
-      - 'Arwen_FULL_Tweaks.esp'
+    inc: [ 'Arwen_FULL_Tweaks.esp' ]
   - name: 'Arwen_Localized_Damage.esp'
-    inc:
-      - 'Arwen_FULL_Tweaks.esp'
+    inc: [ 'Arwen_FULL_Tweaks.esp' ]
   - name: 'Arwen_SmarterAI.esp'
-    inc:
-      - 'Arwen_FULL_Tweaks.esp'
+    inc: [ 'Arwen_FULL_Tweaks.esp' ]
   - name: 'Arwen_Survival.esp'
-    inc:
-      - 'Arwen_FULL_Tweaks.esp'
+    inc: [ 'Arwen_FULL_Tweaks.esp' ]
   - name: 'Arwen_Tweaks_Main.esp'
-    inc:
-      - 'Arwen_FULL_Tweaks.esp'
+    inc: [ 'Arwen_FULL_Tweaks.esp' ]
   - name: 'Arwen_Weapons.esp'
-    inc:
-      - 'Arwen_FULL_Tweaks.esp'
+    inc: [ 'Arwen_FULL_Tweaks.esp' ]
   - name: 'Arwen_Med-Tec.esp'
     tag: [ Names ]
   - name: 'Arwen_GOTY_Med-Tec.esp'
@@ -4447,11 +4322,9 @@ plugins:
       - crc: 0x034B7601
         util: 'FO3Edit v4.0.2e'
   - name: 'REAL-ThirdViewMod.esp'
-    inc:
-      - 'LOWER-real-thirdpersonview.esp'
+    inc: [ 'LOWER-real-thirdpersonview.esp' ]
   - name: 'LOWER-real-thirdpersonview.esp'
-    inc:
-      - 'REAL-ThirdViewMod.esp'
+    inc: [ 'REAL-ThirdViewMod.esp' ]
   - name: '(Clean-Deluxe GOTY|(Dust-away|Paper-Shredder|Rock-Out)( - DLC support)?)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17115' ]
   - name: '(Dust-away|Paper-Shredder|Rock-Out)( - DLC support)?\.esp'
@@ -4463,8 +4336,7 @@ plugins:
     url:
       - 'https://www.nexusmods.com/fallout3/mods/2672'
       - 'https://www.nexusmods.com/fallout3/mods/16787'
-    inc:
-      - 'Fellout-SOTD.esp'
+    inc: [ 'Fellout-SOTD.esp' ]
     clean:
       # 2672
       - crc: 0xEA441324
@@ -4474,8 +4346,7 @@ plugins:
         util: 'FO3Edit v4.0.2e'
     msg: [ *alreadyInFOOK2 ]
   - name: 'Fellout-SOTD.esp'
-    inc:
-      - 'Either Fellout-Full.esp'
+    inc: [ 'Either Fellout-Full.esp' ]
     msg: [ *alreadyInFOOK2 ]
   - name: 'Fellout-Anchorage.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2672' ]
@@ -4543,8 +4414,7 @@ plugins:
   - name: 'URWL.esp'
     tag: [ C.Light ]
   - name: 'URWL-Normal Color Saturation.esp'
-    inc:
-      - 'URWL.esp'
+    inc: [ 'URWL.esp' ]
     tag: [ C.Light ]
   - name: 'URWLRain.esp'
     tag:
@@ -4710,17 +4580,13 @@ plugins:
         util: 'FO3Edit v4.0.3'
 
   - name: 'Better DC Weather - 60-40.esp'
-    inc:
-      - 'Better DC Weather - 80-20.esp'
+    inc: [ 'Better DC Weather - 80-20.esp' ]
   - name: 'Better DC Weather - 80-20.esp'
-    inc:
-      - 'Better DC Weather - 60-40.esp'
+    inc: [ 'Better DC Weather - 60-40.esp' ]
   - name: 'CRAFTHelper_ReplaceWorkbenchScript.esp'
-    inc:
-      - 'CRAFT - Activation Perk.esp'
+    inc: [ 'CRAFT - Activation Perk.esp' ]
   - name: 'CRAFTHelper_ReplaceWorkbenchScriptFWE.esp'
-    inc:
-      - 'CRAFT - Activation Perk.esp'
+    inc: [ 'CRAFT - Activation Perk.esp' ]
   - name: '20th Century v4 ALIVE (Vendor).esp'
     tag: [ Invent ]
   - name: '20th Century v4 ALIVE (NPC_Settler).esp'
@@ -4819,18 +4685,14 @@ plugins:
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 3
   - name: 'FWE Ammo Weight for 20th Century.esp'
-    inc:
-      - 'FWE Realistic Ammo Weight inc 20th Cent.esp'
+    inc: [ 'FWE Realistic Ammo Weight inc 20th Cent.esp' ]
   - name: 'FWE-20thCent Ammo Weight in Names.esp'
-    inc:
-      - 'FWE Realistic Ammo Weight in Names inc. 20th Cent.esp'
+    inc: [ 'FWE Realistic Ammo Weight in Names inc. 20th Cent.esp' ]
     tag: [ Names ]
   - name: 'FWE Realistic Ammo Weight inc 20th Cent.esp'
-    inc:
-      - 'FWE Ammo Weight for 20th Century.esp'
+    inc: [ 'FWE Ammo Weight for 20th Century.esp' ]
   - name: 'FWE Realistic Ammo Weight in Names inc. 20th Cent.esp'
-    inc:
-      - 'FWE-20thCent Ammo Weight in Names.esp'
+    inc: [ 'FWE-20thCent Ammo Weight in Names.esp' ]
     tag: [ Names ]
   - name: 'CFWR_EVE_LoadLast.esp'
     tag:
@@ -4940,8 +4802,7 @@ plugins:
       - Sound
       - Stats
   - name: 'xCALIBRUniverse_FWE_FPS.esp'
-    inc:
-      - 'xCALIBRUniverse_FWE_Tactical.esp'
+    inc: [ 'xCALIBRUniverse_FWE_Tactical.esp' ]
     tag:
       - Graphics
       - Invent
@@ -4949,8 +4810,7 @@ plugins:
       - Sound
       - Stats
   - name: 'xCALIBRUniverse_FWE_Tactical.esp'
-    inc:
-      - 'xCALIBRUniverse_FWE_FPS.esp'
+    inc: [ 'xCALIBRUniverse_FWE_FPS.esp' ]
     tag:
       - Graphics
       - Invent
@@ -5547,8 +5407,7 @@ plugins:
         itm: 3
   - name: 'DarNifiedUIF3.esp'
     url: [ 'http://modsreloaded.com/darnified-ui-f3' ]
-    inc:
-      - 'DynamicCrosshair.esp'
+    inc: [ 'DynamicCrosshair.esp' ]
     clean:
       - crc: 0x33D1F89A
         util: 'FO3Edit v4.0.2e'
