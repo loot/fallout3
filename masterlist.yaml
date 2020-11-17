@@ -856,6 +856,14 @@ plugins:
     clean:
       - crc: 0xF71755E7
         util: 'FO3Edit v4.0.3'
+  - name: 'Goodies.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/19122/' ]
+    tag:
+      - Delev
+      - Invent.Add
+      - Invent.Remove
+      - Names
+      - Relev
 
   - name: 'StreetLights.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8069' ]
