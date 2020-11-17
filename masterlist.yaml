@@ -2460,8 +2460,8 @@ plugins:
       - Actors.Stats
       - Invent
       - Names
-      - R. Attributes-F
-      - R. Attributes-M
+      - R.Attributes-F
+      - R.Attributes-M
       - R.Skills
       - Scripts
   - name: 'Clothed American Soldiers.esp'
@@ -6026,7 +6026,7 @@ plugins:
     tag:
       - Actors.AIPackages
       - Actors.Stats
-      - Inven
+      - Invent
       - Scripts
     dirty:
       - <<: *reqManualFix
