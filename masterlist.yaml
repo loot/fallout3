@@ -2231,8 +2231,7 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'PLweightadjust.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7268' ]
-    after:
-      - 'Another Interior Mod.esp'
+    after: [ 'Another Interior Mod.esp' ]
     tag:
       - Invent
       - Scripts
@@ -2901,8 +2900,7 @@ plugins:
         itm: 79
   - name: 'RH_WMK_Bridge.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17757' ]
-    after:
-      - 'WMK Uniques for FWE_EVE Addon.esp'
+    after: [ 'WMK Uniques for FWE_EVE Addon.esp' ]
     tag:
       - Relev
       - Delev
@@ -5611,8 +5609,7 @@ plugins:
         condition: 'many("Binoculars( and Scopes)?\.esp")'
   - name: 'Blackened FWE + MMM + Project Beauty.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
-    after:
-      - 'UUF3P - FWE Patch.esp'
+    after: [ 'UUF3P - FWE Patch.esp' ]
     req:
       - 'FO3 Wanderers Edition - Main File.esp'
     tag:
@@ -7792,12 +7789,10 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
   - name: '(TWPC) 20CWRECW-WMK-RIFWC-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
-    after:
-      - 'Bashed Patch, 0.esp'
+    after: [ 'Bashed Patch, 0.esp' ]
   - name: '(TWPC) BBB-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
-    after:
-      - 'Bashed Patch, 0.esp'
+    after: [ 'Bashed Patch, 0.esp' ]
     clean:
       - crc: 0x289306D0
         util: 'FO3Edit v4.0.2e'
@@ -7833,22 +7828,19 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) BRCC-PB Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
-    after:
-      - 'Bashed Patch, 0.esp'
+    after: [ 'Bashed Patch, 0.esp' ]
     clean:
       - crc: 0xADA18F5B
         util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) BVR-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
-    after:
-      - 'Bashed Patch, 0.esp'
+    after: [ 'Bashed Patch, 0.esp' ]
     clean:
       - crc: 0x8E972AC6
         util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) CMRP-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
-    after:
-      - 'Bashed Patch, 0.esp'
+    after: [ 'Bashed Patch, 0.esp' ]
     clean:
       - crc: 0xE3E8E63C
         util: 'FO3Edit v4.0.2e'
@@ -7876,8 +7868,7 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) GE-UUF3P Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
-    after:
-      - 'Bashed Patch, 0.esp'
+    after: [ 'Bashed Patch, 0.esp' ]
     clean:
       - crc: 0xD1D87233
         util: 'FO3Edit v4.0.2e'
@@ -7893,8 +7884,7 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) K9B-MMM-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
-    after:
-      - 'Bashed Patch, 0.esp'
+    after: [ 'Bashed Patch, 0.esp' ]
     clean:
       - crc: 0x213F66A0
         util: 'FO3Edit v4.0.2e'
@@ -7915,8 +7905,7 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) PLR-UUF3P-ISS Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
-    after:
-      - 'Bashed Patch, 0.esp'
+    after: [ 'Bashed Patch, 0.esp' ]
     clean:
       - crc: 0x96734CF2
         util: 'FO3Edit v4.0.2e'
@@ -7945,8 +7934,7 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) RIL-UUF3P-DM Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
-    after:
-      - 'Bashed Patch, 0.esp'
+    after: [ 'Bashed Patch, 0.esp' ]
     clean:
       - crc: 0xBEDC50DF
         util: 'FO3Edit v4.0.2e'
@@ -7957,8 +7945,7 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) RRE-PB-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
-    after:
-      - 'Bashed Patch, 0.esp'
+    after: [ 'Bashed Patch, 0.esp' ]
     clean:
       - crc: 0x75D597A8
         util: 'FO3Edit v4.0.2e'
@@ -7969,8 +7956,7 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) TMI-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671' ]
-    after:
-      - 'Bashed Patch, 0.esp'
+    after: [ 'Bashed Patch, 0.esp' ]
     clean:
       - crc: 0x7DEC2321
         util: 'FO3Edit v4.0.2e'
@@ -8459,8 +8445,7 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Blackened RH + FWE + EVE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
-    after:
-      - 'Blackened FWE + MMM + EVE + Project Beauty.esp'
+    after: [ 'Blackened FWE + MMM + EVE + Project Beauty.esp' ]
     clean:
       - crc: 0xB30A2388
         util: 'FO3Edit v4.0.2e'
