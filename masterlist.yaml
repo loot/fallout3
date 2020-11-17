@@ -798,36 +798,73 @@ plugins:
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 15
 
+###### Unofficial Patches ######
   - name: 'Unofficial Fallout 3 Patch.esm'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/19122' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/19122/'
+        name: 'Updated Unofficial Fallout 3 Patch'
     group: *fixesGroup
-    after:
-      - 'ThePitt.esm'
-      - 'Anchorage.esm'
-      - 'StreetLights.esm'
-      - 'BrokenSteel.esm'
-      - 'PointLookout.esm'
-      - 'Zeta.esm'
-      - 'ObjectPlacementFix.esm'
+    after: [ 'ObjectPlacementFix.esm' ]
+    req: [ *FOSE ]
     msg:
       - <<: *obsolete
         subs: [ '[Updated Unofficial Fallout 3 Patch](https://www.nexusmods.com/fallout3/mods/19122)' ]
-        condition: 'version("Unofficial Fallout 3 Patch.esm", "1.8", <)'
+        condition: 'version("Unofficial Fallout 3 Patch.esm", "3.0", <)'
     tag:
+      - Actors.ACBS
+      - Actors.AIData
+      - Actors.AIPackages
+      - Actors.Anims
+      - Actors.CombatStyle
+      - Actors.DeathItem
+      - Actors.RecordFlags
+      - Actors.Skeleton
+      - Actors.Spells
+      - Actors.Stats
+      - C.Acoustic
+      - C.Encounter
+      - C.ImageSpace
+      - C.Light
+      - C.MiscFlags
       - C.Music
+      - C.Name
+      - C.Owner
+      - C.Regions
+      - C.Water
+      - Creatures.Blood
+      - Creatures.Type
       - Deflst
       - Delev
       - Factions
-      - Invent
+      - Graphics
+      - Invent.Add
+      - Invent.Change
+      - Invent.Remove
       - Names
-      - Relations
+      - NPC.Class
+      - NPC.Eyes
+      - NPC.FaceGen
+      - NPC.Hair
+      - NPC.Race
+      - Relations.Add
+      - Relations.Change
+      - Relations.Remove
       - Relev
+      - Scripts
+      - Sound
       - Stats
-    dirty:
-      - <<: *reqManualFix
-        crc: 0x7AAABC4D
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        nav: 2
+      - Text
+    clean:
+      - crc: 0xF71755E7
+        util: 'FO3Edit v4.0.3'
+  - name: 'Goodies.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/19122/' ]
+    tag:
+      - Delev
+      - Invent.Add
+      - Invent.Remove
+      - Names
+      - Relev
 
   - name: 'StreetLights.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8069' ]
@@ -1858,34 +1895,6 @@ plugins:
     tag:
       - Names
       - NoMerge
-  - name: 'Unofficial Fallout 3 Patch - Operation Anchorage.esp'
-    group: *fixesGroup
-    tag:
-      - Deflst
-      - Names
-  - name: 'Unofficial Fallout 3 Patch - The Pitt.esp'
-    group: *fixesGroup
-    tag:
-      - Deflst
-      - Names
-  - name: 'Unofficial Fallout 3 Patch - Broken Steel.esp'
-    group: *fixesGroup
-    tag:
-      - Deflst
-      - Names
-      - NoMerge
-  - name: 'Unofficial Fallout 3 Patch - Point Lookout.esp'
-    group: *fixesGroup
-    tag:
-      - Deflst
-      - Invent
-      - Names
-      - Stats
-  - name: 'Unofficial Fallout 3 Patch - Mothership Zeta.esp'
-    group: *fixesGroup
-    tag:
-      - Deflst
-      - Names
   - name: 'CinderBlockRockFix.esp'
     inc:
       - 'CinderblockRockFix2.esp'
@@ -8845,34 +8854,6 @@ plugins:
     clean:
       - crc: 0x196F177D
         util: 'FO3Edit v4.0.2e'
-
-  ### Fallout 3 Wanderers Edition-section
-  - name: 'UUF3P - FWE Patch.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/19122' ]
-    after:
-      - 'delaypl.esp'
-      - 'FO3 Wanderers Edition - Main File.esp'
-    req:
-      - 'FO3 Wanderers Edition - Main File.esp'
-    tag:
-      - Actors.ACBS
-      - Actors.AIData
-      - Actors.Stats
-      - Deflst
-      - Delev
-      - Destructible
-      - Factions
-      - Graphics
-      - Invent
-      - Names
-      - Relations
-      - Relev
-      - Scripts
-      - Stats
-    clean:
-      - crc: 0xF404243F
-        util: 'FO3Edit v4.0.2e'
-
 
   ### Load Late-section
   - name: 'Merged.esp'
