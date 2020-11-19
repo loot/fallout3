@@ -863,15 +863,21 @@ plugins:
       - Relev
 
 ###### Fixes ######
+  - name: 'ObjectPlacementFix\.es(m|p)'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/15600/'
+        name: 'Wasteland Landscape Patch'
   - name: 'ObjectPlacementFix.esm'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/15600' ]
     inc: [ 'ObjectPlacementFix.esp' ]
     msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
   - name: 'ObjectPlacementFix.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/15600' ]
     group: *fixesGroup
     inc: [ 'ObjectPlacementFix.esm' ]
     msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
+  - name: '(CinderBlockRock|ConcreteSlab)Fix.*\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/15600/'
+        name: 'Wasteland Landscape Patch'
   - name: 'CinderBlockRockFix.esp'
     inc:
       - 'CinderblockRockFix2.esp'
