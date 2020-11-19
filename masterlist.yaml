@@ -872,6 +872,7 @@ plugins:
         subs: [ 'Wasteland Landscape Patch Main File - **ObjectPlacementFix.esm** OR **ObjectPlacementFix.esp**' ]
         condition: 'many("ObjectPlacementFix\.es(m|p)")'
   - name: 'ObjectPlacementFix.esm'
+    group: *fixesGroup
     msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
   - name: 'ObjectPlacementFix.esp'
     group: *fixesGroup
@@ -880,6 +881,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/15600/'
         name: 'Wasteland Landscape Patch'
+    group: *fixesGroup
     msg:
       - <<: *useOnlyOneX
         subs: [ 'Wasteland Landscape Patch Optional File - **CinderBlockRockFix.esp** OR **CinderblockRockFix2.esp** OR **ConcreteSlabFix.esp** OR **ConcreteSlabFix2.esp**' ]
