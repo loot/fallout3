@@ -884,6 +884,12 @@ plugins:
         subs: [ 'Wasteland Landscape Patch Optional File - **CinderBlockRockFix.esp** OR **CinderblockRockFix2.esp** OR **ConcreteSlabFix.esp** OR **ConcreteSlabFix2.esp**' ]
         condition: 'many("(CinderBlockRock|ConcreteSlab)Fix.*\.esp")'
 
+  - name: 'The Pitt - Fixes.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15891' ]
+    group: *fixesGroup
+    tag: [ Graphics ]
+    msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
+
 
   - name: 'StreetLights.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8069' ]
@@ -1752,14 +1758,6 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'Error Corrections Reduce CTD' ]
         condition: 'many("Error Fixes V1.5( - Higher FPS)?\.esp")'
-  - name: 'The Pitt - Fixes.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/15891' ]
-    tag: [ Names ]
-    inc:
-      - name: 'Unofficial Fallout 3 Patch.esm'
-        display: 'Unofficial Fallout 3 Patch v1.7+'
-        condition: 'version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
-    msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
 
     ### Imported ESPs from BOSS masterlist
 
