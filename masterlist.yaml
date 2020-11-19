@@ -863,6 +863,30 @@ plugins:
       - Relev
 
 ###### Fixes ######
+  - name: 'FireLightFix.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3660' ]
+    group: *fixesGroup
+    inc: [ 'FireLightFix_rus.esp' ]
+    msg: [ *alreadyInOrFixedByUFO3P ]
+    tag: [ C.Light ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x482C04B2
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+  - name: 'FireLightFix_rus.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3660' ]
+    group: *fixesGroup
+    inc: [ 'FireLightFix.esp' ]
+    after: [ 'FireLightFix.esp' ]
+    msg: [ *alreadyInOrFixedByUFO3P ]
+    tag: [ C.Light ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xED54E353
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+
   - name: 'ObjectPlacementFix\.es(m|p)'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/15600/'
@@ -1722,29 +1746,6 @@ plugins:
 
     ### Load Early-section
 
-  - name: 'FireLightFix.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3660' ]
-    group: *fixesGroup
-    inc: [ 'FireLightFix_rus.esp' ]
-    msg: [ *alreadyInOrFixedByUFO3P ]
-    tag: [ C.Light ]
-    dirty:
-      - <<: *quickClean
-        crc: 0x482C04B2
-        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 2
-  - name: 'FireLightFix_rus.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3660' ]
-    group: *fixesGroup
-    inc: [ 'FireLightFix.esp' ]
-    after: [ 'FireLightFix.esp' ]
-    msg: [ *alreadyInOrFixedByUFO3P ]
-    tag: [ C.Light ]
-    dirty:
-      - <<: *quickClean
-        crc: 0xED54E353
-        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 2
   - name: 'FO3 Error Fixes.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16490' ]
     group: *fixesGroup
