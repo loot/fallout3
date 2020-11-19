@@ -887,7 +887,9 @@ plugins:
         itm: 2
 
   - name: 'FO3 Error Fixes.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/16490' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/16490/'
+        name: 'Error Corrections - Reduce CTD'
     group: *fixesGroup
     msg: [ *alreadyInOrFixedByUFO3P ]
   - name: 'Error Fixes V1.(\d)( - Higher FPS)?\.esp'
