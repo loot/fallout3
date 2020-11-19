@@ -862,6 +862,29 @@ plugins:
       - Names
       - Relev
 
+###### Fixes ######
+  - name: 'ObjectPlacementFix\.es(m|p)'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/15600/'
+        name: 'Wasteland Landscape Patch'
+    group: *fixesGroup
+    msg:
+      - <<: *alreadyInOrFixedByUFO3P
+        condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
+      - <<: *useOnlyOneX
+        subs: [ 'Wasteland Landscape Patch Main File - **ObjectPlacementFix.esm** OR **ObjectPlacementFix.esp**' ]
+        condition: 'many("ObjectPlacementFix\.es(m|p)")'
+  - name: '(CinderBlockRock|ConcreteSlab)Fix.*\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/15600/'
+        name: 'Wasteland Landscape Patch'
+    group: *fixesGroup
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Wasteland Landscape Patch Optional File - **CinderBlockRockFix.esp** OR **CinderblockRockFix2.esp** OR **ConcreteSlabFix.esp** OR **ConcreteSlabFix2.esp**' ]
+        condition: 'many("(CinderBlockRock|ConcreteSlab)Fix.*\.esp")'
+
+
   - name: 'StreetLights.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8069' ]
     group: *veryEarlyGroup
@@ -887,10 +910,6 @@ plugins:
     tag:
       - Eyes
       - Hair
-  - name: 'ObjectPlacementFix.esm'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/15600' ]
-    inc: [ 'ObjectPlacementFix.esp' ]
-    msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
   - name: 'HairPack.esm'
     tag:
       - Eyes
@@ -1733,11 +1752,6 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'Error Corrections Reduce CTD' ]
         condition: 'many("Error Fixes V1.5( - Higher FPS)?\.esp")'
-  - name: 'ObjectPlacementFix.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/15600' ]
-    group: *fixesGroup
-    inc: [ 'ObjectPlacementFix.esm' ]
-    msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
   - name: 'The Pitt - Fixes.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15891' ]
     tag: [ Names ]
@@ -1757,26 +1771,6 @@ plugins:
     tag:
       - Names
       - NoMerge
-  - name: 'CinderBlockRockFix.esp'
-    inc:
-      - 'CinderblockRockFix2.esp'
-      - 'ConcreteSlabFix.esp'
-      - 'ConcreteSlabFix2.esp'
-  - name: 'CinderblockRockFix2.esp'
-    inc:
-      - 'CinderBlockRockFix.esp'
-      - 'ConcreteSlabFix.esp'
-      - 'ConcreteSlabFix2.esp'
-  - name: 'ConcreteSlabFix.esp'
-    inc:
-      - 'CinderBlockRockFix.esp'
-      - 'CinderblockRockFix2.esp'
-      - 'ConcreteSlabFix2.esp'
-  - name: 'ConcreteSlabFix2.esp'
-    inc:
-      - 'CinderBlockRockFix.esp'
-      - 'CinderblockRockFix2.esp'
-      - 'ConcreteSlabFix.esp'
   - name: 'Error Correction.esp'
     tag: [ Scripts ]
   - name: 'Error Correction - All Transparency & Trees.esp'
