@@ -892,8 +892,8 @@ plugins:
   - name: 'Fixed Suits( Anchorage)?\.esp'
     inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
     msg:
-      - <<: *useInstead
-        subs: [ 'FO3 Wanderers Edition (FWE) version' ]
+      - <<: *useVersion
+        subs: [ 'FO3 Wanderers Edition (FWE)' ]
         condition: 'active("FO3 Wanderers Edition - Main File.esm")'
 
   - name: 'FO3 Error Fixes.esp'
