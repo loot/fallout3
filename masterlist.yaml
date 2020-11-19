@@ -921,7 +921,11 @@ plugins:
 
   - name: 'PyromaniacFix-(Burnmaster|Both|Both\+Nuka)(-BS)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/656/' ]
-    msg: [ *alreadyInOrFixedByUFO3P ]
+    msg:
+      - *alreadyInOrFixedByUFO3P
+      - <<: *useOnlyOneX
+        subs: [ 'Pyromaniac Fix ESP - **Burnmaster** OR **Both** OR **Both+Nuka**' ]
+        condition: 'many("PyromaniacFix-(Burnmaster|Both|Both\+Nuka)(-BS)?\.esp")'
   - name: 'PyromaniacFix-(Burnmaster|Both|Both\+Nuka).esp'
     msg: [ *useVersionBrokenSteel ]
   - name: 'PyromaniacFix-(Burnmaster|Both|Both\+Nuka)-BS.esp'
