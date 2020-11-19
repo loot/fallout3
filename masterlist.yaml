@@ -864,6 +864,7 @@ plugins:
 
 ###### Fixes ######
   - name: 'DemolitionExpertFix-Nuka.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/684/' ]
     msg: [ *alreadyInOrFixedByUFO3P ]
 
   - name: 'FireLightFix(_rus)?\.esp'
