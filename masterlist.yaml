@@ -878,7 +878,6 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/3660' ]
     group: *fixesGroup
     inc: [ 'FireLightFix.esp' ]
-    after: [ 'FireLightFix.esp' ]
     msg: [ *alreadyInOrFixedByUFO3P ]
     tag: [ C.Light ]
     dirty:
