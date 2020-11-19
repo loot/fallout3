@@ -868,7 +868,6 @@ plugins:
     group: *fixesGroup
     inc: [ 'FireLightFix_rus.esp' ]
     msg: [ *alreadyInOrFixedByUFO3P ]
-    tag: [ C.Light ]
     dirty:
       - <<: *quickClean
         crc: 0x482C04B2
@@ -879,7 +878,6 @@ plugins:
     group: *fixesGroup
     inc: [ 'FireLightFix.esp' ]
     msg: [ *alreadyInOrFixedByUFO3P ]
-    tag: [ C.Light ]
     dirty:
       - <<: *quickClean
         crc: 0xED54E353
