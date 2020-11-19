@@ -922,6 +922,10 @@ plugins:
   - name: 'PyromaniacFix-(Burnmaster|Both).*\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/656/' ]
     msg: [ *alreadyInOrFixedByUFO3P ]
+  - name: 'PyromaniacFix-(Burnmaster|Both|Both\+Nuka).esp'
+    msg: [ *useVersionBrokenSteel ]
+  - name: 'PyromaniacFix-(Burnmaster|Both|Both\+Nuka)-BS.esp'
+    msg: [ *useVersionNonBrokenSteel ]
 
   - name: 'The Pitt - Fixes.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15891' ]
