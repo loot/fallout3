@@ -863,8 +863,11 @@ plugins:
       - Relev
 
 ###### Fixes ######
+  - name: 'FireLightFix(_rus)?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/3660/'
+        name: 'Fire Light Fix'
   - name: 'FireLightFix.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3660' ]
     group: *fixesGroup
     inc: [ 'FireLightFix_rus.esp' ]
     msg: [ *alreadyInOrFixedByUFO3P ]
@@ -874,7 +877,6 @@ plugins:
         util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
   - name: 'FireLightFix_rus.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3660' ]
     group: *fixesGroup
     inc: [ 'FireLightFix.esp' ]
     msg: [ *alreadyInOrFixedByUFO3P ]
