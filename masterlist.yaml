@@ -3714,8 +3714,8 @@ plugins:
     clean:
       # 3388
       - crc: 0x729D51D2
-        util: 'FO3Edit v4.0.2f' 
-      # 4968        
+        util: 'FO3Edit v4.0.2f'
+      # 4968
       - crc: 0x13A76792
         util: 'FO3Edit v4.0.2e'
   - name: 'WeaponModKits - ThePitt.esp'
