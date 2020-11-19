@@ -891,6 +891,11 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/16490/'
         name: 'Error Corrections - Reduce CTD'
     group: *fixesGroup
+    tag:
+      - Actors.ACBS
+      - Actors.RecordFlags
+      - Actors.Stats
+      - C.Regions
     msg: [ *alreadyInOrFixedByUFO3P ]
 
   - name: 'ObjectPlacementFix\.es(m|p)'
