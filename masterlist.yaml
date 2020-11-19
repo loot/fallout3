@@ -919,6 +919,25 @@ plugins:
         subs: [ 'Wasteland Landscape Patch Optional File - **CinderBlockRockFix.esp** OR **CinderblockRockFix2.esp** OR **ConcreteSlabFix.esp** OR **ConcreteSlabFix2.esp**' ]
         condition: 'many("(CinderBlockRock|ConcreteSlab)Fix.*\.esp")'
 
+  - name: 'PyromaniacFix-Burnmaster.esp'
+    msg: [ *alreadyInOrFixedByUFO3P ]
+    tag: [ Deflst ]
+  - name: 'PyromaniacFix-Burnmaster-BS.esp'
+    msg: [ *alreadyInOrFixedByUFO3P ]
+    tag: [ Deflst ]
+  - name: 'PyromaniacFix-Both.esp'
+    msg: [ *alreadyInOrFixedByUFO3P ]
+    tag: [ Deflst ]
+  - name: 'PyromaniacFix-Both-BS.esp'
+    msg: [ *alreadyInOrFixedByUFO3P ]
+    tag: [ Deflst ]
+  - name: 'PyromaniacFix-Both+Nuka.esp'
+    msg: [ *alreadyInOrFixedByUFO3P ]
+    tag: [ Deflst ]
+  - name: 'PyromaniacFix-Both+Nuka-BS.esp'
+    msg: [ *alreadyInOrFixedByUFO3P ]
+    tag: [ Deflst ]
+
   - name: 'The Pitt - Fixes.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15891' ]
     group: *fixesGroup
@@ -1787,24 +1806,6 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/6545' ]
   - name: 'BlackWidowBurkeFix.esp'
     tag: [ Scripts ]
-  - name: 'PyromaniacFix-Burnmaster.esp'
-    msg: [ *alreadyInOrFixedByUFO3P ]
-    tag: [ Deflst ]
-  - name: 'PyromaniacFix-Burnmaster-BS.esp'
-    msg: [ *alreadyInOrFixedByUFO3P ]
-    tag: [ Deflst ]
-  - name: 'PyromaniacFix-Both.esp'
-    msg: [ *alreadyInOrFixedByUFO3P ]
-    tag: [ Deflst ]
-  - name: 'PyromaniacFix-Both-BS.esp'
-    msg: [ *alreadyInOrFixedByUFO3P ]
-    tag: [ Deflst ]
-  - name: 'PyromaniacFix-Both+Nuka.esp'
-    msg: [ *alreadyInOrFixedByUFO3P ]
-    tag: [ Deflst ]
-  - name: 'PyromaniacFix-Both+Nuka-BS.esp'
-    msg: [ *alreadyInOrFixedByUFO3P ]
-    tag: [ Deflst ]
   - name: 'DemolitionExpertFix-Nuka.esp'
     msg: [ *alreadyInOrFixedByUFO3P ]
   - name: 'MS11fix.esp'
