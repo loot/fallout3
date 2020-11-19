@@ -887,10 +887,6 @@ plugins:
   - name: 'The Pitt - Fixes.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15891' ]
     tag: [ Graphics ]
-    inc:
-      - name: 'Unofficial Fallout 3 Patch.esm'
-        display: 'Unofficial Fallout 3 Patch v1.7+'
-        condition: 'version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
     msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
 
 
