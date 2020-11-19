@@ -889,16 +889,6 @@ plugins:
   - name: 'Fixed Suits( Anchorage)?( FWE)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19649' ]
     msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
-  - name: 'Fixed Suits( FWE)?\.esp'
-    msg:
-      - <<: *useOnlyOneX
-        subs: [ 'Fixed Suits' ]
-        condition: 'many("Fixed Suits( FWE)?\.esp")'
-  - name: 'Fixed Suits Anchorage( FWE)?\.esp'
-    msg:
-      - <<: *useOnlyOneX
-        subs: [ 'Fixed Suits Anchorage' ]
-        condition: 'many("Fixed Suits Anchorage( FWE)?\.esp")'
   - name: 'Fixed Suits( Anchorage)?\.esp'
     inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
     msg:
