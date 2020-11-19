@@ -923,22 +923,16 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/656/' ]
   - name: 'PyromaniacFix-Burnmaster.esp'
     msg: [ *alreadyInOrFixedByUFO3P ]
-    tag: [ Deflst ]
   - name: 'PyromaniacFix-Burnmaster-BS.esp'
     msg: [ *alreadyInOrFixedByUFO3P ]
-    tag: [ Deflst ]
   - name: 'PyromaniacFix-Both.esp'
     msg: [ *alreadyInOrFixedByUFO3P ]
-    tag: [ Deflst ]
   - name: 'PyromaniacFix-Both-BS.esp'
     msg: [ *alreadyInOrFixedByUFO3P ]
-    tag: [ Deflst ]
   - name: 'PyromaniacFix-Both+Nuka.esp'
     msg: [ *alreadyInOrFixedByUFO3P ]
-    tag: [ Deflst ]
   - name: 'PyromaniacFix-Both+Nuka-BS.esp'
     msg: [ *alreadyInOrFixedByUFO3P ]
-    tag: [ Deflst ]
 
   - name: 'The Pitt - Fixes.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15891' ]
