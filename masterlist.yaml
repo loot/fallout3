@@ -886,6 +886,7 @@ plugins:
 
   - name: 'The Pitt - Fixes.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15891' ]
+    group: *fixesGroup
     tag: [ Graphics ]
     msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
 
