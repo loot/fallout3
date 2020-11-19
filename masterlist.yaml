@@ -892,15 +892,6 @@ plugins:
         name: 'Error Corrections - Reduce CTD'
     group: *fixesGroup
     msg: [ *alreadyInOrFixedByUFO3P ]
-  - name: 'Error Fixes V1.(\d)( - Higher FPS)?\.esp'
-    msg:
-      - <<: *obsolete
-        auba: [ '[Error Corrections - Reduce CTD](https://www.nexusmods.com/fallout3/mods/16490/)' ]
-  - name: 'Error Fixes V1.5( - Higher FPS)?\.esp'
-    msg:
-      - <<: *useOnlyOneX
-        subs: [ 'Error Corrections Reduce CTD' ]
-        condition: 'many("Error Fixes V1.5( - Higher FPS)?\.esp")'
 
   - name: 'ObjectPlacementFix\.es(m|p)'
     url:
