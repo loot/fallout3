@@ -869,7 +869,8 @@ plugins:
         name: 'Wasteland Landscape Patch'
     group: *fixesGroup
     msg:
-      - *alreadyInOrFixedByUFO3Pv1_7
+      - <<: *alreadyInOrFixedByUFO3P
+        condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
       - <<: *useOnlyOneX
         subs: [ 'Wasteland Landscape Patch Main File - **ObjectPlacementFix.esm** OR **ObjectPlacementFix.esp**' ]
         condition: 'many("ObjectPlacementFix\.es(m|p)")'
