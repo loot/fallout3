@@ -949,6 +949,10 @@ plugins:
 
 
 ###### AudioVisual - Interface ######
+  - name: 'DALCO Inventory Sorter - .*\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/16943/'
+        name: 'DALCO Inventory Sorter'
   - name: 'DALCO Inventory Sorter - Fallout 3 (Base Game).esp'
     tag:
       - Names
