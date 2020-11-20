@@ -974,8 +974,9 @@ plugins:
 
 
 ###### Character Appearance - NPCs ######
-  - name: 'Project Beauty.esm'
+  - name: '.*(Project Beauty).*\.es(m|p)'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
+  - name: 'Project Beauty.esm'
     tag:
       - Body-F
       - Body-M
@@ -991,7 +992,6 @@ plugins:
       - crc: 0x06AA1298
         util: 'FO3Edit v4.0.2e'
   - name: 'Project Beauty- Broken Steel.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
     tag:
       - Deactivate
       - NoMerge
@@ -1001,7 +1001,6 @@ plugins:
       - crc: 0xDA6E632C
         util: 'FO3Edit v4.0.2e'
   - name: 'Project Beauty- Point Lookout.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
     tag:
       - Deactivate
       - NoMerge
@@ -1011,17 +1010,14 @@ plugins:
       - crc: 0x431457E1
         util: 'FO3Edit v4.0.2e'
   - name: 'FOOK2 - Project Beauty.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
     clean:
       - crc: 0x278F38CC
         util: 'FO3Edit v4.0.2e'
   - name: 'FOOK - DIK - Project Beauty.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
     clean:
       - crc: 0x3C492333
         util: 'FO3Edit v4.0.2e'
   - name: 'Mart''s Mutant Mod - Project Beauty.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
     tag:
       - NoMerge
       - NPC.Race
