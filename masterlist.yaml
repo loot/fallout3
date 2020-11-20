@@ -975,7 +975,9 @@ plugins:
 
 ###### Character Appearance - NPCs ######
   - name: '.*(Project Beauty).*\.es(m|p)'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/6341/'
+        name: 'Fallout 3 Redesigned - Formerly Known as Project Beauty'
   - name: 'Project Beauty.esm'
     tag:
       - Body-F
