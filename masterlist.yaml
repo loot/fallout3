@@ -991,8 +991,8 @@ plugins:
       - Voice-F
       - Voice-M
     clean:
-      - crc: 0x06AA1298
-        util: 'FO3Edit v4.0.2e'
+      - crc: 0x6D88BE8B
+        util: 'FO3Edit v4.0.3'
   - name: 'Project Beauty- Broken Steel.esp'
     tag:
       - Deactivate
@@ -1001,7 +1001,7 @@ plugins:
       - NpcFaces
     clean:
       - crc: 0xDA6E632C
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.3'
   - name: 'Project Beauty- Point Lookout.esp'
     tag:
       - Deactivate
@@ -1010,15 +1010,15 @@ plugins:
       - NpcFaces
     clean:
       - crc: 0x431457E1
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.3'
   - name: 'FOOK2 - Project Beauty.esp'
     clean:
       - crc: 0x278F38CC
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.3'
   - name: 'FOOK - DIK - Project Beauty.esp'
     clean:
       - crc: 0x3C492333
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - Project Beauty.esp'
     tag:
       - NoMerge
@@ -1026,7 +1026,9 @@ plugins:
       - NpcFaces
     clean:
       - crc: 0x7B1D30CA
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.3'
+      - crc: 0x2EE64105
+        util: 'FO3Edit v4.0.3'
 
 
   - name: '20th Century Weapons.esm'
