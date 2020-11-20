@@ -972,6 +972,121 @@ plugins:
         util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 18
 
+
+###### Character Appearance - NPCs ######
+  - name: 'Project Beauty.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
+    tag:
+      - Body-F
+      - Body-M
+      - Eyes
+      - Hair
+      - NPC.Race
+      - NpcFaces
+      - R.Mouth
+      - R.Teeth
+      - Voice-F
+      - Voice-M
+    clean:
+      - crc: 0x06AA1298
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Project Beauty HD version.esm'
+    msg:
+      - <<: *obsolete
+        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
+  - name: 'Project Beauty.esp'
+    msg:
+      - <<: *obsolete
+        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
+  - name: 'Project Beauty - Fallout Character Overhaul.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
+    clean:
+      - crc: 0x0E3E0664
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Project Beauty- MMM Raiders.esp'
+    msg:
+      - <<: *obsolete
+        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
+  - name: 'Project Beauty- Broken Steel.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
+    tag:
+      - Deactivate
+      - NoMerge
+      - NPC.Race
+      - NpcFaces
+    clean:
+      - crc: 0xDA6E632C
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Project Beauty- Point Lookout.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
+    tag:
+      - Deactivate
+      - NoMerge
+      - NPC.Race
+      - NpcFaces
+    clean:
+      - crc: 0x431457E1
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Project Beauty- Point Lookout MMM.esp'
+    tag:
+      - Deactivate
+      - NoMerge
+      - NPC.Race
+      - NpcFaces
+  - name: 'Project Beauty HD version [Hair Fix].esp'
+    tag:
+      - Deactivate
+      - NoMerge
+      - NPC.Race
+      - NpcFaces
+  - name: 'FOOK2 - Project Beauty.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
+    clean:
+      - crc: 0x278F38CC
+        util: 'FO3Edit v4.0.2e'
+  - name: 'FOOK - DIK - Project Beauty.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
+    clean:
+      - crc: 0x3C492333
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Mart''s Mutant Mod - Project Beauty.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
+    tag:
+      - NoMerge
+      - NPC.Race
+      - NpcFaces
+    clean:
+      - crc: 0x7B1D30CA
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Mart''s Mutant Mod - Project Beauty + FWE.esp'
+    tag:
+      - NoMerge
+      - NPC.Race
+      - NpcFaces
+  - name: 'Mart''s Mutant Mod - Project Beauty (HD Addition).esp'
+    msg:
+      - <<: *obsolete
+        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
+    tag:
+      - NoMerge
+      - NPC.Race
+      - NpcFaces
+  - name: 'PB mika.esm'
+    msg:
+      - <<: *obsolete
+        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
+  - name: 'PB MMM.esp'
+    msg:
+      - <<: *obsolete
+        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
+  - name: 'PB MMM HD.esp'
+    msg:
+      - <<: *obsolete
+        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
+  - name: 'FO3 Wanderers Edition - Project Beauty (HD Addition).esp'
+    inc: [ 'Project Beauty.esp' ]
+
+
   - name: '20th Century Weapons.esm'
     url: [ 'http://modsreloaded.com/19th-and-20th-century-weapons' ]
     tag: [ Scripts ]
@@ -1031,26 +1146,6 @@ plugins:
       - Names
       - Sound
       - Stats
-  - name: 'Project Beauty HD version.esm'
-    msg:
-      - <<: *obsolete
-        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
-  - name: 'Project Beauty.esm'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
-    tag:
-      - Body-F
-      - Body-M
-      - Eyes
-      - Hair
-      - NPC.Race
-      - NpcFaces
-      - R.Mouth
-      - R.Teeth
-      - Voice-F
-      - Voice-M
-    clean:
-      - crc: 0x06AA1298
-        util: 'FO3Edit v4.0.2e'
   - name: 'FACE3.esm'
     tag:
       - Body-F
@@ -1680,10 +1775,6 @@ plugins:
         crc: 0x5761E748
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 3
-  - name: 'PB mika.esm'
-    msg:
-      - <<: *obsolete
-        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
   - name: 'Animy_prostitution.esm'
     req: [ *FOSE ]
   - name: 'DCInteriors_ComboEdition.esm'
@@ -1826,52 +1917,7 @@ plugins:
       - Delev
   - name: 'Stop Insulting Me Outcasts.esp'
     tag: [ Factions ]
-  - name: 'Project Beauty.esp'
-    msg:
-      - <<: *obsolete
-        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
-  - name: 'Project Beauty- Broken Steel.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
-    tag:
-      - Deactivate
-      - NoMerge
-      - NPC.Race
-      - NpcFaces
-    clean:
-      - crc: 0xDA6E632C
-        util: 'FO3Edit v4.0.2e'
-  - name: 'Project Beauty- Point Lookout.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
-    tag:
-      - Deactivate
-      - NoMerge
-      - NPC.Race
-      - NpcFaces
-    clean:
-      - crc: 0x431457E1
-        util: 'FO3Edit v4.0.2e'
-  - name: 'FOOK - DIK - Project Beauty.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
-    clean:
-      - crc: 0x3C492333
-        util: 'FO3Edit v4.0.2e'
-  - name: 'FOOK2 - Project Beauty.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
-    clean:
-      - crc: 0x278F38CC
-        util: 'FO3Edit v4.0.2e'
-  - name: 'Project Beauty - Fallout Character Overhaul.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
-    clean:
-      - crc: 0x0E3E0664
-        util: 'FO3Edit v4.0.2e'
   - name: 'Raider preset beta.esp'
-    tag:
-      - Deactivate
-      - NoMerge
-      - NPC.Race
-      - NpcFaces
-  - name: 'Project Beauty HD version [Hair Fix].esp'
     tag:
       - Deactivate
       - NoMerge
@@ -2612,8 +2658,6 @@ plugins:
     msg: [ *obsolete ]
   - name: 'DarNifiedUIF3_FWE.esp'
     msg: [ *alreadyInFWE ]
-  - name: 'FO3 Wanderers Edition - Project Beauty (HD Addition).esp'
-    inc: [ 'Project Beauty.esp' ]
   - name: 'FO3 Wanderers Edition - Talon Loot Crash Fix.esp'
     tag:
       - Delev
@@ -3393,40 +3437,8 @@ plugins:
       - Relev
   - name: 'Mart''s Mutant Mod - UF3P.esp'
     tag: [ Invent ]
-  - name: 'PB MMM HD.esp'
-    msg:
-      - <<: *obsolete
-        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
-  - name: 'PB MMM.esp'
-    msg:
-      - <<: *obsolete
-        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
-  - name: 'Project Beauty- Point Lookout MMM.esp'
-    tag:
-      - Deactivate
-      - NoMerge
-      - NPC.Race
-      - NpcFaces
   - name: 'DangerousRadroaches_MMM.esp'
     tag: [ Actors.CombatStyle ]
-  - name: 'Project Beauty- MMM Raiders.esp'
-    msg:
-      - <<: *obsolete
-        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
-  - name: 'Mart''s Mutant Mod - Project Beauty.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
-    tag:
-      - NoMerge
-      - NPC.Race
-      - NpcFaces
-    clean:
-      - crc: 0x7B1D30CA
-        util: 'FO3Edit v4.0.2e'
-  - name: 'Mart''s Mutant Mod - Project Beauty + FWE.esp'
-    tag:
-      - NoMerge
-      - NPC.Race
-      - NpcFaces
   - name: 'CP - FACE3 NPCS [MMM].esp'
     tag:
       - NoMerge
@@ -3494,14 +3506,6 @@ plugins:
     tag:
       - Invent
       - Relations
-  - name: 'Mart''s Mutant Mod - Project Beauty (HD Addition).esp'
-    msg:
-      - <<: *obsolete
-        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
-    tag:
-      - NoMerge
-      - NPC.Race
-      - NpcFaces
   - name: 'Mart''s Mutant Mod - DC Interiors.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
     tag: [ Relations ]
