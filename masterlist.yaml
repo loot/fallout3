@@ -979,35 +979,14 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/6341/'
         name: 'Fallout 3 Redesigned - Formerly Known as Project Beauty'
   - name: 'Project Beauty.esm'
-    tag:
-      - Body-F
-      - Body-M
-      - Eyes
-      - Hair
-      - NPC.Race
-      - NpcFaces
-      - R.Mouth
-      - R.Teeth
-      - Voice-F
-      - Voice-M
     clean:
       - crc: 0x6D88BE8B
         util: 'FO3Edit v4.0.3'
   - name: 'Project Beauty- Broken Steel.esp'
-    tag:
-      - Deactivate
-      - NoMerge
-      - NPC.Race
-      - NpcFaces
     clean:
       - crc: 0xDA6E632C
         util: 'FO3Edit v4.0.3'
   - name: 'Project Beauty- Point Lookout.esp'
-    tag:
-      - Deactivate
-      - NoMerge
-      - NPC.Race
-      - NpcFaces
     clean:
       - crc: 0x431457E1
         util: 'FO3Edit v4.0.3'
@@ -1020,10 +999,6 @@ plugins:
       - crc: 0x3C492333
         util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - Project Beauty.esp'
-    tag:
-      - NoMerge
-      - NPC.Race
-      - NpcFaces
     clean:
       - crc: 0x7B1D30CA
         util: 'FO3Edit v4.0.3'
