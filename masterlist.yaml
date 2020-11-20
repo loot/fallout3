@@ -990,23 +990,6 @@ plugins:
     clean:
       - crc: 0x06AA1298
         util: 'FO3Edit v4.0.2e'
-  - name: 'Project Beauty HD version.esm'
-    msg:
-      - <<: *obsolete
-        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
-  - name: 'Project Beauty.esp'
-    msg:
-      - <<: *obsolete
-        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
-  - name: 'Project Beauty - Fallout Character Overhaul.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
-    clean:
-      - crc: 0x0E3E0664
-        util: 'FO3Edit v4.0.2e'
-  - name: 'Project Beauty- MMM Raiders.esp'
-    msg:
-      - <<: *obsolete
-        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
   - name: 'Project Beauty- Broken Steel.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
     tag:
@@ -1027,18 +1010,6 @@ plugins:
     clean:
       - crc: 0x431457E1
         util: 'FO3Edit v4.0.2e'
-  - name: 'Project Beauty- Point Lookout MMM.esp'
-    tag:
-      - Deactivate
-      - NoMerge
-      - NPC.Race
-      - NpcFaces
-  - name: 'Project Beauty HD version [Hair Fix].esp'
-    tag:
-      - Deactivate
-      - NoMerge
-      - NPC.Race
-      - NpcFaces
   - name: 'FOOK2 - Project Beauty.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6341' ]
     clean:
@@ -1058,33 +1029,6 @@ plugins:
     clean:
       - crc: 0x7B1D30CA
         util: 'FO3Edit v4.0.2e'
-  - name: 'Mart''s Mutant Mod - Project Beauty + FWE.esp'
-    tag:
-      - NoMerge
-      - NPC.Race
-      - NpcFaces
-  - name: 'Mart''s Mutant Mod - Project Beauty (HD Addition).esp'
-    msg:
-      - <<: *obsolete
-        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
-    tag:
-      - NoMerge
-      - NPC.Race
-      - NpcFaces
-  - name: 'PB mika.esm'
-    msg:
-      - <<: *obsolete
-        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
-  - name: 'PB MMM.esp'
-    msg:
-      - <<: *obsolete
-        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
-  - name: 'PB MMM HD.esp'
-    msg:
-      - <<: *obsolete
-        subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
-  - name: 'FO3 Wanderers Edition - Project Beauty (HD Addition).esp'
-    inc: [ 'Project Beauty.esp' ]
 
 
   - name: '20th Century Weapons.esm'
