@@ -948,6 +948,195 @@ plugins:
     msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
 
 
+###### AudioVisual - Interface ######
+  - name: 'DALCO Inventory Sorter - Fallout 3 (Base Game).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - Fallout 3 & All DLCs.esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - Operation Anchorage.esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - The Pitt.esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - Broken Steel.esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - Point Lookout.esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - Mothership Zeta.esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - Unofficial Fallout 3 Patch (Base Game).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - Unofficial Fallout 3 Patch (Fallout 3 & All DLCs).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - Unofficial Fallout 3 Patch (Operation Anchorage).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - Unofficial Fallout 3 Patch (The Pitt).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - Unofficial Fallout 3 Patch (Point Lookout).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - Unofficial Fallout 3 Patch (Mothership Zeta).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - CALIBR.esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - CASM.esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - Dynamic Crosshair.esp'
+    tag: [ Names ]
+  - name: 'DALCO Inventory Sorter - Sack of Holding.esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - Underground Hideout (Fallout 3 & All DLCs).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - FWE (Main File).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - FWE (Operation Anchorage).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - FWE (The Pitt).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - FWE (Broken Steel).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - FWE (Point Lookout).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - FWE (Mothership Zeta).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - FWE (Alternate Travel).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - FWE (Followers Enh).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - FWE (Followers Enh (BrS)).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - Weapon Mod Kits (Base).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - WMK - FWE Master Release.esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - Weapon Mod Kits (DLC Anchorage).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - WMK - FWE (DLC Anchorage).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - Weapon Mod Kits (DLC ThePitt).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - WMK - FWE (DLC ThePitt).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - Weapon Mod Kits (DLC BrS).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - WMK - FWE (DLC BrS).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - Weapon Mod Kits (DLC PointLookout).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - WMK - FWE (DLC PointLookout).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - Weapon Mod Kits (DLC Zeta).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - WMK - FWE (DLC Zeta).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - WMKAA12Shotgun.esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - IGM.esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - Mart''s Mutant Mod (Main).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - Mart''s Mutant Mod (DLC Broken Steel).esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - MMM - FWE.esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - SMA.esp'
+    tag:
+      - Names
+      - NoMerge
+  - name: 'DALCO Inventory Sorter - Max Level Workaround.esp'
+    tag: [ Names ]
+  - name: 'DALCO Inventory Sorter - Max Level Workaround (BS).esp'
+    tag: [ Names ]
+  - name: 'DALCO Inventory Sorter - Max Level Workaround (HP).esp'
+    tag: [ Names ]
+  - name: 'DALCO Inventory Sorter - Max Level Workaround (HP-BS).esp'
+    tag: [ Names ]
+
+
   - name: 'StreetLights.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8069' ]
     group: *veryEarlyGroup
@@ -1779,14 +1968,6 @@ plugins:
 
     ### Imported ESPs from BOSS masterlist
 
-  - name: 'DALCO Inventory Sorter - Fallout 3 & All DLCs.esp'
-    tag:
-      - Names
-      - NoMerge
-  - name: 'DALCO Inventory Sorter - Unofficial Fallout 3 Patch (Base Game).esp'
-    tag:
-      - Names
-      - NoMerge
   - name: 'Error Correction.esp'
     tag: [ Scripts ]
   - name: 'Error Correction - All Transparency & Trees.esp'
@@ -1823,54 +2004,6 @@ plugins:
       - Delev
   - name: 'Stop Insulting Me Outcasts.esp'
     tag: [ Factions ]
-  - name: 'DALCO Inventory Sorter - Fallout 3 (Base Game).esp'
-    tag:
-      - Names
-      - NoMerge
-  - name: 'DALCO Inventory Sorter - Operation Anchorage.esp'
-    tag:
-      - Names
-      - NoMerge
-  - name: 'DALCO Inventory Sorter - Unofficial Fallout 3 Patch (Operation Anchorage).esp'
-    tag:
-      - Names
-      - NoMerge
-  - name: 'DALCO Inventory Sorter - The Pitt.esp'
-    tag:
-      - Names
-      - NoMerge
-  - name: 'DALCO Inventory Sorter - Unofficial Fallout 3 Patch (The Pitt).esp'
-    tag:
-      - Names
-      - NoMerge
-  - name: 'DALCO Inventory Sorter - Broken Steel.esp'
-    tag:
-      - Names
-      - NoMerge
-  - name: 'DALCO Inventory Sorter - Point Lookout.esp'
-    tag:
-      - Names
-      - NoMerge
-  - name: 'DALCO Inventory Sorter - Unofficial Fallout 3 Patch (Point Lookout).esp'
-    tag:
-      - Names
-      - NoMerge
-  - name: 'DALCO Inventory Sorter - Mothership Zeta.esp'
-    tag:
-      - Names
-      - NoMerge
-  - name: 'DALCO Inventory Sorter - Unofficial Fallout 3 Patch (Mothership Zeta).esp'
-    tag:
-      - Names
-      - NoMerge
-  - name: 'DALCO Inventory Sorter - Unofficial Fallout 3 Patch (Fallout 3 & All DLCs).esp'
-    tag:
-      - Names
-      - NoMerge
-  - name: 'DALCO Inventory Sorter - CALIBR.esp'
-    tag:
-      - Names
-      - NoMerge
   - name: 'Project Beauty.esp'
     msg:
       - <<: *obsolete
@@ -1948,8 +2081,6 @@ plugins:
     inc:
       - 'Fast VATS 1.esp'
       - 'Fast VATS 2.esp'
-  - name: 'DALCO Inventory Sorter - Dynamic Crosshair.esp'
-    tag: [ Names ]
   - name: 'FaceMe.esp'
     tag:
       - Deactivate
@@ -1988,10 +2119,6 @@ plugins:
     msg: [ *alreadyInFOOK2 ]
   - name: 'Internet Mod.esp'
     msg: [ *alreadyInFOOK2 ]
-  - name: 'DALCO Inventory Sorter - CASM.esp'
-    tag:
-      - Names
-      - NoMerge
   - name: 'Zumbs'' Equipable Pip Boy.esp'
     inc:
       - 'Remove That Glove.esp'
@@ -2308,10 +2435,6 @@ plugins:
     inc: [ 'RobCo Universal Battery Charger Kit - Zeta.esp' ]
   - name: 'RobCo Universal Battery Charger Kit - Zeta.esp'
     inc: [ 'RobCo Universal Battery Charger Kit.esp' ]
-  - name: 'DALCO Inventory Sorter - Sack of Holding.esp'
-    tag:
-      - Names
-      - NoMerge
   - name: 'Chems and Meds Re-Textures Pack.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15960' ]
     tag: [ Graphics ]
@@ -2560,10 +2683,6 @@ plugins:
         itm: 4
   - name: 'Towers Hill.esp'
     tag: [ Invent ]
-  - name: 'DALCO Inventory Sorter - Underground Hideout (Fallout 3 & All DLCs).esp'
-    tag:
-      - Names
-      - NoMerge
   - name: 'Vault 89 (player home) V1-35.esp'
     inc: [ 'FNNSys.esm' ]
     tag: [ Scripts ]
@@ -2653,46 +2772,10 @@ plugins:
     msg: [ *obsolete ]
   - name: 'GSoS - FOOK2 Open Beta - XP Tag Perks.esp'
     msg: [ *obsolete ]
-  - name: 'DALCO Inventory Sorter - FWE (Main File).esp'
-    tag:
-      - Names
-      - NoMerge
-  - name: 'DALCO Inventory Sorter - FWE (Operation Anchorage).esp'
-    tag:
-      - Names
-      - NoMerge
-  - name: 'DALCO Inventory Sorter - FWE (The Pitt).esp'
-    tag:
-      - Names
-      - NoMerge
-  - name: 'DALCO Inventory Sorter - FWE (Broken Steel).esp'
-    tag:
-      - Names
-      - NoMerge
-  - name: 'DALCO Inventory Sorter - FWE (Point Lookout).esp'
-    tag:
-      - Names
-      - NoMerge
-  - name: 'DALCO Inventory Sorter - FWE (Mothership Zeta).esp'
-    tag:
-      - Names
-      - NoMerge
-  - name: 'DALCO Inventory Sorter - FWE (Alternate Travel).esp'
-    tag:
-      - Names
-      - NoMerge
   - name: 'FO3 Wanderers Edition - Lvl 30 Balance.esp'
     inc: [ 'FO3 Wanderers Edition - Lvl 30 More Skills.esp' ]
   - name: 'FO3 Wanderers Edition - Lvl 30 More Skills.esp'
     inc: [ 'FO3 Wanderers Edition - Lvl 30 Balance.esp' ]
-  - name: 'DALCO Inventory Sorter - FWE (Followers Enh).esp'
-    tag:
-      - Names
-      - NoMerge
-  - name: 'DALCO Inventory Sorter - FWE (Followers Enh (BrS)).esp'
-    tag:
-      - Names
-      - NoMerge
   - name: 'FO3 Wanderers Edition - Optional Free Play After MQ.esp'
     inc: [ 'BrokenSteel.esm' ]
   - name: 'FO3 Wanderers Edition - Optional Free Play After Mainquest.esp'
@@ -2743,10 +2826,6 @@ plugins:
     clean:
       - crc: 0x3E2861DB
         util: 'FO3Edit v4.0.2f'
-  - name: 'DALCO Inventory Sorter - Weapon Mod Kits (Base).esp'
-    tag:
-      - Names
-      - NoMerge
   - name: 'WeaponModKits - FWE Master Release.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17757' ]
     tag:
@@ -2770,50 +2849,6 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'WeaponModKits - FWE Optional Worn Weapons.esp'
     tag: [ Delev ]
-  - name: 'DALCO Inventory Sorter - WMK - FWE Master Release.esp'
-    tag:
-      - Names
-      - NoMerge
-  - name: 'DALCO Inventory Sorter - Weapon Mod Kits (DLC Anchorage).esp'
-    tag:
-      - Names
-      - NoMerge
-  - name: 'DALCO Inventory Sorter - WMK - FWE (DLC Anchorage).esp'
-    tag:
-      - Names
-      - NoMerge
-  - name: 'DALCO Inventory Sorter - Weapon Mod Kits (DLC ThePitt).esp'
-    tag:
-      - Names
-      - NoMerge
-  - name: 'DALCO Inventory Sorter - WMK - FWE (DLC ThePitt).esp'
-    tag:
-      - Names
-      - NoMerge
-  - name: 'DALCO Inventory Sorter - Weapon Mod Kits (DLC BrS).esp'
-    tag:
-      - Names
-      - NoMerge
-  - name: 'DALCO Inventory Sorter - WMK - FWE (DLC BrS).esp'
-    tag:
-      - Names
-      - NoMerge
-  - name: 'DALCO Inventory Sorter - Weapon Mod Kits (DLC PointLookout).esp'
-    tag:
-      - Names
-      - NoMerge
-  - name: 'DALCO Inventory Sorter - WMK - FWE (DLC PointLookout).esp'
-    tag:
-      - Names
-      - NoMerge
-  - name: 'DALCO Inventory Sorter - Weapon Mod Kits (DLC Zeta).esp'
-    tag:
-      - Names
-      - NoMerge
-  - name: 'DALCO Inventory Sorter - WMK - FWE (DLC Zeta).esp'
-    tag:
-      - Names
-      - NoMerge
   - name: 'CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp'
     inc:
       - 'CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp'
@@ -2977,10 +3012,6 @@ plugins:
     clean:
       - crc: 0x9DCD1FF0
         util: 'FO3Edit v4.0.2e'
-  - name: 'DALCO Inventory Sorter - WMKAA12Shotgun.esp'
-    tag:
-      - Names
-      - NoMerge
   - name: 'xCALIBRmunitions.esp'
     tag:
       - Delev
@@ -3078,10 +3109,6 @@ plugins:
     tag: [ Stats ]
   - name: 'ModBetterPArmorSteel.esp'
     tag: [ Stats ]
-  - name: 'DALCO Inventory Sorter - IGM.esp'
-    tag:
-      - Names
-      - NoMerge
   - name: 'RD_ElderLyonsRobe.esp'
     tag: [ Graphics ]
   - name: 'SimpleEyePatch.esp'
@@ -3542,10 +3569,6 @@ plugins:
     tag:
       - Delev
       - Relev
-  - name: 'DALCO Inventory Sorter - Mart''s Mutant Mod (Main).esp'
-    tag:
-      - Names
-      - NoMerge
   - name: 'Mart''s Mutant Mod - UF3P.esp'
     tag: [ Invent ]
   - name: 'PB MMM HD.esp'
@@ -3556,10 +3579,6 @@ plugins:
     msg:
       - <<: *obsolete
         subs: [ '[Fallout 3 Redesigned](https://www.nexusmods.com/fallout3/mods/6341)' ]
-  - name: 'DALCO Inventory Sorter - Mart''s Mutant Mod (DLC Broken Steel).esp'
-    tag:
-      - Names
-      - NoMerge
   - name: 'Project Beauty- Point Lookout MMM.esp'
     tag:
       - Deactivate
@@ -3631,10 +3650,6 @@ plugins:
         crc: 0x7A8FAA71
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 10
-  - name: 'DALCO Inventory Sorter - MMM - FWE.esp'
-    tag:
-      - Names
-      - NoMerge
   - name: 'Mart''s Mutant Mod - FWE Master Release + DLCs.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
     tag:
@@ -4090,10 +4105,6 @@ plugins:
     tag:
       - Scripts
       - Stats
-  - name: 'DALCO Inventory Sorter - SMA.esp'
-    tag:
-      - Names
-      - NoMerge
   - name: 'SuperStim.esp'
     tag: [ Scripts ]
   - name: 'SpiderAnts.esp'
@@ -4200,14 +4211,6 @@ plugins:
     msg: [ *alreadyInFOOK2 ]
   - name: 'GH-HealingRebalanceMod_Infirmary+Lab.esp'
     tag: [ Scripts ]
-  - name: 'DALCO Inventory Sorter - Max Level Workaround.esp'
-    tag: [ Names ]
-  - name: 'DALCO Inventory Sorter - Max Level Workaround (BS).esp'
-    tag: [ Names ]
-  - name: 'DALCO Inventory Sorter - Max Level Workaround (HP).esp'
-    tag: [ Names ]
-  - name: 'DALCO Inventory Sorter - Max Level Workaround (HP-BS).esp'
-    tag: [ Names ]
   - name: 'dD - Enhanced Blood Main.esp'
     url:
       - 'https://www.nexusmods.com/fallout3/mods/101'
