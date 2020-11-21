@@ -1057,23 +1057,33 @@ plugins:
 
 
 ###### Gameplay ######
+  - name: 'Lobotomized! 50.esp'
+    inc:
+      - 'Lobotomized! 100.esp'
+      - 'Lobotomized! 200.esp'
+      - 'Lobotomized! 300.esp'
+      - 'Lobotomized! 400.esp'
   - name: 'Lobotomized! 100.esp'
     inc:
+      - 'Lobotomized! 50.esp'
       - 'Lobotomized! 200.esp'
       - 'Lobotomized! 300.esp'
       - 'Lobotomized! 400.esp'
   - name: 'Lobotomized! 200.esp'
     inc:
+      - 'Lobotomized! 50.esp'
       - 'Lobotomized! 100.esp'
       - 'Lobotomized! 300.esp'
       - 'Lobotomized! 400.esp'
   - name: 'Lobotomized! 300.esp'
     inc:
+      - 'Lobotomized! 50.esp'
       - 'Lobotomized! 100.esp'
       - 'Lobotomized! 200.esp'
       - 'Lobotomized! 400.esp'
   - name: 'Lobotomized! 400.esp'
     inc:
+      - 'Lobotomized! 50.esp'
       - 'Lobotomized! 100.esp'
       - 'Lobotomized! 200.esp'
       - 'Lobotomized! 300.esp'
