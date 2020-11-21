@@ -1085,6 +1085,10 @@ plugins:
 
 
 ###### Gameplay ######
+  - name: 'GalaxyNewsRadioFix\[(S|N)\]\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/3986/'
+        name: 'GNR Radio Fixed'
   - name: 'GalaxyNewsRadioFix[S].esp'
     inc:
       - 'GalaxyNewsRadioFix[N].esp'
@@ -1102,6 +1106,10 @@ plugins:
       - 'GalaxyNewsRadio80[M].esp'
       - 'GalaxyNewsRadio100[M].esp'
 
+  - name: 'GalaxyNewsRadio\d\d\d?\[(S|SR|C|CR|M)\]\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/2972/'
+        name: 'GNR Radio Fixed Extended'
   - name: 'GalaxyNewsRadio20[M].esp'
     inc:
       - 'GalaxyNewsRadioFix[S].esp'
