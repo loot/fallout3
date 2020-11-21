@@ -1072,6 +1072,7 @@ plugins:
 
 ###### Gameplay ######
   - name: 'BetterGamePerformance.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/13520/' ]
     tag:
       - Deflst
       - Delev
