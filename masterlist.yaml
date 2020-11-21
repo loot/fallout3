@@ -976,6 +976,10 @@ plugins:
 
 
 ###### AudioVisual - Interface ######
+  - name: 'BA_InventorySorter(GOTY|Vanilla|Anchorage|ThePitt|BrokenSteel|PointLookout|Zeta)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/10691/'
+        name: 'Bad Ass Inventory Sorter'
   - name: 'BA_InventorySorterGOTY.esp'
     tag: [ Names ]
   - name: 'BA_InventorySorterAnchorage.esp'
