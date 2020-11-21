@@ -954,6 +954,9 @@ plugins:
   - name: 'PyromaniacFix-(Burnmaster|Both|Both\+Nuka)-BS.esp'
     msg: [ *useVersionNonBrokenSteel ]
 
+  - name: 'Stop Insulting Me Outcasts.esp'
+    tag: [ Factions ]
+
   - name: 'The Pitt - Fixes.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15891' ]
     group: *fixesGroup
@@ -1866,8 +1869,6 @@ plugins:
     tag:
       - Deflst
       - Delev
-  - name: 'Stop Insulting Me Outcasts.esp'
-    tag: [ Factions ]
   - name: 'Raider preset beta.esp'
     tag:
       - Deactivate
