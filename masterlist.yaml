@@ -1056,6 +1056,28 @@ plugins:
         util: 'FO3Edit v4.0.3'
 
 
+###### Gameplay ######
+  - name: 'Lobotomized! 100.esp'
+    inc:
+      - 'Lobotomized! 200.esp'
+      - 'Lobotomized! 300.esp'
+      - 'Lobotomized! 400.esp'
+  - name: 'Lobotomized! 200.esp'
+    inc:
+      - 'Lobotomized! 100.esp'
+      - 'Lobotomized! 300.esp'
+      - 'Lobotomized! 400.esp'
+  - name: 'Lobotomized! 300.esp'
+    inc:
+      - 'Lobotomized! 100.esp'
+      - 'Lobotomized! 200.esp'
+      - 'Lobotomized! 400.esp'
+  - name: 'Lobotomized! 400.esp'
+    inc:
+      - 'Lobotomized! 100.esp'
+      - 'Lobotomized! 200.esp'
+      - 'Lobotomized! 300.esp'
+
   - name: '20th Century Weapons.esm'
     url: [ 'http://modsreloaded.com/19th-and-20th-century-weapons' ]
     tag: [ Scripts ]
@@ -2086,26 +2108,6 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Lawbringer Boutnies Ver1.1.esp'
     tag: [ Invent ]
-  - name: 'Lobotomized! 400.esp'
-    inc:
-      - 'Lobotomized! 300.esp'
-      - 'Lobotomized! 200.esp'
-      - 'Lobotomized! 100.esp'
-  - name: 'Lobotomized! 300.esp'
-    inc:
-      - 'Lobotomized! 400.esp'
-      - 'Lobotomized! 200.esp'
-      - 'Lobotomized! 100.esp'
-  - name: 'Lobotomized! 200.esp'
-    inc:
-      - 'Lobotomized! 400.esp'
-      - 'Lobotomized! 300.esp'
-      - 'Lobotomized! 100.esp'
-  - name: 'Lobotomized! 100.esp'
-    inc:
-      - 'Lobotomized! 400.esp'
-      - 'Lobotomized! 300.esp'
-      - 'Lobotomized! 200.esp'
   - name: 'NotSoFast.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4730' ]
     tag: [ Scripts ]
