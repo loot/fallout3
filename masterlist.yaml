@@ -1071,6 +1071,11 @@ plugins:
 
 
 ###### Gameplay ######
+  - name: 'BetterGamePerformance.esp'
+    tag:
+      - Deflst
+      - Delev
+
   - name: 'Lobotomized! (50|100|200|300|400)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14354/' ]
     tag: [ Text ]
@@ -1930,10 +1935,6 @@ plugins:
       - C.Light
       - Invent
       - Scripts
-  - name: 'BetterGamePerformance.esp'
-    tag:
-      - Deflst
-      - Delev
   - name: 'Raider preset beta.esp'
     tag:
       - Deactivate
