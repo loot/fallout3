@@ -994,6 +994,11 @@ plugins:
     tag: [ Names ]
   - name: 'BA_InventorySorterZeta.esp'
     tag: [ Names ]
+  - name: 'BA_InventorySorter(Vanilla|Anchorage|ThePitt|BrokenSteel|PointLookout|Zeta)\.esp'
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'BA_InventorySorterGOTY.esp' ]
+        condition: 'file("BA_InventorySorterGOTY.esp") and active("Anchorage.esm") and active("ThePitt.esm") and active("BrokenSteel.esm") and active("PointLookout.esm") and active("Zeta.esm")'
 
   - name: 'DALCO Inventory Sorter - .*\.esp'
     url:
