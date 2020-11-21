@@ -866,6 +866,9 @@ plugins:
   - name: 'BringBackBael.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6545/' ]
     tag: [ Scripts ]
+    msg:
+      - <<: *alreadyInOrFixedByUFO3P
+        condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.5", >=) and version("Unofficial Fallout 3 Patch.esm", "3.0", <)'
 
   - name: 'DemolitionExpertFix-Nuka.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/684/' ]
