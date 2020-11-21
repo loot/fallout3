@@ -976,6 +976,19 @@ plugins:
 
 
 ###### AudioVisual - Interface ######
+  - name: 'BA_InventorySorterGOTY.esp'
+    tag: [ Names ]
+  - name: 'BA_InventorySorterAnchorage.esp'
+    tag: [ Names ]
+  - name: 'BA_InventorySorterThePitt.esp'
+    tag: [ Names ]
+  - name: 'BA_InventorySorterBrokenSteel.esp'
+    tag: [ Names ]
+  - name: 'BA_InventorySorterPointLookout.esp'
+    tag: [ Names ]
+  - name: 'BA_InventorySorterZeta.esp'
+    tag: [ Names ]
+
   - name: 'DALCO Inventory Sorter - .*\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/16943/'
@@ -2304,18 +2317,6 @@ plugins:
       - Relations
   - name: 'SuperSledgeBeatdown.esp'
     tag: [ Scripts ]
-  - name: 'BA_InventorySorterAnchorage.esp'
-    tag: [ Names ]
-  - name: 'BA_InventorySorterBrokenSteel.esp'
-    tag: [ Names ]
-  - name: 'BA_InventorySorterGOTY.esp'
-    tag: [ Names ]
-  - name: 'BA_InventorySorterPointLookout.esp'
-    tag: [ Names ]
-  - name: 'BA_InventorySorterThePitt.esp'
-    tag: [ Names ]
-  - name: 'BA_InventorySorterZeta.esp'
-    tag: [ Names ]
   - name: 'AmmoSorter - Start.esp'
     tag: [ Names ]
   - name: 'AmmoSorter - End.esp'
