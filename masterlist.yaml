@@ -980,37 +980,6 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/10691/'
         name: 'Bad Ass Inventory Sorter'
-  - name: 'BA_InventorySorterGOTY.esp'
-    tag:
-      - Deactivate
-      - Names
-      - NoMerge
-  - name: 'BA_InventorySorterVanilla.esp'
-    tag:
-      - Deactivate
-      - Names
-      - NoMerge
-  - name: 'BA_InventorySorterAnchorage.esp'
-    tag:
-      - Deactivate
-      - Names
-      - NoMerge
-  - name: 'BA_InventorySorterThePitt.esp'
-    tag:
-      - Deactivate
-      - Names
-      - NoMerge
-  - name: 'BA_InventorySorterBrokenSteel.esp'
-    tag:
-      - Deactivate
-      - Names
-      - NoMerge
-  - name: 'BA_InventorySorterPointLookout.esp'
-    tag:
-      - Deactivate
-      - Names
-      - NoMerge
-  - name: 'BA_InventorySorterZeta.esp'
     tag:
       - Deactivate
       - Names
