@@ -982,6 +982,13 @@ plugins:
     tag:
       - NpcFacesForceFullImport
       - NPC.Race
+    msg:
+      - <<: *patchProvided
+        subs: [ 'FOOK (Fallout Overhaul Kit)' ]
+        condition: 'active("FOOK2 - Main.ESM") and not active("FOOK2 - Project Beauty.esp") and not active("Bashed Patch.*\.esp")'
+      - <<: *patchProvided
+        subs: [ 'Martigen''s Mutant Mod' ]
+        condition: 'active("Mart''s Mutant Mod.esm") and not active("Mart''s Mutant Mod - Project Beauty.esp") and not active("Bashed Patch.*\.esp")'
     clean:
       - crc: 0x6D88BE8B
         util: 'FO3Edit v4.0.3'
