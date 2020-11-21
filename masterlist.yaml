@@ -981,19 +981,40 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/10691/'
         name: 'Bad Ass Inventory Sorter'
   - name: 'BA_InventorySorterGOTY.esp'
-    tag: [ Names ]
+    tag:
+      - Deactivate
+      - Names
+      - NoMerge
   - name: 'BA_InventorySorterVanilla.esp'
-    tag: [ Names ]
+    tag:
+      - Deactivate
+      - Names
+      - NoMerge
   - name: 'BA_InventorySorterAnchorage.esp'
-    tag: [ Names ]
+    tag:
+      - Deactivate
+      - Names
+      - NoMerge
   - name: 'BA_InventorySorterThePitt.esp'
-    tag: [ Names ]
+    tag:
+      - Deactivate
+      - Names
+      - NoMerge
   - name: 'BA_InventorySorterBrokenSteel.esp'
-    tag: [ Names ]
+    tag:
+      - Deactivate
+      - Names
+      - NoMerge
   - name: 'BA_InventorySorterPointLookout.esp'
-    tag: [ Names ]
+    tag:
+      - Deactivate
+      - Names
+      - NoMerge
   - name: 'BA_InventorySorterZeta.esp'
-    tag: [ Names ]
+    tag:
+      - Deactivate
+      - Names
+      - NoMerge
   - name: 'BA_InventorySorter(Vanilla|Anchorage|ThePitt|BrokenSteel|PointLookout|Zeta)\.esp'
     msg:
       - <<: *alreadyInX
