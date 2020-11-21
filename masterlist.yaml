@@ -863,6 +863,14 @@ plugins:
       - Relev
 
 ###### Fixes ######
+  - name: 'BringBackBael.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6545/' ]
+    group: *fixesGroup
+    tag: [ Scripts ]
+    msg:
+      - <<: *alreadyInOrFixedByUFO3P
+        condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.5", >=) and version("Unofficial Fallout 3 Patch.esm", "3.0", <)'
+
   - name: 'DemolitionExpertFix-Nuka.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/684/' ]
     group: *fixesGroup
@@ -1846,8 +1854,6 @@ plugins:
       - 'Error Correction - All Transparency & Trees.esp'
   - name: 'Error Correction - Trees.esp'
     inc: [ 'Error Correction - All Transparency & Trees.esp' ]
-  - name: 'BringBackBael.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6545' ]
   - name: 'BlackWidowBurkeFix.esp'
     tag: [ Scripts ]
   - name: 'MS11fix.esp'
