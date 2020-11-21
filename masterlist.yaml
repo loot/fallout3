@@ -954,12 +954,12 @@ plugins:
   - name: 'PyromaniacFix-(Burnmaster|Both|Both\+Nuka)-BS.esp'
     msg: [ *useVersionNonBrokenSteel ]
 
-  - name: 'Stop Insulting Me Outcasts( – SCC.esp)?\.esp'
+  - name: 'Stop Insulting Me Outcasts( – SCC)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16554/' ]
     msg:
       - <<: *useOnlyOneX
         subs: [ 'Stop Insulting Me Outcasts ESP - **Stop Insulting Me Outcasts.esp** OR **Stop Insulting Me Outcasts – SCC.esp**' ]
-        condition: 'many("Stop Insulting Me Outcasts( – SCC.esp)?\.esp")'
+        condition: 'many("Stop Insulting Me Outcasts( – SCC)?\.esp")'
   - name: 'Stop Insulting Me Outcasts.esp'
     msg:
       - <<: *alreadyInOrFixedByUFO3P
