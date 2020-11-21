@@ -976,6 +976,20 @@ plugins:
 
 
 ###### AudioVisual - Interface ######
+  - name: 'BA_InventorySorter(GOTY|Vanilla|Anchorage|ThePitt|BrokenSteel|PointLookout|Zeta)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/10691/'
+        name: 'Bad Ass Inventory Sorter'
+    tag:
+      - Deactivate
+      - Names
+      - NoMerge
+  - name: 'BA_InventorySorter(Vanilla|Anchorage|ThePitt|BrokenSteel|PointLookout|Zeta)\.esp'
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'BA_InventorySorterGOTY.esp' ]
+        condition: 'file("BA_InventorySorterGOTY.esp") and active("Anchorage.esm") and active("ThePitt.esm") and active("BrokenSteel.esm") and active("PointLookout.esm") and active("Zeta.esm")'
+
   - name: 'DALCO Inventory Sorter - .*\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/16943/'
@@ -2304,18 +2318,6 @@ plugins:
       - Relations
   - name: 'SuperSledgeBeatdown.esp'
     tag: [ Scripts ]
-  - name: 'BA_InventorySorterAnchorage.esp'
-    tag: [ Names ]
-  - name: 'BA_InventorySorterBrokenSteel.esp'
-    tag: [ Names ]
-  - name: 'BA_InventorySorterGOTY.esp'
-    tag: [ Names ]
-  - name: 'BA_InventorySorterPointLookout.esp'
-    tag: [ Names ]
-  - name: 'BA_InventorySorterThePitt.esp'
-    tag: [ Names ]
-  - name: 'BA_InventorySorterZeta.esp'
-    tag: [ Names ]
   - name: 'AmmoSorter - Start.esp'
     tag: [ Names ]
   - name: 'AmmoSorter - End.esp'
