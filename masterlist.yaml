@@ -956,6 +956,9 @@ plugins:
 
   - name: 'Stop Insulting Me Outcasts.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16554/' ]
+    msg:
+      - <<: *alreadyInOrFixedByUFO3P
+        condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.4", >=)'
 
   - name: 'The Pitt - Fixes.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15891' ]
