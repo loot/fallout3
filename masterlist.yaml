@@ -1070,6 +1070,20 @@ plugins:
         util: 'FO3Edit v4.0.3'
 
 
+###### Environment, Landscape & Flora ######
+  - name: 'BetterGamePerformance.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/13520/' ]
+    tag:
+      - Deflst
+      - Delev
+      - Invent.Remove
+    dirty:
+      - <<: *quickClean
+        crc: 0x72748F72
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        udr: 29115
+
+
 ###### Gameplay ######
   - name: 'Lobotomized! (50|100|200|300|400)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14354/' ]
@@ -1930,10 +1944,6 @@ plugins:
       - C.Light
       - Invent
       - Scripts
-  - name: 'BetterGamePerformance.esp'
-    tag:
-      - Deflst
-      - Delev
   - name: 'Raider preset beta.esp'
     tag:
       - Deactivate
