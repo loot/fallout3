@@ -954,6 +954,20 @@ plugins:
   - name: 'PyromaniacFix-(Burnmaster|Both|Both\+Nuka)-BS.esp'
     msg: [ *useVersionNonBrokenSteel ]
 
+  - name: 'Stop Insulting Me Outcasts( – SCC)?\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/16554/' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Stop Insulting Me Outcasts ESP - **Stop Insulting Me Outcasts.esp** OR **Stop Insulting Me Outcasts – SCC.esp**' ]
+        condition: 'many("Stop Insulting Me Outcasts( – SCC)?\.esp")'
+  - name: 'Stop Insulting Me Outcasts.esp'
+    msg:
+      - <<: *alreadyInOrFixedByUFO3P
+        condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.4", >=)'
+      - <<: *useVersion
+        subs: [ 'Sharing and Caring Companions **Stop Insulting Me Outcasts – SCC.esp**' ]
+        condition: 'active("Sharing and Caring Companions.esm")'
+
   - name: 'The Pitt - Fixes.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15891' ]
     group: *fixesGroup
@@ -1866,8 +1880,6 @@ plugins:
     tag:
       - Deflst
       - Delev
-  - name: 'Stop Insulting Me Outcasts.esp'
-    tag: [ Factions ]
   - name: 'Raider preset beta.esp'
     tag:
       - Deactivate
