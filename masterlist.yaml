@@ -979,28 +979,38 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/6341/'
         name: 'Fallout 3 Redesigned - Formerly Known as Project Beauty'
   - name: 'Project Beauty.esm'
+    tag:
+      - NpcFacesForceFullImport
+      - NPC.Race
     clean:
       - crc: 0x6D88BE8B
         util: 'FO3Edit v4.0.3'
       - crc: 0x06AA1298
         util: 'FO3Edit v4.0.3'
   - name: 'Project Beauty- Broken Steel.esp'
+    tag:
+      - NpcFacesForceFullImport
+      - NPC.Race
     clean:
       - crc: 0xDA6E632C
         util: 'FO3Edit v4.0.3'
   - name: 'Project Beauty- Point Lookout.esp'
+    tag: [ NpcFacesForceFullImport ]
     clean:
       - crc: 0x431457E1
         util: 'FO3Edit v4.0.3'
   - name: 'FOOK2 - Project Beauty.esp'
+    tag: [ Factions ]
     clean:
       - crc: 0x278F38CC
         util: 'FO3Edit v4.0.3'
   - name: 'FOOK - DIK - Project Beauty.esp'
+    tag: [ NPC.Race ]
     clean:
       - crc: 0x3C492333
         util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - Project Beauty.esp'
+    tag: [ NPC.Race ]
     clean:
       - crc: 0x2EE64105
         util: 'FO3Edit v4.0.3'
