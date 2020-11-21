@@ -1059,56 +1059,35 @@ plugins:
 ###### Gameplay ######
   - name: 'Lobotomized! (50|100|200|300|400)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14354/' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Lobotomized! ESP' ]
+        condition: 'many("Lobotomized! (50|100|200|300|400)\.esp")'
   - name: 'Lobotomized! 50.esp'
-    inc:
-      - 'Lobotomized! 100.esp'
-      - 'Lobotomized! 200.esp'
-      - 'Lobotomized! 300.esp'
-      - 'Lobotomized! 400.esp'
     dirty:
       - <<: *quickClean
         crc: 0xE50CA155
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
   - name: 'Lobotomized! 100.esp'
-    inc:
-      - 'Lobotomized! 50.esp'
-      - 'Lobotomized! 200.esp'
-      - 'Lobotomized! 300.esp'
-      - 'Lobotomized! 400.esp'
     dirty:
       - <<: *quickClean
         crc: 0xC5614EB1
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
   - name: 'Lobotomized! 200.esp'
-    inc:
-      - 'Lobotomized! 50.esp'
-      - 'Lobotomized! 100.esp'
-      - 'Lobotomized! 300.esp'
-      - 'Lobotomized! 400.esp'
     dirty:
       - <<: *quickClean
         crc: 0x5C4C84E0
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
   - name: 'Lobotomized! 300.esp'
-    inc:
-      - 'Lobotomized! 50.esp'
-      - 'Lobotomized! 100.esp'
-      - 'Lobotomized! 200.esp'
-      - 'Lobotomized! 400.esp'
     dirty:
       - <<: *quickClean
         crc: 0x9D075B3B
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
   - name: 'Lobotomized! 400.esp'
-    inc:
-      - 'Lobotomized! 50.esp'
-      - 'Lobotomized! 100.esp'
-      - 'Lobotomized! 200.esp'
-      - 'Lobotomized! 300.esp'
     dirty:
       - <<: *quickClean
         crc: 0xD86FFBBC
