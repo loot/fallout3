@@ -1076,6 +1076,7 @@ plugins:
     tag:
       - Deflst
       - Delev
+      - Invent.Remove
     dirty:
       - <<: *quickClean
         crc: 0x72748F72
