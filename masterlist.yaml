@@ -865,6 +865,7 @@ plugins:
 ###### Fixes ######
   - name: 'BringBackBael.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6545/' ]
+    tag: [ Scripts ]
 
   - name: 'DemolitionExpertFix-Nuka.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/684/' ]
