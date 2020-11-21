@@ -1089,72 +1089,22 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/3986/'
         name: 'GNR Radio Fixed'
-  - name: 'GalaxyNewsRadioFix[S].esp'
-    inc:
-      - 'GalaxyNewsRadioFix[N].esp'
-      - 'GalaxyNewsRadio20[M].esp'
-      - 'GalaxyNewsRadio40[M].esp'
-      - 'GalaxyNewsRadio60[M].esp'
-      - 'GalaxyNewsRadio80[M].esp'
-      - 'GalaxyNewsRadio100[M].esp'
-  - name: 'GalaxyNewsRadioFix[N].esp'
-    inc:
-      - 'GalaxyNewsRadioFix[S].esp'
-      - 'GalaxyNewsRadio20[M].esp'
-      - 'GalaxyNewsRadio40[M].esp'
-      - 'GalaxyNewsRadio60[M].esp'
-      - 'GalaxyNewsRadio80[M].esp'
-      - 'GalaxyNewsRadio100[M].esp'
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'GNR Radio Fixed Extended' ]
+        condition: 'active("GalaxyNewsRadio\d\d\d?\[(S|SR|C|CR|M)\]\.esp")'
+      - <<: *useOnlyOneX
+        subs: [ 'GNR Radio Fixed ESP' ]
+        condition: 'many("GalaxyNewsRadioFix\[(S|N)\]\.esp")'
 
   - name: 'GalaxyNewsRadio\d\d\d?\[(S|SR|C|CR|M)\]\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/2972/'
         name: 'GNR Radio Fixed Extended'
-  - name: 'GalaxyNewsRadio20[M].esp'
-    inc:
-      - 'GalaxyNewsRadioFix[S].esp'
-      - 'GalaxyNewsRadioFix[N].esp'
-      - 'GalaxyNewsRadio20[M].esp'
-      - 'GalaxyNewsRadio40[M].esp'
-      - 'GalaxyNewsRadio60[M].esp'
-      - 'GalaxyNewsRadio80[M].esp'
-      - 'GalaxyNewsRadio100[M].esp'
-  - name: 'GalaxyNewsRadio40[M].esp'
-    inc:
-      - 'GalaxyNewsRadioFix[S].esp'
-      - 'GalaxyNewsRadioFix[N].esp'
-      - 'GalaxyNewsRadio20[M].esp'
-      - 'GalaxyNewsRadio40[M].esp'
-      - 'GalaxyNewsRadio60[M].esp'
-      - 'GalaxyNewsRadio80[M].esp'
-      - 'GalaxyNewsRadio100[M].esp'
-  - name: 'GalaxyNewsRadio60[M].esp'
-    inc:
-      - 'GalaxyNewsRadioFix[S].esp'
-      - 'GalaxyNewsRadioFix[N].esp'
-      - 'GalaxyNewsRadio20[M].esp'
-      - 'GalaxyNewsRadio40[M].esp'
-      - 'GalaxyNewsRadio60[M].esp'
-      - 'GalaxyNewsRadio80[M].esp'
-      - 'GalaxyNewsRadio100[M].esp'
-  - name: 'GalaxyNewsRadio80[M].esp'
-    inc:
-      - 'GalaxyNewsRadioFix[S].esp'
-      - 'GalaxyNewsRadioFix[N].esp'
-      - 'GalaxyNewsRadio20[M].esp'
-      - 'GalaxyNewsRadio40[M].esp'
-      - 'GalaxyNewsRadio60[M].esp'
-      - 'GalaxyNewsRadio80[M].esp'
-      - 'GalaxyNewsRadio100[M].esp'
-  - name: 'GalaxyNewsRadio100[M].esp'
-    inc:
-      - 'GalaxyNewsRadioFix[S].esp'
-      - 'GalaxyNewsRadioFix[N].esp'
-      - 'GalaxyNewsRadio20[M].esp'
-      - 'GalaxyNewsRadio40[M].esp'
-      - 'GalaxyNewsRadio60[M].esp'
-      - 'GalaxyNewsRadio80[M].esp'
-      - 'GalaxyNewsRadio100[M].esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'GNR Radio Fixed Extended ESP' ]
+        condition: 'many("GalaxyNewsRadio\d\d\d?\[(S|SR|C|CR|M)\]\.esp")'
 
   - name: 'Lobotomized! (50|100|200|300|400)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14354/' ]
