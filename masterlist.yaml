@@ -980,7 +980,9 @@ plugins:
         name: 'Fallout 3 Redesigned - Formerly Known as Project Beauty'
   - name: 'Project Beauty.esm'
     tag:
-      - NpcFacesForceFullImport
+      - NPC.Eyes
+      - NPC.FaceGen
+      - NPC.Hair
       - NPC.Race
     msg:
       - <<: *patchProvided
