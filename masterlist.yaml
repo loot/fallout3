@@ -959,6 +959,9 @@ plugins:
     msg:
       - <<: *alreadyInOrFixedByUFO3P
         condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.4", >=)'
+      - <<: *useVersion
+        subs: [ 'Sharing and Caring Companions **Stop Insulting Me Outcasts – SCC.esp**' ]
+        condition: 'active("Sharing and Caring Companions.esm")'
 
   - name: 'The Pitt - Fixes.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15891' ]
