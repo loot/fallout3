@@ -982,6 +982,8 @@ plugins:
         name: 'Bad Ass Inventory Sorter'
   - name: 'BA_InventorySorterGOTY.esp'
     tag: [ Names ]
+  - name: 'BA_InventorySorterVanilla.esp'
+    tag: [ Names ]
   - name: 'BA_InventorySorterAnchorage.esp'
     tag: [ Names ]
   - name: 'BA_InventorySorterThePitt.esp'
