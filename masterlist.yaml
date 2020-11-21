@@ -1096,7 +1096,6 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'GNR Radio Fixed ESP' ]
         condition: 'many("GalaxyNewsRadioFix\[(S|N)\]\.esp")'
-
   - name: 'GalaxyNewsRadio\d\d\d?\[(S|SR|C|CR|M)\]\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/2972/'
