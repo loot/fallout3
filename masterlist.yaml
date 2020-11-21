@@ -956,7 +956,6 @@ plugins:
 
   - name: 'Stop Insulting Me Outcasts.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16554/' ]
-    tag: [ Factions ]
 
   - name: 'The Pitt - Fixes.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15891' ]
