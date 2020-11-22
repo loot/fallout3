@@ -1096,6 +1096,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/3447/'
         name: 'Community Ammunition Library - CALIBR'
+    group: *fixesGroup
     clean:
       - crc: 0x67CE3320
         util: 'FO3Edit v4.0.3'
@@ -1104,6 +1105,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/4447/'
         name: 'CRAFT - Community Resource to Allow Fanmade Tinkering'
+    group: *fixesGroup
     clean:
       - crc: 0xAE67CA57
         util: 'FO3Edit v4.0.3'
