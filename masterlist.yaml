@@ -1109,6 +1109,10 @@ plugins:
         name: 'Paradox Ignition presents The Mergers'
     tag: [ C.Light ]
   - name: 'Realistic Interior Lighting.esp'
+    msg:
+      - <<: *patchUpdateAvailable
+        subs: [ '[Paradox Ignition presents The Mergers](https://www.nexusmods.com/fallout3/mods/16787/) - **Realistic Interior Lighting Merged**' ]
+        condition: 'not checksum("Realistic Interior Lighting.esp", 409A2BD8)'
     clean:
       - crc: 0x409A2BD8
         util: 'FO3Edit v4.0.3'
