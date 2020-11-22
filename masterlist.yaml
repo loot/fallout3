@@ -1105,11 +1105,10 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/9250/'
         name: 'Realistic Interior Lighting'
-    tag: [ C.Light ]
-  - name: 'Realistic Interior Lighting.esp'
-    url:
       - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
         name: 'Paradox Ignition presents The Mergers'
+    tag: [ C.Light ]
+  - name: 'Realistic Interior Lighting.esp'
     msg:
       - <<: *patchUpdateAvailable
         subs: [ '[Paradox Ignition presents The Mergers](https://www.nexusmods.com/fallout3/mods/16787/) - **Realistic Interior Lighting Merged**' ]
