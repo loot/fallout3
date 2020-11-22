@@ -1100,6 +1100,20 @@ plugins:
       - NoMerge
 
 
+###### AudioVisual - Lighting ######
+  - name: 'Realistic Interior Lighting.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/16787' ]
+    tag: [ C.Light ]
+    clean:
+      - crc: 0x409A2BD8
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Realistic Interior Lighting - BS.esp'
+    tag: [ C.Light ]
+  - name: 'Realistic Interior Lighting - OA.esp'
+    tag: [ C.Light ]
+  - name: 'Realistic Interior Lighting - PL.esp'
+    tag: [ C.Light ]
+
   - name: 'StreetLights.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8069' ]
     group: *veryEarlyGroup
@@ -4260,18 +4274,6 @@ plugins:
       - crc: 0xF5E44077
         util: 'FO3Edit v4.0.2f'
   - name: 'FelloutWithLightingOverhual-1.0.esp'
-    tag: [ C.Light ]
-  - name: 'Realistic Interior Lighting.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/16787' ]
-    tag: [ C.Light ]
-    clean:
-      - crc: 0x409A2BD8
-        util: 'FO3Edit v4.0.2e'
-  - name: 'Realistic Interior Lighting - BS.esp'
-    tag: [ C.Light ]
-  - name: 'Realistic Interior Lighting - OA.esp'
-    tag: [ C.Light ]
-  - name: 'Realistic Interior Lighting - PL.esp'
     tag: [ C.Light ]
   - name: 'DarkerInteriorsFallOut3.esp'
     tag: [ C.Light ]
