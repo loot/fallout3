@@ -1097,11 +1097,8 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/3447/'
         name: 'Community Ammunition Library - CALIBR'
     clean:
-      - crc: 0x61D51135
-        util: 'FO3Edit v4.0.2e'
-      # 19th and 20th Century Weapons
-      - crc: 0x86EE59AB
-        util: 'FO3Edit v4.0.2e'
+      - crc: 0x67CE3320
+        util: 'FO3Edit v4.0.3'
 
   - name: 'CRAFT.esm'
     url:
@@ -1109,7 +1106,7 @@ plugins:
         name: 'CRAFT - Community Resource to Allow Fanmade Tinkering'
     clean:
       - crc: 0xAE67CA57
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.3'
 
 
 ###### AudioVisual - Interface ######
