@@ -1121,7 +1121,7 @@ plugins:
     msg:
       - <<: *alreadyInX
         subs: [ 'Realistic Interior Lighting Merged' ]
-        condition: 'active("Realistic Interior Lighting - (OA|BS|PL)\.esp")'
+        condition: 'checksum("Realistic Interior Lighting.esp", 409A2BD8)'
 
   - name: 'StreetLights.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8069' ]
