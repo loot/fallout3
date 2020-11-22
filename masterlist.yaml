@@ -1101,6 +1101,8 @@ plugins:
     clean:
       - crc: 0x67CE3320
         util: 'FO3Edit v4.0.3'
+  - name: 'CALIBRxMerchant.esp'
+    group: *fixesGroup
 
   - name: 'CRAFT.esm'
     url:
@@ -1110,6 +1112,12 @@ plugins:
     clean:
       - crc: 0xAE67CA57
         util: 'FO3Edit v4.0.3'
+  - name: 'CRAFT - Activation Perk.esp'
+    group: *fixesGroup
+  - name: 'CRAFT - Workbench Replacement.esp'
+    group: *fixesGroup
+  - name: 'Stealthboy Recon Armor - CRAFT.esp'
+    group: *fixesGroup
 
 
 ###### AudioVisual - Interface ######
