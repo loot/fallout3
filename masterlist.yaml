@@ -78,6 +78,36 @@ common:
       - lang: pl
         text: 'Jest wysoce wskazane abyś używał także %1%.'
 
+  - &compatIssuesWithX
+    type: say
+    content:
+      - lang: en
+        text: 'This plugin has compatibility issues with %1%. For more information, read this mods compatibility notes.'
+      - lang: de
+        text: 'Dieses Plugin hat Kompatibilitätsprobleme mit %1%. Mehr Information dazu sind in den Kompatibilitäts-Notizen der Mod nachzulesen.'
+
+  - &compatNotes
+    type: say
+    content:
+      - lang: en
+        text: 'It is recommended that you read this mod''s [Compatibility Notes](%1%).'
+      - lang: de
+        text: 'Es wird empfohlen, dass Sie die [Kompatibilitäts-Notizen](%1%) dieses Mods lesen.'
+      - lang: ja
+        text: '[互換性に関する注意事項](%1%)を読みましょう。'
+      - lang: ko
+        text: '이 모드의 [호환성 정보](%1%)를 읽어 보는 걸 권장합니다.'
+      - lang: pl
+        text: 'Jest rekomendowane abyś przeczytał [Notki Kompatybilności](%1%) tego moda.'
+      - lang: pt
+        text: 'É recomendada leitura das [Notas de Compatibilidade](%1%) deste mod.'
+      - lang: pt_BR
+        text: 'É recomendada a leitura das [Notas de Compatibilidade](%1%) deste mod.'
+      - lang: ru
+        text: 'Рекомендуется прочесть [заметки о совместимости](%1%) мода.'
+      - lang: sv
+        text: 'Det är rekommenderat att du läser denna mods [kompabilitetsanteckningar](%1%).'
+
   - &corrupt
     type: warn
     content:
@@ -164,6 +194,28 @@ common:
         text: 'Städa inte bort ITM records, de är avsiktliga och krävs för att modden ska fungera. Det är säkert att återställa records, men gör ingenting förutom det.'
       - lang: zh_CN
         text: '不干净。"脏"数据是故意的，这是mod需要的功能。'
+
+  - &includesX
+    type: say
+    content:
+      - lang: en
+        text: '%1% is included with this mod.'
+      - lang: de
+        text: '%1% ist in dieser Mod enthalten.'
+      - lang: ja
+        text: '%1%はこのmodに含まれています。'
+      - lang: ko
+        text: '%1% 모드가 포함되어 있습니다.'
+      - lang: pl
+        text: '%1% jest już zawarte z tym modem.'
+      - lang: pt
+        text: '%1% vem incluído com este mod.'
+      - lang: pt_BR
+        text: '%1% está incluído neste mod.'
+      - lang: ru
+        text: '%1% уже включен в этот мод.'
+      - lang: sv
+        text: '%1% är inluderat med denna mod.'
 
   - &missingRequirementXforPlugin
     type: warn
@@ -276,6 +328,36 @@ common:
       - lang: sv
         text: 'Det verkar som att du använder **%1%**, men du har inte aktiverat en kompabilitetspatch för denna mod. En kompabilitetspatch finns på denna plugins modsida.'
 
+  - &patchUnavailable
+    type: warn
+    content:
+      - lang: en
+        text: 'A patch is required to make this mod fully compatible with %1%. None is currently available for download.'
+      - lang: de
+        text: 'Ein Patch ist nötig um diese Mod vollständig kompatibel mit %1% zu machen. Keiner ist derzeit zum Download verfügbar.'
+
+  - &patchUpdateAvailable
+    type: say
+    content:
+      - lang: en
+        text: 'Update Patch available: %1%'
+      - lang: de
+        text: 'Update Patch verfügbar: %1%'
+      - lang: ja
+        text: 'パッチの更新ができます: %1%'
+      - lang: ko
+        text: '패치 업데이트 가능: %1%'
+      - lang: pl
+        text: 'Dostępna Łatka Aktualizująca: %1%'
+      - lang: pt
+        text: 'Patch de atualização disponível: %1%'
+      - lang: pt_BR
+        text: 'Patch de Atualização disponível: %1%'
+      - lang: ru
+        text: 'Доступно обновление патча: %1%'
+      - lang: sv
+        text: 'Uppdateringspatch tillgänglig: %1%'
+
   - &requiresFOSE
     type: error
     content:
@@ -345,6 +427,38 @@ common:
         text: '%1% не полностью совместим с этим модом. %2%'
       - lang: sv
         text: '%1% är inte helt kompatibel med denna mod. %2%'
+
+  - &sortMasters
+    type: say
+    content:
+      - lang: en
+        text: 'Plugin''s Masters require sorting.'
+      - lang: de
+        text: 'Die Plugin Master müssen sortiert werden.'
+      - lang: ja
+        text: 'このプラグインのマスターはソートが必要です。'
+      - lang: ko
+        text: '플러그인 마스터의 정렬이 필요합니다.'
+      - lang: pl
+        text: 'Wtyczki Główne tej wtyczki wymagają sortowania.'
+      - lang: pt
+        text: 'A Master deste Plugin necessita ordenação.'
+      - lang: pt_BR
+        text: 'Os Masters desse plugin necessitam de ordenação.'
+      - lang: ru
+        text: 'Мастерфайлы плагина требуют сортировки.'
+      - lang: sv
+        text: 'Denna plugins master behöver sorteras'
+
+  - &useBashTweakInstead
+    type: say
+    content:
+      - lang: en
+        text: 'A Bashed Patch tweak can be used instead of this plugin. %1%'
+      - lang: de
+        text: 'Ein Bashed Patch Tweak kann anstelle dieses Plugins verwendet werden. %1%'
+    subs: [ '' ]
+    condition: 'file("Bashed Patch.*\.esp")'
 
   - &useInstead
     type: warn
