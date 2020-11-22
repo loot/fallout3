@@ -1091,6 +1091,25 @@ plugins:
     msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
 
 
+###### Resources ######
+  - name: 'CALIBR.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
+    clean:
+      - crc: 0x61D51135
+        util: 'FO3Edit v4.0.2e'
+      # 19th and 20th Century Weapons
+      - crc: 0x86EE59AB
+        util: 'FO3Edit v4.0.2e'
+
+  - name: 'CRAFT.esm'
+    url:
+      - 'https://www.nexusmods.com/fallout3/mods/2761'
+      - 'https://www.nexusmods.com/fallout3/mods/4447'
+    clean:
+      - crc: 0xAE67CA57
+        util: 'FO3Edit v4.0.2e'
+
+
 ###### AudioVisual - Interface ######
   - name: 'BA_InventorySorter(GOTY|Vanilla|Anchorage|ThePitt|BrokenSteel|PointLookout|Zeta)\.esp'
     url:
@@ -1432,21 +1451,6 @@ plugins:
         subs: [ '[FOOK2](https://www.nexusmods.com/fallout3/mods/4448/)' ]
   - name: 'FOOK2 - [WANK] World And Neighbourhood Kit.esm'
     inc: [ *FOOK2v1_1 ]
-  - name: 'CRAFT.esm'
-    url:
-      - 'https://www.nexusmods.com/fallout3/mods/2761'
-      - 'https://www.nexusmods.com/fallout3/mods/4447'
-    clean:
-      - crc: 0xAE67CA57
-        util: 'FO3Edit v4.0.2e'
-  - name: 'CALIBR.esm'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
-    clean:
-      - crc: 0x61D51135
-        util: 'FO3Edit v4.0.2e'
-      # 19th and 20th Century Weapons
-      - crc: 0x86EE59AB
-        util: 'FO3Edit v4.0.2e'
   - name: 'FO3 Wanderers Edition - Main File.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
     tag:
