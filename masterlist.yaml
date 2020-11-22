@@ -954,7 +954,7 @@ plugins:
       - Stats
       - Text
     clean:
-      - crc: 0xF71755E7
+      - crc: 0xA4A1F38D
         util: 'FO3Edit v4.0.3'
   - name: 'Goodies.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19122/' ]
@@ -964,6 +964,9 @@ plugins:
       - Invent.Remove
       - Names
       - Relev
+    clean:
+      - crc: 0xEC038FCB
+        util: 'FO3Edit v4.0.3'
 
 ###### Fixes ######
   - name: 'BringBackBael.esp'
