@@ -1116,6 +1116,11 @@ plugins:
     clean:
       - crc: 0x409A2BD8
         util: 'FO3Edit v4.0.3'
+  - name: 'Realistic Interior Lighting - (OA|BS|PL)\.esp'
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Realistic Interior Lighting Merged' ]
+        condition: 'active("Realistic Interior Lighting - (OA|BS|PL)\.esp")'
 
   - name: 'StreetLights.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8069' ]
