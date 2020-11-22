@@ -1257,6 +1257,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/3986/'
         name: 'GNR Radio Fixed'
+    inc: [ 'GNR Enhanced.esp' ]
     msg:
       - <<: *alreadyInX
         subs: [ 'GNR Radio Fixed Extended' ]
@@ -1268,6 +1269,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/2972/'
         name: 'GNR Radio Fixed Extended'
+    inc: [ 'GNR Enhanced.esp' ]
     msg:
       - <<: *useOnlyOneX
         subs: [ 'GNR Radio Fixed Extended ESP' ]
