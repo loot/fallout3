@@ -1277,8 +1277,10 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/14946/' ]
     tag: [ Scripts ]
     clean:
+      - crc: 0x4D144B9B
+        util: 'FO3Edit v4.0.3'
       - crc: 0x97A0D403
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.3'
 
   - name: 'Lobotomized! (50|100|200|300|400)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14354/' ]
