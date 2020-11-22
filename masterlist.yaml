@@ -1093,7 +1093,9 @@ plugins:
 
 ###### Resources ######
   - name: 'CALIBR.esm'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/3447/'
+        name: 'Community Ammunition Library - CALIBR'
     clean:
       - crc: 0x61D51135
         util: 'FO3Edit v4.0.2e'
@@ -1103,8 +1105,8 @@ plugins:
 
   - name: 'CRAFT.esm'
     url:
-      - 'https://www.nexusmods.com/fallout3/mods/2761'
-      - 'https://www.nexusmods.com/fallout3/mods/4447'
+      - link: 'https://www.nexusmods.com/fallout3/mods/4447/'
+        name: 'CRAFT - Community Resource to Allow Fanmade Tinkering'
     clean:
       - crc: 0xAE67CA57
         util: 'FO3Edit v4.0.2e'
