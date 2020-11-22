@@ -901,7 +901,10 @@ plugins:
         name: 'Updated Unofficial Fallout 3 Patch'
     group: *fixesGroup
     after: [ 'ObjectPlacementFix.esm' ]
-    req: [ *FOSE ]
+    req:
+      - *FOSE
+      - name: 'FOSE/Plugins/CommandExtender.dll'
+        display: '[Command Extender](https://www.nexusmods.com/fallout3/mods/23682/)'
     msg:
       - <<: *obsolete
         subs: [ '[Updated Unofficial Fallout 3 Patch](https://www.nexusmods.com/fallout3/mods/19122)' ]
