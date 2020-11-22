@@ -1116,6 +1116,7 @@ plugins:
     group: *fixesGroup
   - name: 'CRAFT - Workbench Replacement.esp'
     group: *fixesGroup
+    msg: [ *obsolete ]
   - name: 'Stealthboy Recon Armor - CRAFT.esp'
     group: *fixesGroup
 
