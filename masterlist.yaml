@@ -905,7 +905,7 @@ plugins:
       - *FOSE
       - name: 'FOSE/Plugins/CommandExtender.dll'
         display: '[Command Extender](https://www.nexusmods.com/fallout3/mods/23682/)'
-        condition: 'version("Unofficial Fallout 3 Patch.esm", "3.0", <)'
+        condition: 'version("Unofficial Fallout 3 Patch.esm", "3.0", >=)'
     msg:
       - <<: *alsoUseX
         subs: [ '[FO3 Mod Limit Fix](https://www.nexusmods.com/fallout3/mods/24056/)' ]
