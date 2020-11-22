@@ -48,18 +48,18 @@ common:
   - &alreadyInOrFixedByX
     type: error
     content:
-    - lang: en
-      text: 'Delete. Already included or otherwise fixed in %1%.'
-    - lang: de
-      text: 'Löschen. Bereits enthalten oder anderweitig korrigiert in %1%.'
-    - lang: es
-      text: 'Borrar. Esta incluido, o de otra modo, arreglado en el %1%.'
-    - lang: pl
-      text: 'Usuń. Już zawarte lub naprawione w %1%'
-    - lang: ru
-      text: 'Удалите. Уже включено в %1% или исправлено иным образом.'
-    - lang: sv
-      text: 'Ta bort. Redan inkluderat i eller fixat i %1%'
+      - lang: en
+        text: 'Delete. Already included or otherwise fixed in %1%.'
+      - lang: de
+        text: 'Löschen. Bereits enthalten oder anderweitig korrigiert in %1%.'
+      - lang: es
+        text: 'Borrar. Esta incluido, o de otra modo, arreglado en el %1%.'
+      - lang: pl
+        text: 'Usuń. Już zawarte lub naprawione w %1%'
+      - lang: ru
+        text: 'Удалите. Уже включено в %1% или исправлено иным образом.'
+      - lang: sv
+        text: 'Ta bort. Redan inkluderat i eller fixat i %1%'
   - &alreadyInOrFixedByUFO3P
     <<: *alreadyInOrFixedByX
     subs: [ 'Unofficial Fallout 3 Patch' ]
@@ -72,9 +72,41 @@ common:
     type: say
     content:
       - lang: en
-        text: 'It is highly recommended that you also use %1%.'
+        text: 'It''s highly recommended that you also use %1%.'
       - lang: de
         text: 'Es wird dringend empfohlen, dass Sie auch %1% benutzen.'
+      - lang: pl
+        text: 'Jest wysoce wskazane abyś używał także %1%.'
+
+  - &compatIssuesWithX
+    type: say
+    content:
+      - lang: en
+        text: 'This plugin has compatibility issues with %1%. For more information, read this mods compatibility notes.'
+      - lang: de
+        text: 'Dieses Plugin hat Kompatibilitätsprobleme mit %1%. Mehr Information dazu sind in den Kompatibilitäts-Notizen der Mod nachzulesen.'
+
+  - &compatNotes
+    type: say
+    content:
+      - lang: en
+        text: 'It is recommended that you read this mod''s [Compatibility Notes](%1%).'
+      - lang: de
+        text: 'Es wird empfohlen, dass Sie die [Kompatibilitäts-Notizen](%1%) dieses Mods lesen.'
+      - lang: ja
+        text: '[互換性に関する注意事項](%1%)を読みましょう。'
+      - lang: ko
+        text: '이 모드의 [호환성 정보](%1%)를 읽어 보는 걸 권장합니다.'
+      - lang: pl
+        text: 'Jest rekomendowane abyś przeczytał [Notki Kompatybilności](%1%) tego moda.'
+      - lang: pt
+        text: 'É recomendada leitura das [Notas de Compatibilidade](%1%) deste mod.'
+      - lang: pt_BR
+        text: 'É recomendada a leitura das [Notas de Compatibilidade](%1%) deste mod.'
+      - lang: ru
+        text: 'Рекомендуется прочесть [заметки о совместимости](%1%) мода.'
+      - lang: sv
+        text: 'Det är rekommenderat att du läser denna mods [kompabilitetsanteckningar](%1%).'
 
   - &corrupt
     type: warn
@@ -87,6 +119,8 @@ common:
         text: 'Este archivo puede corromper tu juego y no debería ser utilizado.'
       - lang: ja
         text: 'このファイルは壊れています。使用しないでください。'
+      - lang: ko
+        text: '이 파일은 손상되었습니다. 사용하지 마십시오.'
       - lang: pl
         text: 'Ten plik jest zepsuty i nie powinien być używany.'
       - lang: pt_BR
@@ -115,23 +149,23 @@ common:
     type: warn
     content:
       - lang: en
-        text: 'When using **%1%**. It''s recommended that you deactivate or delete this ESP file, but keep the resources (e.g. meshes, textures) installed with this mod. As they''re still required by **%1%**.'
+        text: 'When using **%1%**. It''s recommended that you deactivate or delete this ESP file, but keep the resources (e.g. meshes, textures) installed with this mod.'
       - lang: de
-        text: 'Beim Nutzen von **%1%** ist es empfohlen, dass Sie die ESP-Datei deaktivieren oder löschen, aber die mitgelieferten Mittel (z.B Meshes, Texturen) beibehalten die mit dieser Mod mitinstalliert wurden. Diese werden immer noch von **%1%** vorausgesetzt.'
+        text: 'Beim Nutzen von **%1%** ist es empfohlen, dass Sie die ESP-Datei deaktivieren oder löschen, aber die mitgelieferten Mittel (z.B Meshes, Texturen) beibehalten die mit dieser Mod mitinstalliert wurden.'
       - lang: ja
-        text: '**%1%**を使用中の場合。このespファイルは無効化あるいは削除するのはおすすめしますが、このmodによってインストールされたリソース(メッシュ、テクスチャなど)はそのままにしておいてください。これらは**%1%**によって引き続き必要とされてます。'
+        text: '**%1%**を使用中の場合。このespファイルは無効化あるいは削除するのはおすすめしますが、このmodによってインストールされたリソース(メッシュ、テクスチャなど)はそのままにしておいてください。'
       - lang: ko
-        text: '**%1%** 모드를 사용중일 떈, 이 ESP 파일을 삭제하고 함께 설치된 리소스(예: 메쉬, 텍스쳐)만 남겨두는 걸 권장합니다. 리소스는 **%1%** 모드에서 필요로 합니다.'
+        text: '**%1%** 모드를 사용중일 떈, 이 ESP 파일을 삭제하고 함께 설치된 리소스(예: 메쉬, 텍스쳐)만 남겨두는 걸 권장합니다.'
       - lang: pl
-        text: 'Używając **%1%**, jest rekomendowane abyś dezaktywował lub usunął ten plik ESP, ale pozostawił zasoby (siatki, tekstury) zainstalowane z tym modem. Ponieważ są wciąż wymagane przez **%1%**.'
+        text: 'Używając **%1%**, jest rekomendowane abyś dezaktywował lub usunął ten plik ESP, ale pozostawił zasoby (siatki, tekstury) zainstalowane z tym modem.'
       - lang: pt
-        text: 'Ao utilizar **%1%**, é recomendado que você desative ou apage este ficheiro ESP, mas mantenha os recursos (ex. meshes, texturas) instalados por este mod. Sendo que os mesmos ainda são necessitados por **%1%**. '
+        text: 'Ao utilizar **%1%**, é recomendado que você desative ou apage este ficheiro ESP, mas mantenha os recursos (ex. meshes, texturas) instalados por este mod.'
       - lang: pt_BR
         text: 'Quando se usa **%1%**, é recomendado que você desative ou delete este arquivo ESP, mas que mantenha os recursos (ex. meshes, texturas) que vieram com esse mod.'
       - lang: ru
-        text: 'Пока используется **%1%**, рекомендуется отключить или удалить esp этого мода, но оставить установленные ресурсы (meshes, textures). Т.к. они все еще требуются для **%1%**.'
+        text: 'Пока используется **%1%**, рекомендуется отключить или удалить esp этого мода, но оставить установленные ресурсы (meshes, textures).'
       - lang: sv
-        text: 'När du använder **%1%** är det rekommenderat att du avaktiverar eller tar bort denna ESP-fil, men behåll resurserna (meshar och texturer) installerade med denna mod. De krävs fortfarande av **%1%**.'
+        text: 'När du använder **%1%** är det rekommenderat att du avaktiverar eller tar bort denna ESP-fil, men behåll resurserna (meshar och texturer) installerade med denna mod.'
 
   - &doNotClean
     type: say
@@ -161,6 +195,28 @@ common:
       - lang: zh_CN
         text: '不干净。"脏"数据是故意的，这是mod需要的功能。'
 
+  - &includesX
+    type: say
+    content:
+      - lang: en
+        text: '%1% is included with this mod.'
+      - lang: de
+        text: '%1% ist in dieser Mod enthalten.'
+      - lang: ja
+        text: '%1%はこのmodに含まれています。'
+      - lang: ko
+        text: '%1% 모드가 포함되어 있습니다.'
+      - lang: pl
+        text: '%1% jest już zawarte z tym modem.'
+      - lang: pt
+        text: '%1% vem incluído com este mod.'
+      - lang: pt_BR
+        text: '%1% está incluído neste mod.'
+      - lang: ru
+        text: '%1% уже включен в этот мод.'
+      - lang: sv
+        text: '%1% är inluderat med denna mod.'
+
   - &missingRequirementXforPlugin
     type: warn
     content:
@@ -170,6 +226,8 @@ common:
         text: 'Einige der Voraussetzungen dieses Plugins scheinen zu fehlen. Bitte stellen Sie sicher, dass Sie **%1%** korrekt installiert haben.'
       - lang: ja
         text: 'このプラグインに必要なものの一部が不足しているようです。**%1%**が正しくインストールされていることを確認してください。'
+      - lang: ko
+        text: '이 플러그인의 일부 요구사항이 빠져 있습니다. **%1%** 모드를 제대로 설치하십시오.'
       - lang: pl
         text: 'Część wymagań dla tej wtyczki wydaje się być brakująca. Upewnij się że poprawnie zainstalowałeś **%1%**.'
       - lang: pt_BR
@@ -180,20 +238,20 @@ common:
         text: 'Några av denna plugins behov/krav verkar saknas. Var god och se till att du har installerat **%1%** korrekt.'
 
   - &obsolete
-    type: say
+    type: warn
     content:
       - lang: en
         text: 'Obsolete. Update to the latest version. %1%'
       - lang: da
         text: 'Forældet. Opdatér til den nyeste version. %1%'
       - lang: de
-        text: 'Veraltet. Aktualisieren Sie zur letzten Version. %1%'
+        text: 'Veraltet. Aktualisiere zur letzten Version. %1%'
       - lang: es
         text: 'Obsoleto. Actualizar a la última versión. %1%'
       - lang: ja
         text: '旧式のプラグインです。最新版に更新してください。 %1%'
       - lang: ko
-        text: '사용되지 않습니다. 최신 버전으로 업데이트하십시오. %1%'
+        text: '폐기된 플러그인입니다. 최신 버전으로 업데이트하십시오. %1%'
       - lang: pl
         text: 'Przestarzały. Uaktualnij do ostatniej wersji. %1%'
       - lang: ru
@@ -270,23 +328,35 @@ common:
       - lang: sv
         text: 'Det verkar som att du använder **%1%**, men du har inte aktiverat en kompabilitetspatch för denna mod. En kompabilitetspatch finns på denna plugins modsida.'
 
-  - &requiresX
+  - &patchUnavailable
     type: warn
     content:
       - lang: en
-        text: 'Requires: %1%'
+        text: 'A patch is required to make this mod fully compatible with %1%. None is currently available for download.'
       - lang: de
-        text: 'Benötigt: %1%'
-      - lang: es
-        text: 'Requiere: %1%'
+        text: 'Ein Patch ist nötig um diese Mod vollständig kompatibel mit %1% zu machen. Keiner ist derzeit zum Download verfügbar.'
+
+  - &patchUpdateAvailable
+    type: say
+    content:
+      - lang: en
+        text: 'Update Patch available: %1%'
+      - lang: de
+        text: 'Update Patch verfügbar: %1%'
       - lang: ja
-        text: '要: %1%'
+        text: 'パッチの更新ができます: %1%'
+      - lang: ko
+        text: '패치 업데이트 가능: %1%'
       - lang: pl
-        text: 'Wymaga: %1%'
+        text: 'Dostępna Łatka Aktualizująca: %1%'
+      - lang: pt
+        text: 'Patch de atualização disponível: %1%'
+      - lang: pt_BR
+        text: 'Patch de Atualização disponível: %1%'
       - lang: ru
-        text: 'Требуется: %1%'
+        text: 'Доступно обновление патча: %1%'
       - lang: sv
-        text: 'Kräver: %1%'
+        text: 'Uppdateringspatch tillgänglig: %1%'
 
   - &requiresFOSE
     type: error
@@ -304,11 +374,11 @@ common:
       - lang: ko
         text: '%1%가 설치되었지만 FOSE를 찾을 수 없습니다! FOSE 다운로드 페이지를 참조하십시오: [FOSE](http://fose.silverlock.org).'
       - lang: pl
-        text: 'Zainstalowałeś %1% ale nie odnaleziono FOSE! Odwiedź stronę pobierania FOSE: [FOSE](https://FOSE.silverlock.org).'
+        text: 'Zainstalowałeś %1% ale nie odnaleziono FOSE! Odwiedź stronę pobierania FOSE: [FOSE](http://fose.silverlock.org).'
       - lang: pt
         text: 'Você instalou %1% mas o FOSE não foi encontrado! Veja a página de download do FOSE: [FOSE](http://fose.silverlock.org).'
       - lang: pt_BR
-        text: 'Você tem %1% instalado mas o FOSE não foi encontrado! Veja a página de download do FOSE: [FOSE](https://FOSE.silverlock.org).'
+        text: 'Você tem %1% instalado mas o FOSE não foi encontrado! Veja a página de download do FOSE: [FOSE](http://fose.silverlock.org).'
       - lang: ru
         text: 'У вас установлен %1%, но FOSE не найден! Смотрите страницу загрузки [FOSE](http://fose.silverlock.org).'
       - lang: sv
@@ -316,27 +386,57 @@ common:
       - lang: zh_CN
         text: '你已经安装了%1%，但是未发现FOSE！请查看FOSE的下载页面：[FOSE](http://fose.silverlock.org)。'
 
-  - &semiCompatible
+  - &requiresX
+    type: warn
+    content:
+      - lang: en
+        text: 'Requires: %1%'
+      - lang: de
+        text: 'Benötigt: %1%'
+      - lang: es
+        text: 'Requiere: %1%'
+      - lang: ja
+        text: '要: %1%'
+      - lang: ko
+        text: '필요모드: %1%'
+      - lang: pl
+        text: 'Wymaga: %1%'
+      - lang: ru
+        text: 'Требуется: %1%'
+      - lang: sv
+        text: 'Kräver: %1%'
+
+  - &sortMasters
     type: say
     content:
       - lang: en
-        text: '%1% is not fully compatible with this mod. %2%'
+        text: 'Plugin''s Masters require sorting.'
       - lang: de
-        text: '%1% ist nicht voll kompatibel mit dieser Mod. %2%'
+        text: 'Die Plugin Master müssen sortiert werden.'
       - lang: ja
-        text: '%1%は%2%と完全な互換性がありません。'
+        text: 'このプラグインのマスターはソートが必要です。'
       - lang: ko
-        text: '%1% 모드는 이 모드와 완벽히 호환되지 않습니다. %2%'
+        text: '플러그인 마스터의 정렬이 필요합니다.'
       - lang: pl
-        text: '%1% nie jest w pełni kompatybilny z tym modem. %2%'
+        text: 'Wtyczki Główne tej wtyczki wymagają sortowania.'
       - lang: pt
-        text: '%1% não é totalmente compatível com este mod. %2%'
+        text: 'A Master deste Plugin necessita ordenação.'
       - lang: pt_BR
-        text: '%1% não é completamente compatível com este mod. %2%'
+        text: 'Os Masters desse plugin necessitam de ordenação.'
       - lang: ru
-        text: '%1% не полностью совместим с этим модом. %2%'
+        text: 'Мастерфайлы плагина требуют сортировки.'
       - lang: sv
-        text: '%1% är inte helt kompatibel med denna mod. %2%'
+        text: 'Denna plugins master behöver sorteras'
+
+  - &useBashTweakInstead
+    type: say
+    content:
+      - lang: en
+        text: 'A Bashed Patch tweak can be used instead of this plugin. %1%'
+      - lang: de
+        text: 'Ein Bashed Patch Tweak kann anstelle dieses Plugins verwendet werden. %1%'
+    subs: [ '' ]
+    condition: 'file("Bashed Patch.*\.esp")'
 
   - &useInstead
     type: warn
@@ -543,7 +643,7 @@ common:
         text: 'Denna plugin innehåller vilda föränringar utanför ITM och UDR-records samt borttagna navmeshes och kan kräva ytterligare manuell rensning för att inte störa andra moddar. %1%'
     subs: [ '' ]
 
-# Cleaning data
+# Dirty Aliases
   - &quickClean
     util: '[FO3Edit](https://www.nexusmods.com/fallout3/mods/637)'
     info:
