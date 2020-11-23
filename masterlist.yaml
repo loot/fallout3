@@ -1283,6 +1283,10 @@ plugins:
       - crc: 0x97A0D403
         util: 'FO3Edit v4.0.3'
 
+  - name: 'Improved Turret (Hacking|Reprogramming) - (ALL|BASE|BS|Pitt|PL)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/1691/'
+        name: 'Improved Turret Reprogramming and Hacking'
   - name: 'Improved Turret Hacking - ALL.esp'
     inc:
       - 'Improved Turret Hacking - BASE.esp'
