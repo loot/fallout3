@@ -4842,29 +4842,8 @@ plugins:
         crc: 0xC8E1AA9C
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 133
-  - name: 'Fallout 3 Master Fix.esp'
-    inc:
-      - 'Fallout 3 Master Fix - Higher FPS.esp'
-      - 'Fallout 3 Master Fix - No DLC.esp'
-      - 'Fallout 3 Master Fix - No DLC - Higher FPS.esp'
-  - name: 'Fallout 3 Master Fix - Higher FPS.esp'
-    inc:
-      - 'Fallout 3 Master Fix.esp'
-      - 'Fallout 3 Master Fix - No DLC.esp'
-      - 'Fallout 3 Master Fix - No DLC - Higher FPS.esp'
-  - name: 'Fallout 3 Master Fix - No DLC.esp'
-    inc:
-      - 'Fallout 3 Master Fix.esp'
-      - 'Fallout 3 Master Fix - Higher FPS.esp'
-      - 'Fallout 3 Master Fix - No DLC - Higher FPS.esp'
-  - name: 'Fallout 3 Master Fix - No DLC - Higher FPS.esp'
-    inc:
-      - 'Fallout 3 Master Fix.esp'
-      - 'Fallout 3 Master Fix - Higher FPS.esp'
-      - 'Fallout 3 Master Fix - No DLC.esp'
   - name: 'Fallout Remastered.esp'
     inc:
-      - 'Fallout 3 Master Fix.esp'
       - 'James Invisible Walls Remover.esp'
 
     ## Chinese Stealth Armor separators
