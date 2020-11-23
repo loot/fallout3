@@ -1283,8 +1283,6 @@ plugins:
       - crc: 0x97A0D403
         util: 'FO3Edit v4.0.3'
 
-  - name: 'Improved Turret Hacking.esp'
-    msg: [ *obsolete ]
   - name: 'Improved Turret Hacking - ALL.esp'
     inc:
       - 'Improved Turret Hacking - BASE.esp'
