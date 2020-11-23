@@ -1287,6 +1287,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/1691/'
         name: 'Improved Turret Reprogramming and Hacking'
+    inc: [ 'Turret Terminal Re-Vamp.esp' ]
     msg:
       - <<: *useOnlyOneX
         subs: [ 'Improved Turret Version - **Hacking** or **Reprogramming**' ]
