@@ -1257,6 +1257,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/3986/'
         name: 'GNR Radio Fixed'
+    inc: [ 'GNR Enhanced.esp' ]
     msg:
       - <<: *alreadyInX
         subs: [ 'GNR Radio Fixed Extended' ]
@@ -1268,10 +1269,19 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/2972/'
         name: 'GNR Radio Fixed Extended'
+    inc: [ 'GNR Enhanced.esp' ]
     msg:
       - <<: *useOnlyOneX
         subs: [ 'GNR Radio Fixed Extended ESP' ]
         condition: 'many("GalaxyNewsRadio\d\d\d?\[(S|SR|C|CR|M)\]\.esp")'
+
+  - name: 'GNR Enhanced.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/14946/' ]
+    clean:
+      - crc: 0x4D144B9B
+        util: 'FO3Edit v4.0.3'
+      - crc: 0x97A0D403
+        util: 'FO3Edit v4.0.3'
 
   - name: 'Lobotomized! (50|100|200|300|400)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14354/' ]
@@ -5450,12 +5460,6 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/20321' ]
     clean:
       - crc: 0xF39F664E
-        util: 'FO3Edit v4.0.2e'
-  - name: 'GNR Enhanced.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/14946' ]
-    tag: [ Scripts ]
-    clean:
-      - crc: 0x97A0D403
         util: 'FO3Edit v4.0.2e'
   - name: 'hackrate.x2.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2745' ]
