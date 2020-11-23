@@ -2120,25 +2120,6 @@ plugins:
         nav: 2
 
     ### Imported ESPs from BOSS masterlist
-
-  - name: 'Error Correction.esp'
-    tag: [ Scripts ]
-  - name: 'Error Correction - All Transparency & Trees.esp'
-    inc: [ 'Error Correction - All Transparency.esp' ]
-  - name: 'Error Correction - Transparency Megaton.esp'
-    inc:
-      - 'Error Correction - All Transparency.esp'
-      - 'Error Correction - All Transparency & Trees.esp'
-  - name: 'Error Correction - Transparency RC.esp'
-    inc:
-      - 'Error Correction - All Transparency.esp'
-      - 'Error Correction - All Transparency & Trees.esp'
-  - name: 'Error Correction - Transparency Rubble Piles.esp'
-    inc:
-      - 'Error Correction - All Transparency.esp'
-      - 'Error Correction - All Transparency & Trees.esp'
-  - name: 'Error Correction - Trees.esp'
-    inc: [ 'Error Correction - All Transparency & Trees.esp' ]
   - name: 'BlackWidowBurkeFix.esp'
     tag: [ Scripts ]
   - name: 'MS11fix.esp'
