@@ -1347,26 +1347,11 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/13790/'
         name: 'CRAFT - Buildable WeaponModKits'
+    tag: [ Invent.Add ]
     msg:
       - <<: *useOnlyOneX
         subs: [ 'CRAFT Buildable WeaponModKits ESP' ]
         condition: 'many("CRAFTable_WMKs.*\.esp")'
-  - name: 'CRAFTable_WMKs.esp'
-    tag: [ Invent.Add ]
-  - name: 'CRAFTable_WMKs_lead_pipe.esp'
-    tag: [ Invent.Add ]
-  - name: 'CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp'
-    tag: [ Invent.Add ]
-  - name: 'CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp'
-    tag: [ Invent.Add ]
-  - name: 'CRAFTable_WMKs_skill_req_Amodeus.esp'
-    tag: [ Invent.Add ]
-  - name: 'CRAFTable_WMKs_skill_requirements_lead_pipe.esp'
-    tag: [ Invent.Add ]
-  - name: 'CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp'
-    tag: [ Invent.Add ]
-  - name: 'CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp'
-    tag: [ Invent.Add ]
 
 
   - name: '20th Century Weapons.esm'
