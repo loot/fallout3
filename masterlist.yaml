@@ -1358,6 +1358,9 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/3388/'
         name: 'Weapon Mod Kits'
   - name: 'WeaponModKits.esp'
+    req:
+      - <<: *FOSE
+        condition: 'checksum("WeaponModKits.esp", 3E2861DB)'
     tag:
       - Delev
       - Graphics
