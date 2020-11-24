@@ -1342,6 +1342,18 @@ plugins:
         itm: 2
 
 
+###### Gameplay - Crafting ######
+  - name: 'CRAFTable_WMKs.*\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/13790/'
+        name: 'CRAFT - Buildable WeaponModKits'
+    tag: [ Invent.Add ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'CRAFT Buildable WeaponModKits ESP' ]
+        condition: 'many("CRAFTable_WMKs.*\.esp")'
+
+
   - name: '20th Century Weapons.esm'
     url: [ 'http://modsreloaded.com/19th-and-20th-century-weapons' ]
     tag: [ Scripts ]
@@ -2838,86 +2850,6 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'WeaponModKits - FWE Optional Worn Weapons.esp'
     tag: [ Delev ]
-  - name: 'CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp'
-    inc:
-      - 'CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp'
-      - 'CRAFTable_WMKs_skill_requirements_lead_pipe.esp'
-      - 'CRAFTable_WMKs.esp'
-      - 'CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp'
-      - 'CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp'
-      - 'CRAFTable_WMKs_lead_pipe.esp'
-      - 'CRAFTable_WMKs_skill_req_Amodeus.esp'
-    tag: [ Invent ]
-  - name: 'CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp'
-    inc:
-      - 'CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp'
-      - 'CRAFTable_WMKs_skill_requirements_lead_pipe.esp'
-      - 'CRAFTable_WMKs.esp'
-      - 'CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp'
-      - 'CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp'
-      - 'CRAFTable_WMKs_lead_pipe.esp'
-      - 'CRAFTable_WMKs_skill_req_Amodeus.esp'
-    tag: [ Invent ]
-  - name: 'CRAFTable_WMKs_skill_requirements_lead_pipe.esp'
-    inc:
-      - 'CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp'
-      - 'CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp'
-      - 'CRAFTable_WMKs.esp'
-      - 'CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp'
-      - 'CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp'
-      - 'CRAFTable_WMKs_lead_pipe.esp'
-      - 'CRAFTable_WMKs_skill_req_Amodeus.esp'
-    tag: [ Invent ]
-  - name: 'CRAFTable_WMKs.esp'
-    inc:
-      - 'CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp'
-      - 'CRAFTable_WMKs_skill_requirements_lead_pipe.esp'
-      - 'CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp'
-      - 'CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp'
-      - 'CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp'
-      - 'CRAFTable_WMKs_lead_pipe.esp'
-      - 'CRAFTable_WMKs_skill_req_Amodeus.esp'
-    tag: [ Invent ]
-  - name: 'CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp'
-    inc:
-      - 'CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp'
-      - 'CRAFTable_WMKs_skill_requirements_lead_pipe.esp'
-      - 'CRAFTable_WMKs.esp'
-      - 'CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp'
-      - 'CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp'
-      - 'CRAFTable_WMKs_lead_pipe.esp'
-      - 'CRAFTable_WMKs_skill_req_Amodeus.esp'
-    tag: [ Invent ]
-  - name: 'CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp'
-    inc:
-      - 'CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp'
-      - 'CRAFTable_WMKs_skill_requirements_lead_pipe.esp'
-      - 'CRAFTable_WMKs.esp'
-      - 'CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp'
-      - 'CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp'
-      - 'CRAFTable_WMKs_lead_pipe.esp'
-      - 'CRAFTable_WMKs_skill_req_Amodeus.esp'
-    tag: [ Invent ]
-  - name: 'CRAFTable_WMKs_lead_pipe.esp'
-    inc:
-      - 'CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp'
-      - 'CRAFTable_WMKs_skill_requirements_lead_pipe.esp'
-      - 'CRAFTable_WMKs.esp'
-      - 'CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp'
-      - 'CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp'
-      - 'CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp'
-      - 'CRAFTable_WMKs_skill_req_Amodeus.esp'
-    tag: [ Invent ]
-  - name: 'CRAFTable_WMKs_skill_req_Amodeus.esp'
-    inc:
-      - 'CRAFTable_WMKs_skill_requirements_no_assault_rifle_and_laser_pistol.esp'
-      - 'CRAFTable_WMKs_skill_requirements_lead_pipe.esp'
-      - 'CRAFTable_WMKs.esp'
-      - 'CRAFTable_WMKs_no_assault_rifle_and_laser_pistol.esp'
-      - 'CRAFTable_WMKs_lead_pipe_no_assault_rifle_and laser_pistol.esp'
-      - 'CRAFTable_WMKs_lead_pipe.esp'
-      - 'CRAFTable_WMKs_skill_requirements_lead_pipe_no_assault_rifle_and_laser_pistol_.esp'
-    tag: [ Invent ]
   - name: 'T3T_WMK1.esp'
     tag:
       - Deflst
