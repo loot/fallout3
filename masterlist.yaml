@@ -1343,6 +1343,10 @@ plugins:
 
 
 ###### Gameplay - Crafting ######
+  - name: 'CRAFTable_WMKs.*\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/13790/'
+        name: 'CRAFT - Buildable WeaponModKits'
   - name: 'CRAFTable_WMKs.esp'
     inc:
       - 'CRAFTable_WMKs_lead_pipe.esp'
