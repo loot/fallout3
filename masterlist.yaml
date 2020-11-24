@@ -1369,6 +1369,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/4968/'
         name: 'Fallout Interoperability Program - FOIP'
+    after: [ 'WeaponModKits - FWE Master Release.esp' ]
   - name: 'WeaponModKits - OperationAnchorage.esp'
     clean:
       - crc: 0x729D51D2
@@ -1376,24 +1377,37 @@ plugins:
       - crc: 0x13A76792
         util: 'FO3Edit v4.0.3'
   - name: 'WeaponModKits - ThePitt.esp'
+    after: [ 'WeaponModKits - OperationAnchorage.esp' ]
     clean:
       - crc: 0x4C3C90A9
         util: 'FO3Edit v4.0.3'
       - crc: 0x2F7C9661
         util: 'FO3Edit v4.0.3'
   - name: 'WeaponModKits - BrokenSteel.esp'
+    after:
+      - 'WeaponModKits - OperationAnchorage.esp'
+      - 'WeaponModKits - ThePitt.esp'
     clean:
       - crc: 0x80A8FF0F
         util: 'FO3Edit v4.0.3'
       - crc: 0x377467AC
         util: 'FO3Edit v4.0.3'
   - name: 'WeaponModKits - PointLookout.esp'
+    after:
+      - 'WeaponModKits - OperationAnchorage.esp'
+      - 'WeaponModKits - ThePitt.esp'
+      - 'WeaponModKits - BrokenSteel.esp'
     clean:
       - crc: 0x5AD5E950
         util: 'FO3Edit v4.0.3'
       - crc: 0x7C6C6D97
         util: 'FO3Edit v4.0.3'
   - name: 'WeaponModKits - Zeta.esp'
+    after:
+      - 'WeaponModKits - OperationAnchorage.esp'
+      - 'WeaponModKits - ThePitt.esp'
+      - 'WeaponModKits - BrokenSteel.esp'
+      - 'WeaponModKits - PointLookout.esp'
     clean:
       - crc: 0x85241841
         util: 'FO3Edit v4.0.3'
