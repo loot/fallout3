@@ -1353,6 +1353,83 @@ plugins:
         subs: [ 'CRAFT Buildable WeaponModKits ESP' ]
         condition: 'many("CRAFTable_WMKs.*\.esp")'
 
+  - name: 'WeaponModKits.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3388' ]
+    tag:
+      - Actors.AIData
+      - Delev
+      - Invent
+      - Names
+      - Relev
+    clean:
+      - crc: 0x3E2861DB
+        util: 'FO3Edit v4.0.2f'
+  - name: 'WeaponModKits - OperationAnchorage.esp'
+    url:
+      - 'https://www.nexusmods.com/fallout3/mods/3388'
+      - 'https://www.nexusmods.com/fallout3/mods/4968'
+    clean:
+      # 3388
+      - crc: 0x729D51D2
+        util: 'FO3Edit v4.0.2f'
+      # 4968
+      - crc: 0x13A76792
+        util: 'FO3Edit v4.0.2e'
+  - name: 'WeaponModKits - ThePitt.esp'
+    url:
+      - 'https://www.nexusmods.com/fallout3/mods/3388'
+      - 'https://www.nexusmods.com/fallout3/mods/4968'
+    clean:
+      # 3388
+      - crc: 0x4C3C90A9
+        util: 'FO3Edit v4.0.2f'
+      # 4968
+      - crc: 0x2F7C9661
+        util: 'FO3Edit v4.0.2e'
+  - name: 'WeaponModKits - BrokenSteel.esp'
+    url:
+      - 'https://www.nexusmods.com/fallout3/mods/3388'
+      - 'https://www.nexusmods.com/fallout3/mods/4968'
+    tag:
+      - Graphics
+      - Stats
+    clean:
+      # 3388
+      - crc: 0x80A8FF0F
+        util: 'FO3Edit v4.0.2f'
+      # 4968
+      - crc: 0x377467AC
+        util: 'FO3Edit v4.0.2e'
+  - name: 'WeaponModKits - PointLookout.esp'
+    url:
+      - 'https://www.nexusmods.com/fallout3/mods/3388'
+      - 'https://www.nexusmods.com/fallout3/mods/4968'
+    clean:
+      # 3388
+      - crc: 0x5AD5E950
+        util: 'FO3Edit v4.0.2f'
+      # 4968
+      - crc: 0x7C6C6D97
+        util: 'FO3Edit v4.0.2e'
+  - name: 'WeaponModKits - Zeta.esp'
+    url:
+      - 'https://www.nexusmods.com/fallout3/mods/3388'
+      - 'https://www.nexusmods.com/fallout3/mods/4968'
+    tag: [ Stats ]
+    clean:
+      # 3388
+      - crc: 0x85241841
+        util: 'FO3Edit v4.0.2f'
+      # 4968
+      - crc: 0x6C23E64A
+        util: 'FO3Edit v4.0.2e'
+  - name: 'WMKAA12Shotgun.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3388' ]
+    tag: [ Graphics ]
+    clean:
+      - crc: 0x9DCD1FF0
+        util: 'FO3Edit v4.0.2e'
+
 
   - name: '20th Century Weapons.esm'
     url: [ 'http://modsreloaded.com/19th-and-20th-century-weapons' ]
@@ -2816,17 +2893,6 @@ plugins:
   - name: 'Refurbish [MZ].esp'
     inc: [ 'Refurbishes [ALL].esp' ]
     msg: [ *alreadyInFOOK2 ]
-  - name: 'WeaponModKits.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3388' ]
-    tag:
-      - Actors.AIData
-      - Delev
-      - Invent
-      - Names
-      - Relev
-    clean:
-      - crc: 0x3E2861DB
-        util: 'FO3Edit v4.0.2f'
   - name: 'WeaponModKits - FWE Master Release.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17757' ]
     tag:
@@ -2927,12 +2993,6 @@ plugins:
     inc: [ 'Wieldable Torches (Optional).esp' ]
   - name: 'Wieldable Torches (Optional).esp'
     inc: [ 'WieldableTorches (Main).esp' ]
-  - name: 'WMKAA12Shotgun.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3388' ]
-    tag: [ Graphics ]
-    clean:
-      - crc: 0x9DCD1FF0
-        util: 'FO3Edit v4.0.2e'
   - name: 'xCALIBRmunitions.esp'
     tag:
       - Delev
@@ -3564,65 +3624,6 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
     clean:
       - crc: 0xADDA0623
-        util: 'FO3Edit v4.0.2e'
-  - name: 'WeaponModKits - OperationAnchorage.esp'
-    url:
-      - 'https://www.nexusmods.com/fallout3/mods/3388'
-      - 'https://www.nexusmods.com/fallout3/mods/4968'
-    clean:
-      # 3388
-      - crc: 0x729D51D2
-        util: 'FO3Edit v4.0.2f'
-      # 4968
-      - crc: 0x13A76792
-        util: 'FO3Edit v4.0.2e'
-  - name: 'WeaponModKits - ThePitt.esp'
-    url:
-      - 'https://www.nexusmods.com/fallout3/mods/3388'
-      - 'https://www.nexusmods.com/fallout3/mods/4968'
-    clean:
-      # 3388
-      - crc: 0x4C3C90A9
-        util: 'FO3Edit v4.0.2f'
-      # 4968
-      - crc: 0x2F7C9661
-        util: 'FO3Edit v4.0.2e'
-  - name: 'WeaponModKits - BrokenSteel.esp'
-    url:
-      - 'https://www.nexusmods.com/fallout3/mods/3388'
-      - 'https://www.nexusmods.com/fallout3/mods/4968'
-    tag:
-      - Graphics
-      - Stats
-    clean:
-      # 3388
-      - crc: 0x80A8FF0F
-        util: 'FO3Edit v4.0.2f'
-      # 4968
-      - crc: 0x377467AC
-        util: 'FO3Edit v4.0.2e'
-  - name: 'WeaponModKits - PointLookout.esp'
-    url:
-      - 'https://www.nexusmods.com/fallout3/mods/3388'
-      - 'https://www.nexusmods.com/fallout3/mods/4968'
-    clean:
-      # 3388
-      - crc: 0x5AD5E950
-        util: 'FO3Edit v4.0.2f'
-      # 4968
-      - crc: 0x7C6C6D97
-        util: 'FO3Edit v4.0.2e'
-  - name: 'WeaponModKits - Zeta.esp'
-    url:
-      - 'https://www.nexusmods.com/fallout3/mods/3388'
-      - 'https://www.nexusmods.com/fallout3/mods/4968'
-    tag: [ Stats ]
-    clean:
-      # 3388
-      - crc: 0x85241841
-        util: 'FO3Edit v4.0.2f'
-      # 4968
-      - crc: 0x6C23E64A
         util: 'FO3Edit v4.0.2e'
   - name: 'WeaponModKits - FWE Talon Loot Crash Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22109' ]
