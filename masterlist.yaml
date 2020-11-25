@@ -1320,6 +1320,11 @@ plugins:
       - Actors.ACBS
       - Relations.Add
       - Scripts
+    dirty:
+      - <<: *quickClean
+        crc: 0xCCD0FA10
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 10
     clean:
       - crc: 0x7F39D27E
         util: 'FO3Edit v4.0.3'
