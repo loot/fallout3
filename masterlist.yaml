@@ -1273,7 +1273,6 @@ plugins:
         itm: 13
   - name: 'FO3 Wanderers Edition - Alternate Travel.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
-    inc: [ 'FO3 Wanderers Edition - Optional No Fast Travel.esp' ]
     dirty:
       - <<: *quickClean
         crc: 0x24711BA6
@@ -1400,20 +1399,6 @@ plugins:
     clean:
       - crc: 0xB51ABE18
         util: 'FO3Edit v4.0.2e'
-  - name: 'FO3 Wanderers Edition - Lvl 30 Balance.esp'
-    inc: [ 'FO3 Wanderers Edition - Lvl 30 More Skills.esp' ]
-  - name: 'FO3 Wanderers Edition - Lvl 30 More Skills.esp'
-    inc: [ 'FO3 Wanderers Edition - Lvl 30 Balance.esp' ]
-  - name: 'FO3 Wanderers Edition - Optional Free Play After MQ.esp'
-    inc: [ 'BrokenSteel.esm' ]
-  - name: 'FO3 Wanderers Edition - Optional Free Play After Mainquest.esp'
-    inc: [ 'BrokenSteel.esm' ]
-  - name: 'FO3 Wanderers Edition - Optional No Fast Travel.esp'
-    inc: [ 'FO3 Wanderers Edition - Alternate Travel.esp' ]
-  - name: 'FO3 Wanderers Edition - Optional Worn Weapons.esp'
-    tag:
-      - Delev
-      - Relev
   - name: 'DarNifiedUIF3_FWE.esp'
     msg: [ *alreadyInFWE ]
 
