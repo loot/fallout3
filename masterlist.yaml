@@ -1313,7 +1313,9 @@ plugins:
         condition: 'active("Improved Turret Reprogramming - ALL.esp") and active("ThePitt.esm") and active("BrokenSteel.esm") and active("PointLookout.esm")'
 
   - name: 'KillableChildren.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/376/' ]
+    url:
+      - 'https://www.nexusmods.com/fallout3/mods/376/'
+      - 'https://www.nexusmods.com/fallout3/mods/18738/'
     tag:
       - Actors.ACBS
       - Relations.Add
