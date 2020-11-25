@@ -1371,46 +1371,39 @@ plugins:
       - crc: 0x54C6A319
         util: 'FO3Edit v4.0.2e'
   - name: 'FO3 Wanderers Edition - Followers Enhanced.*\.esp'
+    tag:
+      - Actors.AIData
+      - Actors.Spells
+      - Actors.Stats
     msg:
       - <<: *useOnlyOneX
         subs: [ 'Followers Enhanced ESP' ]
         condition: 'many("FO3 Wanderers Edition - Followers Enhanced.*\.esp")'
   - name: 'FO3 Wanderers Edition - Followers Enhanced.esp'
-    inc: [ 'FO3 Wanderers Edition - Followers Enhanced (BrokenSteel).esp' ]
-    tag:
-      - Actors.AIData
-      - Actors.Spells
-      - Actors.Stats
     dirty:
       - <<: *quickClean
         crc: 0x8C3F3244
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 5
   - name: 'FO3 Wanderers Edition - Followers Enhanced (BrokenSteel).esp'
-    inc: [ 'FO3 Wanderers Edition - Followers Enhanced.esp' ]
-    tag:
-      - Actors.AIData
-      - Actors.Spells
-      - Actors.Stats
     dirty:
       - <<: *quickClean
         crc: 0x88F5A264
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 6
   - name: 'FO3 Wanderers Edition - Optional Restore Tracers.*\.esp'
+    tag: [ Graphics ]
     msg:
       - <<: *useOnlyOneX
         subs: [ 'Restore Tracers ESP' ]
         condition: 'many("FO3 Wanderers Edition - Optional Restore Tracers.*\.esp")'
   - name: 'FO3 Wanderers Edition - Optional Restore Tracers.esp'
-    tag: [ Graphics ]
     dirty:
       - <<: *quickClean
         crc: 0xB4A21F53
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 5
   - name: 'FO3 Wanderers Edition - Optional Restore Tracers (automatics only).esp'
-    tag: [ Graphics ]
     clean:
       - crc: 0xE13850C3
         util: 'FO3Edit v4.0.2e'
