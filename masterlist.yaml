@@ -1283,6 +1283,15 @@ plugins:
       - crc: 0x97A0D403
         util: 'FO3Edit v4.0.3'
 
+  - name: 'hackrate.x(2|4|6)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/2745/'
+        name: 'HackRate - Terminal Speed Adjustment'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'HackRate ESP' ]
+        condition: 'many("hackrate.x(2|4|6)\.esp")'
+
   - name: 'Improved Turret (Hacking|Reprogramming) - (ALL|BASE|BS|Pitt|PL)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/1691/'
@@ -5339,21 +5348,6 @@ plugins:
     clean:
       - crc: 0xF39F664E
         util: 'FO3Edit v4.0.2e'
-  - name: 'hackrate.x2.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/2745' ]
-    inc:
-      - 'hackrate.x4.esp'
-      - 'hackrate.x6.esp'
-  - name: 'hackrate.x4.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/2745' ]
-    inc:
-      - 'hackrate.x2.esp'
-      - 'hackrate.x6.esp'
-  - name: 'hackrate.x6.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/2745' ]
-    inc:
-      - 'hackrate.x2.esp'
-      - 'hackrate.x4.esp'
   - name: 'Laurens_Bathroom_poetry_V1.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16160' ]
     dirty:
