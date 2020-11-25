@@ -1370,6 +1370,14 @@ plugins:
     clean:
       - crc: 0x54C6A319
         util: 'FO3Edit v4.0.2e'
+  - name: 'FO3 Wanderers Edition - (Followers Enhanced|Optional Restore Tracers|Optional VATS).*\.esp'
+    after:
+      - 'FO3 Wanderers Edition - Main File.esp'
+      - 'FO3 Wanderers Edition - DLC Anchorage.esp'
+      - 'FO3 Wanderers Edition - DLC The Pitt.esp'
+      - 'FO3 Wanderers Edition - DLC Broken Steel.esp'
+      - 'FO3 Wanderers Edition - DLC Point Lookout.esp'
+      - 'FO3 Wanderers Edition - DLC Mothership Zeta.esp'
   - name: 'FO3 Wanderers Edition - Followers Enhanced.*\.esp'
     tag:
       - Actors.AIData
