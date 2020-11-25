@@ -1260,21 +1260,34 @@ plugins:
   - name: 'FO3 Wanderers Edition - Main File.esm'
     tag:
       - Actors.ACBS
+      - Actors.AIData
+      - Actors.Spells
       - Actors.Stats
       - Deflst
       - Delev
-      - Invent
-      - name: "Names"
-        condition: 'not file("Mart''s Mutant Mod.esm")'
-      - Relations
+      - Destructible
+      - Graphics
+      - Invent.Add
+      - Invent.Change
+      - Invent.Remove
+      - Names
+      - NPC.FaceGen
+      - Relations.Add
+      - Relations.Change
       - Relev
+      - Scripts
+      - Sound
       - Stats
+      - Text
     dirty:
       - <<: *quickClean
         crc: 0x91A574AA
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 13
   - name: 'FO3 Wanderers Edition - Alternate Travel.esp'
+    tag:
+      - C.Light
+      - C.MiscFlags
     dirty:
       - <<: *quickClean
         crc: 0x24711BA6
@@ -1287,19 +1300,7 @@ plugins:
       - 'GlowingGhouls.esp'
       - 'The Mantis Imperative - Mantis.esp'
     tag:
-      - Actors.ACBS
-      - Actors.AIData
-      - Actors.AIPackages
-      - Actors.CombatStyle
-      - Actors.Stats
-      - Deflst
-      - Delev
       - Destructible
-      - Graphics
-      - Invent
-      - Names
-      - Relev
-      - Scripts
       - Stats
     dirty:
       - <<: *quickClean
@@ -1309,7 +1310,7 @@ plugins:
   - name: 'FO3 Wanderers Edition - DLC Anchorage.esp'
     tag:
       - Deflst
-      - Graphics
+      - Relev
       - Stats
     dirty:
       - <<: *quickClean
@@ -1317,13 +1318,16 @@ plugins:
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
   - name: 'FO3 Wanderers Edition - DLC The Pitt.esp'
-    tag: [ Names ]
+    tag: [ Delev ]
     dirty:
       - <<: *quickClean
         crc: 0xB3A15FDA
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
   - name: 'FO3 Wanderers Edition - DLC Broken Steel.esp'
+    tag:
+      - NPC.FaceGen
+      - Relev
     dirty:
       - <<: *quickClean
         crc: 0xAA94FC0C
@@ -1333,6 +1337,7 @@ plugins:
     tag:
       - Delev
       - Relev
+      - Stats
     dirty:
       - <<: *quickClean
         crc: 0xC92D0D1D
@@ -1342,7 +1347,6 @@ plugins:
     tag:
       - Destructible
       - Graphics
-      - Names
       - Stats
     clean:
       - crc: 0x54C6A319
@@ -1350,8 +1354,8 @@ plugins:
   - name: 'FO3 Wanderers Edition - Followers Enhanced.esp'
     inc: [ 'FO3 Wanderers Edition - Followers Enhanced (BrokenSteel).esp' ]
     tag:
-      - Actors.ACBS
       - Actors.AIData
+      - Actors.Spells
       - Actors.Stats
     dirty:
       - <<: *quickClean
@@ -1361,8 +1365,8 @@ plugins:
   - name: 'FO3 Wanderers Edition - Followers Enhanced (BrokenSteel).esp'
     inc: [ 'FO3 Wanderers Edition - Followers Enhanced.esp' ]
     tag:
-      - Actors.ACBS
       - Actors.AIData
+      - Actors.Spells
       - Actors.Stats
     dirty:
       - <<: *quickClean
@@ -1370,12 +1374,14 @@ plugins:
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 6
   - name: 'FO3 Wanderers Edition - Optional Restore Tracers.esp'
+    tag: [ Graphics ]
     dirty:
       - <<: *quickClean
         crc: 0xB4A21F53
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 5
   - name: 'FO3 Wanderers Edition - Optional Restore Tracers (automatics only).esp'
+    tag: [ Graphics ]
     clean:
       - crc: 0xE13850C3
         util: 'FO3Edit v4.0.2e'
