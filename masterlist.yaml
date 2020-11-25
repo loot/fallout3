@@ -1312,41 +1312,11 @@ plugins:
         subs: [ 'Improved Turret Reprogramming - ALL.esp' ]
         condition: 'active("Improved Turret Reprogramming - ALL.esp") and active("ThePitt.esm") and active("BrokenSteel.esm") and active("PointLookout.esm")'
 
-  - name: 'KillableKids.esp'
-    inc:
-      - 'KillableKids.esp'
-      - 'KillableKidsNoExtras.esp'
-      - 'KillableKidsNormalHealth.esp'
-      - 'KillableKidsNormalHealthOptional.esp'
-      - 'KillableKidsOptional.esp'
-  - name: 'KillableKidsNoExtras.esp'
-    inc:
-      - 'KillableKids.esp'
-      - 'KillableKidsNoExtras.esp'
-      - 'KillableKidsNormalHealth.esp'
-      - 'KillableKidsNormalHealthOptional.esp'
-      - 'KillableKidsOptional.esp'
-  - name: 'KillableKidsNormalHealth.esp'
-    inc:
-      - 'KillableKids.esp'
-      - 'KillableKidsNoExtras.esp'
-      - 'KillableKidsNormalHealth.esp'
-      - 'KillableKidsNormalHealthOptional.esp'
-      - 'KillableKidsOptional.esp'
-  - name: 'KillableKidsNormalHealthOptional.esp'
-    inc:
-      - 'KillableKids.esp'
-      - 'KillableKidsNoExtras.esp'
-      - 'KillableKidsNormalHealth.esp'
-      - 'KillableKidsNormalHealthOptional.esp'
-      - 'KillableKidsOptional.esp'
-  - name: 'KillableKidsOptional.esp'
-    inc:
-      - 'KillableKids.esp'
-      - 'KillableKidsNoExtras.esp'
-      - 'KillableKidsNormalHealth.esp'
-      - 'KillableKidsNormalHealthOptional.esp'
-      - 'KillableKidsOptional.esp'
+  - name: 'KillableKids(NoExtras|NormalHealth|NormalHealthOptional|Optional)?\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Killable Kids ESP' ]
+        condition: 'many("KillableKids(NoExtras|NormalHealth|NormalHealthOptional|Optional)?\.esp")'
 
   - name: 'Lobotomized! (50|100|200|300|400)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14354/' ]
