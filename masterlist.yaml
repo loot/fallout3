@@ -1281,8 +1281,8 @@ plugins:
       - Text
     dirty:
       - <<: *quickClean
-        crc: 0x91A574AA
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        crc: 0x9C986068
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 13
   - name: 'FO3 Wanderers Edition - Alternate Travel.esp'
     tag:
@@ -1290,8 +1290,8 @@ plugins:
       - C.MiscFlags
     dirty:
       - <<: *quickClean
-        crc: 0x24711BA6
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        crc: 0x9876E38C
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 14
         udr: 1
   - name: 'FO3 Wanderers Edition - Main File.esp'
@@ -1304,8 +1304,8 @@ plugins:
       - Stats
     dirty:
       - <<: *quickClean
-        crc: 0xE6D1BC56
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        crc: 0x01982EC9
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 10
   - name: 'FO3 Wanderers Edition - DLC Anchorage.esp'
     after: [ 'FO3 Wanderers Edition - Main File.esp' ]
@@ -1315,9 +1315,9 @@ plugins:
       - Stats
     dirty:
       - <<: *quickClean
-        crc: 0xD2346227
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 2
+        crc: 0xD6AA0D05
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 3
   - name: 'FO3 Wanderers Edition - DLC The Pitt.esp'
     after:
       - 'FO3 Wanderers Edition - Main File.esp'
@@ -1325,8 +1325,8 @@ plugins:
     tag: [ Delev ]
     dirty:
       - <<: *quickClean
-        crc: 0xB3A15FDA
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        crc: 0xBFF37246
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
   - name: 'FO3 Wanderers Edition - DLC Broken Steel.esp'
     after:
@@ -1338,9 +1338,9 @@ plugins:
       - Relev
     dirty:
       - <<: *quickClean
-        crc: 0xAA94FC0C
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 12
+        crc: 0x9226281C
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 14
   - name: 'FO3 Wanderers Edition - DLC Point Lookout.esp'
     after:
       - 'FO3 Wanderers Edition - Main File.esp'
@@ -1353,9 +1353,9 @@ plugins:
       - Stats
     dirty:
       - <<: *quickClean
-        crc: 0xC92D0D1D
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 2
+        crc: 0xB63AAA64
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 23
   - name: 'FO3 Wanderers Edition - DLC Mothership Zeta.esp'
     after:
       - 'FO3 Wanderers Edition - Main File.esp'
@@ -1368,8 +1368,8 @@ plugins:
       - Graphics
       - Stats
     clean:
-      - crc: 0x54C6A319
-        util: 'FO3Edit v4.0.2e'
+      - crc: 0x03CF8025
+        util: 'FO3Edit v4.0.3'
   - name: 'FO3 Wanderers Edition - (Followers Enhanced|Optional Restore Tracers|Optional VATS).*\.esp'
     after:
       - 'FO3 Wanderers Edition - Main File.esp'
@@ -1391,13 +1391,13 @@ plugins:
     dirty:
       - <<: *quickClean
         crc: 0x8C3F3244
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 5
   - name: 'FO3 Wanderers Edition - Followers Enhanced (BrokenSteel).esp'
     dirty:
       - <<: *quickClean
         crc: 0x88F5A264
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 6
   - name: 'FO3 Wanderers Edition - Optional Restore Tracers.*\.esp'
     tag: [ Graphics ]
@@ -1408,13 +1408,13 @@ plugins:
   - name: 'FO3 Wanderers Edition - Optional Restore Tracers.esp'
     dirty:
       - <<: *quickClean
-        crc: 0xB4A21F53
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        crc: 0x78FD0460
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 5
   - name: 'FO3 Wanderers Edition - Optional Restore Tracers (automatics only).esp'
     clean:
       - crc: 0xE13850C3
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.3'
   - name: 'FO3 Wanderers Edition - Optional VATS (Halftime|Realtime)\.esp'
     msg:
       - <<: *useOnlyOneX
@@ -1424,12 +1424,12 @@ plugins:
     dirty:
       - <<: *quickClean
         crc: 0x1B66E394
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
   - name: 'FO3 Wanderers Edition - Optional VATS Realtime.esp'
     clean:
       - crc: 0xB51ABE18
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.3'
   - name: 'DarNifiedUIF3_FWE.esp'
     msg: [ *alreadyInFWE ]
 
