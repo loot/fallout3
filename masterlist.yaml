@@ -1287,18 +1287,10 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/2745/'
         name: 'HackRate - Terminal Speed Adjustment'
-  - name: 'hackrate.x2.esp'
-    inc:
-      - 'hackrate.x4.esp'
-      - 'hackrate.x6.esp'
-  - name: 'hackrate.x4.esp'
-    inc:
-      - 'hackrate.x2.esp'
-      - 'hackrate.x6.esp'
-  - name: 'hackrate.x6.esp'
-    inc:
-      - 'hackrate.x2.esp'
-      - 'hackrate.x4.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'HackRate ESP' ]
+        condition: 'many("hackrate.x(2|4|6)\.esp")'
 
   - name: 'Improved Turret (Hacking|Reprogramming) - (ALL|BASE|BS|Pitt|PL)\.esp'
     url:
