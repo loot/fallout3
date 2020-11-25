@@ -1317,6 +1317,7 @@ plugins:
   - name: 'KillableKids(NoExtras|NormalHealth|NormalHealthOptional|Optional)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/376/' ]
     msg:
+      - *obsolete
       - <<: *useOnlyOneX
         subs: [ 'Killable Kids ESP' ]
         condition: 'many("KillableKids(NoExtras|NormalHealth|NormalHealthOptional|Optional)?\.esp")'
