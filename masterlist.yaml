@@ -1430,8 +1430,6 @@ plugins:
     clean:
       - crc: 0xB51ABE18
         util: 'FO3Edit v4.0.3'
-  - name: 'DarNifiedUIF3_FWE.esp'
-    msg: [ *alreadyInFWE ]
 
   - name: 'GalaxyNewsRadioFix\[(S|N)\]\.esp'
     url:
