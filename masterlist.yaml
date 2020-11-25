@@ -1254,7 +1254,9 @@ plugins:
 
 ###### Gameplay ######
   - name: 'FO3 Wanderers Edition - Main File.esm'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/2761' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/2761/'
+        name: 'FWE - FO3 Wanderers Edition'
     tag:
       - Actors.ACBS
       - Actors.Stats
