@@ -1308,6 +1308,7 @@ plugins:
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 10
   - name: 'FO3 Wanderers Edition - DLC Anchorage.esp'
+    after: [ 'FO3 Wanderers Edition - Main File.esp' ]
     tag:
       - Deflst
       - Relev
@@ -1318,6 +1319,9 @@ plugins:
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
   - name: 'FO3 Wanderers Edition - DLC The Pitt.esp'
+    after:
+      - 'FO3 Wanderers Edition - Main File.esp'
+      - 'FO3 Wanderers Edition - DLC Anchorage.esp'
     tag: [ Delev ]
     dirty:
       - <<: *quickClean
@@ -1325,6 +1329,10 @@ plugins:
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
   - name: 'FO3 Wanderers Edition - DLC Broken Steel.esp'
+    after:
+      - 'FO3 Wanderers Edition - Main File.esp'
+      - 'FO3 Wanderers Edition - DLC Anchorage.esp'
+      - 'FO3 Wanderers Edition - DLC The Pitt.esp'
     tag:
       - NPC.FaceGen
       - Relev
@@ -1334,6 +1342,11 @@ plugins:
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 12
   - name: 'FO3 Wanderers Edition - DLC Point Lookout.esp'
+    after:
+      - 'FO3 Wanderers Edition - Main File.esp'
+      - 'FO3 Wanderers Edition - DLC Anchorage.esp'
+      - 'FO3 Wanderers Edition - DLC The Pitt.esp'
+      - 'FO3 Wanderers Edition - DLC Broken Steel.esp'
     tag:
       - Delev
       - Relev
@@ -1344,6 +1357,12 @@ plugins:
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
   - name: 'FO3 Wanderers Edition - DLC Mothership Zeta.esp'
+    after:
+      - 'FO3 Wanderers Edition - Main File.esp'
+      - 'FO3 Wanderers Edition - DLC Anchorage.esp'
+      - 'FO3 Wanderers Edition - DLC The Pitt.esp'
+      - 'FO3 Wanderers Edition - DLC Broken Steel.esp'
+      - 'FO3 Wanderers Edition - DLC Point Lookout.esp'
     tag:
       - Destructible
       - Graphics
