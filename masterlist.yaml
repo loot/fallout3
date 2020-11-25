@@ -1312,6 +1312,42 @@ plugins:
         subs: [ 'Improved Turret Reprogramming - ALL.esp' ]
         condition: 'active("Improved Turret Reprogramming - ALL.esp") and active("ThePitt.esm") and active("BrokenSteel.esm") and active("PointLookout.esm")'
 
+  - name: 'KillableKids.esp'
+    inc:
+      - 'KillableKids.esp'
+      - 'KillableKidsNoExtras.esp'
+      - 'KillableKidsNormalHealth.esp'
+      - 'KillableKidsNormalHealthOptional.esp'
+      - 'KillableKidsOptional.esp'
+  - name: 'KillableKidsNoExtras.esp'
+    inc:
+      - 'KillableKids.esp'
+      - 'KillableKidsNoExtras.esp'
+      - 'KillableKidsNormalHealth.esp'
+      - 'KillableKidsNormalHealthOptional.esp'
+      - 'KillableKidsOptional.esp'
+  - name: 'KillableKidsNormalHealth.esp'
+    inc:
+      - 'KillableKids.esp'
+      - 'KillableKidsNoExtras.esp'
+      - 'KillableKidsNormalHealth.esp'
+      - 'KillableKidsNormalHealthOptional.esp'
+      - 'KillableKidsOptional.esp'
+  - name: 'KillableKidsNormalHealthOptional.esp'
+    inc:
+      - 'KillableKids.esp'
+      - 'KillableKidsNoExtras.esp'
+      - 'KillableKidsNormalHealth.esp'
+      - 'KillableKidsNormalHealthOptional.esp'
+      - 'KillableKidsOptional.esp'
+  - name: 'KillableKidsOptional.esp'
+    inc:
+      - 'KillableKids.esp'
+      - 'KillableKidsNoExtras.esp'
+      - 'KillableKidsNormalHealth.esp'
+      - 'KillableKidsNormalHealthOptional.esp'
+      - 'KillableKidsOptional.esp'
+
   - name: 'Lobotomized! (50|100|200|300|400)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14354/' ]
     tag: [ Text ]
@@ -3867,36 +3903,6 @@ plugins:
     inc: [ 'Inebriation.esp' ]
   - name: 'Inebriation-FOSE.esp'
     inc: [ 'Inebriation-FOSE.esp' ]
-  - name: 'KillableKids.esp'
-    inc:
-      - 'KillableKidsOptional.esp'
-      - 'KillableKidsNormalHealth.esp'
-      - 'KillableKidsNormalHealthOptional.esp'
-      - 'KillableKidsNoExtras.esp'
-  - name: 'KillableKidsOptional.esp'
-    inc:
-      - 'KillableKids.esp'
-      - 'KillableKidsNormalHealth.esp'
-      - 'KillableKidsNormalHealthOptional.esp'
-      - 'KillableKidsNoExtras.esp'
-  - name: 'KillableKidsNormalHealth.esp'
-    inc:
-      - 'KillableKidsOptional.esp'
-      - 'KillableKids.esp'
-      - 'KillableKidsNormalHealthOptional.esp'
-      - 'KillableKidsNoExtras.esp'
-  - name: 'KillableKidsNormalHealthOptional.esp'
-    inc:
-      - 'KillableKidsOptional.esp'
-      - 'KillableKidsNormalHealth.esp'
-      - 'KillableKids.esp'
-      - 'KillableKidsNoExtras.esp'
-  - name: 'KillableKidsNoExtras.esp'
-    inc:
-      - 'KillableKidsOptional.esp'
-      - 'KillableKidsNormalHealth.esp'
-      - 'KillableKidsNormalHealthOptional.esp'
-      - 'KillableKids.esp'
   - name: 'AttackableBrats.esp'
     inc:
       - 'KillableBrats.esp'
