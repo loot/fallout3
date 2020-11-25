@@ -1370,6 +1370,11 @@ plugins:
     clean:
       - crc: 0x54C6A319
         util: 'FO3Edit v4.0.2e'
+  - name: 'FO3 Wanderers Edition - Followers Enhanced.*\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Followers Enhanced ESP' ]
+        condition: 'many("FO3 Wanderers Edition - Followers Enhanced.*\.esp")'
   - name: 'FO3 Wanderers Edition - Followers Enhanced.esp'
     inc: [ 'FO3 Wanderers Edition - Followers Enhanced (BrokenSteel).esp' ]
     tag:
@@ -1392,6 +1397,11 @@ plugins:
         crc: 0x88F5A264
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 6
+  - name: 'FO3 Wanderers Edition - Optional Restore Tracers.*\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Restore Tracers ESP' ]
+        condition: 'many("FO3 Wanderers Edition - Optional Restore Tracers.*\.esp")'
   - name: 'FO3 Wanderers Edition - Optional Restore Tracers.esp'
     tag: [ Graphics ]
     dirty:
@@ -1404,6 +1414,11 @@ plugins:
     clean:
       - crc: 0xE13850C3
         util: 'FO3Edit v4.0.2e'
+  - name: 'FO3 Wanderers Edition - Optional VATS (Halftime|Realtime)\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'VATS ESP' ]
+        condition: 'many("FO3 Wanderers Edition - Optional VATS (Halftime|Realtime)\.esp")'
   - name: 'FO3 Wanderers Edition - Optional VATS Halftime.esp'
     dirty:
       - <<: *quickClean
