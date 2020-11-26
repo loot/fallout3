@@ -1164,6 +1164,7 @@ plugins:
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 21
   - name: 'EVE Operation Anchorage.esp'
+    req: [ 'EVE.esp' ]
     dirty:
       - <<: *quickClean
         crc: 0x89DC1FA8
