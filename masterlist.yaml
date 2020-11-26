@@ -1149,23 +1149,21 @@ plugins:
     clean:
       - crc: 0x3C10D833
         util: 'FO3Edit v4.0.2e'
-  - name: 'EVE.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/8340' ]
+  - name: 'EVE( Operation Anchorage)?\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/8340/' ]
     msg:
       - <<: *obsolete
         condition: 'active("Anchorage.esm") and active("BrokenSteel.esm")'
     tag:
       - Graphics
       - Sound
+  - name: 'EVE.esp'
     dirty:
       - <<: *quickClean
         crc: 0x05064FE6
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 21
   - name: 'EVE Operation Anchorage.esp'
-    tag:
-      - Graphics
-      - Sound
     dirty:
       - <<: *quickClean
         crc: 0x89DC1FA8
