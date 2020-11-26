@@ -1094,18 +1094,9 @@ plugins:
 ###### Modding Tools - Generated Files ######
   - name: 'Bashed Patch, 0.esp'
     group: *dynamicPatchesGroup
-    after:
-      - 'Merged.esp'
-      - 'Merged Patch.esp'
-      - 'FO3Merged.esp'
+    after: [ 'FO3Merged.esp' ]
 
   - name: 'FO3Merged.esp'
-    group: *dynamicPatchesGroup
-    tag: [ NoMerge ]
-  - name: 'Merged.esp'
-    group: *dynamicPatchesGroup
-    tag: [ NoMerge ]
-  - name: 'Merged Patch.esp'
     group: *dynamicPatchesGroup
     tag: [ NoMerge ]
 
