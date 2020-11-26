@@ -1093,10 +1093,12 @@ plugins:
 
 ###### Modding Tools - Generated Files ######
   - name: 'Bashed Patch, 0.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/22934/' ]
     group: *dynamicPatchesGroup
     after: [ 'FO3Merged.esp' ]
 
   - name: 'FO3Merged.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/637/' ]
     group: *dynamicPatchesGroup
     tag: [ NoMerge ]
 
