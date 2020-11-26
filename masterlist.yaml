@@ -1091,6 +1091,25 @@ plugins:
     msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
 
 
+###### Modding Tools - Generated Files ######
+  - name: 'Bashed Patch, 0.esp'
+    group: *dynamicPatchesGroup
+    after:
+      - 'Merged.esp'
+      - 'Merged Patch.esp'
+      - 'FO3Merged.esp'
+
+  - name: 'FO3Merged.esp'
+    group: *dynamicPatchesGroup
+    tag: [ NoMerge ]
+  - name: 'Merged.esp'
+    group: *dynamicPatchesGroup
+    tag: [ NoMerge ]
+  - name: 'Merged Patch.esp'
+    group: *dynamicPatchesGroup
+    tag: [ NoMerge ]
+
+
 ###### Resources ######
   - name: 'CALIBR.esm'
     url:
@@ -7639,22 +7658,6 @@ plugins:
       - crc: 0x196F177D
         util: 'FO3Edit v4.0.2e'
 
-  ### Load Late-section
-  - name: 'Merged.esp'
-    group: *dynamicPatchesGroup
-    tag: [ NoMerge ]
-  - name: 'Merged Patch.esp'
-    group: *dynamicPatchesGroup
-    tag: [ NoMerge ]
-  - name: 'FO3Merged.esp'
-    group: *dynamicPatchesGroup
-    tag: [ NoMerge ]
-  - name: 'Bashed Patch, 0.esp'
-    group: *dynamicPatchesGroup
-    after:
-      - 'Merged.esp'
-      - 'Merged Patch.esp'
-      - 'FO3Merged.esp'
   - name: 'Clarity.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21319' ]
     clean:
