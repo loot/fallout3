@@ -1133,45 +1133,6 @@ plugins:
     group: *fixesGroup
 
 
-###### AudioVisual ######
-  - name: 'EVE.esm'
-    url:
-      - link: 'https://www.nexusmods.com/fallout3/mods/8340/'
-        name: 'EVE - Energy Visuals Enhanced'
-    tag:
-      - Delev
-      - Graphics
-      - Invent.Add
-      - Invent.Remove
-      - Scripts
-      - Sound
-      - Stats
-    clean:
-      - crc: 0x3C10D833
-        util: 'FO3Edit v4.0.2e'
-  - name: 'EVE( Operation Anchorage)?\.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/8340/' ]
-    msg:
-      - <<: *obsolete
-        condition: 'active("Anchorage.esm") and active("BrokenSteel.esm")'
-    tag:
-      - Graphics
-      - Sound
-  - name: 'EVE.esp'
-    dirty:
-      - <<: *quickClean
-        crc: 0x05064FE6
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 21
-  - name: 'EVE Operation Anchorage.esp'
-    req: [ 'EVE.esp' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0x89DC1FA8
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 1
-
-
 ###### AudioVisual - Interface ######
   - name: 'BA_InventorySorter(GOTY|Vanilla|Anchorage|ThePitt|BrokenSteel|PointLookout|Zeta)\.esp'
     url:
@@ -1304,6 +1265,43 @@ plugins:
 
 
 ###### Gameplay ######
+  - name: 'EVE.esm'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/8340/'
+        name: 'EVE - Energy Visuals Enhanced'
+    tag:
+      - Delev
+      - Graphics
+      - Invent.Add
+      - Invent.Remove
+      - Scripts
+      - Sound
+      - Stats
+    clean:
+      - crc: 0x3C10D833
+        util: 'FO3Edit v4.0.2e'
+  - name: 'EVE( Operation Anchorage)?\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/8340/' ]
+    msg:
+      - <<: *obsolete
+        condition: 'active("Anchorage.esm") and active("BrokenSteel.esm")'
+    tag:
+      - Graphics
+      - Sound
+  - name: 'EVE.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x05064FE6
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 21
+  - name: 'EVE Operation Anchorage.esp'
+    req: [ 'EVE.esp' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x89DC1FA8
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+
   - name: 'FO3 Wanderers Edition - .*\.es(m|p)'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/2761/'
