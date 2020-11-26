@@ -1133,6 +1133,50 @@ plugins:
     group: *fixesGroup
 
 
+###### AudioVisual ######
+  - name: 'EVE.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/8340' ]
+    tag:
+      - Graphics
+      - Invent
+      - Scripts
+      - Sound
+    clean:
+      - crc: 0x3C10D833
+        util: 'FO3Edit v4.0.2e'
+  - name: 'EVE Beta_0.9.4.esp'
+    msg: [ *obsolete ]
+  - name: 'EVE.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/8340' ]
+    msg: [ *obsolete ]
+    tag:
+      - Delev
+      - Graphics
+      - Relev
+      - Scripts
+      - Sound
+      - Stats
+    dirty:
+      - <<: *quickClean
+        crc: 0x05064FE6
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 21
+  - name: 'EVE Operation Anchorage.esp'
+    tag:
+      - Graphics
+      - Sound
+    dirty:
+      - <<: *quickClean
+        crc: 0x89DC1FA8
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+  - name: 'EVE_CHEAT.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/8340' ]
+    clean:
+      - crc: 0xD6876C7F
+        util: 'FO3Edit v4.0.2e'
+
+
 ###### AudioVisual - Interface ######
   - name: 'BA_InventorySorter(GOTY|Vanilla|Anchorage|ThePitt|BrokenSteel|PointLookout|Zeta)\.esp'
     url:
@@ -1756,21 +1800,6 @@ plugins:
       - 'Mart''s Mutant Mod - Tougher Traders.esp'
   - name: 'RoadWardensMMM.esp'
     req: [ 'RoadWardens.esp' ]
-  - name: 'EVE.esm'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/8340' ]
-    tag:
-      - Graphics
-      - Invent
-      - Scripts
-      - Sound
-    clean:
-      - crc: 0x3C10D833
-        util: 'FO3Edit v4.0.2e'
-  - name: 'EVE_CHEAT.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/8340' ]
-    clean:
-      - crc: 0xD6876C7F
-        util: 'FO3Edit v4.0.2e'
   - name: 'EWE Energy Weapons Enhanced.esm'
     tag:
       - Deflst
@@ -3497,32 +3526,6 @@ plugins:
     tag: [ Names ]
   - name: 'Trucker Holotapes.esp'
     tag: [ Names ]
-  - name: 'EVE Beta_0.9.4.esp'
-    msg: [ *obsolete ]
-  - name: 'EVE.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/8340' ]
-    msg: [ *obsolete ]
-    tag:
-      - Delev
-      - Graphics
-      - Relev
-      - Scripts
-      - Sound
-      - Stats
-    dirty:
-      - <<: *quickClean
-        crc: 0x05064FE6
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 21
-  - name: 'EVE Operation Anchorage.esp'
-    tag:
-      - Graphics
-      - Sound
-    dirty:
-      - <<: *quickClean
-        crc: 0x89DC1FA8
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 1
   - name: 'EVE Main - FWE Master Release.esp'
     msg: [ *obsolete ]
   - name: 'EVE - FWE Master Release.esp'
