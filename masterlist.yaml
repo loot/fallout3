@@ -1279,7 +1279,7 @@ plugins:
       - Stats
     clean:
       - crc: 0x3C10D833
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.3'
   - name: 'EVE( Operation Anchorage)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8340/' ]
     msg:
@@ -1288,19 +1288,8 @@ plugins:
     tag:
       - Graphics
       - Sound
-  - name: 'EVE.esp'
-    dirty:
-      - <<: *quickClean
-        crc: 0x05064FE6
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 21
   - name: 'EVE Operation Anchorage.esp'
     req: [ 'EVE.esp' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0x89DC1FA8
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 1
 
   - name: 'FO3 Wanderers Edition - .*\.es(m|p)'
     url:
