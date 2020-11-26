@@ -1135,7 +1135,9 @@ plugins:
 
 ###### AudioVisual ######
   - name: 'EVE.esm'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/8340' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/8340/'
+        name: 'EVE - Energy Visuals Enhanced'
     tag:
       - Graphics
       - Invent
