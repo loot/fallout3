@@ -1151,7 +1151,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'EVE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8340' ]
-    msg: [ *obsolete ]
+    msg:
+      - <<: *obsolete
+        condition: 'active("Anchorage.esm") and active("BrokenSteel.esm")'
     tag:
       - Graphics
       - Sound
