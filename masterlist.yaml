@@ -1866,6 +1866,10 @@ plugins:
 
 
 ###### New Items ######
+  - name: 'LingsFinerThings.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
+  - name: 'Lings Finer Things.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
 
 
   - name: '20th Century Weapons.esm'
