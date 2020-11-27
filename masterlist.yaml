@@ -1215,6 +1215,25 @@ plugins:
 
 
 ###### Character Appearance - NPCs ######
+  - name: 'LingsPrettyThings.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
+    tag:
+      - Graphics
+      - Invent.Add
+      - Invent.Remove
+      - NPC.Class
+      - NPC.Eyes
+      - NPC.FaceGen
+      - NPC.Hair
+      - NPC.Race
+    clean:
+      - crc: 0xCC98BA95
+        util: 'FO3Edit v4.0.3'
+  - name: 'LingsPrettyThings-BrokenSteel.esp'
+    clean:
+      - crc: 0x4B41FEB1
+        util: 'FO3Edit v4.0.3'
+
   - name: '.*(Project Beauty).*\.es(m|p)'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/6341/'
@@ -3329,22 +3348,6 @@ plugins:
     msg: [ *obsolete ]
     url:
       - 'https://www.nexusmods.com/fallout3/mods/17631/'
-  - name: 'LingsPrettyThings.esp'
-    tag:
-      - Eyes
-      - Hair
-      - Invent
-      - Names
-      - NPC.Class
-      - NPC.Race
-      - NpcFaces
-      - R.Attributes-F
-      - R.Attributes-M
-      - R.Description
-      - R.Head
-      - R.Mouth
-      - R.Teeth
-      - Voice-F
   - name: 'xCALIBRuniverse_LingsBrokenSteel.esp'
     tag:
       - Actors.ACBS
