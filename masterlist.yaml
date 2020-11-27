@@ -1195,6 +1195,22 @@ plugins:
 
 
 ###### Character Appearance - Body, Face & Hair ######
+  - name: 'HairPack.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1146/' ]
+    group: *fixesGroup
+    clean:
+      - crc: 0x0712CC09
+        util: 'FO3Edit v4.0.3'
+  - name: 'hair_add_npc.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1146/' ]
+    group: *earlyLoadersGroup
+    tag: [ NPC.Hair ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x49627DC0
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 6
+
   - name: 'Lings(DLC)?\.esm'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/8942/'
@@ -1893,10 +1909,6 @@ plugins:
     clean:
       - crc: 0x8A5BC2AF
         util: 'FO3Edit v4.0.2e'
-  - name: 'HairPack.esm'
-    tag:
-      - Eyes
-      - Hair
   - name: 'FNNsys.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14354' ]
     tag: [ Scripts ]
@@ -4740,14 +4752,6 @@ plugins:
       - Hair
   - name: 'EwwGhoulyBody.esp'
     tag: [ Body-F ]
-  - name: 'HairPack_2chPlus.esp'
-    tag: [ Hair ]
-  - name: 'HairPack_2chPlus+.esp'
-    tag: [ Hair ]
-  - name: 'HairPack_2chPlus+EYE.esp'
-    tag:
-      - Eyes
-      - Hair
   - name: 'VB_Hair_Shojo+CotW_15.esp'
     tag: [ Hair ]
   - name: 'Shojo Race.esp'
