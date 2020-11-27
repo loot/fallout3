@@ -1604,6 +1604,7 @@ plugins:
         subs: [ 'RH_Ironsights Merged' ]
         condition: 'checksum("RH_IRONSIGHTS.esm", BA4ABFE7) or checksum("RH_IRONSIGHTS.esm", 08328958)'
   - name: 'RH_IronSights_Basic_VanillaPlugin.esp'
+  # RHIS - DLC patches #
   - name: 'RH_IronSights_Basic_(Anchorage|Pitt|BrokenSteel|PointLookout|Zeta)Plugin\.esp'
     after: [ 'RH_IronSights_Basic_VanillaPlugin.esp' ]
   - name: 'RH_IronSights_Basic_(Pitt|BrokenSteel|PointLookout|Zeta)Plugin\.esp'
@@ -1618,6 +1619,7 @@ plugins:
   - name: 'RH_IronSights_Basic_PointLookoutPlugin.esp'
   - name: 'RH_IronSights_Basic_ZetaPlugin.esp'
     after: [ 'RH_IronSights_Basic_PointLookoutPlugin.esp' ]
+  # RHIS - Optional files #
   - name: 'RH_IronSights_(Pitt_NewRifleSights|PL_NewItems|RemoveReticule|Vanilla_BetterUniques|Vanilla_NewWeapons)\.esp'
     after:
       - 'RH_IronSights_Basic_VanillaPlugin.esp'
@@ -1631,6 +1633,7 @@ plugins:
   - name: 'RH_IronSights_RemoveReticule.esp'
   - name: 'RH_IronSights_Vanilla_BetterUniques.esp'
   - name: 'RH_IronSights_Vanilla_NewWeapons.esp'
+  # RHIS - Compatibility patches #
   - name: 'RH_(EVE|FWE|WMK)_Bridge\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6938/' ]
     after:
