@@ -1201,11 +1201,11 @@ plugins:
         name: 'Anthony Lings Coiffure - Hair Eyes Lashes'
     group: *fixesGroup
   - name: 'Lings.esm'
-    tag: [ Hair ]
-  - name: 'LingsDLC.esm'
     tag:
-      - Eyes
-      - Hair
+      - NPC.Eyes
+      - NPC.FaceGen
+      - NPC.Hair
+  - name: 'LingsDLC.esm'
 
 
 ###### Character Appearance - NPCs ######
