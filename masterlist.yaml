@@ -1215,6 +1215,23 @@ plugins:
 
 
 ###### Character Appearance - NPCs ######
+  - name: 'LingsPrettyThings.esp'
+    tag:
+      - Eyes
+      - Hair
+      - Invent
+      - Names
+      - NPC.Class
+      - NPC.Race
+      - NpcFaces
+      - R.Attributes-F
+      - R.Attributes-M
+      - R.Description
+      - R.Head
+      - R.Mouth
+      - R.Teeth
+      - Voice-F
+
   - name: '.*(Project Beauty).*\.es(m|p)'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/6341/'
