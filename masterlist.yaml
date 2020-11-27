@@ -1124,7 +1124,7 @@ plugins:
       - Stats
     clean:
       - crc: 0x01D2F0D5
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.3'
   - name: 'xCALIBRammo_override.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11684' ]
     tag:
@@ -1133,7 +1133,7 @@ plugins:
     dirty:
       - <<: *quickClean
         crc: 0xC8E1AA9C
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 133
   - name: 'xCALIBRammo_FWE.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11684' ]
@@ -1142,7 +1142,7 @@ plugins:
       - Names
     clean:
       - crc: 0x689B9A4B
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.3'
   - name: 'xCALIBR_20CW_v5.12.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11684' ]
     tag:
@@ -1150,7 +1150,7 @@ plugins:
       - Names
     clean:
       - crc: 0xA0EC8FA7
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.3'
   - name: 'xCALIBR_(override|override_unsorted|override_FWE5|2CW_CP|2CW_CP_Sorted)\.esp'
     msg: [ *obsolete ]
     tag:
