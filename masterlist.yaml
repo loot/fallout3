@@ -1869,6 +1869,7 @@ plugins:
 ###### New Items ######
   - name: 'LingsFinerThings.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
+    group: *fixesGroup
     clean:
       - crc: 0xE8D73962
         util: 'FO3Edit v4.0.3'
