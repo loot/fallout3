@@ -1269,6 +1269,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/8340/'
         name: 'EVE - Energy Visuals Enhanced'
+    after: [ 'RH_IRONSIGHTS.esm' ]
     tag:
       - Delev
       - Graphics
@@ -1296,6 +1297,7 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/2761/'
         name: 'FWE - FO3 Wanderers Edition'
   - name: 'FO3 Wanderers Edition - Main File.esm'
+    after: [ 'RH_IRONSIGHTS.esm' ]
     tag:
       - Actors.ACBS
       - Actors.AIData
@@ -1586,6 +1588,159 @@ plugins:
         crc: 0xD86FFBBC
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
+
+  - name: 'RH_IRONSIGHTS.esm'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/6938/'
+        name: 'Rogue Hallow''s Iron Sights - FOSE'
+      - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
+        name: 'Paradox Ignition presents The Mergers'
+    req: [ *FOSE ]
+    tag:
+      - Graphics
+      - Invent.Add
+      - Invent.Remove
+      - Stats
+    msg:
+      - <<: *patchUpdateAvailable
+        subs: [ '[Paradox Ignition presents The Mergers](https://www.nexusmods.com/fallout3/mods/16787/) - **RH Ironsights Merged**' ]
+        condition: 'not checksum("RH_IRONSIGHTS.esm", BA4ABFE7) and not checksum("RH_IRONSIGHTS.esm", 08328958) and active("Anchorage.esm") and active("ThePitt.esm") and active("BrokenSteel.esm") and active("PointLookout.esm") and active("Zeta.esm")'
+    dirty:
+      - <<: *quickClean
+        crc: 0xBA4ABFE7
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        udr: 1
+    clean:
+      - crc: 0xE3972362
+        util: 'FO3Edit v4.0.3'
+      - crc: 0x08328958
+        util: 'FO3Edit v4.0.3'
+  - name: 'RH_IronSights_.*\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6938/' ]
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'RH_Ironsights Merged' ]
+        condition: 'checksum("RH_IRONSIGHTS.esm", BA4ABFE7) or checksum("RH_IRONSIGHTS.esm", 08328958)'
+  - name: 'RH_IronSights_Basic_VanillaPlugin.esp'
+    clean:
+      - crc: 0xB801247C
+        util: 'FO3Edit v4.0.3'
+  # RHIS - DLC patches #
+  - name: 'RH_IronSights_Basic_(Anchorage|Pitt|BrokenSteel|PointLookout|Zeta)Plugin\.esp'
+    after: [ 'RH_IronSights_Basic_VanillaPlugin.esp' ]
+  - name: 'RH_IronSights_Basic_(Pitt|BrokenSteel|PointLookout|Zeta)Plugin\.esp'
+    after: [ 'RH_IronSights_Basic_AnchoragePlugin.esp' ]
+  - name: 'RH_IronSights_Basic_(BrokenSteel|PointLookout|Zeta)Plugin\.esp'
+    after: [ 'RH_IronSights_Basic_PittPlugin.esp' ]
+  - name: 'RH_IronSights_Basic_(PointLookout|Zeta)Plugin\.esp'
+    after: [ 'RH_IronSights_Basic_BrokenSteelPlugin.esp' ]
+  - name: 'RH_IronSights_Basic_AnchoragePlugin.esp'
+    tag: [ Graphics ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x7EF88F51
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+  - name: 'RH_IronSights_Basic_PittPlugin.esp'
+    tag: [ Graphics ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xF4974E27
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+  - name: 'RH_IronSights_Basic_BrokenSteelPlugin.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xA1FEB067
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+  - name: 'RH_IronSights_Basic_PointLookoutPlugin.esp'
+    tag: [ Graphics ]
+    clean:
+      - crc: 0x7578E98E
+        util: 'FO3Edit v4.0.3'
+  - name: 'RH_IronSights_Basic_ZetaPlugin.esp'
+    after: [ 'RH_IronSights_Basic_PointLookoutPlugin.esp' ]
+    tag: [ Graphics ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x9449EB44
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 5
+  # RHIS - Optional files #
+  - name: 'RH_IronSights_(Pitt_NewRifleSights|PL_NewItems|RemoveReticule|Vanilla_BetterUniques|Vanilla_NewWeapons)\.esp'
+    after:
+      - 'RH_IronSights_Basic_VanillaPlugin.esp'
+      - 'RH_IronSights_Basic_AnchoragePlugin.esp'
+      - 'RH_IronSights_Basic_PittPlugin.esp'
+      - 'RH_IronSights_Basic_BrokenSteelPlugin.esp'
+      - 'RH_IronSights_Basic_PointLookoutPlugin.esp'
+      - 'RH_IronSights_Basic_ZetaPlugin.esp'
+  - name: 'RH_IronSights_Pitt_NewRifleSights.esp'
+    clean:
+      - crc: 0xA9268C1E
+        util: 'FO3Edit v4.0.3'
+  - name: 'RH_IronSights_PL_NewItems.esp'
+    clean:
+      - crc: 0xEE22209F
+        util: 'FO3Edit v4.0.3'
+  - name: 'RH_IronSights_RemoveReticule.esp'
+    clean:
+      - crc: 0x5F05A0CA
+        util: 'FO3Edit v4.0.3'
+  - name: 'RH_IronSights_Vanilla_BetterUniques.esp'
+    tag:
+      - Graphics
+      - Stats
+    dirty:
+      - <<: *quickClean
+        crc: 0x19D6C01D
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        udr: 1
+  - name: 'RH_IronSights_Vanilla_NewWeapons.esp'
+    tag:
+      - Invent.Add
+      - Invent.Remove
+    dirty:
+      - <<: *quickClean
+        crc: 0xF8D640D5
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 3
+  # RHIS - Compatibility patches #
+  - name: 'RH_(EVE|FWE|WMK)_Bridge\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6938/' ]
+    after:
+      - 'RH_IronSights_Basic_VanillaPlugin.esp'
+      - 'RH_IronSights_Basic_AnchoragePlugin.esp'
+      - 'RH_IronSights_Basic_PittPlugin.esp'
+      - 'RH_IronSights_Basic_BrokenSteelPlugin.esp'
+      - 'RH_IronSights_Basic_PointLookoutPlugin.esp'
+      - 'RH_IronSights_Basic_ZetaPlugin.esp'
+      - 'WeaponModKits - FWE Master Release.esp'
+    tag:
+      - Graphics
+      - Stats
+  - name: 'RH_EVE_Bridge.esp'
+    after: [ 'RH_WMK_Bridge.esp' ]
+    tag: [ Sound ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x06239EB2
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 3
+  - name: 'RH_FWE_Bridge.esp'
+    after: [ 'FO3 Wanderers Edition - Main File.esp' ]
+    clean:
+      - crc: 0x0781E0BA
+        util: 'FO3Edit v4.0.3'
+  - name: 'RH_WMK_Bridge.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/17757' ]
+    after: [ 'WMK Uniques for FWE_EVE Addon.esp' ]
+    clean:
+      - crc: 0xCB620550
+        util: 'FO3Edit v4.0.3'
+      - crc: 0x130108AC
+        util: 'FO3Edit v4.0.2e'
 
 
 ###### Gameplay - Crafting ######
@@ -2258,20 +2413,6 @@ plugins:
         crc: 0x31F67AB0
         util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 3
-  - name: 'RH_IRONSIGHTS.esm'
-    url:
-      # RH_IronSights - FOSE
-      - 'https://www.nexusmods.com/fallout3/mods/6938'
-      # Paradox merged mod
-      - 'https://www.nexusmods.com/fallout3/mods/16787'
-    inc: [ 'Arms_dealer_V1.esp' ]
-    tag: [ Invent ]
-    dirty:
-      # Paradox merged mod
-      - <<: *quickClean
-        crc: 0xBA4ABFE7
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        udr: 1
   - name: 'Vault 101 Revisited.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13308' ]
     dirty:
@@ -2968,15 +3109,6 @@ plugins:
         crc: 0x25042115
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 79
-  - name: 'RH_WMK_Bridge.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/17757' ]
-    after: [ 'WMK Uniques for FWE_EVE Addon.esp' ]
-    tag:
-      - Relev
-      - Delev
-    clean:
-      - crc: 0x130108AC
-        util: 'FO3Edit v4.0.2e'
   - name: 'WeaponModKits - FWE Optional Worn Weapons.esp'
     tag: [ Delev ]
   - name: 'T3T_WMK1.esp'
@@ -7646,66 +7778,6 @@ plugins:
     clean:
       - crc: 0x6062B73A
         util: 'FO3Edit v4.0.2f'
-  - name: 'RH_IronSights_Basic_AnchoragePlugin.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0x7EF88F51
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 1
-  - name: 'RH_EVE_Bridge.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0x06239EB2
-        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 3
-  - name: 'RH_IronSights_Basic_ZetaPlugin.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0x9449EB44
-        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 5
-  - name: 'RH_IronSights_Basic_PittPlugin.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0xF4974E27
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 1
-  - name: 'RH_IronSights_Basic_BrokenSteelPlugin.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0xA1FEB067
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 1
-  - name: 'RH_IronSights_Basic_PointLookoutPlugin.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
-    clean:
-      - crc: 0x7578E98E
-        util: 'FO3Edit v4.0.2e'
-  - name: 'RH_IronSights_Basic_VanillaPlugin.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
-    clean:
-      - crc: 0xB801247C
-        util: 'FO3Edit v4.0.2e'
-  - name: 'RH_IronSights_Pitt_NewRifleSights.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
-    clean:
-      - crc: 0xA9268C1E
-        util: 'FO3Edit v4.0.2e'
-  - name: 'RH_IronSights_PL_NewItems.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
-    clean:
-      - crc: 0xEE22209F
-        util: 'FO3Edit v4.0.2e'
-  - name: 'RH_IronSights_RemoveReticule.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
-    clean:
-      - crc: 0xBC65E0C9
-        util: 'FO3Edit v4.0.2e'
   - name: 'DLC Enemies Freedom.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18691' ]
     dirty:
