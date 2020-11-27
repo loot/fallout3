@@ -1595,6 +1595,7 @@ plugins:
         name: 'Rogue Hallow''s Iron Sights - FOSE'
       - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
         name: 'Paradox Ignition presents The Mergers'
+    req: [ *FOSE ]
     tag:
       - Graphics
       - Invent.Add
