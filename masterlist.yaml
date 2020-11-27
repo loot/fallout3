@@ -1873,6 +1873,10 @@ plugins:
         util: 'FO3Edit v4.0.3'
   - name: 'Lings Finer Things.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
+    tag:
+      - Actors.AIData
+      - Invent.Add
+      - Invent.Remove
     clean:
       - crc: 0x01720BFF
         util: 'FO3Edit v4.0.3'
