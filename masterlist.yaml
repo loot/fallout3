@@ -1269,6 +1269,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/8340/'
         name: 'EVE - Energy Visuals Enhanced'
+    after: [ 'RH_IRONSIGHTS.esm' ]
     tag:
       - Delev
       - Graphics
@@ -1296,6 +1297,7 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/2761/'
         name: 'FWE - FO3 Wanderers Edition'
   - name: 'FO3 Wanderers Edition - Main File.esm'
+    after: [ 'RH_IRONSIGHTS.esm' ]
     tag:
       - Actors.ACBS
       - Actors.AIData
