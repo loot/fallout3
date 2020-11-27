@@ -1217,6 +1217,7 @@ plugins:
 ###### Character Appearance - NPCs ######
   - name: 'LingsPrettyThings.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
+    after: [ 'Lings Finer Things.esp' ]
     tag:
       - Graphics
       - Invent.Add
@@ -1862,6 +1863,27 @@ plugins:
       - Stats
     clean:
       - crc: 0x9DCD1FF0
+        util: 'FO3Edit v4.0.3'
+
+
+###### New Items ######
+  - name: 'LingsFinerThings.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
+    group: *fixesGroup
+    after:
+      - 'Lings.esm'
+      - 'LingsDLC.esm'
+    clean:
+      - crc: 0xE8D73962
+        util: 'FO3Edit v4.0.3'
+  - name: 'Lings Finer Things.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
+    tag:
+      - Actors.AIData
+      - Invent.Add
+      - Invent.Remove
+    clean:
+      - crc: 0x01720BFF
         util: 'FO3Edit v4.0.3'
 
 
@@ -3344,10 +3366,6 @@ plugins:
       - Invent
   - name: 'WasteWearGloves.esp'
     tag: [ Relev ]
-  - name: 'LingsFinerThings.esp'
-    msg: [ *obsolete ]
-    url:
-      - 'https://www.nexusmods.com/fallout3/mods/17631/'
   - name: 'xCALIBRuniverse_LingsBrokenSteel.esp'
     tag:
       - Actors.ACBS
