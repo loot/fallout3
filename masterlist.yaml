@@ -1604,9 +1604,12 @@ plugins:
   - name: 'RH_IronSights_Pitt_NewRifleSights.esp'
   - name: 'RH_IronSights_PL_NewItems.esp'
   - name: 'RH_IronSights_RemoveReticule.esp'
+  - name: 'RH_IronSights_Vanilla_BetterUniques.esp'
+  - name: 'RH_IronSights_Vanilla_NewWeapons.esp'
   - name: 'RH_(EVE|FWE|WMK)_Bridge\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6938/' ]
   - name: 'RH_EVE_Bridge.esp'
+  - name: 'RH_FWE_Bridge.esp'
   - name: 'RH_WMK_Bridge.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17757' ]
     after: [ 'WMK Uniques for FWE_EVE Addon.esp' ]
