@@ -1205,7 +1205,13 @@ plugins:
       - NPC.Eyes
       - NPC.FaceGen
       - NPC.Hair
+    clean:
+      - crc: 0x1D761A43
+        util: 'FO3Edit v4.0.3'
   - name: 'LingsDLC.esm'
+    clean:
+      - crc: 0x45D27284
+        util: 'FO3Edit v4.0.3'
 
 
 ###### Character Appearance - NPCs ######
