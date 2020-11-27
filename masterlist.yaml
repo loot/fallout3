@@ -1197,11 +1197,13 @@ plugins:
 ###### Character Appearance - Body, Face & Hair ######
   - name: 'HairPack.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1146/' ]
+    group: *fixesGroup
     clean:
       - crc: 0x0712CC09
         util: 'FO3Edit v4.0.3'
   - name: 'hair_add_npc.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1146/' ]
+    group: *earlyLoadersGroup
     tag: [ NPC.Hair ]
     dirty:
       - <<: *quickClean
