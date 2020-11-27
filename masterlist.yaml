@@ -1196,9 +1196,12 @@ plugins:
 
 ###### Character Appearance - Body, Face & Hair ######
   - name: 'HairPack.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1146/' ]
     tag:
       - Eyes
       - Hair
+  - name: 'hair_add_npc.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1146/' ]
 
   - name: 'Lings(DLC)?\.esm'
     url:
