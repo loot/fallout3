@@ -1199,6 +1199,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/8942/'
         name: 'Anthony Lings Coiffure - Hair Eyes Lashes'
+    group: *fixesGroup
   - name: 'Lings.esm'
     tag: [ Hair ]
   - name: 'LingsDLC.esm'
