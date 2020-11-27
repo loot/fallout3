@@ -1868,8 +1868,14 @@ plugins:
 ###### New Items ######
   - name: 'LingsFinerThings.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
+    clean:
+      - crc: 0xE8D73962
+        util: 'FO3Edit v4.0.3'
   - name: 'Lings Finer Things.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
+    clean:
+      - crc: 0x01720BFF
+        util: 'FO3Edit v4.0.3'
 
 
   - name: '20th Century Weapons.esm'
