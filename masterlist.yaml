@@ -1593,7 +1593,6 @@ plugins:
         name: 'Rogue Hallow''s Iron Sights - FOSE'
       - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
         name: 'Paradox Ignition presents The Mergers'
-    inc: [ 'Arms_dealer_V1.esp' ]
     tag: [ Invent ]
     dirty:
       # Paradox merged mod
