@@ -1194,6 +1194,26 @@ plugins:
         itm: 18
 
 
+###### Character Appearance - Body, Face & Hair ######
+  - name: 'Lings(DLC)?\.esm'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/8942/'
+        name: 'Anthony Lings Coiffure - Hair Eyes Lashes'
+    group: *fixesGroup
+  - name: 'Lings.esm'
+    tag:
+      - NPC.Eyes
+      - NPC.FaceGen
+      - NPC.Hair
+    clean:
+      - crc: 0x1D761A43
+        util: 'FO3Edit v4.0.3'
+  - name: 'LingsDLC.esm'
+    clean:
+      - crc: 0x45D27284
+        util: 'FO3Edit v4.0.3'
+
+
 ###### Character Appearance - NPCs ######
   - name: '.*(Project Beauty).*\.es(m|p)'
     url:
@@ -1832,12 +1852,6 @@ plugins:
     clean:
       - crc: 0x8A5BC2AF
         util: 'FO3Edit v4.0.2e'
-  - name: 'Lings.esm'
-    tag: [ Hair ]
-  - name: 'LingsDLC.esm'
-    tag:
-      - Eyes
-      - Hair
   - name: 'HairPack.esm'
     tag:
       - Eyes
