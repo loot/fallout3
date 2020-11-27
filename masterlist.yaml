@@ -1865,6 +1865,13 @@ plugins:
         util: 'FO3Edit v4.0.3'
 
 
+###### New Items ######
+  - name: 'LingsFinerThings.esp'
+    msg: [ *obsolete ]
+    url:
+      - 'https://www.nexusmods.com/fallout3/mods/17631/'
+
+
   - name: '20th Century Weapons.esm'
     url: [ 'http://modsreloaded.com/19th-and-20th-century-weapons' ]
     tag: [ Scripts ]
@@ -3344,10 +3351,6 @@ plugins:
       - Invent
   - name: 'WasteWearGloves.esp'
     tag: [ Relev ]
-  - name: 'LingsFinerThings.esp'
-    msg: [ *obsolete ]
-    url:
-      - 'https://www.nexusmods.com/fallout3/mods/17631/'
   - name: 'xCALIBRuniverse_LingsBrokenSteel.esp'
     tag:
       - Actors.ACBS
