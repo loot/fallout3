@@ -1116,6 +1116,66 @@ plugins:
   - name: 'CALIBRxMerchant.esp'
     group: *fixesGroup
 
+  - name: 'xCALIBR.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11684/' ]
+    tag:
+      - Graphics
+      - Names
+      - Stats
+    clean:
+      - crc: 0x01D2F0D5
+        util: 'FO3Edit v4.0.2e'
+  - name: 'xCALIBRammo_override.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11684' ]
+    tag:
+      - Graphics
+      - Names
+    dirty:
+      - <<: *quickClean
+        crc: 0xC8E1AA9C
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 133
+  - name: 'xCALIBRammo_FWE.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11684' ]
+    tag:
+      - Graphics
+      - Names
+    clean:
+      - crc: 0x689B9A4B
+        util: 'FO3Edit v4.0.2e'
+  - name: 'xCALIBR_20CW_v5.12.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11684' ]
+    tag:
+      - Graphics
+      - Names
+    clean:
+      - crc: 0xA0EC8FA7
+        util: 'FO3Edit v4.0.2e'
+  - name: 'xCALIBR_override.esp'
+    tag:
+      - Graphics
+      - Names
+  - name: 'xCALIBR_override_unsorted.esp'
+    tag:
+      - Graphics
+      - Names
+  - name: 'xCALIBR_override_FWE5.esp'
+    tag:
+      - Graphics
+      - Names
+  - name: 'xCALIBR_FWE5_Override.esp'
+    tag:
+      - Graphics
+      - Names
+  - name: 'xCALIBR_2CW_CP.esp'
+    tag:
+      - Graphics
+      - Names
+  - name: 'xCALIBR_2CW_CP_Sorted.esp'
+    tag:
+      - Graphics
+      - Names
+
   - name: 'CRAFT.esm'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/4447/'
@@ -1934,15 +1994,6 @@ plugins:
       - Scripts
     clean:
       - crc: 0xBD5F2D97
-        util: 'FO3Edit v4.0.2e'
-  - name: 'xCALIBR.esm'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/11684' ]
-    tag:
-      - Graphics
-      - Names
-      - Stats
-    clean:
-      - crc: 0x01D2F0D5
         util: 'FO3Edit v4.0.2e'
   - name: 'xCALIBRuniverse.esm'
     url: []
@@ -4830,46 +4881,6 @@ plugins:
       - Names
       - Sound
       - Stats
-  - name: 'xCALIBR_override.esp'
-    tag:
-      - Graphics
-      - Names
-  - name: 'xCALIBR_override_unsorted.esp'
-    tag:
-      - Graphics
-      - Names
-  - name: 'xCALIBR_override_FWE5.esp'
-    tag:
-      - Graphics
-      - Names
-  - name: 'xCALIBR_FWE5_Override.esp'
-    tag:
-      - Graphics
-      - Names
-  - name: 'xCALIBRammo_FWE.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/11684' ]
-    tag:
-      - Graphics
-      - Names
-    clean:
-      - crc: 0x689B9A4B
-        util: 'FO3Edit v4.0.2e'
-  - name: 'xCALIBR_2CW_CP.esp'
-    tag:
-      - Graphics
-      - Names
-  - name: 'xCALIBR_2CW_CP_Sorted.esp'
-    tag:
-      - Graphics
-      - Names
-  - name: 'xCALIBR_20CW_v5.12.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/11684' ]
-    tag:
-      - Graphics
-      - Names
-    clean:
-      - crc: 0xA0EC8FA7
-        util: 'FO3Edit v4.0.2e'
   - name: 'FWE+WMK_weapons_xCALIBRified.esp'
     tag:
       - Graphics
@@ -4924,16 +4935,6 @@ plugins:
       - NpcFaces
   - name: 'CRBSOR.esp'
     msg: [ *alreadyInFWE ]
-  - name: 'xCALIBRammo_override.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/11684' ]
-    tag:
-      - Graphics
-      - Names
-    dirty:
-      - <<: *quickClean
-        crc: 0xC8E1AA9C
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 133
   - name: 'Fallout Remastered.esp'
     inc:
       - 'James Invisible Walls Remover.esp'
