@@ -1216,6 +1216,7 @@ plugins:
 
 ###### Character Appearance - NPCs ######
   - name: 'LingsPrettyThings.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
     tag:
       - Eyes
       - Hair
