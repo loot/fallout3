@@ -1195,6 +1195,10 @@ plugins:
 
 
 ###### Character Appearance - Body, Face & Hair ######
+  - name: 'Lings(DLC)?\.esm'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/8942/'
+        name: 'Anthony Lings Coiffure - Hair Eyes Lashes'
   - name: 'Lings.esm'
     tag: [ Hair ]
   - name: 'LingsDLC.esm'
