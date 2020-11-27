@@ -1166,10 +1166,6 @@ plugins:
     tag:
       - Graphics
       - Names
-  - name: 'xCALIBR_FWE5_Override.esp'
-    tag:
-      - Graphics
-      - Names
   - name: 'xCALIBR_2CW_CP.esp'
     msg: [ *obsolete ]
     tag:
