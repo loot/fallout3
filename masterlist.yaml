@@ -1599,6 +1599,10 @@ plugins:
         condition: 'not checksum("RH_IRONSIGHTS.esm", BA4ABFE7) and not checksum("RH_IRONSIGHTS.esm", 08328958)'
   - name: 'RH_IronSights_.*\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6938/' ]
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'RH_Ironsights Merged' ]
+        condition: 'checksum("RH_IRONSIGHTS.esm", BA4ABFE7) or checksum("RH_IRONSIGHTS.esm", 08328958)'
   - name: 'RH_IronSights_Basic_VanillaPlugin.esp'
   - name: 'RH_IronSights_Basic_AnchoragePlugin.esp'
   - name: 'RH_IronSights_Basic_PittPlugin.esp'
