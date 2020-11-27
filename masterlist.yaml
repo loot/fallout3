@@ -3348,22 +3348,6 @@ plugins:
     msg: [ *obsolete ]
     url:
       - 'https://www.nexusmods.com/fallout3/mods/17631/'
-  - name: 'LingsPrettyThings.esp'
-    tag:
-      - Eyes
-      - Hair
-      - Invent
-      - Names
-      - NPC.Class
-      - NPC.Race
-      - NpcFaces
-      - R.Attributes-F
-      - R.Attributes-M
-      - R.Description
-      - R.Head
-      - R.Mouth
-      - R.Teeth
-      - Voice-F
   - name: 'xCALIBRuniverse_LingsBrokenSteel.esp'
     tag:
       - Actors.ACBS
