@@ -1593,26 +1593,20 @@ plugins:
         name: 'Rogue Hallow''s Iron Sights - FOSE'
       - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
         name: 'Paradox Ignition presents The Mergers'
+  - name: 'RH_IronSights_.*\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6938/' ]
   - name: 'RH_IronSights_Basic_VanillaPlugin.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
   - name: 'RH_IronSights_Basic_AnchoragePlugin.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
   - name: 'RH_IronSights_Basic_PittPlugin.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
   - name: 'RH_IronSights_Basic_BrokenSteelPlugin.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
   - name: 'RH_IronSights_Basic_PointLookoutPlugin.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
   - name: 'RH_IronSights_Basic_ZetaPlugin.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
   - name: 'RH_IronSights_Pitt_NewRifleSights.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
   - name: 'RH_IronSights_PL_NewItems.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
   - name: 'RH_IronSights_RemoveReticule.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
+  - name: 'RH_(EVE|FWE|WMK)_Bridge\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6938/' ]
   - name: 'RH_EVE_Bridge.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6938' ]
   - name: 'RH_WMK_Bridge.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17757' ]
     after: [ 'WMK Uniques for FWE_EVE Addon.esp' ]
