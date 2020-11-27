@@ -1593,7 +1593,6 @@ plugins:
         name: 'Rogue Hallow''s Iron Sights - FOSE'
       - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
         name: 'Paradox Ignition presents The Mergers'
-    tag: [ Invent ]
     dirty:
       # Paradox merged mod
       - <<: *quickClean
@@ -1663,9 +1662,6 @@ plugins:
   - name: 'RH_WMK_Bridge.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17757' ]
     after: [ 'WMK Uniques for FWE_EVE Addon.esp' ]
-    tag:
-      - Relev
-      - Delev
     clean:
       - crc: 0x130108AC
         util: 'FO3Edit v4.0.2e'
