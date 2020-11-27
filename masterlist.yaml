@@ -1194,6 +1194,15 @@ plugins:
         itm: 18
 
 
+###### Character Appearance - Body, Face & Hair ######
+  - name: 'Lings.esm'
+    tag: [ Hair ]
+  - name: 'LingsDLC.esm'
+    tag:
+      - Eyes
+      - Hair
+
+
 ###### Character Appearance - NPCs ######
   - name: '.*(Project Beauty).*\.es(m|p)'
     url:
@@ -1832,12 +1841,6 @@ plugins:
     clean:
       - crc: 0x8A5BC2AF
         util: 'FO3Edit v4.0.2e'
-  - name: 'Lings.esm'
-    tag: [ Hair ]
-  - name: 'LingsDLC.esm'
-    tag:
-      - Eyes
-      - Hair
   - name: 'HairPack.esm'
     tag:
       - Eyes
