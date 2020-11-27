@@ -1217,6 +1217,7 @@ plugins:
 ###### Character Appearance - NPCs ######
   - name: 'LingsPrettyThings.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
+    after: [ 'Lings Finer Things.esp' ]
     tag:
       - Graphics
       - Invent.Add
