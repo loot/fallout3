@@ -1226,6 +1226,13 @@ plugins:
       - NPC.FaceGen
       - NPC.Hair
       - NPC.Race
+    clean:
+      - crc: 0xCC98BA95
+        util: 'FO3Edit v4.0.3'
+  - name: 'LingsPrettyThings-BrokenSteel.esp'
+    clean:
+      - crc: 0x4B41FEB1
+        util: 'FO3Edit v4.0.3'
 
   - name: '.*(Project Beauty).*\.es(m|p)'
     url:
