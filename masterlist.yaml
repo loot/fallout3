@@ -1593,6 +1593,10 @@ plugins:
         name: 'Rogue Hallow''s Iron Sights - FOSE'
       - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
         name: 'Paradox Ignition presents The Mergers'
+    msg:
+      - <<: *patchUpdateAvailable
+        subs: [ '[Paradox Ignition presents The Mergers](https://www.nexusmods.com/fallout3/mods/16787/) - **RH Ironsights Merged**' ]
+        condition: 'not checksum("RH_IRONSIGHTS.esm", BA4ABFE7) and not checksum("RH_IRONSIGHTS.esm", 08328958)'
   - name: 'RH_IronSights_.*\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6938/' ]
   - name: 'RH_IronSights_Basic_VanillaPlugin.esp'
