@@ -1151,27 +1151,7 @@ plugins:
     clean:
       - crc: 0xA0EC8FA7
         util: 'FO3Edit v4.0.2e'
-  - name: 'xCALIBR_override.esp'
-    msg: [ *obsolete ]
-    tag:
-      - Graphics
-      - Names
-  - name: 'xCALIBR_override_unsorted.esp'
-    msg: [ *obsolete ]
-    tag:
-      - Graphics
-      - Names
-  - name: 'xCALIBR_override_FWE5.esp'
-    msg: [ *obsolete ]
-    tag:
-      - Graphics
-      - Names
-  - name: 'xCALIBR_2CW_CP.esp'
-    msg: [ *obsolete ]
-    tag:
-      - Graphics
-      - Names
-  - name: 'xCALIBR_2CW_CP_Sorted.esp'
+  - name: 'xCALIBR_(override|override_unsorted|override_FWE5|2CW_CP|2CW_CP_Sorted)\.esp'
     msg: [ *obsolete ]
     tag:
       - Graphics
