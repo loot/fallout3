@@ -1593,6 +1593,11 @@ plugins:
         name: 'Rogue Hallow''s Iron Sights - FOSE'
       - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
         name: 'Paradox Ignition presents The Mergers'
+    tag:
+      - Graphics
+      - Invent.Add
+      - Invent.Remove
+      - Stats
     msg:
       - <<: *patchUpdateAvailable
         subs: [ '[Paradox Ignition presents The Mergers](https://www.nexusmods.com/fallout3/mods/16787/) - **RH Ironsights Merged**' ]
@@ -1614,11 +1619,15 @@ plugins:
   - name: 'RH_IronSights_Basic_(PointLookout|Zeta)Plugin\.esp'
     after: [ 'RH_IronSights_Basic_BrokenSteelPlugin.esp' ]
   - name: 'RH_IronSights_Basic_AnchoragePlugin.esp'
+    tag: [ Graphics ]
   - name: 'RH_IronSights_Basic_PittPlugin.esp'
+    tag: [ Graphics ]
   - name: 'RH_IronSights_Basic_BrokenSteelPlugin.esp'
   - name: 'RH_IronSights_Basic_PointLookoutPlugin.esp'
+    tag: [ Graphics ]
   - name: 'RH_IronSights_Basic_ZetaPlugin.esp'
     after: [ 'RH_IronSights_Basic_PointLookoutPlugin.esp' ]
+    tag: [ Graphics ]
   # RHIS - Optional files #
   - name: 'RH_IronSights_(Pitt_NewRifleSights|PL_NewItems|RemoveReticule|Vanilla_BetterUniques|Vanilla_NewWeapons)\.esp'
     after:
@@ -1632,7 +1641,13 @@ plugins:
   - name: 'RH_IronSights_PL_NewItems.esp'
   - name: 'RH_IronSights_RemoveReticule.esp'
   - name: 'RH_IronSights_Vanilla_BetterUniques.esp'
+    tag:
+      - Graphics
+      - Stats
   - name: 'RH_IronSights_Vanilla_NewWeapons.esp'
+    tag:
+      - Invent.Add
+      - Invent.Remove
   # RHIS - Compatibility patches #
   - name: 'RH_(EVE|FWE|WMK)_Bridge\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6938/' ]
@@ -1643,7 +1658,11 @@ plugins:
       - 'RH_IronSights_Basic_BrokenSteelPlugin.esp'
       - 'RH_IronSights_Basic_PointLookoutPlugin.esp'
       - 'RH_IronSights_Basic_ZetaPlugin.esp'
+    tag:
+      - Graphics
+      - Stats
   - name: 'RH_EVE_Bridge.esp'
+    tag: [ Sound ]
   - name: 'RH_FWE_Bridge.esp'
   - name: 'RH_WMK_Bridge.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17757' ]
