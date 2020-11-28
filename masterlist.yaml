@@ -2027,12 +2027,6 @@ plugins:
     clean:
       - crc: 0xBFCE2871
         util: 'FO3Edit v4.0.2e'
-  - name: 'FaceMe.esm'
-    tag:
-      - Eyes
-      - Hair
-      - NPC.Race
-      - NpcFaces
   - name: 'Destruction.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1904' ]
     tag:
@@ -2632,18 +2626,6 @@ plugins:
     inc:
       - 'Fast VATS 1.esp'
       - 'Fast VATS 2.esp'
-  - name: 'FaceMe.esp'
-    tag:
-      - Deactivate
-      - NoMerge
-      - NPC.Race
-      - NpcFaces
-  - name: 'FaceMe-Broken Steel.esp'
-    tag:
-      - Deactivate
-      - NoMerge
-      - NPC.Race
-      - NpcFaces
   - name: 'Shojo NPC.esp'
     tag:
       - Invent
