@@ -1437,8 +1437,18 @@ plugins:
 
   - name: 'Clutter Remover.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22396/' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x38F01415
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        udr: 4054
   - name: 'Rubble and Litter Remover.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22396/' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xD8155BAF
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        udr: 2312
 
 
 ###### Gameplay ######
