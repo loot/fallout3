@@ -1278,8 +1278,6 @@ plugins:
         util: 'FO3Edit v4.0.2f'
   - name: 'Fellout-SOTD.esp'
     msg: [ *obsolete ]
-  - name: 'FelloutWithLightingOverhual-1.0.esp'
-    tag: [ C.Light ]
 
 
 ###### Character Appearance - Body, Face & Hair ######
