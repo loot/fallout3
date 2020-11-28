@@ -1261,20 +1261,29 @@ plugins:
       - crc: 0x3C103AD6
         util: 'FO3Edit v4.0.3'
   - name: 'Fellout-BrokenSteel.esp'
+    after: [ 'Fellout-Anchorage.esp' ]
     clean:
       - crc: 0xA2832075
         util: 'FO3Edit v4.0.3'
   - name: 'Fellout-PointLookout.esp'
+    after:
+      - 'Fellout-Anchorage.esp'
+      - 'Fellout-BrokenSteel.esp'
     dirty:
       - <<: *quickClean
         crc: 0xF33277F6
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
   - name: 'Fellout-Zeta.esp'
+    after:
+      - 'Fellout-Anchorage.esp'
+      - 'Fellout-BrokenSteel.esp'
+      - 'Fellout-PointLookout.esp'
     clean:
       - crc: 0x10F67831
         util: 'FO3Edit v4.0.3'
   - name: 'Fellout-pipboylight.esp'
+    after: [ 'Fellout-Full.esp' ]
     clean:
       - crc: 0xF5E44077
         util: 'FO3Edit v4.0.3'
