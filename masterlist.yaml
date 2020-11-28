@@ -1238,44 +1238,42 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
         name: 'Paradox Ignition presents The Mergers'
     clean:
-      # 2672
       - crc: 0xEA441324
-        util: 'FO3Edit v4.0.2f'
-      # 16787
+        util: 'FO3Edit v4.0.3'
       - crc: 0x1C4CD93B
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.3'
     msg: [ *alreadyInFOOK2 ]
   - name: 'Fellout-Anchorage.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2672/' ]
     msg: [ *alreadyInFOOK2 ]
     clean:
       - crc: 0x3C103AD6
-        util: 'FO3Edit v4.0.2f'
+        util: 'FO3Edit v4.0.3'
   - name: 'Fellout-BrokenSteel.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2672/' ]
     msg: [ *alreadyInFOOK2 ]
     clean:
       - crc: 0xA2832075
-        util: 'FO3Edit v4.0.2f'
+        util: 'FO3Edit v4.0.3'
   - name: 'Fellout-PointLookout.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2672/' ]
     msg: [ *alreadyInFOOK2 ]
     dirty:
       - <<: *quickClean
         crc: 0xF33277F6
-        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
   - name: 'Fellout-Zeta.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2672/' ]
     msg: [ *alreadyInFOOK2 ]
     clean:
       - crc: 0x10F67831
-        util: 'FO3Edit v4.0.2f'
+        util: 'FO3Edit v4.0.3'
   - name: 'Fellout-pipboylight.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2672/' ]
     clean:
       - crc: 0xF5E44077
-        util: 'FO3Edit v4.0.2f'
+        util: 'FO3Edit v4.0.3'
   - name: 'Fellout-SOTD.esp'
     msg: [ *obsolete ]
 
