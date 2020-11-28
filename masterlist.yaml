@@ -1245,18 +1245,21 @@ plugins:
     msg: [ *alreadyInFOOK2 ]
   - name: 'Fellout-Anchorage.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2672/' ]
+    req: [ 'Fellout-Full.esp' ]
     msg: [ *alreadyInFOOK2 ]
     clean:
       - crc: 0x3C103AD6
         util: 'FO3Edit v4.0.3'
   - name: 'Fellout-BrokenSteel.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2672/' ]
+    req: [ 'Fellout-Full.esp' ]
     msg: [ *alreadyInFOOK2 ]
     clean:
       - crc: 0xA2832075
         util: 'FO3Edit v4.0.3'
   - name: 'Fellout-PointLookout.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2672/' ]
+    req: [ 'Fellout-Full.esp' ]
     msg: [ *alreadyInFOOK2 ]
     dirty:
       - <<: *quickClean
@@ -1265,6 +1268,7 @@ plugins:
         itm: 1
   - name: 'Fellout-Zeta.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2672/' ]
+    req: [ 'Fellout-Full.esp' ]
     msg: [ *alreadyInFOOK2 ]
     clean:
       - crc: 0x10F67831
