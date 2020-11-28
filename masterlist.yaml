@@ -1450,6 +1450,17 @@ plugins:
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         udr: 2312
 
+  - name: 'tree.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/23361/'
+        name: 'Fallout 3 ALL TREES remover'
+    dirty:
+      - <<: *quickClean
+        crc: 0x1B7886C6
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+        udr: 55099
+
 
 ###### Gameplay ######
   - name: 'EVE.esm'
