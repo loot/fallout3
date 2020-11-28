@@ -1237,6 +1237,7 @@ plugins:
         name: 'Fellout'
       - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
         name: 'Paradox Ignition presents The Mergers'
+    after: [ 'FOOK2 - Main.esp' ]
     msg:
       - <<: *alreadyInFOOK2
         condition: 'file("FOOK2 - Main.esm") and version("Fellout-Full.esp", "1.234.567.89", <=)'
