@@ -1118,6 +1118,7 @@ plugins:
 
   - name: 'xCALIBR.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11684/' ]
+    group: *fixesGroup
     tag:
       - Graphics
       - Names
