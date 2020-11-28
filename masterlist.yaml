@@ -1126,29 +1126,22 @@ plugins:
     clean:
       - crc: 0x01D2F0D5
         util: 'FO3Edit v4.0.3'
-  - name: 'xCALIBRammo_override.esp'
+  - name: 'xCALIBR(ammo_override|ammo_FWE|_20CW_)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11684' ]
     tag:
       - Graphics
       - Names
+  - name: 'xCALIBRammo_override.esp'
     dirty:
       - <<: *quickClean
         crc: 0xC8E1AA9C
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 133
   - name: 'xCALIBRammo_FWE.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/11684' ]
-    tag:
-      - Graphics
-      - Names
     clean:
       - crc: 0x689B9A4B
         util: 'FO3Edit v4.0.3'
   - name: 'xCALIBR_20CW_v5.12.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/11684' ]
-    tag:
-      - Graphics
-      - Names
     clean:
       - crc: 0xA0EC8FA7
         util: 'FO3Edit v4.0.3'
