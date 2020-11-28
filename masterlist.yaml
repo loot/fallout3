@@ -1413,6 +1413,9 @@ plugins:
 
 
 ###### Environment, Landscape & Flora ######
+  - name: 'Barren Badlands.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21842/' ]
+
   - name: 'BetterGamePerformance.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13520/' ]
     tag:
