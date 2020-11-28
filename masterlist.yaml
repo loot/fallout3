@@ -1435,6 +1435,11 @@ plugins:
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         udr: 29115
 
+  - name: 'Clutter Remover.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/22396/' ]
+  - name: 'Rubble and Litter Remover.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/22396/' ]
+
 
 ###### Gameplay ######
   - name: 'EVE.esm'
