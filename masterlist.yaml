@@ -1239,6 +1239,11 @@ plugins:
         name: 'Paradox Ignition presents The Mergers'
   - name: 'Fellout-Full.esp'
     after: [ 'FOOK2 - Main.esp' ]
+    tag:
+      - C.Light
+      - name: 'C.Water'
+        condition: 'checksum("Fellout-Full.esp", 1C4CD93B)'
+      - Graphics
     msg:
       - <<: *alreadyInFOOK2
         condition: 'file("FOOK2 - Main.esm") and version("Fellout-Full.esp", "1.234.567.89", <=)'
@@ -1262,6 +1267,7 @@ plugins:
         util: 'FO3Edit v4.0.3'
   - name: 'Fellout-BrokenSteel.esp'
     after: [ 'Fellout-Anchorage.esp' ]
+    tag: [ Graphics ]
     clean:
       - crc: 0xA2832075
         util: 'FO3Edit v4.0.3'
@@ -1269,6 +1275,7 @@ plugins:
     after:
       - 'Fellout-Anchorage.esp'
       - 'Fellout-BrokenSteel.esp'
+    tag: [ C.Water ]
     dirty:
       - <<: *quickClean
         crc: 0xF33277F6
@@ -1279,11 +1286,13 @@ plugins:
       - 'Fellout-Anchorage.esp'
       - 'Fellout-BrokenSteel.esp'
       - 'Fellout-PointLookout.esp'
+    tag: [ C.Light ]
     clean:
       - crc: 0x10F67831
         util: 'FO3Edit v4.0.3'
   - name: 'Fellout-pipboylight.esp'
     after: [ 'Fellout-Full.esp' ]
+    tag: [ Graphics ]
     clean:
       - crc: 0xF5E44077
         util: 'FO3Edit v4.0.3'
