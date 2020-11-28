@@ -1452,6 +1452,12 @@ plugins:
 
   - name: 'Sprinvale performance.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22558/' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xB03EA5C4
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+        udr: 89
 
   - name: 'tree.esp'
     url:
