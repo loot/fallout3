@@ -1138,6 +1138,7 @@ plugins:
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 133
   - name: 'xCALIBRammo_FWE.esp'
+    after: [ 'FO3 Wanderers Edition - Main File.esp' ]
     clean:
       - crc: 0x689B9A4B
         util: 'FO3Edit v4.0.3'
