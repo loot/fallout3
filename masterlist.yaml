@@ -1252,6 +1252,10 @@ plugins:
         util: 'FO3Edit v4.0.3'
   - name: 'Fellout-(Anchorage|BrokenSteel|PointLookout|Zeta)\.esp'
     req: [ 'Fellout-Full.esp' ]
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Fellout Merged' ]
+        condition: 'checksum("Fellout-Full.esp", 1C4CD93B)'
   - name: 'Fellout-Anchorage.esp'
     clean:
       - crc: 0x3C103AD6
