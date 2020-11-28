@@ -1415,6 +1415,7 @@ plugins:
 ###### Environment, Landscape & Flora ######
   - name: 'Barren Badlands.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21842/' ]
+    msg: [ *wildEdits ]
     dirty:
       - <<: *quickClean
         crc: 0x0E203290
