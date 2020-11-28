@@ -1415,6 +1415,12 @@ plugins:
 ###### Environment, Landscape & Flora ######
   - name: 'Barren Badlands.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21842/' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x0E203290
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+        udr: 50884
 
   - name: 'BetterGamePerformance.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13520/' ]
