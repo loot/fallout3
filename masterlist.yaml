@@ -1231,12 +1231,13 @@ plugins:
 
 
 ###### AudioVisual - Weather ######
-  - name: 'Fellout-Full.esp'
+  - name: 'Fellout-(Full|Anchorage|BrokenSteel|PointLookout|Zeta|pipboylight)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/2672/'
         name: 'Fellout'
       - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
         name: 'Paradox Ignition presents The Mergers'
+  - name: 'Fellout-Full.esp'
     after: [ 'FOOK2 - Main.esp' ]
     msg:
       - <<: *alreadyInFOOK2
@@ -1247,19 +1248,16 @@ plugins:
       - crc: 0x1C4CD93B
         util: 'FO3Edit v4.0.3'
   - name: 'Fellout-Anchorage.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/2672/' ]
     req: [ 'Fellout-Full.esp' ]
     clean:
       - crc: 0x3C103AD6
         util: 'FO3Edit v4.0.3'
   - name: 'Fellout-BrokenSteel.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/2672/' ]
     req: [ 'Fellout-Full.esp' ]
     clean:
       - crc: 0xA2832075
         util: 'FO3Edit v4.0.3'
   - name: 'Fellout-PointLookout.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/2672/' ]
     req: [ 'Fellout-Full.esp' ]
     dirty:
       - <<: *quickClean
@@ -1267,13 +1265,11 @@ plugins:
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
   - name: 'Fellout-Zeta.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/2672/' ]
     req: [ 'Fellout-Full.esp' ]
     clean:
       - crc: 0x10F67831
         util: 'FO3Edit v4.0.3'
   - name: 'Fellout-pipboylight.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/2672/' ]
     clean:
       - crc: 0xF5E44077
         util: 'FO3Edit v4.0.3'
