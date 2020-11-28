@@ -1237,7 +1237,6 @@ plugins:
         name: 'Fellout'
       - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
         name: 'Paradox Ignition presents The Mergers'
-    inc: [ 'Fellout-SOTD.esp' ]
     clean:
       # 2672
       - crc: 0xEA441324
@@ -1278,8 +1277,7 @@ plugins:
       - crc: 0xF5E44077
         util: 'FO3Edit v4.0.2f'
   - name: 'Fellout-SOTD.esp'
-    inc: [ 'Either Fellout-Full.esp' ]
-    msg: [ *alreadyInFOOK2 ]
+    msg: [ *obsolete ]
   - name: 'FelloutWithLightingOverhual-1.0.esp'
     tag: [ C.Light ]
 
