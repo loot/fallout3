@@ -1230,6 +1230,58 @@ plugins:
         itm: 18
 
 
+###### AudioVisual - Weather ######
+  - name: 'Fellout-Full.esp'
+    url:
+      - 'https://www.nexusmods.com/fallout3/mods/2672/'
+      - 'https://www.nexusmods.com/fallout3/mods/16787/'
+    inc: [ 'Fellout-SOTD.esp' ]
+    clean:
+      # 2672
+      - crc: 0xEA441324
+        util: 'FO3Edit v4.0.2f'
+      # 16787
+      - crc: 0x1C4CD93B
+        util: 'FO3Edit v4.0.2e'
+    msg: [ *alreadyInFOOK2 ]
+  - name: 'Fellout-Anchorage.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2672/' ]
+    msg: [ *alreadyInFOOK2 ]
+    clean:
+      - crc: 0x3C103AD6
+        util: 'FO3Edit v4.0.2f'
+  - name: 'Fellout-BrokenSteel.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2672/' ]
+    msg: [ *alreadyInFOOK2 ]
+    clean:
+      - crc: 0xA2832075
+        util: 'FO3Edit v4.0.2f'
+  - name: 'Fellout-PointLookout.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2672/' ]
+    msg: [ *alreadyInFOOK2 ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xF33277F6
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+  - name: 'Fellout-Zeta.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2672/' ]
+    msg: [ *alreadyInFOOK2 ]
+    clean:
+      - crc: 0x10F67831
+        util: 'FO3Edit v4.0.2f'
+  - name: 'Fellout-pipboylight.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2672/' ]
+    clean:
+      - crc: 0xF5E44077
+        util: 'FO3Edit v4.0.2f'
+  - name: 'Fellout-SOTD.esp'
+    inc: [ 'Either Fellout-Full.esp' ]
+    msg: [ *alreadyInFOOK2 ]
+  - name: 'FelloutWithLightingOverhual-1.0.esp'
+    tag: [ C.Light ]
+
+
 ###### Character Appearance - Body, Face & Hair ######
   - name: 'HairPack.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1146/' ]
@@ -4392,55 +4444,6 @@ plugins:
       - <<: *alreadyInX
         subs: [ 'Clean-Deluxe GOTY.esp' ]
         condition: 'active("Clean-Deluxe GOTY.esp")'
-  - name: 'Fellout-Full.esp'
-    url:
-      - 'https://www.nexusmods.com/fallout3/mods/2672'
-      - 'https://www.nexusmods.com/fallout3/mods/16787'
-    inc: [ 'Fellout-SOTD.esp' ]
-    clean:
-      # 2672
-      - crc: 0xEA441324
-        util: 'FO3Edit v4.0.2f'
-      # 16787
-      - crc: 0x1C4CD93B
-        util: 'FO3Edit v4.0.2e'
-    msg: [ *alreadyInFOOK2 ]
-  - name: 'Fellout-SOTD.esp'
-    inc: [ 'Either Fellout-Full.esp' ]
-    msg: [ *alreadyInFOOK2 ]
-  - name: 'Fellout-Anchorage.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/2672' ]
-    msg: [ *alreadyInFOOK2 ]
-    clean:
-      - crc: 0x3C103AD6
-        util: 'FO3Edit v4.0.2f'
-  - name: 'Fellout-BrokenSteel.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/2672' ]
-    msg: [ *alreadyInFOOK2 ]
-    clean:
-      - crc: 0xA2832075
-        util: 'FO3Edit v4.0.2f'
-  - name: 'Fellout-PointLookout.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/2672' ]
-    msg: [ *alreadyInFOOK2 ]
-    dirty:
-      - <<: *quickClean
-        crc: 0xF33277F6
-        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 1
-  - name: 'Fellout-Zeta.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/2672' ]
-    msg: [ *alreadyInFOOK2 ]
-    clean:
-      - crc: 0x10F67831
-        util: 'FO3Edit v4.0.2f'
-  - name: 'Fellout-pipboylight.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/2672' ]
-    clean:
-      - crc: 0xF5E44077
-        util: 'FO3Edit v4.0.2f'
-  - name: 'FelloutWithLightingOverhual-1.0.esp'
-    tag: [ C.Light ]
   - name: 'DarkerInteriorsFallOut3.esp'
     tag: [ C.Light ]
   - name: 'DarkerInteriorsAnchorage.esp'
