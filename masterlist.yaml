@@ -1233,8 +1233,10 @@ plugins:
 ###### AudioVisual - Weather ######
   - name: 'Fellout-Full.esp'
     url:
-      - 'https://www.nexusmods.com/fallout3/mods/2672/'
-      - 'https://www.nexusmods.com/fallout3/mods/16787/'
+      - link: 'https://www.nexusmods.com/fallout3/mods/2672/'
+        name: 'Fellout'
+      - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
+        name: 'Paradox Ignition presents The Mergers'
     inc: [ 'Fellout-SOTD.esp' ]
     clean:
       # 2672
