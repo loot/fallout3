@@ -1242,6 +1242,9 @@ plugins:
     msg:
       - <<: *alreadyInFOOK2
         condition: 'file("FOOK2 - Main.esm") and version("Fellout-Full.esp", "1.234.567.89", <=)'
+      - <<: *patchUpdateAvailable
+        subs: [ '[Paradox Ignition presents The Mergers](https://www.nexusmods.com/fallout3/mods/16787/) - **Fellout Merged**' ]
+        condition: 'not checksum("Fellout-Full.esp", 1C4CD93B) and active("Anchorage.esm") and active("BrokenSteel.esm") and active("PointLookout.esm") and active("Zeta.esm")'
     clean:
       - crc: 0xEA441324
         util: 'FO3Edit v4.0.3'
