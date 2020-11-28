@@ -1237,12 +1237,14 @@ plugins:
         name: 'Fellout'
       - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
         name: 'Paradox Ignition presents The Mergers'
+    msg:
+      - <<: *alreadyInFOOK2
+        condition: 'file("FOOK2 - Main.esm") and version("Fellout-Full.esp", "1.234.567.89", <=)'
     clean:
       - crc: 0xEA441324
         util: 'FO3Edit v4.0.3'
       - crc: 0x1C4CD93B
         util: 'FO3Edit v4.0.3'
-    msg: [ *alreadyInFOOK2 ]
   - name: 'Fellout-Anchorage.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2672/' ]
     req: [ 'Fellout-Full.esp' ]
