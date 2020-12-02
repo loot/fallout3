@@ -1243,6 +1243,8 @@ plugins:
         condition: 'many("UWWUT(_WT)?\.esp")'
   - name: 'UWWUT_WT.*\.esp'
     tag: [ Stats ]
+  - name: 'UWWUT_WT - (TP|Broken Steel) Addon\.esp'
+    req: [ 'UWWUT_WT.esp' ]
 
 
 ###### AudioVisual - Weather ######
