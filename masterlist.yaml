@@ -1230,6 +1230,41 @@ plugins:
         itm: 18
 
 
+###### AudioVisual - Models & Textures ######
+  - name: 'UWWUT.esp'
+    inc: [ 'UWWUT_WT.esp' ]
+    tag: [ Graphics ]
+  - name: 'UWWUT - The Pitt Addon.esp'
+    inc: [ 'UWWUT_WT - TP Addon.esp' ]
+    tag: [ Graphics ]
+  - name: 'UWWUT - Broken Steel Addon.esp'
+    inc: [ 'UWWUT_WT - BS Addon.esp' ]
+    tag: [ Graphics ]
+  - name: 'UWWUT - WMK Addon.esp'
+    inc: [ 'UWWUT_WT - WMK Addon.esp' ]
+    tag: [ Graphics ]
+  - name: 'UWWUT_WT.esp'
+    inc: [ 'UWWUT.esp' ]
+    tag:
+      - Graphics
+      - Stats
+  - name: 'UWWUT_WT - TP Addon.esp'
+    inc: [ 'UWWUT - The Pitt Addon.esp' ]
+    tag:
+      - Graphics
+      - Stats
+  - name: 'UWWUT_WT - BS Addon.esp'
+    inc: [ 'UWWUT - Broken Steel Addon.esp' ]
+    tag:
+      - Graphics
+      - Stats
+  - name: 'UWWUT_WT - WMK Addon.esp'
+    inc: [ 'UWWUT - WMK Addon.esp' ]
+    tag:
+      - Graphics
+      - Stats
+
+
 ###### AudioVisual - Weather ######
   - name: 'Fellout-(Full|Anchorage|BrokenSteel|PointLookout|Zeta|pipboylight)\.esp'
     url:
@@ -3654,38 +3689,6 @@ plugins:
     msg: [ *obsolete ]
   - name: 'Replenishment.esp'
     tag: [ Scripts ]
-  - name: 'UWWUT.esp'
-    inc: [ 'UWWUT_WT.esp' ]
-    tag: [ Graphics ]
-  - name: 'UWWUT - The Pitt Addon.esp'
-    inc: [ 'UWWUT_WT - TP Addon.esp' ]
-    tag: [ Graphics ]
-  - name: 'UWWUT - Broken Steel Addon.esp'
-    inc: [ 'UWWUT_WT - BS Addon.esp' ]
-    tag: [ Graphics ]
-  - name: 'UWWUT - WMK Addon.esp'
-    inc: [ 'UWWUT_WT - WMK Addon.esp' ]
-    tag: [ Graphics ]
-  - name: 'UWWUT_WT.esp'
-    inc: [ 'UWWUT.esp' ]
-    tag:
-      - Graphics
-      - Stats
-  - name: 'UWWUT_WT - TP Addon.esp'
-    inc: [ 'UWWUT - The Pitt Addon.esp' ]
-    tag:
-      - Graphics
-      - Stats
-  - name: 'UWWUT_WT - BS Addon.esp'
-    inc: [ 'UWWUT - Broken Steel Addon.esp' ]
-    tag:
-      - Graphics
-      - Stats
-  - name: 'UWWUT_WT - WMK Addon.esp'
-    inc: [ 'UWWUT - WMK Addon.esp' ]
-    tag:
-      - Graphics
-      - Stats
   - name: 'WeaponModKits-Unique.esp'
     tag: [ Graphics ]
   - name: 'unique_uniques.esp'
