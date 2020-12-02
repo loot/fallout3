@@ -1503,6 +1503,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/15108' ]
     group: *earlyLoadersGroup # It only does non-content changes to cells
     inc: [ 'FastTravelIndoors.esp' ]
+    tag: [ C.MiscFlags ]
     clean:
       - crc: 0x0DCDC0D2
         util: 'FO3Edit v4.0.3'
@@ -1511,6 +1512,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/7624' ]
     group: *earlyLoadersGroup # It only does non-content changes to cells
     inc: [ 'fasttravelfromindoors.esp' ]
+    tag: [ C.MiscFlags ]
     msg:
       - <<: *wildEdits
         subs: [ 'Includes several dirty edits in the form of changes to e.g., lighting and water level values.' ]
