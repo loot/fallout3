@@ -1499,6 +1499,28 @@ plugins:
   - name: 'EVE Operation Anchorage.esp'
     req: [ 'EVE.esp' ]
 
+  - name: 'fasttravelfromindoors.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15108/' ]
+    inc: [ 'FastTravelIndoors.esp' ]
+    tag: [ C.MiscFlags ]
+    clean:
+      - crc: 0x0DCDC0D2
+        util: 'FO3Edit v4.0.3'
+
+  - name: 'FastTravelIndoors.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/7624/' ]
+    inc: [ 'fasttravelfromindoors.esp' ]
+    tag: [ C.MiscFlags ]
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Includes several dirty edits in the form of changes to e.g., lighting and water level values.' ]
+        condition: 'checksum("FastTravelIndoors.esp", 42953E9A) or checksum("FastTravelIndoors.esp", 7C71E003)'
+    dirty:
+      - <<: *quickClean
+        crc: 0x42953E9A
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 6
+
   - name: 'FO3 Wanderers Edition - .*\.es(m|p)'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/2761/'
@@ -5456,23 +5478,6 @@ plugins:
   - name: 'FasterWaiting.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17755' ]
     req: [ *FOSE ]
-  - name: 'fasttravelfromindoors.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/15108' ]
-    group: *earlyLoadersGroup # It only does non-content changes to cells
-    inc: [ 'FastTravelIndoors.esp' ]
-  - name: 'FastTravelIndoors.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/7624' ]
-    group: *earlyLoadersGroup # It only does non-content changes to cells
-    inc: [ 'fasttravelfromindoors.esp' ]
-    msg:
-      - <<: *wildEdits
-        subs: [ 'Includes several dirty edits in the form of changes to e.g., lighting and water level values.' ]
-        condition: 'checksum("FastTravelIndoors.esp", 42953E9A) or checksum("FastTravelIndoors.esp", 7C71E003)'
-    dirty:
-      - <<: *quickClean
-        crc: 0x42953E9A
-        util: '[FO3Edit v4.0.2](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 6
   - name: 'FeralGhoulTest.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16886' ]
     tag: [ Relev ]
