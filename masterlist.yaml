@@ -1500,7 +1500,7 @@ plugins:
     req: [ 'EVE.esp' ]
 
   - name: 'fasttravelfromindoors.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/15108' ]
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15108/' ]
     inc: [ 'FastTravelIndoors.esp' ]
     tag: [ C.MiscFlags ]
     clean:
@@ -1508,7 +1508,7 @@ plugins:
         util: 'FO3Edit v4.0.3'
 
   - name: 'FastTravelIndoors.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/7624' ]
+    url: [ 'https://www.nexusmods.com/fallout3/mods/7624/' ]
     inc: [ 'fasttravelfromindoors.esp' ]
     tag: [ C.MiscFlags ]
     msg:
