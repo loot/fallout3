@@ -1231,6 +1231,10 @@ plugins:
 
 
 ###### AudioVisual - Models & Textures ######
+  - name: 'UWWUT.*\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/6309/'
+        name: 'UWWUT - Unique Weapons With Unique Textures'
   - name: 'UWWUT.esp'
     inc: [ 'UWWUT_WT.esp' ]
     tag: [ Graphics ]
