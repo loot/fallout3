@@ -7871,7 +7871,6 @@ plugins:
         udr: 7
   - name: 'Blackened MMM + EVE + Project Beauty.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
-    msg: [ *doNotClean ]
     clean:
       - crc: 0x6100721D
         util: 'FO3Edit v4.0.2e'
