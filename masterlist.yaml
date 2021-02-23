@@ -83,6 +83,8 @@ common:
         text: '%1%の併用を強く推奨します。'
       - lang: pl
         text: 'Jest wysoce wskazane abyś używał także %1%.'
+      - lang: sv
+        text: 'Det är rekommenderat att du också använder %1%.'
 
   - &compatIssuesWithX
     type: say
@@ -93,6 +95,8 @@ common:
         text: 'Dieses Plugin hat Kompatibilitätsprobleme mit %1%. Mehr Information dazu sind in den Kompatibilitäts-Notizen der Mod nachzulesen.'
       - lang: ja
         text: 'このプラグインには%1%との互換性の問題があります。詳細についてはこのmodの互換性に関する注意事項をお読みください。'
+      - lang: sv
+        text: 'Det här pluginet är inte helt kompatibelt med %1%. För mer information, läs det här moddets kompabilitetsanteckningar.'
 
   - &compatNotes
     type: say
@@ -155,6 +159,8 @@ common:
         text: 'Usuń lub dezaktywuj. %1%'
       - lang: ru
         text: 'Не забудьте отключить или удалить. %1%'
+      - lang: sv
+        text: 'Ta bort eller avaktivera. %1%'
     subs: [ '' ]
 
   - &deletePlugin
@@ -323,6 +329,8 @@ common:
         text: 'Ein Patch ist nötig um diese Mod vollständig kompatibel mit %1% zu machen. Keiner ist derzeit zum Download verfügbar.'
       - lang: ja
         text: 'このMODを%1%と完全に互換性のあるものにするにはパッチが必要です。現在ダウンロード可能なものはありません。'
+      - lang: sv
+        text: 'En kompabilitetspatch krävs för att för att göra det moddet fullständigt kompatibelt med %1%. Ingen kompabilitetspatch finns tillgänglig för nedladdning.'
 
   - &patchUpdateAvailable
     type: say
@@ -429,6 +437,8 @@ common:
         text: 'Ein Bashed Patch Tweak kann anstelle dieses Plugins verwendet werden. %1%'
       - lang: ja
         text: 'このプラグインの代わりに、Bashed Patch の調整機能を使用できます。%1%'
+      - lang: sv
+        text: 'En Bashed Patch Tweak kan användas istället för det här pluginet. %1%'
     subs: [ '' ]
     condition: 'file("Bashed Patch.*\.esp")'
 
@@ -441,6 +451,8 @@ common:
         text: 'Nutzen Sie %1% stattdessen.'
       - lang: ja
         text: '代わりに%1%を使用してください。'
+      - lang: sv
+        text: 'Använd %1% istället.'
 
   - &useOnlyOneX
     type: error
@@ -485,6 +497,8 @@ common:
         text: 'Użyj wersji %1%'
       - lang: ru
         text: 'Используйте версию для %1%'
+      - lang: sv
+        text: 'Använd version %1%.'
   - &useVersionAnchorage
     <<: *useVersion
     subs: [ 'Anchorage' ]
@@ -517,6 +531,8 @@ common:
         text: '%1%バージョン以外を使用してください。'
       - lang: pl
         text: 'Użyj wersji innej niż %1%.'
+      - lang: sv
+        text: 'Använd en icke-%1% version.'
   - &useVersionNonAnchorage
     <<: *useVersionNon
     subs: [ 'Anchorage' ]
