@@ -237,7 +237,7 @@ common:
       - lang: da
         text: 'Forældet. Opdatér til den nyeste version. %1%'
       - lang: de
-        text: 'Veraltet. Aktualisiere zur letzten Version. %1%'
+        text: 'Veraltet. Aktualisieren Sie zur neusten Version. %1%'
       - lang: es
         text: 'Obsoleto. Actualizar a la última versión. %1%'
       - lang: ja
