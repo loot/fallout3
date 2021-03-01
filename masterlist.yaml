@@ -1106,7 +1106,6 @@ plugins:
     tag: [ Graphics ]
     msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
 
-
 ###### Modding Tools - Generated Files ######
   - name: 'Bashed Patch.*\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22934/' ]
@@ -1117,7 +1116,6 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/637/' ]
     group: *dynamicPatchesGroup
     tag: [ NoMerge ]
-
 
 ###### Resources ######
   - name: 'CALIBR.esm'
@@ -1184,7 +1182,6 @@ plugins:
   - name: 'Stealthboy Recon Armor - CRAFT.esp'
     group: *fixesGroup
 
-
 ###### AudioVisual - Interface ######
   - name: 'BA_InventorySorter(GOTY|Vanilla|Anchorage|ThePitt|BrokenSteel|PointLookout|Zeta)\.esp'
     url:
@@ -1208,7 +1205,6 @@ plugins:
       - Deactivate
       - Names
       - NoMerge
-
 
 ###### AudioVisual - Lighting ######
   - name: 'Realistic Interior Lighting.*\.esp'
@@ -1245,7 +1241,6 @@ plugins:
         util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 18
 
-
 ###### AudioVisual - Models & Textures ######
   - name: 'UWWUT.*\.esp'
     url:
@@ -1273,7 +1268,6 @@ plugins:
     after:
       - 'UWWUT_WT - TP Addon.esp'
       - 'UWWUT_WT - BS Addon.esp'
-
 
 ###### AudioVisual - Weather ######
   - name: 'Fellout-(Full|Anchorage|BrokenSteel|PointLookout|Zeta|pipboylight)\.esp'
@@ -1344,7 +1338,6 @@ plugins:
   - name: 'Fellout-SOTD.esp'
     msg: [ *obsolete ]
 
-
 ###### Character Appearance - Body, Face & Hair ######
   - name: 'HairPack.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1146/' ]
@@ -1379,7 +1372,6 @@ plugins:
     clean:
       - crc: 0x45D27284
         util: 'FO3Edit v4.0.3'
-
 
 ###### Character Appearance - NPCs ######
   - name: 'LingsPrettyThings.esp'
@@ -1456,7 +1448,6 @@ plugins:
       - crc: 0x7B1D30CA
         util: 'FO3Edit v4.0.3'
 
-
 ###### Environment, Landscape & Flora ######
   - name: 'Barren Badlands.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21842/' ]
@@ -1514,7 +1505,6 @@ plugins:
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
         udr: 55099
-
 
 ###### Gameplay ######
   - name: 'EVE.esm'
@@ -2016,7 +2006,6 @@ plugins:
       - crc: 0x130108AC
         util: 'FO3Edit v4.0.2e'
 
-
 ###### Gameplay - Crafting ######
   - name: 'CRAFTable_WMKs.*\.esp'
     url:
@@ -2099,7 +2088,6 @@ plugins:
       - crc: 0x9DCD1FF0
         util: 'FO3Edit v4.0.3'
 
-
 ###### New Items ######
   - name: 'LingsFinerThings.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
@@ -2119,7 +2107,6 @@ plugins:
     clean:
       - crc: 0x01720BFF
         util: 'FO3Edit v4.0.3'
-
 
   - name: '20th Century Weapons.esm'
     url: [ 'http://modsreloaded.com/19th-and-20th-century-weapons' ]
