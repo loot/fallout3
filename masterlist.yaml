@@ -6,7 +6,7 @@ common:
     condition: 'version("FOOK2 - Main.esm", "1.1", >=)'
   - &FOSE
     name: '../fose_loader.exe'
-    display: '[FOSE](http://fose.silverlock.org/)'
+    display: '[FOSE](https://fose.silverlock.org/)'
 
 # Messages
   - &alreadyInX
@@ -820,10 +820,10 @@ globals:
 
 # FOSE Latest
   - <<: *versionOldX
-    subs: [ '**Script Extender ([FOSE](http://fose.silverlock.org))**' ]
+    subs: [ '**Script Extender ([FOSE](https://fose.silverlock.org))**' ]
     condition: 'file("../fose_loader.exe") and version("../fose_loader.exe", "0.1.2.2", <)'
   - <<: *versionUpToDateX
-    subs: [ '**Script Extender ([FOSE](http://fose.silverlock.org))**' ]
+    subs: [ '**Script Extender ([FOSE](https://fose.silverlock.org))**' ]
     condition: 'file("../fose_loader.exe") and version("../fose_loader.exe", "0.1.2.2", >=)'
 
 groups:
