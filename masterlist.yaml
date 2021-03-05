@@ -4999,8 +4999,7 @@ plugins:
   - name: 'CRBSOR.esp'
     msg: [ *alreadyInFWE ]
   - name: 'Fallout Remastered.esp'
-    inc:
-      - 'James Invisible Walls Remover.esp'
+    inc: [ 'James Invisible Walls Remover.esp' ]
 
     ## Chinese Stealth Armor separators
   - name: '3EFhelmlessstealthsuit.esp'
