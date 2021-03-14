@@ -994,7 +994,7 @@ plugins:
       - Stats
       - Text
     clean:
-      - crc: 0xFE15C158
+      - crc: 0xD26AF52A
         util: 'FO3Edit v4.0.3'
   - name: 'Goodies.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19122/' ]
@@ -1005,7 +1005,7 @@ plugins:
       - Names
       - Relev
     clean:
-      - crc: 0xEC038FCB
+      - crc: 0x3200D13A
         util: 'FO3Edit v4.0.3'
 
 ###### Fixes ######
