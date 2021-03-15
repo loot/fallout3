@@ -1582,8 +1582,6 @@ plugins:
       - Relev
       - Scripts
   # Old version files #
-  - name: 'Arwen_Armor.esp'
-    inc: [ 'Arwen_FULL_Tweaks.esp' ]
   - name: 'Arwen_GOTY_Hard-Core.esp'
     tag: [ NoMerge ]
   - name: 'Arwen_GOTY_Med-Tec.esp'
@@ -1601,21 +1599,7 @@ plugins:
       - Names
       - Relev
       - Stats
-  - name: 'Arwen_Less_Is_More.esp'
-    inc: [ 'Arwen_FULL_Tweaks.esp' ]
-  - name: 'Arwen_Less-Is-More.esp'
-    inc: [ 'Arwen_FULL_Tweaks.esp' ]
-  - name: 'Arwen_Localized_Damage.esp'
-    inc: [ 'Arwen_FULL_Tweaks.esp' ]
-  - name: 'Arwen_SmarterAI.esp'
-    inc: [ 'Arwen_FULL_Tweaks.esp' ]
-  - name: 'Arwen_Survival.esp'
-    inc: [ 'Arwen_FULL_Tweaks.esp' ]
-  - name: 'Arwen_Tweaks_Main.esp'
-    inc: [ 'Arwen_FULL_Tweaks.esp' ]
-  - name: 'Arwen_Weapons.esp'
-    inc: [ 'Arwen_FULL_Tweaks.esp' ]
-  
+
   - name: 'EVE.esm'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/8340/'
