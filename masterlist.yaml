@@ -1236,8 +1236,9 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'Flashlight esp' ]
         condition: 'many("Flashlight-(LOS|Performance)(-nonFOSE)?\.esp")'
-  - name: 'Flashlight-LOS.esp'
+  - name: 'Flashlight-(LOS|Performance)\.esp'
     req: [ *FOSE ]
+  - name: 'Flashlight-LOS.esp'
     clean:
       - crc: 0x0939B0D0
         util: 'FO3Edit v4.0.2e'
@@ -1246,7 +1247,6 @@ plugins:
       - crc: 0xD2A22DC5
         util: 'FO3Edit v4.0.2e'
   - name: 'Flashlight-Performance.esp'
-    req: [ *FOSE ]
     clean:
       - crc: 0x2299D5BD
         util: 'FO3Edit v4.0.2e'
