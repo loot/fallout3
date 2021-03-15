@@ -985,6 +985,11 @@ plugins:
       - NPC.FaceGen
       - NPC.Hair
       - NPC.Race
+      - ObjectBounds
+      - R.Eyes
+      - R.Head
+      - R.Voice-F
+      - R.Voice-M
       - Relations.Add
       - Relations.Change
       - Relations.Remove
