@@ -1556,31 +1556,13 @@ plugins:
 
 ###### Gameplay ######
   - name: 'Arwen_Core.esm'
-    tag: [ Actors.Animations ]
   - name: 'Arwen_Realism_Core.esp'
-    tag:
-      - Actors.CombatStyle
-      - Actors.Stats
-      - Destructible
-      - Names
-      - Relev
-      - Sound
-      - Stats
   # Optional files #
   - name: 'Arwen_Med-Tec.esp'
-    tag: [ Names ]
   # Patches #
   - name: 'Arwen_EVE_Patch.esp'
-    tag:
-      - Graphics
-      - Sound
-      - Stats
   - name: 'Arwen_MMM_Patch.esp'
-    tag: [ Scripts ]
   - name: 'Arwen_MMM_Med-Tec_Patch.esp'
-    tag:
-      - Relev
-      - Scripts
   # Old version files #
   - name: 'Arwen_GOTY_Hard-Core.esp'
     msg: [ *obsolete ]
