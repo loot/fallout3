@@ -1230,8 +1230,9 @@ plugins:
       - NoMerge
 
 ###### AudioVisual - Lighting ######
+  - name: 'Flashlight-(LOS|Performance)(-nonFOSE)?\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15003/' ]
   - name: 'Flashlight-LOS.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/15003' ]
     req: [ *FOSE ]
     inc:
       - 'Flashlight-Performance.esp'
@@ -1241,7 +1242,6 @@ plugins:
       - crc: 0x0939B0D0
         util: 'FO3Edit v4.0.2e'
   - name: 'Flashlight-LOS-nonFOSE.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/15003' ]
     inc:
       - 'Flashlight-LOS.esp'
       - 'Flashlight-Performance.esp'
@@ -1250,7 +1250,6 @@ plugins:
       - crc: 0xD2A22DC5
         util: 'FO3Edit v4.0.2e'
   - name: 'Flashlight-Performance.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/15003' ]
     req: [ *FOSE ]
     inc:
       - 'Flashlight-LOS.esp'
@@ -1260,7 +1259,6 @@ plugins:
       - crc: 0x2299D5BD
         util: 'FO3Edit v4.0.2e'
   - name: 'Flashlight-Performance-nonFOSE.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/15003' ]
     inc:
       - 'Flashlight-LOS.esp'
       - 'Flashlight-Performance.esp'
