@@ -1583,22 +1583,13 @@ plugins:
       - Scripts
   # Old version files #
   - name: 'Arwen_GOTY_Hard-Core.esp'
-    tag: [ NoMerge ]
+    msg: [ *obsolete ]
   - name: 'Arwen_GOTY_Med-Tec.esp'
-    tag:
-      - Names
-      - Relev
-      - Stats
+    msg: [ *obsolete ]
   - name: 'Arwen_GOTY_Realism_Core.esp'
-    tag: [ NoMerge ]
+    msg: [ *obsolete ]
   - name: 'Arwen_Hard-Core.esp'
-    tag:
-      - Actors.CombatStyle
-      - Actors.Stats
-      - Destructible
-      - Names
-      - Relev
-      - Stats
+    msg: [ *obsolete ]
 
   - name: 'EVE.esm'
     url:
