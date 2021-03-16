@@ -1602,15 +1602,6 @@ plugins:
     req: [ 'Arwen_Realism_Core.esp' ]
   - name: 'Arwen_MMM_Med-Tec_Patch.esp'
     req: [ 'Arwen_Med-Tec.esp' ]
-  # Old version files #
-  - name: 'Arwen_GOTY_Hard-Core.esp'
-    msg: [ *obsolete ]
-  - name: 'Arwen_GOTY_Med-Tec.esp'
-    msg: [ *obsolete ]
-  - name: 'Arwen_GOTY_Realism_Core.esp'
-    msg: [ *obsolete ]
-  - name: 'Arwen_Hard-Core.esp'
-    msg: [ *obsolete ]
 
   - name: 'EVE.esm'
     url:
