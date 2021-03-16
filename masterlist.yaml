@@ -1575,6 +1575,12 @@ plugins:
       - Text
   # Optional files #
   - name: 'Arwen_Med-Tec.esp'
+    tag:
+      - Delev
+      - Relev
+      - Scripts
+      - Stats
+      - Text
   # Patches #
   - name: 'Arwen_EVE_Patch.esp'
   - name: 'Arwen_MMM_Patch.esp'
