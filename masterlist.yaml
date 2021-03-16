@@ -1524,7 +1524,11 @@ plugins:
 
 ###### Encounters - Enemies ######
   - name: 'Mart''s Mutant Mod.esm'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211/' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/3211/'
+        name: 'Martigen''s Mutant Mod for Fallout 3 - RC 6.2'
+      - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
+        name: 'Paradox Ignition presents The Mergers'
     tag:
       - Delev
       - Invent
