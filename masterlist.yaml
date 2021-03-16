@@ -1561,6 +1561,18 @@ plugins:
         name: 'Arwen''s Realism Tweaks'
     tag: [ Text ]
   - name: 'Arwen_Realism_Core.esp'
+    tag:
+      - Deflst
+      - Delev
+      - Destructible
+      - Graphics
+      - Invent.Add
+      - Invent.Remove
+      - Names
+      - Relev
+      - Sound
+      - Stats
+      - Text
   # Optional files #
   - name: 'Arwen_Med-Tec.esp'
   # Patches #
