@@ -1575,16 +1575,31 @@ plugins:
       - Text
   # Optional files #
   - name: 'Arwen_Med-Tec.esp'
+    req: [ 'Arwen_Realism_Core.esp' ]
     tag:
       - Delev
       - Relev
       - Scripts
       - Stats
       - Text
-  # Patches #
+  - name: 'Arwen_OneLife.esp'
+    req: [ 'Arwen_Realism_Core.esp' ]
+  - name: 'Arwen_OneLife_Lite.esp'
+    req: [ 'Arwen_Realism_Core.esp' ]
+  # Patches - DLC #
+  - name: 'Arwen_Full_GOTY_Patch.esp'
+    req: [ 'Arwen_Med-Tec.esp' ]
+  - name: 'Arwen_Realism_GOTY_Patch.esp'
+    req: [ 'Arwen_Realism_Core.esp' ]
+  # Patches - Other Mods #
+  - name: 'Arwen_Brahamin_Med-Tec_Patch.esp'
+    req: [ 'Arwen_Med-Tec.esp' ]
   - name: 'Arwen_EVE_Patch.esp'
+    req: [ 'Arwen_Realism_Core.esp' ]
   - name: 'Arwen_MMM_Patch.esp'
+    req: [ 'Arwen_Realism_Core.esp' ]
   - name: 'Arwen_MMM_Med-Tec_Patch.esp'
+    req: [ 'Arwen_Med-Tec.esp' ]
   # Old version files #
   - name: 'Arwen_GOTY_Hard-Core.esp'
     msg: [ *obsolete ]
