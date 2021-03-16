@@ -1556,6 +1556,9 @@ plugins:
 
 ###### Gameplay ######
   - name: 'Arwen_Core.esm'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/7565/'
+        name: 'Arwen''s Realism Tweaks'
   - name: 'Arwen_Realism_Core.esp'
   # Optional files #
   - name: 'Arwen_Med-Tec.esp'
