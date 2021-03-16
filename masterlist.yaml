@@ -1587,6 +1587,11 @@ plugins:
   - name: 'Arwen_OneLife_Lite.esp'
     req: [ 'Arwen_Realism_Core.esp' ]
   # Patches - DLC #
+  - name: 'Arwen_(Full|Realism)_GOTY_Patch\.esp'
+    tag:
+      - Deflst
+      - Delev
+      - Relev
   - name: 'Arwen_Full_GOTY_Patch.esp'
     req: [ 'Arwen_Med-Tec.esp' ]
   - name: 'Arwen_Realism_GOTY_Patch.esp'
