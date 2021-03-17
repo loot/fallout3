@@ -1679,46 +1679,20 @@ plugins:
             text: 'Legacy File - Only required if mod configuration menu setting does not work.'
         condition: 'file("Mart''s Mutant Mod - Master Menu Module.esp") or checksum("Mart''s Mutant Mod.esm", DC2E29E4)'
   - name: 'Mart''s Mutant Mod - Dynamic Player Scaling.esp'
-    clean:
-      - crc: 0x72EC84EE
-        util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - Feral Ghoul Rampage.esp'
     tag: [ Relev ]
-    clean:
-      - crc: 0x6D9534D5
-        util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - Hunting & Looting.esp'
-    clean:
-      - crc: 0x8F002AAB
-        util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - Increased Spawns.esp'
     tag: [ Relev ]
-    dirty:
-      - <<: *quickClean
-        crc: 0x03C7D1C0
-        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 1
   - name: 'Mart''s Mutant Mod - Increased Increased Spawns.esp'
     tag: [ Relev ]
-    clean:
-      - crc: 0xA8485E28
-        util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - Reduced Wasteland Spawns.esp'
     tag:
       - Delev
       - Relev
-    clean:
-      - crc: 0x6945ADAF
-        util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - Soft Unleveler.esp'
     inc: [ 'Mart''s Mutant Mod - Soft Unleveler Hardcore.esp' ]
-    clean:
-      - crc: 0x1B67B3DA
-        util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - Soft Unleveler Hardcore.esp'
-    clean:
-      - crc: 0x5DDA5F88
-        util: 'FO3Edit v4.0.3'
   # Legacy Files - No X Modules #
   - name: 'Mart''s Mutant Mod - No (Abominable Mutants|Corpse Flies|DLC Increased Spawns|Floaters|Geckos|Ghoul Raise|Iguanas|Size Scaling|Skeleton Decay|Stalker Creatures|Wanamingos)\.esp'
     msg:
@@ -1729,55 +1703,22 @@ plugins:
         condition: 'file("Mart''s Mutant Mod - Master Menu Module.esp") or checksum("Mart''s Mutant Mod.esm", DC2E29E4)'
   - name: 'Mart''s Mutant Mod - No Abominable Mutants.esp'
     tag: [ Relev ]
-    clean:
-      - crc: 0x0A3BCC90
-        util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - No Corpse Flies.esp'
     tag: [ Relev ]
-    clean:
-      - crc: 0xA8FD8631
-        util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - No DLC Increased Spawns.esp'
-    clean:
-      - crc: 0x838E300A
-        util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - No Floaters.esp'
     tag: [ Relev ]
-    clean:
-      - crc: 0x6CCB5409
-        util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - No Geckos.esp'
     tag: [ Relev ]
-    clean:
-      - crc: 0x23F99275
-        util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - No Ghoul Raise.esp'
-    clean:
-      - crc: 0x6B86D599
-        util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - No Iguanas.esp'
     tag: [ Relev ]
-    clean:
-      - crc: 0xA05B56EA
-        util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - No Size Scaling.esp'
-    clean:
-      - crc: 0x72D20FCB
-        util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - No Skeleton Decay.esp'
-    clean:
-      - crc: 0xEAAC3865
-        util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - No Stalker Creatures.esp'
     tag: [ Relev ]
-    clean:
-      - crc: 0xBDA85572
-        util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - No Wanamingos.esp'
     tag: [ Relev ]
-    clean:
-      - crc: 0x4CFE5C8A
-        util: 'FO3Edit v4.0.3'
   # Old version Files #
   - name: 'Mart''s Mutant Mod - Mutant Mod Menu.esp'
     msg: [ *obsolete ]
