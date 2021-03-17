@@ -1672,6 +1672,7 @@ plugins:
         itm: 9
   # Legacy Files #
   - name: 'Mart''s Mutant Mod - (Dynamic Player Scaling|Feral Ghoul Rampage|Hunting & Looting|Increased Spawns|Increased Increased Spawns|Reduced Wasteland Spawns|Soft Unleveler|Soft Unleveler Hardcore)\.esp'
+    after: [ 'Mart''s Mutant Mod - Master Menu Module.esp' ]
     msg:
       - type: say
         content:
@@ -1682,6 +1683,7 @@ plugins:
     inc: [ 'Mart''s Mutant Mod - Soft Unleveler Hardcore.esp' ]
   # Legacy Files - No X Modules #
   - name: 'Mart''s Mutant Mod - No (Abominable Mutants|Corpse Flies|DLC Increased Spawns|Floaters|Geckos|Ghoul Raise|Iguanas|Size Scaling|Skeleton Decay|Stalker Creatures|Wanamingos)\.esp'
+    after: [ 'Mart''s Mutant Mod - Master Menu Module.esp' ]
     msg:
       - type: say
         content:
