@@ -1568,6 +1568,7 @@ plugins:
     clean:
       - crc: 0x3CAF7F12
         util: 'FO3Edit v4.0.3'
+  # DLC Patches #
   - name: 'Mart''s Mutant Mod - DLC Anchorage.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211/' ]
     tag: [ Scripts ]
@@ -1612,61 +1613,12 @@ plugins:
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
   # Optional Files #
-  - name: 'Mart''s Mutant Mod - Dynamic Player Scaling.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211/' ]
-    clean:
-      - crc: 0x72EC84EE
-        util: 'FO3Edit v4.0.3'
-  - name: 'Mart''s Mutant Mod - Feral Ghoul Rampage.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211/' ]
-    tag: [ Relev ]
-    clean:
-      - crc: 0x6D9534D5
-        util: 'FO3Edit v4.0.3'
-  - name: 'Mart''s Mutant Mod - Hunting & Looting.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211/' ]
-    clean:
-      - crc: 0x8F002AAB
-        util: 'FO3Edit v4.0.3'
-  - name: 'Mart''s Mutant Mod - Increased Spawns.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211/' ]
-    tag: [ Relev ]
-    dirty:
-      - <<: *quickClean
-        crc: 0x03C7D1C0
-        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 1
-  - name: 'Mart''s Mutant Mod - Increased Increased Spawns.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211/' ]
-    tag: [ Relev ]
-    clean:
-      - crc: 0xA8485E28
-        util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - Natural Selection.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211/' ]
     msg: [ *alreadyInFWE ]
     tag: [ Relations ]
     clean:
       - crc: 0x1AA10DF8
-        util: 'FO3Edit v4.0.3'
-  - name: 'Mart''s Mutant Mod - Reduced Wasteland Spawns.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211/' ]
-    tag:
-      - Delev
-      - Relev
-    clean:
-      - crc: 0x6945ADAF
-        util: 'FO3Edit v4.0.3'
-  - name: 'Mart''s Mutant Mod - Soft Unleveler.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211/' ]
-    inc: [ 'Mart''s Mutant Mod - Soft Unleveler Hardcore.esp' ]
-    clean:
-      - crc: 0x1B67B3DA
-        util: 'FO3Edit v4.0.3'
-  - name: 'Mart''s Mutant Mod - Soft Unleveler Hardcore.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211/' ]
-    clean:
-      - crc: 0x5DDA5F88
         util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - Tougher Traders.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211/' ]
@@ -1699,7 +1651,57 @@ plugins:
         crc: 0xCB6A4B5F
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 9
-  # Optional Files - No X Modules #
+  # Legacy Files #
+  - name: 'Mart''s Mutant Mod - Dynamic Player Scaling.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211/' ]
+    clean:
+      - crc: 0x72EC84EE
+        util: 'FO3Edit v4.0.3'
+  - name: 'Mart''s Mutant Mod - Feral Ghoul Rampage.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211/' ]
+    tag: [ Relev ]
+    clean:
+      - crc: 0x6D9534D5
+        util: 'FO3Edit v4.0.3'
+  - name: 'Mart''s Mutant Mod - Hunting & Looting.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211/' ]
+    clean:
+      - crc: 0x8F002AAB
+        util: 'FO3Edit v4.0.3'
+  - name: 'Mart''s Mutant Mod - Increased Spawns.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211/' ]
+    tag: [ Relev ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x03C7D1C0
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+  - name: 'Mart''s Mutant Mod - Increased Increased Spawns.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211/' ]
+    tag: [ Relev ]
+    clean:
+      - crc: 0xA8485E28
+        util: 'FO3Edit v4.0.3'
+  - name: 'Mart''s Mutant Mod - Reduced Wasteland Spawns.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211/' ]
+    tag:
+      - Delev
+      - Relev
+    clean:
+      - crc: 0x6945ADAF
+        util: 'FO3Edit v4.0.3'
+  - name: 'Mart''s Mutant Mod - Soft Unleveler.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211/' ]
+    inc: [ 'Mart''s Mutant Mod - Soft Unleveler Hardcore.esp' ]
+    clean:
+      - crc: 0x1B67B3DA
+        util: 'FO3Edit v4.0.3'
+  - name: 'Mart''s Mutant Mod - Soft Unleveler Hardcore.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/3211/' ]
+    clean:
+      - crc: 0x5DDA5F88
+        util: 'FO3Edit v4.0.3'
+  # Legacy Files - No X Modules #
   - name: 'Mart''s Mutant Mod - No Abominable Mutants.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211/' ]
     tag: [ Relev ]
