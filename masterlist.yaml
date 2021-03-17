@@ -1558,6 +1558,10 @@ plugins:
       - Relations
       - Relev
       - Scripts
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Marts Mutant Mod Merged' ]
+        condition: 'checksum("Mart''s Mutant Mod.esm", DC2E29E4)'
     dirty:
       - <<: *quickClean
         crc: 0xFB3CE701
@@ -1565,6 +1569,10 @@ plugins:
         itm: 41
   - name: 'Mart''s Mutant Mod - Master Menu Module.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211/' ]
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Marts Mutant Mod Merged' ]
+        condition: 'checksum("Mart''s Mutant Mod.esm", DC2E29E4)'
     clean:
       - crc: 0x3CAF7F12
         util: 'FO3Edit v4.0.3'
@@ -1572,6 +1580,10 @@ plugins:
   - name: 'Mart''s Mutant Mod - DLC Anchorage.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211/' ]
     tag: [ Scripts ]
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Marts Mutant Mod Merged' ]
+        condition: 'checksum("Mart''s Mutant Mod.esm", DC2E29E4)'
     clean:
       - crc: 0x5D392FF2
         util: 'FO3Edit v4.0.3'
@@ -1581,6 +1593,10 @@ plugins:
       - Delev
       - Relev
       - Scripts
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Marts Mutant Mod Merged' ]
+        condition: 'checksum("Mart''s Mutant Mod.esm", DC2E29E4)'
     clean:
       - crc: 0x53DC9D8F
         util: 'FO3Edit v4.0.3'
@@ -1590,6 +1606,10 @@ plugins:
       - Delev
       - Relev
       - Scripts
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Marts Mutant Mod Merged' ]
+        condition: 'checksum("Mart''s Mutant Mod.esm", DC2E29E4)'
     dirty:
       - <<: *quickClean
         crc: 0x89BF5711
@@ -1601,12 +1621,20 @@ plugins:
       - Delev
       - Relev
       - Scripts
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Marts Mutant Mod Merged' ]
+        condition: 'checksum("Mart''s Mutant Mod.esm", DC2E29E4)'
     clean:
       - crc: 0xA4E67116
         util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - DLC Zeta.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211/' ]
     tag: [ Scripts ]
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Marts Mutant Mod Merged' ]
+        condition: 'checksum("Mart''s Mutant Mod.esm", DC2E29E4)'
     dirty:
       - <<: *quickClean
         crc: 0x627BE465
