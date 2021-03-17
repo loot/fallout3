@@ -1577,64 +1577,45 @@ plugins:
       - crc: 0x3CAF7F12
         util: 'FO3Edit v4.0.3'
   # DLC Patches #
-  - name: 'Mart''s Mutant Mod - DLC Anchorage.esp'
+  - name: 'Mart''s Mutant Mod - DLC (Anchorage|The Pitt|Broken Steel|Point Lookout|Zeta)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3211/' ]
-    tag: [ Scripts ]
     msg:
       - <<: *alreadyInX
         subs: [ 'Marts Mutant Mod Merged' ]
         condition: 'checksum("Mart''s Mutant Mod.esm", DC2E29E4)'
+  - name: 'Mart''s Mutant Mod - DLC Anchorage.esp'
+    tag: [ Scripts ]
     clean:
       - crc: 0x5D392FF2
         util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - DLC The Pitt.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211/' ]
     tag:
       - Delev
       - Relev
       - Scripts
-    msg:
-      - <<: *alreadyInX
-        subs: [ 'Marts Mutant Mod Merged' ]
-        condition: 'checksum("Mart''s Mutant Mod.esm", DC2E29E4)'
     clean:
       - crc: 0x53DC9D8F
         util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - DLC Broken Steel.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211/' ]
     tag:
       - Delev
       - Relev
       - Scripts
-    msg:
-      - <<: *alreadyInX
-        subs: [ 'Marts Mutant Mod Merged' ]
-        condition: 'checksum("Mart''s Mutant Mod.esm", DC2E29E4)'
     dirty:
       - <<: *quickClean
         crc: 0x89BF5711
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
   - name: 'Mart''s Mutant Mod - DLC Point Lookout.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211/' ]
     tag:
       - Delev
       - Relev
       - Scripts
-    msg:
-      - <<: *alreadyInX
-        subs: [ 'Marts Mutant Mod Merged' ]
-        condition: 'checksum("Mart''s Mutant Mod.esm", DC2E29E4)'
     clean:
       - crc: 0xA4E67116
         util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - DLC Zeta.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/3211/' ]
     tag: [ Scripts ]
-    msg:
-      - <<: *alreadyInX
-        subs: [ 'Marts Mutant Mod Merged' ]
-        condition: 'checksum("Mart''s Mutant Mod.esm", DC2E29E4)'
     dirty:
       - <<: *quickClean
         crc: 0x627BE465
