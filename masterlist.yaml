@@ -1671,6 +1671,13 @@ plugins:
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 9
   # Legacy Files #
+  - name: 'Mart''s Mutant Mod - (Dynamic Player Scaling|Feral Ghoul Rampage|Hunting & Looting|Increased Spawns|Increased Increased Spawns|Reduced Wasteland Spawns|Soft Unleveler|Soft Unleveler Hardcore)\.esp'
+    msg:
+      - type: say
+        content:
+          - lang: en
+            text: 'Legacy File - Only required if mod configuration menu setting does not work.'
+        condition: 'file("Mart''s Mutant Mod - Master Menu Module.esp") or checksum("Mart''s Mutant Mod.esm", DC2E29E4)'
   - name: 'Mart''s Mutant Mod - Dynamic Player Scaling.esp'
     clean:
       - crc: 0x72EC84EE
@@ -1713,6 +1720,13 @@ plugins:
       - crc: 0x5DDA5F88
         util: 'FO3Edit v4.0.3'
   # Legacy Files - No X Modules #
+  - name: 'Mart''s Mutant Mod - No (Abominable Mutants|Corpse Flies|DLC Increased Spawns|Floaters|Geckos|Ghoul Raise|Iguanas|Size Scaling|Skeleton Decay|Stalker Creatures|Wanamingos)\.esp'
+    msg:
+      - type: say
+        content:
+          - lang: en
+            text: 'Legacy File - Only required if mod configuration menu setting does not work.'
+        condition: 'file("Mart''s Mutant Mod - Master Menu Module.esp") or checksum("Mart''s Mutant Mod.esm", DC2E29E4)'
   - name: 'Mart''s Mutant Mod - No Abominable Mutants.esp'
     tag: [ Relev ]
     clean:
