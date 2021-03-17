@@ -1536,6 +1536,10 @@ plugins:
       - Relations
       - Relev
       - Scripts
+    msg:
+      - <<: *patchUpdateAvailable
+        subs: [ '[Paradox Ignition presents The Mergers](https://www.nexusmods.com/fallout3/mods/16787/) - **Marts Mutant Mod Merged**' ]
+        condition: 'not checksum("Mart''s Mutant Mod.esm", DC2E29E4) and active("Anchorage.esm") and active("ThePitt.esm") and active("BrokenSteel.esm") and active("PointLookout.esm") and active("Zeta.esm")'
     dirty:
       - <<: *quickClean
         crc: 0x895521AD
