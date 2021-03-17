@@ -1530,13 +1530,6 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
         name: 'Paradox Ignition presents The Mergers'
   - name: 'Mart''s Mutant Mod.esm'
-    tag:
-      - Delev
-      - Invent
-      - Names
-      - Relations
-      - Relev
-      - Scripts
     msg:
       - <<: *patchUpdateAvailable
         subs: [ '[Paradox Ignition presents The Mergers](https://www.nexusmods.com/fallout3/mods/16787/) - **Marts Mutant Mod Merged**' ]
@@ -1550,14 +1543,6 @@ plugins:
       - crc: 0xDC2E29E4
         util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod.esp'
-    tag:
-      - Actors.ACBS
-      - Delev
-      - Factions
-      - Invent
-      - Relations
-      - Relev
-      - Scripts
     msg:
       - <<: *alreadyInX
         subs: [ 'Marts Mutant Mod Merged' ]
@@ -1576,16 +1561,11 @@ plugins:
         subs: [ 'Marts Mutant Mod Merged' ]
         condition: 'checksum("Mart''s Mutant Mod.esm", DC2E29E4)'
   - name: 'Mart''s Mutant Mod - DLC Anchorage.esp'
-    tag: [ Scripts ]
     clean:
       - crc: 0x5D392FF2
         util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - DLC The Pitt.esp'
     after: [ 'Mart''s Mutant Mod - DLC Anchorage.esp' ]
-    tag:
-      - Delev
-      - Relev
-      - Scripts
     clean:
       - crc: 0x53DC9D8F
         util: 'FO3Edit v4.0.3'
@@ -1593,10 +1573,6 @@ plugins:
     after:
       - 'Mart''s Mutant Mod - DLC Anchorage.esp'
       - 'Mart''s Mutant Mod - DLC The Pitt.esp'
-    tag:
-      - Delev
-      - Relev
-      - Scripts
     dirty:
       - <<: *quickClean
         crc: 0x89BF5711
@@ -1607,10 +1583,6 @@ plugins:
       - 'Mart''s Mutant Mod - DLC Anchorage.esp'
       - 'Mart''s Mutant Mod - DLC The Pitt.esp'
       - 'Mart''s Mutant Mod - DLC Broken Steel.esp'
-    tag:
-      - Delev
-      - Relev
-      - Scripts
     clean:
       - crc: 0xA4E67116
         util: 'FO3Edit v4.0.3'
@@ -1620,7 +1592,6 @@ plugins:
       - 'Mart''s Mutant Mod - DLC The Pitt.esp'
       - 'Mart''s Mutant Mod - DLC Broken Steel.esp'
       - 'Mart''s Mutant Mod - DLC Point Lookout.esp'
-    tag: [ Scripts ]
     dirty:
       - <<: *quickClean
         crc: 0x627BE465
@@ -1637,26 +1608,16 @@ plugins:
         util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - Natural Selection.esp'
     msg: [ *alreadyInFWE ]
-    tag: [ Relations ]
     clean:
       - crc: 0x1AA10DF8
         util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - Tougher Traders.esp'
-    tag:
-      - Actors.AIData
-      - Actors.Stats
-      - Factions
-      - Relations
     msg: [ *alreadyInFWE ]
     clean:
       - crc: 0x6548C4D4
         util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - Zones Respawn.esp'
     msg: [ *alreadyInFWE ]
-    tag:
-      - Relations
-      - Relev
-      - Scripts
     dirty:
       - <<: *quickClean
         crc: 0xCB6A4B5F
