@@ -1530,6 +1530,9 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
         name: 'Paradox Ignition presents The Mergers'
   - name: 'Mart''s Mutant Mod.esm'
+    tag:
+      - Delev
+      - Relev
     msg:
       - <<: *patchUpdateAvailable
         subs: [ '[Paradox Ignition presents The Mergers](https://www.nexusmods.com/fallout3/mods/16787/) - **Marts Mutant Mod Merged**' ]
