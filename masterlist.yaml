@@ -1615,6 +1615,11 @@ plugins:
       - crc: 0x1AA10DF8
         util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - Tougher Traders.esp'
+    tag:
+      - Actors.ACBS
+      - Actors.Stats
+      - Factions
+      - Relations.Add
     msg: [ *alreadyInFWE ]
     clean:
       - crc: 0x6548C4D4
