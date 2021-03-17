@@ -1532,6 +1532,12 @@ plugins:
   - name: 'Mart''s Mutant Mod.esm'
     tag:
       - Delev
+      - Invent.Add
+      - Invent.Change
+      - Invent.Remove
+      - NPC.Class
+      - NPC.Race
+      - Relations.Add
       - Relev
     msg:
       - <<: *patchUpdateAvailable
