@@ -1577,6 +1577,7 @@ plugins:
     after:
       - 'Mart''s Mutant Mod - DLC Anchorage.esp'
       - 'Mart''s Mutant Mod - DLC The Pitt.esp'
+    tag: [ Relev ]
     dirty:
       - <<: *quickClean
         crc: 0x89BF5711
