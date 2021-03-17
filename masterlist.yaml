@@ -1568,6 +1568,8 @@ plugins:
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 41
   # DLC Patches #
+  - name: 'Mart''s Mutant Mod - *\.esp'
+    after: [ 'Mart''s Mutant Mod.esp' ]
   - name: 'Mart''s Mutant Mod - DLC (Anchorage|The Pitt|Broken Steel|Point Lookout|Zeta)\.esp'
     msg:
       - <<: *alreadyInX
@@ -1579,6 +1581,7 @@ plugins:
       - crc: 0x5D392FF2
         util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - DLC The Pitt.esp'
+    after: [ 'Mart''s Mutant Mod - DLC Anchorage.esp' ]
     tag:
       - Delev
       - Relev
@@ -1587,6 +1590,9 @@ plugins:
       - crc: 0x53DC9D8F
         util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - DLC Broken Steel.esp'
+    after:
+      - 'Mart''s Mutant Mod - DLC Anchorage.esp'
+      - 'Mart''s Mutant Mod - DLC The Pitt.esp'
     tag:
       - Delev
       - Relev
@@ -1597,6 +1603,10 @@ plugins:
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
   - name: 'Mart''s Mutant Mod - DLC Point Lookout.esp'
+    after:
+      - 'Mart''s Mutant Mod - DLC Anchorage.esp'
+      - 'Mart''s Mutant Mod - DLC The Pitt.esp'
+      - 'Mart''s Mutant Mod - DLC Broken Steel.esp'
     tag:
       - Delev
       - Relev
@@ -1605,6 +1615,11 @@ plugins:
       - crc: 0xA4E67116
         util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - DLC Zeta.esp'
+    after:
+      - 'Mart''s Mutant Mod - DLC Anchorage.esp'
+      - 'Mart''s Mutant Mod - DLC The Pitt.esp'
+      - 'Mart''s Mutant Mod - DLC Broken Steel.esp'
+      - 'Mart''s Mutant Mod - DLC Point Lookout.esp'
     tag: [ Scripts ]
     dirty:
       - <<: *quickClean
