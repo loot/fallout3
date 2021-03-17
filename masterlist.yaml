@@ -1588,6 +1588,7 @@ plugins:
       - 'Mart''s Mutant Mod - DLC Anchorage.esp'
       - 'Mart''s Mutant Mod - DLC The Pitt.esp'
       - 'Mart''s Mutant Mod - DLC Broken Steel.esp'
+    tag: [ Delev ]
     clean:
       - crc: 0xA4E67116
         util: 'FO3Edit v4.0.3'
