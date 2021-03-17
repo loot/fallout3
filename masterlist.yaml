@@ -1569,6 +1569,7 @@ plugins:
         util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - DLC The Pitt.esp'
     after: [ 'Mart''s Mutant Mod - DLC Anchorage.esp' ]
+    tag: [ Relev ]
     clean:
       - crc: 0x53DC9D8F
         util: 'FO3Edit v4.0.3'
