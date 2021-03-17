@@ -1610,6 +1610,10 @@ plugins:
       - crc: 0x3CAF7F12
         util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - Natural Selection.esp'
+    tag:
+      - Relations.Add
+      - Relations.Change
+      - Relations.Remove
     msg: [ *alreadyInFWE ]
     clean:
       - crc: 0x1AA10DF8
