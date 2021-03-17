@@ -1647,15 +1647,7 @@ plugins:
       - Actors.Stats
       - Factions
       - Relations
-    msg:
-      - *alreadyInFWE
-      - type: say
-        content:
-          - lang: en
-            text: 'Fallout 3 Wanderers Edition has an alternate approach to protecting traders that is a little weaker but might be sufficient.'
-          - lang: de
-            text: 'Fallout 3 Wanderers Edition hat einen alternativen Ansatz um Händler zu beschützen der zwar etwas schwächer ist aber möglicherweise ausreicht.'
-        condition: 'file("FO3 Wanderers Edition - Main File.esm")'
+    msg: [ *alreadyInFWE ]
     clean:
       - crc: 0x6548C4D4
         util: 'FO3Edit v4.0.3'
