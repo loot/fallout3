@@ -1531,7 +1531,9 @@ plugins:
         name: 'Paradox Ignition presents The Mergers'
   - name: 'Mart''s Mutant Mod.esm'
     tag:
+      - Actors.ACBS
       - Delev
+      - Factions
       - Invent.Add
       - Invent.Change
       - Invent.Remove
@@ -1539,6 +1541,7 @@ plugins:
       - NPC.Race
       - Relations.Add
       - Relev
+      - Scripts
     msg:
       - <<: *patchUpdateAvailable
         subs: [ '[Paradox Ignition presents The Mergers](https://www.nexusmods.com/fallout3/mods/16787/) - **Marts Mutant Mod Merged**' ]
