@@ -2169,25 +2169,6 @@ plugins:
     msg:
       - <<: *obsolete
         subs: [ '[FWE - Combat Overhaul](https://www.nexusmods.com/fallout3/mods/15578)' ]
-    tag:
-      - Actors.ACBS
-      - Deflst
-      - Delev
-      - Graphics
-      - Invent
-      - Names
-      - Relev
-      - Scripts
-      - Sound
-      - Stats
-  - name: 'MMM - FWE & Overhaul Kit_Master Release.esp'
-    msg:
-      - <<: *obsolete
-        subs: [ '[FWE - Combat Overhaul](https://www.nexusmods.com/fallout3/mods/15578)' ]
-  - name: 'MMM - FWE Overhaul Kit_Master Release Alpha.esp'
-    msg:
-      - <<: *obsolete
-        subs: [ '[FWE - Combat Overhaul](https://www.nexusmods.com/fallout3/mods/15578)' ]
 
   - name: 'GalaxyNewsRadioFix\[(S|N)\]\.esp'
     url:
