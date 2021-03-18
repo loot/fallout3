@@ -2135,6 +2135,7 @@ plugins:
       - 'EVE.esm'
       - 'RH_IronSights_Basic_VanillaPlugin.esp'
       - 'WeaponModKits.esp'
+    tag: [ Graphics ]
     msg:
       - <<: *missingRequirementXforPlugin
         subs: [ '[RH_IronSights](https://www.nexusmods.com/fallout3/mods/6938). Only install the **meshes/Characters/_1stperson.nif** & **meshes/Characters/_male.nif**' ]
