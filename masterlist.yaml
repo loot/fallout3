@@ -1634,7 +1634,7 @@ plugins:
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 41
   # DLC Patches #
-  - name: 'Mart''s Mutant Mod - *\.esp'
+  - name: 'Mart''s Mutant Mod - .*\.esp'
     after: [ 'Mart''s Mutant Mod.esp' ]
   - name: 'Mart''s Mutant Mod - DLC (Anchorage|The Pitt|Broken Steel|Point Lookout|Zeta)\.esp'
     msg:
