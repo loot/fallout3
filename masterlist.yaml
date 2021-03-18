@@ -2126,6 +2126,56 @@ plugins:
       - crc: 0xB51ABE18
         util: 'FO3Edit v4.0.3'
 
+  - name: 'FWE - Combat Overhaul_Core.esm'
+    req: [ *FOSE ]
+  - name: 'FWE - Combat Overhaul_Equipment.esp'
+    tag: [ Scripts ]
+  - name: 'FWE_Overhaul Kit - Main.esp'
+    msg:
+      - <<: *obsolete
+        subs: [ '[FWE - Combat Overhaul](https://www.nexusmods.com/fallout3/mods/15578)' ]
+  - name: 'FWE(_Overhaul Kit - Main| - Combat Overhaul_(Core|Equipment))\.es(m|p)'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15578' ]
+  - name: 'FWE(_Overhaul Kit - Main| - Combat Overhaul_Core)\.es(m|p)'
+    inc:
+      - 'WeaponModKits.esp'
+      - 'EVE.esm'
+      - 'RH_IronSights_Basic_VanillaPlugin.esp'
+    msg:
+      - <<: *missingRequirementXforPlugin
+        subs: [ '[RH_IronSights](https://www.nexusmods.com/fallout3/mods/6938). Only install the **meshes/Characters/_1stperson.nif** & **meshes/Characters/_male.nif**' ]
+        condition: 'version("FWE - Combat Overhaul_Core.esm", "2.0", <) and (not file("meshes/Characters/_1stperson.nif") or not file("meshes/Characters/_male.nif"))'
+    tag:
+      - Graphics
+      - Names
+  - name: 'FWE(_Overhaul Kit - Main| - Combat Overhaul_Equipment)\.esp'
+    tag:
+      - Actors.ACBS
+      - Deflst
+      - Delev
+      - Invent
+      - Relev
+      - Sound
+      - Stats
+  - name: 'MMM - FWE_Combat Overhaul Master Release.esp'
+    tag:
+      - Actors.ACBS
+      - Actors.Stats
+      - Factions
+      - Graphics
+      - Invent
+      - Relations
+      - Scripts
+      - Stats
+  - name: 'MMM - FWE & Overhaul Kit_Master Release.esp'
+    msg:
+      - <<: *obsolete
+        subs: [ '[FWE - Combat Overhaul](https://www.nexusmods.com/fallout3/mods/15578)' ]
+  - name: 'MMM - FWE Overhaul Kit_Master Release Alpha.esp'
+    msg:
+      - <<: *obsolete
+        subs: [ '[FWE - Combat Overhaul](https://www.nexusmods.com/fallout3/mods/15578)' ]
+
   - name: 'GalaxyNewsRadioFix\[(S|N)\]\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/3986/'
@@ -2609,37 +2659,6 @@ plugins:
         subs: [ '[FOOK2](https://www.nexusmods.com/fallout3/mods/4448/)' ]
   - name: 'FOOK2 - [WANK] World And Neighbourhood Kit.esm'
     inc: [ *FOOK2v1_1 ]
-  - name: 'FWE - Combat Overhaul_Core.esm'
-    req: [ *FOSE ]
-  - name: 'FWE - Combat Overhaul_Equipment.esp'
-    tag: [ Scripts ]
-  - name: 'FWE_Overhaul Kit - Main.esp'
-    msg:
-      - <<: *obsolete
-        subs: [ '[FWE - Combat Overhaul](https://www.nexusmods.com/fallout3/mods/15578)' ]
-  - name: 'FWE(_Overhaul Kit - Main| - Combat Overhaul_(Core|Equipment))\.es(m|p)'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/15578' ]
-  - name: 'FWE(_Overhaul Kit - Main| - Combat Overhaul_Core)\.es(m|p)'
-    inc:
-      - 'WeaponModKits.esp'
-      - 'EVE.esm'
-      - 'RH_IronSights_Basic_VanillaPlugin.esp'
-    msg:
-      - <<: *missingRequirementXforPlugin
-        subs: [ '[RH_IronSights](https://www.nexusmods.com/fallout3/mods/6938). Only install the **meshes/Characters/_1stperson.nif** & **meshes/Characters/_male.nif**' ]
-        condition: 'version("FWE - Combat Overhaul_Core.esm", "2.0", <) and (not file("meshes/Characters/_1stperson.nif") or not file("meshes/Characters/_male.nif"))'
-    tag:
-      - Graphics
-      - Names
-  - name: 'FWE(_Overhaul Kit - Main| - Combat Overhaul_Equipment)\.esp'
-    tag:
-      - Actors.ACBS
-      - Deflst
-      - Delev
-      - Invent
-      - Relev
-      - Sound
-      - Stats
   - name: 'Companion Core.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/712' ]
     dirty:
@@ -4120,24 +4139,6 @@ plugins:
     clean:
       - crc: 0x4A807315
         util: 'FO3Edit v4.0.2e'
-  - name: 'MMM - FWE & Overhaul Kit_Master Release.esp'
-    msg:
-      - <<: *obsolete
-        subs: [ '[FWE - Combat Overhaul](https://www.nexusmods.com/fallout3/mods/15578)' ]
-  - name: 'MMM - FWE Overhaul Kit_Master Release Alpha.esp'
-    msg:
-      - <<: *obsolete
-        subs: [ '[FWE - Combat Overhaul](https://www.nexusmods.com/fallout3/mods/15578)' ]
-  - name: 'MMM - FWE_Combat Overhaul Master Release.esp'
-    tag:
-      - Actors.ACBS
-      - Actors.Stats
-      - Factions
-      - Graphics
-      - Invent
-      - Relations
-      - Scripts
-      - Stats
   - name: 'FO3 Wanderers Edition - Project Beauty.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
     clean:
