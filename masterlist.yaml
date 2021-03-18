@@ -1634,7 +1634,7 @@ plugins:
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 41
   # DLC Patches #
-  - name: 'Mart''s Mutant Mod - *\.esp'
+  - name: 'Mart''s Mutant Mod - .*\.esp'
     after: [ 'Mart''s Mutant Mod.esp' ]
   - name: 'Mart''s Mutant Mod - DLC (Anchorage|The Pitt|Broken Steel|Point Lookout|Zeta)\.esp'
     msg:
@@ -1708,6 +1708,13 @@ plugins:
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
   # Optional Files #
+  - name: 'Mart''s Mutant Mod - (Master Menu Module|Natural Selection|Tougher Traders|Zones Respawn)\.esp'
+    after:
+      - 'Mart''s Mutant Mod - DLC Anchorage.esp'
+      - 'Mart''s Mutant Mod - DLC The Pitt.esp'
+      - 'Mart''s Mutant Mod - DLC Broken Steel.esp'
+      - 'Mart''s Mutant Mod - DLC Point Lookout.esp'
+      - 'Mart''s Mutant Mod - DLC Zeta.esp'
   - name: 'Mart''s Mutant Mod - Master Menu Module.esp'
     msg:
       - <<: *alreadyInX
