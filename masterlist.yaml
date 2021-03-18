@@ -2148,6 +2148,7 @@ plugins:
       - 'FO3 Wanderers Edition - DLC Point Lookout.esp'
       - 'FO3 Wanderers Edition - DLC Mothership Zeta.esp'
   - name: 'MMM - FWE_Combat Overhaul Master Release.esp'
+    after: [ 'Mart''s Mutant Mod - Master Menu Module.esp' ]
   # Old Versions #
   - name: 'FWE_Overhaul Kit - Main.esp'
     msg: [ *obsolete ]
