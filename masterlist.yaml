@@ -1644,6 +1644,9 @@ plugins:
       - crc: 0x6548C4D4
         util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - Zones Respawn.esp'
+    tag:
+      - Actors.AIData
+      - Factions
     msg: [ *alreadyInFWE ]
     dirty:
       - <<: *quickClean
