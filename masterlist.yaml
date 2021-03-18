@@ -2133,36 +2133,13 @@ plugins:
       - 'WeaponModKits.esp'
       - 'EVE.esm'
       - 'RH_IronSights_Basic_VanillaPlugin.esp'
-    tag:
-      - Graphics
-      - Names
     msg:
       - <<: *missingRequirementXforPlugin
         subs: [ '[RH_IronSights](https://www.nexusmods.com/fallout3/mods/6938). Only install the **meshes/Characters/_1stperson.nif** & **meshes/Characters/_male.nif**' ]
         condition: 'version("FWE - Combat Overhaul_Core.esm", "2.0", <) and (not file("meshes/Characters/_1stperson.nif") or not file("meshes/Characters/_male.nif"))'
   - name: 'FWE - Combat Overhaul_Equipment.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15578' ]
-    tag:
-      - Actors.ACBS
-      - Deflst
-      - Delev
-      - Graphics
-      - Invent
-      - Names
-      - Relev
-      - Scripts
-      - Sound
-      - Stats
   - name: 'MMM - FWE_Combat Overhaul Master Release.esp'
-    tag:
-      - Actors.ACBS
-      - Actors.Stats
-      - Factions
-      - Graphics
-      - Invent
-      - Relations
-      - Scripts
-      - Stats
   # Old Versions #
   - name: 'FWE_Overhaul Kit - Main.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15578' ]
