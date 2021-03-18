@@ -1551,6 +1551,7 @@ plugins:
       - Relations.Add
       - Relev
       - Scripts
+      - SpellStats
       - Sound
     msg:
       - <<: *patchUpdateAvailable
