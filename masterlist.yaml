@@ -1533,10 +1533,16 @@ plugins:
     tag:
       - Actors.ACBS
       - Actors.AIData
+      - Actors.AIPackages
+      - Actors.Anims
+      - Actors.CombatStyle
       - Actors.DeathItem
       - Actors.Stats
+      - Creatures.Blood
+      - Creatures.Type
       - Delev
       - Factions
+      - Graphics
       - Invent.Add
       - Invent.Change
       - Invent.Remove
@@ -1545,6 +1551,7 @@ plugins:
       - Relations.Add
       - Relev
       - Scripts
+      - Sound
     msg:
       - <<: *patchUpdateAvailable
         subs: [ '[Paradox Ignition presents The Mergers](https://www.nexusmods.com/fallout3/mods/16787/) - **Marts Mutant Mod Merged**' ]
