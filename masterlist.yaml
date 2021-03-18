@@ -1588,7 +1588,9 @@ plugins:
         util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - DLC The Pitt.esp'
     after: [ 'Mart''s Mutant Mod - DLC Anchorage.esp' ]
-    tag: [ Relev ]
+    tag:
+      - NPC.Race
+      - Relev
     clean:
       - crc: 0x53DC9D8F
         util: 'FO3Edit v4.0.3'
@@ -1596,7 +1598,15 @@ plugins:
     after:
       - 'Mart''s Mutant Mod - DLC Anchorage.esp'
       - 'Mart''s Mutant Mod - DLC The Pitt.esp'
-    tag: [ Relev ]
+    tag:
+      - Actors.ACBS
+      - Actors.AIData
+      - Actors.AIPackages
+      - Actors.DeathItem
+      - Factions
+      - NPC.Race
+      - Relev
+      - Scripts
     dirty:
       - <<: *quickClean
         crc: 0x89BF5711
@@ -1607,7 +1617,15 @@ plugins:
       - 'Mart''s Mutant Mod - DLC Anchorage.esp'
       - 'Mart''s Mutant Mod - DLC The Pitt.esp'
       - 'Mart''s Mutant Mod - DLC Broken Steel.esp'
-    tag: [ Delev ]
+    tag:
+      - Actors.ACBS
+      - Actors.AIData
+      - Actors.AIPackages
+      - Actors.Anims
+      - Creatures.Type
+      - Delev
+      - Factions
+      - Graphics
     clean:
       - crc: 0xA4E67116
         util: 'FO3Edit v4.0.3'
@@ -1617,6 +1635,14 @@ plugins:
       - 'Mart''s Mutant Mod - DLC The Pitt.esp'
       - 'Mart''s Mutant Mod - DLC Broken Steel.esp'
       - 'Mart''s Mutant Mod - DLC Point Lookout.esp'
+    tag:
+      - Actors.ACBS
+      - Actors.CombatStyle
+      - Actors.Stats
+      - Creatures.Blood
+      - Factions
+      - Graphics
+      - Sound
     dirty:
       - <<: *quickClean
         crc: 0x627BE465
@@ -1643,7 +1669,12 @@ plugins:
   - name: 'Mart''s Mutant Mod - Tougher Traders.esp'
     tag:
       - Actors.ACBS
+      - Actors.AIData
+      - Actors.CombatStyle
+      - Actors.DeathItem
+      - Actors.Spells
       - Actors.Stats
+      - Creatures.Type
       - Factions
       - Relations.Add
     msg: [ *alreadyInFWE ]
@@ -1652,8 +1683,16 @@ plugins:
         util: 'FO3Edit v4.0.3'
   - name: 'Mart''s Mutant Mod - Zones Respawn.esp'
     tag:
+      - Actors.ACBS
       - Actors.AIData
+      - Actors.AIPackages
+      - Actors.CombatStyle
+      - Actors.DeathItem
+      - Creatures.Blood
+      - Creatures.Type
       - Factions
+      - Graphics
+      - Sound
     msg: [ *alreadyInFWE ]
     dirty:
       - <<: *quickClean
