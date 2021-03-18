@@ -2143,9 +2143,7 @@ plugins:
   - name: 'MMM - FWE_Combat Overhaul Master Release.esp'
   # Old Versions #
   - name: 'FWE_Overhaul Kit - Main.esp'
-    msg:
-      - <<: *obsolete
-        subs: [ '[FWE - Combat Overhaul](https://www.nexusmods.com/fallout3/mods/15578)' ]
+    msg: [ *obsolete ]
 
   - name: 'GalaxyNewsRadioFix\[(S|N)\]\.esp'
     url:
