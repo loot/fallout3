@@ -2153,6 +2153,17 @@ plugins:
       - Scripts
       - Sound
       - Stats
+  - name: 'MMM - FWE_Combat Overhaul Master Release.esp'
+    tag:
+      - Actors.ACBS
+      - Actors.Stats
+      - Factions
+      - Graphics
+      - Invent
+      - Relations
+      - Scripts
+      - Stats
+  # Old Versions #
   - name: 'FWE_Overhaul Kit - Main.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15578' ]
     msg:
@@ -2168,16 +2179,6 @@ plugins:
       - Relev
       - Scripts
       - Sound
-      - Stats
-  - name: 'MMM - FWE_Combat Overhaul Master Release.esp'
-    tag:
-      - Actors.ACBS
-      - Actors.Stats
-      - Factions
-      - Graphics
-      - Invent
-      - Relations
-      - Scripts
       - Stats
   - name: 'MMM - FWE & Overhaul Kit_Master Release.esp'
     msg:
