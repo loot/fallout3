@@ -2165,6 +2165,14 @@ plugins:
       - Stats
   - name: 'MMM - FWE_Combat Overhaul Master Release.esp'
     after: [ 'Mart''s Mutant Mod - Master Menu Module.esp' ]
+    tag:
+      - Actors.ACBS
+      - Actors.Stats
+      - Graphics
+      - Relations.Add
+      - Relations.Change
+      - Relations.Remove
+      - Relev
   # Old Versions #
   - name: 'FWE_Overhaul Kit - Main.esp'
     msg: [ *obsolete ]
