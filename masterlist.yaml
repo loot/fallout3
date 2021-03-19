@@ -2148,6 +2148,21 @@ plugins:
       - 'FO3 Wanderers Edition - DLC Broken Steel.esp'
       - 'FO3 Wanderers Edition - DLC Point Lookout.esp'
       - 'FO3 Wanderers Edition - DLC Mothership Zeta.esp'
+    tag:
+      - Actors.ACBS
+      - Actors.Spells
+      - Actors.Stats
+      - Deflst
+      - Delev
+      - Graphics
+      - Invent.Add
+      - Invent.Change
+      - Invent.Remove
+      - Names
+      - Relev
+      - Scripts
+      - Sound
+      - Stats
   - name: 'MMM - FWE_Combat Overhaul Master Release.esp'
     after: [ 'Mart''s Mutant Mod - Master Menu Module.esp' ]
   # Old Versions #
