@@ -2140,7 +2140,7 @@ plugins:
     msg:
       - <<: *missingRequirementXforPlugin
         subs: [ '[RH_IronSights](https://www.nexusmods.com/fallout3/mods/6938). Only install the **meshes/Characters/_1stperson.nif** & **meshes/Characters/_male.nif**' ]
-        condition: 'version("FWE - Combat Overhaul_Core.esm", "2.0", <) and (not file("meshes/Characters/_1stperson.nif") or not file("meshes/Characters/_male.nif"))'
+        condition: 'not file("meshes/_(1stperson|male)") and not file("meshes/Characters/_(1stperson|male)\.nif")'
   - name: 'FWE - Combat Overhaul_Equipment.esp'
     after:
       - 'FO3 Wanderers Edition - Main File.esp'
