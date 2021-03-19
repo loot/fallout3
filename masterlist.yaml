@@ -2137,6 +2137,11 @@ plugins:
       - 'RH_IronSights_Basic_VanillaPlugin.esp'
       - 'WeaponModKits.esp'
     tag: [ Graphics ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xA19AF7A5
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
   - name: 'FWE - Combat Overhaul_Equipment.esp'
     after:
       - 'FO3 Wanderers Edition - Main File.esp'
@@ -2160,6 +2165,11 @@ plugins:
       - Scripts
       - Sound
       - Stats
+    dirty:
+      - <<: *quickClean
+        crc: 0xA0175F36
+        util: '[FO3Edit v4.0.3f](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 11
   - name: 'MMM - FWE_Combat Overhaul Master Release.esp'
     after: [ 'Mart''s Mutant Mod - Master Menu Module.esp' ]
     tag:
@@ -2170,6 +2180,11 @@ plugins:
       - Relations.Change
       - Relations.Remove
       - Relev
+    dirty:
+      - <<: *quickClean
+        crc: 0xE8AED3BC
+        util: '[FO3Edit v4.0.3f](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 10
   # Old Versions #
   - name: 'FWE_Overhaul Kit - Main.esp'
     msg: [ *obsolete ]
