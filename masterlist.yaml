@@ -1402,6 +1402,11 @@ plugins:
       - 'UWWUT_WT - BS Addon.esp'
 
 ###### AudioVisual - Weather ######
+  - name: 'F3ProjectRealityMkI.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/17418/'
+        name: 'F3 Project Reality'
+
   - name: 'Fellout-(Full|Anchorage|BrokenSteel|PointLookout|Zeta|pipboylight)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/2672/'
