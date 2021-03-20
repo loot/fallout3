@@ -169,6 +169,8 @@ common:
     content:
       - lang: en
         text: 'Delete or deactivate. %1%'
+      - lang: bg
+        text: 'За изтриване или деактивиране. %1%'
       - lang: de
         text: 'Lösche oder deaktiviere. %1%'
       - lang: ja
@@ -559,6 +561,8 @@ common:
     content:
       - lang: en
         text: 'Use non-%1% version.'
+      - lang: bg
+        text: 'Използвайте версията, която не е за %1%.'
       - lang: de
         text: 'Benutzen Sie die Nicht-%1% Version.'
       - lang: ja
@@ -907,6 +911,8 @@ globals:
     content:
       - lang: en
         text: 'NVAC is installed under **NVSE/Plugins** but needs to be moved to **%1%/Plugins** for %1% to pick it up for %2%.'
+      - lang: bg
+        text: 'Приставката NVAC е инсталирана в **NVSE/Plugins**, но трябва да бъде преместена в **%1%/Plugins** за да може %1% да използва нейните функции в %2%.'
       - lang: de
         text: 'NVAC ist unter **NVSE/Plugins** installiert aber es muss nach **%1%/Plugins** verschoben werden um von %1% erkannt zu werden für %2%.'
       - lang: pt_BR
