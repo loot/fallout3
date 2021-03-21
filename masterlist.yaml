@@ -1630,10 +1630,20 @@ plugins:
       - Invent.Remove
       - NPC.Class
       - Scripts
+    dirty:
+      - <<: *quickClean
+        crc: 0xC6850923
+        util: '[FO3Edit v4.0.3f](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
   - name: 'RoadWardens.esp'
     after:
       - 'Mart''s Mutant Mod.esp'
       - 'Mart''s Mutant Mod - Tougher Traders.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x136EC6D6
+        util: '[FO3Edit v4.0.3f](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 4
   - name: 'RoadWardensMMM.esp'
     req: [ 'RoadWardens.esp' ]
   - name: 'RoadWardensUnInstall.esp'
