@@ -1615,7 +1615,9 @@ plugins:
 
 ###### Encounters - Allies ######
   - name: 'RoadWardens(MMM|UnInstall)?\.es(m|p)'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/2781/' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/2781/'
+        name: 'The Road Wardens'
   - name: 'RoadWardens.esm'
     tag:
       - Actors.ACBS
