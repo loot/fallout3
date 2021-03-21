@@ -1639,6 +1639,7 @@ plugins:
     after:
       - 'Mart''s Mutant Mod.esp'
       - 'Mart''s Mutant Mod - Tougher Traders.esp'
+    tag: [ Factions ]
     dirty:
       - <<: *quickClean
         crc: 0x136EC6D6
