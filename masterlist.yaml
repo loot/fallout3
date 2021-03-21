@@ -1319,66 +1319,6 @@ plugins:
       - Names
       - NoMerge
 
-###### AudioVisual - Lighting ######
-  - name: 'Flashlight-(LOS|Performance)(-nonFOSE)?\.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/15003/' ]
-    msg:
-      - <<: *useOnlyOneX
-        subs: [ 'Flashlight esp' ]
-        condition: 'many("Flashlight-(LOS|Performance)(-nonFOSE)?\.esp")'
-  - name: 'Flashlight-(LOS|Performance)\.esp'
-    req: [ *FOSE ]
-  - name: 'Flashlight-LOS.esp'
-    clean:
-      - crc: 0x0939B0D0
-        util: 'FO3Edit v4.0.2e'
-  - name: 'Flashlight-LOS-nonFOSE.esp'
-    clean:
-      - crc: 0xD2A22DC5
-        util: 'FO3Edit v4.0.2e'
-  - name: 'Flashlight-Performance.esp'
-    clean:
-      - crc: 0x2299D5BD
-        util: 'FO3Edit v4.0.2e'
-  - name: 'Flashlight-Performance-nonFOSE.esp'
-    clean:
-      - crc: 0xDEEFA0B4
-        util: 'FO3Edit v4.0.2e'
-
-  - name: 'Realistic Interior Lighting.*\.esp'
-    url:
-      - link: 'https://www.nexusmods.com/fallout3/mods/9250/'
-        name: 'Realistic Interior Lighting'
-      - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
-        name: 'Paradox Ignition presents The Mergers'
-    tag: [ C.Light ]
-  - name: 'Realistic Interior Lighting.esp'
-    msg:
-      - <<: *patchUpdateAvailable
-        subs: [ '[Paradox Ignition presents The Mergers](https://www.nexusmods.com/fallout3/mods/16787/) - **Realistic Interior Lighting Merged**' ]
-        condition: 'not checksum("Realistic Interior Lighting.esp", 409A2BD8)'
-    clean:
-      - crc: 0x409A2BD8
-        util: 'FO3Edit v4.0.3'
-  - name: 'Realistic Interior Lighting - (OA|BS|PL)\.esp'
-    msg:
-      - <<: *alreadyInX
-        subs: [ 'Realistic Interior Lighting Merged' ]
-        condition: 'checksum("Realistic Interior Lighting.esp", 409A2BD8)'
-
-  - name: 'StreetLights.esm'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/8069' ]
-    group: *veryEarlyGroup
-    after:
-      - 'Anchorage.esm'
-      - 'ThePitt.esm'
-    msg: [ *alreadyInFOOK2 ]
-    dirty:
-      - <<: *quickClean
-        crc: 0xC5690E8E
-        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 18
-
 ###### AudioVisual - Models & Textures ######
   - name: 'UWWUT.*\.esp'
     url:
@@ -1407,7 +1347,7 @@ plugins:
       - 'UWWUT_WT - TP Addon.esp'
       - 'UWWUT_WT - BS Addon.esp'
 
-###### AudioVisual - Weather ######
+###### AudioVisual - Weather & Lighting ######
   - name: 'Clarity( - Dark Nights)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21319/' ]
     tag:
@@ -1503,6 +1443,65 @@ plugins:
         util: 'FO3Edit v4.0.3'
   - name: 'Fellout-SOTD.esp'
     msg: [ *obsolete ]
+
+  - name: 'Flashlight-(LOS|Performance)(-nonFOSE)?\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15003/' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Flashlight esp' ]
+        condition: 'many("Flashlight-(LOS|Performance)(-nonFOSE)?\.esp")'
+  - name: 'Flashlight-(LOS|Performance)\.esp'
+    req: [ *FOSE ]
+  - name: 'Flashlight-LOS.esp'
+    clean:
+      - crc: 0x0939B0D0
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Flashlight-LOS-nonFOSE.esp'
+    clean:
+      - crc: 0xD2A22DC5
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Flashlight-Performance.esp'
+    clean:
+      - crc: 0x2299D5BD
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Flashlight-Performance-nonFOSE.esp'
+    clean:
+      - crc: 0xDEEFA0B4
+        util: 'FO3Edit v4.0.2e'
+
+  - name: 'Realistic Interior Lighting.*\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/9250/'
+        name: 'Realistic Interior Lighting'
+      - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
+        name: 'Paradox Ignition presents The Mergers'
+    tag: [ C.Light ]
+  - name: 'Realistic Interior Lighting.esp'
+    msg:
+      - <<: *patchUpdateAvailable
+        subs: [ '[Paradox Ignition presents The Mergers](https://www.nexusmods.com/fallout3/mods/16787/) - **Realistic Interior Lighting Merged**' ]
+        condition: 'not checksum("Realistic Interior Lighting.esp", 409A2BD8)'
+    clean:
+      - crc: 0x409A2BD8
+        util: 'FO3Edit v4.0.3'
+  - name: 'Realistic Interior Lighting - (OA|BS|PL)\.esp'
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Realistic Interior Lighting Merged' ]
+        condition: 'checksum("Realistic Interior Lighting.esp", 409A2BD8)'
+
+  - name: 'StreetLights.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/8069' ]
+    group: *veryEarlyGroup
+    after:
+      - 'Anchorage.esm'
+      - 'ThePitt.esm'
+    msg: [ *alreadyInFOOK2 ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xC5690E8E
+        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 18
 
 ###### Character Appearance - Body, Face & Hair ######
   - name: 'HairPack.esm'
