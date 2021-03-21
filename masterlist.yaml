@@ -1626,7 +1626,8 @@ plugins:
       - Actors.CombatStyle
       - Actors.Stats
       - Factions
-      - Invent
+      - Invent.Add
+      - Invent.Remove
       - NPC.Class
       - Scripts
   - name: 'RoadWardens.esp'
