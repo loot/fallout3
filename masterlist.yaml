@@ -1613,6 +1613,27 @@ plugins:
       - crc: 0x7B1D30CA
         util: 'FO3Edit v4.0.3'
 
+###### Encounters - Allies ######
+  - name: 'RoadWardens(MMM|UnInstall)?\.es(m|p)'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2781/' ]
+  - name: 'RoadWardens.esm'
+    tag:
+      - Actors.ACBS
+      - Actors.AIData
+      - Actors.AIPackages
+      - Actors.CombatStyle
+      - Actors.Stats
+      - Factions
+      - Invent
+      - ScriptContents
+      - Scripts
+  - name: 'RoadWardens.esp'
+    after:
+      - 'Mart''s Mutant Mod.esp'
+      - 'Mart''s Mutant Mod - Tougher Traders.esp'
+  - name: 'RoadWardensMMM.esp'
+    req: [ 'RoadWardens.esp' ]
+
 ###### Encounters - Enemies ######
   - name: 'Mart''s Mutant Mod.*\.es(m|p)'
     url:
@@ -2662,25 +2683,6 @@ plugins:
     msg: [ *alreadyInFOOK2 ]
   - name: 'GNRBuilding_BoS.esm'
     tag: [ Invent ]
-  - name: 'RoadWardens(MMM|UnInstall)?\.es(m|p)'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/2781/' ]
-  - name: 'RoadWardens.esm'
-    tag:
-      - Actors.ACBS
-      - Actors.AIData
-      - Actors.AIPackages
-      - Actors.CombatStyle
-      - Actors.Stats
-      - Factions
-      - Invent
-      - ScriptContents
-      - Scripts
-  - name: 'RoadWardens.esp'
-    after:
-      - 'Mart''s Mutant Mod.esp'
-      - 'Mart''s Mutant Mod - Tougher Traders.esp'
-  - name: 'RoadWardensMMM.esp'
-    req: [ 'RoadWardens.esp' ]
   - name: 'EWE Energy Weapons Enhanced.esm'
     tag:
       - Deflst
