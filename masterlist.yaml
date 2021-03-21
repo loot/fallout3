@@ -1408,6 +1408,17 @@ plugins:
       - 'UWWUT_WT - BS Addon.esp'
 
 ###### AudioVisual - Weather ######
+  - name: 'Clarity.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21319' ]
+    clean:
+      - crc: 0x4E7BDD5B
+        util: 'FO3Edit v4.0.2f'
+  - name: 'Clarity - Dark Nights.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/21319' ]
+    clean:
+      - crc: 0x6062B73A
+        util: 'FO3Edit v4.0.2f'
+
   - name: 'F3ProjectRealityMkI.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/17418/'
@@ -7934,16 +7945,6 @@ plugins:
       - crc: 0x196F177D
         util: 'FO3Edit v4.0.2e'
 
-  - name: 'Clarity.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/21319' ]
-    clean:
-      - crc: 0x4E7BDD5B
-        util: 'FO3Edit v4.0.2f'
-  - name: 'Clarity - Dark Nights.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/21319' ]
-    clean:
-      - crc: 0x6062B73A
-        util: 'FO3Edit v4.0.2f'
   - name: 'DLC Enemies Freedom.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18691' ]
     dirty:
