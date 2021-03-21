@@ -1413,6 +1413,10 @@ plugins:
     tag:
       - Graphics
       - NoMerge
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Clarity ESP' ]
+        condition: 'many("Clarity( - Dark Nights)?\.esp")'
   - name: 'Clarity.esp'
     clean:
       - crc: 0x4E7BDD5B
