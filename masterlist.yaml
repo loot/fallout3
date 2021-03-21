@@ -1636,6 +1636,8 @@ plugins:
       - 'Mart''s Mutant Mod - Tougher Traders.esp'
   - name: 'RoadWardensMMM.esp'
     req: [ 'RoadWardens.esp' ]
+  - name: 'RoadWardensUnInstall.esp'
+    msg: [ *deleteOrDeactivateX ]
 
 ###### Encounters - Enemies ######
   - name: 'Mart''s Mutant Mod.*\.es(m|p)'
