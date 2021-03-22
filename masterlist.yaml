@@ -4444,7 +4444,7 @@ plugins:
       - Invent
       - Relations
   - name: 'Mart''s Mutant Mod - DC Interiors.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/18173' ]
+    url: [ 'https://www.nexusmods.com/fallout3/mods/5573/' ]
     tag: [ Relations ]
     clean:
       - crc: 0x4A807315
