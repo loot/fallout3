@@ -2988,6 +2988,18 @@ plugins:
         util: 'FO3Edit v4.0.3'
 
 ###### 3RD Party Patches ######
+  - name: 'Blackened .*(Project Beauty).*\.esp'
+    inc:
+      - name: 'Project Beauty.esm'
+        display: 'FO3 Redesigned Standard Edition'
+        condition: 'checksum("Project Beauty.esm", 6D88BE8B)'
+    msg:
+      - <<: *requiresX
+        subs: [ '[FO3 Redesigned HD Edition](https://www.nexusmods.com/fallout3/mods/6341/)' ]
+        condition: 'not checksum("Project Beauty.esm", 06AA1298)'
+      - <<: *useOnlyOneX
+        subs: [ 'Blackened FO3 Redesigned HD patch' ]
+        condition: 'many("Blackened .*(Project Beauty).*\.esp")'
   - name: 'Blackened EVE + Project Beauty.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
     clean:
