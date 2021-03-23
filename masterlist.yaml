@@ -1926,24 +1926,19 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/1904/'
         name: 'Destruction - Realistic Destroyable Environments Mod'
   - name: 'Destruction.esm'
-    tag:
-      - Destructible
-      - Scripts
     clean:
       - crc: 0xBD5F2D97
         util: 'FO3Edit v4.0.2e'
-  - name: 'Destruction - Main.esp'
+  - name: 'Destruction - (Main|DLC)\.esp'
     tag:
       - Destructible
-      - Graphics
       - Scripts
+  - name: 'Destruction - Main.esp'
+    tag: [ Graphics ]
     clean:
       - crc: 0x166F49CF
         util: 'FO3Edit v4.0.2e'
   - name: 'Destruction - DLC.esp'
-    tag:
-      - Destructible
-      - Scripts
     clean:
       - crc: 0x5E0D32E3
         util: 'FO3Edit v4.0.2e'
@@ -1958,15 +1953,7 @@ plugins:
       - crc: 0x04CF4703
         util: 'FO3Edit v4.0.2e'
   # Destruction - FOOK2 Version #
-  - name: 'FOOK2 - [DESTRUCTION] Main.esp'
-    tag:
-      - Destructible
-      - Scripts
-  - name: 'FOOK2 - [DESTRUCTION] DIK.esp'
-    tag:
-      - Destructible
-      - Scripts
-  - name: 'FOOK2 - [DESTRUCTION] Mothership Zeta.esp'
+  - name: 'FOOK2 - \[DESTRUCTION\] (Main|DIK|Mothership Zeta)\.esp'
     tag:
       - Destructible
       - Scripts
