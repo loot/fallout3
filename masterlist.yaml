@@ -2048,26 +2048,58 @@ plugins:
   - name: 'FOOK2 - Main.ESM'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4448' ]
     tag:
+      - Actors.ACBS
+      - Actors.AIData
+      - Actors.AIPackages
+      - Actors.Spells
+      - Actors.Stats
+      - Deflst
+      - Delev
+      - Destructible
       - Factions
-      - Invent
-      - Relations
+      - Graphics
+      - Invent.Add
+      - Invent.Remove
+      - Names
+      - NPC.Class
+      - NPC.Race
+      - Relations.Add
+      - Relations.Change
+      - Relev
+      - Sound
       - Stats
+      - Text
     clean:
       - crc: 0x7315B71D
         util: 'FO3Edit v4.0.2e'
   - name: 'FOOK2 - [DIK] DLC Improvement Kit.ESM'
+    tag:
+      - Actors.ACBS
+      - Actors.AIPackages
+      - Actors.Stats
+      - Deflst
+      - Delev
+      - Destructible
+      - Factions
+      - Graphics
+      - Invent.Add
+      - Invent.Remove
+      - Names
+      - NPC.Class
+      - NPC.Race
+      - Relev
+      - Stats
+      - Text
     clean:
       - crc: 0xE3578337
         util: 'FO3Edit v4.0.2e'
   - name: 'FOOK2 - Main.esp'
-    tag:
-      - Delev
-      - Relev
     clean:
       - crc: 0x84EEFB8E
         util: 'FO3Edit v4.0.2e'
   - name: 'FOOK2 - [DIK] DLC Improvement Kit.esp'
     after: [ 'FOOK2 - Main.esp' ]
+    tag: [ NoMerge ]
     clean:
       - crc: 0xC36DD709
         util: 'FO3Edit v4.0.2e'
@@ -2075,6 +2107,7 @@ plugins:
     after:
       - 'FOOK2 - Main.esp'
       - 'FOOK2 - [DIK] DLC Improvement Kit.esp'
+    tag: [ Text ]
     clean:
       - crc: 0x893514E3
         util: 'FO3Edit v4.0.2e'
@@ -2083,6 +2116,7 @@ plugins:
       - 'FOOK2 - Main.esp'
       - 'FOOK2 - Main [Hotfix].esp'
       - 'FOOK2 - [DIK] DLC Improvement Kit.esp'
+    tag: [ Text ]
     clean:
       - crc: 0x61940688
         util: 'FO3Edit v4.0.2e'
