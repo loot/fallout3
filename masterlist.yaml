@@ -1921,6 +1921,66 @@ plugins:
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         udr: 2312
 
+  - name: 'Destruction.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1904/' ]
+    tag:
+      - Destructible
+      - Scripts
+    clean:
+      - crc: 0xBD5F2D97
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Destruction - Main.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1904/' ]
+    tag:
+      - Destructible
+      - Graphics
+      - Scripts
+    clean:
+      - crc: 0x166F49CF
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Destruction - DLC.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1904/' ]
+    tag:
+      - Destructible
+      - Scripts
+    clean:
+      - crc: 0x5E0D32E3
+        util: 'FO3Edit v4.0.2e'
+  - name: 'Destruction - Main - Statics.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1904/' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xD9B8D76C
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 7
+  - name: 'Destruction - DLC - Statics.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1904/' ]
+    clean:
+      - crc: 0x04CF4703
+        util: 'FO3Edit v4.0.2e'
+  # Destruction - FOOK2 Version #
+  - name: 'FOOK2 - [DESTRUCTION] Main.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1904/' ]
+    tag:
+      - Destructible
+      - Scripts
+  - name: 'FOOK2 - [DESTRUCTION] DIK.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1904/' ]
+    tag:
+      - Destructible
+      - Scripts
+  - name: 'FOOK2 - [DESTRUCTION] Mothership Zeta.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1904/' ]
+    tag:
+      - Destructible
+      - Scripts
+  # Destruction - Compatibility Patches #
+  - name: 'Destruction - CP - Fellout.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1904/' ]
+    clean:
+      - crc: 0x16BE22B6
+        util: 'FO3Edit v4.0.2e'
+
   - name: 'Sprinvale performance.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22558/' ]
     dirty:
@@ -2738,14 +2798,6 @@ plugins:
     clean:
       - crc: 0xBFCE2871
         util: 'FO3Edit v4.0.2e'
-  - name: 'Destruction.esm'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/1904' ]
-    tag:
-      - Destructible
-      - Scripts
-    clean:
-      - crc: 0xBD5F2D97
-        util: 'FO3Edit v4.0.2e'
   - name: 'xCALIBRuniverse.esm'
     url: []
     tag:
@@ -3337,40 +3389,6 @@ plugins:
     tag: [ Graphics ]
   - name: 'loadingsc.esp'
     tag: [ Graphics ]
-  - name: 'Destruction - Main.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/1904' ]
-    tag:
-      - Destructible
-      - Graphics
-      - Scripts
-    clean:
-      - crc: 0x166F49CF
-        util: 'FO3Edit v4.0.2e'
-  - name: 'Destruction - Main - Statics.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/1904' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0xD9B8D76C
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 7
-  - name: 'Destruction - DLC.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/1904' ]
-    tag:
-      - Destructible
-      - Scripts
-    clean:
-      - crc: 0x5E0D32E3
-        util: 'FO3Edit v4.0.2e'
-  - name: 'Destruction - DLC - Statics.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/1904' ]
-    clean:
-      - crc: 0x04CF4703
-        util: 'FO3Edit v4.0.2e'
-  - name: 'Destruction - CP - Fellout.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/1904' ]
-    clean:
-      - crc: 0x16BE22B6
-        util: 'FO3Edit v4.0.2e'
   - name: 'Destructable Building Materials 3000 Beta v1.5( (PITT REQUIRED))?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12978' ]
     msg:
@@ -3546,18 +3564,6 @@ plugins:
   - name: 'Vault 89 (player home) V1-35.esp'
     inc: [ 'FNNSys.esm' ]
     tag: [ Scripts ]
-  - name: 'FOOK2 - [DESTRUCTION] Main.esp'
-    tag:
-      - Destructible
-      - Scripts
-  - name: 'FOOK2 - [DESTRUCTION] DIK.esp'
-    tag:
-      - Destructible
-      - Scripts
-  - name: 'FOOK2 - [DESTRUCTION] Mothership Zeta.esp'
-    tag:
-      - Destructible
-      - Scripts
   - name: 'Apocalypse Armory.esp'
     tag:
       - Delev
