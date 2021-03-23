@@ -2078,13 +2078,6 @@ plugins:
     clean:
       - crc: 0x61940688
         util: 'FO3Edit v4.0.2e'
-  # Old version files
-  - name: 'FOOK.ESM'
-    msg:
-      - <<: *obsolete
-        subs: [ '[FOOK2](https://www.nexusmods.com/fallout3/mods/4448/)' ]
-  - name: 'FOOK2 - [WANK] World And Neighbourhood Kit.esm'
-    inc: [ *FOOK2v1_1 ]
 
   - name: 'FO3 Wanderers Edition - .*\.es(m|p)'
     url:
