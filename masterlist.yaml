@@ -2045,8 +2045,11 @@ plugins:
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 6
 
+  - name: 'FOOK2 - (Main|\[DIK\] DLC Improvement Kit)\.ESM'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/4448/'
+        name: 'FOOK2 - Fallout Overhaul Kit'
   - name: 'FOOK2 - Main.ESM'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/4448' ]
     tag:
       - Actors.ACBS
       - Actors.AIData
