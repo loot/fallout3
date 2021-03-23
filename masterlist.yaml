@@ -1,9 +1,5 @@
 common:
 # Files
-  - &FOOK2v1_1
-    name: 'FOOK2 - Main.esm'
-    display: 'FOOK2 v1.1+'
-    condition: 'version("FOOK2 - Main.esm", "1.1", >=)'
   - &FOSE
     name: '../fose_loader.exe'
     display: '[FOSE](https://fose.silverlock.org/)'
@@ -3545,18 +3541,6 @@ plugins:
   - name: 'Vault 89 (player home) V1-35.esp'
     inc: [ 'FNNSys.esm' ]
     tag: [ Scripts ]
-  - name: 'FOOK2 - [EVE] Energy Visuals Enhanced.esp'
-    inc: [ *FOOK2v1_1 ]
-  - name: 'MyFOOK2 - Color Tranquility Lane.esp'
-    inc: [ *FOOK2v1_1 ]
-  - name: 'MyFOOK2 - No Nightvision on Power Helmets.esp'
-    inc: [ *FOOK2v1_1 ]
-  - name: 'MyFOOK2 - No RAPE Victims.esp'
-    inc: [ *FOOK2v1_1 ]
-  - name: 'MyFOOK2 - S.H.A.D.E.esp'
-    inc: [ *FOOK2v1_1 ]
-  - name: 'MyFOOK2 - Black & White Tranquility Lane.esp'
-    inc: [ *FOOK2v1_1 ]
   - name: 'FOOK2 - [DESTRUCTION] Main.esp'
     tag:
       - Destructible
@@ -3569,10 +3553,6 @@ plugins:
     tag:
       - Destructible
       - Scripts
-  - name: 'FPS Grenade Hotkey - FOOK2.esp'
-    inc: [ *FOOK2v1_1 ]
-  - name: 'FPS Grenade Hotkey - FOOK2 DIK.esp'
-    inc: [ *FOOK2v1_1 ]
   - name: 'Apocalypse Armory.esp'
     tag:
       - Delev
