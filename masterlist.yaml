@@ -788,6 +788,7 @@ bash_tags:
   - 'Actors.Spells'
   - 'Actors.SpellsForceAdd'
   - 'Actors.Stats'
+  - 'Actors.Voice'
   - 'C.Acoustic'
   - 'C.Climate'
   - 'C.Encounter'
