@@ -2067,14 +2067,22 @@ plugins:
       - crc: 0x84EEFB8E
         util: 'FO3Edit v4.0.2e'
   - name: 'FOOK2 - [DIK] DLC Improvement Kit.esp'
+    after: [ 'FOOK2 - Main.esp' ]
     clean:
       - crc: 0xC36DD709
         util: 'FO3Edit v4.0.2e'
   - name: 'FOOK2 - Main [Hotfix].esp'
+    after:
+      - 'FOOK2 - Main.esp'
+      - 'FOOK2 - [DIK] DLC Improvement Kit.esp'
     clean:
       - crc: 0x893514E3
         util: 'FO3Edit v4.0.2e'
   - name: 'FOOK2 - DIK [Hotfix].esp'
+    after:
+      - 'FOOK2 - Main.esp'
+      - 'FOOK2 - Main [Hotfix].esp'
+      - 'FOOK2 - [DIK] DLC Improvement Kit.esp'
     clean:
       - crc: 0x61940688
         util: 'FO3Edit v4.0.2e'
