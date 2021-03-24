@@ -1926,10 +1926,12 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/1904/'
         name: 'Destruction - Realistic Destroyable Environments Mod'
   - name: 'Destruction.esm'
+    group: *fixesGroup
     clean:
       - crc: 0xBD5F2D97
         util: 'FO3Edit v4.0.2e'
   - name: 'Destruction - (Main|DLC)\.esp'
+    group: *earlyLoadersGroup
     tag:
       - Destructible
       - Scripts
@@ -1944,12 +1946,14 @@ plugins:
       - crc: 0x5E0D32E3
         util: 'FO3Edit v4.0.2e'
   - name: 'Destruction - Main - Statics.esp'
+    group: *earlyLoadersGroup
     dirty:
       - <<: *quickClean
         crc: 0xD9B8D76C
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 7
   - name: 'Destruction - DLC - Statics.esp'
+    group: *earlyLoadersGroup
     after: [ 'Destruction - Main - Statics.esp' ]
     clean:
       - crc: 0x04CF4703
