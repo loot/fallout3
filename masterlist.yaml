@@ -2049,6 +2049,8 @@ plugins:
       - Actors.ACBS
       - Actors.AIPackages
       - Actors.Stats
+      - Actors.Voice
+      - C.Light
       - Deflst
       - Delev
       - Destructible
