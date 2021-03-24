@@ -1077,6 +1077,7 @@ plugins:
       - Actors.Skeleton
       - Actors.Spells
       - Actors.Stats
+      - Actors.Voice
       - C.Acoustic
       - C.Encounter
       - C.ImageSpace
@@ -1122,6 +1123,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/19122/' ]
     tag:
       - Delev
+      - Destructible
+      - Graphics
       - Invent.Add
       - Invent.Remove
       - Names
