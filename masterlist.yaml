@@ -1957,6 +1957,12 @@ plugins:
       - crc: 0x04CF4703
         util: 'FO3Edit v4.0.3'
   # Destruction - FOOK2 Version #
+  - name: 'FOOK2 - \[DESTRUCTION\].*\.esp'
+    after:
+      - 'FOOK2 - Main.esp'
+      - 'FOOK2 - [DIK] DLC Improvement Kit.esp'
+      - 'FOOK2 - Main [Hotfix].esp'
+      - 'FOOK2 - DIK [Hotfix].esp'
   - name: 'FOOK2 - \[DESTRUCTION\] (Main|DIK|Mothership Zeta)\.esp'
     tag:
       - Destructible
