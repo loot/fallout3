@@ -1,9 +1,5 @@
 common:
 # Files
-  - &FOOK2v1_1
-    name: 'FOOK2 - Main.esm'
-    display: 'FOOK2 v1.1+'
-    condition: 'version("FOOK2 - Main.esm", "1.1", >=)'
   - &FOSE
     name: '../fose_loader.exe'
     display: '[FOSE](https://fose.silverlock.org/)'
@@ -2045,6 +2041,68 @@ plugins:
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 6
 
+  - name: 'FOOK2 - (Main|\[DIK\] DLC Improvement Kit)\.ESM'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/4448/'
+        name: 'FOOK2 - Fallout Overhaul Kit'
+    tag:
+      - Actors.ACBS
+      - Actors.AIPackages
+      - Actors.Stats
+      - Actors.Voice
+      - C.Light
+      - Deflst
+      - Delev
+      - Destructible
+      - Factions
+      - Graphics
+      - Invent.Add
+      - Invent.Remove
+      - Names
+      - NPC.Class
+      - NPC.Race
+      - Relev
+      - Stats
+      - Text
+  - name: 'FOOK2 - Main.ESM'
+    tag:
+      - Actors.AIData
+      - Actors.Spells
+      - Relations.Add
+      - Relations.Change
+      - Sound
+    clean:
+      - crc: 0x7315B71D
+        util: 'FO3Edit v4.0.3'
+  - name: 'FOOK2 - [DIK] DLC Improvement Kit.ESM'
+    clean:
+      - crc: 0xE3578337
+        util: 'FO3Edit v4.0.3'
+  - name: 'FOOK2 - Main.esp'
+    clean:
+      - crc: 0x84EEFB8E
+        util: 'FO3Edit v4.0.3'
+  - name: 'FOOK2 - [DIK] DLC Improvement Kit.esp'
+    after: [ 'FOOK2 - Main.esp' ]
+    tag: [ NoMerge ]
+    clean:
+      - crc: 0xC36DD709
+        util: 'FO3Edit v4.0.3'
+  - name: 'FOOK2 - (Main|DIK) \[Hotfix\]\.esp'
+    after:
+      - 'FOOK2 - Main.esp'
+      - 'FOOK2 - [DIK] DLC Improvement Kit.esp'
+    tag: [ Text ]
+  - name: 'FOOK2 - Main [Hotfix].esp'
+    clean:
+      - crc: 0x893514E3
+        util: 'FO3Edit v4.0.3'
+  - name: 'FOOK2 - DIK [Hotfix].esp'
+    after: [ 'FOOK2 - Main [Hotfix].esp' ]
+    clean:
+      - crc: 0x61940688
+        util: 'FO3Edit v4.0.3'
+
   - name: 'FO3 Wanderers Edition - .*\.es(m|p)'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/2761/'
@@ -2734,22 +2792,6 @@ plugins:
       - Relev
       - Scripts
       - Stats
-  - name: 'FOOK2 - Main.ESM'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/4448' ]
-    tag:
-      - Factions
-      - Invent
-      - Relations
-      - Stats
-    clean:
-      - crc: 0x7315B71D
-        util: 'FO3Edit v4.0.2e'
-  - name: 'FOOK.ESM'
-    msg:
-      - <<: *obsolete
-        subs: [ '[FOOK2](https://www.nexusmods.com/fallout3/mods/4448/)' ]
-  - name: 'FOOK2 - [WANK] World And Neighbourhood Kit.esm'
-    inc: [ *FOOK2v1_1 ]
   - name: 'Companion Core.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/712' ]
     dirty:
@@ -3501,41 +3543,6 @@ plugins:
   - name: 'Vault 89 (player home) V1-35.esp'
     inc: [ 'FNNSys.esm' ]
     tag: [ Scripts ]
-  - name: 'FOOK2 - Main.esp'
-    tag:
-      - Delev
-      - Relev
-    clean:
-      - crc: 0x84EEFB8E
-        util: 'FO3Edit v4.0.2e'
-  - name: 'FOOK2 - [EVE] Energy Visuals Enhanced.esp'
-    inc: [ *FOOK2v1_1 ]
-  - name: 'FOOK2 - Main [Hotfix].esp'
-    clean:
-      - crc: 0x893514E3
-        util: 'FO3Edit v4.0.2e'
-  - name: 'FOOK2 - DIK [Hotfix].esp'
-    clean:
-      - crc: 0x61940688
-        util: 'FO3Edit v4.0.2e'
-  - name: 'FOOK2 - [DIK] DLC Improvement Kit.ESM'
-    clean:
-      - crc: 0xE3578337
-        util: 'FO3Edit v4.0.2e'
-  - name: 'FOOK2 - [DIK] DLC Improvement Kit.esp'
-    clean:
-      - crc: 0xC36DD709
-        util: 'FO3Edit v4.0.2e'
-  - name: 'MyFOOK2 - Color Tranquility Lane.esp'
-    inc: [ *FOOK2v1_1 ]
-  - name: 'MyFOOK2 - No Nightvision on Power Helmets.esp'
-    inc: [ *FOOK2v1_1 ]
-  - name: 'MyFOOK2 - No RAPE Victims.esp'
-    inc: [ *FOOK2v1_1 ]
-  - name: 'MyFOOK2 - S.H.A.D.E.esp'
-    inc: [ *FOOK2v1_1 ]
-  - name: 'MyFOOK2 - Black & White Tranquility Lane.esp'
-    inc: [ *FOOK2v1_1 ]
   - name: 'FOOK2 - [DESTRUCTION] Main.esp'
     tag:
       - Destructible
@@ -3548,10 +3555,6 @@ plugins:
     tag:
       - Destructible
       - Scripts
-  - name: 'FPS Grenade Hotkey - FOOK2.esp'
-    inc: [ *FOOK2v1_1 ]
-  - name: 'FPS Grenade Hotkey - FOOK2 DIK.esp'
-    inc: [ *FOOK2v1_1 ]
   - name: 'Apocalypse Armory.esp'
     tag:
       - Delev
