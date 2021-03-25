@@ -1348,10 +1348,6 @@ plugins:
   - name: 'DynamicCrosshair.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15724' ]
     req: [ *FOSE ]
-    inc:
-      - 'DarNifiedUIF3.esp'
-      - name: 'Textures/MTUI'
-        display: 'MTUI'
     clean:
       - crc: 0xAF474D90
         util: 'FO3Edit v4.0.2e'
@@ -5674,7 +5670,6 @@ plugins:
         itm: 3
   - name: 'DarNifiedUIF3.esp'
     url: [ 'http://modsreloaded.com/darnified-ui-f3' ]
-    inc: [ 'DynamicCrosshair.esp' ]
     clean:
       - crc: 0x33D1F89A
         util: 'FO3Edit v4.0.2e'
