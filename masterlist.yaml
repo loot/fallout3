@@ -1345,6 +1345,16 @@ plugins:
       - Names
       - NoMerge
 
+  - name: 'DynamicCrosshair.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15724/' ]
+    req: [ *FOSE ]
+    msg:
+      - <<: *compatIssuesWithX
+        subs: [ 'User Interface HUD mods (e.g. Darnified UI, MTUI)' ]
+    clean:
+      - crc: 0xAF474D90
+        util: 'FO3Edit v4.0.3'
+
 ###### AudioVisual - Models & Textures ######
   - name: 'UWWUT.*\.esp'
     url:
@@ -5663,19 +5673,8 @@ plugins:
         itm: 3
   - name: 'DarNifiedUIF3.esp'
     url: [ 'http://modsreloaded.com/darnified-ui-f3' ]
-    inc: [ 'DynamicCrosshair.esp' ]
     clean:
       - crc: 0x33D1F89A
-        util: 'FO3Edit v4.0.2e'
-  - name: 'DynamicCrosshair.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/15724' ]
-    req: [ *FOSE ]
-    inc:
-      - 'DarNifiedUIF3.esp'
-      - name: 'Textures/MTUI'
-        display: 'MTUI'
-    clean:
-      - crc: 0xAF474D90
         util: 'FO3Edit v4.0.2e'
   - name: 'Existence 2.0.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5612' ]
