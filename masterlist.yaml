@@ -1346,7 +1346,7 @@ plugins:
       - NoMerge
 
   - name: 'DynamicCrosshair.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/15724' ]
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15724/' ]
     req: [ *FOSE ]
     msg:
       - <<: *compatIssuesWithX
