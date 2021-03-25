@@ -1348,6 +1348,9 @@ plugins:
   - name: 'DynamicCrosshair.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15724' ]
     req: [ *FOSE ]
+    msg:
+      - <<: *compatIssuesWithX
+        subs: [ 'User Interface HUD mods (e.g. Darnified UI, MTUI)' ]
     clean:
       - crc: 0xAF474D90
         util: 'FO3Edit v4.0.2e'
