@@ -1386,9 +1386,7 @@ plugins:
 ###### AudioVisual - Weather & Lighting ######
   - name: 'Clarity( - Dark Nights)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21319/' ]
-    tag:
-      - Graphics
-      - NoMerge
+    tag: [ Graphics ]
     msg:
       - <<: *useOnlyOneX
         subs: [ 'Clarity ESP' ]
