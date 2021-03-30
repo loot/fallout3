@@ -1,10 +1,13 @@
+# LOOT ignores anything that doesn't come under 'bash_tags', 'globals',
+# 'groups', or 'plugins', so a section like 'common' is useful for storing
+# data that gets re-used.
 common:
-# Files
+# File Anchors
   - &FOSE
     name: '../fose_loader.exe'
     display: '[FOSE](https://fose.silverlock.org/)'
 
-# Messages
+# Message Anchors
   - &alreadyInX
     type: error
     content:
@@ -775,7 +778,7 @@ common:
         text: 'Denna plugin innehåller vilda föränringar utanför ITM och UDR-records samt borttagna navmeshes och kan kräva ytterligare manuell rensning för att inte störa andra moddar. %1%'
     subs: [ '' ]
 
-# Dirty Aliases
+# Cleaning Data Anchors
   - &quickClean
     util: '[FO3Edit](https://www.nexusmods.com/fallout3/mods/637)'
     info:
@@ -803,6 +806,7 @@ common:
         text: 'En guide till att rensa plugins med xEdit finns [här](https://tes5edit.github.io/docs/7-mod-cleaning-and-error-checking.html#ThreeEasyStepstocleanMods).'
       - lang: zh_CN
         text: 'xEdit的清洁插件指南可以在[这里](https://tes5edit.github.io/docs/7-mod-cleaning-and-error-checking.html#ThreeEasyStepstocleanMods)找到。'
+
   - &reqManualFix
     util: '[FO3Edit](https://www.nexusmods.com/fallout3/mods/637)'
     info:
@@ -945,7 +949,8 @@ globals:
       - lang: zh_CN
         text: '[最新的LOOT版本](%1%)。'
     subs: [ 'https://loot.github.io/latest-thread/' ]
-# FOSE plugins - Requirements
+
+# FOSE Plugin Requirements
   - type: error
     content:
       - lang: en
