@@ -4571,8 +4571,7 @@ plugins:
       - Deflst
       - Graphics
       - Stats
-  - name: 'Fallout 3 Sexus with Children Empire.esp'
-    msg: [ *obsolete ]
+
   - name: 'Ghouls Cohabitate.esp'
     tag: [ ScriptContents ]
   - name: 'infiltrations.esp'
