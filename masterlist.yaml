@@ -4556,10 +4556,16 @@ plugins:
     tag:
       - Actors.ACBS
       - Scripts
-  - name: 'Easier_hacking_5_8.esp'
-    inc: [ 'Lucky_hacking_5.esp' ]
-  - name: 'Lucky_hacking_5.esp'
-    inc: [ 'Easier_hacking_5_8.esp' ]
+
+  - name: '(Action_Boy_hacking|Easier_hacking_5_8|Lucky_hacking_5)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/2333/'
+        name: 'Hacking Terminals Is Easier'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Hacking Terminals Is Easier ESP' ]
+        condition: 'many("(Action_Boy_hacking|Easier_hacking_5_8|Lucky_hacking_5)\.esp")'
+
   - name: 'EWE DLC Addon.esp'
     tag:
       - Deflst
