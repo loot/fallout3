@@ -71,6 +71,8 @@ common:
         text: 'Usuń. Już zawarte lub naprawione w %1%.'
       - lang: pt_BR
         text: 'Apague. Já incluído ou consertado em %1%.'
+      - lang: pt_PT
+        text: 'Apagar. Já incluído ou reparado em %1%.'
       - lang: ru
         text: 'Удалите. Уже включено в %1% или исправлено иным образом.'
       - lang: sv
@@ -102,6 +104,8 @@ common:
         text: 'Jest wysoce wskazane abyś używał także %1%.'
       - lang: pt_BR
         text: 'É altamente recomendado que você também use %1%.'
+      - lang: pt_PT
+        text: 'É altamente recomendado que você também use %1%.'
       - lang: sv
         text: 'Det är rekommenderat att du också använder %1%.'
 
@@ -121,6 +125,8 @@ common:
       - lang: ko
         text: '이 플러그인은 %1%와의 호환성 문제가 있습니다. 자세한 내용은 이 모드의 호환성 정보를 확인해주세요.'
       - lang: pt_BR
+        text: 'Este plugin tem problemas de compatibilidade com %1%. Para mais informações, leia as notas de compatibilidade deste mod.'
+      - lang: pt_PT
         text: 'Este plugin tem problemas de compatibilidade com %1%. Para mais informações, leia as notas de compatibilidade deste mod.'
       - lang: sv
         text: 'Det här pluginet är inte helt kompatibelt med %1%. För mer information, läs det här moddets kompabilitetsanteckningar.'
@@ -176,6 +182,8 @@ common:
         text: 'Ten plik jest zepsuty i nie powinien być używany.'
       - lang: pt_BR
         text: 'Este arquivo está corrompido e não deveria ser utilizado.'
+      - lang: pt_PT
+        text: 'Este ficheiro está corrompido e não deve ser utilizado.'
       - lang: ru
         text: 'Файл испорчен и не должен использоваться.'
       - lang: sv
@@ -199,6 +207,8 @@ common:
       - lang: pl
         text: 'Usuń lub dezaktywuj. %1%'
       - lang: pt_BR
+        text: 'Apague ou desative. %1%'
+      - lang: pt_PT
         text: 'Apague ou desative. %1%'
       - lang: ru
         text: 'Не забудьте отключить или удалить. %1%'
@@ -279,6 +289,8 @@ common:
         text: 'Część wymagań dla tej wtyczki wydaje się być brakująca. Upewnij się że poprawnie zainstalowałeś **%1%**.'
       - lang: pt_BR
         text: 'Alguns dos requerimentos deste plugin estão faltando. Por favor tenha certeza de que você instalou **%1%** corretamente.'
+      - lang: pt_PT
+        text: 'Alguns dos requerimentos deste plugin estão em falta. Por favor confirme que você instalou **%1%** corretamente.'
       - lang: ru
         text: 'Некоторые его требования отсутствуют. Убедитесь, что правильно установили **%1%**.'
       - lang: sv
@@ -307,6 +319,8 @@ common:
         text: 'Przestarzały. Uaktualnij do ostatniej wersji. %1%'
       - lang: pt_BR
         text: 'Obsoleto. Atualize para a última versão %1%.'
+      - lang: pt_PT
+        text: 'Obsoleto. Atualize para a versão mais recente. %1%'
       - lang: ru
         text: 'Устарело. Обновите до последней версии. %1%'
       - lang: sv
@@ -410,6 +424,8 @@ common:
         text: '이 모드가 %1%와 완전히 호환되도록하려면 패치가 필요합니다. 현재 다운로드 할 수있는 항목이 없습니다.'
       - lang: pt_BR
         text: 'Um patch é necessário para fazer esse mod ser totalmente compatível com %1%. No entanto, não há nenhum patch atualmente disponível para download.'
+      - lang: pt_PT
+        text: 'Um patch é necessário para fazer este mod ser totalmente compatível com %1%. Atualmente, nenhum está disponível para download.'
       - lang: sv
         text: 'En kompabilitetspatch krävs för att för att göra det moddet fullständigt kompatibelt med %1%. Ingen kompabilitetspatch finns tillgänglig för nedladdning.'
 
@@ -462,6 +478,8 @@ common:
         text: 'Wymaga: %1%'
       - lang: pt_BR
         text: 'Requer: %1%'
+      - lang: pt_PT
+        text: 'Requer: %1%'
       - lang: ru
         text: 'Требуется: %1%'
       - lang: sv
@@ -512,6 +530,8 @@ common:
         text: '이 플러그인 대신 Bashed Patch의 트윅을 사용할 수 있습니다. %1%'
       - lang: pt_BR
         text: 'Uma tweak do Bashed Patch pode ser utilizada no lugar deste plugin. %1%'
+      - lang: pt_PT
+        text: 'Um Bashed Patch modificado pode ser utilizado em vez deste plugin. %1%'
       - lang: sv
         text: 'En Bashed Patch Tweak kan användas istället för det här pluginet. %1%'
     subs: [ '' ]
@@ -534,6 +554,8 @@ common:
         text: '대신 %1%를 사용하십시오.'
       - lang: pt_BR
         text: 'Use %1% ao invés disso.'
+      - lang: pt_PT
+        text: 'Use %1% ao invés disto.'
       - lang: sv
         text: 'Använd %1% istället.'
 
@@ -590,6 +612,8 @@ common:
         text: 'Użyj wersji %1%.'
       - lang: pt_BR
         text: 'Use a versão %1%.'
+      - lang: pt_PT
+        text: 'Use a versão %1%.'
       - lang: ru
         text: 'Используйте версию для %1%.'
       - lang: sv
@@ -633,6 +657,8 @@ common:
       - lang: pl
         text: 'Użyj wersji innej niż %1%.'
       - lang: pt_BR
+        text: 'Use a versão não-%1%.'
+      - lang: pt_PT
         text: 'Use a versão não-%1%.'
       - lang: sv
         text: 'Använd en icke-%1% version.'
@@ -1008,6 +1034,8 @@ globals:
       - lang: ko
         text: 'NVAC는 **NVSE/플러그인** 아래에 설치되지만 %2%에 대해 선택하려면 %1%에 대해 **%1%/Plugins**로 이동해야합니다.'
       - lang: pt_BR
+        text: 'O NVAC está instalado em **NVSE/Plugins** porém precisa ser movido para **%1%/Plugins** para que o %1% o reconheça para o %2%.'
+      - lang: pt_PT
         text: 'O NVAC está instalado em **NVSE/Plugins** porém precisa ser movido para **%1%/Plugins** para que o %1% o reconheça para o %2%.'
     subs:
       - 'FOSE'
