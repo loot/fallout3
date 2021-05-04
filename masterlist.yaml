@@ -2988,6 +2988,8 @@ plugins:
         util: 'FO3Edit v4.0.3'
 
 ###### 3RD Party Patches ######
+  - name: 'Blackened .*\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
   - name: 'Blackened .*FWE .*\.esp'
     after:
       - 'FO3 Wanderers Edition - Main File.esp'
@@ -3015,32 +3017,26 @@ plugins:
         subs: [ 'Blackened FO3 Redesigned HD patch' ]
         condition: 'many("Blackened .*(Project Beauty).*\.esp")'
   - name: 'Blackened EVE + Project Beauty.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
     clean:
       - crc: 0x0EDFEDE2
         util: 'FO3Edit v4.0.2e'
   - name: 'Blackened FWE + EVE.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
     clean:
       - crc: 0x5D22DE24
         util: 'FO3Edit v4.0.2e'
   - name: 'Blackened FWE + EVE + Project Beauty.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
     clean:
       - crc: 0xB5C3CE4A
         util: 'FO3Edit v4.0.2e'
   - name: 'Blackened FWE + MMM.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
     clean:
       - crc: 0xE84ACBCE
         util: 'FO3Edit v4.0.2e'
   - name: 'Blackened FWE + MMM + EVE.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
     clean:
       - crc: 0xF9C7C3F8
         util: 'FO3Edit v4.0.2e'
   - name: 'Blackened FWE + MMM + EVE + Project Beauty.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
     after:
       - 'Impact.esp'
       - 'WeaponModKits - FWE Master Release.esp'
@@ -3060,12 +3056,10 @@ plugins:
       - crc: 0x010B36EC
         util: 'FO3Edit v4.0.2e'
   - name: 'Blackened FWE + MMM + EVE + Project Beauty + Destruction.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
     clean:
       - crc: 0x9BBFC6B5
         util: 'FO3Edit v4.0.2e'
   - name: 'Blackened FWE + MMM + Project Beauty.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
     tag:
       - Actors.Stats
       - Factions
@@ -3077,44 +3071,36 @@ plugins:
       - crc: 0x0C3D6E50
         util: 'FO3Edit v4.0.2e'
   - name: 'Blackened MMM + EVE.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
     clean:
       - crc: 0x40F56004
         util: 'FO3Edit v4.0.2e'
   - name: 'Blackened MMM + EVE + Project Beauty.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
     clean:
       - crc: 0x6100721D
         util: 'FO3Edit v4.0.2e'
   - name: 'Blackened RH + FWE + EVE.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
     after: [ 'Blackened FWE + MMM + EVE + Project Beauty.esp' ]
     clean:
       - crc: 0xB30A2388
         util: 'FO3Edit v4.0.2e'
   # Blackened - optional files #
   - name: 'Destruction - DC Moods.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
     clean:
       - crc: 0x9952050A
         util: 'FO3Edit v4.0.2e'
   - name: 'Destruction - FNNsys.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
     clean:
       - crc: 0x8B306831
         util: 'FO3Edit v4.0.2e'
   - name: 'Destruction - xCALIBRammo_FWE.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
     clean:
       - crc: 0x484BD230
         util: 'FO3Edit v4.0.2e'
   - name: 'Gunfire Sound Range Increased - Core + DLC + EVE.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
     clean:
       - crc: 0xE5EEC89C
         util: 'FO3Edit v4.0.2e'
   - name: 'Gunfire Sound Range Increased - Core + DLC + EVE + FWE.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
     clean:
       - crc: 0xB1BC598F
         util: 'FO3Edit v4.0.2e'
