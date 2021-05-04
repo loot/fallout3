@@ -2988,7 +2988,7 @@ plugins:
         util: 'FO3Edit v4.0.3'
 
 ###### 3RD Party Patches ######
-  - name: 'Blackened .* FWE .*\.esp'
+  - name: 'Blackened .*FWE .*\.esp'
     after:
       - 'FO3 Wanderers Edition - Main File.esp'
       - 'FO3 Wanderers Edition - DLC Anchorage.esp'
