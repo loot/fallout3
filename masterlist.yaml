@@ -2997,6 +2997,11 @@ plugins:
       - 'FO3 Wanderers Edition - DLC Point Lookout.esp'
       - 'FO3 Wanderers Edition - DLC Mothership Zeta.esp'
       - 'UUF3P - FWE Patch.esp'
+  - name: 'Blackened FWE .*\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Blackened FO3 Wanderers Edition patch' ]
+        condition: 'many("Blackened FWE .*\.esp")'
   - name: 'Blackened .*(Project Beauty).*\.esp'
     inc:
       - name: 'Project Beauty.esm'
