@@ -2988,6 +2988,15 @@ plugins:
         util: 'FO3Edit v4.0.3'
 
 ###### 3RD Party Patches ######
+  - name: 'Blackened .* FWE .*\.esp'
+    after:
+      - 'FO3 Wanderers Edition - Main File.esp'
+      - 'FO3 Wanderers Edition - DLC Anchorage.esp'
+      - 'FO3 Wanderers Edition - DLC The Pitt.esp'
+      - 'FO3 Wanderers Edition - DLC Broken Steel.esp'
+      - 'FO3 Wanderers Edition - DLC Point Lookout.esp'
+      - 'FO3 Wanderers Edition - DLC Mothership Zeta.esp'
+      - 'UUF3P - FWE Patch.esp'
   - name: 'Blackened .*(Project Beauty).*\.esp'
     inc:
       - name: 'Project Beauty.esm'
@@ -3029,7 +3038,6 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
     after:
       - 'Impact.esp'
-      - 'UUF3P - FWE Patch.esp'
       - 'WeaponModKits - FWE Master Release.esp'
     tag:
       - Actors.Stats
@@ -3048,20 +3056,11 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Blackened FWE + MMM + EVE + Project Beauty + Destruction.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
-    after:
-      - 'Destruction - Main.esp'
-      - 'Destruction - DLC.esp'
-      - 'FO3 Wanderers Edition - DLC Anchorage.esp'
-      - 'FO3 Wanderers Edition - DLC Mothership Zeta.esp'
-      - 'Project Beauty- Broken Steel.esp'
-      - 'Project Beauty- Point Lookout.esp'
     clean:
       - crc: 0x9BBFC6B5
         util: 'FO3Edit v4.0.2e'
   - name: 'Blackened FWE + MMM + Project Beauty.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
-    after: [ 'UUF3P - FWE Patch.esp' ]
-    req: [ 'FO3 Wanderers Edition - Main File.esp' ]
     tag:
       - Actors.Stats
       - Factions
