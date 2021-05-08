@@ -1077,6 +1077,8 @@ globals:
         text: 'NVAC ist unter **NVSE/Plugins** installiert aber es muss nach **%1%/Plugins** verschoben werden um von %1% erkannt zu werden für %2%.'
       - lang: it
         text: 'NVAC è installato in **NVSE/Plugins** ma deve essere spostato in **%1%/Plugins** per permettere a %1% di essere usato da %2%.'
+      - lang: ja
+        text: 'NVAC は **NVSE/Plugins** の下にインストールされていますが、%1% が %2% に引き上げるために **%1%/Plugins** に移動する必要があります。'
       - lang: ko
         text: 'NVAC는 **NVSE/플러그인** 아래에 설치되지만 %2%에 대해 선택하려면 %1%에 대해 **%1%/Plugins**로 이동해야합니다.'
       - lang: pt_BR
