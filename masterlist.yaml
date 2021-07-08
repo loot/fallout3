@@ -2160,6 +2160,32 @@ plugins:
             text: 'Legacy File - Only required if the mod configuration menu setting does not work.'
         condition: 'file("Mart''s Mutant Mod - Master Menu Module.esp") or checksum("Mart''s Mutant Mod.esm", DC2E29E4)'
 
+###### Encounters - Neutrals ######
+  - name: 'MTC Wasteland Travellers.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6044/' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x0A7E3339
+        util: '[FO3Edit v4.0.3g](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 55
+  - name: 'MTC Wasteland Travellers \(Optional\)- Crowded Cities( less NPCs)?\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Crowded Cities ESP' ]
+        condition: 'many("MTC Wasteland Travellers \(Optional\)- Crowded Cities( less NPCs)?\.esp")'
+  - name: 'MTC Wasteland Travellers (Optional)- Crowded Cities.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x0E577EE9
+        util: '[FO3Edit v4.0.3g](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 23
+  - name: 'MTC Wasteland Travellers (Optional)- Crowded Cities less NPCs.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x540018FA
+        util: '[FO3Edit v4.0.3g](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 19
+
 ###### Environment, Landscape & Flora ######
   - name: 'Barren Badlands.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21842/' ]
@@ -3879,29 +3905,7 @@ plugins:
     tag: [ Names ]
   - name: 'Named Wasteland.esp'
     tag: [ Names ]
-  - name: 'MTC Wasteland Travellers.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6044' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0x0A7E3339
-        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 55
-  - name: 'MTC Wasteland Travellers (Optional)- Crowded Cities.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6044' ]
-    inc: [ 'MTC Wasteland Travellers (Optional)- Crowded Cities less NPCs.esp' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0x0E577EE9
-        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 23
-  - name: 'MTC Wasteland Travellers (Optional)- Crowded Cities less NPCs.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6044' ]
-    inc: [ 'MTC Wasteland Travellers (Optional)- Crowded Cities.esp' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0x540018FA
-        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 19
+
   - name: 'Outcast Scribes03.esp'
     inc: [ 'OutcastCasdinArmorFix.esp' ]
   - name: 'royphilipsevil.esp'
