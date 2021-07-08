@@ -3063,13 +3063,13 @@ plugins:
     dirty:
       - <<: *reqManualFix
         crc: 0x81581FCA
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        util: '[FO3Edit v4.0.3g](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 213
         udr: 54
         nav: 16
       - <<: *reqManualFix
-        crc: 0x3B757A80
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        crc: 0x109EBB71
+        util: '[FO3Edit v4.0.3g](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 16
 
 ###### New Items ######
