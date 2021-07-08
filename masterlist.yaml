@@ -2965,6 +2965,7 @@ plugins:
 
 ###### Gameplay - Combat ######
   - name: 'Fast VATS (1|2)\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1650/' ]
     inc: [ 'VATS_Normal_dmg_to_player.esp' ]
   - name: 'Fast VATS 1.esp'
     inc: [ 'Fast VATS 2.esp' ]
