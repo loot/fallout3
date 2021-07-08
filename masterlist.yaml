@@ -2753,18 +2753,10 @@ plugins:
 
   - name: 'Kill and Loot Unconscious Essential NPCs(_FOSE|_NoGore)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/9982/' ]
-  - name: 'Kill and Loot Unconscious Essential NPCs.esp'
-    inc:
-      - 'Kill and Loot Unconscious Essential NPCs_NoGore.esp'
-      - 'Kill and Loot Unconscious Essential NPCs_FOSE.esp'
-  - name: 'Kill and Loot Unconscious Essential NPCs_FOSE.esp'
-    inc:
-      - 'Kill and Loot Unconscious Essential NPCs.esp'
-      - 'Kill and Loot Unconscious Essential NPCs_NoGore.esp'
-  - name: 'Kill and Loot Unconscious Essential NPCs_NoGore.esp'
-    inc:
-      - 'Kill and Loot Unconscious Essential NPCs.esp'
-      - 'Kill and Loot Unconscious Essential NPCs_FOSE.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Kill and Loot Unconscious Essential NPCs ESP' ]
+        condition: 'many("Kill and Loot Unconscious Essential NPCs(_FOSE|_NoGore)?\.esp")'
 
   - name: 'KillableChildren.esp'
     url:
