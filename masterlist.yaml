@@ -3133,7 +3133,7 @@ plugins:
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 3
   - name: 'RTS.esm'
-    inc: [ '1PipboyPDA.esp' ]
+    msg: [ *obsolete ]
 
 ###### New Items ######
   - name: 'LingsFinerThings.esm'
