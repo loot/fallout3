@@ -2967,10 +2967,10 @@ plugins:
   - name: 'Fast VATS (1|2)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1650/' ]
     inc: [ 'VATS_Normal_dmg_to_player.esp' ]
-  - name: 'Fast VATS 1.esp'
-    inc: [ 'Fast VATS 2.esp' ]
-  - name: 'Fast VATS 2.esp'
-    inc: [ 'Fast VATS 1.esp' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Fast VATS ESP' ]
+        condition: 'many("Fast VATS (1|2)\.esp")'
 
 ###### Gameplay - Crafting ######
   - name: 'CRAFTable_WMKs.*\.esp'
