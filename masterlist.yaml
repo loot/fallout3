@@ -2751,6 +2751,8 @@ plugins:
         subs: [ 'Improved Turret Reprogramming - ALL.esp' ]
         condition: 'active("Improved Turret Reprogramming - ALL.esp") and active("ThePitt.esm") and active("BrokenSteel.esm") and active("PointLookout.esm")'
 
+  - name: 'Kill and Loot Unconscious Essential NPCs(_FOSE|_NoGore)?\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/9982/' ]
   - name: 'Kill and Loot Unconscious Essential NPCs.esp'
     inc:
       - 'Kill and Loot Unconscious Essential NPCs_NoGore.esp'
