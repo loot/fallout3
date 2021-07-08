@@ -2751,6 +2751,19 @@ plugins:
         subs: [ 'Improved Turret Reprogramming - ALL.esp' ]
         condition: 'active("Improved Turret Reprogramming - ALL.esp") and active("ThePitt.esm") and active("BrokenSteel.esm") and active("PointLookout.esm")'
 
+  - name: 'Kill and Loot Unconscious Essential NPCs.esp'
+    inc:
+      - 'Kill and Loot Unconscious Essential NPCs_NoGore.esp'
+      - 'Kill and Loot Unconscious Essential NPCs_FOSE.esp'
+  - name: 'Kill and Loot Unconscious Essential NPCs_FOSE.esp'
+    inc:
+      - 'Kill and Loot Unconscious Essential NPCs.esp'
+      - 'Kill and Loot Unconscious Essential NPCs_NoGore.esp'
+  - name: 'Kill and Loot Unconscious Essential NPCs_NoGore.esp'
+    inc:
+      - 'Kill and Loot Unconscious Essential NPCs.esp'
+      - 'Kill and Loot Unconscious Essential NPCs_FOSE.esp'
+
   - name: 'KillableChildren.esp'
     url:
       - 'https://www.nexusmods.com/fallout3/mods/376/'
@@ -4826,18 +4839,7 @@ plugins:
     inc:
       - 'KillableBrats.esp'
       - 'AttackableBrats.esp'
-  - name: 'Kill and Loot Unconscious Essential NPCs.esp'
-    inc:
-      - 'Kill and Loot Unconscious Essential NPCs_NoGore.esp'
-      - 'Kill and Loot Unconscious Essential NPCs_FOSE.esp'
-  - name: 'Kill and Loot Unconscious Essential NPCs_FOSE.esp'
-    inc:
-      - 'Kill and Loot Unconscious Essential NPCs.esp'
-      - 'Kill and Loot Unconscious Essential NPCs_NoGore.esp'
-  - name: 'Kill and Loot Unconscious Essential NPCs_NoGore.esp'
-    inc:
-      - 'Kill and Loot Unconscious Essential NPCs.esp'
-      - 'Kill and Loot Unconscious Essential NPCs_FOSE.esp'
+
   - name: 'Laboratory.esp'
     tag: [ Scripts ]
   - name: 'QuantumLab.esp'
