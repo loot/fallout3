@@ -2963,6 +2963,14 @@ plugins:
       - crc: 0x130108AC
         util: 'FO3Edit v4.0.2e'
 
+###### Gameplay - Combat ######
+  - name: 'Fast VATS (1|2)\.esp'
+    inc: [ 'VATS_Normal_dmg_to_player.esp' ]
+  - name: 'Fast VATS 1.esp'
+    inc: [ 'Fast VATS 2.esp' ]
+  - name: 'Fast VATS 2.esp'
+    inc: [ 'Fast VATS 1.esp' ]
+
 ###### Gameplay - Crafting ######
   - name: 'CRAFTable_WMKs.*\.esp'
     url:
@@ -3493,14 +3501,7 @@ plugins:
       - NoMerge
       - NPC.Race
       - NpcFaces
-  - name: 'Fast VATS 1.esp'
-    inc: [ 'Fast VATS 2.esp' ]
-  - name: 'Fast VATS 2.esp'
-    inc: [ 'Fast VATS 1.esp' ]
-  - name: 'VATS_Normal_dmg_to_player.esp'
-    inc:
-      - 'Fast VATS 1.esp'
-      - 'Fast VATS 2.esp'
+
   - name: 'Shojo NPC.esp'
     tag:
       - Invent
