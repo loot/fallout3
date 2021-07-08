@@ -3123,6 +3123,18 @@ plugins:
         subs: [ 'Regulators ESP' ]
         condition: 'many("Regulators(_Overhaul(_lvl(2|7))?)?\.esp")'
 
+###### Locations - New Structures & Landmarks ######
+  - name: 'RTS NW.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/7070/' ]
+    inc: [ '1PipboyPDA.esp' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x5761E748
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 3
+  - name: 'RTS.esm'
+    inc: [ '1PipboyPDA.esp' ]
+
 ###### New Items ######
   - name: 'LingsFinerThings.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
@@ -3413,16 +3425,6 @@ plugins:
   - name: 'Wasteland Whisperer v2.esm'
     req: [ *FOSE ]
 
-  - name: 'RTS.esm'
-    inc: [ '1PipboyPDA.esp' ]
-  - name: 'RTS NW.esm'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/7070' ]
-    inc: [ '1PipboyPDA.esp' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0x5761E748
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 3
   - name: 'Animy_prostitution.esm'
     req: [ *FOSE ]
   - name: 'DCInteriors_ComboEdition.esm'
