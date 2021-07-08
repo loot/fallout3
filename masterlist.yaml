@@ -3130,7 +3130,7 @@ plugins:
     dirty:
       - <<: *quickClean
         crc: 0x5761E748
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        util: '[FO3Edit v4.0.3g](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 3
   - name: 'RTS.esm'
     msg: [ *obsolete ]
