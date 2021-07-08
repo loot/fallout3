@@ -3045,6 +3045,33 @@ plugins:
       - crc: 0x9DCD1FF0
         util: 'FO3Edit v4.0.3'
 
+###### Gameplay - Quests ######
+  - name: 'ArefuExpandedByAzar.esm'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/12466/' ]
+    inc:
+      - 'Arefu Player House.esp'
+      - 'RTS.esm'
+      - 'RTS NW.esm'
+    tag:
+      - Actors.AIData
+      - Actors.AIPackages
+      - Factions
+      - Invent.Add
+      - Invent.Remove
+      - Relations.Add
+      - Relations.Change
+    dirty:
+      - <<: *reqManualFix
+        crc: 0x81581FCA
+        util: '[FO3Edit v4.0.3g](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 213
+        udr: 54
+        nav: 16
+      - <<: *reqManualFix
+        crc: 0x109EBB71
+        util: '[FO3Edit v4.0.3g](https://www.nexusmods.com/fallout3/mods/637)'
+        nav: 16
+
 ###### New Items ######
   - name: 'LingsFinerThings.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
@@ -3334,32 +3361,12 @@ plugins:
         itm: 2
   - name: 'Wasteland Whisperer v2.esm'
     req: [ *FOSE ]
-  - name: 'ArefuExpandedByAzar.esm'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/12466' ]
-    tag:
-      - Factions
-      - Invent
-      - Relations
-    dirty:
-      - <<: *reqManualFix
-        crc: 0x81581FCA
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 213
-        udr: 54
-        nav: 16
-      - <<: *reqManualFix
-        crc: 0x3B757A80
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        nav: 16
+
   - name: 'RTS.esm'
-    inc:
-      - 'ArefuExpandedByAzar.esm'
-      - '1PipboyPDA.esp'
+    inc: [ '1PipboyPDA.esp' ]
   - name: 'RTS NW.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7070' ]
-    inc:
-      - 'ArefuExpandedByAzar.esm'
-      - '1PipboyPDA.esp'
+    inc: [ '1PipboyPDA.esp' ]
     dirty:
       - <<: *quickClean
         crc: 0x5761E748
@@ -3906,8 +3913,7 @@ plugins:
       - Actors.AIData
   - name: 'Wasteland Gigolo.esp'
     tag: [ Scripts ]
-  - name: 'Arefu Player House.esp'
-    inc: [ 'ArefuExpandedByAzar.esm' ]
+
   - name: 'DCStreet.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16924' ]
     inc: [ 'DCStreet - BS.esp' ]
