@@ -2168,15 +2168,18 @@ plugins:
         crc: 0x0A7E3339
         util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 55
+  - name: 'MTC Wasteland Travellers \(Optional\)- Crowded Cities( less NPCs)?\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Crowded Cities ESP' ]
+        condition: 'many("MTC Wasteland Travellers \(Optional\)- Crowded Cities( less NPCs)?\.esp")'
   - name: 'MTC Wasteland Travellers (Optional)- Crowded Cities.esp'
-    inc: [ 'MTC Wasteland Travellers (Optional)- Crowded Cities less NPCs.esp' ]
     dirty:
       - <<: *quickClean
         crc: 0x0E577EE9
         util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 23
   - name: 'MTC Wasteland Travellers (Optional)- Crowded Cities less NPCs.esp'
-    inc: [ 'MTC Wasteland Travellers (Optional)- Crowded Cities.esp' ]
     dirty:
       - <<: *quickClean
         crc: 0x540018FA
