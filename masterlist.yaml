@@ -3114,6 +3114,15 @@ plugins:
         util: '[FO3Edit v4.0.3g](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 16
 
+  - name: 'Regulators(_Overhaul(_lvl(2|7))?)?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/2928/'
+        name: 'The Alliance - Regulators Overhaul'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Regulators ESP' ]
+        condition: 'many("Regulators(_Overhaul(_lvl(2|7))?)?\.esp")'
+
 ###### New Items ######
   - name: 'LingsFinerThings.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
@@ -3660,21 +3669,7 @@ plugins:
       - 'Regulators_Overhaul.esp'
       - 'Regulators _Overhaul_lvl7.esp'
       - 'Regulators _Overhaul_lvl2.esp'
-  - name: 'Regulators_Overhaul.esp'
-    inc:
-      - 'Regulators.esp'
-      - 'Regulators _Overhaul_lvl7.esp'
-      - 'Regulators _Overhaul_lvl2.esp'
-  - name: 'Regulators _Overhaul_lvl7.esp'
-    inc:
-      - 'Regulators_Overhaul.esp'
-      - 'Regulators.esp'
-      - 'Regulators _Overhaul_lvl2.esp'
-  - name: 'Regulators _Overhaul_lvl2.esp'
-    inc:
-      - 'Regulators_Overhaul.esp'
-      - 'Regulators _Overhaul_lvl7.esp'
-      - 'Regulators.esp'
+
   - name: 'The Mantis Imperative - Mantis.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12296' ]
     tag: [ Relev ]
