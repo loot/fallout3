@@ -3053,9 +3053,13 @@ plugins:
       - 'RTS.esm'
       - 'RTS NW.esm'
     tag:
+      - Actors.AIData
+      - Actors.AIPackages
       - Factions
-      - Invent
-      - Relations
+      - Invent.Add
+      - Invent.Remove
+      - Relations.Add
+      - Relations.Change
     dirty:
       - <<: *reqManualFix
         crc: 0x81581FCA
