@@ -3114,6 +3114,10 @@ plugins:
         util: '[FO3Edit v4.0.3g](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 16
 
+  - name: 'Regulators(_Overhaul(_lvl(2|7))?)?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/2928/'
+        name: 'The Alliance - Regulators Overhaul'
   - name: 'Regulators_Overhaul.esp'
     inc:
       - 'Regulators.esp'
