@@ -3241,8 +3241,7 @@ plugins:
       - Stats
   - name: 'Refurbishes [ALL].esm'
     msg: [ *alreadyInFOOK2 ]
-  - name: 'GNRBuilding_BoS.esm'
-    tag: [ Invent ]
+
   - name: 'EWE Energy Weapons Enhanced.esm'
     tag:
       - Deflst
@@ -3457,8 +3456,6 @@ plugins:
         nav: 2
 
     ### Imported ESPs from BOSS masterlist
-  - name: 'BlackWidowBurkeFix.esp'
-    tag: [ Scripts ]
   - name: 'MS11fix.esp'
     tag:
       - Actors.AIPackages
@@ -3539,8 +3536,7 @@ plugins:
     msg: [ *alreadyInFWE ]
   - name: 'Selected Containers Respawn.esp'
     msg: [ *alreadyInFWE ]
-  - name: 'EVE - RH Ironsights Patch.esp'
-    tag: [ Graphics ]
+
   - name: 'PAL - BASE File.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11326' ]
     inc: [ 'PAL - MERGED.esp' ]
@@ -3578,9 +3574,7 @@ plugins:
     clean:
       - crc: 0x2D4935B2
         util: 'FO3Edit v4.0.2e'
-  - name: 'ReneersRadioMod.esp'
-    msg: [ *alreadyInFOOK2 ]
-    tag: [ Scripts ]
+
   - name: 'RadioHotkey.esp'
     group: *overridesGroup
   - name: 'Despicable Dashwood v2.esp'
@@ -3803,14 +3797,7 @@ plugins:
     tag:
       - Invent
       - Relev
-  - name: 'BusworldV1.05.esp'
-    msg:
-      - type: say
-        content:
-          - lang: en
-            text: 'Possible cause of CTDs, try disabling to test for improvments, or try BusworldV1.05noexpl.esp'
-          - lang: de
-            text: 'Mögliche Ursache von CTDs, versuchen Sie es zu deaktivieren um zu sehen ob sich Verbesserungen ergeben, oder versuchen Sie BusworldV1.05noexpl.esp'
+
   - name: 'FPS Grenade Hotkey.esp'
     msg:
       - *alreadyInFWE
@@ -3968,37 +3955,7 @@ plugins:
   - name: 'Vault 89 (player home) V1-35.esp'
     inc: [ 'FNNSys.esm' ]
     tag: [ Scripts ]
-  - name: 'Apocalypse Armory.esp'
-    tag:
-      - Delev
-      - Graphics
-      - Invent
-      - Names
-      - Relev
-      - Sound
-      - Stats
-  - name: 'Apocalypse Armory - CALIBR.esp'
-    tag:
-      - Delev
-      - Relev
-  - name: 'Apocalypse Armory - xCALIBR.esp'
-    tag:
-      - Deflst
-      - Names
-      - Stats
-  - name: 'Apocalypse Armory Preview - Grenades.esp'
-    msg:
-      - <<: *alreadyInX
-        subs: [ 'Apocalypse Armory' ]
-        condition: 'file("Apocalypse Armory.esp")'
-  - name: 'Apocalypse Armory - Grenade Hotkeys.esp'
-    inc: [ 'Apocalypse Armory - Grenade Hotkeys for DLC.esp' ]
-  - name: 'Apocalypse Armory - Grenade Hotkeys for DLC.esp'
-    inc: [ 'Apocalypse Armory - Grenade Hotkeys.esp' ]
-  - name: 'AA - FWE + DMG Replacement.esp'
-    inc:
-      - 'Apocalypse Armory - Grenade Hotkeys.esp'
-      - 'Apocalypse Armory + WMK.esp'
+
   - name: 'GSoS - FOOK2 Open Beta - Combat and Sneaking Overhaul.esp'
     msg: [ *obsolete ]
   - name: 'GSoS - FOOK2 Open Beta - XP Tag Perks.esp'
@@ -4043,10 +4000,7 @@ plugins:
         itm: 79
   - name: 'WeaponModKits - FWE Optional Worn Weapons.esp'
     tag: [ Delev ]
-  - name: 'T3T_WMK1.esp'
-    tag:
-      - Deflst
-      - Stats
+
   - name: '3EFskewer.esp'
     tag: [ Stats ]
   - name: '44Magnum.esp'
@@ -4077,27 +4031,14 @@ plugins:
     inc: [ 'H.E.R.K. - GOTY & WMK.esp' ]
   - name: 'H.E.R.K. - GOTY & WMK.esp'
     inc: [ 'H.E.R.K. - GOTY.esp' ]
-  - name: 'laserPistolRetextured-IronSightsPatch.esp'
-    tag: [ Graphics ]
-  - name: 'laserRifleRetexturedScoped.esp'
-    tag: [ Graphics ]
-  - name: 'laserRifleRetextured-IronSightsPatch.esp'
-    tag: [ Graphics ]
-  - name: 'laserScatterGunRetextured.esp'
-    tag: [ Graphics ]
+
   - name: 'More308Ammo.esp'
     tag: [ Relev ]
   - name: 'RimfireRevolver.esp'
     inc: [ 'RimfireRevolverCommon.esp' ]
   - name: 'RimfireRevolverCommon.esp'
     inc: [ 'RimfireRevolver.esp' ]
-  - name: 'Silenced DKS-501.esp'
-    tag:
-      - Deflst
-      - Invent
-      - Names
-      - Relev
-      - Stats
+
   - name: 'Tactical Weapons by gRs Frederyck.esp'
     tag: [ Invent ]
   - name: 'Tactical Weapons-Calibr-V3 762 fix.esp'
@@ -4120,10 +4061,7 @@ plugins:
     inc: [ 'Wieldable Torches (Optional).esp' ]
   - name: 'Wieldable Torches (Optional).esp'
     inc: [ 'WieldableTorches (Main).esp' ]
-  - name: 'xCALIBRmunitions.esp'
-    tag:
-      - Delev
-      - Relev
+
 # This does not seem like a valid filename
   - name: '[DC RANGER ARSENAL v3 MASTER].esm'
     tag: [ Deflst ]
@@ -4205,10 +4143,7 @@ plugins:
     inc: [ 'jonasclothesreplacer.esp' ]
   - name: 'jonasclothesreplacer.esp'
     inc: [ 'jonasclothesnonrplcr.esp' ]
-  - name: 'K2_ArmorsRedone_Raiders.esp'
-    tag: [ Graphics ]
-  - name: 'K2_GirlieGirlVaultBabe.esp'
-    tag: [ Invent ]
+
   - name: 'ModBetterPArmorVanilla.esp'
     tag: [ Stats ]
   - name: 'ModBetterPArmorAnchorage.esp'
@@ -4243,17 +4178,7 @@ plugins:
       - Invent
   - name: 'WasteWearGloves.esp'
     tag: [ Relev ]
-  - name: 'xCALIBRuniverse_LingsBrokenSteel.esp'
-    tag:
-      - Actors.ACBS
-      - Hair
-      - NpcFaces
-  - name: 'xCALIBRuniverse_LingsPrettyThings.esp'
-    tag:
-      - Actors.ACBS
-      - Invent
-      - NPC.Class
-      - Voice-F
+
   - name: 'Goth Girls Multipack.esp'
     tag:
       - Eyes
@@ -4263,12 +4188,7 @@ plugins:
       - NpcFaces
   - name: 'moirared.esp'
     tag: [ Invent ]
-  - name: 'Reclothing For LPT and Flash.esp'
-    msg:
-      - *obsolete
-      - <<: *useInstead
-        subs: [ '[Wrye Flash](https://www.nexusmods.com/fallout3/mods/11336)' ]
-    tag: [ Invent ]
+
   - name: 'AutoGates.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15685' ]
     tag: [ Scripts ]
@@ -4312,13 +4232,8 @@ plugins:
     msg: [ *obsolete ]
   - name: 'RealFragGrenade3.esp'
     inc: [ 'RealFragGrenade.esp' ]
-  - name: 'Scavenger World - Updated v0.07.esp'
-    msg: [ *obsolete ]
-    tag: [ Relev ]
+
   - name: 'Scavenger World - Updated v0.08.esp'
-    tag: [ Relev ]
-  - name: 'Scavenger World - FWE Edition v0.07.esp'
-    msg: [ *obsolete ]
     tag: [ Relev ]
   - name: 'Scavenger World - FWE Edition v0.08.esp'
     tag: [ Relev ]
@@ -4543,12 +4458,7 @@ plugins:
     clean:
       - crc: 0x91383617
         util: 'FO3Edit v4.0.2e'
-  - name: 'EVE - FWE Master Release (pulse fix).esp'
-    tag:
-      - Actors.ACBS
-      - Graphics
-      - Invent
-      - Stats
+
   - name: 'EVE Anchorage - FWE DLC Anchorage.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
     tag:
@@ -4565,10 +4475,7 @@ plugins:
     clean:
       - crc: 0xA5E65C01
         util: 'FO3Edit v4.0.2e'
-  - name: 'Apocalypse Armory + EVE.esp'
-    tag:
-      - Delev
-      - Relev
+
   - name: 'Mart''s Mutant Mod - UF3P.esp'
     tag: [ Invent ]
   - name: 'DangerousRadroaches_MMM.esp'
@@ -5153,10 +5060,7 @@ plugins:
   - name: 'URWL-Normal Color Saturation.esp'
     inc: [ 'URWL.esp' ]
     tag: [ C.Light ]
-  - name: 'URWLRain.esp'
-    tag:
-      - C.Climate
-      - C.Light
+
   - name: 'NColorDCInteriors.esp'
     tag: [ C.Light ]
   - name: 'Xepha''s Darkened Interiors.esp'
@@ -5501,16 +5405,7 @@ plugins:
       - Relations
       - Relev
       - Scripts
-  - name: 'xCALIBRuniverse.esp'
-    tag:
-      - Actors.DeathItems
-      - Delev
-      - Graphics
-      - Invent
-      - Names
-      - Relev
-      - Sound
-      - Stats
+
   - name: 'xCALIBRUniverse - WMK.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14776' ]
     tag:
@@ -5588,8 +5483,6 @@ plugins:
       - NpcFaces
   - name: 'CRBSOR.esp'
     msg: [ *alreadyInFWE ]
-  - name: 'Fallout Remastered.esp'
-    inc: [ 'James Invisible Walls Remover.esp' ]
 
     ## Chinese Stealth Armor separators
   - name: '3EFhelmlessstealthsuit.esp'
