@@ -3118,21 +3118,10 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/2928/'
         name: 'The Alliance - Regulators Overhaul'
-  - name: 'Regulators_Overhaul.esp'
-    inc:
-      - 'Regulators.esp'
-      - 'Regulators_Overhaul_lvl2.esp'
-      - 'Regulators_Overhaul_lvl7.esp'
-  - name: 'Regulators_Overhaul_lvl2.esp'
-    inc:
-      - 'Regulators.esp'
-      - 'Regulators_Overhaul.esp'
-      - 'Regulators_Overhaul_lvl7.esp'
-  - name: 'Regulators_Overhaul_lvl7.esp'
-    inc:
-      - 'Regulators.esp'
-      - 'Regulators_Overhaul.esp'
-      - 'Regulators_Overhaul_lvl2.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Regulators ESP' ]
+        condition: 'many("Regulators(_Overhaul(_lvl(2|7))?)?\.esp")'
 
 ###### New Items ######
   - name: 'LingsFinerThings.esm'
