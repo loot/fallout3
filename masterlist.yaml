@@ -3006,6 +3006,9 @@ plugins:
     tag:
       - Graphics
       - Sound
+    clean:
+      - crc: 0x2AC94027
+        util: 'FO3Edit v4.0.3g'
 
 ###### Gameplay - Combat ######
   - name: 'Fast VATS (1|2)\.esp'
