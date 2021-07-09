@@ -1684,6 +1684,10 @@ plugins:
 
   - name: 'ZumbsDarkerSunglasses(_no_replace|_screen_effect)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/490/' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Zumbs''s Darker Sunglasses ESP' ]
+        condition: 'many("ZumbsDarkerSunglasses(_no_replace|_screen_effect)?\.esp")'
   - name: 'ZumbsDarkerSunglasses_no_replace.esp'
     msg:
       - type: say
