@@ -4086,10 +4086,6 @@ plugins:
   - name: 'WeaponModKits - FWE Optional Worn Weapons.esp'
     tag: [ Delev ]
 
-  - name: '44Magnum.esp'
-    tag:
-      - Deflst
-      - Stats
   - name: '7_HolsterForHandGunsV1_1.esp'
     tag: [ Invent ]
   - name: 'Accurate Assault Rifles 1.2.esp'
