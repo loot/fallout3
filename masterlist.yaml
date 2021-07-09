@@ -3202,6 +3202,11 @@ plugins:
 ###### New Items ######
   - name: '3EFskewer.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5528/' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x68956862
+        util: '[FO3Edit v4.0.3g](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 6
 
   - name: 'LingsFinerThings.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
