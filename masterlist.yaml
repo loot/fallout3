@@ -3201,6 +3201,7 @@ plugins:
 
 ###### New Items ######
   - name: '3EFskewer.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/5528/' ]
     tag: [ Stats ]
 
   - name: 'LingsFinerThings.esm'
