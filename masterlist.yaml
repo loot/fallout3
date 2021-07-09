@@ -1682,6 +1682,23 @@ plugins:
       - 'UWWUT_WT - TP Addon.esp'
       - 'UWWUT_WT - BS Addon.esp'
 
+  - name: 'ZumbsDarkerSunglasses_no_replace.esp'
+    msg:
+      - type: say
+        content:
+          - lang: en
+            text: 'Zumbs has asked you to rename this to ZumbsDarkerSunglasses.esp'
+          - lang: de
+            text: 'Zumbs bittet darum die Datei in ZumbsDarkerSunglasses.esp umzubenennen'
+  - name: 'ZumbsDarkerSunglasses_screen_effect.esp'
+    msg:
+      - type: say
+        content:
+          - lang: en
+            text: 'Zumbs has asked you to rename this to ZumbsDarkerSunglasses.esp'
+          - lang: de
+            text: 'Zumbs bittet darum die Datei in ZumbsDarkerSunglasses.esp umzubenennen'
+
 ###### AudioVisual - Weather & Lighting ######
   - name: 'Clarity( - Dark Nights)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21319/' ]
@@ -4939,22 +4956,7 @@ plugins:
       - 'yaDisguisesMod-DLC-Anchorage.esp'
       - 'yaDisguisesMod-DLC-ThePitt.esp'
       - 'yaDisguisesMod-DLC-BrokenSteel.esp'
-  - name: 'ZumbsDarkerSunglasses_no_replace.esp'
-    msg:
-      - type: say
-        content:
-          - lang: en
-            text: 'Zumbs has asked you to rename this to ZumbsDarkerSunglasses.esp'
-          - lang: de
-            text: 'Zumbs bittet darum die Datei in ZumbsDarkerSunglasses.esp umzubenennen'
-  - name: 'ZumbsDarkerSunglasses_screen_effect.esp'
-    msg:
-      - type: say
-        content:
-          - lang: en
-            text: 'Zumbs has asked you to rename this to ZumbsDarkerSunglasses.esp'
-          - lang: de
-            text: 'Zumbs bittet darum die Datei in ZumbsDarkerSunglasses.esp umzubenennen'
+
   - name: 'Phalanx-MainFollowerModule.esp'
     msg: [ *alreadyInFOOK2 ]
     tag:
