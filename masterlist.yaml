@@ -1682,6 +1682,8 @@ plugins:
       - 'UWWUT_WT - TP Addon.esp'
       - 'UWWUT_WT - BS Addon.esp'
 
+  - name: 'ZumbsDarkerSunglasses(_no_replace|_screen_effect)?\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/490/' ]
   - name: 'ZumbsDarkerSunglasses_no_replace.esp'
     msg:
       - type: say
