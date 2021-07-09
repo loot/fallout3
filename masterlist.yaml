@@ -2999,6 +2999,10 @@ plugins:
   - name: 'Zumbs'' Equipable Pip Boy.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/9364/' ]
     req: [ *FOSE ]
+    inc:
+      - 'PipBoyBeGone.esp'
+      - 'Removable Pip-Boy glove.esp'
+      - 'Remove That Glove.esp'
 
 ###### Gameplay - Combat ######
   - name: 'Fast VATS (1|2)\.esp'
