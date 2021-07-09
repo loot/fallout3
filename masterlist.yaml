@@ -3003,6 +3003,9 @@ plugins:
       - 'PipBoyBeGone.esp'
       - 'Removable Pip-Boy glove.esp'
       - 'Remove That Glove.esp'
+    tag:
+      - Graphics
+      - Sound
 
 ###### Gameplay - Combat ######
   - name: 'Fast VATS (1|2)\.esp'
