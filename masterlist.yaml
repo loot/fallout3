@@ -3572,8 +3572,7 @@ plugins:
     msg: [ *alreadyInFOOK2 ]
   - name: 'Internet Mod.esp'
     msg: [ *alreadyInFOOK2 ]
-  - name: 'Zumbs'' Equipable Pip Boy.esp'
-    inc: [ 'Remove That Glove.esp' ]
+
   - name: 'DK_BulletTime.esp'
     msg: [ *alreadyInFWE ]
   - name: 'Sprint Mod.esp'
