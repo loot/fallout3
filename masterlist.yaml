@@ -2998,6 +2998,7 @@ plugins:
 
   - name: 'Zumbs'' Equipable Pip Boy.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/9364/' ]
+    req: [ *FOSE ]
 
 ###### Gameplay - Combat ######
   - name: 'Fast VATS (1|2)\.esp'
