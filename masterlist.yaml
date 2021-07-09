@@ -2996,6 +2996,9 @@ plugins:
       - crc: 0x130108AC
         util: 'FO3Edit v4.0.2e'
 
+  - name: 'Zumbs'' Equipable Pip Boy.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/9364/' ]
+
 ###### Gameplay - Combat ######
   - name: 'Fast VATS (1|2)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1650/' ]
