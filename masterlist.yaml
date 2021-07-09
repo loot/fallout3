@@ -2996,6 +2996,20 @@ plugins:
       - crc: 0x130108AC
         util: 'FO3Edit v4.0.2e'
 
+  - name: 'Zumbs'' Equipable Pip Boy.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/9364/' ]
+    req: [ *FOSE ]
+    inc:
+      - 'PipBoyBeGone.esp'
+      - 'Removable Pip-Boy glove.esp'
+      - 'Remove That Glove.esp'
+    tag:
+      - Graphics
+      - Sound
+    clean:
+      - crc: 0x2AC94027
+        util: 'FO3Edit v4.0.3g'
+
 ###### Gameplay - Combat ######
   - name: 'Fast VATS (1|2)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1650/' ]
@@ -3572,8 +3586,7 @@ plugins:
     msg: [ *alreadyInFOOK2 ]
   - name: 'Internet Mod.esp'
     msg: [ *alreadyInFOOK2 ]
-  - name: 'Zumbs'' Equipable Pip Boy.esp'
-    inc: [ 'Remove That Glove.esp' ]
+
   - name: 'DK_BulletTime.esp'
     msg: [ *alreadyInFWE ]
   - name: 'Sprint Mod.esp'
