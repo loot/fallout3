@@ -2393,6 +2393,9 @@ plugins:
 ###### Gameplay ######
   - name: 'All Companions Essential.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8954/' ]
+    clean:
+      - crc: 0x86D4BB87
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
   - name: 'Arwen_Core.esm'
     url:
