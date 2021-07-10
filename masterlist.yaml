@@ -1666,6 +1666,9 @@ plugins:
 ###### AudioVisual - Models & Textures ######
   - name: 'AddWanda_v2_blk_eot.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/9402/' ]
+    tag:
+      - Graphics
+      - Invent.Add
 
   - name: 'UWWUT.*\.esp'
     url:
