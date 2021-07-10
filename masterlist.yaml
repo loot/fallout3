@@ -3073,6 +3073,10 @@ plugins:
 ###### Gameplay - Combat ######
   - name: 'Accurate Assault Rifles 1.2.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/217/' ]
+    msg:
+      - <<: *patchUnavailable
+        subs: [ 'Rogue Hallow''s Iron Sights' ]
+        condition: 'file("RH_IRONSIGHTS.esm") and not file("Bashed Patch.*\.esp")'
 
   - name: 'Fast VATS (1|2)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1650/' ]
