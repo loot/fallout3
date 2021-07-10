@@ -1561,6 +1561,9 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/8593/'
         name: 'Holster Animations and Models'
     tag: [ Invent.Add ]
+    clean:
+      - crc: 0xB362BA90
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
   - name: 'CALIBR.esm'
     url:
