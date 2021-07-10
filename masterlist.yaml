@@ -3071,6 +3071,9 @@ plugins:
         util: 'FO3Edit v4.0.3g'
 
 ###### Gameplay - Combat ######
+  - name: 'Accurate Assault Rifles 1.2.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/217/' ]
+
   - name: 'Fast VATS (1|2)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1650/' ]
     inc: [ 'VATS_Normal_dmg_to_player.esp' ]
