@@ -3104,6 +3104,7 @@ plugins:
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
   - name: 'alienblasterammo.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/8217/' ]
     tag: [ Stats ]
 
   - name: 'Fast VATS (1|2)\.esp'
