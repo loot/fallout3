@@ -3077,6 +3077,7 @@ plugins:
       - <<: *patchUnavailable
         subs: [ 'Rogue Hallow''s Iron Sights' ]
         condition: 'file("RH_IRONSIGHTS.esm") and not file("Bashed Patch.*\.esp")'
+    tag: [ Stats ]
 
   - name: 'Fast VATS (1|2)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1650/' ]
