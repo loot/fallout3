@@ -1876,6 +1876,9 @@ plugins:
         itm: 18
 
 ###### Character Appearance - Body, Face & Hair ######
+  - name: 'AinzBeautifuleEyes.esp'
+    tag: [ Eyes ]
+
   - name: 'HairPack.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1146/' ]
     group: *fixesGroup
@@ -5442,8 +5445,7 @@ plugins:
     tag:
       - Deflst
       - Delev
-  - name: 'AinzBeautifuleEyes.esp'
-    tag: [ Eyes ]
+
   - name: 'CUSTOM RACES.esp'
     tag:
       - Eyes
