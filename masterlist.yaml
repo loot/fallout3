@@ -3240,6 +3240,9 @@ plugins:
         util: '[FO3Edit v4.0.3g](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 6
 
+  - name: 'AfrosNukaCola.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/5814/' ]
+
   - name: 'LingsFinerThings.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
     group: *fixesGroup
