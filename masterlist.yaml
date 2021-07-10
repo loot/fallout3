@@ -5452,10 +5452,7 @@ plugins:
     tag:
       - Eyes
       - Hair
-  - name: 'AAAAlbino_LingsBOG.esp'
-    tag:
-      - Eyes
-      - Hair
+
   - name: 'Mez''s Merged Patch 5-0 - DLC-FWE-WMK-MMM.esp'
     tag:
       - Deflst
