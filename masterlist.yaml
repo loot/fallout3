@@ -1560,6 +1560,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/8593/'
         name: 'Holster Animations and Models'
+    tag: [ Invent.Add ]
 
   - name: 'CALIBR.esm'
     url:
