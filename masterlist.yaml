@@ -1664,6 +1664,9 @@ plugins:
         util: 'FO3Edit v4.0.3'
 
 ###### AudioVisual - Models & Textures ######
+  - name: 'AddWanda_v2_blk_eot.esp'
+    tag: [ Invent ]
+
   - name: 'UWWUT.*\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/6309/'
@@ -4108,8 +4111,6 @@ plugins:
   - name: 'WeaponModKits - FWE Optional Worn Weapons.esp'
     tag: [ Delev ]
 
-  - name: 'AddWanda_v2_blk_eot.esp'
-    tag: [ Invent ]
   - name: 'AlexScorpion''s  and Weijiesen''s Smoking Fun.esp'
     tag: [ Invent ]
   - name: 'AlexScorpion''s and Weijiesen''s Smoking Fun.esp'
