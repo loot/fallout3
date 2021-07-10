@@ -4414,10 +4414,7 @@ plugins:
     tag:
       - Delev
       - Relev
-  - name: 'AfrosNukaCola.esp'
-    tag:
-      - Graphics
-      - Stats
+
   - name: 'Nuka Cola Enhanced.esp'
     tag:
       - Graphics
