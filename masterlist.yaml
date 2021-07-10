@@ -2936,6 +2936,9 @@ plugins:
         subs: [ 'RH_Ironsights Merged' ]
         condition: 'checksum("RH_IRONSIGHTS.esm", BA4ABFE7) or checksum("RH_IRONSIGHTS.esm", 08328958)'
   - name: 'RH_IronSights_Basic_VanillaPlugin.esp'
+    after:
+      - name: 'Accurate Assault Rifles 1.2.esp'
+        condition: 'file("Bashed Patch.*\.esp")'
     clean:
       - crc: 0xB801247C
         util: 'FO3Edit v4.0.3'
