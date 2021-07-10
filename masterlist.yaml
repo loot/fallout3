@@ -2391,6 +2391,9 @@ plugins:
         udr: 55099
 
 ###### Gameplay ######
+  - name: 'All Companions Essential.esp'
+    tag: [ Actors.ACBS ]
+
   - name: 'Arwen_Core.esm'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/7565/'
@@ -4885,8 +4888,7 @@ plugins:
     clean:
       - crc: 0x2118AF0B
         util: 'FO3Edit v4.0.2f'
-  - name: 'All Companions Essential.esp'
-    tag: [ Actors.ACBS ]
+
   - name: 'AMPUTATE!.esp'
     tag: [ Scripts ]
   - name: 'Attentater''s Wasteland Economy.esp'
