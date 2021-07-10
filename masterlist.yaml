@@ -3103,6 +3103,14 @@ plugins:
       - crc: 0x89082909
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'alienblasterammo.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/8217/' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x27E97DB3
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+
   - name: 'Fast VATS (1|2)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1650/' ]
     inc: [ 'VATS_Normal_dmg_to_player.esp' ]
@@ -4137,8 +4145,7 @@ plugins:
     tag: [ Invent ]
   - name: 'AlexScorpion''s and Weijiesen''s Smoking Fun.esp'
     tag: [ Invent ]
-  - name: 'alienblasterammo.esp'
-    tag: [ Stats ]
+
   - name: 'Arms_dealer_V1.esp'
     inc: [ 'RH_IRONSIGHTS.esm' ]
   - name: 'ColtM4Carbines_RHIronSights.esp'
