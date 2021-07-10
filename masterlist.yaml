@@ -3243,6 +3243,9 @@ plugins:
   - name: 'AfrosNukaCola.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5814/' ]
     tag: [ Stats ]
+    clean:
+      - crc: 0xFA5CD3AE
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
   - name: 'LingsFinerThings.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
