@@ -3240,6 +3240,13 @@ plugins:
         util: '[FO3Edit v4.0.3g](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 6
 
+  - name: 'AfrosNukaCola.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/5814/' ]
+    tag: [ Stats ]
+    clean:
+      - crc: 0xFA5CD3AE
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+
   - name: 'LingsFinerThings.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
     group: *fixesGroup
@@ -4414,10 +4421,7 @@ plugins:
     tag:
       - Delev
       - Relev
-  - name: 'AfrosNukaCola.esp'
-    tag:
-      - Graphics
-      - Stats
+
   - name: 'Nuka Cola Enhanced.esp'
     tag:
       - Graphics
