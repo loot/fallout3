@@ -1669,6 +1669,9 @@ plugins:
     tag:
       - Graphics
       - Invent.Add
+    clean:
+      - crc: 0xF5F4F135
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
   - name: 'UWWUT.*\.esp'
     url:
