@@ -3105,7 +3105,6 @@ plugins:
 
   - name: 'alienblasterammo.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8217/' ]
-    tag: [ Stats ]
 
   - name: 'Fast VATS (1|2)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1650/' ]
