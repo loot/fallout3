@@ -1877,6 +1877,7 @@ plugins:
 
 ###### Character Appearance - Body, Face & Hair ######
   - name: 'AinzBeautifuleEyes.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10665/' ]
     tag: [ Eyes ]
 
   - name: 'HairPack.esm'
