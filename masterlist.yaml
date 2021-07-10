@@ -1557,6 +1557,9 @@ plugins:
 
 ###### Resources ######
   - name: '7_HolsterForHandGunsV1_1.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/8593/'
+        name: 'Holster Animations and Models'
     tag: [ Invent ]
 
   - name: 'CALIBR.esm'
