@@ -3242,6 +3242,7 @@ plugins:
 
   - name: 'AfrosNukaCola.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5814/' ]
+    tag: [ Stats ]
 
   - name: 'LingsFinerThings.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
