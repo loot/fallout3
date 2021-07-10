@@ -2392,6 +2392,7 @@ plugins:
 
 ###### Gameplay ######
   - name: 'All Companions Essential.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/8954/' ]
     tag: [ Actors.ACBS ]
 
   - name: 'Arwen_Core.esm'
