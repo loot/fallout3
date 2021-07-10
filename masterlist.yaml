@@ -3105,6 +3105,11 @@ plugins:
 
   - name: 'alienblasterammo.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8217/' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x27E97DB3
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
 
   - name: 'Fast VATS (1|2)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1650/' ]
