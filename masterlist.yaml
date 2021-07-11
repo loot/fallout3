@@ -1997,6 +1997,10 @@ plugins:
 ###### Encounters - Allies ######
   - name: 'ARC - Assembled Robotic Companions.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6988/' ]
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Delete **00038E1F** & **0003E5E2** from **ARC - Assembled Robotic Companions.esp**.' ]
+        condition: 'checksum("ARC - Assembled Robotic Companions.esp", 759A9E85)'
     tag:
       - Invent.Add
       - Relations.Add
