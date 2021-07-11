@@ -1995,6 +1995,16 @@ plugins:
         util: 'FO3Edit v4.0.3'
 
 ###### Encounters - Allies ######
+  - name: 'ARC - Assembled Robotic Companions.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6988/' ]
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Delete **00038E1F** & **0003E5E2** from **ARC - Assembled Robotic Companions.esp**.' ]
+        condition: 'checksum("ARC - Assembled Robotic Companions.esp", 759A9E85)'
+    tag:
+      - Invent.Add
+      - Relations.Add
+
   - name: 'RoadWardens(MMM|UnInstall)?\.es(m|p)'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/2781/'
@@ -4719,10 +4729,7 @@ plugins:
     inc:
       - 'AmyWong - CALIBR 1.3 (FWE 5).esp'
       - 'AmyWong - CALIBR 1.2.esp'
-  - name: 'ARC - Assembled Robotic Companions.esp'
-    tag:
-      - Invent
-      - Stats
+
   - name: 'Brisa - Cooking with FWE & MMM 6.esp'
     inc: [ 'Brisa and FWE - Primary Needs Patch.esp' ]
   - name: 'slaveraider_newlook.esp'
