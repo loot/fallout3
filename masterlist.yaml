@@ -1997,6 +1997,9 @@ plugins:
 ###### Encounters - Allies ######
   - name: 'ARC - Assembled Robotic Companions.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6988/' ]
+    tag:
+      - Invent.Add
+      - Relations.Add
 
   - name: 'RoadWardens(MMM|UnInstall)?\.es(m|p)'
     url:
