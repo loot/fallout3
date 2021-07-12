@@ -2473,6 +2473,11 @@ plugins:
       - Actors.ACBS
       - Names
       - Relations.Add
+    dirty:
+      - <<: *reqManualFix
+        crc: 0xA16E0ADD
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        nav: 1
   - name: 'AWE_no_sneak.esp'
     msg: [ *obsolete ]
 
