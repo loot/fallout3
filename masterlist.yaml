@@ -2460,6 +2460,27 @@ plugins:
   - name: 'Arwen_MMM_Med-Tec_Patch.esp'
     req: [ 'Arwen_Med-Tec.esp' ]
 
+  - name: 'Attentater''s Wasteland Economy.esp'
+    url:
+      - 'https://www.nexusmods.com/fallout3/mods/10222/'
+      - link: 'https://www.nexusmods.com/fallout3/mods/13328/'
+        name: 'Attentater''s Wasteland Economy Revived'
+    msg:
+      - <<: *obsolete
+        subs: [ '[Attentater''s Wasteland Economy Revived](https://www.nexusmods.com/fallout3/mods/13328/)' ]
+        condition: 'checksum("Attentater''s Wasteland Economy.esp", 1B5AAE67) or checksum("Attentater''s Wasteland Economy.esp", 8E93AE4A) or checksum("Attentater''s Wasteland Economy.esp", 925A14EA)'
+    tag:
+      - Actors.ACBS
+      - Names
+      - Relations.Add
+    dirty:
+      - <<: *reqManualFix
+        crc: 0xA16E0ADD
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        nav: 1
+  - name: 'AWE_no_sneak.esp'
+    msg: [ *obsolete ]
+
   - name: 'EVE.esm'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/8340/'
@@ -4901,8 +4922,7 @@ plugins:
 
   - name: 'AMPUTATE!.esp'
     tag: [ Scripts ]
-  - name: 'Attentater''s Wasteland Economy.esp'
-    tag: [ Names ]
+
   - name: 'BA_RepairVanilla.esp'
     tag: [ Deflst ]
   - name: 'BA_RepairThePitt.esp'
