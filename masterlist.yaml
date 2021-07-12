@@ -4901,8 +4901,7 @@ plugins:
 
   - name: 'AMPUTATE!.esp'
     tag: [ Scripts ]
-  - name: 'Attentater''s Wasteland Economy.esp'
-    tag: [ Names ]
+
   - name: 'BA_RepairVanilla.esp'
     tag: [ Deflst ]
   - name: 'BA_RepairThePitt.esp'
