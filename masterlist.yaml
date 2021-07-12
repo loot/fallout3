@@ -2460,6 +2460,12 @@ plugins:
   - name: 'Arwen_MMM_Med-Tec_Patch.esp'
     req: [ 'Arwen_Med-Tec.esp' ]
 
+  - name: 'Attentater''s Wasteland Economy.esp'
+    url:
+      - 'https://www.nexusmods.com/fallout3/mods/10222/'
+      - link: 'https://www.nexusmods.com/fallout3/mods/13328/'
+        name: 'Attentater''s Wasteland Economy Revived'
+
   - name: 'EVE.esm'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/8340/'
