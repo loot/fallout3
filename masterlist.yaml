@@ -2465,6 +2465,12 @@ plugins:
       - 'https://www.nexusmods.com/fallout3/mods/10222/'
       - link: 'https://www.nexusmods.com/fallout3/mods/13328/'
         name: 'Attentater''s Wasteland Economy Revived'
+    msg:
+      - <<: *obsolete
+        subs: [ '[Attentater''s Wasteland Economy Revived](https://www.nexusmods.com/fallout3/mods/13328/)' ]
+        condition: 'checksum("Attentater''s Wasteland Economy.esp", 1B5AAE67) or checksum("Attentater''s Wasteland Economy.esp", 8E93AE4A) or checksum("Attentater''s Wasteland Economy.esp", 925A14EA)'
+  - name: 'AWE_no_sneak.esp'
+    msg: [ *obsolete ]
 
   - name: 'EVE.esm'
     url:
