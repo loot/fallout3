@@ -2483,6 +2483,9 @@ plugins:
 
   - name: 'AutoGates.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15685/' ]
+    msg:
+      - <<: *obsolete
+        condition: 'version("AutoGates.esp", "1.3", <)'
 
   - name: 'EVE.esm'
     url:
