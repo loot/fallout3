@@ -2481,6 +2481,9 @@ plugins:
   - name: 'AWE_no_sneak.esp'
     msg: [ *obsolete ]
 
+  - name: 'AutoGates.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15685/' ]
+
   - name: 'EVE.esm'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/8340/'
