@@ -3373,6 +3373,8 @@ plugins:
         crc: 0x3B59F79E
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 1
+  - name: 'BBBackpacks-v1.esp'
+    msg: [ *obsolete ]
 
   - name: 'LingsFinerThings.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
