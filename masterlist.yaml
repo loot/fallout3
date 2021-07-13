@@ -2558,6 +2558,9 @@ plugins:
         itm: 52
         udr: 7
 
+  - name: 'Bottle That Water Alternative( - Broken Steel)?\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/8689/' ]
+
   - name: 'EVE.esm'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/8340/'
