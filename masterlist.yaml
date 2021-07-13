@@ -1914,9 +1914,6 @@ plugins:
         subs: [ 'BNB plugin' ]
         condition: 'many("BnB special armors\.es(m|p)")'
   - name: 'BnB special armors.esp'
-    tag:
-      - Invent
-      - Relev
 
   - name: 'HairPack.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1146/' ]
