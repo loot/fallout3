@@ -3377,6 +3377,7 @@ plugins:
 
 ###### Gameplay - Skills & Perks ######
   - name: 'Bobbleheads Begone.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1273/' ]
     tag: [ Scripts ]
 
 ###### Locations - New Structures & Landmarks ######
