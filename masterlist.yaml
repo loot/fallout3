@@ -2558,6 +2558,45 @@ plugins:
         itm: 52
         udr: 7
 
+  - name: 'Bottle That Water Alternative( - Broken Steel)?\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/8689/' ]
+    inc:
+      - 'AddBottle.esp'
+      - 'AddEmptyNukaBottle.esp'
+      - 'BasicNeeds.esp'
+      - 'BasicNeeds_OldStyle.esp'
+      - 'Bottle That Water.esp'
+      - 'BottleRefill.esp'
+      - 'Empties.esp'
+      - 'Empty Bottles and Refillable Water.esp'
+      - 'FO3 Wanderers Edition - Main File.esm'
+      - 'LadyDeadlock_BeerAddsCap.esp'
+      - 'nukabottle.esp'
+      - 'RI_Core.esm'
+      - 'Solar''s Bottled Water v2.esp'
+      - 'Solar''s Bottled Water - Bottlecaps.esp'
+      - 'Solar''s Bottled Nuka.esp'
+      - 'Water compilation.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Bottle That Water Alternative ESP' ]
+        condition: 'many("Bottle That Water Alternative( - Broken Steel)?\.esp")'
+    tag:
+      - Names
+      - Scripts
+      - Stats
+  - name: 'Bottle That Water Alternative.esp'
+    msg: [ *useVersionBrokenSteel ]
+    clean:
+      - crc: 0xFEC24B85
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'Bottle That Water Alternative - Broken Steel.esp'
+    clean:
+      - crc: 0x2F8400EF
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'Bottle That Water Alternative - Option (A|B)( - BS)?\.esp'
+    msg: [ *obsolete ]
+
   - name: 'EVE.esm'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/8340/'
@@ -4616,14 +4655,7 @@ plugins:
     tag:
       - Graphics
       - Stats
-  - name: 'Bottle That Water Alternative.esp'
-    tag:
-      - Scripts
-      - Stats
-  - name: 'Bottle That Water Alternative - Broken Steel.esp'
-    tag:
-      - Scripts
-      - Stats
+
   - name: 'AddBottle.esp'
     msg:
       - *alreadyInFWE
