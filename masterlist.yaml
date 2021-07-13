@@ -2560,6 +2560,23 @@ plugins:
 
   - name: 'Bottle That Water Alternative( - Broken Steel)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8689/' ]
+    inc:
+      - 'AddBottle.esp'
+      - 'AddEmptyNukaBottle.esp'
+      - 'BasicNeeds.esp'
+      - 'BasicNeeds_OldStyle.esp'
+      - 'Bottle That Water.esp'
+      - 'BottleRefill.esp'
+      - 'Empties.esp'
+      - 'Empty Bottles and Refillable Water.esp'
+      - 'FO3 Wanderers Edition - Main File.esm'
+      - 'LadyDeadlock_BeerAddsCap.esp'
+      - 'nukabottle.esp'
+      - 'RI_Core.esm'
+      - 'Solar''s Bottled Water v2.esp'
+      - 'Solar''s Bottled Water - Bottlecaps.esp'
+      - 'Solar''s Bottled Nuka.esp'
+      - 'Water compilation.esp'
 
   - name: 'EVE.esm'
     url:
