@@ -3375,6 +3375,10 @@ plugins:
         subs: [ 'Regulators ESP' ]
         condition: 'many("Regulators(_Overhaul(_lvl(2|7))?)?\.esp")'
 
+###### Gameplay - Skills & Perks ######
+  - name: 'Bobbleheads Begone.esp'
+    tag: [ Scripts ]
+
 ###### Locations - New Structures & Landmarks ######
   - name: 'RTS NW.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7070/' ]
@@ -4462,8 +4466,7 @@ plugins:
 
   - name: 'CALIBR Ammo Schematics - CRAFT.esp'
     inc: [ 'xCALIBR_Universe.esp' ]
-  - name: 'Bobbleheads Begone.esp'
-    tag: [ Scripts ]
+
   - name: 'BottleBrahminMilk.esp'
     inc: [ 'BottleBrahminMilkFWE.esp' ]
   - name: 'BottleBrahminMilkFWE.esp'
