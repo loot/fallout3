@@ -3167,6 +3167,48 @@ plugins:
         condition: 'many("Fast VATS (1|2)\.esp")'
 
 ###### Gameplay - Crafting ######
+  - name: 'BA_Repair(_GOTY)?(\+AA)?\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10647/' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'BA Repair ESP' ]
+        condition: 'many("BA_Repair(_GOTY)?(\+AA)?\.esp")'
+  - name: 'BA_Repair(_GOTY)?\.esp'
+    tag: [ Deflst ]
+  - name: 'BA_Repair(_GOTY)?_Xtras\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'BA Repair Xtras ESP' ]
+        condition: 'many("BA_Repair(_GOTY)?_Xtras\.esp")'
+  - name: 'BA_Repair.esp'
+    clean:
+      - crc: 0x9CB256F3
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+      - crc: 0x6F5A8F31
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+      - crc: 0x2CBE3D3F
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'BA_Repair_GOTY.esp'
+    clean:
+      - crc: 0xFA73E45A
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+      - crc: 0x09A7EFD0
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+      - crc: 0x36D5FCD9
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'BA_Repair_Xtras.esp'
+    clean:
+      - crc: 0x936117A9
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'BA_Repair_GOTY_Xtras.esp'
+    clean:
+      - crc: 0x73F153B2
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'BA_Repair(Vanilla|Anchorage|ThePitt|BrokenSteel|PointLookout|Zeta|GOTY)(Xtras)?\.esp'
+    msg: [ *obsolete ]
+  - name: 'MERGED PATCH - Apocalypse Armory & BA_Repair.esp'
+    msg: [ *obsolete ]
+
   - name: 'CRAFTable_WMKs.*\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/13790/'
@@ -4927,12 +4969,6 @@ plugins:
   - name: 'AMPUTATE!.esp'
     tag: [ Scripts ]
 
-  - name: 'BA_RepairVanilla.esp'
-    tag: [ Deflst ]
-  - name: 'BA_RepairThePitt.esp'
-    tag: [ Deflst ]
-  - name: 'BA_RepairGOTY.esp'
-    tag: [ Deflst ]
   - name: 'bittercup_6.esp'
     tag:
       - Delev
