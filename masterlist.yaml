@@ -1905,6 +1905,10 @@ plugins:
       - crc: 0x5ADE7B42
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'BnB special armors\.es(m|p)'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/16071/'
+        name: 'BNB Bodies and Armor Replacer (NSFW)'
   - name: 'BnB special armors.esp'
     tag:
       - Invent
