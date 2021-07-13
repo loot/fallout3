@@ -1724,10 +1724,12 @@ plugins:
 ###### AudioVisual - Weather & Lighting ######
   - name: 'Better DC Weather - (60-40|80-20)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10739/' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Better DC Weather ESP' ]
+        condition: 'many("Better DC Weather - (60-40|80-20)\.esp")'
   - name: 'Better DC Weather - 60-40.esp'
-    inc: [ 'Better DC Weather - 80-20.esp' ]
   - name: 'Better DC Weather - 80-20.esp'
-    inc: [ 'Better DC Weather - 60-40.esp' ]
 
   - name: 'Clarity( - Dark Nights)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21319/' ]
