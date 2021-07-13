@@ -3353,6 +3353,21 @@ plugins:
       - crc: 0xFA5CD3AE
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'BBBackpacks-v1-1.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/14994' ]
+    tag: [ Stats ]
+    dirty:
+      - <<: *reqManualFix
+        crc: 0x88843B25
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 9
+        udr: 1
+        nav: 1
+      - <<: *reqManualFix
+        crc: 0x3B59F79E
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        nav: 1
+
   - name: 'LingsFinerThings.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
     group: *fixesGroup
@@ -4281,20 +4296,7 @@ plugins:
 # This does not seem like a valid filename
   - name: '[DC RANGER ARSENAL v3 MASTER].esm'
     tag: [ Deflst ]
-  - name: 'BBBackpacks-v1-1.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/14994' ]
-    tag: [ Stats ]
-    dirty:
-      - <<: *reqManualFix
-        crc: 0x88843B25
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 9
-        udr: 1
-        nav: 1
-      - <<: *reqManualFix
-        crc: 0x3B59F79E
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        nav: 1
+
   - name: 'BnB special armors.esp'
     tag:
       - Invent
