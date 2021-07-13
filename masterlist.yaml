@@ -4927,12 +4927,6 @@ plugins:
   - name: 'AMPUTATE!.esp'
     tag: [ Scripts ]
 
-  - name: 'BA_RepairVanilla.esp'
-    tag: [ Deflst ]
-  - name: 'BA_RepairThePitt.esp'
-    tag: [ Deflst ]
-  - name: 'BA_RepairGOTY.esp'
-    tag: [ Deflst ]
   - name: 'bittercup_6.esp'
     tag:
       - Delev
