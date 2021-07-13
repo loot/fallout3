@@ -3167,6 +3167,9 @@ plugins:
         condition: 'many("Fast VATS (1|2)\.esp")'
 
 ###### Gameplay - Crafting ######
+  - name: 'BA_Repair(_GOTY)?(\+AA)?\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10647/' ]
+
   - name: 'CRAFTable_WMKs.*\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/13790/'
