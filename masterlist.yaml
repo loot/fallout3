@@ -3365,7 +3365,13 @@ plugins:
         subs: [ 'BoS with Tesla Cannons ESP' ]
         condition: 'many("BoSTesla(Early)?\.esp")'
   - name: 'BoSTesla.esp'
+    clean:
+      - crc: 0x913E1A1A
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
   - name: 'BoSTeslaEarly.esp'
+    clean:
+      - crc: 0x805B9F70
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
 ###### Gameplay - Quests ######
   - name: 'ArefuExpandedByAzar.esm'
