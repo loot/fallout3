@@ -1127,8 +1127,8 @@ bash_tags:
   ## Removed & Deprecated Bash Tags ##
   - 'Invent'
   - 'NpcFaces'
-  - 'Npc.EyesOnly'
-  - 'Npc.HairOnly'
+  # - 'Npc.EyesOnly'
+  # - 'Npc.HairOnly'
   - 'Relations'
   # - 'ScriptContents'
 
