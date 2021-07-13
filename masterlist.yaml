@@ -2585,6 +2585,8 @@ plugins:
       - Names
       - Scripts
       - Stats
+  - name: 'Bottle That Water Alternative.esp'
+    msg: [ *useVersionBrokenSteel ]
 
   - name: 'EVE.esm'
     url:
