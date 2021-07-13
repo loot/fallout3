@@ -1921,7 +1921,18 @@ plugins:
       - Invent.Remove
       - Names
       - R.Body-F
+  - name: 'BnB special armors.esm'
+    dirty:
+      - <<: *quickClean
+        crc: 0xD0041F38
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1468
   - name: 'BnB special armors.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xDE5296D8
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1468
 
   - name: 'HairPack.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1146/' ]
