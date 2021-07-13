@@ -4616,14 +4616,7 @@ plugins:
     tag:
       - Graphics
       - Stats
-  - name: 'Bottle That Water Alternative.esp'
-    tag:
-      - Scripts
-      - Stats
-  - name: 'Bottle That Water Alternative - Broken Steel.esp'
-    tag:
-      - Scripts
-      - Stats
+
   - name: 'AddBottle.esp'
     msg:
       - *alreadyInFWE
