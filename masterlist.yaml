@@ -2540,6 +2540,24 @@ plugins:
       - crc: 0xFBB84C75
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'BombayTradingCo.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/16116/' ]
+    tag:
+      - Actors.ACBS
+      - Actors.AIData
+      - Actors.AIPackages
+      - Actors.Stats
+      - Graphics
+      - Invent.Add
+      - Invent.Remove
+      - Names
+    dirty:
+      - <<: *quickClean
+        crc: 0xAF460DD8
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 52
+        udr: 7
+
   - name: 'EVE.esm'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/8340/'
@@ -4141,13 +4159,7 @@ plugins:
       - *alreadyInFOOK2
   - name: 'Mannequin.esp'
     tag: [ Actors.AIData ]
-  - name: 'BombayTradingCo.esp'
-    tag:
-      - Actors.AIPackages
-      - Invent
-      - Names
-      - Scripts
-      - Stats
+
   - name: 'CarvanTrader.esp'
     tag:
       - Actors.ACBS
