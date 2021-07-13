@@ -3357,6 +3357,12 @@ plugins:
       - crc: 0x9DCD1FF0
         util: 'FO3Edit v4.0.3'
 
+###### Gameplay - Economy & Item Balance ######
+  - name: 'BoSTeslaEarly.esp'
+    inc: [ 'BoSTesla.esp' ]
+  - name: 'BoSTesla.esp'
+    inc: [ 'BoSTeslaEarly.esp' ]
+
 ###### Gameplay - Quests ######
   - name: 'ArefuExpandedByAzar.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12466/' ]
@@ -4071,10 +4077,6 @@ plugins:
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 104
 
-  - name: 'BoSTeslaEarly.esp'
-    inc: [ 'BoSTesla.esp' ]
-  - name: 'BoSTesla.esp'
-    inc: [ 'BoSTeslaEarly.esp' ]
   - name: 'FF_DestructibleRadios.esp'
     tag: [ Destructible ]
   - name: 'Angry Scientists.esp'
