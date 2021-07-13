@@ -1722,6 +1722,8 @@ plugins:
         condition: 'file("ZumbsDarkerSunglasses.bsa") and not file("ZumbsDarkerSunglasses_screen_effect.bsa") and not file("ZumbsDarkerSunglasses(_no_replace)?\.esp")'
 
 ###### AudioVisual - Weather & Lighting ######
+  - name: 'Better DC Weather - (60-40|80-20)\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10739/' ]
   - name: 'Better DC Weather - 60-40.esp'
     inc: [ 'Better DC Weather - 80-20.esp' ]
   - name: 'Better DC Weather - 80-20.esp'
