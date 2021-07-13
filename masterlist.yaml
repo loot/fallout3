@@ -3173,6 +3173,8 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'BA Repair ESP' ]
         condition: 'many("BA_Repair(_GOTY)?(\+AA)?\.esp")'
+  - name: 'BA_Repair(_GOTY)?\.esp'
+    tag: [ Deflst ]
   - name: 'BA_Repair(_GOTY)?_Xtras\.esp'
     msg:
       - <<: *useOnlyOneX
