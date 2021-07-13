@@ -2540,6 +2540,9 @@ plugins:
       - crc: 0xFBB84C75
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'BombayTradingCo.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/16116/' ]
+
   - name: 'EVE.esm'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/8340/'
