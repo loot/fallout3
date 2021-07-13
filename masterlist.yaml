@@ -1909,6 +1909,10 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/16071/'
         name: 'BNB Bodies and Armor Replacer (NSFW)'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'BNB plugin' ]
+        condition: 'many("BnB special armors\.es(m|p)")'
   - name: 'BnB special armors.esp'
     tag:
       - Invent
