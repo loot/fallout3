@@ -3354,7 +3354,7 @@ plugins:
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
   - name: 'BBBackpacks-v1-1.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/14994' ]
+    url: [ 'https://www.nexusmods.com/fallout3/mods/14994/' ]
     tag: [ Stats ]
     dirty:
       - <<: *reqManualFix
