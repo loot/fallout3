@@ -3360,10 +3360,12 @@ plugins:
 ###### Gameplay - Economy & Item Balance ######
   - name: 'BoSTesla(Early)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7825/' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'BoS with Tesla Cannons ESP' ]
+        condition: 'many("BoSTesla(Early)?\.esp")'
   - name: 'BoSTesla.esp'
-    inc: [ 'BoSTeslaEarly.esp' ]
   - name: 'BoSTeslaEarly.esp'
-    inc: [ 'BoSTesla.esp' ]
 
 ###### Gameplay - Quests ######
   - name: 'ArefuExpandedByAzar.esm'
