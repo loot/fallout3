@@ -2542,6 +2542,15 @@ plugins:
 
   - name: 'BombayTradingCo.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16116/' ]
+    tag:
+      - Actors.ACBS
+      - Actors.AIData
+      - Actors.AIPackages
+      - Actors.Stats
+      - Graphics
+      - Invent.Add
+      - Invent.Remove
+      - Names
 
   - name: 'EVE.esm'
     url:
