@@ -1913,6 +1913,14 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'BNB plugin' ]
         condition: 'many("BnB special armors\.es(m|p)")'
+    tag:
+      - Deflst
+      - Delev
+      - Graphics
+      - Invent.Add
+      - Invent.Remove
+      - Names
+      - R.Body-F
   - name: 'BnB special armors.esp'
 
   - name: 'HairPack.esm'
