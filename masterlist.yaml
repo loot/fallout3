@@ -1125,6 +1125,10 @@ bash_tags:
   - 'Stats'
   - 'Text'
   ## Removed & Deprecated Bash Tags ##
+  - 'Body-F'
+  - 'Body-M'
+  - 'Eyes'
+  - 'Hair'
   - 'Invent'
   - 'NpcFaces'
   # - 'Npc.EyesOnly'
