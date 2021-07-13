@@ -1125,11 +1125,16 @@ bash_tags:
   - 'Stats'
   - 'Text'
   ## Removed & Deprecated Bash Tags ##
+  - 'Body-F'
+  - 'Body-M'
+  - 'Eyes'
+  - 'Hair'
   - 'Invent'
+  # - 'Npc.EyesOnly'
+  # - 'Npc.HairOnly'
   - 'NpcFaces'
-  - 'Npc.EyesOnly'
-  - 'Npc.HairOnly'
   - 'Relations'
+  # - 'ScriptContents'
 
 globals:
   - type: say
@@ -5014,8 +5019,6 @@ plugins:
       - Graphics
       - Stats
 
-  - name: 'Ghouls Cohabitate.esp'
-    tag: [ ScriptContents ]
   - name: 'infiltrations.esp'
     tag: [ Scripts ]
   - name: 'Inebriation.esp'
@@ -5692,8 +5695,6 @@ plugins:
       - 'ChineseStealthArmorFixed.esp'
 
     ## Tenpenny Tower quest
-  - name: 'TenpennyGhoulsAtPeace.esp'
-    tag: [ ScriptContents ]
   - name: 'Tenpenny Tower true peace.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15649' ]
     inc: [ 'Tenpenny Tower Alternate Endings.esp' ]
