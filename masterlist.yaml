@@ -1905,6 +1905,35 @@ plugins:
       - crc: 0x5ADE7B42
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'BnB special armors\.es(m|p)'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/16071/'
+        name: 'BNB Bodies and Armor Replacer (NSFW)'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'BNB plugin' ]
+        condition: 'many("BnB special armors\.es(m|p)")'
+    tag:
+      - Deflst
+      - Delev
+      - Graphics
+      - Invent.Add
+      - Invent.Remove
+      - Names
+      - R.Body-F
+  - name: 'BnB special armors.esm'
+    dirty:
+      - <<: *quickClean
+        crc: 0xD0041F38
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1468
+  - name: 'BnB special armors.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xDE5296D8
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1468
+
   - name: 'HairPack.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1146/' ]
     group: *fixesGroup
@@ -4325,10 +4354,6 @@ plugins:
   - name: '[DC RANGER ARSENAL v3 MASTER].esm'
     tag: [ Deflst ]
 
-  - name: 'BnB special armors.esp'
-    tag:
-      - Invent
-      - Relev
   - name: 'BoS_DX.esp'
     msg:
       - *alreadyInFOOK2
