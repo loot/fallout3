@@ -4141,13 +4141,7 @@ plugins:
       - *alreadyInFOOK2
   - name: 'Mannequin.esp'
     tag: [ Actors.AIData ]
-  - name: 'BombayTradingCo.esp'
-    tag:
-      - Actors.AIPackages
-      - Invent
-      - Names
-      - Scripts
-      - Stats
+
   - name: 'CarvanTrader.esp'
     tag:
       - Actors.ACBS
