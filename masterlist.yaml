@@ -3355,7 +3355,6 @@ plugins:
 
   - name: 'BBBackpacks-v1-1.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14994/' ]
-    tag: [ Stats ]
     dirty:
       - <<: *reqManualFix
         crc: 0x88843B25
