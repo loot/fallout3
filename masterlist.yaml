@@ -2581,6 +2581,10 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'Bottle That Water Alternative ESP' ]
         condition: 'many("Bottle That Water Alternative( - Broken Steel)?\.esp")'
+    tag:
+      - Names
+      - Scripts
+      - Stats
 
   - name: 'EVE.esm'
     url:
