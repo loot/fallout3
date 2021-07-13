@@ -2594,6 +2594,8 @@ plugins:
     clean:
       - crc: 0x2F8400EF
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'Bottle That Water Alternative - Option (A|B)( - BS)?\.esp'
+    msg: [ *obsolete ]
 
   - name: 'EVE.esm'
     url:
