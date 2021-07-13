@@ -1130,9 +1130,9 @@ bash_tags:
   - 'Eyes'
   - 'Hair'
   - 'Invent'
-  - 'NpcFaces'
   # - 'Npc.EyesOnly'
   # - 'Npc.HairOnly'
+  - 'NpcFaces'
   - 'Relations'
   # - 'ScriptContents'
 
