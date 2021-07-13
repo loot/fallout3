@@ -1722,6 +1722,21 @@ plugins:
         condition: 'file("ZumbsDarkerSunglasses.bsa") and not file("ZumbsDarkerSunglasses_screen_effect.bsa") and not file("ZumbsDarkerSunglasses(_no_replace)?\.esp")'
 
 ###### AudioVisual - Weather & Lighting ######
+  - name: 'Better DC Weather - (60-40|80-20)\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10739/' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Better DC Weather ESP' ]
+        condition: 'many("Better DC Weather - (60-40|80-20)\.esp")'
+  - name: 'Better DC Weather - 60-40.esp'
+    clean:
+      - crc: 0x16957B0D
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'Better DC Weather - 80-20.esp'
+    clean:
+      - crc: 0x3D0EFE94
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+
   - name: 'Clarity( - Dark Nights)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21319/' ]
     tag: [ Graphics ]
@@ -5400,10 +5415,6 @@ plugins:
       - crc: 0xCB83B785
         util: 'FO3Edit v4.0.3'
 
-  - name: 'Better DC Weather - 60-40.esp'
-    inc: [ 'Better DC Weather - 80-20.esp' ]
-  - name: 'Better DC Weather - 80-20.esp'
-    inc: [ 'Better DC Weather - 60-40.esp' ]
   - name: 'CRAFTHelper_ReplaceWorkbenchScript.esp'
     inc: [ 'CRAFT - Activation Perk.esp' ]
   - name: 'CRAFTHelper_ReplaceWorkbenchScriptFWE.esp'
