@@ -4994,11 +4994,6 @@ plugins:
   - name: 'AMPUTATE!.esp'
     tag: [ Scripts ]
 
-  - name: 'bittercup_6.esp'
-    tag:
-      - Delev
-      - Relev
-      - ScriptContents
   - name: 'ChildKiller.esp'
     tag:
       - Actors.ACBS
