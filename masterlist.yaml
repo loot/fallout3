@@ -3358,10 +3358,10 @@ plugins:
         util: 'FO3Edit v4.0.3'
 
 ###### Gameplay - Economy & Item Balance ######
-  - name: 'BoSTeslaEarly.esp'
-    inc: [ 'BoSTesla.esp' ]
   - name: 'BoSTesla.esp'
     inc: [ 'BoSTeslaEarly.esp' ]
+  - name: 'BoSTeslaEarly.esp'
+    inc: [ 'BoSTesla.esp' ]
 
 ###### Gameplay - Quests ######
   - name: 'ArefuExpandedByAzar.esm'
