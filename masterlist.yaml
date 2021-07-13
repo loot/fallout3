@@ -3358,6 +3358,8 @@ plugins:
         util: 'FO3Edit v4.0.3'
 
 ###### Gameplay - Economy & Item Balance ######
+  - name: 'BoSTesla(Early)?\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/7825/' ]
   - name: 'BoSTesla.esp'
     inc: [ 'BoSTeslaEarly.esp' ]
   - name: 'BoSTeslaEarly.esp'
