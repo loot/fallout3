@@ -3169,6 +3169,15 @@ plugins:
 ###### Gameplay - Crafting ######
   - name: 'BA_Repair(_GOTY)?(\+AA)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10647/' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'BA Repair ESP' ]
+        condition: 'many("BA_Repair(_GOTY)?(\+AA)?\.esp")'
+  - name: 'BA_Repair(_GOTY)?_Xtras\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'BA Repair Xtras ESP' ]
+        condition: 'many("BA_Repair(_GOTY)?_Xtras\.esp")'
 
   - name: 'CRAFTable_WMKs.*\.esp'
     url:
