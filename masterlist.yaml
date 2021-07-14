@@ -2597,6 +2597,8 @@ plugins:
   - name: 'Bottle That Water Alternative - Option (A|B)( - BS)?\.esp'
     msg: [ *obsolete ]
 
+  - name: 'BottleBrahminMilk(FWE)?\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/14685/' ]
   - name: 'BottleBrahminMilk.esp'
     inc: [ 'BottleBrahminMilkFWE.esp' ]
   - name: 'BottleBrahminMilkFWE.esp'
