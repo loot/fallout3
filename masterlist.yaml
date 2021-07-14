@@ -2597,6 +2597,18 @@ plugins:
   - name: 'Bottle That Water Alternative - Option (A|B)( - BS)?\.esp'
     msg: [ *obsolete ]
 
+  - name: 'BottleBrahminMilk(FWE)?\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/14685/' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Bottle Brahmin Milk ESP' ]
+        condition: 'many("BottleBrahminMilk(FWE)?\.esp")'
+  - name: 'BottleBrahminMilk.esp'
+    msg:
+      - <<: *useVersion
+        subs: [ 'FO3 Wanderers Edition' ]
+        condition: 'file("FO3 Wanderers Edition - Main File.esm") and not file("BottleBrahminMilkFWE.esp")'
+
   - name: 'EVE.esm'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/8340/'
@@ -4535,10 +4547,6 @@ plugins:
   - name: 'CALIBR Ammo Schematics - CRAFT.esp'
     inc: [ 'xCALIBR_Universe.esp' ]
 
-  - name: 'BottleBrahminMilk.esp'
-    inc: [ 'BottleBrahminMilkFWE.esp' ]
-  - name: 'BottleBrahminMilkFWE.esp'
-    inc: [ 'BottleBrahminMilk.esp' ]
   - name: 'CantaburyCommonsGuards.esp'
     tag: [ Actors.ACBS ]
   - name: 'CantaburyCommonsGuards - DTO.esp'
