@@ -2599,10 +2599,11 @@ plugins:
 
   - name: 'BottleBrahminMilk(FWE)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14685/' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Bottle Brahmin Milk ESP' ]
+        condition: 'many("BottleBrahminMilk(FWE)?\.esp")'
   - name: 'BottleBrahminMilk.esp'
-    inc: [ 'BottleBrahminMilkFWE.esp' ]
-  - name: 'BottleBrahminMilkFWE.esp'
-    inc: [ 'BottleBrahminMilk.esp' ]
 
   - name: 'EVE.esm'
     url:
