@@ -3553,6 +3553,11 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/11437/'
         name: 'Classic Fallout Weapons Revived'
+    inc:
+      - 'Classic Fallout Weapons BETA.esp'
+      - name: 'EVE.esm'
+        display: 'EVE - Energy Visuals Enhanced'
+        condition: 'not file("EVE.esp")'
 
   - name: 'LingsFinerThings.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
