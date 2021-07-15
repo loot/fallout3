@@ -3549,6 +3549,11 @@ plugins:
   - name: 'BBBackpacks-v1.esp'
     msg: [ *obsolete ]
 
+  - name: 'CFWR.esm'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/11437/'
+        name: 'Classic Fallout Weapons Revived'
+
   - name: 'LingsFinerThings.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
     group: *fixesGroup
