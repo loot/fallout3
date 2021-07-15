@@ -4544,12 +4544,6 @@ plugins:
   - name: 'moirared.esp'
     tag: [ Invent ]
 
-  - name: 'CantaburyCommonsGuards.esp'
-    tag: [ Actors.ACBS ]
-  - name: 'CantaburyCommonsGuards - DTO.esp'
-    tag:
-      - Actors.ACBS
-      - Invent
   - name: 'cyber_meat.esp'
     tag: [ Graphics ]
   - name: 'Dread Dogmeat.esp'
