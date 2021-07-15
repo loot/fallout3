@@ -2298,6 +2298,9 @@ plugins:
         condition: 'file("Mart''s Mutant Mod - Master Menu Module.esp") or checksum("Mart''s Mutant Mod.esm", DC2E29E4)'
 
 ###### Encounters - Neutrals ######
+  - name: 'CantaburyCommonsGuards( - DTO)?\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/5900/' ]
+
   - name: 'MTC Wasteland Travellers.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6044/' ]
     dirty:
