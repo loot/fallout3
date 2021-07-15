@@ -3549,6 +3549,28 @@ plugins:
   - name: 'BBBackpacks-v1.esp'
     msg: [ *obsolete ]
 
+  - name: 'CFWR.esm'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/11437/'
+        name: 'Classic Fallout Weapons Revived'
+    inc:
+      - 'Classic Fallout Weapons BETA.esp'
+      - name: 'EVE.esm'
+        display: 'EVE - Energy Visuals Enhanced'
+        condition: 'not file("EVE.esp")'
+    tag:
+      - Deflst
+      - Delev
+      - Graphics
+      - Names
+      - Relev
+      - Scripts
+      - Sound
+      - Stats
+    clean:
+      - crc: 0xF5F3419F
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+
   - name: 'LingsFinerThings.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
     group: *fixesGroup
@@ -3725,23 +3747,10 @@ plugins:
       - R.Teeth
       - Voice-F
       - Voice-M
-  - name: 'CFWRv4.esm'
-    tag:
-      - Deflst
-      - Delev
-      - Graphics
-      - Invent
-      - Names
-      - Scripts
-      - Stats
+
   - name: '[DC RANGER ARSENAL v3] - DLC GEAR.esp'
     tag: [ Deflst ]
-  - name: 'CFWR.esm'
-    tag:
-      - Delev
-      - Graphics
-      - Relev
-      - Stats
+
   - name: 'Refurbishes [ALL].esm'
     msg: [ *alreadyInFOOK2 ]
 
@@ -5630,11 +5639,7 @@ plugins:
   - name: 'FWE Realistic Ammo Weight in Names inc. 20th Cent.esp'
     inc: [ 'FWE-20thCent Ammo Weight in Names.esp' ]
     tag: [ Names ]
-  - name: 'CFWR_EVE_LoadLast.esp'
-    tag:
-      - Graphics
-      - Names
-      - Stats
+
   - name: 'Achievement\sRemover\s\[(All)?(FO3)?(\+OA)?(\+TP)?(\+BS)?(\+PL)?(\+MZ)?\]\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/3813/' ]
     msg:
