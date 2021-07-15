@@ -2632,6 +2632,9 @@ plugins:
         subs: [ 'FO3 Wanderers Edition' ]
         condition: 'file("FO3 Wanderers Edition - Main File.esm") and not file("BottleBrahminMilkFWE.esp")'
 
+  - name: 'CarvanTrader.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4080/' ]
+
   - name: 'EVE.esm'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/8340/'
