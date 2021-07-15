@@ -3558,6 +3558,15 @@ plugins:
       - name: 'EVE.esm'
         display: 'EVE - Energy Visuals Enhanced'
         condition: 'not file("EVE.esp")'
+    tag:
+      - Deflst
+      - Delev
+      - Graphics
+      - Names
+      - Relev
+      - Scripts
+      - Sound
+      - Stats
 
   - name: 'LingsFinerThings.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
