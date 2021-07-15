@@ -2298,6 +2298,29 @@ plugins:
         condition: 'file("Mart''s Mutant Mod - Master Menu Module.esp") or checksum("Mart''s Mutant Mod.esm", DC2E29E4)'
 
 ###### Encounters - Neutrals ######
+  - name: 'CantaburyCommonsGuards( - DTO)?\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/5900/' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Canterbury Commons Guards ESP' ]
+        condition: 'many("CantaburyCommonsGuards( - DTO)?\.esp")'
+    tag:
+      - Actors.ACBS
+      - Actors.Stats
+      - Invent.Add
+      - Invent.Remove
+      - NPC.Class
+  - name: 'CantaburyCommonsGuards.esp'
+    clean:
+      - crc: 0x653BE4DE
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'CantaburyCommonsGuards - DTO.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x0E91D1E6
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 6
+
   - name: 'MTC Wasteland Travellers.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6044/' ]
     dirty:
@@ -4544,12 +4567,6 @@ plugins:
   - name: 'moirared.esp'
     tag: [ Invent ]
 
-  - name: 'CantaburyCommonsGuards.esp'
-    tag: [ Actors.ACBS ]
-  - name: 'CantaburyCommonsGuards - DTO.esp'
-    tag:
-      - Actors.ACBS
-      - Invent
   - name: 'cyber_meat.esp'
     tag: [ Graphics ]
   - name: 'Dread Dogmeat.esp'
