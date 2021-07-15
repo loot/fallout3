@@ -2310,6 +2310,16 @@ plugins:
       - Invent.Add
       - Invent.Remove
       - NPC.Class
+  - name: 'CantaburyCommonsGuards.esp'
+    clean:
+      - crc: 0x653BE4DE
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'CantaburyCommonsGuards - DTO.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x0E91D1E6
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 6
 
   - name: 'MTC Wasteland Travellers.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6044/' ]
