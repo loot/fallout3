@@ -2632,6 +2632,13 @@ plugins:
         subs: [ 'FO3 Wanderers Edition' ]
         condition: 'file("FO3 Wanderers Edition - Main File.esm") and not file("BottleBrahminMilkFWE.esp")'
 
+  - name: 'CarvanTrader.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4080/' ]
+    tag: [ Actors.ACBS ]
+    clean:
+      - crc: 0xCB3EC099
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+
   - name: 'EVE.esm'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/8340/'
@@ -4246,16 +4253,6 @@ plugins:
   - name: 'Mannequin.esp'
     tag: [ Actors.AIData ]
 
-  - name: 'CarvanTrader.esp'
-    tag:
-      - Actors.ACBS
-      - Actors.Stats
-      - Invent
-      - Names
-      - R.Attributes-F
-      - R.Attributes-M
-      - R.Skills
-      - Scripts
   - name: 'Clothed American Soldiers.esp'
     tag: [ Invent ]
   - name: 'Clothed Sarah Lyons.esp'
