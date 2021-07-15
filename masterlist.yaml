@@ -4544,9 +4544,6 @@ plugins:
   - name: 'moirared.esp'
     tag: [ Invent ]
 
-  - name: 'CALIBR Ammo Schematics - CRAFT.esp'
-    inc: [ 'xCALIBR_Universe.esp' ]
-
   - name: 'CantaburyCommonsGuards.esp'
     tag: [ Actors.ACBS ]
   - name: 'CantaburyCommonsGuards - DTO.esp'
