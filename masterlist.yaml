@@ -2054,6 +2054,11 @@ plugins:
       - Invent.Add
       - Relations.Add
 
+  - name: '(CharonImproved|llama''s Vanilla Followers for Charon Improved)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/12221/'
+        name: 'Charon Improved by llamaRCA'
+
   - name: 'RoadWardens(MMM|UnInstall)?\.es(m|p)'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/2781/'
