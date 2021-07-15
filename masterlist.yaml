@@ -4246,16 +4246,6 @@ plugins:
   - name: 'Mannequin.esp'
     tag: [ Actors.AIData ]
 
-  - name: 'CarvanTrader.esp'
-    tag:
-      - Actors.ACBS
-      - Actors.Stats
-      - Invent
-      - Names
-      - R.Attributes-F
-      - R.Attributes-M
-      - R.Skills
-      - Scripts
   - name: 'Clothed American Soldiers.esp'
     tag: [ Invent ]
   - name: 'Clothed Sarah Lyons.esp'
