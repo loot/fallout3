@@ -2634,6 +2634,7 @@ plugins:
 
   - name: 'CarvanTrader.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4080/' ]
+    tag: [ Actors.ACBS ]
 
   - name: 'EVE.esm'
     url:
