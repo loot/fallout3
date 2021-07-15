@@ -2304,6 +2304,12 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'Canterbury Commons Guards ESP' ]
         condition: 'many("CantaburyCommonsGuards( - DTO)?\.esp")'
+    tag:
+      - Actors.ACBS
+      - Actors.Stats
+      - Invent.Add
+      - Invent.Remove
+      - NPC.Class
 
   - name: 'MTC Wasteland Travellers.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6044/' ]
