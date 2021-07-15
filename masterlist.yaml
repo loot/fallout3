@@ -4946,13 +4946,7 @@ plugins:
 
   - name: 'slaveraider_newlook.esp'
     tag: [ Graphics ]
-  - name: 'CharonImproved.esp'
-    tag: [ Actors.AIPackages ]
-  - name: 'llama''s Vanilla Followers for Charon Improved.esp'
-    tag:
-      - Actors.ACBS
-      - Actors.AIPackages
-      - Stats
+
   - name: 'Get Your Cherry Back.esp'
     tag:
       - Actors.ACBS
