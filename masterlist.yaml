@@ -2683,6 +2683,11 @@ plugins:
 
   - name: 'ChildKiller.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13037/' ]
+    tag:
+      - Actors.ACBS
+      - R.Body-F
+      - R.Body-M
+      - Scripts
 
   - name: 'EVE.esm'
     url:
