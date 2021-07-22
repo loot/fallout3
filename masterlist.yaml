@@ -1998,6 +1998,19 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
 
+  - name: 'Clothed Sarah Lyons - Sleepwear.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/7544/' ]
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Delete **00015145**, **0001A267**, & **00074EB2** from **Clothed Sarah Lyons - Sleepwear.esp**.' ]
+        condition: 'checksum("Clothed Sarah Lyons - Sleepwear.esp", 4C7AD96A) or checksum("Clothed Sarah Lyons - Sleepwear.esp", 700D97E9)'
+    tag: [ Invent.Add ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x4C7AD96A
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+
   - name: 'LingsPrettyThings.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
     after: [ 'Lings Finer Things.esp' ]
@@ -4350,8 +4363,6 @@ plugins:
   - name: 'Mannequin.esp'
     tag: [ Actors.AIData ]
 
-  - name: 'Clothed Sarah Lyons - Sleepwear.esp'
-    tag: [ Invent ]
   - name: 'Beichtvater Cromwell macht Pause_DV.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4660' ]
     clean:
