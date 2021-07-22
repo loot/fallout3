@@ -1986,6 +1986,7 @@ plugins:
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
   - name: 'Clothed Sarah Lyons.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6831/' ]
     tag: [ Invent ]
 
   - name: 'LingsPrettyThings.esp'
