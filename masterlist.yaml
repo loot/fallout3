@@ -2064,6 +2064,13 @@ plugins:
         display: 'FOOK2 - FallOut Overhaul Kit'
       - 'Phalanx-MainFollowerModule.esp'
       - 'Sharing and Caring Companions.esm'
+    tag:
+      - Actors.ACBS
+      - Actors.AIPackages
+      - Actors.Stats
+      - Invent.Add
+      - Invent.Change
+      - Invent.Remove
   - name: 'CharonImproved.esp'
     after:
       - 'Better Companions Clover Ess.esp'
@@ -2072,6 +2079,11 @@ plugins:
       - 'FollowersHireContinued-CharismaCheck-KarmaCheck.esp'
       - 'FollowersHireContinued-CharismaCheck-NoKarmaCheck.esp'
       - 'FollowersHireContinued-NoChecks.esp'
+    tag:
+      - Actors.AIData
+      - Actors.CombatStyle
+      - NPC.Eyes
+      - NPC.Hair
   - name: 'llama''s Vanilla Followers for Charon Improved.esp'
     inc:
       - name: 'FO3 Wanderers Edition - Main File.esm'
