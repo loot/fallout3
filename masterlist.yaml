@@ -3628,6 +3628,12 @@ plugins:
 
   - name: 'Classic Fallout Weapons BETA.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2307/' ]
+    tag:
+      - Deflst
+      - Delev
+      - Invent.Add
+      - Invent.Remove
+      - Relev
 
   - name: 'LingsFinerThings.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
