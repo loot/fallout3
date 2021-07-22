@@ -2054,6 +2054,48 @@ plugins:
       - Invent.Add
       - Relations.Add
 
+  - name: '(CharonImproved|llama''s Vanilla Followers for Charon Improved)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/12221/'
+        name: 'Charon Improved by llamaRCA'
+    inc:
+      - 'CBOv1.4.esp'
+      - name: 'FOOK2 - Main.ESM'
+        display: 'FOOK2 - FallOut Overhaul Kit'
+      - 'Phalanx-MainFollowerModule.esp'
+      - 'Sharing and Caring Companions.esm'
+    tag:
+      - Actors.ACBS
+      - Actors.AIPackages
+      - Actors.Stats
+      - Invent.Add
+      - Invent.Change
+      - Invent.Remove
+  - name: 'CharonImproved.esp'
+    after:
+      - 'Better Companions Clover Ess.esp'
+      - 'Better Companions Ess.esp'
+      - 'Better Companions NonEss.esp'
+      - 'FollowersHireContinued-CharismaCheck-KarmaCheck.esp'
+      - 'FollowersHireContinued-CharismaCheck-NoKarmaCheck.esp'
+      - 'FollowersHireContinued-NoChecks.esp'
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Delete **0001A267** from **CharonImproved.esp**.' ]
+        condition: 'checksum("CharonImproved.esp", 95C40A85) or checksum("CharonImproved.esp", D53E11EC)'
+    tag:
+      - Actors.AIData
+      - Actors.CombatStyle
+      - NPC.Eyes
+      - NPC.Hair
+  - name: 'llama''s Vanilla Followers for Charon Improved.esp'
+    inc:
+      - name: 'FO3 Wanderers Edition - Main File.esm'
+        display: 'Fallout 3 - Wanderers Edition (FWE)'
+    clean:
+      - crc: 0xF8AE62C3
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+
   - name: 'RoadWardens(MMM|UnInstall)?\.es(m|p)'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/2781/'
@@ -4946,13 +4988,7 @@ plugins:
 
   - name: 'slaveraider_newlook.esp'
     tag: [ Graphics ]
-  - name: 'CharonImproved.esp'
-    tag: [ Actors.AIPackages ]
-  - name: 'llama''s Vanilla Followers for Charon Improved.esp'
-    tag:
-      - Actors.ACBS
-      - Actors.AIPackages
-      - Stats
+
   - name: 'Get Your Cherry Back.esp'
     tag:
       - Actors.ACBS
