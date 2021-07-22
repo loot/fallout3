@@ -3718,6 +3718,11 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'M4 Carbines ESP' ]
         condition: 'many("ColtM4Carbines(_RHIronSights)?\.esp")'
+  - name: 'ColtM4Carbines.esp'
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Remove **0001EC51** from **ColtM4Carbines.esp**.' ]
+        condition: 'checksum("ColtM4Carbines.esp", 6D3814A3)'
   - name: 'ColtM4Carbines_RHIronSights.esp'
     req:
       - name: 'RH_IRONSIGHTS.esm'
@@ -3726,6 +3731,9 @@ plugins:
       - <<: *requiresResources
         subs: [ 'M4 Carbines' ]
         condition: 'not file("Sound/Fx/Wpn/emdgm4carbine")'
+      - <<: *wildEdits
+        subs: [ 'Remove **0001EC51** from **ColtM4Carbines_RHIronSights.esp**.' ]
+        condition: 'checksum("ColtM4Carbines_RHIronSights.esp", 0B0D7065)'
 
   - name: 'LingsFinerThings.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
