@@ -2000,6 +2000,7 @@ plugins:
 
   - name: 'Clothed Sarah Lyons - Sleepwear.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7544/' ]
+    tag: [ Invent.Add ]
 
   - name: 'LingsPrettyThings.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
