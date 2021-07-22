@@ -3715,7 +3715,6 @@ plugins:
   - name: 'ColtM4Carbines(_RHIronSights)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6264/' ]
   - name: 'ColtM4Carbines_RHIronSights.esp'
-    tag: [ Graphics ]
 
   - name: 'LingsFinerThings.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
