@@ -5150,11 +5150,6 @@ plugins:
   - name: 'AMPUTATE!.esp'
     tag: [ Scripts ]
 
-  - name: 'ChildKiller.esp'
-    tag:
-      - Actors.ACBS
-      - Scripts
-
   - name: '(Action_Boy_hacking|Easier_hacking_5_8|Lucky_hacking_5)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/2333/'
