@@ -1980,6 +1980,7 @@ plugins:
 ###### Character Appearance - NPCs ######
   - name: 'Clothed American Soldiers.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7561/' ]
+    tag: [ Invent.Add ]
 
   - name: 'LingsPrettyThings.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
