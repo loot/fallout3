@@ -1634,6 +1634,13 @@ plugins:
   - name: 'Stealthboy Recon Armor - CRAFT.esp'
     group: *fixesGroup
 
+  - name: 'Destructable Building Materials 3000 Beta v1.5( (PITT REQUIRED))?\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/12978' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Destructable Building Materials 3000 Beta v1.5' ]
+        condition: 'many("Destructable Building Materials 3000 Beta v1.5( (PITT REQUIRED))?\.esp")'
+
 ###### AudioVisual - Interface ######
   - name: 'BA_InventorySorter(GOTY|Vanilla|Anchorage|ThePitt|BrokenSteel|PointLookout|Zeta)\.esp'
     url:
@@ -4309,12 +4316,6 @@ plugins:
     tag: [ Graphics ]
   - name: 'loadingsc.esp'
     tag: [ Graphics ]
-  - name: 'Destructable Building Materials 3000 Beta v1.5( (PITT REQUIRED))?\.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/12978' ]
-    msg:
-      - <<: *useOnlyOneX
-        subs: [ 'Destructable Building Materials 3000 Beta v1.5' ]
-        condition: 'many("Destructable Building Materials 3000 Beta v1.5( (PITT REQUIRED))?\.esp")'
 
   - name: 'FPS Grenade Hotkey.esp'
     msg:
