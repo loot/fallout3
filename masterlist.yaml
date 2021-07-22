@@ -3634,6 +3634,11 @@ plugins:
       - Invent.Add
       - Invent.Remove
       - Relev
+    dirty:
+      - <<: *quickClean
+        crc: 0x32FDD979
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
 
   - name: 'LingsFinerThings.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
