@@ -2681,6 +2681,9 @@ plugins:
       - crc: 0xCB3EC099
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'ChildKiller.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/13037/' ]
+
   - name: 'EVE.esm'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/8340/'
