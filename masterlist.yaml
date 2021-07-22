@@ -3719,6 +3719,13 @@ plugins:
         subs: [ 'M4 Carbines ESP' ]
         condition: 'many("ColtM4Carbines(_RHIronSights)?\.esp")'
   - name: 'ColtM4Carbines_RHIronSights.esp'
+    req:
+      - name: 'RH_IRONSIGHTS.esm'
+        display: '[Rogue Hallow''s Iron Sights](https://www.nexusmods.com/fallout3/mods/6938/)'
+    msg:
+      - <<: *requiresResources
+        subs: [ 'M4 Carbines' ]
+        condition: 'not file("Sound/Fx/Wpn/emdgm4carbine")'
 
   - name: 'LingsFinerThings.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
