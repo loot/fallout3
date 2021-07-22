@@ -1978,6 +1978,13 @@ plugins:
         util: 'FO3Edit v4.0.3'
 
 ###### Character Appearance - NPCs ######
+  - name: 'Clothed American Soldiers.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/7561/' ]
+    tag: [ Invent.Add ]
+    clean:
+      - crc: 0xE93C5B78
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+
   - name: 'LingsPrettyThings.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
     after: [ 'Lings Finer Things.esp' ]
@@ -4330,8 +4337,6 @@ plugins:
   - name: 'Mannequin.esp'
     tag: [ Actors.AIData ]
 
-  - name: 'Clothed American Soldiers.esp'
-    tag: [ Invent ]
   - name: 'Clothed Sarah Lyons.esp'
     tag: [ Invent ]
   - name: 'Clothed Sarah Lyons - Sleepwear.esp'
