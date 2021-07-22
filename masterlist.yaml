@@ -1634,12 +1634,12 @@ plugins:
   - name: 'Stealthboy Recon Armor - CRAFT.esp'
     group: *fixesGroup
 
-  - name: 'Destructable Building Materials 3000 Beta v1.5( (PITT REQUIRED))?\.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/12978' ]
+  - name: 'Destructable Building Materials 3000 Beta v1\.5( \(PITT REQUIRED\))?\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/12978/' ]
     msg:
       - <<: *useOnlyOneX
-        subs: [ 'Destructable Building Materials 3000 Beta v1.5' ]
-        condition: 'many("Destructable Building Materials 3000 Beta v1.5( (PITT REQUIRED))?\.esp")'
+        subs: [ 'Destructible Building Materials 3000 Beta ESP' ]
+        condition: 'many("Destructable Building Materials 3000 Beta v1\.5( \(PITT REQUIRED\))?\.esp")'
 
 ###### AudioVisual - Interface ######
   - name: 'BA_InventorySorter(GOTY|Vanilla|Anchorage|ThePitt|BrokenSteel|PointLookout|Zeta)\.esp'
