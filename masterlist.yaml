@@ -1635,7 +1635,9 @@ plugins:
     group: *fixesGroup
 
   - name: 'Destructable Building Materials 3000 Beta v1\.5( \(PITT REQUIRED\))?\.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/12978/' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/12978/'
+        name: 'Skykappa 3000'
     msg:
       - <<: *useOnlyOneX
         subs: [ 'Destructible Building Materials 3000 Beta ESP' ]
