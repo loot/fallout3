@@ -3712,6 +3712,29 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
 
+  - name: 'ColtM4Carbines(_RHIronSights)?\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6264/' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'M4 Carbines ESP' ]
+        condition: 'many("ColtM4Carbines(_RHIronSights)?\.esp")'
+  - name: 'ColtM4Carbines.esp'
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Remove **0001EC51** from **ColtM4Carbines.esp**.' ]
+        condition: 'checksum("ColtM4Carbines.esp", 6D3814A3)'
+  - name: 'ColtM4Carbines_RHIronSights.esp'
+    req:
+      - name: 'RH_IRONSIGHTS.esm'
+        display: '[Rogue Hallow''s Iron Sights](https://www.nexusmods.com/fallout3/mods/6938/)'
+    msg:
+      - <<: *requiresResources
+        subs: [ 'M4 Carbines' ]
+        condition: 'not file("Sound/Fx/Wpn/emdgm4carbine")'
+      - <<: *wildEdits
+        subs: [ 'Remove **0001EC51** from **ColtM4Carbines_RHIronSights.esp**.' ]
+        condition: 'checksum("ColtM4Carbines_RHIronSights.esp", 0B0D7065)'
+
   - name: 'LingsFinerThings.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
     group: *fixesGroup
@@ -4547,8 +4570,7 @@ plugins:
 
   - name: 'Arms_dealer_V1.esp'
     inc: [ 'RH_IRONSIGHTS.esm' ]
-  - name: 'ColtM4Carbines_RHIronSights.esp'
-    tag: [ Graphics ]
+
   - name: 'Drone Cannon Fix.esp'
     tag: [ Graphics ]
   - name: 'EWE Supermutant Energy Weapons.esp'
