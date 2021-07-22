@@ -4577,8 +4577,7 @@ plugins:
   - name: 'Cat Outfit Only.esp'
     inc: [ 'Cat Outfit Fanged.esp' ]
     tag: [ Eyes ]
-  - name: 'clearhelmets4radsuits.esp'
-    tag: [ Graphics ]
+
   - name: 'COL Enclave VER2.esp'
     tag: [ Graphics ]
   - name: 'COL Enclave Hell.esp'
