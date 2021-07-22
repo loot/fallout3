@@ -2058,6 +2058,12 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/12221/'
         name: 'Charon Improved by llamaRCA'
+    inc:
+      - 'CBOv1.4.esp'
+      - name: 'FOOK2 - Main.ESM'
+        display: 'FOOK2 - FallOut Overhaul Kit'
+      - 'Phalanx-MainFollowerModule.esp'
+      - 'Sharing and Caring Companions.esm'
   - name: 'CharonImproved.esp'
     after:
       - 'Better Companions Clover Ess.esp'
@@ -2066,6 +2072,10 @@ plugins:
       - 'FollowersHireContinued-CharismaCheck-KarmaCheck.esp'
       - 'FollowersHireContinued-CharismaCheck-NoKarmaCheck.esp'
       - 'FollowersHireContinued-NoChecks.esp'
+  - name: 'llama''s Vanilla Followers for Charon Improved.esp'
+    inc:
+      - name: 'FO3 Wanderers Edition - Main File.esm'
+        display: 'Fallout 3 - Wanderers Edition (FWE)'
 
   - name: 'RoadWardens(MMM|UnInstall)?\.es(m|p)'
     url:
