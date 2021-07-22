@@ -2058,6 +2058,14 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/12221/'
         name: 'Charon Improved by llamaRCA'
+  - name: 'CharonImproved.esp'
+    after:
+      - 'Better Companions Clover Ess.esp'
+      - 'Better Companions Ess.esp'
+      - 'Better Companions NonEss.esp'
+      - 'FollowersHireContinued-CharismaCheck-KarmaCheck.esp'
+      - 'FollowersHireContinued-CharismaCheck-NoKarmaCheck.esp'
+      - 'FollowersHireContinued-NoChecks.esp'
 
   - name: 'RoadWardens(MMM|UnInstall)?\.es(m|p)'
     url:
