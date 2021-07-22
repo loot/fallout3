@@ -3626,6 +3626,20 @@ plugins:
       - crc: 0xF5F3419F
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'Classic Fallout Weapons BETA.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2307/' ]
+    tag:
+      - Deflst
+      - Delev
+      - Invent.Add
+      - Invent.Remove
+      - Relev
+    dirty:
+      - <<: *quickClean
+        crc: 0x32FDD979
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+
   - name: 'LingsFinerThings.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
     group: *fixesGroup
@@ -4301,10 +4315,6 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'Destructable Building Materials 3000 Beta v1.5' ]
         condition: 'many("Destructable Building Materials 3000 Beta v1.5( (PITT REQUIRED))?\.esp")'
-  - name: 'Classic Fallout Weapons BETA.esp'
-    tag:
-      - Invent
-      - Relev
 
   - name: 'FPS Grenade Hotkey.esp'
     msg:
