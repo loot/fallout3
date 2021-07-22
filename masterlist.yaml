@@ -1987,7 +1987,6 @@ plugins:
 
   - name: 'Clothed Sarah Lyons.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6831/' ]
-    tag: [ Invent ]
 
   - name: 'LingsPrettyThings.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
