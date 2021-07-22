@@ -3712,6 +3712,9 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
 
+  - name: 'ColtM4Carbines_RHIronSights.esp'
+    tag: [ Graphics ]
+
   - name: 'LingsFinerThings.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
     group: *fixesGroup
@@ -4547,8 +4550,7 @@ plugins:
 
   - name: 'Arms_dealer_V1.esp'
     inc: [ 'RH_IRONSIGHTS.esm' ]
-  - name: 'ColtM4Carbines_RHIronSights.esp'
-    tag: [ Graphics ]
+
   - name: 'Drone Cannon Fix.esp'
     tag: [ Graphics ]
   - name: 'EWE Supermutant Energy Weapons.esp'
