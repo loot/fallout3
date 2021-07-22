@@ -4301,10 +4301,6 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'Destructable Building Materials 3000 Beta v1.5' ]
         condition: 'many("Destructable Building Materials 3000 Beta v1.5( (PITT REQUIRED))?\.esp")'
-  - name: 'Classic Fallout Weapons BETA.esp'
-    tag:
-      - Invent
-      - Relev
 
   - name: 'FPS Grenade Hotkey.esp'
     msg:
