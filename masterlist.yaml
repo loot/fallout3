@@ -3714,6 +3714,10 @@ plugins:
 
   - name: 'ColtM4Carbines(_RHIronSights)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6264/' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'M4 Carbines ESP' ]
+        condition: 'many("ColtM4Carbines(_RHIronSights)?\.esp")'
   - name: 'ColtM4Carbines_RHIronSights.esp'
 
   - name: 'LingsFinerThings.esm'
