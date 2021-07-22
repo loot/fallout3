@@ -2079,6 +2079,10 @@ plugins:
       - 'FollowersHireContinued-CharismaCheck-KarmaCheck.esp'
       - 'FollowersHireContinued-CharismaCheck-NoKarmaCheck.esp'
       - 'FollowersHireContinued-NoChecks.esp'
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Delete **0001A267** from **CharonImproved.esp**.' ]
+        condition: 'checksum("CharonImproved.esp", 95C40A85) or checksum("CharonImproved.esp", D53E11EC)'
     tag:
       - Actors.AIData
       - Actors.CombatStyle
@@ -2088,6 +2092,9 @@ plugins:
     inc:
       - name: 'FO3 Wanderers Edition - Main File.esm'
         display: 'Fallout 3 - Wanderers Edition (FWE)'
+    clean:
+      - crc: 0xF8AE62C3
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
   - name: 'RoadWardens(MMM|UnInstall)?\.es(m|p)'
     url:
