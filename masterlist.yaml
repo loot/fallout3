@@ -1999,6 +1999,7 @@ plugins:
         itm: 1
 
   - name: 'Clothed Sarah Lyons - Sleepwear.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/7544/' ]
     tag: [ Invent ]
 
   - name: 'LingsPrettyThings.esp'
