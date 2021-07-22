@@ -1987,7 +1987,16 @@ plugins:
 
   - name: 'Clothed Sarah Lyons.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6831/' ]
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Delete **00015145**, **0001A267**, & **00074EB2** from **Clothed Sarah Lyons.esp**.' ]
+        condition: 'checksum("Clothed Sarah Lyons.esp", D725334E) or checksum("Clothed Sarah Lyons.esp", A6FCD425)'
     tag: [ Invent.Add ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xD725334E
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
 
   - name: 'LingsPrettyThings.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
