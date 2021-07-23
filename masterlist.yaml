@@ -5097,8 +5097,7 @@ plugins:
     tag:
       - Actors.ACBS
       - Actors.AIPackages
-  - name: 'CompanionCherry.esp'
-    tag: [ Actors.Stats ]
+
   - name: 'MTC RealWildnessLife.esp'
     tag: [ Relations ]
   - name: 'mesme.esp'
