@@ -3599,6 +3599,9 @@ plugins:
 
 ###### Gameplay - NPC Balance & Distribution ######
   - name: 'TalonExtraArmor.esm'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/5483/'
+        name: 'Expanded Talon Company'
 
 ###### Gameplay - Quests ######
   - name: 'ArefuExpandedByAzar.esm'
