@@ -2059,6 +2059,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/1647/'
         name: 'DIMONIZED Female Races & Textures'
+    tag:
+      - R.Eyes
+      - R.Hair
   - name: 'CUSTOM RACES.esp'
   - name: 'DIM CUSTOM RACES V2.esp'
 
