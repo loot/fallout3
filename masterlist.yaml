@@ -3713,6 +3713,11 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'Dangerous Radroaches ESP' ]
         condition: 'many("DangerousRadroaches(_MMM)?\.esp")'
+    tag:
+      - Actors.ACBS
+      - Actors.AIData
+      - Actors.Stats
+      - Sound
   - name: 'DangerousRadroaches.esp'
     msg:
       - <<: *useVersion
