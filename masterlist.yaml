@@ -2159,6 +2159,8 @@ plugins:
       - crc: 0x195DAEE1
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'cyber_meat.esp'
+
   - name: 'LingsPrettyThings.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
     after: [ 'Lings Finer Things.esp' ]
