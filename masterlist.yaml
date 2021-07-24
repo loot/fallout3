@@ -2161,6 +2161,7 @@ plugins:
 
   - name: 'cyber_meat.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11843/' ]
+    tag: [ Graphics ]
 
   - name: 'LingsPrettyThings.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
