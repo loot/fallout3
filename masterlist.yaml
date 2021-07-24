@@ -3723,7 +3723,13 @@ plugins:
       - <<: *useVersion
         subs: [ 'Martigen''s Mutant Mod' ]
         condition: 'active("Mart''s Mutant Mod.esm") and not file("DangerousRadroaches_MMM.esp")'
+    clean:
+      - crc: 0xE5CF9BA5
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
   - name: 'DangerousRadroaches_MMM.esp'
+    clean:
+      - crc: 0x1EEBEDD3
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
   - name: 'TalonExtraArmor.esm'
     url:
