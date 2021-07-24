@@ -2041,6 +2041,22 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
 
+  - name: 'CompanionCherry.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11210/' ]
+    tag:
+      - Actors.ACBS
+      - Actors.AIData
+      - Actors.Stats
+      - Invent.Add
+      - Invent.Remove
+      - NPC.Eyes
+      - NPC.FaceGen
+      - NPC.Hair
+      - NPC.Race
+    clean:
+      - crc: 0x195DAEE1
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+
   - name: 'LingsPrettyThings.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
     after: [ 'Lings Finer Things.esp' ]
@@ -5097,8 +5113,7 @@ plugins:
     tag:
       - Actors.ACBS
       - Actors.AIPackages
-  - name: 'CompanionCherry.esp'
-    tag: [ Actors.Stats ]
+
   - name: 'MTC RealWildnessLife.esp'
     tag: [ Relations ]
   - name: 'mesme.esp'
