@@ -3602,12 +3602,21 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/5483/'
         name: 'Expanded Talon Company'
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Remove **0004447C**, **0004447E**, **00044480**, **000444A7**, **000444A9**, **000444AB**, **0007F4EB**, **0007F4ED**, **0007F4EF**, **0007F4F3**, **0007F4F5**, & **0007F4F7** from **TalonExtraArmor.esm**.' ]
+        condition: 'checksum("TalonExtraArmor.esm", 90C173C2) or checksum("TalonExtraArmor.esm", E1AA7795)'
     tag:
       - Delev
       - Graphics
       - Invent.Add
       - Invent.Remove
       - Stats
+    dirty:
+      - <<: *quickClean
+        crc: 0x90C173C2
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
   - name: 'Compatibility(_)?Plugin_TalonExtraArmor_FWE(_BrokenSteel)?\.esp'
     msg:
       - <<: *useOnlyOneX
