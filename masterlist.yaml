@@ -2043,6 +2043,16 @@ plugins:
 
   - name: 'CompanionCherry.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11210/' ]
+    tag:
+      - Actors.ACBS
+      - Actors.AIData
+      - Actors.Stats
+      - Invent.Add
+      - Invent.Remove
+      - NPC.Eyes
+      - NPC.FaceGen
+      - NPC.Hair
+      - NPC.Race
 
   - name: 'LingsPrettyThings.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
