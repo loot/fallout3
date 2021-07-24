@@ -3714,6 +3714,8 @@ plugins:
 ###### Gameplay - NPC Behaviour & Dialogue ######
   - name: '(Confessor Cromwell has a Break_EV|Beichtvater Cromwell macht Pause_DV)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4660/' ]
+  - name: 'Beichtvater Cromwell macht Pause_DV.esp'
+    msg: [ *languageGerman ]
 
 ###### Gameplay - Quests ######
   - name: 'ArefuExpandedByAzar.esm'
