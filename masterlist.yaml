@@ -2053,6 +2053,9 @@ plugins:
       - NPC.FaceGen
       - NPC.Hair
       - NPC.Race
+    clean:
+      - crc: 0x195DAEE1
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
   - name: 'LingsPrettyThings.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
