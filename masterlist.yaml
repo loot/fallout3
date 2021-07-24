@@ -2162,6 +2162,9 @@ plugins:
   - name: 'cyber_meat.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11843/' ]
     tag: [ Graphics ]
+    clean:
+      - crc: 0x046EBA41
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
   - name: 'LingsPrettyThings.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
