@@ -3607,6 +3607,8 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'Expanded Talon Company - FWE patch' ]
         condition: 'many("Compatibility(_)?Plugin_TalonExtraArmor_FWE(_BrokenSteel)?\.esp")'
+  - name: 'Compatibility Plugin_TalonExtraArmor_FWE.esp'
+    msg: [ *useVersionBrokenSteel ]
 
 ###### Gameplay - Quests ######
   - name: 'ArefuExpandedByAzar.esm'
