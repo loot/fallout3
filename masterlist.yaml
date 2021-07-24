@@ -2160,6 +2160,7 @@ plugins:
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
   - name: 'cyber_meat.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11843/' ]
 
   - name: 'LingsPrettyThings.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
