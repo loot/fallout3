@@ -2055,6 +2055,10 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1468
 
+  - name: '(DIM )?CUSTOM RACES( V2)?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/1647/'
+        name: 'DIMONIZED Female Races & Textures'
   - name: 'CUSTOM RACES.esp'
     tag:
       - Eyes
