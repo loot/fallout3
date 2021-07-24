@@ -2063,7 +2063,17 @@ plugins:
       - R.Eyes
       - R.Hair
   - name: 'CUSTOM RACES.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x2EF47C54
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 7
   - name: 'DIM CUSTOM RACES V2.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x4A0AC363
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 14
 
   - name: 'HairPack.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1146/' ]
