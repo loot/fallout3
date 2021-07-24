@@ -4863,8 +4863,6 @@ plugins:
   - name: 'moirared.esp'
     tag: [ Invent ]
 
-  - name: 'cyber_meat.esp'
-    tag: [ Graphics ]
   - name: 'Dread Dogmeat.esp'
     tag: [ Scripts ]
   - name: 'Menu Based Hacking & Picking.esp'
