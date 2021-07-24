@@ -3602,6 +3602,11 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/5483/'
         name: 'Expanded Talon Company'
+  - name: 'Compatibility(_)?Plugin_TalonExtraArmor_FWE(_BrokenSteel)?\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Expanded Talon Company - FWE patch' ]
+        condition: 'many("Compatibility(_)?Plugin_TalonExtraArmor_FWE(_BrokenSteel)?\.esp")'
 
 ###### Gameplay - Quests ######
   - name: 'ArefuExpandedByAzar.esm'
