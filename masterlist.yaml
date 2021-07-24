@@ -3602,11 +3602,21 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/5483/'
         name: 'Expanded Talon Company'
+    tag:
+      - Delev
+      - Graphics
+      - Invent.Add
+      - Invent.Remove
+      - Stats
   - name: 'Compatibility(_)?Plugin_TalonExtraArmor_FWE(_BrokenSteel)?\.esp'
     msg:
       - <<: *useOnlyOneX
         subs: [ 'Expanded Talon Company - FWE patch' ]
         condition: 'many("Compatibility(_)?Plugin_TalonExtraArmor_FWE(_BrokenSteel)?\.esp")'
+    tag:
+      - Delev
+      - Invent.Add
+      - Relev
   - name: 'Compatibility Plugin_TalonExtraArmor_FWE.esp'
     msg: [ *useVersionBrokenSteel ]
 
