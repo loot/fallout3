@@ -2159,6 +2159,13 @@ plugins:
       - crc: 0x195DAEE1
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'cyber_meat.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11843/' ]
+    tag: [ Graphics ]
+    clean:
+      - crc: 0x046EBA41
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+
   - name: 'LingsPrettyThings.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
     after: [ 'Lings Finer Things.esp' ]
@@ -4863,8 +4870,6 @@ plugins:
   - name: 'moirared.esp'
     tag: [ Invent ]
 
-  - name: 'cyber_meat.esp'
-    tag: [ Graphics ]
   - name: 'Dread Dogmeat.esp'
     tag: [ Scripts ]
   - name: 'Menu Based Hacking & Picking.esp'
