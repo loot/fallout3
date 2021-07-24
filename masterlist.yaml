@@ -2055,6 +2055,15 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1468
 
+  - name: 'CUSTOM RACES.esp'
+    tag:
+      - Eyes
+      - Hair
+  - name: 'DIM CUSTOM RACES V2.esp'
+    tag:
+      - Eyes
+      - Hair
+
   - name: 'HairPack.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1146/' ]
     group: *fixesGroup
@@ -5919,14 +5928,6 @@ plugins:
       - Deflst
       - Delev
 
-  - name: 'CUSTOM RACES.esp'
-    tag:
-      - Eyes
-      - Hair
-  - name: 'DIM CUSTOM RACES V2.esp'
-    tag:
-      - Eyes
-      - Hair
   - name: 'EwwGhoulyBody.esp'
     tag: [ Body-F ]
   - name: 'VB_Hair_Shojo+CotW_15.esp'
