@@ -3709,6 +3709,10 @@ plugins:
 ###### Gameplay - NPC Balance & Distribution ######
   - name: 'DangerousRadroaches(_MMM)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11552/' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Dangerous Radroaches ESP' ]
+        condition: 'many("DangerousRadroaches(_MMM)?\.esp")'
   - name: 'DangerousRadroaches_MMM.esp'
     tag: [ Actors.CombatStyle ]
 
