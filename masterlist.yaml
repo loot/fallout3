@@ -3597,6 +3597,9 @@ plugins:
       - crc: 0x805B9F70
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+###### Gameplay - NPC Balance & Distribution ######
+  - name: 'TalonExtraArmor.esm'
+
 ###### Gameplay - Quests ######
   - name: 'ArefuExpandedByAzar.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12466/' ]
