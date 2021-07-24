@@ -3707,6 +3707,30 @@ plugins:
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
 ###### Gameplay - NPC Balance & Distribution ######
+  - name: 'DangerousRadroaches(_MMM)?\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11552/' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Dangerous Radroaches ESP' ]
+        condition: 'many("DangerousRadroaches(_MMM)?\.esp")'
+    tag:
+      - Actors.ACBS
+      - Actors.AIData
+      - Actors.Stats
+      - Sound
+  - name: 'DangerousRadroaches.esp'
+    msg:
+      - <<: *useVersion
+        subs: [ 'Martigen''s Mutant Mod' ]
+        condition: 'active("Mart''s Mutant Mod.esm") and not file("DangerousRadroaches_MMM.esp")'
+    clean:
+      - crc: 0xE5CF9BA5
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'DangerousRadroaches_MMM.esp'
+    clean:
+      - crc: 0x1EEBEDD3
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+
   - name: 'TalonExtraArmor.esm'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/5483/'
@@ -5127,8 +5151,7 @@ plugins:
 
   - name: 'Mart''s Mutant Mod - UF3P.esp'
     tag: [ Invent ]
-  - name: 'DangerousRadroaches_MMM.esp'
-    tag: [ Actors.CombatStyle ]
+
   - name: 'CP - FACE3 NPCS [MMM].esp'
     tag:
       - NoMerge
