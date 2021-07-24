@@ -3711,6 +3711,9 @@ plugins:
   - name: 'Compatibility Plugin_TalonExtraArmor_FWE.esp'
     msg: [ *useVersionBrokenSteel ]
 
+###### Gameplay - NPC Behaviour & Dialogue ######
+  - name: '(Confessor Cromwell has a Break_EV|Beichtvater Cromwell macht Pause_DV)\.esp'
+
 ###### Gameplay - Quests ######
   - name: 'ArefuExpandedByAzar.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12466/' ]
