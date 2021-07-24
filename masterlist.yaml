@@ -320,6 +320,88 @@ common:
       - lang: zh_CN
         text: '%1%已包含在这个mod中。'
 
+  - &languageX
+    type: say
+    content:
+      - lang: en
+        text: 'Language: %1%'
+      - lang: bg
+        text: 'Език: %1%'
+      - lang: de
+        text: 'Sprache: %1%'
+      - lang: es
+        text: 'Lenguaje: %1%'
+      - lang: it
+        text: 'Lingua: %1%'
+      - lang: ja
+        text: '言語: %1%'
+      - lang: ko
+        text: '언어: %1%'
+      - lang: pt_BR
+        text: 'Língua: %1%'
+      - lang: pt_PT
+        text: 'Língua: %1%'
+      - lang: ru
+        text: 'Язык: %1%'
+      - lang: uk_UA
+        text: 'Мова: %1%'
+      - lang: zh_CN
+        text: '语言: %1%'
+  - &languageEnglish
+    <<: *languageX
+    subs: [ '**en**' ]
+  - &languageBulgarian
+    <<: *languageX
+    subs: [ '**bg**' ]
+  - &languageChineseSimplified
+    <<: *languageX
+    subs: [ '**zh_CN**' ]
+  - &languageCzech
+    <<: *languageX
+    subs: [ '**cs**' ]
+  - &languageDanish
+    <<: *languageX
+    subs: [ '**da**' ]
+  - &languageFinnish
+    <<: *languageX
+    subs: [ '**fi**' ]
+  - &languageFrench
+    <<: *languageX
+    subs: [ '**fr**' ]
+  - &languageGerman
+    <<: *languageX
+    subs: [ '**de**' ]
+  - &languageItalian
+    <<: *languageX
+    subs: [ '**it**' ]
+  - &languageJapanese
+    <<: *languageX
+    subs: [ '**ja**' ]
+  - &languageKorean
+    <<: *languageX
+    subs: [ '**ko**' ]
+  - &languagePolish
+    <<: *languageX
+    subs: [ '**pl**' ]
+  - &languagePortuguese
+    <<: *languageX
+    subs: [ '**pt_PT**' ]
+  - &languagePortugueseBrazil
+    <<: *languageX
+    subs: [ '**pt_BR**' ]
+  - &languageRussian
+    <<: *languageX
+    subs: [ '**ru**' ]
+  - &languageSpanish
+    <<: *languageX
+    subs: [ '**es**' ]
+  - &languageSwedish
+    <<: *languageX
+    subs: [ '**sv**' ]
+  - &languageUkrainian
+    <<: *languageX
+    subs: [ '**uk_UA**' ]
+
   - &missingRequirementXforPlugin
     type: warn
     content:
