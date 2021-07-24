@@ -3597,6 +3597,38 @@ plugins:
       - crc: 0x805B9F70
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+###### Gameplay - NPC Balance & Distribution ######
+  - name: 'TalonExtraArmor.esm'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/5483/'
+        name: 'Expanded Talon Company'
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Remove **0004447C**, **0004447E**, **00044480**, **000444A7**, **000444A9**, **000444AB**, **0007F4EB**, **0007F4ED**, **0007F4EF**, **0007F4F3**, **0007F4F5**, & **0007F4F7** from **TalonExtraArmor.esm**.' ]
+        condition: 'checksum("TalonExtraArmor.esm", 90C173C2) or checksum("TalonExtraArmor.esm", E1AA7795)'
+    tag:
+      - Delev
+      - Graphics
+      - Invent.Add
+      - Invent.Remove
+      - Stats
+    dirty:
+      - <<: *quickClean
+        crc: 0x90C173C2
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+  - name: 'Compatibility(_)?Plugin_TalonExtraArmor_FWE(_BrokenSteel)?\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Expanded Talon Company - FWE patch' ]
+        condition: 'many("Compatibility(_)?Plugin_TalonExtraArmor_FWE(_BrokenSteel)?\.esp")'
+    tag:
+      - Delev
+      - Invent.Add
+      - Relev
+  - name: 'Compatibility Plugin_TalonExtraArmor_FWE.esp'
+    msg: [ *useVersionBrokenSteel ]
+
 ###### Gameplay - Quests ######
   - name: 'ArefuExpandedByAzar.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12466/' ]
@@ -6521,36 +6553,7 @@ plugins:
         crc: 0x597E4C09
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
-  - name: 'TalonExtraArmor.esm'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/5483' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0x90C173C2
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 1
-  - name: 'Compatibility Plugin00 TalonCo & Marts.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/5483' ]
-    clean:
-      - crc: 0x1CAE3677
-        util: 'FO3Edit v4.0.2f'
-  - name: 'Compatibility Plugin01 PunisherGear & TalonCo.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/5483' ]
-    clean:
-      - crc: 0x8C3CC95F
-        util: 'FO3Edit v4.0.2f'
-  - name: 'Compatibility Plugin_TalonExtraArmor_FWE.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/5483' ]
-    clean:
-      - crc: 0xE531F16C
-        util: 'FO3Edit v4.0.2f'
-  - name: 'Compatibility_Plugin_TalonExtraArmor_FWE_BrokenSteel.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/5483' ]
-    tag:
-      - Delev
-      - Relev
-    clean:
-      - crc: 0xB9157DA1
-        util: 'FO3Edit v4.0.2f'
+
   - name: 'PLFewerItems.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7268' ]
     group: *overridesGroup
