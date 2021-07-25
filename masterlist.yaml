@@ -1799,6 +1799,31 @@ plugins:
       - crc: 0xF5F4F135
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'Chems and Meds Re-Textures Pack.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15960/' ]
+    msg:
+      - <<: *deletePlugin
+        subs: [ 'Advanced Chems - Mentats (MentatsMod.esp)' ]
+        condition: 'active("MentatsMod.esp")'
+    tag: [ Graphics ]
+    clean:
+      - crc: 0x77F9F207
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+
+  - name: 'Mentats Re-Textures.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15958/' ]
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Chems and Meds Re-Texture Pack **Chems and Meds Re-Textures Pack.esp**' ]
+        condition: 'file("Chems and Meds Re-Textures Pack.esp")'
+
+  - name: 'Jet Ultrajet Re-Texture.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15955/' ]
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Chems and Meds Re-Texture Pack **Chems and Meds Re-Textures Pack.esp**' ]
+        condition: 'file("Chems and Meds Re-Textures Pack.esp")'
+
   - name: 'UWWUT.*\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/6309/'
@@ -4569,12 +4594,7 @@ plugins:
     inc: [ 'RobCo Universal Battery Charger Kit - Zeta.esp' ]
   - name: 'RobCo Universal Battery Charger Kit - Zeta.esp'
     inc: [ 'RobCo Universal Battery Charger Kit.esp' ]
-  - name: 'Chems and Meds Re-Textures Pack.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/15960' ]
-    tag: [ Graphics ]
-    clean:
-      - crc: 0x77F9F207
-        util: 'FO3Edit v4.0.2e'
+
   - name: 'MAXdog.esp'
     tag: [ Graphics ]
   - name: 'Megaton Sorter.esp'
