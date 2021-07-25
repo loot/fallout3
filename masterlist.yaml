@@ -1805,6 +1805,7 @@ plugins:
       - <<: *deletePlugin
         subs: [ 'Advanced Chems - Mentats (MentatsMod.esp)' ]
         condition: 'active("MentatsMod.esp")'
+    tag: [ Graphics ]
 
   - name: 'UWWUT.*\.esp'
     url:
