@@ -4569,12 +4569,7 @@ plugins:
     inc: [ 'RobCo Universal Battery Charger Kit - Zeta.esp' ]
   - name: 'RobCo Universal Battery Charger Kit - Zeta.esp'
     inc: [ 'RobCo Universal Battery Charger Kit.esp' ]
-  - name: 'Chems and Meds Re-Textures Pack.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/15960' ]
-    tag: [ Graphics ]
-    clean:
-      - crc: 0x77F9F207
-        util: 'FO3Edit v4.0.2e'
+
   - name: 'MAXdog.esp'
     tag: [ Graphics ]
   - name: 'Megaton Sorter.esp'
