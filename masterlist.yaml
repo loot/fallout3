@@ -1806,6 +1806,9 @@ plugins:
         subs: [ 'Advanced Chems - Mentats (MentatsMod.esp)' ]
         condition: 'active("MentatsMod.esp")'
     tag: [ Graphics ]
+    clean:
+      - crc: 0x77F9F207
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
   - name: 'UWWUT.*\.esp'
     url:
