@@ -1801,6 +1801,10 @@ plugins:
 
   - name: 'Chems and Meds Re-Textures Pack.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15960/' ]
+    msg:
+      - <<: *deletePlugin
+        subs: [ 'Advanced Chems - Mentats (MentatsMod.esp)' ]
+        condition: 'active("MentatsMod.esp")'
 
   - name: 'UWWUT.*\.esp'
     url:
