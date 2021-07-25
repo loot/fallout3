@@ -1810,6 +1810,20 @@ plugins:
       - crc: 0x77F9F207
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'Mentats Re-Textures.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15958/' ]
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Chems and Meds Re-Texture Pack **Chems and Meds Re-Textures Pack.esp**' ]
+        condition: 'file("Chems and Meds Re-Textures Pack.esp")'
+
+  - name: 'Jet Ultrajet Re-Texture.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15955/' ]
+    msg:
+      - <<: *alreadyInX
+        subs: [ 'Chems and Meds Re-Texture Pack **Chems and Meds Re-Textures Pack.esp**' ]
+        condition: 'file("Chems and Meds Re-Textures Pack.esp")'
+
   - name: 'UWWUT.*\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/6309/'
