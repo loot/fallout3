@@ -1800,6 +1800,7 @@ plugins:
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
   - name: 'Chems and Meds Re-Textures Pack.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15960/' ]
 
   - name: 'UWWUT.*\.esp'
     url:
