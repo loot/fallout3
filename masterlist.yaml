@@ -3828,6 +3828,9 @@ plugins:
         util: '[FO3Edit v4.0.3g](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 16
 
+  - name: 'Despicable Dashwood v2.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/13883/' ]
+
   - name: 'Regulators(_Overhaul(_lvl(2|7))?)?\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/2928/'
