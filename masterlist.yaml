@@ -4433,10 +4433,7 @@ plugins:
 
   - name: 'RadioHotkey.esp'
     group: *overridesGroup
-  - name: 'Despicable Dashwood v2.esp'
-    tag:
-      - Actors.ACBS
-      - Invent
+
   - name: 'HeirApparent.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5630' ]
     tag: [ Scripts ]
