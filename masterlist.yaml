@@ -3830,6 +3830,7 @@ plugins:
 
   - name: 'Despicable Dashwood v2.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13883/' ]
+    inc: [ 'Despicable Dashwood v1.esp' ]
 
   - name: 'Regulators(_Overhaul(_lvl(2|7))?)?\.esp'
     url:
