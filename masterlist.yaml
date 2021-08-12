@@ -2319,6 +2319,7 @@ plugins:
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
   - name: 'Dread Dogmeat.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/5311/' ]
     tag: [ Scripts ]
 
   - name: 'RoadWardens(MMM|UnInstall)?\.es(m|p)'
