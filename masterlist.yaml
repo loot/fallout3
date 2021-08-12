@@ -3838,6 +3838,11 @@ plugins:
       - Invent.Add
       - Invent.Change
       - Invent.Remove
+    dirty:
+      - <<: *quickClean
+        crc: 0x2FBD9494
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 18
 
   - name: 'Regulators(_Overhaul(_lvl(2|7))?)?\.esp'
     url:
