@@ -3828,6 +3828,22 @@ plugins:
         util: '[FO3Edit v4.0.3g](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 16
 
+  - name: 'Despicable Dashwood v2.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/13883/' ]
+    inc: [ 'Despicable Dashwood v1.esp' ]
+    tag:
+      - Actors.ACBS
+      - Actors.RecordFlags
+      - Actors.Stats
+      - Invent.Add
+      - Invent.Change
+      - Invent.Remove
+    dirty:
+      - <<: *quickClean
+        crc: 0x2FBD9494
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 18
+
   - name: 'Regulators(_Overhaul(_lvl(2|7))?)?\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/2928/'
@@ -4433,10 +4449,7 @@ plugins:
 
   - name: 'RadioHotkey.esp'
     group: *overridesGroup
-  - name: 'Despicable Dashwood v2.esp'
-    tag:
-      - Actors.ACBS
-      - Invent
+
   - name: 'HeirApparent.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5630' ]
     tag: [ Scripts ]
