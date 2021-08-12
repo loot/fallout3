@@ -2320,6 +2320,12 @@ plugins:
 
   - name: 'Dread Dogmeat.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5311/' ]
+    tag:
+      - Actors.ACBS
+      - Actors.AIData
+      - Actors.CombatStyle
+      - Actors.Stats
+      - Graphics
 
   - name: 'RoadWardens(MMM|UnInstall)?\.es(m|p)'
     url:
