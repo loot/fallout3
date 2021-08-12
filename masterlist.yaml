@@ -2320,7 +2320,6 @@ plugins:
 
   - name: 'Dread Dogmeat.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5311/' ]
-    tag: [ Scripts ]
 
   - name: 'RoadWardens(MMM|UnInstall)?\.es(m|p)'
     url:
