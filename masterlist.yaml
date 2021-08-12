@@ -2318,6 +2318,9 @@ plugins:
       - crc: 0xF8AE62C3
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'Dread Dogmeat.esp'
+    tag: [ Scripts ]
+
   - name: 'RoadWardens(MMM|UnInstall)?\.es(m|p)'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/2781/'
@@ -4927,8 +4930,6 @@ plugins:
   - name: 'moirared.esp'
     tag: [ Invent ]
 
-  - name: 'Dread Dogmeat.esp'
-    tag: [ Scripts ]
   - name: 'Menu Based Hacking & Picking.esp'
     msg: [ *alreadyInFWE ]
   - name: 'OverMightyGold.esp'
