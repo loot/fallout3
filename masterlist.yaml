@@ -3786,6 +3786,7 @@ plugins:
 
   - name: '(Everso )?Slightly More Ammo( \(Explosive\))?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15746/' ]
+    tag: [ Relev ]
 
 ###### Gameplay - NPC Balance & Distribution ######
   - name: 'DangerousRadroaches(_MMM)?\.esp'
