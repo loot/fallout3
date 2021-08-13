@@ -2939,6 +2939,15 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 5
 
+  - name: 'Essential Caravan Merchants.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/7032/' ]
+    tag:
+      - Actors.ACBS
+      - Actors.Stats
+    clean:
+      - crc: 0xB03D0485
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+
   - name: 'EVE.esm'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/8340/'
@@ -4671,8 +4680,7 @@ plugins:
     inc: [ 'CrowdedCities_v2_lessNPCs.esp' ]
   - name: 'CrowdedCities_v2_lessNPCs.esp'
     inc: [ 'CrowdedCities_v2.esp' ]
-  - name: 'Essential Caravan Merchants.esp'
-    tag: [ Actors.ACBS ]
+
   - name: 'Essential_Zeta_Allies.esp'
     tag: [ Actors.ACBS ]
   - name: 'Named Wastelanders.esp'
