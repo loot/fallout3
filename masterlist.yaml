@@ -1812,6 +1812,9 @@ plugins:
 
   - name: 'Empty Nuka-Cola Quantum Bottles.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16809/' ]
+    tag:
+      - Graphics
+      - Names
 
   - name: 'Mentats Re-Textures.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15958/' ]
