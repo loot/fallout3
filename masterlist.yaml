@@ -4983,12 +4983,7 @@ plugins:
     tag: [ Relev ]
   - name: 'More Ammo (Explosive).esp'
     tag: [ Relev ]
-  - name: 'Slightly More Ammo.esp'
-    tag: [ Relev ]
-  - name: 'Slightly More Ammo (Explosive).esp'
-    tag: [ Relev ]
-  - name: 'Everso Slightly More Ammo.esp'
-    tag: [ Relev ]
+
   - name: 'RealFragGrenade.esp'
     inc: [ 'RealFragGrenade3.esp' ]
     msg: [ *obsolete ]
