@@ -2950,6 +2950,7 @@ plugins:
 
   - name: 'Essential_Zeta_Allies.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11436/' ]
+    tag: [ Actors.ACBS ]
 
   - name: 'EVE.esm'
     url:
