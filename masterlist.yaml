@@ -1563,6 +1563,9 @@ plugins:
     group: *fixesGroup
     msg: [ *alreadyInOrFixedByUFO3P ]
 
+  - name: 'Drone Cannon Fix.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/8391/' ]
+
   - name: 'FireLightFix(_rus)?\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/3660/'
