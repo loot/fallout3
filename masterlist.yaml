@@ -5186,46 +5186,6 @@ plugins:
     tag: [ Names ]
   - name: 'Trucker Holotapes.esp'
     tag: [ Names ]
-  - name: 'EVE Main - FWE Master Release.esp'
-    msg: [ *obsolete ]
-  - name: 'EVE - FWE Master Release.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
-    tag:
-      - Actors.ACBS
-      - Graphics
-      - Invent
-      - Sound
-      - Stats
-    dirty:
-      - <<: *quickClean
-        crc: 0xCE1A6004
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 13
-  - name: 'EVE - FWE Master Release (Follower Enhanced).esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
-    tag:
-      - Graphics
-      - Sound
-    clean:
-      - crc: 0x91383617
-        util: 'FO3Edit v4.0.2e'
-
-  - name: 'EVE Anchorage - FWE DLC Anchorage.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
-    tag:
-      - Graphics
-      - Sound
-    clean:
-      - crc: 0x558AA146
-        util: 'FO3Edit v4.0.2e'
-  - name: 'EVE - FWE with WeaponModKits.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/4968' ]
-    tag:
-      - Graphics
-      - Sound
-    clean:
-      - crc: 0xA5E65C01
-        util: 'FO3Edit v4.0.2e'
 
   - name: 'Mart''s Mutant Mod - UF3P.esp'
     tag: [ Invent ]
