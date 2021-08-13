@@ -1568,6 +1568,7 @@ plugins:
     msg:
       - <<: *alreadyInOrFixedByUFO3P
         condition: '(active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.2.0", >)) or active("Unofficial Fallout 3 Patch - Mothership Zeta.esp")'
+    tag: [ Graphics ]
 
   - name: 'FireLightFix(_rus)?\.esp'
     url:
