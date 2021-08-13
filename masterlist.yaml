@@ -1810,6 +1810,9 @@ plugins:
       - crc: 0x77F9F207
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'Empty Nuka-Cola Quantum Bottles.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/16809/' ]
+
   - name: 'Mentats Re-Textures.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15958/' ]
     msg:
