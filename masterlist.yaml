@@ -4681,8 +4681,6 @@ plugins:
   - name: 'CrowdedCities_v2_lessNPCs.esp'
     inc: [ 'CrowdedCities_v2.esp' ]
 
-  - name: 'Essential_Zeta_Allies.esp'
-    tag: [ Actors.ACBS ]
   - name: 'Named Wastelanders.esp'
     tag: [ Names ]
   - name: 'Named Wasteland.esp'
