@@ -3792,6 +3792,20 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'Slightly More Ammo ESP - **Slightly More Ammo.esp** OR **Everso Slightly More Ammo.esp**' ]
         condition: 'many("(Everso )?Slightly More Ammo\.esp")'
+  - name: 'Everso Slightly More Ammo.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x42078479
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 3
+  - name: 'Slightly More Ammo.esp'
+    clean:
+      - crc: 0x06045FAA
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'Slightly More Ammo (Explosive).esp'
+    clean:
+      - crc: 0x79578C96
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
 ###### Gameplay - NPC Balance & Distribution ######
   - name: 'DangerousRadroaches(_MMM)?\.esp'
