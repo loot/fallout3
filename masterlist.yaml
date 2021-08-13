@@ -2948,6 +2948,15 @@ plugins:
       - crc: 0xB03D0485
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'Essential_Zeta_Allies.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11436/' ]
+    tag: [ Actors.ACBS ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x28D65D00
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+
   - name: 'EVE.esm'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/8340/'
@@ -4681,8 +4690,6 @@ plugins:
   - name: 'CrowdedCities_v2_lessNPCs.esp'
     inc: [ 'CrowdedCities_v2.esp' ]
 
-  - name: 'Essential_Zeta_Allies.esp'
-    tag: [ Actors.ACBS ]
   - name: 'Named Wastelanders.esp'
     tag: [ Names ]
   - name: 'Named Wasteland.esp'
