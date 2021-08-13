@@ -5054,8 +5054,7 @@ plugins:
       - <<: *alreadyInX
         subs: [ 'RI - Primary Needs' ]
         condition: 'active("RI_Core.esm")'
-  - name: 'Empty Nuka-Cola Quantum Bottles.esp'
-    tag: [ Names ]
+
   - name: 'Persistent Skill Books.esp'
     msg: [ *alreadyInFWE ]
   - name: 'PlasmaWeaponsRedesignRebalance.esp'
