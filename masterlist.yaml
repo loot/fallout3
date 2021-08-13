@@ -1565,6 +1565,9 @@ plugins:
 
   - name: 'Drone Cannon Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8391/' ]
+    msg:
+      - <<: *alreadyInOrFixedByUFO3P
+        condition: '(active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.2.0", >)) or active("Unofficial Fallout 3 Patch - Mothership Zeta.esp")'
 
   - name: 'FireLightFix(_rus)?\.esp'
     url:
