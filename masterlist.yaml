@@ -2951,6 +2951,11 @@ plugins:
   - name: 'Essential_Zeta_Allies.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11436/' ]
     tag: [ Actors.ACBS ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x28D65D00
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
 
   - name: 'EVE.esm'
     url:
