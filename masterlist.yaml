@@ -3787,6 +3787,11 @@ plugins:
   - name: '(Everso )?Slightly More Ammo( \(Explosive\))?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15746/' ]
     tag: [ Relev ]
+  - name: '(Everso )?Slightly More Ammo\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Slightly More Ammo ESP - **Slightly More Ammo.esp** OR **Everso Slightly More Ammo.esp**' ]
+        condition: 'many("(Everso )?Slightly More Ammo\.esp")'
 
 ###### Gameplay - NPC Balance & Distribution ######
   - name: 'DangerousRadroaches(_MMM)?\.esp'
