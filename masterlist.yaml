@@ -2941,6 +2941,9 @@ plugins:
 
   - name: 'Essential Caravan Merchants.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7032/' ]
+    tag:
+      - Actors.ACBS
+      - Actors.Stats
 
   - name: 'EVE.esm'
     url:
