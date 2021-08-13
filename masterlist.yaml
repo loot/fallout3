@@ -4671,8 +4671,7 @@ plugins:
     inc: [ 'CrowdedCities_v2_lessNPCs.esp' ]
   - name: 'CrowdedCities_v2_lessNPCs.esp'
     inc: [ 'CrowdedCities_v2.esp' ]
-  - name: 'Essential Caravan Merchants.esp'
-    tag: [ Actors.ACBS ]
+
   - name: 'Essential_Zeta_Allies.esp'
     tag: [ Actors.ACBS ]
   - name: 'Named Wastelanders.esp'
