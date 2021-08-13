@@ -1569,6 +1569,11 @@ plugins:
       - <<: *alreadyInOrFixedByUFO3P
         condition: '(active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.2.0", >)) or active("Unofficial Fallout 3 Patch - Mothership Zeta.esp")'
     tag: [ Graphics ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xB292C0AD
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
 
   - name: 'FireLightFix(_rus)?\.esp'
     url:
