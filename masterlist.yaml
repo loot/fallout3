@@ -2996,6 +2996,9 @@ plugins:
   - name: 'EVE Operation Anchorage.esp'
     req: [ 'EVE.esp' ]
 
+  - name: 'EWE ((Supermutant )?Energy Weapons( Enhanced)?|DLC Addon)\.es(m|p)'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10640/' ]
+
   - name: 'fasttravelfromindoors.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15108/' ]
     inc: [ 'FastTravelIndoors.esp' ]
