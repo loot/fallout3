@@ -4230,14 +4230,6 @@ plugins:
   - name: 'Refurbishes [ALL].esm'
     msg: [ *alreadyInFOOK2 ]
 
-  - name: 'EWE Energy Weapons Enhanced.esm'
-    tag:
-      - Deflst
-      - Graphics
-      - Invent
-      - Relev
-      - Scripts
-      - Stats
   - name: 'Companion Core.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/712' ]
     dirty:
@@ -4852,8 +4844,6 @@ plugins:
   - name: 'Arms_dealer_V1.esp'
     inc: [ 'RH_IRONSIGHTS.esm' ]
 
-  - name: 'EWE Supermutant Energy Weapons.esp'
-    tag: [ Relev ]
   - name: 'H.E.R.K. - GOTY.esp'
     inc: [ 'H.E.R.K. - GOTY & WMK.esp' ]
   - name: 'H.E.R.K. - GOTY & WMK.esp'
@@ -5489,12 +5479,6 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'Hacking Terminals Is Easier ESP' ]
         condition: 'many("(Action_Boy_hacking|Easier_hacking_5_8|Lucky_hacking_5)\.esp")'
-
-  - name: 'EWE DLC Addon.esp'
-    tag:
-      - Deflst
-      - Graphics
-      - Stats
 
   - name: 'infiltrations.esp'
     tag: [ Scripts ]
