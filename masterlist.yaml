@@ -3010,6 +3010,20 @@ plugins:
       - Invent.Add
       - Invent.Remove
       - Sound
+    dirty:
+      - <<: *quickClean
+        crc: 0x2E73FFCB
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 9
+        udr: 2
+  - name: 'EWE DLC Addon.esp'
+    clean:
+      - crc: 0xE40D01C9
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'EWE Supermutant Energy Weapons.esp'
+    clean:
+      - crc: 0x54F53609
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
   - name: 'fasttravelfromindoors.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15108/' ]
