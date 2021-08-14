@@ -2998,6 +2998,18 @@ plugins:
 
   - name: 'EWE ((Supermutant )?Energy Weapons( Enhanced)?|DLC Addon)\.es(m|p)'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10640/' ]
+    tag: [ Relev ]
+  - name: 'EWE (Energy Weapons Enhanced|DLC Addon)\.es(m|p)'
+    tag:
+      - Deflst
+      - Graphics
+      - Names
+      - Stats
+  - name: 'EWE Energy Weapons Enhanced.esm'
+    tag:
+      - Invent.Add
+      - Invent.Remove
+      - Sound
 
   - name: 'fasttravelfromindoors.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15108/' ]
