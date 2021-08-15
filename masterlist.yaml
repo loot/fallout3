@@ -4226,6 +4226,10 @@ plugins:
         condition: 'active("WeaponModKits.esp") and not file("WeaponModKits - FWE Talon Loot Crash Fix.esp")'
   - name: 'WeaponModKits - FWE Talon Loot Crash Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22109/' ]
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Delete unused record **XX000800** from **WeaponModKits - FWE Talon Loot Crash Fix.esp**, prevents merging into Bashed Patch.' ]
+        condition: 'active("Bashed Patch.*\.esp") and checksum("WeaponModKits - FWE Talon Loot Crash Fix.esp", 65945BB5)'
 
 ###### Anything new can go after this (If you're not sure where to put it) ######
   - name: '20th Century Weapons.esm'
