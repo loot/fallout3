@@ -4826,10 +4826,7 @@ plugins:
     msg: [ *obsolete ]
   - name: 'FO3 Wanderers Edition - FOOK Support.esp'
     msg: [ *obsolete ]
-  - name: 'FO3 Wanderers Edition - Talon Loot Crash Fix.esp'
-    tag:
-      - Delev
-      - Relev
+
   - name: 'Refurbishes [ALL].esp'
     msg: [ *alreadyInFOOK2 ]
   - name: 'Refurbish [OA].esp'
@@ -5310,8 +5307,7 @@ plugins:
     clean:
       - crc: 0xADDA0623
         util: 'FO3Edit v4.0.2e'
-  - name: 'WeaponModKits - FWE Talon Loot Crash Fix.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/22109' ]
+
   - name: 'AmyWong - DLCs (FOOK2 1.1 DIK).esp'
     inc: [ 'AmyWong - DLCs.esp' ]
   - name: 'AmyWong - DLC01 Anchorage.esp'
