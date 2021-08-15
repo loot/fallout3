@@ -4213,7 +4213,29 @@ plugins:
       - crc: 0xB1BC598F
         util: 'FO3Edit v4.0.2e'
 
+  - name: '(FO3 Wanderers Edition -|WeaponModKits - FWE) Talon Loot Crash Fix\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15314/' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'FWE Talon Loot Crash Fix ESP' ]
+        condition: 'many("(FO3 Wanderers Edition -|WeaponModKits - FWE) Talon Loot Crash Fix\.esp")'
+    tag: [ Delev ]
+  - name: 'FO3 Wanderers Edition - Talon Loot Crash Fix.esp'
+    msg:
+      - <<: *useVersion
+        subs: [ 'Weapon Mod Kits' ]
+        condition: 'active("WeaponModKits.esp") and not file("WeaponModKits - FWE Talon Loot Crash Fix.esp")'
+  - name: 'WeaponModKits - FWE Talon Loot Crash Fix.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/22109/' ]
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Delete unused record **XX000800** from **WeaponModKits - FWE Talon Loot Crash Fix.esp**, prevents merging into Bashed Patch.' ]
+        condition: 'active("Bashed Patch.*\.esp") and checksum("WeaponModKits - FWE Talon Loot Crash Fix.esp", 65945BB5)'
+    tag:
+      - name: Relev
+        condition: 'checksum("WeaponModKits - FWE Talon Loot Crash Fix.esp", 65945BB5) or checksum("WeaponModKits - FWE Talon Loot Crash Fix.esp", F0C4CCC6)'
 
+###### Anything new can go after this (If you're not sure where to put it) ######
   - name: '20th Century Weapons.esm'
     url: [ 'http://modsreloaded.com/19th-and-20th-century-weapons' ]
     tag: [ Scripts ]
@@ -4826,10 +4848,7 @@ plugins:
     msg: [ *obsolete ]
   - name: 'FO3 Wanderers Edition - FOOK Support.esp'
     msg: [ *obsolete ]
-  - name: 'FO3 Wanderers Edition - Talon Loot Crash Fix.esp'
-    tag:
-      - Delev
-      - Relev
+
   - name: 'Refurbishes [ALL].esp'
     msg: [ *alreadyInFOOK2 ]
   - name: 'Refurbish [OA].esp'
@@ -5310,8 +5329,7 @@ plugins:
     clean:
       - crc: 0xADDA0623
         util: 'FO3Edit v4.0.2e'
-  - name: 'WeaponModKits - FWE Talon Loot Crash Fix.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/22109' ]
+
   - name: 'AmyWong - DLCs (FOOK2 1.1 DIK).esp'
     inc: [ 'AmyWong - DLCs.esp' ]
   - name: 'AmyWong - DLC01 Anchorage.esp'
