@@ -4213,7 +4213,12 @@ plugins:
       - crc: 0xB1BC598F
         util: 'FO3Edit v4.0.2e'
 
+  - name: '(FO3 Wanderers Edition -|WeaponModKits - FWE) Talon Loot Crash Fix\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/15314/' ]
+  - name: 'WeaponModKits - FWE Talon Loot Crash Fix.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/22109/' ]
 
+###### Anything new can go after this (If you're not sure where to put it) ######
   - name: '20th Century Weapons.esm'
     url: [ 'http://modsreloaded.com/19th-and-20th-century-weapons' ]
     tag: [ Scripts ]
