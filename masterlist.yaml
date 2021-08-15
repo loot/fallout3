@@ -4219,6 +4219,7 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'FWE Talon Loot Crash Fix ESP' ]
         condition: 'many("(FO3 Wanderers Edition -|WeaponModKits - FWE) Talon Loot Crash Fix\.esp")'
+    tag: [ Delev ]
   - name: 'FO3 Wanderers Edition - Talon Loot Crash Fix.esp'
     msg:
       - <<: *useVersion
@@ -4230,6 +4231,9 @@ plugins:
       - <<: *wildEdits
         subs: [ 'Delete unused record **XX000800** from **WeaponModKits - FWE Talon Loot Crash Fix.esp**, prevents merging into Bashed Patch.' ]
         condition: 'active("Bashed Patch.*\.esp") and checksum("WeaponModKits - FWE Talon Loot Crash Fix.esp", 65945BB5)'
+    tag:
+      - name: Relev
+        condition: 'checksum("WeaponModKits - FWE Talon Loot Crash Fix.esp", 65945BB5) or checksum("WeaponModKits - FWE Talon Loot Crash Fix.esp", F0C4CCC6)'
 
 ###### Anything new can go after this (If you're not sure where to put it) ######
   - name: '20th Century Weapons.esm'
