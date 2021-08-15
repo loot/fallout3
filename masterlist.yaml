@@ -4219,6 +4219,11 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'FWE Talon Loot Crash Fix ESP' ]
         condition: 'many("(FO3 Wanderers Edition -|WeaponModKits - FWE) Talon Loot Crash Fix\.esp")'
+  - name: 'FO3 Wanderers Edition - Talon Loot Crash Fix.esp'
+    msg:
+      - <<: *useVersion
+        subs: [ 'Weapon Mod Kits' ]
+        condition: 'active("WeaponModKits.esp") and not file("WeaponModKits - FWE Talon Loot Crash Fix.esp")'
   - name: 'WeaponModKits - FWE Talon Loot Crash Fix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22109/' ]
 
