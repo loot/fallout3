@@ -4904,8 +4904,6 @@ plugins:
   - name: 'RimfireRevolverCommon.esp'
     inc: [ 'RimfireRevolver.esp' ]
 
-  - name: 'Tactical Weapons by gRs Frederyck.esp'
-    tag: [ Invent ]
   - name: 'Tactical Weapons-Calibr-V3 762 fix.esp'
     msg:
       - type: say
