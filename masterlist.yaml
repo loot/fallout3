@@ -4076,6 +4076,11 @@ plugins:
         subs: [ 'Remove **0001EC51** from **ColtM4Carbines_RHIronSights.esp**.' ]
         condition: 'checksum("ColtM4Carbines_RHIronSights.esp", 0B0D7065)'
 
+  - name: 'GaryHoloTape.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/4477/'
+        name: 'Missing Gary Interrogation Log'
+
   - name: 'LingsFinerThings.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
     group: *fixesGroup
