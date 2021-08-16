@@ -5225,8 +5225,7 @@ plugins:
       - Actors.Anims
       - Graphics
       - Invent
-  - name: 'GaryHoloTape.esp'
-    tag: [ Names ]
+
   - name: 'Trucker Holotapes.esp'
     tag: [ Names ]
 
