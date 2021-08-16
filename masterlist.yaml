@@ -4083,6 +4083,11 @@ plugins:
     tag:
       - Names
       - ObjectBounds
+    dirty:
+      - <<: *quickClean
+        crc: 0x83609B43
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
 
   - name: 'LingsFinerThings.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
