@@ -4913,8 +4913,7 @@ plugins:
           - lang: de
             text: 'Benötigt Ressourcen von "Tactical Weapons by gRs Frederyck", aber nicht die ESP Datei'
     tag: [ Invent ]
-  - name: 'frederyck calibr fix-excalibrified.esp'
-    tag: [ Invent ]
+
   - name: 'WattzLasers.esp'
     tag:
       - Delev
@@ -6149,11 +6148,7 @@ plugins:
     clean:
       - crc: 0xD5304D07
         util: 'FO3Edit v4.0.2e'
-  - name: 'frederyck+FWE+xCALIBR.esp'
-    tag:
-      - Graphics
-      - Names
-      - Stats
+
   - name: 'Choose your own hairstyle (load this last on FOMM).esp'
     tag:
       - Eyes
