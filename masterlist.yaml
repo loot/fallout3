@@ -4904,16 +4904,6 @@ plugins:
   - name: 'RimfireRevolverCommon.esp'
     inc: [ 'RimfireRevolver.esp' ]
 
-  - name: 'Tactical Weapons-Calibr-V3 762 fix.esp'
-    msg:
-      - type: say
-        content:
-          - lang: en
-            text: 'Requires resources from "Tactical Weapons by gRs Frederyck", but not the esp file'
-          - lang: de
-            text: 'Benötigt Ressourcen von "Tactical Weapons by gRs Frederyck", aber nicht die ESP Datei'
-    tag: [ Invent ]
-
   - name: 'WattzLasers.esp'
     tag:
       - Delev
