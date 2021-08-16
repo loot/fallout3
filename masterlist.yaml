@@ -4080,6 +4080,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/4477/'
         name: 'Missing Gary Interrogation Log'
+    tag:
+      - Names
+      - ObjectBounds
 
   - name: 'LingsFinerThings.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
