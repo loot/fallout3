@@ -4076,6 +4076,19 @@ plugins:
         subs: [ 'Remove **0001EC51** from **ColtM4Carbines_RHIronSights.esp**.' ]
         condition: 'checksum("ColtM4Carbines_RHIronSights.esp", 0B0D7065)'
 
+  - name: 'GaryHoloTape.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/4477/'
+        name: 'Missing Gary Interrogation Log'
+    tag:
+      - Names
+      - ObjectBounds
+    dirty:
+      - <<: *quickClean
+        crc: 0x83609B43
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+
   - name: 'LingsFinerThings.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
     group: *fixesGroup
@@ -5225,8 +5238,7 @@ plugins:
       - Actors.Anims
       - Graphics
       - Invent
-  - name: 'GaryHoloTape.esp'
-    tag: [ Names ]
+
   - name: 'Trucker Holotapes.esp'
     tag: [ Names ]
 
