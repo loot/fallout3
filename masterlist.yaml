@@ -2357,6 +2357,10 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/12826/'
         name: 'Cherry Follower - Rehire Cherry'
+    tag:
+      - Actors.ACBS
+      - Actors.AIData
+      - Actors.AIPackages
 
   - name: 'RoadWardens(MMM|UnInstall)?\.es(m|p)'
     url:
