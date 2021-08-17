@@ -2361,6 +2361,9 @@ plugins:
       - Actors.ACBS
       - Actors.AIData
       - Actors.AIPackages
+    clean:
+      - crc: 0xA9DA2EE3
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
   - name: 'RoadWardens(MMM|UnInstall)?\.es(m|p)'
     url:
