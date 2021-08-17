@@ -3384,6 +3384,10 @@ plugins:
         subs: [ 'GNR Radio Fixed Extended ESP' ]
         condition: 'many("GalaxyNewsRadio\d\d\d?\[(S|SR|C|CR|M)\]\.esp")'
 
+  - name: 'GH-HealingRebalanceMod_.*\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/12386/'
+        name: 'Healing Rebalance Mod'
   - name: 'GH-HealingRebalanceMod_Infirmary+Lab.esp'
     tag: [ Scripts ]
 
