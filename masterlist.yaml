@@ -5357,11 +5357,6 @@ plugins:
   - name: 'slaveraider_newlook.esp'
     tag: [ Graphics ]
 
-  - name: 'Get Your Cherry Back.esp'
-    tag:
-      - Actors.ACBS
-      - Actors.AIPackages
-
   - name: 'MTC RealWildnessLife.esp'
     tag: [ Relations ]
   - name: 'mesme.esp'
