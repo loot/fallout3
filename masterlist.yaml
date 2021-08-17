@@ -3384,6 +3384,9 @@ plugins:
         subs: [ 'GNR Radio Fixed Extended ESP' ]
         condition: 'many("GalaxyNewsRadio\d\d\d?\[(S|SR|C|CR|M)\]\.esp")'
 
+  - name: 'GH-HealingRebalanceMod_Infirmary+Lab.esp'
+    tag: [ Scripts ]
+
   - name: 'GNR Enhanced.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14946/' ]
     clean:
@@ -5626,8 +5629,7 @@ plugins:
     msg: [ *alreadyInFOOK2 ]
   - name: 'Phalanx-PointLookout-Integration.esp'
     msg: [ *alreadyInFOOK2 ]
-  - name: 'GH-HealingRebalanceMod_Infirmary+Lab.esp'
-    tag: [ Scripts ]
+
   - name: 'dD - Enhanced Blood Main.esp'
     url:
       - 'https://www.nexusmods.com/fallout3/mods/101'
