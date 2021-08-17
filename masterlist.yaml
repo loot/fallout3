@@ -2353,6 +2353,18 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 4
 
+  - name: 'Get Your Cherry Back.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/12826/'
+        name: 'Cherry Follower - Rehire Cherry'
+    tag:
+      - Actors.ACBS
+      - Actors.AIData
+      - Actors.AIPackages
+    clean:
+      - crc: 0xA9DA2EE3
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+
   - name: 'RoadWardens(MMM|UnInstall)?\.es(m|p)'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/2781/'
@@ -5356,11 +5368,6 @@ plugins:
 
   - name: 'slaveraider_newlook.esp'
     tag: [ Graphics ]
-
-  - name: 'Get Your Cherry Back.esp'
-    tag:
-      - Actors.ACBS
-      - Actors.AIPackages
 
   - name: 'MTC RealWildnessLife.esp'
     tag: [ Relations ]
