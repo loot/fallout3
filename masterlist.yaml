@@ -3433,6 +3433,20 @@ plugins:
       - crc: 0x97A0D403
         util: 'FO3Edit v4.0.3'
 
+  - name: 'H\.E\.R\.K\.( - GOTY( & WMK)?)?\.es(m|p)'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/7531/' ]
+  - name: 'H\.E\.R\.K\. - GOTY( & WMK)?\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'H.E.R.K. - GOTY ESP' ]
+        condition: 'many("H\.E\.R\.K\. - GOTY( & WMK)?\.esp")'
+  - name: 'H.E.R.K..esm'
+    dirty:
+      - <<: *quickClean
+        crc: 0x003BD473
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 8
+
   - name: 'hackrate.x(2|4|6)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/2745/'
@@ -4957,11 +4971,6 @@ plugins:
 
   - name: 'Arms_dealer_V1.esp'
     inc: [ 'RH_IRONSIGHTS.esm' ]
-
-  - name: 'H.E.R.K. - GOTY.esp'
-    inc: [ 'H.E.R.K. - GOTY & WMK.esp' ]
-  - name: 'H.E.R.K. - GOTY & WMK.esp'
-    inc: [ 'H.E.R.K. - GOTY.esp' ]
 
   - name: 'More308Ammo.esp'
     tag: [ Relev ]
