@@ -3433,6 +3433,8 @@ plugins:
       - crc: 0x97A0D403
         util: 'FO3Edit v4.0.3'
 
+  - name: 'H\.E\.R\.K\.( - GOTY( & WMK)?)?\.es(m|p)'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/7531/' ]
   - name: 'H.E.R.K. - GOTY.esp'
     inc: [ 'H.E.R.K. - GOTY & WMK.esp' ]
   - name: 'H.E.R.K. - GOTY & WMK.esp'
