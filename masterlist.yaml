@@ -3435,6 +3435,11 @@ plugins:
 
   - name: 'H\.E\.R\.K\.( - GOTY( & WMK)?)?\.es(m|p)'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7531/' ]
+  - name: 'H\.E\.R\.K\. - GOTY( & WMK)?\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'H.E.R.K. - GOTY ESP' ]
+        condition: 'many("H\.E\.R\.K\. - GOTY( & WMK)?\.esp")'
   - name: 'H.E.R.K. - GOTY.esp'
     inc: [ 'H.E.R.K. - GOTY & WMK.esp' ]
   - name: 'H.E.R.K. - GOTY & WMK.esp'
