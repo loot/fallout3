@@ -5059,13 +5059,6 @@ plugins:
   - name: 'WasteWearGloves.esp'
     tag: [ Relev ]
 
-  - name: 'Goth Girls Multipack.esp'
-    tag:
-      - Eyes
-      - Hair
-      - Invent
-      - NPC.Race
-      - NpcFaces
   - name: 'moirared.esp'
     tag: [ Invent ]
 
