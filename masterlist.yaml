@@ -3440,6 +3440,12 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'H.E.R.K. - GOTY ESP' ]
         condition: 'many("H\.E\.R\.K\. - GOTY( & WMK)?\.esp")'
+  - name: 'H.E.R.K..esm'
+    dirty:
+      - <<: *quickClean
+        crc: 0x003BD473
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 8
 
   - name: 'hackrate.x(2|4|6)\.esp'
     url:
