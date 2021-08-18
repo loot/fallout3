@@ -3440,10 +3440,6 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'H.E.R.K. - GOTY ESP' ]
         condition: 'many("H\.E\.R\.K\. - GOTY( & WMK)?\.esp")'
-  - name: 'H.E.R.K. - GOTY.esp'
-    inc: [ 'H.E.R.K. - GOTY & WMK.esp' ]
-  - name: 'H.E.R.K. - GOTY & WMK.esp'
-    inc: [ 'H.E.R.K. - GOTY.esp' ]
 
   - name: 'hackrate.x(2|4|6)\.esp'
     url:
