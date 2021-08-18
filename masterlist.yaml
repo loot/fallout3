@@ -2216,6 +2216,12 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/14081/'
         name: 'Gothic Glamour Girls Makeover Multipack'
+    tag:
+      - Actors.ACBS
+      - Invent.Add
+      - Invent.Remove
+      - NPC.Race
+      - NpcFacesForceFullImport
 
   - name: 'LingsPrettyThings.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
