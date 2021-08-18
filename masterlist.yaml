@@ -2212,6 +2212,26 @@ plugins:
       - crc: 0x046EBA41
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'Goth Girls Multipack.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/14081/'
+        name: 'Gothic Glamour Girls Makeover Multipack'
+    tag:
+      - Actors.ACBS
+      - Invent.Add
+      - Invent.Remove
+      - NPC.Race
+      - NpcFacesForceFullImport
+    dirty:
+      - <<: *quickClean
+        crc: 0xE32A0837
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+      - <<: *quickClean
+        crc: 0x46638644
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+
   - name: 'LingsPrettyThings.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17631/' ]
     after: [ 'Lings Finer Things.esp' ]
@@ -5059,13 +5079,6 @@ plugins:
   - name: 'WasteWearGloves.esp'
     tag: [ Relev ]
 
-  - name: 'Goth Girls Multipack.esp'
-    tag:
-      - Eyes
-      - Hair
-      - Invent
-      - NPC.Race
-      - NpcFaces
   - name: 'moirared.esp'
     tag: [ Invent ]
 
