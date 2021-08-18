@@ -3388,7 +3388,22 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/12386/'
         name: 'Healing Rebalance Mod'
+  - name: 'GH-HealingRebalanceMod_HPamount.esp'
+    clean:
+      - crc: 0xF7D9635B
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
   - name: 'GH-HealingRebalanceMod_Infirmary+Lab.esp'
+    clean:
+      - crc: 0x489517B5
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'GH-HealingRebalanceMod_sleepscript.esp'
+    clean:
+      - crc: 0xF3381B84
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'GH-HealingRebalanceMod_stimpackduration.esp'
+    clean:
+      - crc: 0x9F37B694
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
   - name: 'GNR Enhanced.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14946/' ]
