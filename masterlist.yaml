@@ -3389,7 +3389,6 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/12386/'
         name: 'Healing Rebalance Mod'
   - name: 'GH-HealingRebalanceMod_Infirmary+Lab.esp'
-    tag: [ Scripts ]
 
   - name: 'GNR Enhanced.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14946/' ]
