@@ -3458,6 +3458,11 @@ plugins:
 
   - name: '(Imp''s More Complex Needs|IMCN.*)\.es(m|p)'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11418/' ]
+  - name: 'IMCN - (Operation Anchorage|The Pitt|Broken Steel|Point Lookout|Mothership Zeta)\.esp'
+    msg:
+      - <<: *alreadyInX
+        subs: [ '**IMCN - 5 DLC Merged.esp**' ]
+        condition: 'active("IMCN - 5 DLC Merged.esp")'
 
   - name: 'Improved Turret (Hacking|Reprogramming) - (ALL|BASE|BS|Pitt|PL)\.esp'
     url:
