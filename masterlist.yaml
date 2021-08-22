@@ -3456,6 +3456,9 @@ plugins:
         subs: [ 'HackRate ESP' ]
         condition: 'many("hackrate.x(2|4|6)\.esp")'
 
+  - name: '(Imp''s More Complex Needs|IMCN.*)\.es(m|p)'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11418/' ]
+
   - name: 'Improved Turret (Hacking|Reprogramming) - (ALL|BASE|BS|Pitt|PL)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/1691/'
