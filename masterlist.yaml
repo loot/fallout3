@@ -3471,6 +3471,8 @@ plugins:
     after: [ 'IMCN - Broken Steel.esp' ]
   - name: 'IMCN - Mothership Zeta.esp'
     after: [ 'IMCN - Point Lookout.esp' ]
+  - name: 'IMCN - (BLTC|RiPnO|BLTC RiPnO Combined) Compatibility( and Ingestibles)?\.esp'
+    inc: [ 'IMCN - FWE Compatibility and Ingestibles.esp' ]
   - name: 'IMCN - (BLTC|RiPnO) Compatibility and Ingestibles\.esp'
     msg:
       - <<: *alreadyInX
