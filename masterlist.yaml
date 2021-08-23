@@ -3592,6 +3592,13 @@ plugins:
 
   - name: 'Lawbringer Boutnies Ver1.1.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1958/' ]
+    tag:
+      - Actors.ACBS
+      - Actors.AIData
+      - Factions
+      - Invent.Add
+      - Invent.Change
+      - Invent.Remove
 
   - name: 'Lobotomized! (50|100|200|300|400)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14354/' ]
