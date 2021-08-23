@@ -3879,6 +3879,11 @@ plugins:
         subs: [ 'CRAFT Buildable WeaponModKits ESP' ]
         condition: 'many("CRAFTable_WMKs.*\.esp")'
 
+  - name: '(Laboratory|QuantumLab)( \((BS( & (PL|MZ))?|PL( & MZ)?|MZ)\))?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/7420/'
+        name: 'My First Laboratory Expanded'
+
   - name: '(WeaponModKits|WMK).*\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/3388/'
