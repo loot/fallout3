@@ -3458,6 +3458,21 @@ plugins:
 
   - name: '(Imp''s More Complex Needs|IMCN.*)\.es(m|p)'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11418/' ]
+  - name: 'IMCN.esm'
+    tag: [ Scripts ]
+  - name: 'Imp''s More Complex Needs.esp'
+    tag:
+      - Delev
+      - Names
+      - Relev
+      - Sound
+      - Stats
+      - Text
+  - name: 'IMCN - 5 DLC Merged.esp'
+    tag:
+      - Graphics
+      - Sound
+      - Stats
   - name: 'IMCN - (Operation Anchorage|The Pitt|Broken Steel|Point Lookout|Mothership Zeta)\.esp'
     msg:
       - <<: *alreadyInX
@@ -3465,19 +3480,30 @@ plugins:
         condition: 'active("IMCN - 5 DLC Merged.esp")'
   - name: 'IMCN - (The Pitt|Broken Steel|Point Lookout|Mothership Zeta)\.esp'
     after: [ 'IMCN - Operation Anchorage.esp' ]
+    tag: [ Stats ]
   - name: 'IMCN - (Broken Steel|Point Lookout|Mothership Zeta)\.esp'
     after: [ 'IMCN - The Pitt.esp' ]
   - name: 'IMCN - (Point Lookout|Mothership Zeta)\.esp'
     after: [ 'IMCN - Broken Steel.esp' ]
+  - name: 'IMCN - The Pitt.esp'
+    tag: [ Graphics ]
   - name: 'IMCN - Mothership Zeta.esp'
     after: [ 'IMCN - Point Lookout.esp' ]
+    tag: [ Sound ]
   - name: 'IMCN - (BLTC|RiPnO|BLTC RiPnO Combined) Compatibility( and Ingestibles)?\.esp'
     inc: [ 'IMCN - FWE Compatibility and Ingestibles.esp' ]
+    tag: [ Stats ]
   - name: 'IMCN - (BLTC|RiPnO) Compatibility and Ingestibles\.esp'
     msg:
       - <<: *alreadyInX
         subs: [ '**IMCN - BLTC RiPnO Combined Compatibility.esp**' ]
         condition: 'active("IMCN - BLTC RiPnO Combined Compatibility.esp")'
+  - name: 'IMCN - FWE Compatibility and Ingestibles.esp'
+    tag: [ Stats ]
+  - name: 'IMCN - MMM Meats, Bloods, and Eyeballs.esp'
+    tag:
+      - Delev
+      - Relev
 
   - name: 'Improved Turret (Hacking|Reprogramming) - (ALL|BASE|BS|Pitt|PL)\.esp'
     url:
