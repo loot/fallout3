@@ -5571,28 +5571,6 @@ plugins:
       - 'KillableBrats.esp'
       - 'AttackableBrats.esp'
 
-  - name: 'Laboratory.esp'
-    tag: [ Scripts ]
-  - name: 'QuantumLab.esp'
-    tag: [ Scripts ]
-  - name: 'Laboratory (BS).esp'
-    tag: [ Scripts ]
-  - name: 'Laboratory (PL).esp'
-    tag: [ Scripts ]
-  - name: 'QuantumLab (PL).esp'
-    tag: [ Scripts ]
-  - name: 'Laboratory (MZ).esp'
-    tag: [ Scripts ]
-  - name: 'QuantumLab (MZ).esp'
-    tag: [ Scripts ]
-  - name: 'Laboratory (BS & PL).esp'
-    tag: [ Scripts ]
-  - name: 'Laboratory (BS & MZ).esp'
-    tag: [ Scripts ]
-  - name: 'Laboratory (PL & MZ).esp'
-    tag: [ Scripts ]
-  - name: 'QuantumLab (PL & MZ).esp'
-    tag: [ Scripts ]
   - name: 'LightweightFoodSanitizer.esp'
     tag: [ Stats ]
   - name: 'MiscWeightFix.esp'
