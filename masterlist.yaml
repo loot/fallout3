@@ -3883,6 +3883,10 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/7420/'
         name: 'My First Laboratory Expanded'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'My First Laboratory Expanded ESP' ]
+        condition: 'many("(Laboratory|QuantumLab)( \((BS( & (PL|MZ))?|PL( & MZ)?|MZ)\))?\.esp")'
 
   - name: '(WeaponModKits|WMK).*\.esp'
     url:
