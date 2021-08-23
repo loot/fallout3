@@ -3887,6 +3887,7 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'My First Laboratory Expanded ESP' ]
         condition: 'many("(Laboratory|QuantumLab)( \((BS( & (PL|MZ))?|PL( & MZ)?|MZ)\))?\.esp")'
+    tag: [ Text ]
 
   - name: '(WeaponModKits|WMK).*\.esp'
     url:
