@@ -3599,6 +3599,11 @@ plugins:
       - Invent.Add
       - Invent.Change
       - Invent.Remove
+    dirty:
+      - <<: *quickClean
+        crc: 0x3A3C7033
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 5
 
   - name: 'Lobotomized! (50|100|200|300|400)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14354/' ]
