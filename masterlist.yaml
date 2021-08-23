@@ -3879,6 +3879,92 @@ plugins:
         subs: [ 'CRAFT Buildable WeaponModKits ESP' ]
         condition: 'many("CRAFTable_WMKs.*\.esp")'
 
+  - name: '(Laboratory|QuantumLab)( \((BS( & (PL|MZ))?|PL( & MZ)?|MZ)\))?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/7420/'
+        name: 'My First Laboratory Expanded'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'My First Laboratory Expanded ESP' ]
+        condition: 'many("(Laboratory|QuantumLab)( \((BS( & (PL|MZ))?|PL( & MZ)?|MZ)\))?\.esp")'
+    tag: [ Text ]
+  - name: 'Laboratory.esp'
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Delete **0001A267** in **Laboratory.esp**.' ]
+        condition: 'checksum("Laboratory.esp", 8FAFFB22) or checksum("Laboratory.esp", 38656862)'
+    dirty:
+      - <<: *quickClean
+        crc: 0x8FAFFB22
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+  - name: 'Laboratory (BS).esp'
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Delete **0001A267** in **Laboratory (BS).esp**.' ]
+        condition: 'checksum("Laboratory (BS).esp", 4ECC2FE2) or checksum("Laboratory (BS).esp", AE968E21)'
+    dirty:
+      - <<: *quickClean
+        crc: 0x4ECC2FE2
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+  - name: 'Laboratory (PL).esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xBD05FB11
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+  - name: 'Laboratory (MZ).esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xE1FD1DD9
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+  - name: 'Laboratory (BS & PL).esp'
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Delete **0001A267** in **Laboratory (BS & PL).esp**.' ]
+        condition: 'checksum("Laboratory (BS & PL).esp", 1F670509) or checksum("Laboratory (BS & PL).esp", B02CA8F3)'
+    dirty:
+      - <<: *quickClean
+        crc: 0x1F670509
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+  - name: 'Laboratory (BS & MZ).esp'
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Delete **0001A267** in **Laboratory (BS & MZ).esp**.' ]
+        condition: 'checksum("Laboratory (BS & MZ).esp", C4E36338) or checksum("Laboratory (BS & MZ).esp", 57BEA4EC)'
+    dirty:
+      - <<: *quickClean
+        crc: 0xC4E36338
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+  - name: 'Laboratory (PL & MZ).esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xCBB70CA1
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+  - name: 'QuantumLab (PL).esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x37500955
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+  - name: 'QuantumLab (MZ).esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x279DB66A
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+  - name: 'QuantumLab (PL & MZ).esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xE9E36AA0
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+
   - name: '(WeaponModKits|WMK).*\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/3388/'
@@ -5571,28 +5657,6 @@ plugins:
       - 'KillableBrats.esp'
       - 'AttackableBrats.esp'
 
-  - name: 'Laboratory.esp'
-    tag: [ Scripts ]
-  - name: 'QuantumLab.esp'
-    tag: [ Scripts ]
-  - name: 'Laboratory (BS).esp'
-    tag: [ Scripts ]
-  - name: 'Laboratory (PL).esp'
-    tag: [ Scripts ]
-  - name: 'QuantumLab (PL).esp'
-    tag: [ Scripts ]
-  - name: 'Laboratory (MZ).esp'
-    tag: [ Scripts ]
-  - name: 'QuantumLab (MZ).esp'
-    tag: [ Scripts ]
-  - name: 'Laboratory (BS & PL).esp'
-    tag: [ Scripts ]
-  - name: 'Laboratory (BS & MZ).esp'
-    tag: [ Scripts ]
-  - name: 'Laboratory (PL & MZ).esp'
-    tag: [ Scripts ]
-  - name: 'QuantumLab (PL & MZ).esp'
-    tag: [ Scripts ]
   - name: 'LightweightFoodSanitizer.esp'
     tag: [ Stats ]
   - name: 'MiscWeightFix.esp'
