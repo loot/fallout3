@@ -3471,6 +3471,11 @@ plugins:
     after: [ 'IMCN - Broken Steel.esp' ]
   - name: 'IMCN - Mothership Zeta.esp'
     after: [ 'IMCN - Point Lookout.esp' ]
+  - name: 'IMCN - (BLTC|RiPnO) Compatibility and Ingestibles\.esp'
+    msg:
+      - <<: *alreadyInX
+        subs: [ '**IMCN - BLTC RiPnO Combined Compatibility.esp**' ]
+        condition: 'active("IMCN - BLTC RiPnO Combined Compatibility.esp")'
 
   - name: 'Improved Turret (Hacking|Reprogramming) - (ALL|BASE|BS|Pitt|PL)\.esp'
     url:
