@@ -3463,6 +3463,14 @@ plugins:
       - <<: *alreadyInX
         subs: [ '**IMCN - 5 DLC Merged.esp**' ]
         condition: 'active("IMCN - 5 DLC Merged.esp")'
+  - name: 'IMCN - (The Pitt|Broken Steel|Point Lookout|Mothership Zeta)\.esp'
+    after: [ 'IMCN - Operation Anchorage.esp' ]
+  - name: 'IMCN - (Broken Steel|Point Lookout|Mothership Zeta)\.esp'
+    after: [ 'IMCN - The Pitt.esp' ]
+  - name: 'IMCN - (Point Lookout|Mothership Zeta)\.esp'
+    after: [ 'IMCN - Broken Steel.esp' ]
+  - name: 'IMCN - Mothership Zeta.esp'
+    after: [ 'IMCN - Point Lookout.esp' ]
 
   - name: 'Improved Turret (Hacking|Reprogramming) - (ALL|BASE|BS|Pitt|PL)\.esp'
     url:
