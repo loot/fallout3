@@ -3590,6 +3590,21 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/376/' ]
     msg: [ *obsolete ]
 
+  - name: 'Lawbringer Boutnies Ver1.1.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1958/' ]
+    tag:
+      - Actors.ACBS
+      - Actors.AIData
+      - Factions
+      - Invent.Add
+      - Invent.Change
+      - Invent.Remove
+    dirty:
+      - <<: *quickClean
+        crc: 0x3A3C7033
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 5
+
   - name: 'Lobotomized! (50|100|200|300|400)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/14354/' ]
     tag: [ Text ]
@@ -4835,8 +4850,7 @@ plugins:
     clean:
       - crc: 0x6C2E8EBB
         util: 'FO3Edit v4.0.2e'
-  - name: 'Lawbringer Boutnies Ver1.1.esp'
-    tag: [ Invent ]
+
   - name: 'NotSoFast.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4730' ]
     tag: [ Scripts ]
