@@ -5364,14 +5364,6 @@ plugins:
   - name: 'jonasclothesreplacer.esp'
     inc: [ 'jonasclothesnonrplcr.esp' ]
 
-  - name: 'ModBetterPArmorVanilla.esp'
-    tag: [ Stats ]
-  - name: 'ModBetterPArmorAnchorage.esp'
-    tag: [ Stats ]
-  - name: 'ModBetterPArmorPitt.esp'
-    tag: [ Stats ]
-  - name: 'ModBetterPArmorSteel.esp'
-    tag: [ Stats ]
   - name: 'RD_ElderLyonsRobe.esp'
     tag: [ Graphics ]
   - name: 'SimpleEyePatch.esp'
