@@ -1802,6 +1802,9 @@ plugins:
         util: 'FO3Edit v4.0.3'
 
   - name: 'loadingsc.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/14394/'
+        name: 'Atomic Loading Screens'
     tag: [ Graphics ]
 
 ###### AudioVisual - Models & Textures ######
