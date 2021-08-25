@@ -2344,6 +2344,9 @@ plugins:
         util: 'FO3Edit v4.0.3'
 
   - name: 'moirared.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/9414/'
+        name: 'Moira Red Clothing'
     tag: [ Invent ]
 
   - name: '.*(Project Beauty).*\.es(m|p)'
