@@ -2478,8 +2478,6 @@ plugins:
 
   - name: 'mesme\.es(m|p)'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10922/' ]
-  - name: 'mesme.esp'
-    tag: [ Actors.ACBS ]
 
   - name: 'RoadWardens(MMM|UnInstall)?\.es(m|p)'
     url:
