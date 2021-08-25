@@ -1913,6 +1913,10 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/1502/'
         name: 'A MAD MAX Dogmeat Retex'
+    tag:
+      - Actors.Stats
+      - Graphics
+      - Names
 
   - name: 'Mentats Re-Textures.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15958/' ]
