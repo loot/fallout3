@@ -4216,6 +4216,7 @@ plugins:
 
   - name: 'MiscWeightFix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/90/' ]
+    tag: [ Stats ]
 
 ###### Gameplay - NPC Balance & Distribution ######
   - name: 'DangerousRadroaches(_MMM)?\.esp'
