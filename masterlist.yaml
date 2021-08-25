@@ -2476,6 +2476,8 @@ plugins:
       - crc: 0xA9DA2EE3
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'mesme\.es(m|p)'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10922/' ]
   - name: 'mesme.esp'
     tag: [ Actors.ACBS ]
 
