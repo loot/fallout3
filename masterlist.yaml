@@ -2347,7 +2347,6 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/9414/'
         name: 'Moira Red Clothing'
-    tag: [ Invent ]
 
   - name: '.*(Project Beauty).*\.es(m|p)'
     url:
