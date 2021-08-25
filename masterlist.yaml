@@ -1805,6 +1805,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/14394/'
         name: 'Atomic Loading Screens'
+    clean:
+      - crc: 0xBBB0C675
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
 ###### AudioVisual - Models & Textures ######
   - name: 'AddWanda_v2_blk_eot.esp'
