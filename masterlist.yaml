@@ -4090,6 +4090,13 @@ plugins:
       - crc: 0x79578C96
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'LightweightFoodSanitizer.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1040/' ]
+    tag: [ Stats ]
+    clean:
+      - crc: 0xB3B8CBA4
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+
 ###### Gameplay - NPC Balance & Distribution ######
   - name: 'DangerousRadroaches(_MMM)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11552/' ]
@@ -5671,8 +5678,6 @@ plugins:
       - 'KillableBrats.esp'
       - 'AttackableBrats.esp'
 
-  - name: 'LightweightFoodSanitizer.esp'
-    tag: [ Stats ]
   - name: 'MiscWeightFix.esp'
     tag: [ Stats ]
   - name: 'Owned!.esp'
