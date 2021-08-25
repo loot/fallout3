@@ -5109,8 +5109,6 @@ plugins:
     msg:
       - *alreadyInFWE
       - *alreadyInFOOK2
-  - name: 'Mannequin.esp'
-    tag: [ Actors.AIData ]
 
   - name: 'CrowdedCities_v2.esp'
     inc: [ 'CrowdedCities_v2_lessNPCs.esp' ]
