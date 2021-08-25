@@ -1910,6 +1910,18 @@ plugins:
       - crc: 0x5A556ACD
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'MAXdog.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/1502/'
+        name: 'A MAD MAX Dogmeat Retex'
+    tag:
+      - Actors.Stats
+      - Graphics
+      - Names
+    clean:
+      - crc: 0xA20B55F7
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+
   - name: 'Mentats Re-Textures.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15958/' ]
     msg:
@@ -5086,8 +5098,6 @@ plugins:
   - name: 'RobCo Universal Battery Charger Kit - Zeta.esp'
     inc: [ 'RobCo Universal Battery Charger Kit.esp' ]
 
-  - name: 'MAXdog.esp'
-    tag: [ Graphics ]
   - name: 'Megaton Sorter.esp'
     req: [ *FOSE ]
   - name: 'D.C. Confidential.esp'
