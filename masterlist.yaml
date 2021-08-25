@@ -1909,6 +1909,11 @@ plugins:
       - crc: 0x5A556ACD
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'MAXdog.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/1502/'
+        name: 'A MAD MAX Dogmeat Retex'
+
   - name: 'Mentats Re-Textures.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15958/' ]
     msg:
