@@ -4214,6 +4214,13 @@ plugins:
       - crc: 0xB3B8CBA4
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'MiscWeightFix.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/90/' ]
+    tag: [ Stats ]
+    clean:
+      - crc: 0x9EF65D79
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+
 ###### Gameplay - NPC Balance & Distribution ######
   - name: 'DangerousRadroaches(_MMM)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11552/' ]
@@ -5788,8 +5795,6 @@ plugins:
       - 'KillableBrats.esp'
       - 'AttackableBrats.esp'
 
-  - name: 'MiscWeightFix.esp'
-    tag: [ Stats ]
   - name: 'Owned!.esp'
     tag: [ Factions ]
   - name: 'RebalancedFire-Vanilla.esp'
