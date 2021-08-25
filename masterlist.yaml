@@ -2486,6 +2486,14 @@ plugins:
       - Actors.AIPackages
       - Actors.RecordFlags
       - Factions
+  - name: 'mesme.esm'
+    clean:
+      - crc: 0x8709C79E
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'mesme.esp'
+    clean:
+      - crc: 0xCBA67EA8
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
   - name: 'RoadWardens(MMM|UnInstall)?\.es(m|p)'
     url:
