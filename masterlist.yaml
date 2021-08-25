@@ -4224,6 +4224,12 @@ plugins:
   - name: 'ModBetterPArmor(Vanilla|Anchorage|Pitt|Steel)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/117/' ]
     tag: [ Stats ]
+  - name: 'ModBetterPArmor(Anchorage|Pitt|Steel)\.esp'
+    after: [ 'ModBetterPArmorVanilla.esp' ]
+  - name: 'ModBetterPArmor(Pitt|Steel)\.esp'
+    after: [ 'ModBetterPArmorAnchorage.esp' ]
+  - name: 'ModBetterPArmorSteel.esp'
+    after: [ 'ModBetterPArmorPitt.esp' ]
 
 ###### Gameplay - NPC Balance & Distribution ######
   - name: 'DangerousRadroaches(_MMM)?\.esp'
