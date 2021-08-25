@@ -5671,8 +5671,6 @@ plugins:
       - 'KillableBrats.esp'
       - 'AttackableBrats.esp'
 
-  - name: 'LightweightFoodSanitizer.esp'
-    tag: [ Stats ]
   - name: 'MiscWeightFix.esp'
     tag: [ Stats ]
   - name: 'Owned!.esp'
