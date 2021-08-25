@@ -2482,6 +2482,10 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'Mesme plugin' ]
         condition: 'many("mesme\.es(m|p)")'
+    tag:
+      - Actors.AIPackages
+      - Actors.RecordFlags
+      - Factions
 
   - name: 'RoadWardens(MMM|UnInstall)?\.es(m|p)'
     url:
