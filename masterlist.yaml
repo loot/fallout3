@@ -1917,6 +1917,9 @@ plugins:
       - Actors.Stats
       - Graphics
       - Names
+    clean:
+      - crc: 0xA20B55F7
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
   - name: 'Mentats Re-Textures.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15958/' ]
