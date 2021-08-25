@@ -5788,8 +5788,6 @@ plugins:
       - 'KillableBrats.esp'
       - 'AttackableBrats.esp'
 
-  - name: 'MiscWeightFix.esp'
-    tag: [ Stats ]
   - name: 'Owned!.esp'
     tag: [ Factions ]
   - name: 'RebalancedFire-Vanilla.esp'
