@@ -2476,6 +2476,25 @@ plugins:
       - crc: 0xA9DA2EE3
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'mesme\.es(m|p)'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10922/' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Mesme plugin' ]
+        condition: 'many("mesme\.es(m|p)")'
+    tag:
+      - Actors.AIPackages
+      - Actors.RecordFlags
+      - Factions
+  - name: 'mesme.esm'
+    clean:
+      - crc: 0x8709C79E
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'mesme.esp'
+    clean:
+      - crc: 0xCBA67EA8
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+
   - name: 'RoadWardens(MMM|UnInstall)?\.es(m|p)'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/2781/'
@@ -5699,8 +5718,7 @@ plugins:
 
   - name: 'MTC RealWildnessLife.esp'
     tag: [ Relations ]
-  - name: 'mesme.esp'
-    tag: [ Actors.ACBS ]
+
   - name: 'WRWC - Classic Fallout.esp'
     inc: [ 'WRWC - Right Handed.esp' ]
   - name: 'WRWC - Right Handed.esp'
