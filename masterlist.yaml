@@ -2350,6 +2350,9 @@ plugins:
     tag:
       - Invent.Add
       - Invent.Remove
+    clean:
+      - crc: 0xDCAE4441
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
   - name: '.*(Project Beauty).*\.es(m|p)'
     url:
