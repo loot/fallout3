@@ -5085,8 +5085,6 @@ plugins:
   - name: 'RobCo Universal Battery Charger Kit - Zeta.esp'
     inc: [ 'RobCo Universal Battery Charger Kit.esp' ]
 
-  - name: 'MAXdog.esp'
-    tag: [ Graphics ]
   - name: 'Megaton Sorter.esp'
     req: [ *FOSE ]
   - name: 'D.C. Confidential.esp'
