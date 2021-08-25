@@ -1801,6 +1801,14 @@ plugins:
       - crc: 0xAF474D90
         util: 'FO3Edit v4.0.3'
 
+  - name: 'loadingsc.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/14394/'
+        name: 'Atomic Loading Screens'
+    clean:
+      - crc: 0xBBB0C675
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+
 ###### AudioVisual - Models & Textures ######
   - name: 'AddWanda_v2_blk_eot.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/9402/' ]
@@ -5021,8 +5029,6 @@ plugins:
   - name: 'Scenic_Loading_Background_PointofLookoutDLC.esp'
     tag: [ Graphics ]
   - name: 'Scenic_Loading_Background_OperationAnchorageDLC.esp'
-    tag: [ Graphics ]
-  - name: 'loadingsc.esp'
     tag: [ Graphics ]
 
   - name: 'FPS Grenade Hotkey.esp'
