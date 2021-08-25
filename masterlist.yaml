@@ -4223,6 +4223,7 @@ plugins:
 
   - name: 'ModBetterPArmor(Vanilla|Anchorage|Pitt|Steel)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/117/' ]
+    tag: [ Stats ]
 
 ###### Gameplay - NPC Balance & Distribution ######
   - name: 'DangerousRadroaches(_MMM)?\.esp'
