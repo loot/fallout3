@@ -4221,6 +4221,37 @@ plugins:
       - crc: 0x9EF65D79
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'ModBetterPArmor(Vanilla|Anchorage|Pitt|Steel)\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/117/' ]
+    tag: [ Stats ]
+  - name: 'ModBetterPArmor(Anchorage|Pitt|Steel)\.esp'
+    after: [ 'ModBetterPArmorVanilla.esp' ]
+  - name: 'ModBetterPArmor(Pitt|Steel)\.esp'
+    after: [ 'ModBetterPArmorAnchorage.esp' ]
+  - name: 'ModBetterPArmorVanilla.esp'
+    clean:
+      - crc: 0x136DDF68
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'ModBetterPArmorAnchorage.esp'
+    clean:
+      - crc: 0x078A74CD
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'ModBetterPArmorPitt.esp'
+    clean:
+      - crc: 0x6F5F4509
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'ModBetterPArmorSteel.esp'
+    after: [ 'ModBetterPArmorPitt.esp' ]
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Delete **0001A267** from **ModBetterPArmorSteel.esp**.' ]
+        condition: 'checksum("ModBetterPArmorSteel.esp", 3037ADB6) or checksum("ModBetterPArmorSteel.esp", D1A65139)'
+    dirty:
+      - <<: *quickClean
+        crc: 0x3037ADB6
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+
 ###### Gameplay - NPC Balance & Distribution ######
   - name: 'DangerousRadroaches(_MMM)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11552/' ]
@@ -5364,14 +5395,6 @@ plugins:
   - name: 'jonasclothesreplacer.esp'
     inc: [ 'jonasclothesnonrplcr.esp' ]
 
-  - name: 'ModBetterPArmorVanilla.esp'
-    tag: [ Stats ]
-  - name: 'ModBetterPArmorAnchorage.esp'
-    tag: [ Stats ]
-  - name: 'ModBetterPArmorPitt.esp'
-    tag: [ Stats ]
-  - name: 'ModBetterPArmorSteel.esp'
-    tag: [ Stats ]
   - name: 'RD_ElderLyonsRobe.esp'
     tag: [ Graphics ]
   - name: 'SimpleEyePatch.esp'
