@@ -2476,6 +2476,9 @@ plugins:
       - crc: 0xA9DA2EE3
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'mesme.esp'
+    tag: [ Actors.ACBS ]
+
   - name: 'RoadWardens(MMM|UnInstall)?\.es(m|p)'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/2781/'
@@ -5699,8 +5702,7 @@ plugins:
 
   - name: 'MTC RealWildnessLife.esp'
     tag: [ Relations ]
-  - name: 'mesme.esp'
-    tag: [ Actors.ACBS ]
+
   - name: 'WRWC - Classic Fallout.esp'
     inc: [ 'WRWC - Right Handed.esp' ]
   - name: 'WRWC - Right Handed.esp'
