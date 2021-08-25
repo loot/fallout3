@@ -2732,6 +2732,7 @@ plugins:
 
   - name: 'Mannequin.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2060/' ]
+    tag: [ Actors.AIData ]
 
   - name: 'MTC Wasteland Travellers.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6044/' ]
