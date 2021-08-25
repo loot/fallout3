@@ -4221,6 +4221,9 @@ plugins:
       - crc: 0x9EF65D79
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'ModBetterPArmor(Vanilla|Anchorage|Pitt|Steel)\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/117/' ]
+
 ###### Gameplay - NPC Balance & Distribution ######
   - name: 'DangerousRadroaches(_MMM)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11552/' ]
