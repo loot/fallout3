@@ -2343,6 +2343,9 @@ plugins:
       - crc: 0x4B41FEB1
         util: 'FO3Edit v4.0.3'
 
+  - name: 'moirared.esp'
+    tag: [ Invent ]
+
   - name: '.*(Project Beauty).*\.es(m|p)'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/6341/'
@@ -5421,9 +5424,6 @@ plugins:
       - Invent
   - name: 'WasteWearGloves.esp'
     tag: [ Relev ]
-
-  - name: 'moirared.esp'
-    tag: [ Invent ]
 
   - name: 'Menu Based Hacking & Picking.esp'
     msg: [ *alreadyInFWE ]
