@@ -2730,6 +2730,9 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 6
 
+  - name: 'Mannequin.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2060/' ]
+
   - name: 'MTC Wasteland Travellers.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6044/' ]
     dirty:
