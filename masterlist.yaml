@@ -4455,6 +4455,9 @@ plugins:
 ###### Gameplay - User Interface ######
   - name: 'Named Wastelanders.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2482/' ]
+    tag:
+      - Actors.ACBS
+      - Names
 
 ###### Locations - New Structures & Landmarks ######
   - name: 'RTS NW.esm'
