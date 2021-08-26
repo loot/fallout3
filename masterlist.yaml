@@ -4283,6 +4283,12 @@ plugins:
     after:
       - name: 'Imp''s More Complex Needs.esp'
         condition: 'file("Nuka Cola Enhanced - IMCN.esp") and file("Bashed Patch.*\.esp")'
+    tag:
+      - Delev
+      - Invent.Add
+      - Invent.Remove
+      - Scripts
+      - Stats
 
   - name: 'SilencedSniperRifles(Std|Unq)\.esp'
     url:
