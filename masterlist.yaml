@@ -4420,6 +4420,10 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/3815/'
         name: 'Simms vs Burke Improved'
+    tag:
+      - Actors.AIPackages
+      - Invent.Add
+      - Invent.Remove
 
   - name: 'Regulators(_Overhaul(_lvl(2|7))?)?\.esp'
     url:
