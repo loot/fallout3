@@ -1716,6 +1716,9 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/8183/' ]
     group: *fixesGroup
     msg: [ *alreadyInOrFixedByUFO3P ]
+    clean:
+      - crc: 0x40276EEA
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
   - name: 'PyromaniacFix-(Burnmaster|Both|Both\+Nuka)(-BS)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/656/' ]
