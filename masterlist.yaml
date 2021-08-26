@@ -4277,6 +4277,32 @@ plugins:
       - crc: 0x4E271DF7
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'SilencedSniperRifles(Std|Unq)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/1202/'
+        name: 'Silenced Sniper Rifles and More 308 Ammo'
+    tag:
+      - Graphics
+      - Sound
+  - name: 'SilencedSniperRiflesStd.esp'
+    tag: [ Names ]
+    clean:
+      - crc: 0x0FA3EDC3
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'SilencedSniperRiflesUnq.esp'
+    tag: [ Invent.Add ]
+    clean:
+      - crc: 0x5FEE4712
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'More308Ammo.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/1202/'
+        name: 'Silenced Sniper Rifles and More 308 Ammo'
+    tag: [ Relev ]
+    clean:
+      - crc: 0x5D4E84CE
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+
 ###### Gameplay - NPC Balance & Distribution ######
   - name: 'DangerousRadroaches(_MMM)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11552/' ]
@@ -5339,8 +5365,6 @@ plugins:
   - name: 'Arms_dealer_V1.esp'
     inc: [ 'RH_IRONSIGHTS.esm' ]
 
-  - name: 'More308Ammo.esp'
-    tag: [ Relev ]
   - name: 'RimfireRevolver.esp'
     inc: [ 'RimfireRevolverCommon.esp' ]
   - name: 'RimfireRevolverCommon.esp'
