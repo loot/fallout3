@@ -2805,6 +2805,22 @@ plugins:
         util: '[FO3Edit v4.0.3g](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 19
 
+  - name: 'Outcast Scribes(03)?\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/7449/' ]
+  - name: 'Outcast Scribes03.esp'
+    inc: [ 'OutcastCasdinArmorFix.esp' ]
+    tag:
+      - Delev
+      - Invent.Add
+      - Invent.Remove
+    dirty:
+      - <<: *quickClean
+        crc: 0xFEE398E8
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        udr: 1
+  - name: 'Outcast Scribes.esp'
+    msg: [ *obsolete ]
+
 ###### Environment, Landscape & Flora ######
   - name: 'Barren Badlands.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21842/' ]
@@ -5284,8 +5300,6 @@ plugins:
   - name: 'Named Wasteland.esp'
     tag: [ Names ]
 
-  - name: 'Outcast Scribes03.esp'
-    inc: [ 'OutcastCasdinArmorFix.esp' ]
   - name: 'royphilipsevil.esp'
     tag:
       - Actors.ACBS
