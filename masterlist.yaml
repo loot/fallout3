@@ -5253,8 +5253,6 @@ plugins:
   - name: 'CrowdedCities_v2_lessNPCs.esp'
     inc: [ 'CrowdedCities_v2.esp' ]
 
-  - name: 'Named Wastelanders.esp'
-    tag: [ Names ]
   - name: 'Named Wasteland.esp'
     tag: [ Names ]
 
