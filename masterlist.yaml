@@ -4416,6 +4416,24 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 18
 
+  - name: 'MS11fix.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/3815/'
+        name: 'Simms vs Burke Improved'
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Delete **00002DB9** in **MS11fix.esp**.' ]
+        condition: 'checksum("MS11fix.esp", 402FE814) or checksum("MS11fix.esp", 1781E72A)'
+    tag:
+      - Actors.AIPackages
+      - Invent.Add
+      - Invent.Remove
+    dirty:
+      - <<: *quickClean
+        crc: 0x402FE814
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 3
+
   - name: 'Regulators(_Overhaul(_lvl(2|7))?)?\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/2928/'
@@ -4937,12 +4955,6 @@ plugins:
         nav: 2
 
     ### Imported ESPs from BOSS masterlist
-  - name: 'MS11fix.esp'
-    tag:
-      - Actors.AIPackages
-      - C.Light
-      - Invent
-      - Scripts
   - name: 'Raider preset beta.esp'
     tag:
       - Deactivate
