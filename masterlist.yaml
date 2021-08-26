@@ -2807,6 +2807,8 @@ plugins:
 
   - name: 'Outcast Scribes(03)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7449/' ]
+  - name: 'Outcast Scribes03.esp'
+    inc: [ 'OutcastCasdinArmorFix.esp' ]
 
 ###### Environment, Landscape & Flora ######
   - name: 'Barren Badlands.esp'
