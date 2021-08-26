@@ -4937,12 +4937,6 @@ plugins:
         nav: 2
 
     ### Imported ESPs from BOSS masterlist
-  - name: 'MS11fix.esp'
-    tag:
-      - Actors.AIPackages
-      - C.Light
-      - Invent
-      - Scripts
   - name: 'Raider preset beta.esp'
     tag:
       - Deactivate
