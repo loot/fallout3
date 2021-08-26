@@ -4277,6 +4277,9 @@ plugins:
       - crc: 0x4E271DF7
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'Nuka Cola Enhanced( - (FWE|IMCN))?\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/12811/' ]
+
   - name: 'SilencedSniperRifles(Std|Unq)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/1202/'
