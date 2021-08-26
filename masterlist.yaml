@@ -1715,6 +1715,7 @@ plugins:
   - name: 'OutcastCasdinArmorFix.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8183/' ]
     group: *fixesGroup
+    msg: [ *alreadyInOrFixedByUFO3P ]
 
   - name: 'PyromaniacFix-(Burnmaster|Both|Both\+Nuka)(-BS)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/656/' ]
