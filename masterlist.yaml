@@ -5339,8 +5339,6 @@ plugins:
   - name: 'Arms_dealer_V1.esp'
     inc: [ 'RH_IRONSIGHTS.esm' ]
 
-  - name: 'More308Ammo.esp'
-    tag: [ Relev ]
   - name: 'RimfireRevolver.esp'
     inc: [ 'RimfireRevolverCommon.esp' ]
   - name: 'RimfireRevolverCommon.esp'
