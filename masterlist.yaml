@@ -4266,6 +4266,16 @@ plugins:
   - name: 'More Ammo( \(Explosive\))?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2364/' ]
     tag: [ Relev ]
+  - name: 'More Ammo.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x1464E762
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+  - name: 'More Ammo (Explosive).esp'
+    clean:
+      - crc: 0x4E271DF7
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
 ###### Gameplay - NPC Balance & Distribution ######
   - name: 'DangerousRadroaches(_MMM)?\.esp'
