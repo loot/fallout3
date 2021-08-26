@@ -4321,6 +4321,7 @@ plugins:
 
   - name: 'OverMightyGold.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4166/' ]
+    tag: [ Invent.Add ]
 
   - name: 'SilencedSniperRifles(Std|Unq)\.esp'
     url:
