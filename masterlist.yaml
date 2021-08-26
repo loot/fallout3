@@ -4281,10 +4281,18 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/1202/'
         name: 'Silenced Sniper Rifles and More 308 Ammo'
+    tag:
+      - Graphics
+      - Sound
+  - name: 'SilencedSniperRiflesStd.esp'
+    tag: [ Names ]
+  - name: 'SilencedSniperRiflesUnq.esp'
+    tag: [ Invent.Add ]
   - name: 'More308Ammo.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/1202/'
         name: 'Silenced Sniper Rifles and More 308 Ammo'
+    tag: [ Relev ]
 
 ###### Gameplay - NPC Balance & Distribution ######
   - name: 'DangerousRadroaches(_MMM)?\.esp'
