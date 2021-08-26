@@ -1712,6 +1712,14 @@ plugins:
         subs: [ 'Wasteland Landscape Patch Optional File - **CinderBlockRockFix.esp** OR **CinderblockRockFix2.esp** OR **ConcreteSlabFix.esp** OR **ConcreteSlabFix2.esp**' ]
         condition: 'many("(CinderBlockRock|ConcreteSlab)Fix.*\.esp")'
 
+  - name: 'OutcastCasdinArmorFix.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/8183/' ]
+    group: *fixesGroup
+    msg: [ *alreadyInOrFixedByUFO3P ]
+    clean:
+      - crc: 0x40276EEA
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+
   - name: 'PyromaniacFix-(Burnmaster|Both|Both\+Nuka)(-BS)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/656/' ]
     msg:
