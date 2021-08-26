@@ -4458,6 +4458,9 @@ plugins:
     tag:
       - Actors.ACBS
       - Names
+    clean:
+      - crc: 0x9B846A47
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
 ###### Locations - New Structures & Landmarks ######
   - name: 'RTS NW.esm'
