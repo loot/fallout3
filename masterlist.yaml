@@ -4279,6 +4279,10 @@ plugins:
 
   - name: 'Nuka Cola Enhanced( - (FWE|IMCN))?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12811/' ]
+  - name: 'Nuka Cola Enhanced.esp'
+    after:
+      - name: 'Imp''s More Complex Needs.esp'
+        condition: 'file("Nuka Cola Enhanced - IMCN.esp") and file("Bashed Patch.*\.esp")'
 
   - name: 'SilencedSniperRifles(Std|Unq)\.esp'
     url:
