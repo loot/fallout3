@@ -4319,6 +4319,15 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
 
+  - name: 'OverMightyGold.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/4166/' ]
+    tag: [ Invent.Add ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xBBF3FFB7
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 50
+
   - name: 'SilencedSniperRifles(Std|Unq)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/1202/'
@@ -5533,8 +5542,6 @@ plugins:
 
   - name: 'Menu Based Hacking & Picking.esp'
     msg: [ *alreadyInFWE ]
-  - name: 'OverMightyGold.esp'
-    tag: [ Invent ]
 
   - name: 'RealFragGrenade.esp'
     inc: [ 'RealFragGrenade3.esp' ]
