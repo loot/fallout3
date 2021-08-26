@@ -5580,15 +5580,6 @@ plugins:
       - Delev
       - Relev
 
-  - name: 'Nuka Cola Enhanced.esp'
-    tag:
-      - Graphics
-      - Stats
-  - name: 'Nuka Cola Enhanced - FWE.esp'
-    tag:
-      - Graphics
-      - Stats
-
   - name: 'AddBottle.esp'
     msg:
       - *alreadyInFWE
