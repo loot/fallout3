@@ -2805,6 +2805,9 @@ plugins:
         util: '[FO3Edit v4.0.3g](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 19
 
+  - name: 'Outcast Scribes(03)?\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/7449/' ]
+
 ###### Environment, Landscape & Flora ######
   - name: 'Barren Badlands.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21842/' ]
