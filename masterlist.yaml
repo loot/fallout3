@@ -5284,8 +5284,6 @@ plugins:
   - name: 'Named Wasteland.esp'
     tag: [ Names ]
 
-  - name: 'Outcast Scribes03.esp'
-    inc: [ 'OutcastCasdinArmorFix.esp' ]
   - name: 'royphilipsevil.esp'
     tag:
       - Actors.ACBS
