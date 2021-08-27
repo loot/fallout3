@@ -2157,14 +2157,8 @@ plugins:
         crc: 0xEBBC124C
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 3
-  - name: 'Placeable Lights Basic Edition v2.1.esp'
-    tag:
-      - Actors.AIData
-      - Relev
-  - name: 'Placable Lights v2.1.esp'
-    tag:
-      - Actors.AIData
-      - Relev
+  - name: '(Place?able|Carryable) Lights( Basic Edition)?( v2\.[01])?\.esp'
+    msg: [ *obsolete ]
 
   - name: 'Realistic Interior Lighting.*\.esp'
     url:
