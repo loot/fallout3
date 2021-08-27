@@ -2127,6 +2127,10 @@ plugins:
       - crc: 0xDEEFA0B4
         util: 'FO3Edit v4.0.2e'
 
+  - name: '(Place?able|Carryable) Lights( Basic Edition)?( v2\.[0-2])?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/13490/'
+        name: 'Placeable Lights'
   - name: 'Placeable Lights Basic Edition v2.1.esp'
     tag:
       - Actors.AIData
