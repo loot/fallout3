@@ -1732,6 +1732,15 @@ plugins:
   - name: 'PyromaniacFix-(Burnmaster|Both|Both\+Nuka)-BS.esp'
     msg: [ *useVersionNonBrokenSteel ]
 
+  - name: 'RD_ElderLyonsRobe.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/6307/' ]
+    group: *fixesGroup
+    msg: [ *alreadyInOrFixedByUFO3P ]
+    tag: [ Graphics ]
+    clean:
+      - crc: 0xF8E0F749
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+
   - name: 'Stop Insulting Me Outcasts( – SCC)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16554/' ]
     msg:
@@ -5656,8 +5665,6 @@ plugins:
   - name: 'jonasclothesreplacer.esp'
     inc: [ 'jonasclothesnonrplcr.esp' ]
 
-  - name: 'RD_ElderLyonsRobe.esp'
-    tag: [ Graphics ]
   - name: 'SimpleEyePatch.esp'
     tag:
       - Eyes
