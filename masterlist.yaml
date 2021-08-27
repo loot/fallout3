@@ -4618,10 +4618,11 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/7268/'
         name: 'In the Shadow of the Swamp'
+    tag: [ Invent.Add ]
   - name: 'PLweightadjust.esp'
     after: [ 'Another Interior Mod.esp' ]
     tag:
-      - Invent
+      - Names
       - Scripts
       - Stats
     clean:
@@ -4631,6 +4632,8 @@ plugins:
     group: *overridesGroup
     tag:
       - Delev
+      - Invent.Change
+      - Invent.Remove
       - Relev
     dirty:
       - <<: *quickClean
