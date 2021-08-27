@@ -4363,6 +4363,11 @@ plugins:
     msg: [ *alreadyInFOOK2 ]
   - name: 'Phalanx-PointLookout-Integration.esp'
     after: [ 'Phalanx-BrokenSteel-Integration.esp' ]
+  - name: 'Phalanx-OPTIONAL-(BROKENSTEEL-)?WeaponRepairLists\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Optional Weapon Repair Lists ESP' ]
+        condition: 'many("Phalanx-OPTIONAL-(BROKENSTEEL-)?WeaponRepairLists\.esp")'
 
 ###### Gameplay - NPC Balance & Distribution ######
   - name: 'DangerousRadroaches(_MMM)?\.esp'
