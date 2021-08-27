@@ -4614,6 +4614,29 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 3
 
+  - name: 'PLweightadjust.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/7268' ]
+    after: [ 'Another Interior Mod.esp' ]
+    tag:
+      - Invent
+      - Scripts
+      - Stats
+    clean:
+      - crc: 0xE79B4E74
+        util: 'FO3Edit v4.0.2e'
+  - name: 'PLFewerItems.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/7268' ]
+    group: *overridesGroup
+    tag:
+      - Delev
+      - Relev
+    dirty:
+      - <<: *quickClean
+        crc: 0xE3EF4366
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+        udr: 56
+
   - name: 'Regulators(_Overhaul(_lvl(2|7))?)?\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/2928/'
@@ -5272,16 +5295,7 @@ plugins:
     clean:
       - crc: 0xE52E603F
         util: 'FO3Edit v4.0.2e'
-  - name: 'PLweightadjust.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/7268' ]
-    after: [ 'Another Interior Mod.esp' ]
-    tag:
-      - Invent
-      - Scripts
-      - Stats
-    clean:
-      - crc: 0xE79B4E74
-        util: 'FO3Edit v4.0.2e'
+
   - name: 'RatTrapRadio.esp'
     inc:
       - 'Regulators_Overhaul.esp'
@@ -7207,18 +7221,6 @@ plugins:
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
 
-  - name: 'PLFewerItems.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/7268' ]
-    group: *overridesGroup
-    tag:
-      - Delev
-      - Relev
-    dirty:
-      - <<: *quickClean
-        crc: 0xE3EF4366
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 1
-        udr: 56
   - name: 'Powered Power Armor.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13361' ]
     tag:
