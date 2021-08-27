@@ -4361,6 +4361,8 @@ plugins:
         name: 'FO3 Phalanx'
   - name: 'Phalanx-MainFollowerModule.esp'
     msg: [ *alreadyInFOOK2 ]
+  - name: 'Phalanx-PointLookout-Integration.esp'
+    after: [ 'Phalanx-BrokenSteel-Integration.esp' ]
 
 ###### Gameplay - NPC Balance & Distribution ######
   - name: 'DangerousRadroaches(_MMM)?\.esp'
