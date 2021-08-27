@@ -2137,7 +2137,26 @@ plugins:
         subs: [ 'Placeable Lights ESP' ]
         condition: 'many("Place?able Lights( Basic Edition)? v2\.2\.esp")'
   - name: 'Placable Lights v2.2.esp'
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Delete **0000003C**, **00000CFD**, **00000DAF**, & **00000DCC** in **Placable Lights v2.2.esp**.' ]
+        condition: 'checksum("Placable Lights v2.2.esp", 97D9E4E5) or checksum("Placable Lights v2.2.esp", 63E76E06)'
     tag: [ Actors.AIData ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x97D9E4E5
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 5
+  - name: 'Placeable Lights Basic Edition v2.2.esp'
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Delete **0000003C**, **00000CFD**, **00000DAF**, & **00000DCC** in **Placeable Lights Basic Edition v2.2.esp**.' ]
+        condition: 'checksum("Placeable Lights Basic Edition v2.2.esp", EBBC124C) or checksum("Placeable Lights Basic Edition v2.2.esp", 0083A066)'
+    dirty:
+      - <<: *quickClean
+        crc: 0xEBBC124C
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 3
   - name: 'Placeable Lights Basic Edition v2.1.esp'
     tag:
       - Actors.AIData
