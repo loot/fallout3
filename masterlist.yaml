@@ -5957,16 +5957,6 @@ plugins:
       - 'yaDisguisesMod-DLC-ThePitt.esp'
       - 'yaDisguisesMod-DLC-BrokenSteel.esp'
 
-  - name: 'Phalanx-MainFollowerModule.esp'
-    msg: [ *alreadyInFOOK2 ]
-    tag:
-      - Actors.ACBS
-      - Actors.AIPackages
-  - name: 'Phalanx-BrokenSteel-Integration.esp'
-    msg: [ *alreadyInFOOK2 ]
-  - name: 'Phalanx-PointLookout-Integration.esp'
-    msg: [ *alreadyInFOOK2 ]
-
   - name: 'dD - Enhanced Blood Main.esp'
     url:
       - 'https://www.nexusmods.com/fallout3/mods/101'
