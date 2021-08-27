@@ -4361,13 +4361,44 @@ plugins:
         name: 'FO3 Phalanx'
   - name: 'Phalanx-MainFollowerModule.esp'
     msg: [ *alreadyInFOOK2 ]
+    tag:
+      - Actors.ACBS
+      - Actors.AIData
+      - Actors.AIPackages
+      - Actors.CombatStyle
+      - Actors.DeathItem
+      - Actors.Spells
+      - Actors.Stats
+      - Graphics
+      - Invent.Add
+      - Invent.Change
+      - Invent.Remove
+      - Names
+      - NPC.Class
+      - Scripts
+      - Stats
   - name: 'Phalanx-PointLookout-Integration.esp'
     after: [ 'Phalanx-BrokenSteel-Integration.esp' ]
+    tag:
+      - Actors.AIData
+      - Factions
+  - name: 'Phalanx-DogmeatEnemyTweaks.esp'
+    tag:
+      - Actors.ACBS
+      - Actors.Stats
+  - name: 'Phalanx-OPTIONAL-VendorChanges.esp'
+    tag:
+      - Invent.Add
+      - Invent.Change
+      - Invent.Remove
+  - name: 'Phalanx-OPTIONAL-WeaponChange.esp'
+    tag: [ Stats ]
   - name: 'Phalanx-OPTIONAL-(BROKENSTEEL-)?WeaponRepairLists\.esp'
     msg:
       - <<: *useOnlyOneX
         subs: [ 'Optional Weapon Repair Lists ESP' ]
         condition: 'many("Phalanx-OPTIONAL-(BROKENSTEEL-)?WeaponRepairLists\.esp")'
+    tag: [ Deflst ]
 
 ###### Gameplay - NPC Balance & Distribution ######
   - name: 'DangerousRadroaches(_MMM)?\.esp'
