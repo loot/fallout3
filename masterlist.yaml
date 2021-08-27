@@ -2127,6 +2127,15 @@ plugins:
       - crc: 0xDEEFA0B4
         util: 'FO3Edit v4.0.2e'
 
+  - name: 'Placeable Lights Basic Edition v2.1.esp'
+    tag:
+      - Actors.AIData
+      - Relev
+  - name: 'Placable Lights v2.1.esp'
+    tag:
+      - Actors.AIData
+      - Relev
+
   - name: 'Realistic Interior Lighting.*\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/9250/'
@@ -5360,14 +5369,7 @@ plugins:
     tag:
       - Deflst
       - Delev
-  - name: 'Placeable Lights Basic Edition v2.1.esp'
-    tag:
-      - Actors.AIData
-      - Relev
-  - name: 'Placable Lights v2.1.esp'
-    tag:
-      - Actors.AIData
-      - Relev
+
   - name: 'SelfSurgeryKit.esp'
     tag: [ Relev ]
   - name: 'RobCo Universal Battery Charger Kit.esp'
