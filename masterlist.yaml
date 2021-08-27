@@ -4614,8 +4614,11 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 3
 
+  - name: 'PL(weightadjust|FewerItems)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/7268/'
+        name: 'In the Shadow of the Swamp'
   - name: 'PLweightadjust.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/7268' ]
     after: [ 'Another Interior Mod.esp' ]
     tag:
       - Invent
@@ -4625,7 +4628,6 @@ plugins:
       - crc: 0xE79B4E74
         util: 'FO3Edit v4.0.2e'
   - name: 'PLFewerItems.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/7268' ]
     group: *overridesGroup
     tag:
       - Delev
