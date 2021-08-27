@@ -4027,6 +4027,10 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
 
+  - name: '(BetterFrag Grenade Physics|RealFragGrenade3?)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/503/'
+        name: 'Better Frag Grenade Physics'
   - name: 'RealFragGrenade.esp'
     inc: [ 'RealFragGrenade3.esp' ]
     msg: [ *obsolete ]
