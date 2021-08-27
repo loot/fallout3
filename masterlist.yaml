@@ -4035,6 +4035,10 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'Better Frag Grenade Physics ESP' ]
         condition: 'many("(BetterFrag Grenade Physics|RealFragGrenade3?)\.esp")'
+  - name: 'BetterFrag Grenade Physics.esp'
+    tag: [ Graphics ]
+  - name: 'RealFragGrenade.esp'
+    tag: [ Graphics ]
 
   - name: 'Fast VATS (1|2)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1650/' ]
