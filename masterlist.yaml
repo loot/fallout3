@@ -1734,6 +1734,7 @@ plugins:
 
   - name: 'RD_ElderLyonsRobe.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6307/' ]
+    group: *fixesGroup
 
   - name: 'Stop Insulting Me Outcasts( – SCC)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16554/' ]
