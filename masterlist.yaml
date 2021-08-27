@@ -4359,6 +4359,8 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/1925/'
         name: 'FO3 Phalanx'
+  - name: 'Phalanx-MainFollowerModule.esp'
+    msg: [ *alreadyInFOOK2 ]
 
 ###### Gameplay - NPC Balance & Distribution ######
   - name: 'DangerousRadroaches(_MMM)?\.esp'
