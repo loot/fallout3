@@ -2136,6 +2136,8 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'Placeable Lights ESP' ]
         condition: 'many("Place?able Lights( Basic Edition)? v2\.2\.esp")'
+  - name: 'Placable Lights v2.2.esp'
+    tag: [ Actors.AIData ]
   - name: 'Placeable Lights Basic Edition v2.1.esp'
     tag:
       - Actors.AIData
