@@ -4354,6 +4354,12 @@ plugins:
       - crc: 0x5D4E84CE
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+###### Gameplay - Follower Managers ######
+  - name: 'Phalanx-.*\.es(m|p)'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/1925/'
+        name: 'FO3 Phalanx'
+
 ###### Gameplay - NPC Balance & Distribution ######
   - name: 'DangerousRadroaches(_MMM)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11552/' ]
