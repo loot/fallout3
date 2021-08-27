@@ -4625,9 +4625,11 @@ plugins:
       - Names
       - Scripts
       - Stats
-    clean:
-      - crc: 0xE79B4E74
-        util: 'FO3Edit v4.0.2e'
+    dirty:
+      - <<: *quickClean
+        crc: 0x439A98A2
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
   - name: 'PLFewerItems.esp'
     group: *overridesGroup
     tag:
@@ -4638,7 +4640,7 @@ plugins:
     dirty:
       - <<: *quickClean
         crc: 0xE3EF4366
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
         udr: 56
 
