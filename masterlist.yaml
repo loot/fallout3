@@ -4027,6 +4027,12 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
 
+  - name: 'RealFragGrenade.esp'
+    inc: [ 'RealFragGrenade3.esp' ]
+    msg: [ *obsolete ]
+  - name: 'RealFragGrenade3.esp'
+    inc: [ 'RealFragGrenade.esp' ]
+
   - name: 'Fast VATS (1|2)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1650/' ]
     inc: [ 'VATS_Normal_dmg_to_player.esp' ]
@@ -5692,12 +5698,6 @@ plugins:
 
   - name: 'Menu Based Hacking & Picking.esp'
     msg: [ *alreadyInFWE ]
-
-  - name: 'RealFragGrenade.esp'
-    inc: [ 'RealFragGrenade3.esp' ]
-    msg: [ *obsolete ]
-  - name: 'RealFragGrenade3.esp'
-    inc: [ 'RealFragGrenade.esp' ]
 
   - name: 'Scavenger World - Updated v0.08.esp'
     tag: [ Relev ]
