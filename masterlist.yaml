@@ -1736,6 +1736,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/6307/' ]
     group: *fixesGroup
     msg: [ *alreadyInOrFixedByUFO3P ]
+    tag: [ Graphics ]
 
   - name: 'Stop Insulting Me Outcasts( – SCC)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16554/' ]
