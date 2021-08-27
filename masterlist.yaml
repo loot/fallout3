@@ -4037,8 +4037,19 @@ plugins:
         condition: 'many("(BetterFrag Grenade Physics|RealFragGrenade3?)\.esp")'
   - name: 'BetterFrag Grenade Physics.esp'
     tag: [ Graphics ]
+    clean:
+      - crc: 0xC67075EC
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
   - name: 'RealFragGrenade.esp'
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Delete **00004330** in **RealFragGrenade.esp**.' ]
+        condition: 'checksum("RealFragGrenade.esp", F6A14032)'
     tag: [ Graphics ]
+  - name: 'RealFragGrenade3.esp'
+    clean:
+      - crc: 0xB8CA008A
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
   - name: 'Fast VATS (1|2)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1650/' ]
