@@ -5656,8 +5656,6 @@ plugins:
   - name: 'jonasclothesreplacer.esp'
     inc: [ 'jonasclothesnonrplcr.esp' ]
 
-  - name: 'RD_ElderLyonsRobe.esp'
-    tag: [ Graphics ]
   - name: 'SimpleEyePatch.esp'
     tag:
       - Eyes
