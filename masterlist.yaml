@@ -2131,6 +2131,11 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/13490/'
         name: 'Placeable Lights'
+  - name: 'Place?able Lights( Basic Edition)? v2\.2\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Placeable Lights ESP' ]
+        condition: 'many("Place?able Lights( Basic Edition)? v2\.2\.esp")'
   - name: 'Placeable Lights Basic Edition v2.1.esp'
     tag:
       - Actors.AIData
