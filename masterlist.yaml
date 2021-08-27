@@ -4354,6 +4354,102 @@ plugins:
       - crc: 0x5D4E84CE
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+###### Gameplay - Follower Managers ######
+  - name: 'Phalanx-.*\.es(m|p)'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/1925/'
+        name: 'FO3 Phalanx'
+  - name: 'Phalanx-MainFollowerModule.esp'
+    msg: [ *alreadyInFOOK2 ]
+    tag:
+      - Actors.ACBS
+      - Actors.AIData
+      - Actors.AIPackages
+      - Actors.CombatStyle
+      - Actors.DeathItem
+      - Actors.Spells
+      - Actors.Stats
+      - Graphics
+      - Invent.Add
+      - Invent.Change
+      - Invent.Remove
+      - Names
+      - NPC.Class
+      - Scripts
+      - Stats
+    dirty:
+      - <<: *reqManualFix
+        crc: 0x030DEE72
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 180
+        nav: 7
+      - <<: *reqManualFix
+        crc: 0x401AB2AA
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        nav: 7
+  - name: 'Phalanx-BrokenSteel-Integration.esp'
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Delete **00000D3C**, **00000D79**, & **0001A267** in **Phalanx-BrokenSteel-Integration.esp**.' ]
+        condition: 'checksum("Phalanx-BrokenSteel-Integration.esp", CA1B2029) or checksum("Phalanx-BrokenSteel-Integration.esp", B81EC99E)'
+    dirty:
+      - <<: *quickClean
+        crc: 0xCA1B2029
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 15
+  - name: 'Phalanx-PointLookout-Navmesh.esm'
+    dirty:
+      - <<: *reqManualFix
+        crc: 0x4978A90A
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+        nav: 2
+      - <<: *reqManualFix
+        crc: 0xB6D65D33
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        nav: 2
+  - name: 'Phalanx-PointLookout-Integration.esp'
+    after: [ 'Phalanx-BrokenSteel-Integration.esp' ]
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Delete **00000E13** in **Phalanx-PointLookout-Integration.esp**.' ]
+        condition: 'checksum("Phalanx-PointLookout-Integration.esp", F71C5C80)'
+    tag:
+      - Actors.AIData
+      - Factions
+  - name: 'Phalanx-DogmeatEnemyTweaks.esp'
+    tag:
+      - Actors.ACBS
+      - Actors.Stats
+  - name: 'Phalanx-OPTIONAL-VendorChanges.esp'
+    tag:
+      - Invent.Add
+      - Invent.Change
+      - Invent.Remove
+    dirty:
+      - <<: *quickClean
+        crc: 0x70B3BC55
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 5
+  - name: 'Phalanx-OPTIONAL-WeaponChange.esp'
+    tag: [ Stats ]
+  - name: 'Phalanx-OPTIONAL-(BROKENSTEEL-)?WeaponRepairLists\.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Optional Weapon Repair Lists ESP' ]
+        condition: 'many("Phalanx-OPTIONAL-(BROKENSTEEL-)?WeaponRepairLists\.esp")'
+    tag: [ Deflst ]
+  - name: 'Phalanx-OPTIONAL-BROKENSTEEL-WeaponRepairLists.esp'
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Delete **0001A267** in **Phalanx-OPTIONAL-BROKENSTEEL-WeaponRepairLists.esp**.' ]
+        condition: 'checksum("Phalanx-OPTIONAL-BROKENSTEEL-WeaponRepairLists.esp", 850733A7) or checksum("Phalanx-OPTIONAL-BROKENSTEEL-WeaponRepairLists.esp", 4DDAE288)'
+    dirty:
+      - <<: *quickClean
+        crc: 0x850733A7
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+
 ###### Gameplay - NPC Balance & Distribution ######
   - name: 'DangerousRadroaches(_MMM)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11552/' ]
@@ -5956,16 +6052,6 @@ plugins:
       - 'yaDisguisesMod-DLC-Anchorage.esp'
       - 'yaDisguisesMod-DLC-ThePitt.esp'
       - 'yaDisguisesMod-DLC-BrokenSteel.esp'
-
-  - name: 'Phalanx-MainFollowerModule.esp'
-    msg: [ *alreadyInFOOK2 ]
-    tag:
-      - Actors.ACBS
-      - Actors.AIPackages
-  - name: 'Phalanx-BrokenSteel-Integration.esp'
-    msg: [ *alreadyInFOOK2 ]
-  - name: 'Phalanx-PointLookout-Integration.esp'
-    msg: [ *alreadyInFOOK2 ]
 
   - name: 'dD - Enhanced Blood Main.esp'
     url:
