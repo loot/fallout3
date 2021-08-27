@@ -4031,11 +4031,10 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/503/'
         name: 'Better Frag Grenade Physics'
-  - name: 'RealFragGrenade.esp'
-    inc: [ 'RealFragGrenade3.esp' ]
-    msg: [ *obsolete ]
-  - name: 'RealFragGrenade3.esp'
-    inc: [ 'RealFragGrenade.esp' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Better Frag Grenade Physics ESP' ]
+        condition: 'many("(BetterFrag Grenade Physics|RealFragGrenade3?)\.esp")'
 
   - name: 'Fast VATS (1|2)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1650/' ]
