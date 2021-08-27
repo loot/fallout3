@@ -4027,6 +4027,30 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
 
+  - name: '(BetterFrag Grenade Physics|RealFragGrenade3?)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/503/'
+        name: 'Better Frag Grenade Physics'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Better Frag Grenade Physics ESP' ]
+        condition: 'many("(BetterFrag Grenade Physics|RealFragGrenade3?)\.esp")'
+  - name: 'BetterFrag Grenade Physics.esp'
+    tag: [ Graphics ]
+    clean:
+      - crc: 0xC67075EC
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'RealFragGrenade.esp'
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Delete **00004330** in **RealFragGrenade.esp**.' ]
+        condition: 'checksum("RealFragGrenade.esp", F6A14032)'
+    tag: [ Graphics ]
+  - name: 'RealFragGrenade3.esp'
+    clean:
+      - crc: 0xB8CA008A
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+
   - name: 'Fast VATS (1|2)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1650/' ]
     inc: [ 'VATS_Normal_dmg_to_player.esp' ]
@@ -5692,12 +5716,6 @@ plugins:
 
   - name: 'Menu Based Hacking & Picking.esp'
     msg: [ *alreadyInFWE ]
-
-  - name: 'RealFragGrenade.esp'
-    inc: [ 'RealFragGrenade3.esp' ]
-    msg: [ *obsolete ]
-  - name: 'RealFragGrenade3.esp'
-    inc: [ 'RealFragGrenade.esp' ]
 
   - name: 'Scavenger World - Updated v0.08.esp'
     tag: [ Relev ]
