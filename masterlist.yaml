@@ -4886,6 +4886,9 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'Rimfire Revolver ESP' ]
         condition: 'many("RimfireRevolver(Common)?\.esp")'
+    tag:
+      - Invent.Add
+      - Invent.Remove
   - name: 'RimfireRevolverCommon.esp'
     msg:
       - <<: *requiresResources
