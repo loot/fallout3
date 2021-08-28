@@ -4421,6 +4421,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/8682/'
         name: 'Container Replenishment'
+    tag: [ Scripts ]
 
   - name: 'SilencedSniperRifles(Std|Unq)\.esp'
     url:
