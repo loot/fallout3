@@ -4402,6 +4402,8 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'Burns Flames and Fire ESP' ]
         condition: 'many("RebalancedFire-(Vanilla|BrokenSteel)\.esp")'
+  - name: 'RebalancedFire-Vanilla.esp'
+    msg: [ *useVersionBrokenSteel ]
 
   - name: 'SilencedSniperRifles(Std|Unq)\.esp'
     url:
