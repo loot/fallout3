@@ -4417,6 +4417,15 @@ plugins:
         subs: [ 'Delete **0001A267** in **RebalancedFire-BrokenSteel.esp**.' ]
         condition: 'checksum("RebalancedFire-BrokenSteel.esp", B7522CB8)'
 
+  - name: 'Replenishment.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/8682/'
+        name: 'Container Replenishment'
+    tag: [ Scripts ]
+    clean:
+      - crc: 0x887529A1
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+
   - name: 'SilencedSniperRifles(Std|Unq)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/1202/'
@@ -5793,8 +5802,7 @@ plugins:
     msg: [ *obsolete ]
   - name: 'Zumbs''_Overhauled_Real_Time_Security_minigames_enabled.esp'
     msg: [ *obsolete ]
-  - name: 'Replenishment.esp'
-    tag: [ Scripts ]
+
   - name: 'WeaponModKits-Unique.esp'
     tag: [ Graphics ]
   - name: 'unique_uniques.esp'
