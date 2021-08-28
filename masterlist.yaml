@@ -4417,6 +4417,11 @@ plugins:
         subs: [ 'Delete **0001A267** in **RebalancedFire-BrokenSteel.esp**.' ]
         condition: 'checksum("RebalancedFire-BrokenSteel.esp", B7522CB8)'
 
+  - name: 'Replenishment.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/8682/'
+        name: 'Container Replenishment'
+
   - name: 'SilencedSniperRifles(Std|Unq)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/1202/'
