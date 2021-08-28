@@ -4412,9 +4412,10 @@ plugins:
       - crc: 0x1B25678A
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
   - name: 'RebalancedFire-BrokenSteel.esp'
-    clean:
-      - crc: 0xB7522CB8
-        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Delete **0001A267** in **RebalancedFire-BrokenSteel.esp**.' ]
+        condition: 'checksum("RebalancedFire-BrokenSteel.esp", B7522CB8)'
 
   - name: 'SilencedSniperRifles(Std|Unq)\.esp'
     url:
