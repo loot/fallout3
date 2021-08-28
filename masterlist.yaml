@@ -4408,6 +4408,13 @@ plugins:
       - Text
   - name: 'RebalancedFire-Vanilla.esp'
     msg: [ *useVersionBrokenSteel ]
+    clean:
+      - crc: 0x1B25678A
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'RebalancedFire-BrokenSteel.esp'
+    clean:
+      - crc: 0xB7522CB8
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
   - name: 'SilencedSniperRifles(Std|Unq)\.esp'
     url:
