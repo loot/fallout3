@@ -4394,6 +4394,28 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 50
 
+  - name: 'RebalancedFire-(Vanilla|BrokenSteel)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/6183/'
+        name: 'Burns Flames and Fire - Complete Pyromaniac Rebalance'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Burns Flames and Fire ESP' ]
+        condition: 'many("RebalancedFire-(Vanilla|BrokenSteel)\.esp")'
+    tag:
+      - Graphics
+      - Stats
+      - Text
+  - name: 'RebalancedFire-Vanilla.esp'
+    msg: [ *useVersionBrokenSteel ]
+    clean:
+      - crc: 0x1B25678A
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'RebalancedFire-BrokenSteel.esp'
+    clean:
+      - crc: 0xB7522CB8
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+
   - name: 'SilencedSniperRifles(Std|Unq)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/1202/'
@@ -6088,10 +6110,7 @@ plugins:
 
   - name: 'Owned!.esp'
     tag: [ Factions ]
-  - name: 'RebalancedFire-Vanilla.esp'
-    inc: [ 'RebalancedFire-BrokenSteel.esp' ]
-  - name: 'RebalancedFire-BrokenSteel.esp'
-    inc: [ 'RebalancedFire-Vanilla.esp' ]
+
   - name: 'RRRU +4 UFP.esp'
     tag: [ Deflst ]
   - name: 'RRRU +4.esp'
