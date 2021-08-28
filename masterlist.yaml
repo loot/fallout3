@@ -4422,6 +4422,9 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/8682/'
         name: 'Container Replenishment'
     tag: [ Scripts ]
+    clean:
+      - crc: 0x887529A1
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
   - name: 'SilencedSniperRifles(Std|Unq)\.esp'
     url:
