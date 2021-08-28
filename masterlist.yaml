@@ -4889,11 +4889,18 @@ plugins:
     tag:
       - Invent.Add
       - Invent.Remove
+  - name: 'RimfireRevolver.esp'
+    clean:
+      - crc: 0x470D6D83
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
   - name: 'RimfireRevolverCommon.esp'
     msg:
       - <<: *requiresResources
         subs: [ 'Rimfire Revolver ZIP' ]
         condition: 'not file("meshes/weapons/1HandPistol/snubbie.nif")'
+    clean:
+      - crc: 0xCDD65000
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
 ###### 3RD Party Patches ######
   - name: 'Blackened .*\.esp'
