@@ -4878,6 +4878,30 @@ plugins:
       - crc: 0x01720BFF
         util: 'FO3Edit v4.0.3'
 
+  - name: 'RimfireRevolver(Common)?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/3026/'
+        name: '5mm Revolver AKA 22LR Rimfire'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Rimfire Revolver ESP' ]
+        condition: 'many("RimfireRevolver(Common)?\.esp")'
+    tag:
+      - Invent.Add
+      - Invent.Remove
+  - name: 'RimfireRevolver.esp'
+    clean:
+      - crc: 0x470D6D83
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'RimfireRevolverCommon.esp'
+    msg:
+      - <<: *requiresResources
+        subs: [ 'Rimfire Revolver ZIP' ]
+        condition: 'not file("meshes/weapons/1HandPistol/snubbie.nif")'
+    clean:
+      - crc: 0xCDD65000
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+
 ###### 3RD Party Patches ######
   - name: 'Blackened .*\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
@@ -5641,11 +5665,6 @@ plugins:
 
   - name: 'Arms_dealer_V1.esp'
     inc: [ 'RH_IRONSIGHTS.esm' ]
-
-  - name: 'RimfireRevolver.esp'
-    inc: [ 'RimfireRevolverCommon.esp' ]
-  - name: 'RimfireRevolverCommon.esp'
-    inc: [ 'RimfireRevolver.esp' ]
 
   - name: 'WattzLasers.esp'
     tag:
