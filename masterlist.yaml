@@ -4882,10 +4882,10 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/3026/'
         name: '5mm Revolver AKA 22LR Rimfire'
-  - name: 'RimfireRevolver.esp'
-    inc: [ 'RimfireRevolverCommon.esp' ]
-  - name: 'RimfireRevolverCommon.esp'
-    inc: [ 'RimfireRevolver.esp' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Rimfire Revolver ESP' ]
+        condition: 'many("RimfireRevolver(Common)?\.esp")'
 
 ###### 3RD Party Patches ######
   - name: 'Blackened .*\.esp'
