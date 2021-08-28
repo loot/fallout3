@@ -4878,6 +4878,11 @@ plugins:
       - crc: 0x01720BFF
         util: 'FO3Edit v4.0.3'
 
+  - name: 'RimfireRevolver.esp'
+    inc: [ 'RimfireRevolverCommon.esp' ]
+  - name: 'RimfireRevolverCommon.esp'
+    inc: [ 'RimfireRevolver.esp' ]
+
 ###### 3RD Party Patches ######
   - name: 'Blackened .*\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
@@ -5641,11 +5646,6 @@ plugins:
 
   - name: 'Arms_dealer_V1.esp'
     inc: [ 'RH_IRONSIGHTS.esm' ]
-
-  - name: 'RimfireRevolver.esp'
-    inc: [ 'RimfireRevolverCommon.esp' ]
-  - name: 'RimfireRevolverCommon.esp'
-    inc: [ 'RimfireRevolver.esp' ]
 
   - name: 'WattzLasers.esp'
     tag:
