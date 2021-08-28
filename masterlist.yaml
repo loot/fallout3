@@ -4398,10 +4398,10 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/6183/'
         name: 'Burns Flames and Fire - Complete Pyromaniac Rebalance'
-  - name: 'RebalancedFire-Vanilla.esp'
-    inc: [ 'RebalancedFire-BrokenSteel.esp' ]
-  - name: 'RebalancedFire-BrokenSteel.esp'
-    inc: [ 'RebalancedFire-Vanilla.esp' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Burns Flames and Fire ESP' ]
+        condition: 'many("RebalancedFire-(Vanilla|BrokenSteel)\.esp")'
 
   - name: 'SilencedSniperRifles(Std|Unq)\.esp'
     url:
