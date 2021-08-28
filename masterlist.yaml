@@ -4886,6 +4886,11 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'Rimfire Revolver ESP' ]
         condition: 'many("RimfireRevolver(Common)?\.esp")'
+  - name: 'RimfireRevolverCommon.esp'
+    msg:
+      - <<: *requiresResources
+        subs: [ 'Rimfire Revolver ZIP' ]
+        condition: 'not file("meshes/weapons/1HandPistol/snubbie.nif")'
 
 ###### 3RD Party Patches ######
   - name: 'Blackened .*\.esp'
