@@ -6139,10 +6139,6 @@ plugins:
   - name: 'Owned!.esp'
     tag: [ Factions ]
 
-  - name: 'RRRU +4 UFP.esp'
-    tag: [ Deflst ]
-  - name: 'RRRU +4.esp'
-    tag: [ Deflst ]
   - name: 'Skill Modification Assignment.esp'
     tag:
       - Scripts
