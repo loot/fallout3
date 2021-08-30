@@ -4444,8 +4444,21 @@ plugins:
     tag:
       - Deflst
       - Scripts
+  - name: 'RRRU +4.esp'
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Delete **00015145**, **0001A267**, & **00074EB2** in **RRRU +4.esp**.' ]
+        condition: 'checksum("RRRU +4.esp", 6858BC49) or checksum("RRRU +4.esp", 0C58B053)'
+    dirty:
+      - <<: *quickClean
+        crc: 0x6858BC49
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
   - name: 'RRRU +4 UFP.esp'
     req: [ 'Unofficial Fallout 3 Patch.esm' ]
+    clean:
+      - crc: 0x7928C545
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
   - name: 'SilencedSniperRifles(Std|Unq)\.esp'
     url:
