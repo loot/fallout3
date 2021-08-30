@@ -3993,6 +3993,8 @@ plugins:
       - crc: 0x130108AC
         util: 'FO3Edit v4.0.2e'
 
+  - name: 'Scavenger World - (Updated|FWE Edition) v0\.08\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/16691/' ]
   - name: 'Scavenger World - Updated v0.08.esp'
     tag: [ Relev ]
   - name: 'Scavenger World - FWE Edition v0.08.esp'
