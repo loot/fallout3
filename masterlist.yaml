@@ -1678,10 +1678,7 @@ plugins:
     msg: [ *alreadyInOrFixedByUFO3Pv1_7 ]
   - name: 'Fixed Suits( Anchorage)?\.esp'
     inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
-    msg:
-      - <<: *useVersion
-        subs: [ 'FO3 Wanderers Edition (FWE)' ]
-        condition: 'active("FO3 Wanderers Edition - Main File.esm")'
+    msg: [ *useVersionFWE ]
 
   - name: 'FO3 Error Fixes.esp'
     url:
@@ -3156,10 +3153,7 @@ plugins:
         subs: [ 'Bottle Brahmin Milk ESP' ]
         condition: 'many("BottleBrahminMilk(FWE)?\.esp")'
   - name: 'BottleBrahminMilk.esp'
-    msg:
-      - <<: *useVersion
-        subs: [ 'FO3 Wanderers Edition' ]
-        condition: 'file("FO3 Wanderers Edition - Main File.esm") and not file("BottleBrahminMilkFWE.esp")'
+    msg: [ *useVersionFWE ]
 
   - name: 'CarvanTrader.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4080/' ]
@@ -4007,9 +4001,7 @@ plugins:
     tag: [ Scripts ]
   - name: 'Scavenger World - Updated v0.08.esp'
     msg:
-      - <<: *useVersion
-        subs: [ 'FO3 Wanderers Edition' ]
-        condition: 'active("FO3 Wanderers Edition - Main File.esm")'
+      - *useVersionFWE
       - <<: *wildEdits
         subs: [ 'Delete **00004351** in **Scavenger World - Updated v0.08.esp**.' ]
         condition: 'checksum("Scavenger World - Updated v0.08.esp", BA1E4F27) or checksum("Scavenger World - Updated v0.08.esp", D28D3104)'
