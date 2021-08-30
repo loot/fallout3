@@ -3993,6 +3993,7 @@ plugins:
 
   - name: 'Scavenger World - (Updated|FWE Edition) v0\.08\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16691/' ]
+    req: [ *FOSE ]
     inc: [ 'Scavenger World.esp' ]
     msg:
       - <<: *useOnlyOneX
