@@ -4430,6 +4430,13 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/7351/'
         name: 'Repair Rethought Reborn Updated'
+    inc:
+      - 'CMRS.esm'
+      - 'RRR 1.0.esp'
+      - 'RRR+ANCH 1.0.esp'
+      - 'RRR+ANCH+PITT 1.0.esp'
+      - 'RRR+ANCH+PITT+BS 1.0.esp'
+      - 'RRR+PITT 1.0.esp'
 
   - name: 'SilencedSniperRifles(Std|Unq)\.esp'
     url:
