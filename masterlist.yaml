@@ -4437,6 +4437,10 @@ plugins:
       - 'RRR+ANCH+PITT 1.0.esp'
       - 'RRR+ANCH+PITT+BS 1.0.esp'
       - 'RRR+PITT 1.0.esp'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Repair Rethought Reborn Updated ESP' ]
+        condition: 'many("RRRU \+4( UFP)?\.esp")'
 
   - name: 'SilencedSniperRifles(Std|Unq)\.esp'
     url:
