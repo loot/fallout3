@@ -4426,6 +4426,11 @@ plugins:
       - crc: 0x887529A1
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'RRRU \+4( UFP)?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/7351/'
+        name: 'Repair Rethought Reborn Updated'
+
   - name: 'SilencedSniperRifles(Std|Unq)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/1202/'
