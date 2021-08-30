@@ -3995,6 +3995,7 @@ plugins:
 
   - name: 'Scavenger World - (Updated|FWE Edition) v0\.08\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16691/' ]
+    inc: [ 'Scavenger World.esp' ]
   - name: 'Scavenger World - Updated v0.08.esp'
     tag: [ Relev ]
   - name: 'Scavenger World - FWE Edition v0.08.esp'
