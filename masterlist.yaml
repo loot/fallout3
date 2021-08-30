@@ -3993,6 +3993,38 @@ plugins:
       - crc: 0x130108AC
         util: 'FO3Edit v4.0.2e'
 
+  - name: 'Scavenger World - (Updated|FWE Edition) v0\.08\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/16691/' ]
+    inc: [ 'Scavenger World.esp' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Scavenger World ESP' ]
+        condition: 'many("Scavenger World - (Updated|FWE Edition) v0\.08\.esp")'
+    tag: [ Scripts ]
+  - name: 'Scavenger World - Updated v0.08.esp'
+    msg:
+      - <<: *useVersion
+        subs: [ 'FO3 Wanderers Edition' ]
+        condition: 'active("FO3 Wanderers Edition - Main File.esm")'
+      - <<: *wildEdits
+        subs: [ 'Delete **00004351** in **Scavenger World - Updated v0.08.esp**.' ]
+        condition: 'checksum("Scavenger World - Updated v0.08.esp", BA1E4F27) or checksum("Scavenger World - Updated v0.08.esp", D28D3104)'
+    dirty:
+      - <<: *quickClean
+        crc: 0xBA1E4F27
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 14
+  - name: 'Scavenger World - FWE Edition v0.08.esp'
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Delete **00004351** in **Scavenger World - FWE Edition v0.08.esp**.' ]
+        condition: 'checksum("Scavenger World - FWE Edition v0.08.esp", 57765955) or checksum("Scavenger World - FWE Edition v0.08.esp", DB0F8E8E)'
+    dirty:
+      - <<: *quickClean
+        crc: 0x57765955
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 14
+
   - name: 'Zumbs'' Equipable Pip Boy.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/9364/' ]
     req: [ *FOSE ]
@@ -5802,10 +5834,6 @@ plugins:
   - name: 'Menu Based Hacking & Picking.esp'
     msg: [ *alreadyInFWE ]
 
-  - name: 'Scavenger World - Updated v0.08.esp'
-    tag: [ Relev ]
-  - name: 'Scavenger World - FWE Edition v0.08.esp'
-    tag: [ Relev ]
   - name: 'ScavengerWasteland.esp'
     tag:
       - Actors.AIData
