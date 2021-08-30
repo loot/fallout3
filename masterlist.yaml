@@ -4000,14 +4000,12 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'Scavenger World ESP' ]
         condition: 'many("Scavenger World - (Updated|FWE Edition) v0\.08\.esp")'
+    tag: [ Scripts ]
   - name: 'Scavenger World - Updated v0.08.esp'
     msg:
       - <<: *useVersion
         subs: [ 'FO3 Wanderers Edition' ]
         condition: 'active("FO3 Wanderers Edition - Main File.esm")'
-    tag: [ Relev ]
-  - name: 'Scavenger World - FWE Edition v0.08.esp'
-    tag: [ Relev ]
 
   - name: 'Zumbs'' Equipable Pip Boy.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/9364/' ]
