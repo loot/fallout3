@@ -3993,6 +3993,11 @@ plugins:
       - crc: 0x130108AC
         util: 'FO3Edit v4.0.2e'
 
+  - name: 'Scavenger World - Updated v0.08.esp'
+    tag: [ Relev ]
+  - name: 'Scavenger World - FWE Edition v0.08.esp'
+    tag: [ Relev ]
+
   - name: 'Zumbs'' Equipable Pip Boy.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/9364/' ]
     req: [ *FOSE ]
@@ -5802,10 +5807,6 @@ plugins:
   - name: 'Menu Based Hacking & Picking.esp'
     msg: [ *alreadyInFWE ]
 
-  - name: 'Scavenger World - Updated v0.08.esp'
-    tag: [ Relev ]
-  - name: 'Scavenger World - FWE Edition v0.08.esp'
-    tag: [ Relev ]
   - name: 'ScavengerWasteland.esp'
     tag:
       - Actors.AIData
