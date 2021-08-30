@@ -4441,6 +4441,8 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'Repair Rethought Reborn Updated ESP' ]
         condition: 'many("RRRU \+4( UFP)?\.esp")'
+  - name: 'RRRU +4 UFP.esp'
+    req: [ 'Unofficial Fallout 3 Patch.esm' ]
 
   - name: 'SilencedSniperRifles(Std|Unq)\.esp'
     url:
