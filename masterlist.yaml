@@ -4816,6 +4816,15 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/15838/'
         name: 'Scavenger of the Wasteland'
+    tag:
+      - Actors.AIPackages
+      - Graphics
+      - Invent.Add
+      - Invent.Change
+      - Invent.Remove
+      - Names
+      - Scripts
+      - Text
     dirty:
       - <<: *quickClean
         crc: 0x3C85023F
