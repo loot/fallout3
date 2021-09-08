@@ -4811,6 +4811,31 @@ plugins:
   - name: 'RTS.esm'
     msg: [ *obsolete ]
 
+###### Locations - Player Homes ######
+  - name: 'ScavengerWasteland.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/15838/'
+        name: 'Scavenger of the Wasteland'
+    msg:
+      - <<: *requiresX
+        type: error
+        subs: [ 'Scavenger of the Wasteland resources' ]
+        condition: 'not file("sound/Voice/ScavengerWasteland.esp")'
+    tag:
+      - Actors.AIPackages
+      - Graphics
+      - Invent.Add
+      - Invent.Change
+      - Invent.Remove
+      - Names
+      - Scripts
+      - Text
+    dirty:
+      - <<: *quickClean
+        crc: 0x3C85023F
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        udr: 17
+
 ###### New Items ######
   - name: '3EFskewer.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5528/' ]
@@ -5831,12 +5856,6 @@ plugins:
   - name: 'Menu Based Hacking & Picking.esp'
     msg: [ *alreadyInFWE ]
 
-  - name: 'ScavengerWasteland.esp'
-    tag:
-      - Actors.AIData
-      - Invent
-      - Relev
-      - Scripts
   - name: 'SimpleSmokeo.esp'
     tag:
       - Actors.AIPackages
