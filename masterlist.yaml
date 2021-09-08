@@ -5831,12 +5831,6 @@ plugins:
   - name: 'Menu Based Hacking & Picking.esp'
     msg: [ *alreadyInFWE ]
 
-  - name: 'ScavengerWasteland.esp'
-    tag:
-      - Actors.AIData
-      - Invent
-      - Relev
-      - Scripts
   - name: 'SimpleSmokeo.esp'
     tag:
       - Actors.AIPackages
