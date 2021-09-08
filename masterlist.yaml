@@ -4816,6 +4816,11 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/15838/'
         name: 'Scavenger of the Wasteland'
+    dirty:
+      - <<: *quickClean
+        crc: 0x3C85023F
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        udr: 17
 
 ###### New Items ######
   - name: '3EFskewer.esp'
