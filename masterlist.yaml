@@ -4816,6 +4816,11 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/15838/'
         name: 'Scavenger of the Wasteland'
+    msg:
+      - <<: *requiresX
+        type: error
+        subs: [ 'Scavenger of the Wasteland resources' ]
+        condition: 'not file("sound/Voice/ScavengerWasteland.esp")'
     tag:
       - Actors.AIPackages
       - Graphics
