@@ -5001,6 +5001,12 @@ plugins:
 
   - name: 'SimpleSmokeo.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7193/' ]
+    tag:
+      - Delev
+      - Invent.Add
+      - Invent.Remove
+      - Names
+      - Stats
     dirty:
       - <<: *quickClean
         crc: 0x51274702
