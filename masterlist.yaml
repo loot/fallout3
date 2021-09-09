@@ -5073,6 +5073,19 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1258
 
+  - name: 'Tesla Metal Armor.esp'
+    inc:
+      - 'Tesla Metal Armor (Extended).esp'
+      - 'Tesla Light Armor Redone.esp'
+  - name: 'Tesla Metal Armor (Extended).esp'
+    inc:
+      - 'Tesla Metal Armor.esp'
+      - 'Tesla Light Armor Redone.esp'
+  - name: 'Tesla Light Armor Redone.esp'
+    inc:
+      - 'Tesla Metal Armor (Extended).esp'
+      - 'Tesla Metal Armor.esp'
+
 ###### 3RD Party Patches ######
   - name: 'Blackened .*\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
@@ -5910,18 +5923,6 @@ plugins:
   - name: 'jonasclothesreplacer.esp'
     inc: [ 'jonasclothesnonrplcr.esp' ]
 
-  - name: 'Tesla Metal Armor.esp'
-    inc:
-      - 'Tesla Metal Armor (Extended).esp'
-      - 'Tesla Light Armor Redone.esp'
-  - name: 'Tesla Metal Armor (Extended).esp'
-    inc:
-      - 'Tesla Metal Armor.esp'
-      - 'Tesla Light Armor Redone.esp'
-  - name: 'Tesla Light Armor Redone.esp'
-    inc:
-      - 'Tesla Metal Armor (Extended).esp'
-      - 'Tesla Metal Armor.esp'
   - name: 'Test-Weapon_additional armor.esp'
     tag: [ Invent ]
   - name: 'vaultgirlrp.esp'
