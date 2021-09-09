@@ -4856,6 +4856,7 @@ plugins:
     msg: [ *obsolete ]
 
   - name: 'Towers Hill.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/8201/' ]
     tag: [ Invent ]
 
 ###### Locations - Player Homes ######
