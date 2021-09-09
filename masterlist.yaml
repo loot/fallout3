@@ -5094,6 +5094,10 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 6
   - name: 'Tesla Light Armor Redone.esp'
+    tag:
+      - Graphics
+      - Names
+      - Stats
     dirty:
       - <<: *quickClean
         crc: 0x3A7ACFB1
