@@ -5059,6 +5059,7 @@ plugins:
         udr: 281
 
   - name: 'SuperStim.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2548/' ]
     tag: [ Scripts ]
 
 ###### 3RD Party Patches ######
