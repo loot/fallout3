@@ -4858,6 +4858,17 @@ plugins:
   - name: 'Towers Hill.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8201/' ]
     tag: [ Invent ]
+    dirty:
+      - <<: *reqManualFix
+        crc: 0xE6AC7C06
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1233
+        udr: 186
+        nav: 14
+      - <<: *reqManualFix
+        crc: 0x542E9252
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        nav: 14
 
 ###### Locations - Player Homes ######
   - name: 'ScavengerWasteland.esp'
