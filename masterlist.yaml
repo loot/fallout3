@@ -4676,6 +4676,14 @@ plugins:
   - name: 'Compatibility Plugin_TalonExtraArmor_FWE.esp'
     msg: [ *useVersionBrokenSteel ]
 
+  - name: 'SpiderAnts.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/15603/'
+        name: 'Beasty Ant Spiders'
+    clean:
+      - crc: 0x18807732
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+
 ###### Gameplay - NPC Behaviour & Dialogue ######
   - name: '(Confessor Cromwell has a Break_EV|Beichtvater Cromwell macht Pause_DV)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4660/' ]
@@ -6244,8 +6252,7 @@ plugins:
 
   - name: 'SuperStim.esp'
     tag: [ Scripts ]
-  - name: 'SpiderAnts.esp'
-    tag: [ Relev ]
+
   - name: 'T3T_MiscItemIcons.esp'
     msg: [ *alreadyInFWE ]
   - name: 'EnhVision.esp'
