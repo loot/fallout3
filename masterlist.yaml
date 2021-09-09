@@ -4855,6 +4855,9 @@ plugins:
   - name: 'RTS.esm'
     msg: [ *obsolete ]
 
+  - name: 'Towers Hill.esp'
+    tag: [ Invent ]
+
 ###### Locations - Player Homes ######
   - name: 'ScavengerWasteland.esp'
     url:
@@ -5811,8 +5814,7 @@ plugins:
         crc: 0xEF1BF5C3
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 4
-  - name: 'Towers Hill.esp'
-    tag: [ Invent ]
+
   - name: 'Vault 89 (player home) V1-35.esp'
     inc: [ 'FNNSys.esm' ]
     tag: [ Scripts ]
