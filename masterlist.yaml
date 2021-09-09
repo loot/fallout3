@@ -4681,6 +4681,9 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/15603/'
         name: 'Beasty Ant Spiders'
     tag: [ Relev ]
+    clean:
+      - crc: 0x18807732
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
 ###### Gameplay - NPC Behaviour & Dialogue ######
   - name: '(Confessor Cromwell has a Break_EV|Beichtvater Cromwell macht Pause_DV)\.esp'
