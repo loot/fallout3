@@ -4995,6 +4995,11 @@ plugins:
     tag:
       - Eyes
       - Invent
+    dirty:
+      - <<: *quickClean
+        crc: 0x99731C1F
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 6
 
 ###### 3RD Party Patches ######
   - name: 'Blackened .*\.esp'
