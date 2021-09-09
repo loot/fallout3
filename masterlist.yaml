@@ -5073,6 +5073,10 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1258
 
+  - name: 'Tesla (Metal|Light) Armor( \(Extended\)| Redone)?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/4011/'
+        name: 'Classic Tesla Metal Armor'
   - name: 'Tesla Metal Armor.esp'
     inc:
       - 'Tesla Metal Armor (Extended).esp'
