@@ -6229,10 +6229,6 @@ plugins:
   - name: 'Owned!.esp'
     tag: [ Factions ]
 
-  - name: 'Skill Modification Assignment.esp'
-    tag:
-      - Scripts
-      - Stats
   - name: 'SuperStim.esp'
     tag: [ Scripts ]
   - name: 'SpiderAnts.esp'
