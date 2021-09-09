@@ -5064,7 +5064,9 @@ plugins:
       - <<: *wildEdits
         subs: [ 'Delete **000239CA**, **0002805D**, **0002B4FB**, **0003BC72**, **000553EE**, & **0007BEE1** in **SuperStim.esp**.' ]
         condition: 'checksum("SuperStim.esp", FD5D44A4) or checksum("SuperStim.esp", 6CCD16ED)'
-    tag: [ Scripts ]
+    tag:
+      - Invent.Add
+      - Relev
     dirty:
       - <<: *quickClean
         crc: 0xFD5D44A4
