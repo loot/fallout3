@@ -4524,6 +4524,9 @@ plugins:
       - crc: 0x5D4E84CE
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'Start_Energy_Weapon.esp'
+    tag: [ Invent ]
+
 ###### Gameplay - Follower Managers ######
   - name: 'Phalanx-.*\.es(m|p)'
     url:
@@ -5900,8 +5903,6 @@ plugins:
   - name: 'Menu Based Hacking & Picking.esp'
     msg: [ *alreadyInFWE ]
 
-  - name: 'Start_Energy_Weapon.esp'
-    tag: [ Invent ]
   - name: 'WRK - Plugin.esp'
     tag:
       - Invent
