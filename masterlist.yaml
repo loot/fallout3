@@ -2460,6 +2460,9 @@ plugins:
         util: 'FO3Edit v4.0.3'
 
   - name: 'slaveraider_newlook.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/10004/'
+        name: 'Slave Raider Companion New Look'
     tag: [ Graphics ]
 
 ###### Encounters - Allies ######
