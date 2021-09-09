@@ -4526,7 +4526,9 @@ plugins:
 
   - name: 'Start_Energy_Weapon.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2559/' ]
-    tag: [ Invent ]
+    tag:
+      - Invent.Add
+      - Invent.Remove
     dirty:
       - <<: *quickClean
         crc: 0xF9A6EA24
