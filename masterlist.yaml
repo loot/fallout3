@@ -4097,6 +4097,9 @@ plugins:
         subs: [ 'Fast VATS ESP' ]
         condition: 'many("Fast VATS (1|2)\.esp")'
 
+  - name: 'SuperSledgeBeatdown.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2168/' ]
+
 ###### Gameplay - Crafting ######
   - name: 'BA_Repair(_GOTY)?(\+AA)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10647/' ]
