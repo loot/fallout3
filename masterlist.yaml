@@ -4792,6 +4792,7 @@ plugins:
 
   - name: 'Skill Modification Assignment.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11836/' ]
+    tag: [ Scripts ]
     clean:
       - crc: 0x73F58058
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
