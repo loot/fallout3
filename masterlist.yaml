@@ -4990,6 +4990,11 @@ plugins:
       - crc: 0xCDD65000
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'SimpleEyePatch.esp'
+    tag:
+      - Eyes
+      - Invent
+
 ###### 3RD Party Patches ######
   - name: 'Blackened .*\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
@@ -5828,10 +5833,6 @@ plugins:
   - name: 'jonasclothesreplacer.esp'
     inc: [ 'jonasclothesnonrplcr.esp' ]
 
-  - name: 'SimpleEyePatch.esp'
-    tag:
-      - Eyes
-      - Invent
   - name: 'Tesla Metal Armor.esp'
     inc:
       - 'Tesla Metal Armor (Extended).esp'
