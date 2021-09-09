@@ -4524,6 +4524,17 @@ plugins:
       - crc: 0x5D4E84CE
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'Start_Energy_Weapon.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2559/' ]
+    tag:
+      - Invent.Add
+      - Invent.Remove
+    dirty:
+      - <<: *quickClean
+        crc: 0xF9A6EA24
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 6
+
 ###### Gameplay - Follower Managers ######
   - name: 'Phalanx-.*\.es(m|p)'
     url:
@@ -5900,8 +5911,6 @@ plugins:
   - name: 'Menu Based Hacking & Picking.esp'
     msg: [ *alreadyInFWE ]
 
-  - name: 'Start_Energy_Weapon.esp'
-    tag: [ Invent ]
   - name: 'WRK - Plugin.esp'
     tag:
       - Invent
