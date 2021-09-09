@@ -5060,7 +5060,16 @@ plugins:
 
   - name: 'SuperStim.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2548/' ]
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Delete **000239CA**, **0002805D**, **0002B4FB**, **0003BC72**, **000553EE**, & **0007BEE1** in **SuperStim.esp**.' ]
+        condition: 'checksum("SuperStim.esp", FD5D44A4) or checksum("SuperStim.esp", 6CCD16ED)'
     tag: [ Scripts ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xFD5D44A4
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1258
 
 ###### 3RD Party Patches ######
   - name: 'Blackened .*\.esp'
