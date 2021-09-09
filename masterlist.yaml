@@ -5666,8 +5666,7 @@ plugins:
     tag:
       - Factions
       - Relations
-  - name: 'SuperSledgeBeatdown.esp'
-    tag: [ Scripts ]
+
   - name: 'AmmoSorter - Start.esp'
     tag: [ Names ]
   - name: 'AmmoSorter - End.esp'
