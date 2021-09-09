@@ -4677,6 +4677,9 @@ plugins:
     msg: [ *useVersionBrokenSteel ]
 
   - name: 'SpiderAnts.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/15603/'
+        name: 'Beasty Ant Spiders'
     tag: [ Relev ]
 
 ###### Gameplay - NPC Behaviour & Dialogue ######
