@@ -4790,6 +4790,13 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         udr: 64
 
+  - name: 'Skill Modification Assignment.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/11836/' ]
+    tag: [ Scripts ]
+    clean:
+      - crc: 0x73F58058
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+
 ###### Gameplay - User Interface ######
   - name: 'Named Wastelanders.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2482/' ]
@@ -6229,10 +6236,6 @@ plugins:
   - name: 'Owned!.esp'
     tag: [ Factions ]
 
-  - name: 'Skill Modification Assignment.esp'
-    tag:
-      - Scripts
-      - Stats
   - name: 'SuperStim.esp'
     tag: [ Scripts ]
   - name: 'SpiderAnts.esp'
