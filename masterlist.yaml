@@ -4857,7 +4857,14 @@ plugins:
 
   - name: 'Towers Hill.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8201/' ]
-    tag: [ Invent ]
+    tag:
+      - Actors.ACBS
+      - Actors.AIPackages
+      - Invent.Add
+      - Invent.Change
+      - Invent.Remove
+      - Names
+      - Scripts
     dirty:
       - <<: *reqManualFix
         crc: 0xE6AC7C06
