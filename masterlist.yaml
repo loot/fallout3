@@ -5861,14 +5861,6 @@ plugins:
   - name: 'Menu Based Hacking & Picking.esp'
     msg: [ *alreadyInFWE ]
 
-  - name: 'SimpleSmokeo.esp'
-    tag:
-      - Actors.AIPackages
-      - Actors.Animations
-      - Delev
-      - Invent
-      - Names
-      - Relev
   - name: 'Start_Energy_Weapon.esp'
     tag: [ Invent ]
   - name: 'WRK - Plugin.esp'
