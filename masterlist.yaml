@@ -4097,6 +4097,15 @@ plugins:
         subs: [ 'Fast VATS ESP' ]
         condition: 'many("Fast VATS (1|2)\.esp")'
 
+  - name: 'SuperSledgeBeatdown.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2168/' ]
+    tag:
+      - Scripts
+      - Stats
+    clean:
+      - crc: 0x29846B52
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+
 ###### Gameplay - Crafting ######
   - name: 'BA_Repair(_GOTY)?(\+AA)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10647/' ]
@@ -5666,8 +5675,7 @@ plugins:
     tag:
       - Factions
       - Relations
-  - name: 'SuperSledgeBeatdown.esp'
-    tag: [ Scripts ]
+
   - name: 'AmmoSorter - Start.esp'
     tag: [ Names ]
   - name: 'AmmoSorter - End.esp'
