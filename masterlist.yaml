@@ -4525,6 +4525,7 @@ plugins:
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
   - name: 'Start_Energy_Weapon.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2559/' ]
     tag: [ Invent ]
 
 ###### Gameplay - Follower Managers ######
