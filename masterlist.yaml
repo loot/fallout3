@@ -5081,14 +5081,29 @@ plugins:
     inc:
       - 'Tesla Metal Armor (Extended).esp'
       - 'Tesla Light Armor Redone.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x6E99E763
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 6
   - name: 'Tesla Metal Armor (Extended).esp'
     inc:
       - 'Tesla Metal Armor.esp'
       - 'Tesla Light Armor Redone.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xDB7980C5
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 6
   - name: 'Tesla Light Armor Redone.esp'
     inc:
       - 'Tesla Metal Armor (Extended).esp'
       - 'Tesla Metal Armor.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x3A7ACFB1
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 6
 
 ###### 3RD Party Patches ######
   - name: 'Blackened .*\.esp'
