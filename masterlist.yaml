@@ -2459,6 +2459,9 @@ plugins:
       - crc: 0x7B1D30CA
         util: 'FO3Edit v4.0.3'
 
+  - name: 'slaveraider_newlook.esp'
+    tag: [ Graphics ]
+
 ###### Encounters - Allies ######
   - name: 'ARC - Assembled Robotic Companions.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6988/' ]
@@ -6157,9 +6160,6 @@ plugins:
     inc:
       - 'AmyWong - CALIBR 1.3 (FWE 5).esp'
       - 'AmyWong - CALIBR 1.2.esp'
-
-  - name: 'slaveraider_newlook.esp'
-    tag: [ Graphics ]
 
   - name: 'MTC RealWildnessLife.esp'
     tag: [ Relations ]
