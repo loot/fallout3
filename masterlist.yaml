@@ -4676,6 +4676,9 @@ plugins:
   - name: 'Compatibility Plugin_TalonExtraArmor_FWE.esp'
     msg: [ *useVersionBrokenSteel ]
 
+  - name: 'SpiderAnts.esp'
+    tag: [ Relev ]
+
 ###### Gameplay - NPC Behaviour & Dialogue ######
   - name: '(Confessor Cromwell has a Break_EV|Beichtvater Cromwell macht Pause_DV)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4660/' ]
@@ -6244,8 +6247,7 @@ plugins:
 
   - name: 'SuperStim.esp'
     tag: [ Scripts ]
-  - name: 'SpiderAnts.esp'
-    tag: [ Relev ]
+
   - name: 'T3T_MiscItemIcons.esp'
     msg: [ *alreadyInFWE ]
   - name: 'EnhVision.esp'
