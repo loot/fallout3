@@ -4992,9 +4992,7 @@ plugins:
 
   - name: 'SimpleEyePatch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/4484/' ]
-    tag:
-      - Eyes
-      - Invent
+    tag: [ Invent.Add ]
     dirty:
       - <<: *quickClean
         crc: 0x99731C1F
