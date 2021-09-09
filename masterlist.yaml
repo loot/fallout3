@@ -4999,6 +4999,21 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 6
 
+  - name: 'SimpleSmokeo.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/7193/' ]
+    tag:
+      - Delev
+      - Invent.Add
+      - Invent.Remove
+      - Names
+      - Stats
+    dirty:
+      - <<: *quickClean
+        crc: 0x51274702
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 11
+        udr: 281
+
 ###### 3RD Party Patches ######
   - name: 'Blackened .*\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
@@ -5861,14 +5876,6 @@ plugins:
   - name: 'Menu Based Hacking & Picking.esp'
     msg: [ *alreadyInFWE ]
 
-  - name: 'SimpleSmokeo.esp'
-    tag:
-      - Actors.AIPackages
-      - Actors.Animations
-      - Delev
-      - Invent
-      - Names
-      - Relev
   - name: 'Start_Energy_Weapon.esp'
     tag: [ Invent ]
   - name: 'WRK - Plugin.esp'
