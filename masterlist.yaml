@@ -5128,6 +5128,7 @@ plugins:
 
   - name: 'Trucker Holotapes.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13353/' ]
+    tag: [ Names ]
     dirty:
       - <<: *quickClean
         crc: 0x560A4645
