@@ -5137,6 +5137,10 @@ plugins:
 
   - name: 'vaultgirl(nr|rp)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16776/' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Vault Girl ESP' ]
+        condition: 'many("vaultgirl(nr|rp)\.esp")'
   - name: 'vaultgirlnr.esp'
     dirty:
       - <<: *quickClean
