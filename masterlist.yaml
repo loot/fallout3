@@ -5126,6 +5126,9 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 6
 
+  - name: 'Trucker Holotapes.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/13353/' ]
+
 ###### 3RD Party Patches ######
   - name: 'Blackened .*\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
