@@ -5138,6 +5138,10 @@ plugins:
   - name: 'vaultgirl(nr|rp)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16776/' ]
     msg:
+      - <<: *requiresResources
+        type: error
+        subs: [ 'Vault Girl v1' ]
+        condition: 'not file("meshes/jonasclothes/vaultgirl/vaultgirl.nif")'
       - <<: *useOnlyOneX
         subs: [ 'Vault Girl ESP' ]
         condition: 'many("vaultgirl(nr|rp)\.esp")'
