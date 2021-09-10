@@ -5135,6 +5135,33 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
 
+  - name: 'vaultgirl(nr|rp)\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/16776/' ]
+    msg:
+      - <<: *requiresResources
+        type: error
+        subs: [ 'Vault Girl v1' ]
+        condition: 'not file("meshes/jonasclothes/vaultgirl/vaultgirl.nif")'
+      - <<: *useOnlyOneX
+        subs: [ 'Vault Girl ESP' ]
+        condition: 'many("vaultgirl(nr|rp)\.esp")'
+  - name: 'vaultgirlnr.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xD33D4325
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+  - name: 'vaultgirlrp.esp'
+    tag:
+      - Graphics
+      - Invent.Add
+      - Invent.Remove
+    dirty:
+      - <<: *quickClean
+        crc: 0xB8E49613
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+
 ###### 3RD Party Patches ######
   - name: 'Blackened .*\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
@@ -5973,10 +6000,7 @@ plugins:
 
   - name: 'Test-Weapon_additional armor.esp'
     tag: [ Invent ]
-  - name: 'vaultgirlrp.esp'
-    tag:
-      - Graphics
-      - Invent
+
   - name: 'WasteWearGloves.esp'
     tag: [ Relev ]
 
