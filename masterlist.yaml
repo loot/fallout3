@@ -5137,6 +5137,18 @@ plugins:
 
   - name: 'vaultgirl(nr|rp)\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16776/' ]
+  - name: 'vaultgirlnr.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xD33D4325
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+  - name: 'vaultgirlrp.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xB8E49613
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
 
 ###### 3RD Party Patches ######
   - name: 'Blackened .*\.esp'
