@@ -5973,10 +5973,7 @@ plugins:
 
   - name: 'Test-Weapon_additional armor.esp'
     tag: [ Invent ]
-  - name: 'vaultgirlrp.esp'
-    tag:
-      - Graphics
-      - Invent
+
   - name: 'WasteWearGloves.esp'
     tag: [ Relev ]
 
