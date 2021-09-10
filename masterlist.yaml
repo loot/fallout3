@@ -5152,6 +5152,10 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
   - name: 'vaultgirlrp.esp'
+    tag:
+      - Graphics
+      - Invent.Add
+      - Invent.Remove
     dirty:
       - <<: *quickClean
         crc: 0xB8E49613
