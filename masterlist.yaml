@@ -6132,9 +6132,6 @@ plugins:
       - Graphics
       - Invent
 
-  - name: 'Trucker Holotapes.esp'
-    tag: [ Names ]
-
   - name: 'Mart''s Mutant Mod - UF3P.esp'
     tag: [ Invent ]
 
