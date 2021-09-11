@@ -5169,6 +5169,7 @@ plugins:
         itm: 1
 
   - name: 'WasteWearGloves.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2810/' ]
     tag: [ Relev ]
 
 ###### 3RD Party Patches ######
