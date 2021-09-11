@@ -4718,6 +4718,9 @@ plugins:
       - crc: 0x8F54FADF
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'Wasteland Gigolo.esp'
+    tag: [ Scripts ]
+
 ###### Gameplay - Quests ######
   - name: 'ArefuExpandedByAzar.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12466/' ]
@@ -5824,8 +5827,6 @@ plugins:
     tag:
       - Actors.ACBS
       - Actors.AIData
-  - name: 'Wasteland Gigolo.esp'
-    tag: [ Scripts ]
 
   - name: 'DCStreet.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16924' ]
