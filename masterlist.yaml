@@ -5170,7 +5170,6 @@ plugins:
 
   - name: 'WasteWearGloves.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2810/' ]
-    tag: [ Relev ]
     dirty:
       - <<: *quickClean
         crc: 0x4834C2D3
