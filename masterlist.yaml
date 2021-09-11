@@ -5171,6 +5171,11 @@ plugins:
   - name: 'WasteWearGloves.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2810/' ]
     tag: [ Relev ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x4834C2D3
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
 
 ###### 3RD Party Patches ######
   - name: 'Blackened .*\.esp'
