@@ -4719,6 +4719,7 @@ plugins:
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
   - name: 'Wasteland Gigolo.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/2111/' ]
     tag: [ Scripts ]
 
 ###### Gameplay - Quests ######
