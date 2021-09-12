@@ -4070,6 +4070,39 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 14
 
+  - name: 'yaDisguisesMod.*\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/8670/'
+        name: 'Yet Another DisguisesMod - YADM'
+  - name: 'yaDisguisesMod(-DLC-(Anchorage|ThePitt|BrokenSteel))?\.esp'
+    msg:
+      - <<: *alreadyInX
+        subs: [ '**yaDisguisesMod-Merged.esp**' ]
+        condition: 'active("yaDisguisesMod-Merged.esp")'
+  - name: 'yaDisguisesMod.esp'
+    clean:
+      - crc: 0x2DA992E2
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'yaDisguisesMod-DLC-Anchorage.esp'
+    clean:
+      - crc: 0xF6550B13
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'yaDisguisesMod-DLC-(ThePitt|BrokenSteel)\.esp'
+    after: [ 'yaDisguisesMod-DLC-Anchorage.esp' ]
+  - name: 'yaDisguisesMod-DLC-ThePitt.esp'
+    clean:
+      - crc: 0xCA8EB32C
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'yaDisguisesMod-DLC-BrokenSteel.esp'
+    after: [ 'yaDisguisesMod-DLC-ThePitt.esp' ]
+    clean:
+      - crc: 0xD1674D05
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'yaDisguisesMod-Merged.esp'
+    clean:
+      - crc: 0xC15CD189
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+
   - name: 'Zumbs'' Equipable Pip Boy.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/9364/' ]
     req: [ *FOSE ]
@@ -6432,12 +6465,6 @@ plugins:
       - Relev
   - name: 'WRK Final - Point Lookout.esp'
     tag: [ Invent ]
-  - name: 'yaDisguisesMod-Merged.esp'
-    inc:
-      - 'yaDisguisesMod.esp'
-      - 'yaDisguisesMod-DLC-Anchorage.esp'
-      - 'yaDisguisesMod-DLC-ThePitt.esp'
-      - 'yaDisguisesMod-DLC-BrokenSteel.esp'
 
   - name: 'dD - Enhanced Blood Main.esp'
     url:
