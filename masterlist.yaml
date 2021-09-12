@@ -5273,6 +5273,21 @@ plugins:
 
   - name: '\[DC RANGER ARSENAL v3( MASTER)?\]( - ITEM GENERATOR| - DLC GEAR)?\.es[mp]'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16572/' ]
+  - name: '[DC RANGER ARSENAL v3 MASTER].esm'
+    clean:
+      - crc: 0xDB9D56D1
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: '[DC RANGER ARSENAL v3] - ITEM GENERATOR.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xEEB31044
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 12
+        udr: 2
+  - name: '[DC RANGER ARSENAL v3] - DLC GEAR.esp'
+    clean:
+      - crc: 0x842F2693
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
 ###### 3RD Party Patches ######
   - name: 'Blackened .*\.esp'
