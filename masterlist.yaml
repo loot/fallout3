@@ -4070,6 +4070,13 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 14
 
+  - name: 'yaDisguisesMod-Merged.esp'
+    inc:
+      - 'yaDisguisesMod.esp'
+      - 'yaDisguisesMod-DLC-Anchorage.esp'
+      - 'yaDisguisesMod-DLC-ThePitt.esp'
+      - 'yaDisguisesMod-DLC-BrokenSteel.esp'
+
   - name: 'Zumbs'' Equipable Pip Boy.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/9364/' ]
     req: [ *FOSE ]
@@ -6432,12 +6439,6 @@ plugins:
       - Relev
   - name: 'WRK Final - Point Lookout.esp'
     tag: [ Invent ]
-  - name: 'yaDisguisesMod-Merged.esp'
-    inc:
-      - 'yaDisguisesMod.esp'
-      - 'yaDisguisesMod-DLC-Anchorage.esp'
-      - 'yaDisguisesMod-DLC-ThePitt.esp'
-      - 'yaDisguisesMod-DLC-BrokenSteel.esp'
 
   - name: 'dD - Enhanced Blood Main.esp'
     url:
