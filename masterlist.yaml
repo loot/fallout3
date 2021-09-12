@@ -2206,6 +2206,30 @@ plugins:
 
   - name: 'Xepha''s Darkened Interiors( - (OA|BS|PL))?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16935/' ]
+  - name: 'Xepha''s Darkened Interiors.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x3B8FE432
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 10
+  - name: 'Xepha''s Darkened Interiors - OA.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x5D6421E7
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+  - name: 'Xepha''s Darkened Interiors - BS.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xBC89007E
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 9
+  - name: 'Xepha''s Darkened Interiors - PL.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x8C03070C
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 7
 
 ###### Character Appearance - Body, Face & Hair ######
   - name: 'AinzBeautifuleEyes.esp'
