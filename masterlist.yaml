@@ -4071,6 +4071,7 @@ plugins:
         itm: 14
 
   - name: 'Weapon Repair Kits.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/17572/' ]
     tag: [ Relev ]
 
   - name: '(Weapon Repair Kits|WRK|WeaponRepairKits).*\.es[mp]'
