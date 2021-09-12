@@ -2208,6 +2208,11 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/16935/' ]
     group: *overridesGroup
   - name: 'Xepha''s Darkened Interiors.esp'
+    msg:
+      - <<: *patchIncluded
+        type: error
+        subs: [ 'Broken Steel DLC' ]
+        condition: 'active("BrokenSteel.esm") and not active("Xepha''s Darkened Interiors - BS.esp")'
     dirty:
       - <<: *quickClean
         crc: 0x3B8FE432
