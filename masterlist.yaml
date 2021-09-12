@@ -5139,7 +5139,15 @@ plugins:
       - <<: *patchUnavailable
         subs: [ 'See you - Time for Bed' ]
         condition: 'active("FNNSys.esm") and not active("Bashed Patch.*\.esp")'
-    tag: [ Scripts ]
+    tag:
+      - Actors.ACBS
+      - Actors.AIPackages
+      - Actors.Anims
+      - Creatures.Blood
+      - Graphics
+      - ObjectBounds
+      - Sound
+      - SpellStats
     dirty:
       - <<: *quickClean
         crc: 0xB57F93C0
