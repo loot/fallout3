@@ -4089,6 +4089,10 @@ plugins:
         crc: 0x1C3C4059
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
+  - name: '(Weapon Repair Kits|WeaponRepairKits-Main)\.esm'
+    msg: [ *obsolete ]
+  - name: 'WRK - (Plugin|Operation Anchorage|The Pitt|Broken Steel|Point Lookout|Mothership Zeta)\.esp'
+    msg: [ *obsolete ]
 
   - name: 'yaDisguisesMod.*\.esp'
     url:
