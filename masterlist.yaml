@@ -4070,6 +4070,17 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 14
 
+  - name: 'WRK Final - Plugin.esp'
+    tag:
+      - Invent
+      - Relev
+  - name: 'WRK Final - Point Lookout.esp'
+    tag: [ Invent ]
+  - name: 'WRK - Plugin.esp'
+    tag:
+      - Invent
+      - Relev
+
   - name: 'yaDisguisesMod.*\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/8670/'
@@ -6118,10 +6129,6 @@ plugins:
   - name: 'Menu Based Hacking & Picking.esp'
     msg: [ *alreadyInFWE ]
 
-  - name: 'WRK - Plugin.esp'
-    tag:
-      - Invent
-      - Relev
   - name: 'ZORTS - Content Destruction - Normal.esp'
     inc: [ 'ZORTS - Content Destruction - Extreme.esp' ]
   - name: 'ZORTS - Content Destruction - Extreme.esp'
@@ -6471,12 +6478,6 @@ plugins:
     inc: [ 'EnhVision.esp' ]
   - name: 'Weapon Repair Kits.esp'
     tag: [ Relev ]
-  - name: 'WRK Final - Plugin.esp'
-    tag:
-      - Invent
-      - Relev
-  - name: 'WRK Final - Point Lookout.esp'
-    tag: [ Invent ]
 
   - name: 'dD - Enhanced Blood Main.esp'
     url:
