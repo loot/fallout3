@@ -5451,9 +5451,6 @@ plugins:
       - Voice-F
       - Voice-M
 
-  - name: '[DC RANGER ARSENAL v3] - DLC GEAR.esp'
-    tag: [ Deflst ]
-
   - name: 'Refurbishes [ALL].esm'
     msg: [ *alreadyInFOOK2 ]
 
@@ -6035,10 +6032,6 @@ plugins:
     inc: [ 'Wieldable Torches (Optional).esp' ]
   - name: 'Wieldable Torches (Optional).esp'
     inc: [ 'WieldableTorches (Main).esp' ]
-
-# This does not seem like a valid filename
-  - name: '[DC RANGER ARSENAL v3 MASTER].esm'
-    tag: [ Deflst ]
 
   - name: 'BoS_DX.esp'
     msg:
