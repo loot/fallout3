@@ -2204,6 +2204,45 @@ plugins:
         util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 18
 
+  - name: 'Xepha''s Darkened Interiors( - (OA|BS|PL))?\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/16935/' ]
+    group: *overridesGroup
+    tag: [ C.Light ]
+  - name: 'Xepha''s Darkened Interiors( - (OA|BS))?\.esp'
+    tag: [ C.ImageSpace ]
+  - name: 'Xepha''s Darkened Interiors.esp'
+    msg:
+      - <<: *patchIncluded
+        type: error
+        subs: [ 'Broken Steel DLC' ]
+        condition: 'active("BrokenSteel.esm") and not active("Xepha''s Darkened Interiors - BS.esp")'
+    dirty:
+      - <<: *quickClean
+        crc: 0x3B8FE432
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 10
+  - name: 'Xepha''s Darkened Interiors - OA.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x5D6421E7
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+  - name: 'Xepha''s Darkened Interiors - (BS|PL).esp'
+    after: [ 'Xepha''s Darkened Interiors - OA.esp' ]
+  - name: 'Xepha''s Darkened Interiors - BS.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xBC89007E
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 9
+  - name: 'Xepha''s Darkened Interiors - PL.esp'
+    after: [ 'Xepha''s Darkened Interiors - BS.esp' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x8C03070C
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 7
+
 ###### Character Appearance - Body, Face & Hair ######
   - name: 'AinzBeautifuleEyes.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10665/' ]
@@ -6538,19 +6577,6 @@ plugins:
     tag: [ C.Light ]
 
   - name: 'NColorDCInteriors.esp'
-    tag: [ C.Light ]
-  - name: 'Xepha''s Darkened Interiors.esp'
-    msg:
-      - <<: *patchIncluded
-        type: error
-        subs: [ 'BrokenSteel.esm' ]
-        condition: 'active("BrokenSteel.esm") and not active("Xepha''s Darkened Interiors - BS.esp")'
-    tag: [ C.Light ]
-  - name: 'Xepha''s Darkened Interiors - OA.esp'
-    tag: [ C.Light ]
-  - name: 'Xepha''s Darkened Interiors - BS.esp'
-    tag: [ C.Light ]
-  - name: 'Xepha''s Darkened Interiors - PL.esp'
     tag: [ C.Light ]
 
   - name: 'Xepha''s Dynamic Weather.*\.es(m|p)'
