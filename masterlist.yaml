@@ -5936,11 +5936,6 @@ plugins:
   - name: 'Arms_dealer_V1.esp'
     inc: [ 'RH_IRONSIGHTS.esm' ]
 
-  - name: 'WattzLasers.esp'
-    tag:
-      - Delev
-      - Relev
-      - Stats
   - name: 'WieldableTorches (Main).esp'
     inc: [ 'Wieldable Torches (Optional).esp' ]
   - name: 'Wieldable Torches (Optional).esp'
