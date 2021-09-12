@@ -5135,7 +5135,10 @@ plugins:
       - name: 'Location 1 (Megaton-V101).esp'
         display: 'Vault 89 Location ESP'
         condition: 'not file("Location 2 (Fort Constantine).esp")'
-    inc: [ 'FNNSys.esm' ]
+    msg:
+      - <<: *patchUnavailable
+        subs: [ 'See you - Time for Bed' ]
+        condition: 'active("FNNSys.esm") and not active("Bashed Patch.*\.esp")'
     tag: [ Scripts ]
     dirty:
       - <<: *quickClean
