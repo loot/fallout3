@@ -4084,6 +4084,7 @@ plugins:
       - crc: 0xBD9A0160
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
   - name: 'WRK Final - Point Lookout.esp'
+    after: [ 'WRK Final - Plugin.esp' ]
     tag: [ Invent ]
     dirty:
       - <<: *quickClean
