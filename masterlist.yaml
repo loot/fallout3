@@ -5128,6 +5128,52 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         udr: 17
 
+  - name: 'Vault 89 (player home) V1-35.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1741/' ]
+    after: [ 'Location 2 (Fort Constantine).esp' ]
+    req:
+      - name: 'Location 1 (Megaton-V101).esp'
+        display: 'Vault 89 Location ESP'
+        condition: 'not file("Location 2 (Fort Constantine).esp")'
+    msg:
+      - <<: *patchUnavailable
+        subs: [ 'See you - Time for Bed' ]
+        condition: 'active("FNNSys.esm") and not active("Bashed Patch.*\.esp")'
+    tag:
+      - Actors.ACBS
+      - Actors.AIPackages
+      - Actors.Anims
+      - Creatures.Blood
+      - Graphics
+      - ObjectBounds
+      - Sound
+      - SpellStats
+    dirty:
+      - <<: *quickClean
+        crc: 0xB57F93C0
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 162
+        udr: 8
+  - name: 'Location (1 \(Megaton-V101\)|2 \(Fort Constantine\))\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1741/' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Vault 89 Location ESP' ]
+        condition: 'many("Location (1 \(Megaton-V101\)|2 \(Fort Constantine\))\.esp")'
+  - name: 'Location 1 (Megaton-V101).esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xBEB537CB
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 37
+        udr: 1
+  - name: 'Location 2 (Fort Constantine).esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x8CB27CC2
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+
 ###### New Items ######
   - name: '3EFskewer.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5528/' ]
@@ -6117,10 +6163,6 @@ plugins:
         crc: 0xEF1BF5C3
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 4
-
-  - name: 'Vault 89 (player home) V1-35.esp'
-    inc: [ 'FNNSys.esm' ]
-    tag: [ Scripts ]
 
   - name: 'GSoS - FOOK2 Open Beta - Combat and Sneaking Overhaul.esp'
     msg: [ *obsolete ]
