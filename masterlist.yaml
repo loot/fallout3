@@ -4072,7 +4072,6 @@ plugins:
 
   - name: 'Weapon Repair Kits.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17572/' ]
-    tag: [ Relev ]
     clean:
       - crc: 0x29821752
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
