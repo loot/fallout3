@@ -5285,6 +5285,7 @@ plugins:
         itm: 12
         udr: 2
   - name: '[DC RANGER ARSENAL v3] - DLC GEAR.esp'
+    tag: [ Deflst ]
     clean:
       - crc: 0x842F2693
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
