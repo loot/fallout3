@@ -5128,6 +5128,10 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         udr: 17
 
+  - name: 'Vault 89 (player home) V1-35.esp'
+    inc: [ 'FNNSys.esm' ]
+    tag: [ Scripts ]
+
 ###### New Items ######
   - name: '3EFskewer.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5528/' ]
@@ -6117,10 +6121,6 @@ plugins:
         crc: 0xEF1BF5C3
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 4
-
-  - name: 'Vault 89 (player home) V1-35.esp'
-    inc: [ 'FNNSys.esm' ]
-    tag: [ Scripts ]
 
   - name: 'GSoS - FOOK2 Open Beta - Combat and Sneaking Overhaul.esp'
     msg: [ *obsolete ]
