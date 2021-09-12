@@ -2204,6 +2204,9 @@ plugins:
         util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 18
 
+  - name: 'Xepha''s Darkened Interiors( - (OA|BS|PL))?\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/16935/' ]
+
 ###### Character Appearance - Body, Face & Hair ######
   - name: 'AinzBeautifuleEyes.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10665/' ]
