@@ -5130,6 +5130,11 @@ plugins:
 
   - name: 'Vault 89 (player home) V1-35.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1741/' ]
+    after: [ 'Location 2 (Fort Constantine).esp' ]
+    req:
+      - name: 'Location 1 (Megaton-V101).esp'
+        display: 'Vault 89 Location ESP'
+        condition: 'not file("Location 2 (Fort Constantine).esp")'
     inc: [ 'FNNSys.esm' ]
     tag: [ Scripts ]
     dirty:
