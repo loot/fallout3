@@ -5129,8 +5129,11 @@ plugins:
         udr: 17
 
   - name: 'Vault 89 (player home) V1-35.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1741/' ]
     inc: [ 'FNNSys.esm' ]
     tag: [ Scripts ]
+  - name: 'Location (1 \(Megaton-V101\)|2 \(Fort Constantine\))\.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/1741/' ]
 
 ###### New Items ######
   - name: '3EFskewer.esp'
