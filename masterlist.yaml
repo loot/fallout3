@@ -5132,8 +5132,27 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/1741/' ]
     inc: [ 'FNNSys.esm' ]
     tag: [ Scripts ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xB57F93C0
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 162
+        udr: 8
   - name: 'Location (1 \(Megaton-V101\)|2 \(Fort Constantine\))\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1741/' ]
+  - name: 'Location 1 (Megaton-V101).esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xBEB537CB
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 37
+        udr: 1
+  - name: 'Location 2 (Fort Constantine).esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0x8CB27CC2
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
 
 ###### New Items ######
   - name: '3EFskewer.esp'
