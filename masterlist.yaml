@@ -4552,6 +4552,11 @@ plugins:
       - <<: *wildEdits
         subs: [ 'Delete **00004353** in **WattzLasers.esp**.' ]
         condition: 'checksum("WattzLasers.esp", 4CF9D794) or checksum("WattzLasers.esp", 1349108A)'
+    tag:
+      - Delev
+      - Names
+      - Relev
+      - Stats
     dirty:
       - <<: *quickClean
         crc: 0x4CF9D794
