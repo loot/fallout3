@@ -5148,6 +5148,10 @@ plugins:
         udr: 8
   - name: 'Location (1 \(Megaton-V101\)|2 \(Fort Constantine\))\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1741/' ]
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Vault 89 Location ESP' ]
+        condition: 'many("Location (1 \(Megaton-V101\)|2 \(Fort Constantine\))\.esp")'
   - name: 'Location 1 (Megaton-V101).esp'
     dirty:
       - <<: *quickClean
