@@ -4548,6 +4548,19 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/14329/'
         name: 'Another Energy Weapons Mod'
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Delete **00004353** in **WattzLasers.esp**.' ]
+        condition: 'checksum("WattzLasers.esp", 4CF9D794) or checksum("WattzLasers.esp", 1349108A)'
+    dirty:
+      - <<: *quickClean
+        crc: 0x4CF9D794
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 7
+      - <<: *quickClean
+        crc: 0x1FA4DB51
+        util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 7
 
 ###### Gameplay - Follower Managers ######
   - name: 'Phalanx-.*\.es(m|p)'
