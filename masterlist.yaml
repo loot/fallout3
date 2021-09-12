@@ -5271,6 +5271,9 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
 
+  - name: '\[DC RANGER ARSENAL v3( MASTER)?\]( - ITEM GENERATOR| - DLC GEAR)?\.es[mp]'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/16572/' ]
+
 ###### 3RD Party Patches ######
   - name: 'Blackened .*\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
