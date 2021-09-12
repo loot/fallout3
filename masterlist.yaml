@@ -4070,6 +4070,12 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 14
 
+  - name: 'Weapon Repair Kits.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/17572/' ]
+    clean:
+      - crc: 0x29821752
+        util: 'FO3Edit v4.0.3h (Hotfix 1)'
+
   - name: '(Weapon Repair Kits|WRK|WeaponRepairKits).*\.es[mp]'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16151/' ]
   - name: 'Weapon Repair Kits - Final.esm'
@@ -6489,8 +6495,6 @@ plugins:
     inc: [ 'EnhVisionHK.esp' ]
   - name: 'EnhVisionHK.esp'
     inc: [ 'EnhVision.esp' ]
-  - name: 'Weapon Repair Kits.esp'
-    tag: [ Relev ]
 
   - name: 'dD - Enhanced Blood Main.esp'
     url:
