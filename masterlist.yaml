@@ -4076,25 +4076,19 @@ plugins:
     clean:
       - crc: 0x7C25DB0B
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
+  - name: 'WRK Final - (Plugin|Point Lookout)\.esp'
+    tag: [ Invent.Add ]
   - name: 'WRK Final - Plugin.esp'
-    tag:
-      - Invent
-      - Relev
     clean:
       - crc: 0xBD9A0160
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
   - name: 'WRK Final - Point Lookout.esp'
     after: [ 'WRK Final - Plugin.esp' ]
-    tag: [ Invent ]
     dirty:
       - <<: *quickClean
         crc: 0x1C3C4059
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
-  - name: 'WRK - Plugin.esp'
-    tag:
-      - Invent
-      - Relev
 
   - name: 'yaDisguisesMod.*\.esp'
     url:
