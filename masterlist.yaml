@@ -4070,6 +4070,10 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 14
 
+  - name: 'yaDisguisesMod.*\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/8670/'
+        name: 'Yet Another DisguisesMod - YADM'
   - name: 'yaDisguisesMod-Merged.esp'
     inc:
       - 'yaDisguisesMod.esp'
