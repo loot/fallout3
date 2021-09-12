@@ -2244,25 +2244,24 @@ plugins:
         itm: 7
 
   - name: 'Xepha''s Dynamic Weather.*\.es(m|p)'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10607/' ]
+  - name: 'Xepha''s Dynamic Weather( - (Main( \+ DLC Merged)?|Anchorage|The Pitt|Broken Steel|Point Lookout))?\.es[mp]'
+    tag: [ C.Climate ]
   - name: 'Xepha''s Dynamic Weather.esm'
     group: *overridesGroup
-    tag:
-      - C.Climate
-      - Sound
+    tag: [ Sound ]
     dirty:
       - <<: *quickClean
         crc: 0x80ACEA99
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 13
-  - name: 'Xepha''s Dynamic Weather - (Main|Anchorage|The Pitt|Broken Steel|Point Lookout).esp'
+  - name: 'Xepha''s Dynamic Weather - (Main|Anchorage|The Pitt|Broken Steel|Point Lookout)\.esp'
     msg:
       - <<: *alreadyInX
         subs: [ 'Xepha''s Dynamic Weather - Main + DLC Merged.esp' ]
         condition: 'active("Xepha''s Dynamic Weather - Main + DLC Merged.esp") and active("Anchorage.esm") and active("ThePitt.esm") and active("BrokenSteel.esm") and active("PointLookout.esm")'
   - name: 'Xepha''s Dynamic Weather - Main.esp'
     group: *overridesGroup
-    tag: [ C.Climate ]
     msg:
       - <<: *useInstead
         subs: [ 'Xepha''s Dynamic Weather - Main + DLC Merged.esp' ]
@@ -2272,9 +2271,8 @@ plugins:
         crc: 0x9108F0AA
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 13
-  - name: 'Xepha''s Dynamic Weather - (Anchorage|The Pitt|Broken Steel|Point Lookout).esp'
+  - name: 'Xepha''s Dynamic Weather - (Anchorage|The Pitt|Broken Steel|Point Lookout)\.esp'
     req: [ 'Xepha''s Dynamic Weather - Main.esp' ]
-    tag: [ C.Climate ]
   - name: 'Xepha''s Dynamic Weather - Anchorage.esp'
     clean:
       - crc: 0x92BD8F02
@@ -2293,18 +2291,17 @@ plugins:
         util: 'FO3Edit v4.0.3'
   - name: 'Xepha''s Dynamic Weather - Main + DLC Merged.esp'
     group: *overridesGroup
-    tag: [ C.Climate ]
     dirty:
       - <<: *quickClean
         crc: 0x691323EB
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 13
-  - name: 'Xepha''s Dynamic Weather - (Anchorage /(NEE/)|Dynamic Sneak Bonus|Green Tint Remover|Night Eye Edition|Rain|Sandstorms|Weather Machine).*\.esp'
+  - name: 'Xepha''s Dynamic Weather - (Anchorage \(NEE\)|Dynamic Sneak Bonus|Green Tint Remover|Night Eye Edition|Rain|Sandstorms|Weather Machine).*\.esp'
     after: [ 'Xepha''s Dynamic Weather - Main + DLC Merged.esp' ]
     req:
       - name: 'Xepha''s Dynamic Weather - Main.esp'
         condition: 'not file("Xepha''s Dynamic Weather - Main + DLC Merged.esp")'
-  - name: 'Xepha''s Dynamic Weather - (Anchorage /(NEE/)|Night Eye Edition|Rain /(NEE/)).esp'
+  - name: 'Xepha''s Dynamic Weather - (Anchorage \(NEE\)|Night Eye Edition|Rain \(NEE\))\.esp'
     msg:
       - <<: *alreadyInX
         subs: [ 'Xepha''s Dynamic Weather - Night Eye Edition Merged (NEE+OA+Rain).esp' ]
@@ -2331,14 +2328,14 @@ plugins:
     clean:
       - crc: 0xC854F8D0
         util: 'FO3Edit v4.0.3'
-  - name: 'Xepha''s Dynamic Weather - Rain.esp'
+  - name: 'Xepha''s Dynamic Weather - Rain( \(NEE\))?\.esp'
     tag: [ Sound ]
+  - name: 'Xepha''s Dynamic Weather - Rain.esp'
     clean:
       - crc: 0x19BE6839
         util: 'FO3Edit v4.0.3'
   - name: 'Xepha''s Dynamic Weather - Rain (NEE).esp'
     after: [ 'Xepha''s Dynamic Weather - Rain.esp' ]
-    tag: [ Sound ]
     clean:
       - crc: 0xAB6BAB61
         util: 'FO3Edit v4.0.3'
@@ -2381,7 +2378,7 @@ plugins:
       - crc: 0xEA546B62
         util: 'FO3Edit v4.0.3'
   - name: 'WeatherGroupScriptTest.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/10607' ]
+    url: [ 'https://www.nexusmods.com/fallout3/mods/10607/' ]
     clean:
       - crc: 0xCB83B785
         util: 'FO3Edit v4.0.3'
