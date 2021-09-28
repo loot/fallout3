@@ -1331,12 +1331,10 @@ prelude:
           text: 'У вас встановлено %1% плагін, але %1% не знайдено! Дивіться сторінку завантаження: %2%.'
         - lang: zh_CN
           text: '您已经安装了%1%插件，但是未发现%1%！请查看%1%的下载页面:%2%。'
-    subs:
-      - 'FOSE'
-      - '[FOSE](https://fose.silverlock.org)'
-    condition: 'file("FOSE/Plugins/([^\.]+\.dll)") and not file("../fose_loader.exe")'
-
-
+      subs:
+        - 'FOSE'
+        - '[FOSE](https://fose.silverlock.org)'
+      condition: 'file("FOSE/Plugins/([^\.]+\.dll)") and not file("../fose_loader.exe")'
 
 common:
 # File Anchors
