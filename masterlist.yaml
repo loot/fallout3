@@ -41,14 +41,6 @@ prelude:
           text: 'Видаліть. Уже додано у %1%.'
         - lang: zh_CN
           text: '删除。已包含在%1%中。'
-    - &alreadyInFOOK2
-      <<: *alreadyInX
-      subs: [ 'FOOK 2 (Fallout Overhaul Kit)' ]
-      condition: 'file("FOOK2 - Main.esm")'
-    - &alreadyInFWE
-      <<: *alreadyInX
-      subs: [ 'FO3 Wanderers Edition' ]
-      condition: 'file("FO3 Wanderers Edition - Main File.esm")'
 
     - &alreadyInOrFixedByX
       type: error
@@ -83,13 +75,6 @@ prelude:
           text: 'Видаліть. Уже включено або іншим чином виправлено у %1%.'
         - lang: zh_CN
           text: '删除。在%1%中已包含或修复。'
-    - &alreadyInOrFixedByUFO3P
-      <<: *alreadyInOrFixedByX
-      subs: [ 'Unofficial Fallout 3 Patch' ]
-      condition: 'active("Unofficial Fallout 3 Patch.esm")'
-    - &alreadyInOrFixedByUFO3Pv1_7
-      <<: *alreadyInOrFixedByUFO3P
-      condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
 
     - &alsoUseX
       type: say
@@ -363,60 +348,6 @@ prelude:
           text: 'Мова: %1%'
         - lang: zh_CN
           text: '语言: %1%'
-    - &languageEnglish
-      <<: *languageX
-      subs: [ '**en**' ]
-    - &languageBulgarian
-      <<: *languageX
-      subs: [ '**bg**' ]
-    - &languageChineseSimplified
-      <<: *languageX
-      subs: [ '**zh_CN**' ]
-    - &languageCzech
-      <<: *languageX
-      subs: [ '**cs**' ]
-    - &languageDanish
-      <<: *languageX
-      subs: [ '**da**' ]
-    - &languageFinnish
-      <<: *languageX
-      subs: [ '**fi**' ]
-    - &languageFrench
-      <<: *languageX
-      subs: [ '**fr**' ]
-    - &languageGerman
-      <<: *languageX
-      subs: [ '**de**' ]
-    - &languageItalian
-      <<: *languageX
-      subs: [ '**it**' ]
-    - &languageJapanese
-      <<: *languageX
-      subs: [ '**ja**' ]
-    - &languageKorean
-      <<: *languageX
-      subs: [ '**ko**' ]
-    - &languagePolish
-      <<: *languageX
-      subs: [ '**pl**' ]
-    - &languagePortuguese
-      <<: *languageX
-      subs: [ '**pt_PT**' ]
-    - &languagePortugueseBrazil
-      <<: *languageX
-      subs: [ '**pt_BR**' ]
-    - &languageRussian
-      <<: *languageX
-      subs: [ '**ru**' ]
-    - &languageSpanish
-      <<: *languageX
-      subs: [ '**es**' ]
-    - &languageSwedish
-      <<: *languageX
-      subs: [ '**sv**' ]
-    - &languageUkrainian
-      <<: *languageX
-      subs: [ '**uk_UA**' ]
 
     - &missingRequirementXforPlugin
       type: warn
@@ -931,30 +862,6 @@ prelude:
           text: 'Використовуйте версію %1%.'
         - lang: zh_CN
           text: '使用%1%版本。'
-    - &useVersionAnchorage
-      <<: *useVersion
-      subs: [ 'Anchorage' ]
-      condition: 'active("Anchorage.esm")'
-    - &useVersionThePitt
-      <<: *useVersion
-      subs: [ 'The Pitt' ]
-      condition: 'active("ThePitt.esm")'
-    - &useVersionBrokenSteel
-      <<: *useVersion
-      subs: [ 'Broken Steel' ]
-      condition: 'active("BrokenSteel.esm")'
-    - &useVersionPointLookout
-      <<: *useVersion
-      subs: [ 'Point Lookout' ]
-      condition: 'active("PointLookout.esm")'
-    - &useVersionZeta
-      <<: *useVersion
-      subs: [ 'Zeta' ]
-      condition: 'active("Zeta.esm")'
-    - &useVersionFWE
-      <<: *useVersion
-      subs: [ 'FWE - FO3 Wanderers Edition' ]
-      condition: 'active("FO3 Wanderers Edition - Main File.esm")'
 
     - &useVersionNon
       type: error
@@ -989,26 +896,6 @@ prelude:
           text: 'Використовуйте не-%1% версію.'
         - lang: zh_CN
           text: '使用%1%以外的版本。'
-    - &useVersionNonAnchorage
-      <<: *useVersionNon
-      subs: [ 'Anchorage' ]
-      condition: 'not active("Anchorage.esm")'
-    - &useVersionNonThePitt
-      <<: *useVersionNon
-      subs: [ 'The Pitt' ]
-      condition: 'not active("ThePitt.esm")'
-    - &useVersionNonBrokenSteel
-      <<: *useVersionNon
-      subs: [ 'Broken Steel' ]
-      condition: 'not active("BrokenSteel.esm")'
-    - &useVersionNonPointLookout
-      <<: *useVersionNon
-      subs: [ 'Point Lookout' ]
-      condition: 'not active("PointLookout.esm")'
-    - &useVersionNonZeta
-      <<: *useVersionNon
-      subs: [ 'Zeta' ]
-      condition: 'not active("Zeta.esm")'
 
     - &versionOldX
       type: say
@@ -1341,6 +1228,130 @@ common:
   - &FOSE
     name: '../fose_loader.exe'
     display: '[FOSE](https://fose.silverlock.org/)'
+
+# Sub-Anchors
+  # &alreadyInX
+  - &alreadyInFOOK2
+    <<: *alreadyInX
+    subs: [ 'FOOK 2 (Fallout Overhaul Kit)' ]
+    condition: 'file("FOOK2 - Main.esm")'
+  - &alreadyInFWE
+    <<: *alreadyInX
+    subs: [ 'FO3 Wanderers Edition' ]
+    condition: 'file("FO3 Wanderers Edition - Main File.esm")'
+
+  # &alreadyInOrFixedByX
+  - &alreadyInOrFixedByUFO3P
+    <<: *alreadyInOrFixedByX
+    subs: [ 'Unofficial Fallout 3 Patch' ]
+    condition: 'active("Unofficial Fallout 3 Patch.esm")'
+  - &alreadyInOrFixedByUFO3Pv1_7
+    <<: *alreadyInOrFixedByUFO3P
+    condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
+
+  # &languageX
+  - &languageEnglish
+    <<: *languageX
+    subs: [ '**en**' ]
+  - &languageBulgarian
+    <<: *languageX
+    subs: [ '**bg**' ]
+  - &languageChineseSimplified
+    <<: *languageX
+    subs: [ '**zh_CN**' ]
+  - &languageCzech
+    <<: *languageX
+    subs: [ '**cs**' ]
+  - &languageDanish
+    <<: *languageX
+    subs: [ '**da**' ]
+  - &languageFinnish
+    <<: *languageX
+    subs: [ '**fi**' ]
+  - &languageFrench
+    <<: *languageX
+    subs: [ '**fr**' ]
+  - &languageGerman
+    <<: *languageX
+    subs: [ '**de**' ]
+  - &languageItalian
+    <<: *languageX
+    subs: [ '**it**' ]
+  - &languageJapanese
+    <<: *languageX
+    subs: [ '**ja**' ]
+  - &languageKorean
+    <<: *languageX
+    subs: [ '**ko**' ]
+  - &languagePolish
+    <<: *languageX
+    subs: [ '**pl**' ]
+  - &languagePortuguese
+    <<: *languageX
+    subs: [ '**pt_PT**' ]
+  - &languagePortugueseBrazil
+    <<: *languageX
+    subs: [ '**pt_BR**' ]
+  - &languageRussian
+    <<: *languageX
+    subs: [ '**ru**' ]
+  - &languageSpanish
+    <<: *languageX
+    subs: [ '**es**' ]
+  - &languageSwedish
+    <<: *languageX
+    subs: [ '**sv**' ]
+  - &languageUkrainian
+    <<: *languageX
+    subs: [ '**uk_UA**' ]
+
+  # &useVersion
+  - &useVersionAnchorage
+    <<: *useVersion
+    subs: [ 'Anchorage' ]
+    condition: 'active("Anchorage.esm")'
+  - &useVersionThePitt
+    <<: *useVersion
+    subs: [ 'The Pitt' ]
+    condition: 'active("ThePitt.esm")'
+  - &useVersionBrokenSteel
+    <<: *useVersion
+    subs: [ 'Broken Steel' ]
+    condition: 'active("BrokenSteel.esm")'
+  - &useVersionPointLookout
+    <<: *useVersion
+    subs: [ 'Point Lookout' ]
+    condition: 'active("PointLookout.esm")'
+  - &useVersionZeta
+    <<: *useVersion
+    subs: [ 'Zeta' ]
+    condition: 'active("Zeta.esm")'
+  - &useVersionFWE
+    <<: *useVersion
+    subs: [ 'FWE - FO3 Wanderers Edition' ]
+    condition: 'active("FO3 Wanderers Edition - Main File.esm")'
+
+  # &useVersionNon
+  - &useVersionNonAnchorage
+    <<: *useVersionNon
+    subs: [ 'Anchorage' ]
+    condition: 'not active("Anchorage.esm")'
+  - &useVersionNonThePitt
+    <<: *useVersionNon
+    subs: [ 'The Pitt' ]
+    condition: 'not active("ThePitt.esm")'
+  - &useVersionNonBrokenSteel
+    <<: *useVersionNon
+    subs: [ 'Broken Steel' ]
+    condition: 'not active("BrokenSteel.esm")'
+  - &useVersionNonPointLookout
+    <<: *useVersionNon
+    subs: [ 'Point Lookout' ]
+    condition: 'not active("PointLookout.esm")'
+  - &useVersionNonZeta
+    <<: *useVersionNon
+    subs: [ 'Zeta' ]
+    condition: 'not active("Zeta.esm")'
 
 bash_tags:
   - 'Actors.ACBS'
