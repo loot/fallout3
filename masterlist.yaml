@@ -5081,7 +5081,7 @@ plugins:
         subs: [ 'Regulators ESP' ]
         condition: 'many("Regulators(_Overhaul(_lvl(2|7))?)?\.esp")'
 
-  - name: 'There's No Such Thing As Bad Publicity.esp'
+  - name: 'There''s No Such Thing As Bad Publicity.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/24940/' ]
     dirty:
       - <<: *quickClean
