@@ -4589,6 +4589,22 @@ plugins:
       - crc: 0x79578C96
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'Fallout3-NVFoodMechanics.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/24477/' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x69E6AF4F
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 3
+
+  - name: 'Fallout3-NVFoodMechanics-DLC-1.0.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/24477/' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x411AC911
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 4
+
   - name: 'LightweightFoodSanitizer.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/1040/' ]
     tag: [ Stats ]
