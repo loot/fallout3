@@ -9869,3 +9869,11 @@ plugins:
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 6
         udr: 2
+
+  - name: 'ALLDLCITEMSINTESTQA.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/24872/' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xD7652C4E
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
