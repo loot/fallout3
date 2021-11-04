@@ -4604,7 +4604,6 @@ plugins:
         crc: 0x69E6AF4F
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 3
-
   - name: 'Fallout3-NVFoodMechanics-DLC-1.0.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/24477/' ]
     dirty:
