@@ -5147,6 +5147,14 @@ plugins:
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
 ###### Locations - New Structures & Landmarks ######
+  - name: 'Fairfax City Interiors.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/23611/' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x1BE2F237
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 6
+
   - name: 'RTS NW.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7070/' ]
     dirty:
