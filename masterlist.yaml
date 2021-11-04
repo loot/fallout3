@@ -2149,14 +2149,6 @@ plugins:
   - name: 'Fellout-SOTD.esp'
     msg: [ *obsolete ]
 
-  - name: 'FO3 RWL GOTY.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/20346/' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0x20480DE7
-        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 6
-
   - name: 'Flashlight-(LOS|Performance)(-nonFOSE)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15003/' ]
     msg:
@@ -2181,6 +2173,14 @@ plugins:
     clean:
       - crc: 0xDEEFA0B4
         util: 'FO3Edit v4.0.2e'
+
+  - name: 'FO3 RWL GOTY.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/20346/' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x20480DE7
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 6
 
   - name: '(Place?able|Carryable) Lights( Basic Edition)?( v2\.[0-2])?\.esp'
     url:
