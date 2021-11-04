@@ -5118,7 +5118,6 @@ plugins:
 ###### Gameplay - User Interface ######
   - name: 'FO3BetterMessages.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/24833/' ]
-
     clean:
       - crc: 0x07692336
         util: 'FO3Edit v4.0.3'
