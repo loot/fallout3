@@ -5024,6 +5024,15 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 18
 
+  - name: 'FHVF3PL.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/24770/' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x4A1EEE4D
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 185
+        udr: 29
+
   - name: 'MS11fix.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/3815/'
@@ -5089,15 +5098,6 @@ plugins:
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 37
         udr: 1
-
-  - name: 'FHVF3PL.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/24770/' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0x4A1EEE4D
-        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 185
-        udr: 29
 
 ###### Gameplay - Skills & Perks ######
   - name: 'Bobbleheads Begone.esp'
