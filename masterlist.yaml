@@ -5116,6 +5116,20 @@ plugins:
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
 ###### Gameplay - User Interface ######
+  - name: 'FO3BetterMessages.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/24833/' ]
+
+    clean:
+      - crc: 0x07692336
+        util: 'FO3Edit v4.0.3'
+  - name: 'FO3BetterMessagesAllDLC.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/24833/' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x01111E51
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 7
+
   - name: 'Named Wastelanders.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2482/' ]
     tag:
