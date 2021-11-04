@@ -9816,3 +9816,12 @@ plugins:
         util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 4
         udr: 1
+
+  - name: 'ReadBookExcerpts.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/19504/' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x2B21F1C9
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 6
+        udr: 2
