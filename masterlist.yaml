@@ -5158,6 +5158,15 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 14
 
+###### Locations - Overhauls ######
+  - name: 'Fairfax City Interiors.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/23611/' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x1BE2F237
+        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 6
+
 ###### Locations - Player Homes ######
   - name: 'ScavengerWasteland.esp'
     url:
