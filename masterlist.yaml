@@ -5117,8 +5117,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/24940/' ]
     dirty:
       - <<: *quickClean
-        crc: 0x88F835EE
-        util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
+        crc: 0xE835945D
+        util: '[FO3Edit v4.0.4](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 37
         udr: 1
 
