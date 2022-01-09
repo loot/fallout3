@@ -439,22 +439,18 @@ bash_tags:
 
 globals:
 # Latest LOOT Thread
-  - &lootThread
-    <<: *latestLOOTThread
-    subs: [ 'https://loot.github.io/latest-thread/' ]
+  - *latestLOOTThread
 
 # FOSE
   # Missing
-  - &foseMissing
-    <<: *scriptExtenderMissing
+  - <<: *scriptExtenderMissing
     subs:
       - 'FOSE'
       - '[FOSE](https://fose.silverlock.org)'
     condition: 'file("FOSE/Plugins/([^\.]+\.dll)") and not file("../fose_loader.exe")'
 
   # NVAC
-  - &moveNVACtoFOSE
-    <<: *moveNVAC
+  - <<: *moveNVAC
     subs:
       - 'FOSE'
       - 'Fallout 3'
