@@ -439,8 +439,7 @@ bash_tags:
 
 globals:
 # Latest LOOT Thread
-  - <<: *latestLOOTThread
-    subs: [ 'https://loot.github.io/latest-thread/' ]
+  - *latestLOOTThread
 
 # FOSE
   # Missing
