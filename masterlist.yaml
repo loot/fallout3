@@ -4143,6 +4143,10 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
         name: 'The Mergers'
     tag: [ Delev ]
+    msg:
+      - <<: *patchUpdateAvailable
+        subs: [ '[The Mergers](https://www.nexusmods.com/fallout3/mods/16787/)' ]
+        condition: '(not checksum("Dree Perks.esp", 0EB86696) and not checksum("Dree Perks.esp", B51003F8)) and active("Anchorage.esm") and active("ThePitt.esm") and active("BrokenSteel.esm") and active("PointLookout.esm") and active("Zeta.esm")'
     clean:
       - crc: 0x9A20FA79
         util: 'FO3Edit v4.0.2e'
