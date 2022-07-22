@@ -947,6 +947,106 @@ plugins:
       - crc: 0x77F9F207
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'dD - Enhanced Blood Main.esp'
+    url:
+      - 'https://www.nexusmods.com/fallout3/mods/101/'
+      - 'https://www.nexusmods.com/fallout3/mods/16787/'
+    clean:
+      - crc: 0x5F849C37
+        util: 'FO3Edit v4.0.2e'
+  - name: 'dD-Full Screen Blood Instant Remove.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
+    clean:
+      - crc: 0x7C79FA46
+        util: 'FO3Edit v4.0.2e'
+  - name: 'dD-Less Screen Blood Time.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
+    clean:
+      - crc: 0xDF313A18
+        util: 'FO3Edit v4.0.2e'
+  - name: 'dD-More Gore.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
+    clean:
+      - crc: 0xAD3C1646
+        util: 'FO3Edit v4.0.2e'
+  - name: 'dD-More Gore-The Pitt.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
+    clean:
+      - crc: 0x03E15DD7
+        util: 'FO3Edit v4.0.2e'
+  - name: 'dD-More Gore-BrokenSteel.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
+    clean:
+      - crc: 0x5380CF71
+        util: 'FO3Edit v4.0.2e'
+  - name: 'dD-More Gore-PointLookout.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
+    clean:
+      - crc: 0xC44BB0A5
+        util: 'FO3Edit v4.0.2e'
+  - name: 'dD-More Gore-Zeta.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
+    clean:
+      - crc: 0xAC8EB759
+        util: 'FO3Edit v4.0.2e'
+  - name: 'dD-No Screen Blood.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
+    clean:
+      - crc: 0x72B014CC
+        util: 'FO3Edit v4.0.2e'
+  - name: 'dD-Reduced Dismember Force.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
+    clean:
+      - crc: 0x21085C42
+        util: 'FO3Edit v4.0.2e'
+  - name: 'dD-Reduced Ragdoll Force.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
+    clean:
+      - crc: 0x39E4F4C0
+        util: 'FO3Edit v4.0.2e'
+  - name: 'dD-Screen Blood Vanilla.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x061CA03F
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 8
+  - name: 'dD-Smaller Spatters Default.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
+    clean:
+      - crc: 0xE0C84609
+        util: 'FO3Edit v4.0.2e'
+  - name: 'dD-Smaller Spatters Realistic.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
+    clean:
+      - crc: 0xD8053334
+        util: 'FO3Edit v4.0.2e'
+  - name: 'dD-Smaller Wounds.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
+    clean:
+      - crc: 0xB42375AC
+        util: 'FO3Edit v4.0.2e'
+  - name: 'FO3 Wanderers Edition - More Gore.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
+    clean:
+      - crc: 0xC3A21EE6
+        util: 'FO3Edit v4.0.2e'
+  - name: 'FO3 Wanderers Edition - More Gore The Pitt.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
+    clean:
+      - crc: 0xAA8C4B1A
+        util: 'FO3Edit v4.0.2e'
+  - name: 'FO3 Wanderers Edition - More Gore PointLookout.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
+    clean:
+      - crc: 0x26007582
+        util: 'FO3Edit v4.0.2e'
+  - name: 'FO3 Wanderers Edition - More Gore Zeta.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
+    clean:
+      - crc: 0xF83F4848
+        util: 'FO3Edit v4.0.2e'
+
   - name: 'Empty Nuka-Cola Quantum Bottles.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16809/' ]
     tag:
@@ -5770,105 +5870,6 @@ plugins:
   - name: 'EnhVisionHK.esp'
     inc: [ 'EnhVision.esp' ]
 
-  - name: 'dD - Enhanced Blood Main.esp'
-    url:
-      - 'https://www.nexusmods.com/fallout3/mods/101/'
-      - 'https://www.nexusmods.com/fallout3/mods/16787/'
-    clean:
-      - crc: 0x5F849C37
-        util: 'FO3Edit v4.0.2e'
-  - name: 'dD-Full Screen Blood Instant Remove.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
-    clean:
-      - crc: 0x7C79FA46
-        util: 'FO3Edit v4.0.2e'
-  - name: 'dD-Less Screen Blood Time.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
-    clean:
-      - crc: 0xDF313A18
-        util: 'FO3Edit v4.0.2e'
-  - name: 'dD-More Gore.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
-    clean:
-      - crc: 0xAD3C1646
-        util: 'FO3Edit v4.0.2e'
-  - name: 'dD-More Gore-The Pitt.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
-    clean:
-      - crc: 0x03E15DD7
-        util: 'FO3Edit v4.0.2e'
-  - name: 'dD-More Gore-BrokenSteel.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
-    clean:
-      - crc: 0x5380CF71
-        util: 'FO3Edit v4.0.2e'
-  - name: 'dD-More Gore-PointLookout.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
-    clean:
-      - crc: 0xC44BB0A5
-        util: 'FO3Edit v4.0.2e'
-  - name: 'dD-More Gore-Zeta.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
-    clean:
-      - crc: 0xAC8EB759
-        util: 'FO3Edit v4.0.2e'
-  - name: 'dD-No Screen Blood.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
-    clean:
-      - crc: 0x72B014CC
-        util: 'FO3Edit v4.0.2e'
-  - name: 'dD-Reduced Dismember Force.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
-    clean:
-      - crc: 0x21085C42
-        util: 'FO3Edit v4.0.2e'
-  - name: 'dD-Reduced Ragdoll Force.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
-    clean:
-      - crc: 0x39E4F4C0
-        util: 'FO3Edit v4.0.2e'
-  - name: 'dD-Screen Blood Vanilla.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0x061CA03F
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 8
-  - name: 'dD-Smaller Spatters Default.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
-    clean:
-      - crc: 0xE0C84609
-        util: 'FO3Edit v4.0.2e'
-  - name: 'dD-Smaller Spatters Realistic.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
-    clean:
-      - crc: 0xD8053334
-        util: 'FO3Edit v4.0.2e'
-  - name: 'dD-Smaller Wounds.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
-    clean:
-      - crc: 0xB42375AC
-        util: 'FO3Edit v4.0.2e'
-  - name: 'FO3 Wanderers Edition - More Gore.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
-    clean:
-      - crc: 0xC3A21EE6
-        util: 'FO3Edit v4.0.2e'
-  - name: 'FO3 Wanderers Edition - More Gore The Pitt.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
-    clean:
-      - crc: 0xAA8C4B1A
-        util: 'FO3Edit v4.0.2e'
-  - name: 'FO3 Wanderers Edition - More Gore PointLookout.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
-    clean:
-      - crc: 0x26007582
-        util: 'FO3Edit v4.0.2e'
-  - name: 'FO3 Wanderers Edition - More Gore Zeta.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/101/' ]
-    clean:
-      - crc: 0xF83F4848
-        util: 'FO3Edit v4.0.2e'
   - name: 'Realistic Death Physics.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12306/' ]
     msg: [ *alreadyInFWE ]
