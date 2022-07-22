@@ -4180,30 +4180,6 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'Intro Street Bus ESP' ]
         condition: 'many("DCStreet( - BS)?\.esp")'
-  - name: 'DCStreet.esp'
-    dirty:
-      - <<: *reqManualFix
-        crc: 0x60D55E6B
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 12
-        udr: 5
-        nav: 8
-      - <<: *reqManualFix
-        crc: 0xD3EC50DE
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        nav: 8
-  - name: 'DCStreet - BS.esp'
-    dirty:
-      - <<: *reqManualFix
-        crc: 0xA35DAE19
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 12
-        udr: 5
-        nav: 8
-      - <<: *reqManualFix
-        crc: 0xECFCA554
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        nav: 8
 
 ###### Locations - New Structures & Landmarks ######
   - name: 'Fairfax City Interiors.esp'
