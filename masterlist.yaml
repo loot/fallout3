@@ -4172,6 +4172,9 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/16924/'
         name: 'Intro Street Bus and Dupont Alignment'
     msg:
+      - <<: *alreadyInOrFixedByX
+        subs: [ 'DCStreet.esm' ]
+        condition: 'active("DCStreet.esm")'
       - <<: *obsolete
         subs: [ '[Intro Street Bus and Trailer Ruins Unofficial Fixed](https://www.nexusmods.com/fallout3/mods/24751/)' ]
       - <<: *useOnlyOneX
