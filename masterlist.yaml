@@ -4156,10 +4156,21 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/6190/'
         name: 'More Perks'
+    after: [ 'Dree Perks.esp' ]
     msg:
       - <<: *alreadyInX
         subs: [ '**Dree Perks.esp** The Mergers - More Perks' ]
         condition: 'checksum("Dree Perks.esp", 0EB86696) or checksum("Dree Perks.esp", B51003F8)'
+  - name: 'Dree Perks (Pitts|Broken Steel|Point Lookout|Mothership Zeta|Requested by Fans )\.esp'
+    after: [ 'Dree Perks Anchorage.esp' ]
+  - name: 'Dree Perks (Broken Steel|Point Lookout|Mothership Zeta|Requested by Fans )\.esp'
+    after: [ 'Dree Perks Pitts.esp' ]
+  - name: 'Dree Perks (Point Lookout|Mothership Zeta|Requested by Fans )\.esp'
+    after: [ 'Dree Perks Broken Steel.esp' ]
+  - name: 'Dree Perks (Mothership Zeta|Requested by Fans )\.esp'
+    after: [ 'Dree Perks Point Lookout.esp' ]
+  - name: 'Dree Perks Requested by Fans .esp'
+    after: [ 'Dree Perks Mothership Zeta.esp' ]
 
   - name: 'Skill Modification Assignment.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11836/' ]
