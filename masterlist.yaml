@@ -4171,6 +4171,11 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/24751/'
         name: 'Intro Street Bus and Trailer Ruins Unofficial Fixed'
+    clean:
+      - crc: 0xC56C9016
+        util: 'FO3Edit v4.0.4b'
+      - crc: 0xE55F5B69
+        util: 'FO3Edit v4.0.4b'
 
   - name: 'DCStreet( - BS)?\.esp'
     url:
