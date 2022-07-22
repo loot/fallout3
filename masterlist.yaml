@@ -2805,7 +2805,7 @@ plugins:
         util: 'FO3Edit v4.0.3'
 
   - name: 'Goodies.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/19122/' ]
+    url: [ 'https://www.nexusmods.com/fallout3/mods/25239/' ]
     tag:
       - Delev
       - Destructible
