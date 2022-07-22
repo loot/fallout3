@@ -4156,6 +4156,10 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/6190/'
         name: 'More Perks'
+    msg:
+      - <<: *alreadyInX
+        subs: [ '**Dree Perks.esp** The Mergers - More Perks' ]
+        condition: 'checksum("Dree Perks.esp", 0EB86696) or checksum("Dree Perks.esp", B51003F8)'
 
   - name: 'Skill Modification Assignment.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11836/' ]
