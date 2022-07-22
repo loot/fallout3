@@ -954,8 +954,10 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
         name: 'The Mergers'
     clean:
-      - crc: 0x5F849C37
-        util: 'FO3Edit v4.0.2e'
+      - crc: 0x2E7841D0
+        util: 'FO3Edit v4.0.4b'
+      - crc: 0x8AEDF854
+        util: 'FO3Edit v4.0.4b'
   - name: '(dD-(More Gore|Reduced|Smaller|(Full |Less |No )?Screen)|FO3 Wanderers Edition - More Gore).*\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/101/'
@@ -964,79 +966,79 @@ plugins:
   - name: 'dD-More Gore.esp'
     clean:
       - crc: 0xAD3C1646
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.4b'
   - name: 'dD-More Gore-BrokenSteel.esp'
     clean:
       - crc: 0x5380CF71
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.4b'
   - name: 'dD-More Gore-PointLookout.esp'
     clean:
       - crc: 0xC44BB0A5
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.4b'
   - name: 'dD-More Gore-The Pitt.esp'
     clean:
       - crc: 0x03E15DD7
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.4b'
   - name: 'dD-More Gore-Zeta.esp'
     clean:
       - crc: 0xAC8EB759
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.4b'
   # EBT Optional Plugins - More Gore for FWE #
   - name: 'FO3 Wanderers Edition - More Gore.esp'
     clean:
       - crc: 0xC3A21EE6
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.4b'
   - name: 'FO3 Wanderers Edition - More Gore PointLookout.esp'
     clean:
       - crc: 0x26007582
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.4b'
   - name: 'FO3 Wanderers Edition - More Gore The Pitt.esp'
     clean:
       - crc: 0xAA8C4B1A
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.4b'
   - name: 'FO3 Wanderers Edition - More Gore Zeta.esp'
     clean:
       - crc: 0xF83F4848
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.4b'
   # EBT Optional Plugins - Realism #
   - name: 'dD-Reduced Dismember Force.esp'
     clean:
       - crc: 0x21085C42
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.4b'
   - name: 'dD-Reduced Ragdoll Force.esp'
     clean:
       - crc: 0x39E4F4C0
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.4b'
   - name: 'dD-Smaller Spatters Default.esp'
     clean:
       - crc: 0xE0C84609
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.4b'
   - name: 'dD-Smaller Spatters Realistic.esp'
     clean:
       - crc: 0xD8053334
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.4b'
   - name: 'dD-Smaller Wounds.esp'
     clean:
       - crc: 0xB42375AC
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.4b'
   # EBT Optional Plugins - Screen Blood #
   - name: 'dD-Full Screen Blood Instant Remove.esp'
     clean:
       - crc: 0x7C79FA46
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.4b'
   - name: 'dD-Less Screen Blood Time.esp'
     clean:
       - crc: 0xDF313A18
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.4b'
   - name: 'dD-No Screen Blood.esp'
     clean:
       - crc: 0x72B014CC
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.4b'
   - name: 'dD-Screen Blood Vanilla.esp'
     dirty:
       - <<: *quickClean
         crc: 0x061CA03F
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        util: '[FO3Edit v4.0.4b](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 8
 
   - name: 'Empty Nuka-Cola Quantum Bottles.esp'
