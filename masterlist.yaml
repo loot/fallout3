@@ -588,14 +588,8 @@ plugins:
         condition: 'version("Unofficial Fallout 3 Patch.esm", "3.0", >=)'
     msg:
       - <<: *alsoUseX
-        subs: [ '[FO3 Mod Limit Fix](https://www.nexusmods.com/fallout3/mods/24056/)' ]
-        condition: 'not file("FOSE/Plugins/mod_limit_fix.dll")'
-      - <<: *alsoUseX
         subs: [ '[lStewieAl''s Tweaks](https://www.nexusmods.com/fallout3/mods/23561/)' ]
         condition: 'not file("FOSE/Plugins/fose_stewie_tweaks.dll") and (version("../fose_1_7.dll", "0.1.3.2", >=) or version("../fose_1_7ng).dll", "0.1.3.2", >=))'
-      - <<: *alsoUseX
-        subs: [ '[Vanilla UI Plus (Fallout 3)](https://www.moddb.com/mods/vanilla-ui-plus/downloads/vanilla-ui-plus-fo3/)' ]
-        condition: 'not file("Textures/Interface/VUI+")'
       - <<: *obsolete
         subs: [ '[Updated Unofficial Fallout 3 Patch](https://www.nexusmods.com/fallout3/mods/19122)' ]
         condition: 'version("Unofficial Fallout 3 Patch.esm", "3.1.8", <) and active("Anchorage.esm") and active("ThePitt.esm") and active("BrokenSteel.esm") and active("PointLookout.esm") and active("Zeta.esm")'
@@ -655,8 +649,8 @@ plugins:
       - Stats
       - Text
     clean:
-      - crc: 0xD26AF52A
-        util: 'FO3Edit v4.0.3'
+      - crc: 0x18033A26
+        util: 'FO3Edit v4.0.4b'
   - name: 'Goodies.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19122/' ]
     tag:
