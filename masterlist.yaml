@@ -4136,6 +4136,42 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         udr: 64
 
+  - name: 'Dree Perks.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/6190/'
+        name: 'More Perks'
+      - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
+        name: 'The Mergers'
+    tag: [ Delev ]
+    msg:
+      - <<: *patchUpdateAvailable
+        subs: [ '[The Mergers](https://www.nexusmods.com/fallout3/mods/16787/)' ]
+        condition: '(not checksum("Dree Perks.esp", 0EB86696) and not checksum("Dree Perks.esp", B51003F8)) and active("Anchorage.esm") and active("ThePitt.esm") and active("BrokenSteel.esm") and active("PointLookout.esm") and active("Zeta.esm")'
+    clean:
+      - crc: 0x9A20FA79
+        util: 'FO3Edit v4.0.4b'
+      - crc: 0x0EB86696
+        util: 'FO3Edit v4.0.4b'
+  - name: 'Dree Perks (Anchorage|Pitts|Broken Steel|Point Lookout|Mothership Zeta|Requested by Fans )\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/6190/'
+        name: 'More Perks'
+    after: [ 'Dree Perks.esp' ]
+    msg:
+      - <<: *alreadyInX
+        subs: [ '**Dree Perks.esp** The Mergers - More Perks' ]
+        condition: 'checksum("Dree Perks.esp", 0EB86696) or checksum("Dree Perks.esp", B51003F8)'
+  - name: 'Dree Perks (Pitts|Broken Steel|Point Lookout|Mothership Zeta|Requested by Fans )\.esp'
+    after: [ 'Dree Perks Anchorage.esp' ]
+  - name: 'Dree Perks (Broken Steel|Point Lookout|Mothership Zeta|Requested by Fans )\.esp'
+    after: [ 'Dree Perks Pitts.esp' ]
+  - name: 'Dree Perks (Point Lookout|Mothership Zeta|Requested by Fans )\.esp'
+    after: [ 'Dree Perks Broken Steel.esp' ]
+  - name: 'Dree Perks (Mothership Zeta|Requested by Fans )\.esp'
+    after: [ 'Dree Perks Point Lookout.esp' ]
+  - name: 'Dree Perks Requested by Fans .esp'
+    after: [ 'Dree Perks Mothership Zeta.esp' ]
+
   - name: 'Skill Modification Assignment.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11836/' ]
     tag: [ Scripts ]
@@ -6479,55 +6515,6 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/10183/' ]
     clean:
       - crc: 0xF5552A78
-        util: 'FO3Edit v4.0.2e'
-  - name: 'Dree Perks.esp'
-    # The Paradox Ignition version is known to have the CRC 0x25D3F8CA
-    url:
-      - 'https://www.nexusmods.com/fallout3/mods/6190/'
-      - 'https://www.nexusmods.com/fallout3/mods/16787/'
-    tag:
-      - name: Delev
-        condition: checksum("Dree Perks.esp", 25D3F8CA)
-      - name: Relev
-        condition: checksum("Dree Perks.esp", 25D3F8CA)
-    clean:
-      - crc: 0x9A20FA79
-        util: 'FO3Edit v4.0.2e'
-  - name: 'Dree Perks Anchorage.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6190/' ]
-    clean:
-      - crc: 0x9E9E59C5
-        util: 'FO3Edit v4.0.2e'
-  - name: 'Dree Perks Broken Steel.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6190/' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0x62C26F5A
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 1
-  - name: 'Dree Perks Mothership Zeta.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6190/' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0xBB50A35B
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 2
-  - name: 'Dree Perks Pitts.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6190/' ]
-    clean:
-      - crc: 0x86A2A453
-        util: 'FO3Edit v4.0.2e'
-  - name: 'Dree Perks Point Lookout.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6190/' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0x1A9BC8B5
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 5
-  - name: 'Dree Perks Requested by Fans .esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6190/' ]
-    clean:
-      - crc: 0x755C2178
         util: 'FO3Edit v4.0.2e'
   - name: 'DriveableMotorCycle.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6005/' ]
