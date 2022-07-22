@@ -4149,41 +4149,13 @@ plugins:
         condition: '(not checksum("Dree Perks.esp", 0EB86696) and not checksum("Dree Perks.esp", B51003F8)) and active("Anchorage.esm") and active("ThePitt.esm") and active("BrokenSteel.esm") and active("PointLookout.esm") and active("Zeta.esm")'
     clean:
       - crc: 0x9A20FA79
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.4b'
+      - crc: 0x0EB86696
+        util: 'FO3Edit v4.0.4b'
   - name: 'Dree Perks (Anchorage|Pitts|Broken Steel|Point Lookout|Mothership Zeta|Requested by Fans )\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/6190/'
         name: 'More Perks'
-  - name: 'Dree Perks Anchorage.esp'
-    clean:
-      - crc: 0x9E9E59C5
-        util: 'FO3Edit v4.0.2e'
-  - name: 'Dree Perks Broken Steel.esp'
-    dirty:
-      - <<: *quickClean
-        crc: 0x62C26F5A
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 1
-  - name: 'Dree Perks Mothership Zeta.esp'
-    dirty:
-      - <<: *quickClean
-        crc: 0xBB50A35B
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 2
-  - name: 'Dree Perks Pitts.esp'
-    clean:
-      - crc: 0x86A2A453
-        util: 'FO3Edit v4.0.2e'
-  - name: 'Dree Perks Point Lookout.esp'
-    dirty:
-      - <<: *quickClean
-        crc: 0x1A9BC8B5
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 5
-  - name: 'Dree Perks Requested by Fans .esp'
-    clean:
-      - crc: 0x755C2178
-        util: 'FO3Edit v4.0.2e'
 
   - name: 'Skill Modification Assignment.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/11836/' ]
