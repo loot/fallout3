@@ -1077,7 +1077,7 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/2672/'
         name: 'Fellout'
       - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
-        name: 'Paradox Ignition presents The Mergers'
+        name: 'The Mergers'
   - name: 'Fellout-Full.esp'
     after: [ 'FOOK2 - Main.esp' ]
     tag:
@@ -1089,7 +1089,7 @@ plugins:
       - <<: *alreadyInFOOK2
         condition: 'file("FOOK2 - Main.esm") and version("Fellout-Full.esp", "1.234.567.89", <=)'
       - <<: *patchUpdateAvailable
-        subs: [ '[Paradox Ignition presents The Mergers](https://www.nexusmods.com/fallout3/mods/16787/) - **Fellout Merged**' ]
+        subs: [ '[The Mergers](https://www.nexusmods.com/fallout3/mods/16787/)' ]
         condition: 'not checksum("Fellout-Full.esp", 1C4CD93B) and active("Anchorage.esm") and active("BrokenSteel.esm") and active("PointLookout.esm") and active("Zeta.esm")'
     clean:
       - crc: 0xEA441324
@@ -1211,12 +1211,12 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/9250/'
         name: 'Realistic Interior Lighting'
       - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
-        name: 'Paradox Ignition presents The Mergers'
+        name: 'The Mergers'
     tag: [ C.Light ]
   - name: 'Realistic Interior Lighting.esp'
     msg:
       - <<: *patchUpdateAvailable
-        subs: [ '[Paradox Ignition presents The Mergers](https://www.nexusmods.com/fallout3/mods/16787/) - **Realistic Interior Lighting Merged**' ]
+        subs: [ '[The Mergers](https://www.nexusmods.com/fallout3/mods/16787/)' ]
         condition: 'not checksum("Realistic Interior Lighting.esp", 409A2BD8)'
     clean:
       - crc: 0x409A2BD8
@@ -1778,7 +1778,7 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/3211/'
         name: 'Martigen''s Mutant Mod for Fallout 3 - RC 6.2'
       - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
-        name: 'Paradox Ignition presents The Mergers'
+        name: 'The Mergers'
   - name: 'Mart''s Mutant Mod.esm'
     tag:
       - Actors.ACBS
@@ -1805,7 +1805,7 @@ plugins:
       - Sound
     msg:
       - <<: *patchUpdateAvailable
-        subs: [ '[Paradox Ignition presents The Mergers](https://www.nexusmods.com/fallout3/mods/16787/) - **Marts Mutant Mod Merged**' ]
+        subs: [ '[The Mergers](https://www.nexusmods.com/fallout3/mods/16787/)' ]
         condition: 'not checksum("Mart''s Mutant Mod.esm", DC2E29E4) and active("Anchorage.esm") and active("ThePitt.esm") and active("BrokenSteel.esm") and active("PointLookout.esm") and active("Zeta.esm")'
     dirty:
       - <<: *quickClean
@@ -3033,7 +3033,7 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/6938/'
         name: 'Rogue Hallow''s Iron Sights - FOSE'
       - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
-        name: 'Paradox Ignition presents The Mergers'
+        name: 'The Mergers'
     tag:
       - Graphics
       - Invent.Add
@@ -3041,7 +3041,7 @@ plugins:
       - Stats
     msg:
       - <<: *patchUpdateAvailable
-        subs: [ '[Paradox Ignition presents The Mergers](https://www.nexusmods.com/fallout3/mods/16787/) - **RH Ironsights Merged**' ]
+        subs: [ '[The Mergers](https://www.nexusmods.com/fallout3/mods/16787/)' ]
         condition: 'not checksum("RH_IRONSIGHTS.esm", BA4ABFE7) and not checksum("RH_IRONSIGHTS.esm", 08328958) and active("Anchorage.esm") and active("ThePitt.esm") and active("BrokenSteel.esm") and active("PointLookout.esm") and active("Zeta.esm")'
       - *requiresFOSE
     dirty:
