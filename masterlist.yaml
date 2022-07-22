@@ -4171,8 +4171,11 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/16924/'
         name: 'Intro Street Bus and Dupont Alignment'
+    msg:
+      - <<: *useOnlyOneX
+        subs: [ 'Intro Street Bus ESP' ]
+        condition: 'many("DCStreet( - BS)?\.esp")'
   - name: 'DCStreet.esp'
-    inc: [ 'DCStreet - BS.esp' ]
     dirty:
       - <<: *reqManualFix
         crc: 0x60D55E6B
@@ -4185,7 +4188,6 @@ plugins:
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 8
   - name: 'DCStreet - BS.esp'
-    inc: [ 'DCStreet.esp' ]
     dirty:
       - <<: *reqManualFix
         crc: 0xA35DAE19
