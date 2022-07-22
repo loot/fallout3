@@ -4167,6 +4167,34 @@ plugins:
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
 ###### Locations ######
+  - name: 'DCStreet.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/16924/' ]
+    inc: [ 'DCStreet - BS.esp' ]
+    dirty:
+      - <<: *reqManualFix
+        crc: 0x60D55E6B
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 12
+        udr: 5
+        nav: 8
+      - <<: *reqManualFix
+        crc: 0xD3EC50DE
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        nav: 8
+  - name: 'DCStreet - BS.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/16924/' ]
+    inc: [ 'DCStreet.esp' ]
+    dirty:
+      - <<: *reqManualFix
+        crc: 0xA35DAE19
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 12
+        udr: 5
+        nav: 8
+      - <<: *reqManualFix
+        crc: 0xECFCA554
+        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        nav: 8
 
 ###### Locations - New Structures & Landmarks ######
   - name: 'Fairfax City Interiors.esp'
@@ -5227,34 +5255,6 @@ plugins:
       - Actors.ACBS
       - Actors.AIData
 
-  - name: 'DCStreet.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/16924/' ]
-    inc: [ 'DCStreet - BS.esp' ]
-    dirty:
-      - <<: *reqManualFix
-        crc: 0x60D55E6B
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 12
-        udr: 5
-        nav: 8
-      - <<: *reqManualFix
-        crc: 0xD3EC50DE
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        nav: 8
-  - name: 'DCStreet - BS.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/16924/' ]
-    inc: [ 'DCStreet.esp' ]
-    dirty:
-      - <<: *reqManualFix
-        crc: 0xA35DAE19
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 12
-        udr: 5
-        nav: 8
-      - <<: *reqManualFix
-        crc: 0xECFCA554
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        nav: 8
   - name: 'Megaton Walkway.esp'
     msg: [ *obsolete ]
   - name: 'megaton_lighting.esp'
