@@ -4167,8 +4167,11 @@ plugins:
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
 ###### Locations ######
+  - name: 'DCStreet( - BS)?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/16924/'
+        name: 'Intro Street Bus and Dupont Alignment'
   - name: 'DCStreet.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/16924/' ]
     inc: [ 'DCStreet - BS.esp' ]
     dirty:
       - <<: *reqManualFix
@@ -4182,7 +4185,6 @@ plugins:
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 8
   - name: 'DCStreet - BS.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/16924/' ]
     inc: [ 'DCStreet.esp' ]
     dirty:
       - <<: *reqManualFix
