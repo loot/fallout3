@@ -4166,6 +4166,21 @@ plugins:
       - crc: 0x9B846A47
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+###### Locations ######
+  - name: 'DCStreet( - BS)?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/16924/'
+        name: 'Intro Street Bus and Dupont Alignment'
+    msg:
+      - <<: *alreadyInOrFixedByX
+        subs: [ 'DCStreet.esm' ]
+        condition: 'active("DCStreet.esm")'
+      - <<: *obsolete
+        subs: [ '[Intro Street Bus and Trailer Ruins Unofficial Fixed](https://www.nexusmods.com/fallout3/mods/24751/)' ]
+      - <<: *useOnlyOneX
+        subs: [ 'Intro Street Bus ESP' ]
+        condition: 'many("DCStreet( - BS)?\.esp")'
+
 ###### Locations - New Structures & Landmarks ######
   - name: 'Fairfax City Interiors.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/23611/' ]
@@ -5225,34 +5240,6 @@ plugins:
       - Actors.ACBS
       - Actors.AIData
 
-  - name: 'DCStreet.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/16924/' ]
-    inc: [ 'DCStreet - BS.esp' ]
-    dirty:
-      - <<: *reqManualFix
-        crc: 0x60D55E6B
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 12
-        udr: 5
-        nav: 8
-      - <<: *reqManualFix
-        crc: 0xD3EC50DE
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        nav: 8
-  - name: 'DCStreet - BS.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/16924/' ]
-    inc: [ 'DCStreet.esp' ]
-    dirty:
-      - <<: *reqManualFix
-        crc: 0xA35DAE19
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 12
-        udr: 5
-        nav: 8
-      - <<: *reqManualFix
-        crc: 0xECFCA554
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        nav: 8
   - name: 'Megaton Walkway.esp'
     msg: [ *obsolete ]
   - name: 'megaton_lighting.esp'
