@@ -1083,7 +1083,7 @@ plugins:
     tag:
       - C.Light
       - name: 'C.Water'
-        condition: 'checksum("Fellout-Full.esp", 1C4CD93B)'
+        condition: 'checksum("Fellout-Full.esp", 17C3A3E9) or checksum("Fellout-Full.esp", 1C4CD93B)'
       - Graphics
     msg:
       - <<: *alreadyInFOOK2
