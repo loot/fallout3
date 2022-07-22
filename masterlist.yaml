@@ -588,9 +588,6 @@ plugins:
         condition: 'version("Unofficial Fallout 3 Patch.esm", "3.0", >=)'
     msg:
       - <<: *alsoUseX
-        subs: [ '[FO3 Mod Limit Fix](https://www.nexusmods.com/fallout3/mods/24056/)' ]
-        condition: 'not file("FOSE/Plugins/mod_limit_fix.dll")'
-      - <<: *alsoUseX
         subs: [ '[lStewieAl''s Tweaks](https://www.nexusmods.com/fallout3/mods/23561/)' ]
         condition: 'not file("FOSE/Plugins/fose_stewie_tweaks.dll") and (version("../fose_1_7.dll", "0.1.3.2", >=) or version("../fose_1_7ng).dll", "0.1.3.2", >=))'
       - <<: *alsoUseX
