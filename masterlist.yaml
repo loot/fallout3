@@ -1077,31 +1077,31 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/2672/'
         name: 'Fellout'
       - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
-        name: 'Paradox Ignition presents The Mergers'
+        name: 'The Mergers'
   - name: 'Fellout-Full.esp'
     after: [ 'FOOK2 - Main.esp' ]
     tag:
       - C.Light
       - name: 'C.Water'
-        condition: 'checksum("Fellout-Full.esp", 1C4CD93B)'
+        condition: 'checksum("Fellout-Full.esp", 17C3A3E9) or checksum("Fellout-Full.esp", 1C4CD93B)'
       - Graphics
     msg:
       - <<: *alreadyInFOOK2
         condition: 'file("FOOK2 - Main.esm") and version("Fellout-Full.esp", "1.234.567.89", <=)'
       - <<: *patchUpdateAvailable
-        subs: [ '[Paradox Ignition presents The Mergers](https://www.nexusmods.com/fallout3/mods/16787/) - **Fellout Merged**' ]
-        condition: 'not checksum("Fellout-Full.esp", 1C4CD93B) and active("Anchorage.esm") and active("BrokenSteel.esm") and active("PointLookout.esm") and active("Zeta.esm")'
+        subs: [ '[The Mergers](https://www.nexusmods.com/fallout3/mods/16787/)' ]
+        condition: '(not checksum("Fellout-Full.esp", 17C3A3E9) and not checksum("Fellout-Full.esp", 1C4CD93B)) and active("Anchorage.esm") and active("BrokenSteel.esm") and active("PointLookout.esm") and active("Zeta.esm")'
     clean:
       - crc: 0xEA441324
         util: 'FO3Edit v4.0.3'
-      - crc: 0x1C4CD93B
-        util: 'FO3Edit v4.0.3'
+      - crc: 0x17C3A3E9
+        util: 'FO3Edit v4.0.4b'
   - name: 'Fellout-(Anchorage|BrokenSteel|PointLookout|Zeta)\.esp'
     req: [ 'Fellout-Full.esp' ]
     msg:
       - <<: *alreadyInX
         subs: [ 'Fellout Merged' ]
-        condition: 'checksum("Fellout-Full.esp", 1C4CD93B)'
+        condition: 'checksum("Fellout-Full.esp", 17C3A3E9) or checksum("Fellout-Full.esp", 1C4CD93B)'
   - name: 'Fellout-Anchorage.esp'
     clean:
       - crc: 0x3C103AD6
@@ -1211,21 +1211,21 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/9250/'
         name: 'Realistic Interior Lighting'
       - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
-        name: 'Paradox Ignition presents The Mergers'
+        name: 'The Mergers'
     tag: [ C.Light ]
   - name: 'Realistic Interior Lighting.esp'
     msg:
       - <<: *patchUpdateAvailable
-        subs: [ '[Paradox Ignition presents The Mergers](https://www.nexusmods.com/fallout3/mods/16787/) - **Realistic Interior Lighting Merged**' ]
-        condition: 'not checksum("Realistic Interior Lighting.esp", 409A2BD8)'
+        subs: [ '[The Mergers](https://www.nexusmods.com/fallout3/mods/16787/)' ]
+        condition: 'not checksum("Realistic Interior Lighting.esp", 2BC63199) and not checksum("Realistic Interior Lighting.esp", 409A2BD8)'
     clean:
-      - crc: 0x409A2BD8
-        util: 'FO3Edit v4.0.3'
+      - crc: 0x2BC63199
+        util: 'FO3Edit v4.0.4b'
   - name: 'Realistic Interior Lighting - (OA|BS|PL)\.esp'
     msg:
       - <<: *alreadyInX
         subs: [ 'Realistic Interior Lighting Merged' ]
-        condition: 'checksum("Realistic Interior Lighting.esp", 409A2BD8)'
+        condition: 'checksum("Realistic Interior Lighting.esp", 2BC63199) or checksum("Realistic Interior Lighting.esp", 409A2BD8)'
 
   - name: 'StreetLights.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8069/' ]
@@ -1778,7 +1778,7 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/3211/'
         name: 'Martigen''s Mutant Mod for Fallout 3 - RC 6.2'
       - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
-        name: 'Paradox Ignition presents The Mergers'
+        name: 'The Mergers'
   - name: 'Mart''s Mutant Mod.esm'
     tag:
       - Actors.ACBS
@@ -1805,22 +1805,22 @@ plugins:
       - Sound
     msg:
       - <<: *patchUpdateAvailable
-        subs: [ '[Paradox Ignition presents The Mergers](https://www.nexusmods.com/fallout3/mods/16787/) - **Marts Mutant Mod Merged**' ]
-        condition: 'not checksum("Mart''s Mutant Mod.esm", DC2E29E4) and active("Anchorage.esm") and active("ThePitt.esm") and active("BrokenSteel.esm") and active("PointLookout.esm") and active("Zeta.esm")'
+        subs: [ '[The Mergers](https://www.nexusmods.com/fallout3/mods/16787/)' ]
+        condition: '(not checksum("Mart''s Mutant Mod.esm", AD738DF1) and not checksum("Mart''s Mutant Mod.esm", DC2E29E4)) and active("Anchorage.esm") and active("ThePitt.esm") and active("BrokenSteel.esm") and active("PointLookout.esm") and active("Zeta.esm")'
     dirty:
       - <<: *quickClean
         crc: 0x895521AD
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 77
     clean:
-      - crc: 0xDC2E29E4
-        util: 'FO3Edit v4.0.3'
+      - crc: 0xAD738DF1
+        util: 'FO3Edit v4.0.4b'
   - name: 'Mart''s Mutant Mod.esp'
     after: [ 'FWE - Combat Overhaul_Equipment.esp' ]
     msg:
       - <<: *alreadyInX
         subs: [ 'Marts Mutant Mod Merged' ]
-        condition: 'checksum("Mart''s Mutant Mod.esm", DC2E29E4)'
+        condition: 'checksum("Mart''s Mutant Mod.esm", AD738DF1) or checksum("Mart''s Mutant Mod.esm", DC2E29E4)'
     dirty:
       - <<: *quickClean
         crc: 0xFB3CE701
@@ -3033,7 +3033,7 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/6938/'
         name: 'Rogue Hallow''s Iron Sights - FOSE'
       - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
-        name: 'Paradox Ignition presents The Mergers'
+        name: 'The Mergers'
     tag:
       - Graphics
       - Invent.Add
@@ -3041,8 +3041,8 @@ plugins:
       - Stats
     msg:
       - <<: *patchUpdateAvailable
-        subs: [ '[Paradox Ignition presents The Mergers](https://www.nexusmods.com/fallout3/mods/16787/) - **RH Ironsights Merged**' ]
-        condition: 'not checksum("RH_IRONSIGHTS.esm", BA4ABFE7) and not checksum("RH_IRONSIGHTS.esm", 08328958) and active("Anchorage.esm") and active("ThePitt.esm") and active("BrokenSteel.esm") and active("PointLookout.esm") and active("Zeta.esm")'
+        subs: [ '[The Mergers](https://www.nexusmods.com/fallout3/mods/16787/)' ]
+        condition: '(not checksum("RH_IRONSIGHTS.esm", 4D305E19) and not checksum("RH_IRONSIGHTS.esm", BA4ABFE7) and not checksum("RH_IRONSIGHTS.esm", 08328958)) and active("Anchorage.esm") and active("ThePitt.esm") and active("BrokenSteel.esm") and active("PointLookout.esm") and active("Zeta.esm")'
       - *requiresFOSE
     dirty:
       - <<: *quickClean
@@ -3052,14 +3052,14 @@ plugins:
     clean:
       - crc: 0xE3972362
         util: 'FO3Edit v4.0.3'
-      - crc: 0x08328958
-        util: 'FO3Edit v4.0.3'
+      - crc: 0x4D305E19
+        util: 'FO3Edit v4.0.4b'
   - name: 'RH_IronSights_.*\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6938/' ]
     msg:
       - <<: *alreadyInX
         subs: [ 'RH_Ironsights Merged' ]
-        condition: 'checksum("RH_IRONSIGHTS.esm", BA4ABFE7) or checksum("RH_IRONSIGHTS.esm", 08328958)'
+        condition: 'checksum("RH_IRONSIGHTS.esm", 4D305E19) or checksum("RH_IRONSIGHTS.esm", BA4ABFE7) or checksum("RH_IRONSIGHTS.esm", 08328958)'
   - name: 'RH_IronSights_Basic_VanillaPlugin.esp'
     after:
       - name: 'Accurate Assault Rifles 1.2.esp'
