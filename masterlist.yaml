@@ -4167,6 +4167,11 @@ plugins:
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
 ###### Locations ######
+  - name: 'DCStreet.esm'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/24751/'
+        name: 'Intro Street Bus and Trailer Ruins Unofficial Fixed'
+
   - name: 'DCStreet( - BS)?\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/16924/'
