@@ -2815,8 +2815,8 @@ plugins:
       - Names
       - Relev
     clean:
-      - crc: 0x3200D13A
-        util: 'FO3Edit v4.0.3'
+      - crc: 0xE5EFA5B8
+        util: 'FO3Edit v4.0.4b'
 
   - name: 'H\.E\.R\.K\.( - GOTY( & WMK)?)?\.es(m|p)'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7531/' ]
