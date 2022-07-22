@@ -4138,8 +4138,10 @@ plugins:
 
   - name: 'Dree Perks.esp'
     url:
-      - 'https://www.nexusmods.com/fallout3/mods/6190/'
-      - 'https://www.nexusmods.com/fallout3/mods/16787/'
+      - link: 'https://www.nexusmods.com/fallout3/mods/6190/'
+        name: 'More Perks'
+      - link: 'https://www.nexusmods.com/fallout3/mods/16787/'
+        name: 'The Mergers'
     tag:
       - name: Delev
         condition: checksum("Dree Perks.esp", 25D3F8CA)
@@ -4148,39 +4150,37 @@ plugins:
     clean:
       - crc: 0x9A20FA79
         util: 'FO3Edit v4.0.2e'
+  - name: 'Dree Perks (Anchorage|Pitts|Broken Steel|Point Lookout|Mothership Zeta|Requested by Fans )\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/6190/'
+        name: 'More Perks'
   - name: 'Dree Perks Anchorage.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6190/' ]
     clean:
       - crc: 0x9E9E59C5
         util: 'FO3Edit v4.0.2e'
   - name: 'Dree Perks Broken Steel.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6190/' ]
     dirty:
       - <<: *quickClean
         crc: 0x62C26F5A
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
   - name: 'Dree Perks Mothership Zeta.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6190/' ]
     dirty:
       - <<: *quickClean
         crc: 0xBB50A35B
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
   - name: 'Dree Perks Pitts.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6190/' ]
     clean:
       - crc: 0x86A2A453
         util: 'FO3Edit v4.0.2e'
   - name: 'Dree Perks Point Lookout.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6190/' ]
     dirty:
       - <<: *quickClean
         crc: 0x1A9BC8B5
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 5
   - name: 'Dree Perks Requested by Fans .esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/6190/' ]
     clean:
       - crc: 0x755C2178
         util: 'FO3Edit v4.0.2e'
