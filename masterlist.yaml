@@ -1035,11 +1035,7 @@ plugins:
       - crc: 0x72B014CC
         util: 'FO3Edit v4.0.4b'
   - name: 'dD-Screen Blood Vanilla.esp'
-    dirty:
-      - <<: *quickClean
-        crc: 0x061CA03F
-        util: '[FO3Edit v4.0.4b](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 8
+    # Do not clean - ITMs reset changes to vanilla for seven game setting records #
 
   - name: 'Empty Nuka-Cola Quantum Bottles.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/16809/' ]
