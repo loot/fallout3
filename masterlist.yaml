@@ -1230,6 +1230,8 @@ plugins:
   - name: 'Fellout-SOTD.esp'
     msg: [ *obsolete ]
 
+  - name: 'Fellout Brighter Nights.esp'
+
   - name: 'Flashlight-(LOS|Performance)(-nonFOSE)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15003/' ]
     msg:
