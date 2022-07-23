@@ -4796,10 +4796,6 @@ plugins:
     clean:
       - crc: 0x010B36EC
         util: 'FO3Edit v4.0.2e'
-  - name: 'Blackened FWE + MMM + EVE + Project Beauty + Destruction.esp'
-    clean:
-      - crc: 0x9BBFC6B5
-        util: 'FO3Edit v4.0.2e'
   - name: 'Blackened FWE + MMM + Project Beauty.esp'
     clean:
       - crc: 0x0C3D6E50
@@ -4823,18 +4819,6 @@ plugins:
       - crc: 0xB30A2388
         util: 'FO3Edit v4.0.2e'
   # Blackened - optional files #
-  - name: 'Destruction - DC Moods.esp'
-    clean:
-      - crc: 0x9952050A
-        util: 'FO3Edit v4.0.2e'
-  - name: 'Destruction - FNNsys.esp'
-    clean:
-      - crc: 0x8B306831
-        util: 'FO3Edit v4.0.2e'
-  - name: 'Destruction - xCALIBRammo_FWE.esp'
-    clean:
-      - crc: 0x484BD230
-        util: 'FO3Edit v4.0.2e'
   - name: 'Gunfire Sound Range Increased - Core + DLC + EVE.esp'
     clean:
       - crc: 0xE5EEC89C
