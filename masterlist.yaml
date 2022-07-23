@@ -4769,18 +4769,6 @@ plugins:
     after:
       - 'Impact.esp'
       - 'WeaponModKits - FWE Master Release.esp'
-    tag:
-      - Actors.Stats
-      - Factions
-      - Invent
-      - Names
-      - Relev
-      - Scripts
-      - C.Light
-      - C.Music
-      - C.Name
-      - C.Owner
-      - C.Water
     clean:
       - crc: 0x010B36EC
         util: 'FO3Edit v4.0.2e'
@@ -4789,13 +4777,6 @@ plugins:
       - crc: 0x9BBFC6B5
         util: 'FO3Edit v4.0.2e'
   - name: 'Blackened FWE + MMM + Project Beauty.esp'
-    tag:
-      - Actors.Stats
-      - Factions
-      - Invent
-      - Names
-      - Relev
-      - Scripts
     clean:
       - crc: 0x0C3D6E50
         util: 'FO3Edit v4.0.2e'
