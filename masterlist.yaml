@@ -4796,6 +4796,9 @@ plugins:
       - crc: 0xF9C7C3F8
         util: 'FO3Edit v4.0.2e'
   - name: 'Blackened FWE + MMM + EVE + Project Beauty.esp'
+    after:
+      - 'Impact.esp'
+      - 'WeaponModKits - FWE Master Release.esp'
     tag:
       - Actors.ACBS
       - Actors.SpellsForceAdd
@@ -4807,9 +4810,6 @@ plugins:
       - Relev
       - Sound
       - Stats
-    after:
-      - 'Impact.esp'
-      - 'WeaponModKits - FWE Master Release.esp'
     clean:
       - crc: 0x010B36EC
         util: 'FO3Edit v4.0.2e'
