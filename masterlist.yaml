@@ -4752,22 +4752,61 @@ plugins:
       - crc: 0x0EDFEDE2
         util: 'FO3Edit v4.0.2e'
   - name: 'Blackened FWE + EVE.esp'
+    tag:
+      - Graphics
+      - Sound
+      - Stats
     clean:
       - crc: 0x5D22DE24
         util: 'FO3Edit v4.0.2e'
   - name: 'Blackened FWE + EVE + Project Beauty.esp'
+    tag:
+      - Graphics
+      - Sound
+      - Stats
     clean:
       - crc: 0xB5C3CE4A
         util: 'FO3Edit v4.0.2e'
   - name: 'Blackened FWE + MMM.esp'
+    tag:
+      - Actors.ACBS
+      - Actors.SpellsForceAdd
+      - Actors.Stats
+      - Graphics
+      - Names
+      - Relations.Change
+      - Relev
+      - Sound
+      - Stats
     clean:
       - crc: 0xE84ACBCE
         util: 'FO3Edit v4.0.2e'
   - name: 'Blackened FWE + MMM + EVE.esp'
+    tag:
+      - Actors.ACBS
+      - Actors.SpellsForceAdd
+      - Actors.Stats
+      - Graphics
+      - Names
+      - Relations.Change
+      - Relev
+      - Sound
+      - Stats
     clean:
       - crc: 0xF9C7C3F8
         util: 'FO3Edit v4.0.2e'
   - name: 'Blackened FWE + MMM + EVE + Project Beauty.esp'
+    tag:
+      - Actors.ACBS
+      - Actors.SpellsForceAdd
+      - Actors.Stats
+      - Graphics
+      - Names
+      - NPC.Race
+      - Relations.Change
+      - Relev
+      - Sound
+      - Stats
     after:
       - 'Impact.esp'
       - 'WeaponModKits - FWE Master Release.esp'
@@ -4775,23 +4814,57 @@ plugins:
       - crc: 0x010B36EC
         util: 'FO3Edit v4.0.2e'
   - name: 'Blackened FWE + MMM + EVE + Project Beauty + Destruction.esp'
+    tag:
+      - Actors.ACBS
+      - Actors.SpellsForceAdd
+      - Actors.Stats
+      - Graphics
+      - Names
+      - NPC.Race
+      - Relations.Change
+      - Relev
+      - Sound
+      - Stats
     clean:
       - crc: 0x9BBFC6B5
         util: 'FO3Edit v4.0.2e'
   - name: 'Blackened FWE + MMM + Project Beauty.esp'
+    tag:
+      - Actors.ACBS
+      - Actors.SpellsForceAdd
+      - Actors.Stats
+      - Graphics
+      - Names
+      - NPC.Race
+      - Relations.Change
+      - Relev
+      - Sound
+      - Stats
     clean:
       - crc: 0x0C3D6E50
         util: 'FO3Edit v4.0.2e'
   - name: 'Blackened MMM + EVE.esp'
+    tag:
+      - Actors.Stats
+      - Graphics
     clean:
       - crc: 0x40F56004
         util: 'FO3Edit v4.0.2e'
   - name: 'Blackened MMM + EVE + Project Beauty.esp'
+    tag:
+      - Actors.Stats
+      - Graphics
+      - NPC.Race
     clean:
       - crc: 0x6100721D
         util: 'FO3Edit v4.0.2e'
   - name: 'Blackened RH + FWE + EVE.esp'
     after: [ 'Blackened FWE + MMM + EVE + Project Beauty.esp' ]
+    tag:
+      - Actors.Stats
+      - Graphics
+      - Sound
+      - Stats
     clean:
       - crc: 0xB30A2388
         util: 'FO3Edit v4.0.2e'
