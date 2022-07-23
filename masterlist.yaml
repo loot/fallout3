@@ -1157,6 +1157,16 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/6703/'
         name: 'Darker Interiors'
     tag: [ C.Light ]
+  - name: 'DarkerInteriors(Anchorage|ThePitt|BrokenSteel|PointLookout|Zeta)\.esp'
+    after: [ 'DarkerInteriorsFallOut3.esp' ]
+  - name: 'DarkerInteriors(ThePitt|BrokenSteel|PointLookout|Zeta)\.esp'
+    after: [ 'DarkerInteriorsAnchorage.esp' ]
+  - name: 'DarkerInteriors(BrokenSteel|PointLookout|Zeta)\.esp'
+    after: [ 'DarkerInteriorsThePitt.esp' ]
+  - name: 'DarkerInteriors(PointLookout|Zeta)\.esp'
+    after: [ 'DarkerInteriorsBrokenSteel.esp' ]
+  - name: 'DarkerInteriorsZeta.esp'
+    after: [ 'DarkerInteriorsPointLookout.esp' ]
 
   - name: 'F3ProjectRealityMkI.esp'
     url:
