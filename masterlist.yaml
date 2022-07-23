@@ -1232,6 +1232,7 @@ plugins:
 
   - name: 'Fellout Brighter Nights.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17859/' ]
+    after: [ 'Fellout-PointLookout.esp' ]
 
   - name: 'Flashlight-(LOS|Performance)(-nonFOSE)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/15003/' ]
