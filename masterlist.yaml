@@ -4718,7 +4718,9 @@ plugins:
 
 ###### 3RD Party Patches ######
   - name: 'Blackened .*\.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/18173/'
+        name: 'Blackened'
   - name: 'Blackened .*FWE .*\.esp'
     after:
       - 'FO3 Wanderers Edition - Main File.esp'
