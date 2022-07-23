@@ -1152,17 +1152,7 @@ plugins:
       - crc: 0x6062B73A
         util: 'FO3Edit v4.0.3'
 
-  - name: 'DarkerInteriorsFallOut3.esp'
-    tag: [ C.Light ]
-  - name: 'DarkerInteriorsAnchorage.esp'
-    tag: [ C.Light ]
-  - name: 'DarkerInteriorsThePitt.esp'
-    tag: [ C.Light ]
-  - name: 'DarkerInteriorsBrokenSteel.esp'
-    tag: [ C.Light ]
-  - name: 'DarkerInteriorsPointLookout.esp'
-    tag: [ C.Light ]
-  - name: 'DarkerInteriorsZeta.esp'
+  - name: 'DarkerInteriors(FallOut3|Anchorage|ThePitt|BrokenSteel|PointLookout|Zeta)\.esp'
     tag: [ C.Light ]
 
   - name: 'F3ProjectRealityMkI.esp'
