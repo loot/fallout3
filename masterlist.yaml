@@ -1153,6 +1153,9 @@ plugins:
         util: 'FO3Edit v4.0.3'
 
   - name: 'DarkerInteriors(FallOut3|Anchorage|ThePitt|BrokenSteel|PointLookout|Zeta)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/6703/'
+        name: 'Darker Interiors'
     tag: [ C.Light ]
 
   - name: 'F3ProjectRealityMkI.esp'
