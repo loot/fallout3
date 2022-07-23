@@ -4718,7 +4718,9 @@ plugins:
 
 ###### 3RD Party Patches ######
   - name: 'Blackened .*\.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/18173/' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/18173/'
+        name: 'Blackened'
   - name: 'Blackened .*FWE .*\.esp'
     after:
       - 'FO3 Wanderers Edition - Main File.esp'
@@ -4733,6 +4735,28 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'Blackened FO3 Wanderers Edition patch' ]
         condition: 'many("Blackened FWE .*\.esp")'
+  - name: 'Blackened FWE .*(EVE).*\.esp'
+    tag:
+      - Graphics
+      - Sound
+      - Stats
+  - name: 'Blackened FWE .*(MMM).*\.esp'
+    tag:
+      - Actors.ACBS
+      - Actors.SpellsForceAdd
+      - Actors.Stats
+      - Graphics
+      - Names
+      - Relations.Change
+      - Relev
+      - Sound
+      - Stats
+  - name: 'Blackened .*(MMM).*(EVE).*\.esp'
+    tag:
+      - Actors.Stats
+      - Graphics
+  - name: 'Blackened .*(MMM).*(Project Beauty).*\.esp'
+    tag: [ NPC.Race ]
   - name: 'Blackened .*(Project Beauty).*\.esp'
     inc:
       - name: 'Project Beauty.esm'
@@ -4769,33 +4793,10 @@ plugins:
     after:
       - 'Impact.esp'
       - 'WeaponModKits - FWE Master Release.esp'
-    tag:
-      - Actors.Stats
-      - Factions
-      - Invent
-      - Names
-      - Relev
-      - Scripts
-      - C.Light
-      - C.Music
-      - C.Name
-      - C.Owner
-      - C.Water
     clean:
       - crc: 0x010B36EC
         util: 'FO3Edit v4.0.2e'
-  - name: 'Blackened FWE + MMM + EVE + Project Beauty + Destruction.esp'
-    clean:
-      - crc: 0x9BBFC6B5
-        util: 'FO3Edit v4.0.2e'
   - name: 'Blackened FWE + MMM + Project Beauty.esp'
-    tag:
-      - Actors.Stats
-      - Factions
-      - Invent
-      - Names
-      - Relev
-      - Scripts
     clean:
       - crc: 0x0C3D6E50
         util: 'FO3Edit v4.0.2e'
@@ -4809,22 +4810,15 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Blackened RH + FWE + EVE.esp'
     after: [ 'Blackened FWE + MMM + EVE + Project Beauty.esp' ]
+    tag:
+      - Actors.Stats
+      - Graphics
+      - Sound
+      - Stats
     clean:
       - crc: 0xB30A2388
         util: 'FO3Edit v4.0.2e'
   # Blackened - optional files #
-  - name: 'Destruction - DC Moods.esp'
-    clean:
-      - crc: 0x9952050A
-        util: 'FO3Edit v4.0.2e'
-  - name: 'Destruction - FNNsys.esp'
-    clean:
-      - crc: 0x8B306831
-        util: 'FO3Edit v4.0.2e'
-  - name: 'Destruction - xCALIBRammo_FWE.esp'
-    clean:
-      - crc: 0x484BD230
-        util: 'FO3Edit v4.0.2e'
   - name: 'Gunfire Sound Range Increased - Core + DLC + EVE.esp'
     clean:
       - crc: 0xE5EEC89C
