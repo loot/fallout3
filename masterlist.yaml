@@ -484,12 +484,12 @@ globals:
     subs:
       - '**[Fallout Script Extender](https://fose.silverlock.org/)**'
       - '**Fallout 3**'
-    condition: 'readable("../FalloutNV.exe") and product_version("../FalloutNV.exe", "1.7.0.3", >=) and file("../fose_1_[01456]b?\.dll") and not file("../fose_1_7(ng)?\.dll")'
+    condition: 'readable("../Fallout3.exe") and product_version("../Fallout3.exe", "1.7.0.3", >=) and file("../fose_1_[01456]b?\.dll") and not file("../fose_1_7(ng)?\.dll")'
   - <<: *versionXIncY
     subs:
       - '**[Fallout Script Extender](https://fose.silverlock.org/)**'
       - '**Fallout 3**'
-    condition: 'readable("../FalloutNV.exe") and product_version("../FalloutNV.exe", "1.7.0.4", ==) and ((file("../fose_1_7.dll") and version("../fose_1_7.dll", "0.1.3.2", <=)) or (file("../fose_1_7ng.dll") and version("../fose_1_7ng.dll", "0.1.3.2", <=)))'
+    condition: 'readable("../Fallout3.exe") and product_version("../Fallout3.exe", "1.7.0.4", ==) and ((file("../fose_1_7.dll") and version("../fose_1_7.dll", "0.1.3.2", <=)) or (file("../fose_1_7ng.dll") and version("../fose_1_7ng.dll", "0.1.3.2", <=)))'
 
 groups:
   - name: &veryEarlyGroup Very Early Loaders
