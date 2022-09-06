@@ -2529,6 +2529,7 @@ plugins:
         util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
   - name: 'FinalCourierMod1.1.esm'
+    msg: [ *obsolete ]
 
   - name: 'FOOK2 - (Main|\[DIK\] DLC Improvement Kit)\.ESM'
     url:
