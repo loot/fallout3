@@ -4519,9 +4519,6 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/10183/'
         name: 'Dragonskin Tactical Outfit'
   - name: 'Dragonskin Tactical Outfit.esp'
-    tag:
-      - Graphics
-      - Stats
     clean:
       - crc: 0x45FB7F26
         util: 'FO3Edit v4.0.2e'
