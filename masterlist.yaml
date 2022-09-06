@@ -584,10 +584,9 @@ plugins:
         subs: [ '[Updated Unofficial Fallout 3 Patch](https://www.nexusmods.com/fallout3/mods/19122)' ]
         condition: 'version("Unofficial Fallout 3 Patch.esm", "3.1.8", <) and active("Anchorage.esm") and active("ThePitt.esm") and active("BrokenSteel.esm") and active("PointLookout.esm") and active("Zeta.esm")'
       - *requiresFOSE
-      - type: say
-        content:
-          - lang: en
-            text: 'This plugin requires a new save game if you''re upgrading from a version older than v3.0.'
+      - <<: *requiresX
+        type: say
+        subs: [ 'New save game when upgrading from v3.0 or older.' ]
     tag:
       - Actors.ACBS
       - Actors.AIData
@@ -595,6 +594,7 @@ plugins:
       - Actors.Anims
       - Actors.CombatStyle
       - Actors.DeathItem
+      - Actors.Factions
       - Actors.RecordFlags
       - Actors.Skeleton
       - Actors.Spells
@@ -614,7 +614,6 @@ plugins:
       - Creatures.Type
       - Deflst
       - Delev
-      - Factions
       - Graphics
       - Invent.Add
       - Invent.Change
@@ -640,7 +639,7 @@ plugins:
       - Text
     clean:
       - crc: 0x18033A26
-        util: 'FO3Edit v4.0.4b'
+        util: 'FO3Edit v4.0.4c'
 
 ###### Fixes ######
   - name: 'BringBackBael.esp'
