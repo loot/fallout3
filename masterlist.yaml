@@ -3097,7 +3097,9 @@ plugins:
         itm: 2
 
   - name: 'NIW_experimental.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/17831/' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/17831/'
+        name: 'No Invisible Walls'
     msg:
       - type: error
         content:
