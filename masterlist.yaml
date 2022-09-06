@@ -2493,8 +2493,10 @@ plugins:
         itm: 6
 
   - name: 'FinalCourierMod( |_BankOfTheWastelandPatch|_BlackWolfBackpackPatch|1\.1)\.es[mp]'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/22168/'
+        name: 'FCM - Final Courier Mod'
   - name: 'FinalCourierMod .esm'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/22168/' ]
     msg:
       - type: error
         content:
@@ -2503,7 +2505,6 @@ plugins:
           - lang: de
             text: 'Um dieses Plugin nutzen zu können, entfernen Sie das Leerzeichen vor dem .esm im dessen Dateinamen.'
   - name: 'FinalCourierMod.esm'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/22168/' ]
     dirty:
       - <<: *reqManualFix
         crc: 0x11516512
@@ -2516,14 +2517,12 @@ plugins:
         util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 1
   - name: 'FinalCourierMod_BankOfTheWastelandPatch.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/22168/' ]
     dirty:
       - <<: *quickClean
         crc: 0xBA8E0477
         util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
   - name: 'FinalCourierMod_BlackWolfBackpackPatch.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/22168/' ]
     dirty:
       - <<: *quickClean
         crc: 0xD12B2A85
