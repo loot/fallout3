@@ -3096,6 +3096,15 @@ plugins:
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
 
+  - name: 'NIW_experimental.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/17831/'
+        name: 'No Invisible Walls'
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Remove all Static records except for **00000021** from **NIW_experimental.esp**.' ]
+        condition: 'checksum("NIW_experimental.esp", D426D3FF)'
+
   - name: 'RH_IRONSIGHTS.esm'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/6938/'
@@ -7723,15 +7732,7 @@ plugins:
         crc: 0x546BA172
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 3
-  - name: 'NIW_experimental.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/17831/' ]
-    msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Do not use this plugin. It contains unresolved references which can potentially break your game.'
-          - lang: de
-            text: 'Nutzen Sie nicht dieses Plugin. Es beinhaltet offene Referenzen welche möglicherweise Ihr Spiel kaputtmachen können.'
+
   - name: 'Simply_Lockers_rev01.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17964/' ]
     dirty:
