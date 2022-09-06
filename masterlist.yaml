@@ -3100,13 +3100,6 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/17831/'
         name: 'No Invisible Walls'
-    msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'Do not use this plugin. It contains unresolved references which can potentially break your game.'
-          - lang: de
-            text: 'Nutzen Sie nicht dieses Plugin. Es beinhaltet offene Referenzen welche möglicherweise Ihr Spiel kaputtmachen können.'
 
   - name: 'RH_IRONSIGHTS.esm'
     url:
