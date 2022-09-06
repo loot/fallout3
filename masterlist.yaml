@@ -2505,29 +2505,8 @@ plugins:
           - '**textures**'
         condition: 'file("texture/FinalCourierMod") and not file("textures/FinalCourierMod")'
   - name: 'FinalCourierMod.esm'
-    dirty:
-      - <<: *reqManualFix
-        crc: 0x11516512
-        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 149
-        udr: 9
-        nav: 1
-      - <<: *reqManualFix
-        crc: 0x9870E320
-        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
-        nav: 1
   - name: 'FinalCourierMod_BankOfTheWastelandPatch.esp'
-    dirty:
-      - <<: *quickClean
-        crc: 0xBA8E0477
-        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 2
   - name: 'FinalCourierMod_BlackWolfBackpackPatch.esp'
-    dirty:
-      - <<: *quickClean
-        crc: 0xD12B2A85
-        util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 2
   - name: 'FinalCourierMod1.1.esm'
     msg: [ *obsolete ]
 
