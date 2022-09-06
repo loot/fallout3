@@ -2497,6 +2497,13 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/22168/'
         name: 'FCM - Final Courier Mod'
   - name: 'FinalCourierMod .esm'
+    msg:
+      - <<: *moveXFromYToZ
+        subs:
+          - '**FinalCourierMod**'
+          - '**texture**'
+          - '**textures**'
+        condition: 'file("texture/FinalCourierMod") and not file("textures/FinalCourierMod")'
   - name: 'FinalCourierMod.esm'
     dirty:
       - <<: *reqManualFix
