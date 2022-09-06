@@ -3100,6 +3100,10 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/17831/'
         name: 'No Invisible Walls'
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Remove all Static records except for **00000021** from **NIW_experimental.esp**.' ]
+        condition: 'checksum("NIW_experimental.esp", D426D3FF)'
 
   - name: 'RH_IRONSIGHTS.esm'
     url:
