@@ -4522,11 +4522,11 @@ plugins:
     tag: [ Actors.AIData ]
     clean:
       - crc: 0x45FB7F26
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.4c'
   - name: 'DragonskinBonusPack.esp'
     clean:
       - crc: 0xF5552A78
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.4c'
 
   - name: 'GaryHoloTape.esp'
     url:
