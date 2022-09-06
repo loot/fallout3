@@ -6565,21 +6565,7 @@ plugins:
     clean:
       - crc: 0x231C4287
         util: 'FO3Edit v4.0.2e'
-  - name: 'BlackWolf Backpack.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/2553/' ]
-    clean:
-      - crc: 0x05827543
-        util: 'FO3Edit v4.0.2f'
-  - name: 'BlackWolf Backpack - Blank''s Container Patch.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/2553/' ]
-    clean:
-      - crc: 0xEEF9120C
-        util: 'FO3Edit v4.0.2f'
-  - name: 'BlackWolf Backpack - Vendor Script Replenish.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/2553/' ]
-    clean:
-      - crc: 0x01DFE621
-        util: 'FO3Edit v4.0.2f'
+
   - name: 'PunisherGear.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2793/' ]
     dirty:
