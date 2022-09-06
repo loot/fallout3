@@ -2497,13 +2497,6 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/22168/'
         name: 'FCM - Final Courier Mod'
   - name: 'FinalCourierMod .esm'
-    msg:
-      - type: error
-        content:
-          - lang: en
-            text: 'In order to use this plugin, remove the empty space before the .esm in it''s filename.'
-          - lang: de
-            text: 'Um dieses Plugin nutzen zu können, entfernen Sie das Leerzeichen vor dem .esm im dessen Dateinamen.'
   - name: 'FinalCourierMod.esm'
     dirty:
       - <<: *reqManualFix
