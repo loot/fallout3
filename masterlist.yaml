@@ -2492,6 +2492,7 @@ plugins:
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 6
 
+  - name: 'FinalCourierMod( |_BankOfTheWastelandPatch|_BlackWolfBackpackPatch|1\.1)\.es[mp]'
   - name: 'FinalCourierMod .esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22168/' ]
     msg:
@@ -2528,6 +2529,7 @@ plugins:
         crc: 0xD12B2A85
         util: '[FO3Edit v4.0.2f](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 2
+  - name: 'FinalCourierMod1.1.esm'
 
   - name: 'FOOK2 - (Main|\[DIK\] DLC Improvement Kit)\.ESM'
     url:
