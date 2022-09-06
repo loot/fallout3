@@ -4525,15 +4525,6 @@ plugins:
     clean:
       - crc: 0x45FB7F26
         util: 'FO3Edit v4.0.2e'
-    msg:
-      - type: say
-        # Copied from the mod's Nexus page:
-        content:
-          - lang: en
-            text: '"[The] camo-swapping system will only work if you have [FOSE](http://fose.silverlock.org/) installed. Users without FOSE can still use the mod as normal - but the camo-swapping system will simply not work until/unless FOSE is installed (and a message will appear saying as much)."'
-          - lang: de
-            text: '"[Das] Tarnungs-Tausch System wird nur funktionieren wenn Sie [FOSE](http://fose.silverlock.org/) installiert haben. Nutzer ohne FOSE können die Mod weiterhin wie normal verwenden - aber das Tarnungs-Tausch System wird solange nicht funktionieren solange nicht FOSE installiert ist (und eine Meldung wird erscheinen die diesen Umstand auch so wiedergibt)."'
-        condition: 'not file("../fose_1_\d(b|ng)?\.dll")'
   - name: 'DragonskinBonusPack.esp'
     clean:
       - crc: 0xF5552A78
