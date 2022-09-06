@@ -4515,8 +4515,10 @@ plugins:
         condition: 'checksum("ColtM4Carbines_RHIronSights.esp", 0B0D7065)'
 
   - name: 'Dragonskin( Tactical Outfit|BonusPack)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/10183/'
+        name: 'Dragonskin Tactical Outfit'
   - name: 'Dragonskin Tactical Outfit.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/10183/' ]
     tag:
       - Graphics
       - Stats
@@ -4533,7 +4535,6 @@ plugins:
             text: '"[Das] Tarnungs-Tausch System wird nur funktionieren wenn Sie [FOSE](http://fose.silverlock.org/) installiert haben. Nutzer ohne FOSE können die Mod weiterhin wie normal verwenden - aber das Tarnungs-Tausch System wird solange nicht funktionieren solange nicht FOSE installiert ist (und eine Meldung wird erscheinen die diesen Umstand auch so wiedergibt)."'
         condition: 'not file("../fose_1_\d(b|ng)?\.dll")'
   - name: 'DragonskinBonusPack.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/10183/' ]
     clean:
       - crc: 0xF5552A78
         util: 'FO3Edit v4.0.2e'
