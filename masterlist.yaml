@@ -2515,9 +2515,6 @@ plugins:
         crc: 0x9870E320
         util: '[FO3Edit v4.0.4c](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 1
-  - name: 'FinalCourierMod.esm'
-  - name: 'FinalCourierMod_BankOfTheWastelandPatch.esp'
-  - name: 'FinalCourierMod_BlackWolfBackpackPatch.esp'
   - name: 'FinalCourierMod1.1.esm'
     msg: [ *obsolete ]
 
