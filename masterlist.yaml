@@ -4514,6 +4514,7 @@ plugins:
         subs: [ 'Remove **0001EC51** from **ColtM4Carbines_RHIronSights.esp**.' ]
         condition: 'checksum("ColtM4Carbines_RHIronSights.esp", 0B0D7065)'
 
+  - name: 'Dragonskin( Tactical Outfit|BonusPack)\.esp'
   - name: 'Dragonskin Tactical Outfit.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/10183/' ]
     tag:
