@@ -4514,6 +4514,20 @@ plugins:
         subs: [ 'Remove **0001EC51** from **ColtM4Carbines_RHIronSights.esp**.' ]
         condition: 'checksum("ColtM4Carbines_RHIronSights.esp", 0B0D7065)'
 
+  - name: 'Dragonskin( Tactical Outfit|BonusPack)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/10183/'
+        name: 'Dragonskin Tactical Outfit'
+  - name: 'Dragonskin Tactical Outfit.esp'
+    tag: [ Actors.AIData ]
+    clean:
+      - crc: 0x45FB7F26
+        util: 'FO3Edit v4.0.4c'
+  - name: 'DragonskinBonusPack.esp'
+    clean:
+      - crc: 0xF5552A78
+        util: 'FO3Edit v4.0.4c'
+
   - name: 'GaryHoloTape.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/4477/'
@@ -6454,28 +6468,7 @@ plugins:
   - name: 'Dogmeat_WaitMegaton v1.1.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7732/' ]
     inc: [ 'Dogmeat_WaitMegaton.esp' ]
-  - name: 'Dragonskin Tactical Outfit.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/10183/' ]
-    tag:
-      - Graphics
-      - Stats
-    clean:
-      - crc: 0x45FB7F26
-        util: 'FO3Edit v4.0.2e'
-    msg:
-      - type: say
-        # Copied from the mod's Nexus page:
-        content:
-          - lang: en
-            text: '"[The] camo-swapping system will only work if you have [FOSE](http://fose.silverlock.org/) installed. Users without FOSE can still use the mod as normal - but the camo-swapping system will simply not work until/unless FOSE is installed (and a message will appear saying as much)."'
-          - lang: de
-            text: '"[Das] Tarnungs-Tausch System wird nur funktionieren wenn Sie [FOSE](http://fose.silverlock.org/) installiert haben. Nutzer ohne FOSE können die Mod weiterhin wie normal verwenden - aber das Tarnungs-Tausch System wird solange nicht funktionieren solange nicht FOSE installiert ist (und eine Meldung wird erscheinen die diesen Umstand auch so wiedergibt)."'
-        condition: 'not file("../fose_1_\d(b|ng)?\.dll")'
-  - name: 'DragonskinBonusPack.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/10183/' ]
-    clean:
-      - crc: 0xF5552A78
-        util: 'FO3Edit v4.0.2e'
+
   - name: 'DriveableMotorCycle.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/6005/' ]
     dirty:
