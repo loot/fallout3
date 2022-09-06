@@ -594,6 +594,7 @@ plugins:
       - Actors.Anims
       - Actors.CombatStyle
       - Actors.DeathItem
+      - Actors.Factions
       - Actors.RecordFlags
       - Actors.Skeleton
       - Actors.Spells
@@ -613,7 +614,6 @@ plugins:
       - Creatures.Type
       - Deflst
       - Delev
-      - Factions
       - Graphics
       - Invent.Add
       - Invent.Change
