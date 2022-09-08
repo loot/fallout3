@@ -3304,8 +3304,8 @@ plugins:
     tag: [ Relev ]
     dirty:
       - <<: *quickClean
-        crc: 0x90814119
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        crc: 0x663DDF02
+        util: '[FO3Edit v4.0.4c](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 19
         udr: 11
   - name: 'The Mantis Imperative - Jello.esp'
@@ -3316,9 +3316,9 @@ plugins:
       - Relev
     dirty:
       - <<: *quickClean
-        crc: 0x24C45694
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 104
+        crc: 0x427B2976
+        util: '[FO3Edit v4.0.4c](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 111
   # The Mantis Imperative - Balance modules #
   - name: 'The Mantis Imperative - Combat.esp'
     inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
@@ -3329,11 +3329,11 @@ plugins:
       - Stats
     clean:
       - crc: 0x95B17A5D
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.4c'
   - name: 'The Mantis Imperative - FlatVATS.esp'
     clean:
       - crc: 0x21656566
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.4c'
   - name: 'The Mantis Imperative - Medical.esp'
     inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
     tag:
@@ -3348,7 +3348,7 @@ plugins:
       - Stats
     clean:
       - crc: 0xB9154606
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.4c'
   - name: 'The Mantis Imperative - Nasty Zeta.esp'
     msg:
       - <<: *wildEdits
@@ -3369,7 +3369,7 @@ plugins:
     dirty:
       - <<: *quickClean
         crc: 0xBC544F07
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        util: '[FO3Edit v4.0.4c](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 17
   - name: 'The Mantis Imperative - Nasty Zeta No Scaling.esp'
     after: [ 'The Mantis Imperative - Nasty Zeta.esp' ]
@@ -3379,7 +3379,7 @@ plugins:
     dirty:
       - <<: *quickClean
         crc: 0x03333A78
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        util: '[FO3Edit v4.0.4c](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
   - name: 'The Mantis Imperative - SkillBooks.esp'
     inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
@@ -3389,14 +3389,14 @@ plugins:
       - Text
     dirty:
       - <<: *quickClean
-        crc: 0xCF546D5A
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        crc: 0xDD2E48B1
+        util: '[FO3Edit v4.0.4c](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
   - name: 'The Mantis Imperative - XP.esp'
     inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
     clean:
       - crc: 0x6AEF38ED
-        util: 'FO3Edit v4.0.2e'
+        util: 'FO3Edit v4.0.4c'
 
   - name: 'Weapon Repair Kits.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17572/' ]
