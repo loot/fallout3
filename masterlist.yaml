@@ -3355,6 +3355,7 @@ plugins:
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 17
   - name: 'The Mantis Imperative - Nasty Zeta No Scaling.esp'
+    after: [ 'The Mantis Imperative - Nasty Zeta.esp' ]
     tag: [ Relev ]
     dirty:
       - <<: *quickClean
