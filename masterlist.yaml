@@ -3310,6 +3310,7 @@ plugins:
         udr: 11
   - name: 'The Mantis Imperative - Jello.esp'
     tag:
+      - Delev
       - Invent.Add
       - Invent.Remove
       - Relev
@@ -3321,6 +3322,11 @@ plugins:
   # The Mantis Imperative - Balance modules #
   - name: 'The Mantis Imperative - Combat.esp'
     inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
+    tag:
+      - Actors.Stats
+      - Delev
+      - Relev
+      - Stats
     clean:
       - crc: 0x95B17A5D
         util: 'FO3Edit v4.0.2e'
@@ -3330,6 +3336,16 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'The Mantis Imperative - Medical.esp'
     inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
+    tag:
+      - Actors.AIData
+      - Delev
+      - Graphics
+      - Invent.Add
+      - Invent.Change
+      - Invent.Remove
+      - Relev
+      - Scripts
+      - Stats
     clean:
       - crc: 0xB9154606
         util: 'FO3Edit v4.0.2e'
@@ -3337,6 +3353,19 @@ plugins:
     msg:
       - <<: *wildEdits
         condition: 'checksum("The Mantis Imperative - Nasty Zeta.esp", BC544F07) or checksum("The Mantis Imperative - Nasty Zeta.esp", FA2AE42D)'
+    tag:
+      - Actors.Spells
+      - Actors.Stats
+      - Delev
+      - Destructible
+      - Graphics
+      - Invent.Add
+      - Invent.Remove
+      - Relev
+      - Scripts
+      - Sound
+      - Stats
+      - Text
     dirty:
       - <<: *quickClean
         crc: 0xBC544F07
@@ -3344,7 +3373,9 @@ plugins:
         itm: 17
   - name: 'The Mantis Imperative - Nasty Zeta No Scaling.esp'
     after: [ 'The Mantis Imperative - Nasty Zeta.esp' ]
-    tag: [ Relev ]
+    tag:
+      - Actors.Stats
+      - Relev
     dirty:
       - <<: *quickClean
         crc: 0x03333A78
@@ -3352,6 +3383,10 @@ plugins:
         itm: 1
   - name: 'The Mantis Imperative - SkillBooks.esp'
     inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
+    tag:
+      - Scripts
+      - Stats
+      - Text
     dirty:
       - <<: *quickClean
         crc: 0xCF546D5A
