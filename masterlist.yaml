@@ -3291,6 +3291,113 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 14
 
+  - name: 'The Mantis Imperative - (Mantis|Jello|Combat|FlatVATS|Medical|Nasty Zeta( No Scaling)?|SkillBooks|XP)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/12296/'
+        name: 'The Mantis Imperative'
+  # The Mantis Imperative - Adventure modules #
+  - name: 'The Mantis Imperative - Mantis.esp'
+    msg:
+      - <<: *compatIssuesWithX
+        subs: [ 'FO3 Wanderers Edition' ]
+        condition: 'active("FO3 Wanderers Edition - Main File.esm")'
+    tag: [ Relev ]
+    dirty:
+      - <<: *quickClean
+        crc: 0x663DDF02
+        util: '[FO3Edit v4.0.4c](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 19
+        udr: 11
+  - name: 'The Mantis Imperative - Jello.esp'
+    tag:
+      - Delev
+      - Invent.Add
+      - Invent.Remove
+      - Relev
+    dirty:
+      - <<: *quickClean
+        crc: 0x427B2976
+        util: '[FO3Edit v4.0.4c](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 111
+  # The Mantis Imperative - Balance modules #
+  - name: 'The Mantis Imperative - Combat.esp'
+    inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
+    tag:
+      - Actors.Stats
+      - Delev
+      - Relev
+      - Stats
+    clean:
+      - crc: 0x95B17A5D
+        util: 'FO3Edit v4.0.4c'
+  - name: 'The Mantis Imperative - FlatVATS.esp'
+    clean:
+      - crc: 0x21656566
+        util: 'FO3Edit v4.0.4c'
+  - name: 'The Mantis Imperative - Medical.esp'
+    inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
+    tag:
+      - Actors.AIData
+      - Delev
+      - Graphics
+      - Invent.Add
+      - Invent.Change
+      - Invent.Remove
+      - Relev
+      - Scripts
+      - Stats
+    clean:
+      - crc: 0xB9154606
+        util: 'FO3Edit v4.0.4c'
+  - name: 'The Mantis Imperative - Nasty Zeta.esp'
+    msg:
+      - <<: *wildEdits
+        condition: 'checksum("The Mantis Imperative - Nasty Zeta.esp", BC544F07) or checksum("The Mantis Imperative - Nasty Zeta.esp", FA2AE42D)'
+    tag:
+      - Actors.Spells
+      - Actors.Stats
+      - Delev
+      - Destructible
+      - Graphics
+      - Invent.Add
+      - Invent.Remove
+      - Relev
+      - Scripts
+      - Sound
+      - Stats
+      - Text
+    dirty:
+      - <<: *quickClean
+        crc: 0xBC544F07
+        util: '[FO3Edit v4.0.4c](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 17
+  - name: 'The Mantis Imperative - Nasty Zeta No Scaling.esp'
+    after: [ 'The Mantis Imperative - Nasty Zeta.esp' ]
+    tag:
+      - Actors.Stats
+      - Relev
+    dirty:
+      - <<: *quickClean
+        crc: 0x03333A78
+        util: '[FO3Edit v4.0.4c](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+  - name: 'The Mantis Imperative - SkillBooks.esp'
+    inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
+    tag:
+      - Scripts
+      - Stats
+      - Text
+    dirty:
+      - <<: *quickClean
+        crc: 0xDD2E48B1
+        util: '[FO3Edit v4.0.4c](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+  - name: 'The Mantis Imperative - XP.esp'
+    inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
+    clean:
+      - crc: 0x6AEF38ED
+        util: 'FO3Edit v4.0.4c'
+
   - name: 'Weapon Repair Kits.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/17572/' ]
     clean:
@@ -5202,92 +5309,6 @@ plugins:
       - 'Regulators_Overhaul.esp'
       - 'Regulators _Overhaul_lvl7.esp'
       - 'Regulators _Overhaul_lvl2.esp'
-
-  - name: 'The Mantis Imperative - Mantis.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/12296/' ]
-    tag: [ Relev ]
-    msg:
-      - type: say
-        # Copied from https://www.nexusmods.com/fallout3/mods/12296
-        content:
-          - lang: en
-            text: '"Make sure to disable any "tougher stealth" or similar components [of FWE], as it can make one section of this mod quite difficult, if not impossible."'
-          - lang: de
-            text: '"Stellen Sie sicher jegliche "stärkere Tarnung(tougher stealth)" oder ähnlicher Komponenten [von FWE] zu deaktivieren, da es eine Sektion dieser Mod als sehr anstrengend bis womöglich unschaffbar gestalten könnte."'
-        condition: 'active("FO3 Wanderers Edition - Main File.esm")'
-    dirty:
-      - <<: *quickClean
-        crc: 0x90814119
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 19
-        udr: 11
-  - name: 'The Mantis Imperative - FlatVATS.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/12296/' ]
-    clean:
-      - crc: 0x21656566
-        util: 'FO3Edit v4.0.2e'
-  - name: 'The Mantis Imperative - Nasty Zeta.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/12296/' ]
-    tag:
-      - -Actors.ACBS
-      - -C.Encounter
-      - -C.Name
-      - -Delev
-      - -Destructible
-      - -Graphics
-      - -Invent
-      - -Relev
-      - -Scripts
-      - -Stats
-    dirty:
-      - <<: *quickClean
-        crc: 0xBC544F07
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 17
-  - name: 'The Mantis Imperative - Nasty Zeta No Scaling.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/12296/' ]
-    tag: [ Relev ]
-    dirty:
-      - <<: *quickClean
-        crc: 0x03333A78
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 1
-  - name: 'The Mantis Imperative - Combat.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/12296/' ]
-    inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
-    clean:
-      - crc: 0x95B17A5D
-        util: 'FO3Edit v4.0.2e'
-  - name: 'The Mantis Imperative - Medical.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/12296/' ]
-    inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
-    clean:
-      - crc: 0xB9154606
-        util: 'FO3Edit v4.0.2e'
-  - name: 'The Mantis Imperative - SkillBooks.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/12296/' ]
-    inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0xCF546D5A
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 1
-  - name: 'The Mantis Imperative - XP.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/12296/' ]
-    inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
-    clean:
-      - crc: 0x6AEF38ED
-        util: 'FO3Edit v4.0.2e'
-  - name: 'The Mantis Imperative - Jello.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/12296/' ]
-    tag:
-      - Relev
-      - Invent
-    dirty:
-      - <<: *quickClean
-        crc: 0x24C45694
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 104
 
   - name: 'FF_DestructibleRadios.esp'
     tag: [ Destructible ]
