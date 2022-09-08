@@ -3297,11 +3297,11 @@ plugins:
         name: 'The Mantis Imperative'
   # The Mantis Imperative - Adventure modules #
   - name: 'The Mantis Imperative - Mantis.esp'
-    tag: [ Relev ]
     msg:
       - <<: *compatIssuesWithX
         subs: [ 'FO3 Wanderers Edition' ]
         condition: 'active("FO3 Wanderers Edition - Main File.esm")'
+    tag: [ Relev ]
     dirty:
       - <<: *quickClean
         crc: 0x90814119
@@ -3310,8 +3310,9 @@ plugins:
         udr: 11
   - name: 'The Mantis Imperative - Jello.esp'
     tag:
+      - Invent.Add
+      - Invent.Remove
       - Relev
-      - Invent
     dirty:
       - <<: *quickClean
         crc: 0x24C45694
@@ -3336,17 +3337,6 @@ plugins:
     msg:
       - <<: *wildEdits
         condition: 'checksum("The Mantis Imperative - Nasty Zeta.esp", BC544F07) or checksum("The Mantis Imperative - Nasty Zeta.esp", FA2AE42D)'
-    tag:
-      - -Actors.ACBS
-      - -C.Encounter
-      - -C.Name
-      - -Delev
-      - -Destructible
-      - -Graphics
-      - -Invent
-      - -Relev
-      - -Scripts
-      - -Stats
     dirty:
       - <<: *quickClean
         crc: 0xBC544F07
