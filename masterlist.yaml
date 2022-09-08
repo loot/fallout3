@@ -3292,9 +3292,11 @@ plugins:
         itm: 14
 
   - name: 'The Mantis Imperative - (Mantis|Jello|Combat|FlatVATS|Medical|Nasty Zeta( No Scaling)?|SkillBooks|XP)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/12296/'
+        name: 'The Mantis Imperative'
   # The Mantis Imperative - Adventure modules #
   - name: 'The Mantis Imperative - Mantis.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/12296/' ]
     tag: [ Relev ]
     msg:
       - type: say
@@ -3312,7 +3314,6 @@ plugins:
         itm: 19
         udr: 11
   - name: 'The Mantis Imperative - Jello.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/12296/' ]
     tag:
       - Relev
       - Invent
@@ -3323,24 +3324,20 @@ plugins:
         itm: 104
   # The Mantis Imperative - Balance modules #
   - name: 'The Mantis Imperative - Combat.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/12296/' ]
     inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
     clean:
       - crc: 0x95B17A5D
         util: 'FO3Edit v4.0.2e'
   - name: 'The Mantis Imperative - FlatVATS.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/12296/' ]
     clean:
       - crc: 0x21656566
         util: 'FO3Edit v4.0.2e'
   - name: 'The Mantis Imperative - Medical.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/12296/' ]
     inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
     clean:
       - crc: 0xB9154606
         util: 'FO3Edit v4.0.2e'
   - name: 'The Mantis Imperative - Nasty Zeta.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/12296/' ]
     tag:
       - -Actors.ACBS
       - -C.Encounter
@@ -3358,7 +3355,6 @@ plugins:
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 17
   - name: 'The Mantis Imperative - Nasty Zeta No Scaling.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/12296/' ]
     tag: [ Relev ]
     dirty:
       - <<: *quickClean
@@ -3366,7 +3362,6 @@ plugins:
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
   - name: 'The Mantis Imperative - SkillBooks.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/12296/' ]
     inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
     dirty:
       - <<: *quickClean
@@ -3374,7 +3369,6 @@ plugins:
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
   - name: 'The Mantis Imperative - XP.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/12296/' ]
     inc: [ 'FO3 Wanderers Edition - Main File.esm' ]
     clean:
       - crc: 0x6AEF38ED
