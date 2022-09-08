@@ -3291,6 +3291,7 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 14
 
+  - name: 'The Mantis Imperative - (Mantis|Jello|Combat|FlatVATS|Medical|Nasty Zeta( No Scaling)?|SkillBooks|XP)\.esp'
   # The Mantis Imperative - Adventure modules #
   - name: 'The Mantis Imperative - Mantis.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/12296/' ]
