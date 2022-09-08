@@ -3299,13 +3299,8 @@ plugins:
   - name: 'The Mantis Imperative - Mantis.esp'
     tag: [ Relev ]
     msg:
-      - type: say
-        # Copied from https://www.nexusmods.com/fallout3/mods/12296
-        content:
-          - lang: en
-            text: '"Make sure to disable any "tougher stealth" or similar components [of FWE], as it can make one section of this mod quite difficult, if not impossible."'
-          - lang: de
-            text: '"Stellen Sie sicher jegliche "stärkere Tarnung(tougher stealth)" oder ähnlicher Komponenten [von FWE] zu deaktivieren, da es eine Sektion dieser Mod als sehr anstrengend bis womöglich unschaffbar gestalten könnte."'
+      - <<: *compatIssuesWithX
+        subs: [ 'FO3 Wanderers Edition' ]
         condition: 'active("FO3 Wanderers Edition - Main File.esm")'
     dirty:
       - <<: *quickClean
