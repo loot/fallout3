@@ -3333,6 +3333,9 @@ plugins:
       - crc: 0xB9154606
         util: 'FO3Edit v4.0.2e'
   - name: 'The Mantis Imperative - Nasty Zeta.esp'
+    msg:
+      - <<: *wildEdits
+        condition: 'checksum("The Mantis Imperative - Nasty Zeta.esp", BC544F07) or checksum("The Mantis Imperative - Nasty Zeta.esp", FA2AE42D)'
     tag:
       - -Actors.ACBS
       - -C.Encounter
