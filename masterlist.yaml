@@ -4671,6 +4671,9 @@ plugins:
         util: 'FO3Edit v4.0.3'
 
   - name: 'Nuka_Imports.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/25286/'
+        name: 'Nuka-World Imports'
 
   - name: 'RimfireRevolver(Common)?\.esp'
     url:
