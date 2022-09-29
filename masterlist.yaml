@@ -4670,6 +4670,8 @@ plugins:
       - crc: 0x01720BFF
         util: 'FO3Edit v4.0.3'
 
+  - name: 'Nuka_Imports.esp'
+
   - name: 'RimfireRevolver(Common)?\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/3026/'
