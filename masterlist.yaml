@@ -4670,6 +4670,20 @@ plugins:
       - crc: 0x01720BFF
         util: 'FO3Edit v4.0.3'
 
+  - name: 'Nuka_Imports.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/25286/'
+        name: 'Nuka-World Imports'
+    tag:
+      - Graphics
+      - Invent.Add
+      - Invent.Change
+    dirty:
+      - <<: *quickClean
+        crc: 0xE4DEEAC4
+        util: '[FO3Edit v4.0.4c](https://www.nexusmods.com/fallout3/mods/637)'
+        udr: 37
+
   - name: 'RimfireRevolver(Common)?\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/3026/'
