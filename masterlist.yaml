@@ -4678,6 +4678,11 @@ plugins:
       - Graphics
       - Invent.Add
       - Invent.Change
+    dirty:
+      - <<: *quickClean
+        crc: 0xE4DEEAC4
+        util: '[FO3Edit v4.0.4c](https://www.nexusmods.com/fallout3/mods/637)'
+        udr: 37
 
   - name: 'RimfireRevolver(Common)?\.esp'
     url:
