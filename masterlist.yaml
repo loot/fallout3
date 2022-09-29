@@ -4674,6 +4674,10 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/25286/'
         name: 'Nuka-World Imports'
+    tag:
+      - Graphics
+      - Invent.Add
+      - Invent.Change
 
   - name: 'RimfireRevolver(Common)?\.esp'
     url:
