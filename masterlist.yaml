@@ -574,6 +574,8 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/19122/'
         name: 'Updated Unofficial Fallout 3 Patch'
+      - link: 'https://www.nexusmods.com/fallout3/mods/3808/'
+        name: 'Unofficial Fallout 3 Patch'
     group: *fixesGroup
     after: [ 'ObjectPlacementFix.esm' ]
     req:
