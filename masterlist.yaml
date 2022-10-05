@@ -646,7 +646,7 @@ plugins:
       - Stats
       - Text
     clean:
-      - crc: 0x18033A26
+      - crc: 0xD0774DE7
         util: 'FO3Edit v4.0.4c'
 
 ###### Fixes ######
