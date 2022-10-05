@@ -593,6 +593,7 @@ plugins:
       - <<: *requiresX
         type: say
         subs: [ 'New save game when upgrading from v3.0 or older.' ]
+        condition: 'version("Unofficial Fallout 3 Patch.esm", "3.0", <=)'
     tag:
       - Actors.ACBS
       - Actors.AIData
