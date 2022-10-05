@@ -621,6 +621,7 @@ plugins:
       - Creatures.Type
       - Deflst
       - Delev
+      - Enchantments
       - Graphics
       - Invent.Add
       - Invent.Change
