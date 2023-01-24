@@ -2083,6 +2083,8 @@ plugins:
         content:
           - lang: en
             text: 'Legacy File - Only required if the mod configuration menu setting does not work.'
+          - lang: bg
+            text: 'Приставката е стара - изисква се само ако менюто за конфигуриране на модификациите не работи.'
         condition: 'file("Mart''s Mutant Mod - Master Menu Module.esp") or checksum("Mart''s Mutant Mod.esm", DC2E29E4)'
   - name: 'Mart''s Mutant Mod - Soft Unleveler.esp'
     inc: [ 'Mart''s Mutant Mod - Soft Unleveler Hardcore.esp' ]
@@ -2094,6 +2096,8 @@ plugins:
         content:
           - lang: en
             text: 'Legacy File - Only required if the mod configuration menu setting does not work.'
+          - lang: bg
+            text: 'Приставката е стара - изисква се само ако менюто за конфигуриране на модификациите не работи.'
         condition: 'file("Mart''s Mutant Mod - Master Menu Module.esp") or checksum("Mart''s Mutant Mod.esm", DC2E29E4)'
 
 ###### Encounters - Neutrals ######
