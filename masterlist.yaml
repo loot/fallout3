@@ -607,6 +607,7 @@ plugins:
       - Actors.Stats
       - Actors.Voice
       - C.Acoustic
+      - C.Climate
       - C.Encounter
       - C.ImageSpace
       - C.Light
@@ -614,12 +615,14 @@ plugins:
       - C.Music
       - C.Name
       - C.Owner
+      - C.RecordFlags
       - C.Regions
       - C.Water
       - Creatures.Blood
       - Creatures.Type
       - Deflst
       - Delev
+      - Destructible
       - Enchantments
       - Graphics
       - Invent.Add
