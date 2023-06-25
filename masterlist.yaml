@@ -8502,9 +8502,7 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: '(TWPC) WD-DIFF3-UUF3P-FWE Patch.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/21671/' ]
-    after:
-      - '(TWPC) DIFF3-RI-EVE-MMM-WMK-PRA-F3HMG-F3HF-20CWRE-IMPACT-UUF3P-FWE Patch.esp'
-      - 'Bashed Patch, 0.esp'
+    after: [ 'Bashed Patch, 0.esp' ]
     clean:
       - crc: 0xEE8D886F
         util: 'FO3Edit v4.0.2e'
