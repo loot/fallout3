@@ -5205,7 +5205,7 @@ plugins:
     msg:
       - <<: *obsolete
         subs: [ '[Vault 101 Revisited](https://www.nexusmods.com/fallout3/mods/13308/}' ]
-        condition: 'Vault 101 Revisited.esm", 848D8679) or checksum("Vault 101 Revisited.esm", 0C189D25) and not checksum("Vault 101 Revisited.esm", AF93AC54)'
+        condition: 'checksum("Vault 101 Revisited.esm", 848D8679) or checksum("Vault 101 Revisited.esm", 0C189D25) and not checksum("Vault 101 Revisited.esm", AF93AC54)'
       # Original
     dirty:
       - <<: *reqManualFix
