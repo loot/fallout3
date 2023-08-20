@@ -5202,6 +5202,11 @@ plugins:
         nav: 3
   - name: 'Vault 101 Revisited.esm'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13308/' ]
+    msg:
+      - <<: *obsolete
+        subs: [ '[Vault 101 Revisited](https://www.nexusmods.com/fallout3/mods/13308/}' ]
+        condition: 'Vault 101 Revisited.esm", 848D8679) or checksum("Vault 101 Revisited.esm", 0C189D25) and not checksum("Vault 101 Revisited.esm", AF93AC54)'
+      # Original
     dirty:
       - <<: *reqManualFix
         crc: 0x848D8679
@@ -5212,7 +5217,10 @@ plugins:
       - <<: *reqManualFix
         crc: 0x0C189D25
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        nav: 2
+      # Illusive Rework
+    clean:
+      - crc: 0xAF93AC54
+        util: 'FO3Edit v4.0.4'
 
     ### Imported ESPs from BOSS masterlist
   - name: 'Raider preset beta.esp'
