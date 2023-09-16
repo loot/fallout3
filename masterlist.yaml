@@ -4260,6 +4260,20 @@ plugins:
         util: '[FO3Edit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 18
 
+  - name: 'Evergreen.esm'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/25835/'
+        name: 'Raiders of the Capital Wasteland'
+    dirty:
+      - <<: *quickClean
+        crc: 0x95821B05
+        util: '[FO3Edit v4.0.4](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 5
+    msg:
+    - <<: *patchProvided
+      subs: [ 'Unofficial Fallout 3 Patch' ]
+      condition: 'file("Unofficial Fallout 3 Patch.esm") and not file("EvergreenUUF3PPatch.esp")'
+
   - name: 'FHVF3PL.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/24770/' ]
     dirty:
