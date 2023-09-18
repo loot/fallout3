@@ -2119,6 +2119,37 @@ plugins:
             text: 'Приставката е стара - изисква се само ако менюто за конфигуриране на модификациите не работи.'
         condition: 'file("Mart''s Mutant Mod - Master Menu Module.esp") or checksum("Mart''s Mutant Mod.esm", DC2E29E4)'
 
+  - name: '(RaidersRedoneModular01|RR(Females|GoreGrafitti)Removed)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/2466/'
+        name: 'Raiders Redone'
+  - name: 'RaidersRedoneModular01.esp'
+    tag:
+      - Actors.ACBS
+      - Delev
+      - Invent.Add
+      - Invent.Remove
+      - Names
+    clean:
+      - crc: 0xA58559F0
+        util: 'FO3Edit v4.0.4'
+  - name: 'RRFemalesRemoved.esp'
+    after: [ 'RaidersRedoneModular01.esp' ]
+    tag: [ Delev ]
+    clean:
+      - crc: 0xA04E9461
+        util: 'FO3Edit v4.0.4'
+  - name: 'RRGoreGrafittiRemoved.esp'
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Remove all Static records from **RRGoreGrafittiRemoved.esp**.' ]
+        condition: 'checksum("RRGoreGrafittiRemoved.esp", 8056F364)'
+    dirty:
+      - <<: *quickClean
+        crc: 0x8056F364
+        util: '[FO3Edit v4.0.4](https://www.nexusmods.com/fallout3/mods/637)'
+        udr: 1626
+
 ###### Encounters - Neutrals ######
   - name: 'CantaburyCommonsGuards( - DTO)?\.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/5900/' ]
