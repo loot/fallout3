@@ -2113,7 +2113,6 @@ plugins:
             text: 'Приставката е стара - изисква се само ако менюто за конфигуриране на модификациите не работи.'
         condition: 'file("Mart''s Mutant Mod - Master Menu Module.esp") or checksum("Mart''s Mutant Mod.esm", DC2E29E4)'
 
-  # Raiders Redone and Modules #
   - name: '(RaidersRedoneModular01|RR(Females|GoreGrafitti)Removed)\.esp'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/2466/'
