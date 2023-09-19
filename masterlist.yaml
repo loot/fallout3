@@ -8710,11 +8710,9 @@ plugins:
         util: 'FO3Edit v4.0.2e'
   - name: 'Another Interior Mod.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22523/' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0x4E80D8A3
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 26
+    clean:
+      - crc: 0x4E80D8A3
+        util: 'FO3Edit v4.0.4'
   - name: 'Armor Repair Kits - FO3.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/22541/' ]
     clean:
