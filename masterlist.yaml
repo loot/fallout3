@@ -5274,6 +5274,99 @@ plugins:
       - crc: 0xAF93AC54
         util: 'FO3Edit v4.0.4'
 
+  - name: '3DNPC_(FO3)?(_BrokenSteel|Chapel|ClaraBella|Cosmos|DotsDiner|Factory|Generic|IRS|LittleBoBeep|Mortar|QuantumGravity|Radio|Room404|Slasher|Spider|Village|Zynx)?\.es[mp]'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/21361/'
+        name: '3DNPC Fallout Bundle'
+  - name: '3DNPC_FO3.esm'
+    clean:
+      - crc: 0xB1EEF99F
+        util: 'FO3Edit v4.0.4'
+  - name: '3DNPC_FO3_BrokenSteel.esp'
+    clean:
+      - crc: 0x4411A1D0
+        util: 'FO3Edit v4.0.4'
+  - name: '3DNPC_FO3Generic.esm'
+    dirty:
+      - <<: *quickClean
+        crc: 0xDC273FC8
+        util: '[FO3Edit v4.0.4](https://www.nexusmods.com/fallout3/mods/637)'
+        udr: 2
+  - name: '3DNPC_Chapel.esm'
+    clean:
+      - crc: 0xE6C3F5B5
+        util: 'FO3Edit v4.0.4'
+  - name: '3dnpc_ClaraBella.esm'
+    clean:
+      - crc: 0xFBA36EE8
+        util: 'FO3Edit v4.0.4'
+  - name: '3DNPC_Cosmos.esm'
+    clean:
+      - crc: 0xD7BFF0BA
+        util: 'FO3Edit v4.0.4'
+  - name: '3DNPC_DotsDiner.esm'
+    dirty:
+      - <<: *reqManualFix
+        crc: 0xFAD01C1B
+        util: '[FO3Edit v4.0.4](https://www.nexusmods.com/fallout3/mods/637)'
+        nav: 1
+  - name: '3DNPC_Factory.esm'
+    clean:
+      - crc: 0x4B0A0326
+        util: 'FO3Edit v4.0.4'
+  - name: '3DNPC_IRS.esm'
+    clean:
+      - crc: 0x134BA0B8
+        util: 'FO3Edit v4.0.4'
+  - name: '3DNPC_LittleBoBeep.esm'
+    dirty:
+      - <<: *quickClean
+        crc: 0x9D1D17E0
+        util: '[FO3Edit v4.0.4](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+  - name: '3DNPC_Mortar.esm'
+    clean:
+      - crc: 0x1F7FB648
+        util: 'FO3Edit v4.0.4'
+  - name: '3DNPC_QuantumGravity.esm'
+    dirty:
+      - <<: *quickClean
+        crc: 0xEEA41219
+        util: '[FO3Edit v4.0.4](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 3
+  - name: '3DNPC_Radio.esp'
+    clean:
+      - crc: 0x379313E0
+        util: 'FO3Edit v4.0.4'
+  - name: '3DNPC_Room404.esm'
+    clean:
+      - crc: 0x5268C066
+        util: 'FO3Edit v4.0.4'
+  - name: '3DNPC_Slasher.esm'
+    clean:
+      - crc: 0x9E5F115E
+        util: 'FO3Edit v4.0.4'
+  - name: '3DNPC_Spider.esm'
+    dirty:
+      - <<: *quickClean
+        crc: 0x92E71B04
+        util: '[FO3Edit v4.0.4](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 5
+  - name: '3DNPC_Village.esm'
+    dirty:
+      - <<: *quickClean
+        crc: 0x073B85AD
+        util: '[FO3Edit v4.0.4](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+      - <<: *quickClean
+        crc: 0x2EB71C16
+        util: '[FO3Edit v4.0.4](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 2
+  - name: '3DNPC_Zynx.esm'
+    clean:
+      - crc: 0x9E21635F
+        util: 'FO3Edit v4.0.4'
+
     ### Imported ESPs from BOSS masterlist
   - name: 'Raider preset beta.esp'
     tag:
