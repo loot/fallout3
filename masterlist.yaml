@@ -4248,6 +4248,38 @@ plugins:
       - crc: 0x8F54FADF
         util: 'FO3Edit v4.0.3h (Hotfix 1)'
 
+  - name: 'TranquilityEnhanced.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/22115/'
+        name: 'Tranquility Secrets -A Vault 112 mod-'
+    msg:
+      - <<: *useVersion
+        subs: [ 'Unofficial Fallout 3 Patch' ]
+        condition: 'active("Unofficial Fallout 3 Patch.esm") and (checksum("TranquilityEnhanced.esp", 98875EF4) or checksum("TranquilityEnhanced.esp", F26EF89D))'
+      - <<: *patchUpdateAvailable
+        subs: [ '[Tranquility Secrets -A Vault 112 mod-](https://www.nexusmods.com/fallout3/mods/22115/)' ]
+        condition: 'checksum("TranquilityEnhanced.esp", 98875EF4) and not active("Unofficial Fallout 3 Patch.esm")'
+    tag:
+      - Actors.ACBS
+      - Actors.AIPackages
+      - Actors.Stats
+      - Actors.Voice
+      - Delev
+      - Factions
+      - Invent.Remove
+      - Names
+      - Scripts
+      - Text
+    clean:
+    # Version 1.4
+      - crc: 0x98875EF4
+        util: 'FO3Edit v4.0.4'
+    # Version 1.5
+      - crc: 0xF26EF89D
+        util: 'FO3Edit v4.0.4'
+    # Version 1.6
+      - crc: 0xE86E729F
+        util: 'FO3Edit v4.0.4'
   - name: 'Wasteland Gigolo.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2111/' ]
     clean:
