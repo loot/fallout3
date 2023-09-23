@@ -4253,12 +4253,15 @@ plugins:
       - link: 'https://www.nexusmods.com/fallout3/mods/22115/'
         name: 'Tranquility Secrets -A Vault 112 mod-'
     msg:
+      - <<: *obsolete
+        subs: [ '[Tranquility Secrets](https://www.nexusmods.com/fallout3/mods/22115/) v1.5' ]
+        condition: 'checksum("TranquilityEnhanced.esp", 98875EF4) and not active("Unofficial Fallout 3 Patch.esm")'
+      - <<: *requiresResources
+        subs: [ 'Tranquility Secrets v1.4' ]
+        condition: 'not file("Music/TranquilityLane")'
       - <<: *useVersion
         subs: [ 'Unofficial Fallout 3 Patch' ]
         condition: 'active("Unofficial Fallout 3 Patch.esm") and (checksum("TranquilityEnhanced.esp", 98875EF4) or checksum("TranquilityEnhanced.esp", F26EF89D))'
-      - <<: *patchUpdateAvailable
-        subs: [ '[Tranquility Secrets -A Vault 112 mod-](https://www.nexusmods.com/fallout3/mods/22115/)' ]
-        condition: 'checksum("TranquilityEnhanced.esp", 98875EF4) and not active("Unofficial Fallout 3 Patch.esm")'
     tag:
       - Actors.ACBS
       - Actors.AIPackages
@@ -4266,20 +4269,19 @@ plugins:
       - Actors.Voice
       - Delev
       - Factions
+      - Invent.Add
       - Invent.Remove
       - Names
       - Scripts
       - Text
     clean:
-    # Version 1.4
-      - crc: 0x98875EF4
-        util: 'FO3Edit v4.0.4'
-    # Version 1.5
+      # Version 1.5 Vanilla
       - crc: 0xF26EF89D
         util: 'FO3Edit v4.0.4'
-    # Version 1.6
+      # Version: 1.6 UUFO3P
       - crc: 0xE86E729F
         util: 'FO3Edit v4.0.4'
+
   - name: 'Wasteland Gigolo.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/2111/' ]
     clean:
