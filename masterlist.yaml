@@ -4281,6 +4281,18 @@ plugins:
         util: '[FO3Edit v4.0.3g](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 16
 
+  - name: 'BelthansQuoVagis.esm'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/19305/'
+        name: 'Quo Vagis'
+    tag: [ C.Light ]
+    dirty:
+    # 3.52
+      - <<: *quickClean
+        crc: 0xDD7A7CB3
+        util: '[FO3Edit v4.0.4c](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 23
+
   - name: 'Despicable Dashwood v2.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13883/' ]
     inc: [ 'Despicable Dashwood v1.esp' ]
@@ -4398,6 +4410,21 @@ plugins:
         util: '[FO3Edit v4.0.4](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 37
         udr: 1
+
+  - name: 'TheInstitute.esm'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/14449/'
+        name: 'The Institute - a fully voiced quest mod'
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Delete **0007542F**  in **TheInstitute.esm**.' ]
+        condition: 'checksum("TheInstitute.esm", B7A1317A) or checksum("TheInstitute.esm", A4926B91)'
+    dirty:
+    # 1.0.1
+      - <<: *quickClean
+        crc: 0xB7A1317A
+        util: '[FO3Edit v4.0.4c](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 29
 
 ###### Gameplay - Skills & Perks ######
   - name: 'Bobbleheads Begone.esp'
@@ -8081,13 +8108,6 @@ plugins:
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 15
         udr: 2
-  - name: 'BelthansQuoVagis.esm'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/19305/' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0x2A3804E7
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 8
   - name: 'BauPetSupplies.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19473/' ]
     dirty:
