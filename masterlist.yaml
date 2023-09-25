@@ -4315,6 +4315,22 @@ plugins:
         util: '[FO3Edit v4.0.3g](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 16
 
+  - name: 'CubeExperimental (EN).esm'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/6270/'
+        name: 'Cube Experimental'
+    msg:
+      - <<: *obsolete
+        subs: [ '[Cube Experimental Chakys Fix Version 1_0_4](https://www.nexusmods.com/fallout3/mods/6270/)' ]
+        condition: 'checksum("CubeExperimental (EN).esm", CFEB2A0D)'
+    tag: [ C.Light ]
+    dirty:
+      # Chaky's Fix 1.0.4
+      - <<: *quickClean
+        crc: 0x1E0B90CB
+        util: '[FO3Edit v4.0.4c](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 23
+
   - name: 'Despicable Dashwood v2.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13883/' ]
     inc: [ 'Despicable Dashwood v1.esp' ]
