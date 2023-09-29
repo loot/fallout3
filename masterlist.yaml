@@ -3166,6 +3166,20 @@ plugins:
         subs: [ 'Remove all Static records except for **00000021** from **NIW_experimental.esp**.' ]
         condition: 'checksum("NIW_experimental.esp", D426D3FF)'
 
+  - name: 'PAM.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/25855/'
+        name: 'Pacifism and More'
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Delete **Moveable Static** & **00004324** & **00004354** in **PAM.esp**.' ]
+        condition: 'checksum("PAM.esp", BF8C7605) or checksum("PAM.esp", F5EDFBE4)'
+    dirty:
+      - <<: *quickClean
+        crc: 0xF5EDFBE4
+        util: '[FO3Edit v4.0.4c](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 1
+
   - name: 'RH_IRONSIGHTS.esm'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/6938/'
