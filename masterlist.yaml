@@ -4326,7 +4326,6 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/19305/'
         name: 'Quo Vagis'
-    tag: [ C.Light ]
     dirty:
       - <<: *quickClean
         crc: 0xDD7A7CB3
