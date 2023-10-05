@@ -4328,7 +4328,6 @@ plugins:
         name: 'Quo Vagis'
     tag: [ C.Light ]
     dirty:
-    # 3.52
       - <<: *quickClean
         crc: 0xDD7A7CB3
         util: '[FO3Edit v4.0.4c](https://www.nexusmods.com/fallout3/mods/637)'
