@@ -4408,7 +4408,6 @@ plugins:
         subs: [ 'Delete **Cell/Block7**  in **TheInstitute.esm**.' ]
         condition: 'checksum("TheInstitute.esm", B7A1317A) or checksum("TheInstitute.esm", 01EF1739)'
     dirty:
-    # 1.0.1
       - <<: *quickClean
         crc: 0xB7A1317A
         util: '[FO3Edit v4.0.4c](https://www.nexusmods.com/fallout3/mods/637)'
