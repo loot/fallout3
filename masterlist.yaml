@@ -7513,14 +7513,28 @@ plugins:
     clean:
       - crc: 0x3CB47128
         util: 'FO3Edit v4.0.2e'
+
   - name: 'Mothership Crew.esm'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/8747/' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/8747/'
+        name: 'Mothership Zeta Crew'
+    tag:
+      - Actors.ACBS
+      - Actors.Factions
+      - C.Encounter
+      - Names
+      - Scripts
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Delete **0500DBAA** & **0500DBAB** & **0500DBAC** & **0500DBAF** in **Mothership Crew.esm**.' ]
+        condition: 'checksum("Mothership Crew.esm", 93255384) or checksum("Mothership Crew.esm", A3370628)'
     dirty:
       - <<: *quickClean
         crc: 0x93255384
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
+        util: '[FO3Edit v4.0.4c](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 14
         udr: 1
+
   - name: 'Freebooter_Armor.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/8754/' ]
     clean:
