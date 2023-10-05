@@ -7465,7 +7465,6 @@ plugins:
         subs: [ 'Delete **0500DBAA** & **0500DBAB** & **0500DBAC** & **0500DBAF** in **Mothership Crew.esm**.' ]
         condition: 'checksum("Mothership Crew.esm", 93255384) or checksum("Mothership Crew.esm", A3370628)'
     dirty:
-      # v1.66
       - <<: *quickClean
         crc: 0x93255384
         util: '[FO3Edit v4.0.4c](https://www.nexusmods.com/fallout3/mods/637)'
