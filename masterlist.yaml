@@ -4322,6 +4322,16 @@ plugins:
         util: '[FO3Edit v4.0.3g](https://www.nexusmods.com/fallout3/mods/637)'
         nav: 16
 
+  - name: 'BelthansQuoVagis.esm'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/19305/'
+        name: 'Quo Vagis'
+    dirty:
+      - <<: *quickClean
+        crc: 0xDD7A7CB3
+        util: '[FO3Edit v4.0.4c](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 23
+
   - name: 'Despicable Dashwood v2.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/13883/' ]
     inc: [ 'Despicable Dashwood v1.esp' ]
@@ -8136,13 +8146,6 @@ plugins:
         util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 15
         udr: 2
-  - name: 'BelthansQuoVagis.esm'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/19305/' ]
-    dirty:
-      - <<: *quickClean
-        crc: 0x2A3804E7
-        util: '[FO3Edit v4.0.2e](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 8
   - name: 'BauPetSupplies.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/19473/' ]
     dirty:
