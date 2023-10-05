@@ -4323,7 +4323,6 @@ plugins:
       - <<: *obsolete
         subs: [ '[Cube Experimental Chakys Fix Version 1_0_4](https://www.nexusmods.com/fallout3/mods/6270/)' ]
         condition: 'checksum("CubeExperimental (EN).esm", CFEB2A0D)'
-    tag: [ C.Light ]
     dirty:
       # Chaky's Fix 1.0.4
       - <<: *quickClean
