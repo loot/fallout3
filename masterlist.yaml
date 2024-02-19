@@ -3181,15 +3181,12 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/25855/'
         name: 'Pacifism and More'
-    msg:
-      - <<: *wildEdits
-        subs: [ 'Delete **Moveable Static** & **00004324** & **00004354** in **PAM.esp**.' ]
-        condition: 'checksum("PAM.esp", BF8C7605) or checksum("PAM.esp", F5EDFBE4)'
     dirty:
+    # 1.30
       - <<: *quickClean
-        crc: 0xF5EDFBE4
+        crc: 0xBD0CD0B6
         util: '[FO3Edit v4.0.4c](https://www.nexusmods.com/fallout3/mods/637)'
-        itm: 1
+        itm: 4
 
   - name: 'RH_IRONSIGHTS.esm'
     url:
