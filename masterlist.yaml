@@ -2945,8 +2945,13 @@ plugins:
         util: 'FO3Edit v4.0.3'
 
   - name: 'Goodies\.es[mp]'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/25239/' ]
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/25239/'
+        name: 'Goodies'
     tag:
+      - Actors.ACBS
+      - Actors.CombatStyle
+      - Actors.DeathItem
       - Delev
       - Destructible
       - Graphics
@@ -2954,9 +2959,13 @@ plugins:
       - Invent.Remove
       - Names
       - Relev
+      - Scripts
+      - Stats
+      - Text
     clean:
-      - crc: 0xE5EFA5B8
-        util: 'FO3Edit v4.0.4b'
+    # 1.6.5
+      - crc: 0x2C4386DD
+        util: 'FO3Edit v4.0.4c'
 
   - name: 'H\.E\.R\.K\.( - GOTY( & WMK)?)?\.es(m|p)'
     url: [ 'https://www.nexusmods.com/fallout3/mods/7531/' ]
