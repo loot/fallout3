@@ -4603,6 +4603,23 @@ plugins:
         subs: [ 'Intro Street Bus ESP' ]
         condition: 'many("DCStreet( - BS)?\.esp")'
 
+  - name: 'The[ _]Pittsburgh[ _]Expansion[ _]Project[ _]3\.0v\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/fallout3/mods/24367/'
+        name: 'The Pittsburgh Expansion Project'
+    tag: [ Actors.AIData ]
+  - name: 'The Pittsburgh Expansion Project 3.0v.esp'
+    dirty:
+      - <<: *quickClean
+        crc: 0xE6660B3C
+        util: '[FO3Edit v4.1.5f](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 34
+        udr: 48
+  - name: 'The_Pittsburgh_Expansion_Project_3.0v.esp'
+    clean:
+      - crc: 0x1C04A34A
+        util: 'FO3Edit v4.1.5f'
+
 ###### Locations - New Structures & Landmarks ######
   - name: 'Fairfax City Interiors.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/23611/' ]
