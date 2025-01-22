@@ -1543,7 +1543,6 @@ plugins:
       - <<: *useOnlyOneX
         subs: [ 'BNB plugin' ]
         condition: 'many("BnB special armors\.es(m|p)")'
-    msg:
       - <<: *patchUpdateAvailable
         subs: [ '[Illusive Fixes and Merges](https://www.nexusmods.com/fallout3/mods/26618/)' ]
         condition: '(not checksum("BnB special armors.esm", E154BE10) and not checksum("BnB special armors.esp", 4791B69E) and not checksum("meshes\armor\2pac4eva7\bikini armor\croc.nif", BC2CCD69))'
