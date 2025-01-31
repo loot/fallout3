@@ -1558,13 +1558,13 @@ plugins:
     dirty:
       - <<: *quickClean
         crc: 0xD0041F38
-        util: 'FNVEdit v4.1.5k'
+        util: 'FO3Edit v4.1.5k'
         itm: 1468
   - name: 'BnB special armors.esp'
     dirty:
       - <<: *quickClean
         crc: 0xDE5296D8
-        util: 'FNVEdit v4.1.5k'
+        util: 'FO3Edit v4.1.5k'
         itm: 1468
 
   - name: '(DIM )?CUSTOM RACES( V2)?\.esp'
