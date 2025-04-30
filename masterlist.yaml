@@ -822,7 +822,7 @@ plugins:
 
 ###### Modding Tools - Generated Files ######
   - name: 'Bashed Patch.*\.esp'
-    url: [ 'https://www.nexusmods.com/fallout3/mods/22934/' ]
+    url: [ 'https://www.nexusmods.com/site/mods/591/' ]
     group: *dynamicPatchesGroup
     after: [ 'FO3Merged.esp' ]
 
