@@ -9119,7 +9119,6 @@ plugins:
         itm: 55
         udr: 45
         nav: 5
-    dirty:
       - <<: *reqManualFix
         crc: 0x8D6D4509
         util: '[FO3Edit v4.0.4](https://www.nexusmods.com/fallout3/mods/637)'
