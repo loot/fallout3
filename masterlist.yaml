@@ -9106,3 +9106,17 @@ plugins:
         crc: 0xD7652C4E
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 1
+
+  - name: 'The Armory.esp'
+    url: [ 'https://www.nexusmods.com/fallout3/mods/13270/' ]
+    dirty:
+      - <<: *reqManualFix
+        crc: 0x0A2AA99D
+        util: '[FO3Edit v4.0.4](https://www.nexusmods.com/fallout3/mods/637)'
+        itm: 55
+        udr: 45
+        nav: 5
+      - <<: *reqManualFix
+        crc: 0x8D6D4509
+        util: '[FO3Edit v4.0.4](https://www.nexusmods.com/fallout3/mods/637)'
+        nav: 5
