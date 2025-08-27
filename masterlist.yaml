@@ -2683,6 +2683,11 @@ plugins:
       - Sound
       - Stats
       - Text
+    msg:
+      # V6.03a hotfix: 0x9C986068, post-QAC: 0xB7093BAF
+      - <<: *wildEdits
+        subs: [ 'Remove unresolved reference **XX003D42** from FLST **000B41FD**.' ]
+        condition: 'checksum("FO3 Wanderers Edition - Main File.esm", 9C986068) or checksum("FO3 Wanderers Edition - Main File.esm", B7093BAF)'
     dirty:
       - <<: *quickClean
         crc: 0x9C986068
