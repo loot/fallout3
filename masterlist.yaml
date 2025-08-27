@@ -2656,7 +2656,7 @@ plugins:
       - crc: 0x61940688
         util: 'FO3Edit v4.0.3'
 
-  - name: 'FO3 Wanderers Edition - .*\.es(m|p)'
+  - name: 'FO3 Wanderers Edition - .*\.es[mp]'
     url:
       - link: 'https://www.nexusmods.com/fallout3/mods/2761/'
         name: 'FWE - FO3 Wanderers Edition'
@@ -2711,8 +2711,9 @@ plugins:
         crc: 0x01982EC9
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 10
-  - name: 'FO3 Wanderers Edition - DLC Anchorage.esp'
+  - name: 'FO3 Wanderers Edition - DLC .*\.esp'
     after: [ 'FO3 Wanderers Edition - Main File.esp' ]
+  - name: 'FO3 Wanderers Edition - DLC Anchorage.esp'
     tag:
       - Deflst
       - Relev
@@ -2723,9 +2724,7 @@ plugins:
         util: '[FO3Edit v4.0.3](https://www.nexusmods.com/fallout3/mods/637)'
         itm: 3
   - name: 'FO3 Wanderers Edition - DLC The Pitt.esp'
-    after:
-      - 'FO3 Wanderers Edition - Main File.esp'
-      - 'FO3 Wanderers Edition - DLC Anchorage.esp'
+    after: [ 'FO3 Wanderers Edition - DLC Anchorage.esp' ]
     tag: [ Delev ]
     dirty:
       - <<: *quickClean
@@ -2734,7 +2733,6 @@ plugins:
         itm: 1
   - name: 'FO3 Wanderers Edition - DLC Broken Steel.esp'
     after:
-      - 'FO3 Wanderers Edition - Main File.esp'
       - 'FO3 Wanderers Edition - DLC Anchorage.esp'
       - 'FO3 Wanderers Edition - DLC The Pitt.esp'
     tag:
@@ -2747,7 +2745,6 @@ plugins:
         itm: 14
   - name: 'FO3 Wanderers Edition - DLC Point Lookout.esp'
     after:
-      - 'FO3 Wanderers Edition - Main File.esp'
       - 'FO3 Wanderers Edition - DLC Anchorage.esp'
       - 'FO3 Wanderers Edition - DLC The Pitt.esp'
       - 'FO3 Wanderers Edition - DLC Broken Steel.esp'
@@ -2762,7 +2759,6 @@ plugins:
         itm: 23
   - name: 'FO3 Wanderers Edition - DLC Mothership Zeta.esp'
     after:
-      - 'FO3 Wanderers Edition - Main File.esp'
       - 'FO3 Wanderers Edition - DLC Anchorage.esp'
       - 'FO3 Wanderers Edition - DLC The Pitt.esp'
       - 'FO3 Wanderers Edition - DLC Broken Steel.esp'
