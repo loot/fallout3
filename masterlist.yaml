@@ -603,6 +603,8 @@ plugins:
     group: *fixesGroup
     after: [ 'ObjectPlacementFix.esm' ]
     req:
+      - name: 'FOSE/Plugins/ButcherPete.dll'
+        display: '[ButcherPete](https://www.nexusmods.com/fallout3/mods/26358/)'
       - name: 'FOSE/Plugins/CommandExtender.dll'
         display: '[Command Extender](https://www.nexusmods.com/fallout3/mods/23682/)'
         condition: 'version("Unofficial Fallout 3 Patch.esm", "3.0", >=)'
