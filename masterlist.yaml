@@ -464,6 +464,29 @@ globals:
 # Latest LOOT Thread
   - *latestLOOTThread
 
+# Latest Version
+  # FOSE
+  - <<: *versionOldX
+    subs: [ '**Script Extender ([FOSE](https://fose.silverlock.org))**' ]
+    condition: '(file("../fose_1_7.dll") and version("../fose_1_7.dll", "0.1.2.2", <)) or (file("../fose_1_7ng.dll") and version("../fose_1_7ng.dll", "0.1.2.2", <))'
+  - <<: *versionUpToDateX
+    subs: [ '**Script Extender ([FOSE](https://fose.silverlock.org))**' ]
+    condition: '(version("../fose_1_7.dll", "0.1.2.2", >=) and version("../fose_1_7ng.dll", "0.1.2.2", >=)) or
+                (version("../fose_1_7.dll", "0.1.2.2", >=) and not file("../fose_1_7ng.dll")) or
+                (version("../fose_1_7ng.dll", "0.1.2.2", >=) and not file("../fose_1_7.dll"))'
+
+# FOSE - Runtime Compatibility
+  - <<: *versionXIncY
+    subs:
+      - '**[Fallout Script Extender](https://fose.silverlock.org/)**'
+      - '**Fallout 3**'
+    condition: 'readable("../Fallout3.exe") and product_version("../Fallout3.exe", "1.7.0.3", >=) and file("../fose_1_[01456]b?\.dll") and not file("../fose_1_7(ng)?\.dll")'
+  - <<: *versionXIncY
+    subs:
+      - '**[Fallout Script Extender](https://fose.silverlock.org/)**'
+      - '**Fallout 3**'
+    condition: 'readable("../Fallout3.exe") and product_version("../Fallout3.exe", "1.7.0.4", ==) and ((file("../fose_1_7.dll") and version("../fose_1_7.dll", "0.1.3.2", <=)) or (file("../fose_1_7ng.dll") and version("../fose_1_7ng.dll", "0.1.3.2", <=)))'
+
 # FOSE
   # Missing
   - <<: *scriptExtenderMissing
@@ -478,35 +501,6 @@ globals:
       - 'FOSE'
       - 'Fallout 3'
     condition: 'file("NVSE/Plugins/nvac.dll")'
-
-# FOSE Plugins - Latest
-  - <<: *versionOldX
-    subs: [ '**([NVAC - New Vegas Anti Crash](https://www.nexusmods.com/newvegas/mods/53635))**' ]
-    condition: 'file("FOSE/Plugins/nvac.dll") and version("FOSE/Plugins/nvac.dll", "7.5.0.0", <)'
-  - <<: *versionUpToDateX
-    subs: [ '**([NVAC - New Vegas Anti Crash](https://www.nexusmods.com/newvegas/mods/53635))**' ]
-    condition: 'file("FOSE/Plugins/nvac.dll") and version("FOSE/Plugins/nvac.dll", "7.5.0.0", >=)'
-
-# FOSE Latest
-  - <<: *versionOldX
-    subs: [ '**Script Extender ([FOSE](https://fose.silverlock.org))**' ]
-    condition: '(file("../fose_1_7.dll") and version("../fose_1_7.dll", "0.1.2.2", <)) or (file("../fose_1_7ng.dll") and version("../fose_1_7ng.dll", "0.1.2.2", <))'
-  - <<: *versionUpToDateX
-    subs: [ '**Script Extender ([FOSE](https://fose.silverlock.org))**' ]
-    condition: '(version("../fose_1_7.dll", "0.1.2.2", >=) and version("../fose_1_7ng.dll", "0.1.2.2", >=)) or (version("../fose_1_7.dll", "0.1.2.2", >=) and not file("../fose_1_7ng.dll")) or (version("../fose_1_7ng.dll", "0.1.2.2", >=) and not file("../fose_1_7.dll"))'
-
-# Version Compatibility
-  # FOSE - Game Runtime
-  - <<: *versionXIncY
-    subs:
-      - '**[Fallout Script Extender](https://fose.silverlock.org/)**'
-      - '**Fallout 3**'
-    condition: 'readable("../Fallout3.exe") and product_version("../Fallout3.exe", "1.7.0.3", >=) and file("../fose_1_[01456]b?\.dll") and not file("../fose_1_7(ng)?\.dll")'
-  - <<: *versionXIncY
-    subs:
-      - '**[Fallout Script Extender](https://fose.silverlock.org/)**'
-      - '**Fallout 3**'
-    condition: 'readable("../Fallout3.exe") and product_version("../Fallout3.exe", "1.7.0.4", ==) and ((file("../fose_1_7.dll") and version("../fose_1_7.dll", "0.1.3.2", <=)) or (file("../fose_1_7ng.dll") and version("../fose_1_7ng.dll", "0.1.3.2", <=)))'
 
 groups:
   - name: &veryEarlyGroup Very Early Loaders
