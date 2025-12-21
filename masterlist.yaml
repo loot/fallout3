@@ -490,8 +490,7 @@ globals:
       - 'Fallout 3'
     condition: 'file("NVSE/Plugins/nvac.dll")'
 
-# Version Compatibility
-  # FOSE - Game Runtime
+# FOSE - Runtime Compatibility
   - <<: *versionXIncY
     subs:
       - '**[Fallout Script Extender](https://fose.silverlock.org/)**'
