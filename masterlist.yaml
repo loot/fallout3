@@ -479,14 +479,6 @@ globals:
       - 'Fallout 3'
     condition: 'file("NVSE/Plugins/nvac.dll")'
 
-# FOSE Plugins - Latest
-  - <<: *versionOldX
-    subs: [ '**([NVAC - New Vegas Anti Crash](https://www.nexusmods.com/newvegas/mods/53635))**' ]
-    condition: 'file("FOSE/Plugins/nvac.dll") and version("FOSE/Plugins/nvac.dll", "7.5.0.0", <)'
-  - <<: *versionUpToDateX
-    subs: [ '**([NVAC - New Vegas Anti Crash](https://www.nexusmods.com/newvegas/mods/53635))**' ]
-    condition: 'file("FOSE/Plugins/nvac.dll") and version("FOSE/Plugins/nvac.dll", "7.5.0.0", >=)'
-
 # FOSE Latest
   - <<: *versionOldX
     subs: [ '**Script Extender ([FOSE](https://fose.silverlock.org))**' ]
