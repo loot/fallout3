@@ -268,7 +268,7 @@ common:
     condition: 'active("Unofficial Fallout 3 Patch.esm")'
   - &alreadyInOrFixedByUFO3Pv1_7
     <<: *alreadyInOrFixedByUFO3P
-    condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
+    condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", >=, "1.7")'
 
   # &languageX
   - &languageEnglish
@@ -468,24 +468,24 @@ globals:
   # FOSE
   - <<: *versionOldX
     subs: [ '**Script Extender ([FOSE](https://fose.silverlock.org))**' ]
-    condition: '(file("../fose_1_7.dll") and version("../fose_1_7.dll", "0.1.2.2", <)) or (file("../fose_1_7ng.dll") and version("../fose_1_7ng.dll", "0.1.2.2", <))'
+    condition: '(file("../fose_1_7.dll") and version("../fose_1_7.dll", <, "0.1.2.2")) or (file("../fose_1_7ng.dll") and version("../fose_1_7ng.dll", <, "0.1.2.2"))'
   - <<: *versionUpToDateX
     subs: [ '**Script Extender ([FOSE](https://fose.silverlock.org))**' ]
-    condition: '(version("../fose_1_7.dll", "0.1.2.2", >=) and version("../fose_1_7ng.dll", "0.1.2.2", >=)) or
-                (version("../fose_1_7.dll", "0.1.2.2", >=) and not file("../fose_1_7ng.dll")) or
-                (version("../fose_1_7ng.dll", "0.1.2.2", >=) and not file("../fose_1_7.dll"))'
+    condition: '(version("../fose_1_7.dll", >=, "0.1.2.2") and version("../fose_1_7ng.dll", >=, "0.1.2.2")) or
+                (version("../fose_1_7.dll", >=, "0.1.2.2") and not file("../fose_1_7ng.dll")) or
+                (version("../fose_1_7ng.dll", >=, "0.1.2.2") and not file("../fose_1_7.dll"))'
 
 # FOSE - Runtime Compatibility
   - <<: *versionXIncY
     subs:
       - '**[Fallout Script Extender](https://fose.silverlock.org/)**'
       - '**Fallout 3**'
-    condition: 'readable("../Fallout3.exe") and product_version("../Fallout3.exe", "1.7.0.3", >=) and file("../fose_1_[01456]b?\.dll") and not file("../fose_1_7(ng)?\.dll")'
+    condition: 'readable("../Fallout3.exe") and product_version("../Fallout3.exe", >=, "1.7.0.3") and file("../fose_1_[01456]b?\.dll") and not file("../fose_1_7(ng)?\.dll")'
   - <<: *versionXIncY
     subs:
       - '**[Fallout Script Extender](https://fose.silverlock.org/)**'
       - '**Fallout 3**'
-    condition: 'readable("../Fallout3.exe") and product_version("../Fallout3.exe", "1.7.0.4", ==) and ((file("../fose_1_7.dll") and version("../fose_1_7.dll", "0.1.3.2", <=)) or (file("../fose_1_7ng.dll") and version("../fose_1_7ng.dll", "0.1.3.2", <=)))'
+    condition: 'readable("../Fallout3.exe") and product_version("../Fallout3.exe", ==, "1.7.0.4") and ((file("../fose_1_7.dll") and version("../fose_1_7.dll", <=, "0.1.3.2")) or (file("../fose_1_7ng.dll") and version("../fose_1_7ng.dll", <=, "0.1.3.2")))'
 
 # FOSE
   # Missing
@@ -601,19 +601,19 @@ plugins:
         display: '[ButcherPete](https://www.nexusmods.com/fallout3/mods/26358/)'
       - name: 'FOSE/Plugins/CommandExtender.dll'
         display: '[Command Extender](https://www.nexusmods.com/fallout3/mods/23682/)'
-        condition: 'version("Unofficial Fallout 3 Patch.esm", "3.0", >=)'
+        condition: 'version("Unofficial Fallout 3 Patch.esm", >=, "3.0")'
     msg:
       - <<: *alsoUseX
         subs: [ '[lStewieAl''s Tweaks](https://www.nexusmods.com/fallout3/mods/23561/)' ]
         condition: 'not file("FOSE/Plugins/fose_stewie_tweaks.dll")'
       - <<: *obsolete
         subs: [ '[Updated Unofficial Fallout 3 Patch](https://www.nexusmods.com/fallout3/mods/19122/)' ]
-        condition: 'version("Unofficial Fallout 3 Patch.esm", "3.3.6", <) and active("Anchorage.esm") and active("ThePitt.esm") and active("BrokenSteel.esm") and active("PointLookout.esm") and active("Zeta.esm")'
+        condition: 'version("Unofficial Fallout 3 Patch.esm", <, "3.3.6") and active("Anchorage.esm") and active("ThePitt.esm") and active("BrokenSteel.esm") and active("PointLookout.esm") and active("Zeta.esm")'
       - *requiresFOSE
       - <<: *requiresX
         type: say
         subs: [ 'New save game when upgrading from v3.0 or older.' ]
-        condition: 'version("Unofficial Fallout 3 Patch.esm", "3.0", <=)'
+        condition: 'version("Unofficial Fallout 3 Patch.esm", <=, "3.0")'
     tag:
       - Actors.ACBS
       - Actors.AIData
@@ -679,7 +679,7 @@ plugins:
     tag: [ Scripts ]
     msg:
       - <<: *alreadyInOrFixedByUFO3P
-        condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.5", >=) and version("Unofficial Fallout 3 Patch.esm", "3.0", <)'
+        condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", >=, "1.5") and version("Unofficial Fallout 3 Patch.esm", <, "3.0")'
 
   - name: 'DemolitionExpertFix-Nuka.esp'
     url: [ 'https://www.nexusmods.com/fallout3/mods/684/' ]
@@ -690,7 +690,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/8391/' ]
     msg:
       - <<: *alreadyInOrFixedByUFO3P
-        condition: '(active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.2.0", >)) or active("Unofficial Fallout 3 Patch - Mothership Zeta.esp")'
+        condition: '(active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", >, "1.2.0")) or active("Unofficial Fallout 3 Patch - Mothership Zeta.esp")'
     tag: [ Graphics ]
     dirty:
       - <<: *quickClean
@@ -747,7 +747,7 @@ plugins:
     group: *fixesGroup
     msg:
       - <<: *alreadyInOrFixedByUFO3P
-        condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.7", >=)'
+        condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", >=, "1.7")'
       - <<: *useOnlyOneX
         subs: [ 'Wasteland Landscape Patch Main File - **ObjectPlacementFix.esm** OR **ObjectPlacementFix.esp**' ]
         condition: 'many("ObjectPlacementFix\.es(m|p)")'
@@ -799,7 +799,7 @@ plugins:
   - name: 'Stop Insulting Me Outcasts.esp'
     msg:
       - <<: *alreadyInOrFixedByUFO3P
-        condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", "1.4", >=)'
+        condition: 'active("Unofficial Fallout 3 Patch.esm") and version("Unofficial Fallout 3 Patch.esm", >=, "1.4")'
       - <<: *useVersion
         subs: [ 'Sharing and Caring Companions **Stop Insulting Me Outcasts – SCC.esp**' ]
         condition: 'active("Sharing and Caring Companions.esm")'
@@ -1219,7 +1219,7 @@ plugins:
       - Graphics
     msg:
       - <<: *alreadyInFOOK2
-        condition: 'file("FOOK2 - Main.esm") and version("Fellout-Full.esp", "1.234.567.89", <=)'
+        condition: 'file("FOOK2 - Main.esm") and version("Fellout-Full.esp", <=, "1.234.567.89")'
       - <<: *patchUpdateAvailable
         subs: [ '[The Mergers](https://www.nexusmods.com/fallout3/mods/16787/)' ]
         condition: '(not checksum("Fellout-Full.esp", 17C3A3E9) and not checksum("Fellout-Full.esp", 1C4CD93B)) and active("Anchorage.esm") and active("BrokenSteel.esm") and active("PointLookout.esm") and active("Zeta.esm")'
@@ -2373,7 +2373,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/fallout3/mods/15685/' ]
     msg:
       - <<: *obsolete
-        condition: 'version("AutoGates.esp", "1.3", <)'
+        condition: 'version("AutoGates.esp", <, "1.3")'
     tag: [ Scripts ]
     clean:
       - crc: 0xFBB84C75
@@ -3105,7 +3105,7 @@ plugins:
     tag:
       - Actors.ACBS
       - name: 'Relations.Add'
-        condition: 'version("KillableChildren.esp", "1.5", ==)'
+        condition: 'version("KillableChildren.esp", ==, "1.5")'
       - Scripts
     dirty:
       - <<: *quickClean
